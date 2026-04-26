@@ -47,11 +47,11 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Slow-motion / freeze | Constant slow play or held frame | ❌ |
 | Frame-rate conform | Source rate ≠ project rate | ❌ schema: `<conform-rate>` |
 | Lens correction | Distortion / vignetting compensation | ❌ |
-| Sharpening / unsharp | Edge enhancement | ❌ |
+| Sharpening / unsharp | Edge enhancement | ✅ `--sharpen=<0..1.5>`. ffmpeg `unsharp` filter, stacks per-clip alongside look + LUT. |
 | Noise reduction | Denoise grain or sensor noise | ❌ schema: `<adjust-noiseReduction>` |
 | Aspect-ratio reframing | Auto re-crop 16:9 → 9:16 (vertical) and 1:1 (square) | ✅ `--aspect=<w:h[:fit\|fill]>`. Accepts `16:9`, `9:16`, `1:1`, `4:5`, `2.35:1`, `<w>x<h>`. `:fill` center-crops; default `:fit` letterboxes. Both FCPXML format declaration and ffmpeg renderer respect the flag. |
-| Vignetting | Soft edge darkening | ❌ |
-| Film grain overlay | Synthetic grain texture | ❌ schema: PremiumBeat `Film Grain.moef` |
+| Vignetting | Soft edge darkening | ✅ `--vignette=<0..1>`. ffmpeg `vignette=angle=...` mapped from intensity. |
+| Film grain overlay | Synthetic grain texture | ✅ `--grain=<0..100>`. ffmpeg `noise=alls=N:allf=t` — temporal noise (non-static, looks like real grain). |
 | Lens flares / light leaks | Stylistic overlays | ❌ |
 
 ## 4 · Audio
