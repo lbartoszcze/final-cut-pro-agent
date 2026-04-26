@@ -129,7 +129,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Concern | What it is | Status |
 |---|---|---|
 | Aspect ratio | 16:9 / 9:16 / 1:1 / 2.35:1 | ✅ `--aspect=<spec>` with `:fit` (letterbox) or `:fill` (center-crop) modes |
-| Frame rate | 23.976 / 24 / 25 / 29.97 / 30 / 50 / 59.94 / 60 | 🟡 29.97 hardcoded |
+| Frame rate | 23.976 / 24 / 25 / 29.97 / 30 / 50 / 59.94 / 60 | ✅ `--fps=<rate>`. Accepts shorthand (23.976, 24, 25, 29.97, 30, 50, 59.94, 60), explicit `<num>/<den>` rationals, or arbitrary float. FCPXML `frameDuration` and ffmpeg output rate both follow. |
 | Resolution | 720p / 1080p / 4K | 🟡 derived from `--aspect`; max dimension still capped at 1920 / 1080 |
 | Codec | H.264 / H.265 / ProRes / DNxHR | 🟡 H.264 hardcoded in renderer; FCPXML is codec-agnostic |
 | Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | 🟡 Rec. 709 hardcoded |

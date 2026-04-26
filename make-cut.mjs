@@ -17,18 +17,19 @@ import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipI
 import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume } from "./lib/fcpxml.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
 import { LOOKS, LOOK_EFFECT_DECL, resolveLook } from "./lib/render/grades.mjs";
-import { probeLoudness, parseAspect } from "./lib/render/ffmpeg.mjs";
+import { probeLoudness, parseAspect, parseFps } from "./lib/render/ffmpeg.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const RATE_NUM = 30000, RATE_DEN = 1001, FPS = RATE_NUM / RATE_DEN;
-const FRAME_DUR = `${RATE_DEN}/${RATE_NUM}s`;
+// Frame-rate is now configurable via --fps. RATE_NUM / RATE_DEN / FPS /
+// FRAME_DUR are computed below after parseArgs() so the user's --fps choice
+// drives every subsequent rational-time conversion in this file.
 
 const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 
 function parseArgs(argv) {
   // Default look: cinematic (teal-orange) in cadence mode. Templates already
   // ship their own grade; --look=none disables explicitly.
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9" };
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9", fps: "29.97" };
   for (const a of argv) {
     const m = a.match(/^--([^=]+)=(.+)$/);
     if (m) out[m[1]] = m[2];
@@ -72,7 +73,7 @@ function makeTestPatterns(workDir) {
   for (let i = 0; i < palette.length; i++) {
     const path = join(workDir, `pattern-${i}.mp4`);
     if (!existsSync(path)) {
-      const filter = `${palette[i]}:s=1920x1080:r=30000/1001:d=8,drawtext=text='SCENE ${i + 1}':fontcolor=white:fontsize=120:x=(w-text_w)/2:y=(h-text_h)/2`;
+      const filter = `${palette[i]}:s=1920x1080:r=${RATE_NUM}/${RATE_DEN}:d=8,drawtext=text='SCENE ${i + 1}':fontcolor=white:fontsize=120:x=(w-text_w)/2:y=(h-text_h)/2`;
       const r = spawnSync("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", filter, "-c:v", "libx264", "-pix_fmt", "yuv420p", path], { encoding: "utf8" });
       if (r.status !== 0) throw new Error("ffmpeg failed:\n" + (r.stderr || "").slice(-1000));
     }
@@ -87,6 +88,10 @@ const bars = parseInt(args.bars);
 if (!Number.isFinite(bpm) || bpm < 30) throw new Error(`bad --bpm: ${args.bpm}`);
 if (!Number.isFinite(bars) || bars < 1) throw new Error(`bad --bars: ${args.bars}`);
 reseed((bpm * 1000 + bars) >>> 0);
+
+const fps = parseFps(args.fps);
+const RATE_NUM = fps.num, RATE_DEN = fps.den, FPS = RATE_NUM / RATE_DEN;
+const FRAME_DUR = `${RATE_DEN}/${RATE_NUM}s`;
 
 let clipPaths = [];
 if (args.mode === "clips") {
