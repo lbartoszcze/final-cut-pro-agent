@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.5">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p60" frameDuration="100/6000s" width="1920" height="1080"/>
+    <format id="r3" name="FFVideoFormat1080p30" frameDuration="100/3000s" width="1920" height="1080"/>
+    <asset id="r2" name="Beach" uid="16FC29E58D85BBE2E579AB8C2956BACF" src="file:///premiumbeat-kit/Beach.mp4" start="0s" duration="555000/90000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va7wCAAAAAAQQMAAAABd5eUm7wJZ6qZAiIGuuWvD3RxJHoQgL9lpXiEuyXFBXuAEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb2N1bWVudHMAAAAJAAAAAQEAAEJlYWNoLm1wNAAAABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC4QwkAAAAAAAgAAAAEAwAA4P1lBQAAAAAQAAAAAQYAAHAAAACAAAAAkAAAAKAAAAAIAAAAAAQAAEG8wT1HAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABYAAAAAAAAAAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQAADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAUAQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAAAAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAAACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHAAAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAIAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:23:21 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r4" name="Ice Cube" uid="92A114F20B1560D638F1F973B88F891F" src="file:///premiumbeat-kit/Ice_Cube.mp4" start="0s" duration="526500/90000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va7wCAAAAAAQQMAAAAOtzGKGKJGGAVBwd3Xjs1Ig1+D+GH6h2f25D1n12JimEuAEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb2N1bWVudHMAAAAMAAAAAQEAAEljZSBDdWJlLm1wNBAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC4QwkAAAAAAAgAAAAEAwAAjQFmBQAAAAAQAAAAAQYAAHAAAACAAAAAkAAAAKAAAAAIAAAAAAQAAEG8wT7QAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABYAAAAAAAAAAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQAADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAUAQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAAAAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAAACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHAAAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAIAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:23:21 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r5" name="Running" uid="E8E573CA8301985EA0988B02431F5CCD" src="file:///premiumbeat-kit/Running.mp4" start="0s" duration="441000/90000s" hasVideo="1" format="r3" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va7wCAAAAAAQQMAAAAABYJw32FqIHemj+zE3LZ2svIwe1ETcBg/Y99W2VTJN1uAEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb2N1bWVudHMAAAALAAAAAQEAAFJ1bm5pbmcubXA0ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC4QwkAAAAAAAgAAAAEAwAAsfxlBQAAAAAQAAAAAQYAAHAAAACAAAAAkAAAAKAAAAAIAAAAAAQAAEG8wTyvAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABYAAAAAAAAAAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQAADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAUAQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAAAAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAAACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHAAAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAIAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:23:21 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r6" name="Skating" uid="253F5780C1A934B30390600CF906C183" src="file:///premiumbeat-kit/Skating.mp4" start="0s" duration="561000/90000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va7wCAAAAAAQQMAAAAH1IpaRd00uiOO22iGmDtyx+Mv2Lt0Q5gmi7BfsuZvI0uAEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb2N1bWVudHMAAAALAAAAAQEAAFNrYXRpbmcubXA0ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC4QwkAAAAAAAgAAAAEAwAAGv5lBQAAAAAQAAAAAQYAAHAAAACAAAAAkAAAAKAAAAAIAAAAAAQAAEG8wT2OAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABYAAAAAAAAAAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQAADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAUAQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAAAAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAAACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHAAAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAIAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:23:21 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r7" name="Surfing" uid="D3986489891302AA30ABEEDF5CFEBDC9" src="file:///premiumbeat-kit/Surfing.mp4" start="0s" duration="505500/90000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va7wCAAAAAAQQMAAAACa/WzilyicwOc3/1p+rwrc48QyZTBWCx8unv2qtRvIJuAEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb2N1bWVudHMAAAALAAAAAQEAAFN1cmZpbmcubXA0ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC4QwkAAAAAAAgAAAAEAwAAevxlBQAAAAAQAAAAAQYAAHAAAACAAAAAkAAAAKAAAAAIAAAAAAQAAEG8wTyNAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABYAAAAAAAAAAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQAADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAUAQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAAAAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAAACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHAAAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAIAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:23:21 -0500"/>
+      </metadata>
+    </asset>
+  </resources>
+  <library location="file:///Volumes/Archive/Untitled.fcpbundle/">
+    <event name="Optical Flow" uid="D0BAB49D-43D4-DFC3-A50F-E56087C7B2AB">
+      <clip name="Beach" duration="37000/6000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r2" duration="37000/6000s">
+          <audio lane="-1" offset="0s" ref="r2" duration="4440000/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Ice Cube" duration="35100/6000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r4" duration="35100/6000s">
+          <audio lane="-1" offset="0s" ref="r4" duration="4212000/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Running" duration="14700/3000s" format="r3" tcFormat="NDF">
+        <video offset="0s" ref="r5" duration="14700/3000s">
+          <audio lane="-1" offset="0s" ref="r5" duration="3528000/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Skating" duration="37400/6000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r6" duration="37400/6000s">
+          <audio lane="-1" offset="0s" ref="r6" duration="4488000/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Surfing" duration="33700/6000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r7" duration="33700/6000s">
+          <audio lane="-1" offset="0s" ref="r7" duration="4044000/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <project name="Beach Scene" uid="E3495C16-69BE-44F5-BB42-7CB36EE399B1">
+        <sequence duration="35200/3000s" format="r3" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <clip name="Beach" offset="0s" duration="5500/3000s" start="3500/3000s" format="r1" tcFormat="NDF">
+              <conform-rate srcFrameRate="60" scaleEnabled="0"/>
+              <video offset="0s" ref="r2" duration="37000/6000s">
+                <audio lane="-1" offset="0s" ref="r2" duration="4440000/720000s" role="dialogue" srcCh="1, 2"/>
+              </video>
+            </clip>
+            <clip name="Beach" offset="5500/3000s" duration="23300/3000s" start="261889/3000s" format="r1" tcFormat="NDF">
+              <conform-rate srcFrameRate="60" scaleEnabled="0" frameSampling="optical-flow"/>
+              <timeMap frameSampling="optical-flow">
+                <timept time="0s" value="0s" interp="smooth2"/>
+                <timept time="1076656/6000s" value="37000/6000s" interp="smooth2"/>
+              </timeMap>
+              <video offset="0s" ref="r2" duration="37000/6000s">
+                <timeMap frameSampling="optical-flow">
+                  <timept time="0s" value="0s" interp="smooth2"/>
+                  <timept time="555000/90000s" value="37000/6000s" interp="smooth2"/>
+                </timeMap>
+                <audio lane="-1" offset="0s" ref="r2" duration="4440000/720000s" role="dialogue" srcCh="1, 2"/>
+              </video>
+            </clip>
+            <clip name="Beach" offset="28800/3000s" duration="6400/3000s" start="9800/3000s" format="r1" tcFormat="NDF">
+              <conform-rate srcFrameRate="60" scaleEnabled="0"/>
+              <video offset="0s" ref="r2" duration="37000/6000s">
+                <audio lane="-1" offset="0s" ref="r2" duration="4440000/720000s" role="dialogue" srcCh="1, 2"/>
+              </video>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+      <project name="Skating" uid="A3DD7B92-B177-4C8E-8E6A-9AF0F6D3B240">
+        <sequence duration="53s" format="r3" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <clip name="Skating" offset="0s" duration="53s" start="28000/3000s" format="r1" tcFormat="NDF">
+              <conform-rate srcFrameRate="60" scaleEnabled="0" frameSampling="optical-flow"/>
+              <timeMap frameSampling="optical-flow">
+                <timept time="0s" value="0s" interp="smooth2"/>
+                <timept time="374000/6000s" value="37400/6000s" interp="smooth2"/>
+              </timeMap>
+              <video offset="0s" ref="r6" duration="37400/6000s">
+                <timeMap frameSampling="optical-flow">
+                  <timept time="0s" value="0s" interp="smooth2"/>
+                  <timept time="561000/90000s" value="37400/6000s" interp="smooth2"/>
+                </timeMap>
+                <audio lane="-1" offset="0s" ref="r6" duration="4488000/720000s" role="dialogue" srcCh="1, 2"/>
+              </video>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

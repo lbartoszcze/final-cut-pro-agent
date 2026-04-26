@@ -64,6 +64,19 @@ The categories map 1:1 to the folders in FCP's Effects / Titles / Generators bro
 
 What the current emitter does cover: `fcpxml`, `resources`, `format`, `effect`, `asset`, `media-rep`, `library`, `event`, `project`, `sequence`, `spine`, `asset-clip`, `gap`, `transition`, `title`, `text`, `text-style`, `text-style-def`. Eighteen elements, vs. 47 the references collectively use.
 
+## Additional elements found in the PremiumBeat extractions
+
+The five `premiumbeat/` extractions surfaced four element types that don't appear anywhere in `swift-fcpxml/` or `cutlass/`:
+
+| Element | Source | What it does |
+|---|---|---|
+| `adjust-blend` | `mix-master.fcpxml` (13×) | Blend-mode adjustment on a clip. `<adjust-blend amount="1" mode="multiply"/>`. Modes: normal, multiply, screen, overlay, soft-light, hard-light, color-burn, linear-burn, difference, etc. The schema-level encoding of FCP's Blend Mode dropdown in the Inspector. |
+| `conform-rate` | `mix-master.fcpxml` (11×), `cutlass/test_complex_compositing` (1×) | Frame-rate conform on a clip whose source rate differs from the project rate. `<conform-rate scaleEnabled="0" srcFrameRate="29.97"/>`. Distinct from `adjust-conform` which is the spatial conform. |
+| `timept` | `extreme-action.fcpxml` (8×) | Time-point keyframe used in retiming. `<timept time="..." value="..." interp="smooth2"/>`. Sits inside a retime container that defines how playback speed varies across a clip — speed ramps, freezes, reverse playback. |
+| `clip` (vs `asset-clip`) | every PremiumBeat extraction | Older FCPXML 1.5 generic clip wrapper. Used when the timeline element is not a direct asset reference (e.g. wraps generators, compound clips, or anchored items). FCPXML 1.13 still parses `clip` for compatibility but prefers more specific elements (`asset-clip`, `mc-clip`, `ref-clip`). |
+
+The PremiumBeat extractions also use `fadeOut` (audio fade-out, complement to `fadeIn`), `metadata` wrappers around bookmark blobs, and `array` + `string` literal-typed param values that show how non-numeric parameter values are structured.
+
 ## Highest-leverage gaps to close first
 
 1. **`bookmark` inside `media-rep`** — real FCP exports always include a base64 security-scoped fs bookmark. Without it, FCP must re-locate the source media on import, which prompts the user. Generating one requires AppleScript / Foundation `URL.bookmarkData()`; for emitter purposes, omitting it is the current behaviour and means re-locate-on-import.

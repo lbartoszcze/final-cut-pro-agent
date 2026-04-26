@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.5">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p2398" frameDuration="1001/24000s" width="1920" height="1080"/>
+    <format id="r4" name="FFVideoFormat1080p25" frameDuration="100/2500s" width="1920" height="1080"/>
+    <format id="r6" name="FFVideoFormat1080p2997" frameDuration="1001/30000s" width="1920" height="1080"/>
+    <format id="r8" name="FFVideoFormat1080p24" frameDuration="100/2400s" width="1920" height="1080"/>
+    <asset id="r2" name="Glitch" uid="900BCFC3948C4C1F6911D7DBF9A94B2F" src="file:///premiumbeat-kit/Glitch.mp4" start="0s" duration="244244/48000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va/ACAAAAAAQQMAAAAJjaxQr8v8m23+esjUdwnHCUok9rVt9faCxI3obLD/557AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAACgAAAAEBAABHbGl0Y2gubXA0AAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABgAAAACAAAAAQDAADVkwIAAAAAAAgAAAAEAwAAt0MJAAAAAAAIAAAABAMAAPBDCQAAAAAACAAAAAQDAADgTkcFAAAAAAgAAAAEAwAACBdmBQAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvGUUFwAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 11:12:18 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r3" name="Grain" uid="18F54F97FAC22CD55758A1F1A0F21AEF" src="file:///premiumbeat-kit/Grain.mp4" start="0s" duration="338338/48000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va/ACAAAAAAQQMAAAAMAY84DNS2bVXUIZM4CQG5XWXvKrdsfqlzQQiR6esXkO7AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAACQAAAAEBAABHcmFpbi5tcDQAAAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABgAAAACAAAAAQDAADVkwIAAAAAAAgAAAAEAwAAt0MJAAAAAAAIAAAABAMAAPBDCQAAAAAACAAAAAQDAADgTkcFAAAAAAgAAAAEAwAA705HBQAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvKnbMAAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:52:47 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r5" name="Grunge" uid="E54016EEC8AF74EAD366881579E47EC8" src="file:///premiumbeat-kit/Grunge.mp4" start="0s" duration="381600/90000s" hasVideo="1" format="r4" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va/ACAAAAAAQQMAAAACMBXkYlF1jTRqmJuvfpx2MJ53n8ru6qMLCSF7Psu5/l7AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAACgAAAAEBAABHcnVuZ2UubXA0AAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABgAAAACAAAAAQDAADVkwIAAAAAAAgAAAAEAwAAt0MJAAAAAAAIAAAABAMAAPBDCQAAAAAACAAAAAQDAADgTkcFAAAAAAgAAAAEAwAA7k5HBQAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvKngCQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 11:03:57 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r7" name="Hairs" uid="CDCAC06732F2AD006A2FE3C8F1C434A7" src="file:///premiumbeat-kit/Hairs.mp4" start="0s" duration="864864/90000s" hasVideo="1" format="r6" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va/ACAAAAAAQQMAAAAF79mkde4BcnUcX50g/CUnBNje8ZdgZ+7zfcR2alajpa7AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAACQAAAAEBAABIYWlycy5tcDQAAAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABgAAAACAAAAAQDAADVkwIAAAAAAAgAAAAEAwAAt0MJAAAAAAAIAAAABAMAAPBDCQAAAAAACAAAAAQDAADgTkcFAAAAAAgAAAAEAwAAUw9mBQAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvMFGrwAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:56:54 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r9" name="Scratches" uid="2B2C9A14FA7D5FDFB619C38138190BBD" src="file:///premiumbeat-kit/Scratches.mp4" start="0s" duration="187500/90000s" hasVideo="1" format="r8" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va/QCAAAAAAQQMAAAAOZzzIWZHCQnLvJQItbmrQEu2K+1YZFJUi6OdS4tkmy58AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAADQAAAAEBAABTY3JhdGNoZXMubXA0AAAAFAAAAAEGAAAQAAAAIAAAADAAAABAAAAAYAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAADwQwkAAAAAAAgAAAAEAwAA4E5HBQAAAAAIAAAABAMAAK1YRwUAAAAAFAAAAAEGAACUAAAApAAAALQAAADEAAAA1AAAAAgAAAAABAAAQbyqBvMAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABgojR0AAAACAAAAAAEAABBufDxVwAAACQAAAABAQAAQUVBM0ZDOUItQjc4Qy0zQzlFLTlDNjktQTk0N0YxQjc3QzY4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAHgAAAAAAAAABRAAAOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAAAiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAAAAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIABAAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAAADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 11:02:01 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r10" name="Skiing" uid="5A9565342507CBF227C9D71BF330F467" src="file:///premiumbeat-kit/Skiing.mp4" start="0s" duration="426426/48000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va/ACAAAAAAQQMAAAADT8SC3ZIEAhP2QUJYJgM/wbMWmIDdk0ZxcNc9uqp7C77AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAACgAAAAEBAABTa2lpbmcubXA0AAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABgAAAACAAAAAQDAADVkwIAAAAAAAgAAAAEAwAAt0MJAAAAAAAIAAAABAMAAPBDCQAAAAAACAAAAAQDAADgTkcFAAAAAAgAAAAEAwAA6E5HBQAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvKn8TAAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:53:43 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r11" name="Snow" uid="697D760D2CDFD75130AB103C9EDE6D8F" src="file:///premiumbeat-kit/Snow.mp4" start="0s" duration="681681/90000s" hasVideo="1" format="r6">
+      <bookmark>Ym9va+wCAAAAAAQQMAAAAL/5M3J2TTr5co04sUjX8svygatXoF90cVNJ4ncSxQsR6AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAACAAAAAEBAABTbm93Lm1wNBQAAAABBgAAEAAAACAAAAAwAAAAQAAAAGAAAAAIAAAABAMAANWTAgAAAAAACAAAAAQDAAC3QwkAAAAAAAgAAAAEAwAA8EMJAAAAAAAIAAAABAMAAOBORwUAAAAACAAAAAQDAADsTkcFAAAAABQAAAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAIAAAAAAQAAEG8qeC9AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAAAAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQAAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABEAQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAAAAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAAACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHAAAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4AQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:53:55 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r12" name="Surfing" uid="C61D9EB5C4D2B49636A48531CCBAB852" src="file:///premiumbeat-kit/Surfing.mp4" start="0s" duration="720720/90000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va/ACAAAAAAQQMAAAAGjte4v9KyqwY2DR3EocReKKD7f2rqyCUKRD6Sq7VTsC7AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAACwAAAAEBAABTdXJmaW5nLm1wNAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABgAAAACAAAAAQDAADVkwIAAAAAAAgAAAAEAwAAt0MJAAAAAAAIAAAABAMAAPBDCQAAAAAACAAAAAQDAADgTkcFAAAAAAgAAAAEAwAA6k5HBQAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvKnhjwAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:53:10 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r13" name="Trailer Title" uid="CE43BB734EE37C96B6CEF11C6273581E" src="file:///premiumbeat-kit/Trailer_Title.mp4" start="0s" duration="190189/48000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va/gCAAAAAAQQMAAAAIxSgnjg7TJgd5J5BiRY+AhIvlDmVmPZKMTSV9Eygbbg9AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABUAAAABAQAARkNQWCAtIEJsZW5kaW5nIE1vZGVzAAAAEQAAAAEBAABUcmFpbGVyIFRpdGxlLm1wNAAAABQAAAABBgAAEAAAACAAAAAwAAAAQAAAAGAAAAAIAAAABAMAANWTAgAAAAAACAAAAAQDAAC3QwkAAAAAAAgAAAAEAwAA8EMJAAAAAAAIAAAABAMAAOBORwUAAAAACAAAAAQDAADpTkcFAAAAABQAAAABBgAAmAAAAKgAAAC4AAAAyAAAANgAAAAIAAAAAAQAAEG8qfvVAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAAB8AAAAAAAAAAUQAADoAAAAAAAAABAQAAAUAQAAAAAAAEAQAAAEAQAAAAAAAAIgAADgAQAAAAAAAAUgAABQAQAAAAAAABAgAABgAQAAAAAAABEgAACUAQAAAAAAABIgAAB0AQAAAAAAABMgAACEAQAAAAAAACAgAADAAQAAAAAAADAgAADsAQAAAAAAAAHAAAA0AQAAAAAAABHAAAAgAAAAAAAAABLAAABEAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>AAC</string>
+            <string>H.264</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 10:55:01 -0500"/>
+      </metadata>
+    </asset>
+    <effect id="r14" name="Negative" uid=".../Effects.localized/Basics.localized/Negative.localized/Negative.moef"/>
+    <effect id="r15" name="Color Correction" uid="FFColorCorrectionEffect"/>
+  </resources>
+  <library location="file:///Users/Michael/Movies/Untitled.fcpbundle/">
+    <event name="Blending Modes" uid="C0AEB19D-A094-7761-3766-10C5C41B2009">
+      <clip name="Glitch" duration="122122/24000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r2" duration="122122/24000s">
+          <audio lane="-1" offset="0s" ref="r2" duration="3663660/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Grain" duration="169169/24000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r3" duration="169169/24000s"/>
+      </clip>
+      <clip name="Grunge" duration="10600/2500s" format="r4" tcFormat="NDF">
+        <video offset="0s" ref="r5" duration="10600/2500s">
+          <audio lane="-1" offset="0s" ref="r5" duration="3052800/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Hairs" duration="288288/30000s" format="r6" tcFormat="NDF">
+        <video offset="0s" ref="r7" duration="288288/30000s">
+          <audio lane="-1" offset="0s" ref="r7" duration="6918912/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Scratches" duration="5000/2400s" format="r8" tcFormat="NDF">
+        <video offset="0s" ref="r9" duration="5000/2400s">
+          <audio lane="-1" offset="0s" ref="r9" duration="1500000/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Skiing" duration="213213/24000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r10" duration="213213/24000s">
+          <audio lane="-1" offset="0s" ref="r10" duration="6396390/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <clip name="Snow" duration="227227/30000s" format="r6" tcFormat="NDF">
+        <video offset="0s" ref="r11" duration="227227/30000s"/>
+      </clip>
+      <clip name="Surfing" duration="192192/24000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r12" duration="192192/24000s"/>
+      </clip>
+      <clip name="Trailer Title" duration="2852835/720000s" format="r1" tcFormat="NDF">
+        <video offset="0s" ref="r13" duration="94094/24000s">
+          <audio lane="-1" offset="0s" ref="r13" duration="2852835/720000s" role="dialogue" srcCh="1, 2"/>
+        </video>
+      </clip>
+      <project name="Skiing" uid="CBA2F95D-A66F-4026-B1C7-12D37BF3D98C">
+        <sequence duration="181181/24000s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <clip name="Skiing" offset="0s" duration="181181/24000s" tcFormat="NDF">
+              <video offset="0s" ref="r10" duration="213213/24000s">
+                <audio lane="-1" offset="0s" ref="r10" duration="6396390/720000s" role="dialogue" srcCh="1, 2"/>
+              </video>
+              <clip name="Snow" lane="1" offset="0s" duration="181181/24000s" format="r6" tcFormat="NDF">
+                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                <adjust-blend mode="10 (Screen)"/>
+                <video offset="0s" ref="r11" duration="227227/30000s"/>
+              </clip>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+      <project name="Surfing" uid="B445D9F6-EF5B-44C3-A277-6349329EA204">
+        <sequence duration="169169/24000s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <clip name="Surfing" offset="0s" duration="169169/24000s" tcFormat="NDF">
+              <video offset="0s" ref="r12" duration="192192/24000s"/>
+              <clip name="Grain" lane="1" offset="0s" duration="169169/24000s" tcFormat="NDF">
+                <adjust-blend mode="14 (Overlay)"/>
+                <video offset="0s" ref="r3" duration="169169/24000s"/>
+              </clip>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+      <project name="Trailer Title" uid="E68CF655-4134-400E-9017-778E962DE04A">
+        <sequence duration="94094/24000s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <clip name="Trailer Title" offset="0s" duration="94094/24000s" tcFormat="NDF">
+              <video offset="0s" ref="r13" duration="94094/24000s">
+                <audio lane="-1" offset="0s" ref="r13" duration="2852835/720000s" role="dialogue" srcCh="1, 2"/>
+              </video>
+              <clip name="Glitch" lane="1" offset="0s" duration="1001/24000s" start="1001/2000s" tcFormat="NDF">
+                <adjust-blend amount="0.0225" mode="10 (Screen)"/>
+                <video offset="0s" ref="r2" duration="122122/24000s">
+                  <audio lane="-1" offset="0s" ref="r2" duration="3663660/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+              </clip>
+              <clip name="Hairs" lane="1" offset="1001/24000s" duration="2002/24000s" format="r6" tcFormat="NDF">
+                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                <adjust-blend mode="10 (Screen)"/>
+                <video offset="0s" ref="r7" duration="288288/30000s">
+                  <audio lane="-1" offset="0s" ref="r7" duration="6918912/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+              </clip>
+              <clip name="Scratches" lane="2" offset="1001/24000s" duration="1001/24000s" format="r8" tcFormat="NDF">
+                <conform-rate srcFrameRate="24"/>
+                <adjust-blend amount="0.0226" mode="10 (Screen)"/>
+                <video offset="0s" ref="r9" duration="5000/2400s">
+                  <audio lane="-1" offset="0s" ref="r9" duration="1500000/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+                <filter-video ref="r14" name="Negative"/>
+              </clip>
+              <clip name="Grain" lane="4" offset="1001/24000s" duration="93093/24000s" tcFormat="NDF">
+                <adjust-blend mode="15 (Soft Light)"/>
+                <video offset="0s" ref="r3" duration="169169/24000s"/>
+              </clip>
+              <clip name="Grunge" lane="3" offset="2002/24000s" duration="4004/24000s" start="19/5s" format="r4" tcFormat="NDF">
+                <conform-rate srcFrameRate="25"/>
+                <adjust-blend amount="0.14" mode="8 (Add)"/>
+                <video offset="0s" ref="r5" duration="10600/2500s">
+                  <audio lane="-1" offset="0s" ref="r5" duration="3052800/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+                <filter-video ref="r15" name="Color Correction">
+                  <param name="color_highlight" key="2001" value="0.671353 0.155764"/>
+                  <param name="saturation_global" key="2004" value="0.1456"/>
+                </filter-video>
+              </clip>
+              <clip name="Grunge" lane="2" offset="3003/24000s" duration="12012/24000s" start="4/25s" format="r4" tcFormat="NDF">
+                <conform-rate srcFrameRate="25"/>
+                <adjust-blend amount="0.0259" mode="10 (Screen)"/>
+                <video offset="0s" ref="r5" duration="10600/2500s">
+                  <audio lane="-1" offset="0s" ref="r5" duration="3052800/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+                <filter-video ref="r15" name="Color Correction">
+                  <param name="color_global" key="2000" value="0.312206 0.845557"/>
+                  <param name="color_shadow" key="2003" value="0.5 0.733034"/>
+                  <param name="saturation_global" key="2004" value="0.156386"/>
+                </filter-video>
+              </clip>
+              <clip name="Hairs" lane="1" offset="8008/24000s" duration="4004/24000s" start="4004/24000s" format="r6" tcFormat="NDF">
+                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                <adjust-blend mode="10 (Screen)"/>
+                <video offset="0s" ref="r7" duration="288288/30000s">
+                  <audio lane="-1" offset="0s" ref="r7" duration="6918912/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+              </clip>
+              <clip name="Scratches" lane="3" offset="1001/3000s" duration="1001/480s" format="r8" tcFormat="NDF">
+                <conform-rate srcFrameRate="24"/>
+                <adjust-blend amount="0.5" mode="4 (Multiply)"/>
+                <video offset="0s" ref="r9" duration="5000/2400s">
+                  <audio lane="-1" offset="0s" ref="r9" duration="1500000/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+              </clip>
+              <clip name="Hairs" lane="1" offset="12012/24000s" duration="82082/24000s" start="7007/24000s" format="r6" tcFormat="NDF">
+                <conform-rate srcFrameRate="29.97" scaleEnabled="0"/>
+                <adjust-blend amount="0.0557" mode="10 (Screen)"/>
+                <video offset="0s" ref="r7" duration="288288/30000s">
+                  <audio lane="-1" offset="0s" ref="r7" duration="6918912/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+              </clip>
+              <clip name="Grunge" lane="2" offset="15015/24000s" duration="36036/24000s" format="r4" tcFormat="NDF">
+                <conform-rate srcFrameRate="25"/>
+                <adjust-blend amount="0.1" mode="10 (Screen)"/>
+                <video offset="0s" ref="r5" duration="10600/2500s">
+                  <audio lane="-1" offset="0s" ref="r5" duration="3052800/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+                <filter-video ref="r15" name="Color Correction">
+                  <param name="color_global" key="2000" value="0.302283 0.738301"/>
+                  <param name="saturation_global" key="2004" value="0.136388"/>
+                </filter-video>
+              </clip>
+              <clip name="Grunge" lane="2" offset="51051/24000s" duration="23023/24000s" start="49/25s" format="r4" tcFormat="NDF">
+                <conform-rate srcFrameRate="25"/>
+                <adjust-blend amount="0.1" mode="10 (Screen)"/>
+                <video offset="0s" ref="r5" duration="10600/2500s">
+                  <audio lane="-1" offset="0s" ref="r5" duration="3052800/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+                <filter-video ref="r15" name="Color Correction">
+                  <param name="color_global" key="2000" value="0.302283 0.738301"/>
+                  <param name="saturation_global" key="2004" value="0.136388"/>
+                </filter-video>
+              </clip>
+              <clip name="Grunge" lane="2" offset="87087/24000s" duration="7007/24000s" start="19/5s" format="r4" tcFormat="NDF">
+                <conform-rate srcFrameRate="25"/>
+                <video offset="0s" ref="r5" duration="10600/2500s">
+                  <audio lane="-1" offset="0s" ref="r5" duration="3052800/720000s" role="dialogue" srcCh="1, 2"/>
+                </video>
+                <filter-video ref="r15" name="Color Correction">
+                  <param name="color_global" key="2000" value="0.302283 0.738301"/>
+                </filter-video>
+              </clip>
+              <filter-video ref="r15" name="Color Correction"/>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+    <smart-collection name="Projects" match="all">
+      <match-clip rule="is" type="project"/>
+    </smart-collection>
+    <smart-collection name="All Video" match="any">
+      <match-media rule="is" type="videoOnly"/>
+      <match-media rule="is" type="videoWithAudio"/>
+    </smart-collection>
+    <smart-collection name="Audio Only" match="all">
+      <match-media rule="is" type="audioOnly"/>
+    </smart-collection>
+    <smart-collection name="Stills" match="all">
+      <match-media rule="is" type="stills"/>
+    </smart-collection>
+    <smart-collection name="Favorites" match="all">
+      <match-ratings value="favorites"/>
+    </smart-collection>
+  </library>
+</fcpxml>

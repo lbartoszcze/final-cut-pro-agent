@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.5">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p2398" frameDuration="1001/24000s" width="1920" height="1080"/>
+    <format id="r4" name="FFVideoFormatRateUndefined"/>
+    <asset id="r2" name="Banks of Tiber" uid="CED8034C590DAD9C51BB8A56BE54E508" src="file:///premiumbeat-kit/Banks_of_Tiber.mp4" start="3003/24000s" duration="68068/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va/QCAAAAAAQQMAAAALjHasPPaf6yxtYbNwHp1hrtcUJ2mFPh5I9YmKVp/a088AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMSAAAAAQEAAEJhbmtzIG9mIFRpYmVyLm1vdgAAFAAAAAEGAAAQAAAAIAAAADAAAABAAAAAXAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAADwQwkAAAAAAAgAAAAEAwAAUS1mBQAAAAAIAAAABAMAAFotZgUAAAAAFAAAAAEGAACUAAAApAAAALQAAADEAAAA1AAAAAgAAAAABAAAQbzBWAEAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABgojR0AAAACAAAAAAEAABBufDxVwAAACQAAAABAQAAQUVBM0ZDOUItQjc4Qy0zQzlFLTlDNjktQTk0N0YxQjc3QzY4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAHgAAAAAAAAABRAAAOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAAAiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAAAAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIABAAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAAADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r3" name="Cafe" uid="301C8E153D95468B28459104F092FFF9" src="file:///premiumbeat-kit/Cafe.mp4" start="447447/24000s" duration="66066/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va+gCAAAAAAQQMAAAAMSJAXUxapZ691pq1R7wTwo8DfiQevZhKtWbpByG7zfj5AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMIAAAAAQEAAENhZmUubW92FAAAAAEGAAAQAAAAIAAAADAAAABAAAAAXAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAADwQwkAAAAAAAgAAAAEAwAAUS1mBQAAAAAIAAAABAMAAMktZgUAAAAAFAAAAAEGAACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAABAAAQbzBWE8AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABgojR0AAAACAAAAAAEAABBufDxVwAAACQAAAABAQAAQUVBM0ZDOUItQjc4Qy0zQzlFLTlDNjktQTk0N0YxQjc3QzY4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAAEBAAAAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAABSAAAEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAAAAAAEiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAAALABAAAAAAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAAEcAAACAAAAAAAAAAEsAAADQBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r5" name="Fly Away" uid="A0C5F70EFF2C949BA8832C1F6E5C35BD" src="file:///premiumbeat-kit/Fly_Away.mp4" start="0s" duration="2614871/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+      <bookmark>Ym9va/ACAAAAAAQQMAAAAACUy2aoRLWbSWxGmj0DXTkY8pnE8zKLIV0wgDWzBVb27AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb3dubG9hZHMAAAAUAAAAAQEAADIyM19zaG9ydF9mbHktYXdheS0yDAAAAAEBAABGbHkgQXdheS53YXYUAAAAAQYAABAAAAAgAAAAMAAAAEQAAABgAAAACAAAAAQDAADVkwIAAAAAAAgAAAAEAwAAt0MJAAAAAAAIAAAABAMAALpDCQAAAAAACAAAAAQDAAD7L2YFAAAAAAgAAAAEAwAA/i9mBQAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBuWxQ/AAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:16:37 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r7" name="Ripples" uid="EE437B99DA108552AC3124B1DD3A986E" src="file:///premiumbeat-kit/Ripples.mp4" start="71071/24000s" duration="80080/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va+wCAAAAAAQQMAAAAI5ESd8FcBUfvA2HgNBPsJh3ylv2sGdyxmzWH+lSFJyo6AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMLAAAAAQEAAFJpcHBsZXMubW92ABQAAAABBgAAEAAAACAAAAAwAAAAQAAAAFwAAAAIAAAABAMAANWTAgAAAAAACAAAAAQDAAC3QwkAAAAAAAgAAAAEAwAA8EMJAAAAAAAIAAAABAMAAFEtZgUAAAAACAAAAAQDAAByLWYFAAAAABQAAAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAIAAAAAAQAAEG8wVgMAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAAAAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQAAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABEAQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAAAAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAAACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHAAAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4AQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r9" name="River Crossing" uid="6D9632FD93C13C7C448248817732C086" src="file:///premiumbeat-kit/River_Crossing.mp4" start="151151/24000s" duration="86086/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va/QCAAAAAAQQMAAAAJDekZ7Da03k05kljDe9AXnCYBGCCJCr9crq+EOvWikq8AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMSAAAAAQEAAFJpdmVyIENyb3NzaW5nLm1vdgAAFAAAAAEGAAAQAAAAIAAAADAAAABAAAAAXAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAADwQwkAAAAAAAgAAAAEAwAAUS1mBQAAAAAIAAAABAMAAIQtZgUAAAAAFAAAAAEGAACUAAAApAAAALQAAADEAAAA1AAAAAgAAAAABAAAQbzBWB0AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABgojR0AAAACAAAAAAEAABBufDxVwAAACQAAAABAQAAQUVBM0ZDOUItQjc4Qy0zQzlFLTlDNjktQTk0N0YxQjc3QzY4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAHgAAAAAAAAABRAAAOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAAAiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAAAAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIABAAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAAADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r10" name="Pigeons" uid="101D2C065BAF6238BE6D61B6BA65DB04" src="file:///premiumbeat-kit/Pigeons.mp4" start="237237/24000s" duration="44044/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va+wCAAAAAAQQMAAAAI/foE40ZJ2nVw9QFSGMB/mhjGAtv1GGRGt458Pndm+26AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMLAAAAAQEAAFBpZ2VvbnMubW92ABQAAAABBgAAEAAAACAAAAAwAAAAQAAAAFwAAAAIAAAABAMAANWTAgAAAAAACAAAAAQDAAC3QwkAAAAAAAgAAAAEAwAA8EMJAAAAAAAIAAAABAMAAFEtZgUAAAAACAAAAAQDAACcLWYFAAAAABQAAAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAIAAAAAAQAAEG8wVgsAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAAAAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQAAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABEAQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAAAAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAAACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHAAAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4AQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r11" name="Kite" uid="205686F037B39EC5D79D81FBE1D3F712" src="file:///premiumbeat-kit/Kite.mp4" start="386386/24000s" duration="61061/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va+gCAAAAAAQQMAAAAIrFtxOVdJ57NLxP0IdTdOLk+ysvVbqYlGuYcwIBCAF35AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMIAAAAAQEAAEtpdGUubW92FAAAAAEGAAAQAAAAIAAAADAAAABAAAAAXAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAADwQwkAAAAAAAgAAAAEAwAAUS1mBQAAAAAIAAAABAMAAL0tZgUAAAAAFAAAAAEGAACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAABAAAQbzBWEAAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABgojR0AAAACAAAAAAEAABBufDxVwAAACQAAAABAQAAQUVBM0ZDOUItQjc4Qy0zQzlFLTlDNjktQTk0N0YxQjc3QzY4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAAEBAAAAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAABSAAAEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAAAAAAEiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAAALABAAAAAAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAAEcAAACAAAAAAAAAAEsAAADQBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r13" name="Woman" uid="4CE10A804B42127BE3CD8681079ADBD5" src="file:///premiumbeat-kit/Woman.mp4" start="513513/24000s" duration="93093/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va+wCAAAAAAQQMAAAAF7XZnA22+az+93jz9B3iGLTYK00m+OVSp2AvdQKW70z6AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMJAAAAAQEAAFdvbWFuLm1vdgAAABQAAAABBgAAEAAAACAAAAAwAAAAQAAAAFwAAAAIAAAABAMAANWTAgAAAAAACAAAAAQDAAC3QwkAAAAAAAgAAAAEAwAA8EMJAAAAAAAIAAAABAMAAFEtZgUAAAAACAAAAAQDAAAfL2YFAAAAABQAAAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAIAAAAAAQAAEG8wVj5AAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAAAAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQAAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABEAQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAAAAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAAACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHAAAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4AQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r14" name="Walking" uid="ADD3A17ED3B267B719AB8CBDD9575CF3" src="file:///premiumbeat-kit/Walking.mp4" start="606606/24000s" duration="58058/24000s" hasVideo="1" format="r1">
+      <bookmark>Ym9va+wCAAAAAAQQMAAAAHGDuGQb3bItfBUmKIgpqhuyZAtA6GYYduVysmBOhy/x6AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABQAAAABAQAAQ29sb3IgR3JhZGluZyBQcm9SZXMLAAAAAQEAAFdhbGtpbmcubW92ABQAAAABBgAAEAAAACAAAAAwAAAAQAAAAFwAAAAIAAAABAMAANWTAgAAAAAACAAAAAQDAAC3QwkAAAAAAAgAAAAEAwAA8EMJAAAAAAAIAAAABAMAAFEtZgUAAAAACAAAAAQDAAA3L2YFAAAAABQAAAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAIAAAAAAQAAEG8wVkJAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAAAAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQAAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABEAQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAAAAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAAACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHAAAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4AQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 12:15:32 -0500"/>
+      </metadata>
+    </asset>
+    <effect id="r6" name="Color Correction" uid="FFColorCorrectionEffect"/>
+    <effect id="r8" name="Match Color" uid="FFColorMatchUserEffect"/>
+    <effect id="r12" name="Film Grain" uid=".../Effects.localized/Stylize.localized/Film Grain.localized/Film Grain.moef"/>
+  </resources>
+  <library location="file:///Users/Michael/Movies/Untitled.fcpbundle/">
+    <event name="Color Grading" uid="35D3BBC2-1012-3672-5187-0AD76EDD4B88">
+      <clip name="Banks of Tiber" duration="68068/24000s" start="3003/24000s" format="r1" tcFormat="NDF">
+        <video offset="3003/24000s" ref="r2" duration="68068/24000s" start="3003/24000s"/>
+      </clip>
+      <clip name="Cafe" duration="66066/24000s" start="447447/24000s" format="r1" tcFormat="NDF">
+        <video offset="447447/24000s" ref="r3" duration="66066/24000s" start="447447/24000s"/>
+      </clip>
+      <clip name="Fly Away" duration="42691772/720000s" format="r4">
+        <audio offset="0s" ref="r5" duration="42691772/720000s" role="dialogue" srcCh="1, 2"/>
+      </clip>
+      <clip name="Kite" duration="61061/24000s" start="386386/24000s" format="r1" tcFormat="NDF">
+        <video offset="386386/24000s" ref="r11" duration="61061/24000s" start="386386/24000s"/>
+      </clip>
+      <clip name="Pigeons" duration="44044/24000s" start="237237/24000s" format="r1" tcFormat="NDF">
+        <video offset="237237/24000s" ref="r10" duration="44044/24000s" start="237237/24000s"/>
+      </clip>
+      <clip name="Ripples" duration="80080/24000s" start="71071/24000s" format="r1" tcFormat="NDF">
+        <video offset="71071/24000s" ref="r7" duration="80080/24000s" start="71071/24000s"/>
+      </clip>
+      <clip name="River Crossing" duration="86086/24000s" start="151151/24000s" format="r1" tcFormat="NDF">
+        <video offset="151151/24000s" ref="r9" duration="86086/24000s" start="151151/24000s"/>
+      </clip>
+      <clip name="Walking" duration="58058/24000s" start="606606/24000s" format="r1" tcFormat="NDF">
+        <video offset="606606/24000s" ref="r14" duration="58058/24000s" start="606606/24000s"/>
+      </clip>
+      <clip name="Woman" duration="93093/24000s" start="513513/24000s" format="r1" tcFormat="NDF">
+        <video offset="513513/24000s" ref="r13" duration="93093/24000s" start="513513/24000s"/>
+      </clip>
+      <project name="Color Grading" uid="26478D67-7DB7-4A1E-BA53-C27926613BFE">
+        <sequence duration="1449448/24000s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <gap name="Gap" offset="0s" duration="26026/24000s" start="86400314/24000s"/>
+            <gap name="Gap" offset="582582/24000s" duration="866866/24000s" start="86400314/24000s"/>
+            <clip name="Banks of Tiber" offset="26026/24000s" duration="68068/24000s" start="3003/24000s" tcFormat="NDF">
+              <video offset="3003/24000s" ref="r2" duration="68068/24000s" start="3003/24000s"/>
+              <clip name="Fly Away" lane="-1" offset="1001/8000s" duration="624624/24000s" format="r4">
+                <adjust-volume>
+                  <param name="amount">
+                    <fadeOut type="linear" duration="2196240/720000s"/>
+                  </param>
+                </adjust-volume>
+                <audio offset="0s" ref="r5" duration="42691772/720000s" role="dialogue" srcCh="1, 2"/>
+              </clip>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="color_shadow" key="2003" value="0.846079 0.528374"/>
+                <param name="exposure_shadow" key="2011" value="0.51475"/>
+              </filter-video>
+            </clip>
+            <clip name="Ripples" offset="94094/24000s" duration="80080/24000s" start="71071/24000s" tcFormat="NDF">
+              <video offset="71071/24000s" ref="r7" duration="80080/24000s" start="71071/24000s"/>
+              <filter-video ref="r8" name="Match Color">
+                <data key="effectData">YnBsaXN0MDDUAQIDBAUGYGFYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIERIXGCE0NT9CQ0ZHSktOT1JTV11VJG51bGzTCQoLDA4QV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhDYACoQ+AA4AVWWx1bWFCdW1wc9MLExEUFRZccGVyc2lzdGVudElEgBSABIAFXxAkQjNCNzA4RjQtNTZFOC00RTZFLTkxQzgtQTYyMTc4Nzg0QzlC0goLGSCmGhscHR4fgAaACYALgA2AD4ARgBPaCxMiIyQlJicoKSorLC0uLzAxMjNZYmxhY2tCYWxYVGdhaW5ac2F0dXJhdGlvbllidW1wU2lnbWFUbGlmdFlibGFja0JhbFlZd2hpdGVCYWxYWXdoaXRlQmFsWYAIgAcjv4GnuwAAAAAjP/DtWAAAAAAjP/Er7cAAAAAjPkV5juAAAAAjv7n3y+AAAAAjP4Jb2kAAAAAjP7H3EcAAAAAjP6oN40AAAABfECQ4MkI2NUZDMy1DREI1LTQzOEEtQjgzMy0yQzRDQUE3RUQyRkbSNjc4OVokY2xhc3NuYW1lWCRjbGFzc2VzWkZGTHVtYUJ1bXClOjs8PT5aRkZMdW1hQnVtcF5GRkJhc2VEU09iamVjdF1GRk1vZGVsT2JqZWN0WERTT2JqZWN0WE5TT2JqZWN00hMLQCqACoAIXxAkNEZDMzhENjgtRjNBRC00NEEyLTkwRDctQjI3QTgzQzREQzlB0hMLRCqADIAIXxAkQzgwOTQ1ODYtNTQxQS00N0U4LTgzMUUtN0FGNkYzQ0RCREYw0hMLSCqADoAIXxAkQjZDREI0Q0ItOTVGMS00QkVGLUI4QjAtMjA2MTU1REE4OTQw0hMLTCqAEIAIXxAkRUMxQUFFRTMtRTkxMy00Mjk5LUE3RDMtNUI1NUM4OTkyNUJC0hMLUCqAEoAIXxAkMjlBRDUyODQtMkExQi00QjI5LUJBQjEtQ0YwNkNCNjA5NTgx0jY3VFVeTlNNdXRhYmxlQXJyYXmjVFY+V05TQXJyYXnSNjdYWV8QE0ZGTHVtYUJ1bXBDb250YWluZXKlWltcPT5fEBNGRkx1bWFCdW1wQ29udGFpbmVyXkZGQmFzZURTT2JqZWN0XUZGTW9kZWxPYmplY3TSNjdeX1xOU0RpY3Rpb25hcnmiXj5fEA9OU0tleWVkQXJjaGl2ZXLRYmNUcm9vdIABAAgAEQAaACMALQAyADcAUABWAF0AZQBwAHcAeQB7AH0AfwCBAIsAkgCfAKEAowClAMwA0QDYANoA3ADeAOAA4gDkAOYA+wEFAQoBFQEfASQBLgE4AUIBRAFGAU8BWAFhAWoBcwF8AYUBjgG1AboBxQHOAdkB3wHqAfkCBwIQAhkCHgIgAiICSQJOAlACUgJ5An4CgAKCAqkCrgKwArIC2QLeAuAC4gMJAw4DHQMhAykDLgNEA0oDYANvA30DggOPA5IDpAOnA6wAAAAAAAACAQAAAAAAAABkAAAAAAAAAAAAAAAAAAADrg==</data>
+              </filter-video>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="color_midtone" key="2002" value="0.754614 0.616838"/>
+                <param name="color_shadow" key="2003" value="0.490501 0.497979"/>
+                <param name="saturation_midtone" key="2006" value="0.411556"/>
+                <param name="exposure_shadow" key="2011" value="0.538149"/>
+              </filter-video>
+            </clip>
+            <clip name="River Crossing" offset="174174/24000s" duration="86086/24000s" start="151151/24000s" tcFormat="NDF">
+              <video offset="151151/24000s" ref="r9" duration="86086/24000s" start="151151/24000s"/>
+              <filter-video ref="r8" name="Match Color">
+                <data key="effectData">YnBsaXN0MDDUAQIDBAUGYGFYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIERIXGCE0NT9CQ0ZHSktOT1JTV11VJG51bGzTCQoLDA4QV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhDYACoQ+AA4AVWWx1bWFCdW1wc9MLExEUFRZccGVyc2lzdGVudElEgBSABIAFXxAkQjc2RTU3RTAtQTE0NC00RjZFLUE3RTItRkNGMkU2RTZGRkM20goLGSCmGhscHR4fgAaACYALgA2AD4ARgBPaCxMiIyQlJicoKSorLC0uLzAxMjNZYmxhY2tCYWxYVGdhaW5ac2F0dXJhdGlvbllidW1wU2lnbWFUbGlmdFlibGFja0JhbFlZd2hpdGVCYWxYWXdoaXRlQmFsWYAIgAcjv3pHBwAAAAAjP+8XUYAAAAAjP/TMzMAAAAAjPkV5juAAAAAjv47mvQAAAAAjP6Al5gAAAAAjP4krQ0AAAAAjP7z2CcAAAABfECRBRTZEQjMxQi04OEI1LTRGMDgtOUNGNS0yMTk3MEUwOUJBNjjSNjc4OVokY2xhc3NuYW1lWCRjbGFzc2VzWkZGTHVtYUJ1bXClOjs8PT5aRkZMdW1hQnVtcF5GRkJhc2VEU09iamVjdF1GRk1vZGVsT2JqZWN0WERTT2JqZWN0WE5TT2JqZWN00hMLQCqACoAIXxAkNkMyRUNCQkEtRENDNy00NTAxLTg5NEItNzUyNjZERTVDOTk10hMLRCqADIAIXxAkNEUwMTYwREEtNTI0Ny00NENDLUFFODItNkM2QjQyRjg0NkEw0hMLSCqADoAIXxAkNEI0QTQ4RDgtNDA1OC00Qjg0LUJCNkQtNDlBQUYyQzVDRjY20hMLTCqAEIAIXxAkQzBGQjg5OEEtNTZGNC00ODkyLTkxNzMtODBGMzE2NjIzMzEw0hMLUCqAEoAIXxAkRTc3RUYzQTUtRTVDOS00Q0FDLTk0MzMtOERCRDQzQTU2NjY20jY3VFVeTlNNdXRhYmxlQXJyYXmjVFY+V05TQXJyYXnSNjdYWV8QE0ZGTHVtYUJ1bXBDb250YWluZXKlWltcPT5fEBNGRkx1bWFCdW1wQ29udGFpbmVyXkZGQmFzZURTT2JqZWN0XUZGTW9kZWxPYmplY3TSNjdeX1xOU0RpY3Rpb25hcnmiXj5fEA9OU0tleWVkQXJjaGl2ZXLRYmNUcm9vdIABAAgAEQAaACMALQAyADcAUABWAF0AZQBwAHcAeQB7AH0AfwCBAIsAkgCfAKEAowClAMwA0QDYANoA3ADeAOAA4gDkAOYA+wEFAQoBFQEfASQBLgE4AUIBRAFGAU8BWAFhAWoBcwF8AYUBjgG1AboBxQHOAdkB3wHqAfkCBwIQAhkCHgIgAiICSQJOAlACUgJ5An4CgAKCAqkCrgKwArIC2QLeAuAC4gMJAw4DHQMhAykDLgNEA0oDYANvA30DggOPA5IDpAOnA6wAAAAAAAACAQAAAAAAAABkAAAAAAAAAAAAAAAAAAADrg==</data>
+              </filter-video>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="exposure_highlight" key="2009" value="0.501283"/>
+                <param name="exposure_shadow" key="2011" value="0.467001"/>
+              </filter-video>
+            </clip>
+            <clip name="Pigeons" offset="260260/24000s" duration="44044/24000s" start="237237/24000s" tcFormat="NDF">
+              <video offset="237237/24000s" ref="r10" duration="44044/24000s" start="237237/24000s"/>
+              <filter-video ref="r8" name="Match Color">
+                <data key="effectData">YnBsaXN0MDDUAQIDBAUGYGFYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIERIXGCE0NT9CQ0ZHSktOT1JTV11VJG51bGzTCQoLDA4QV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhDYACoQ+AA4AVWWx1bWFCdW1wc9MLExEUFRZccGVyc2lzdGVudElEgBSABIAFXxAkNkVDMTZGRDktNkExNS00MTlDLTg4MjItQzk4NTk2MzYxMTBC0goLGSCmGhscHR4fgAaACYALgA2AD4ARgBPaCxMiIyQlJicoKSorLC0uLzAxMjNZYmxhY2tCYWxYVGdhaW5ac2F0dXJhdGlvbllidW1wU2lnbWFUbGlmdFlibGFja0JhbFlZd2hpdGVCYWxYWXdoaXRlQmFsWYAIgAcjP5EPgcAAAAAjP/COa4AAAAAjP/Er7cAAAAAjPkV5juAAAAAjv7DsdkAAAAAjv4PBa4AAAAAjP7/cFkAAAAAjP4k8nQAAAABfECRGNDhENjJEOS02ODQyLTREOTctOTgzMC1CQkYyNjNEMzU4MUbSNjc4OVokY2xhc3NuYW1lWCRjbGFzc2VzWkZGTHVtYUJ1bXClOjs8PT5aRkZMdW1hQnVtcF5GRkJhc2VEU09iamVjdF1GRk1vZGVsT2JqZWN0WERTT2JqZWN0WE5TT2JqZWN00hMLQCqACoAIXxAkM0ZBRjY2ODctMzc0MC00NjA3LTgyRTQtRjY2QjdDNDk2NzAx0hMLRCqADIAIXxAkMTU4NjJFNDYtMjc0Qy00NEJBLUI2RjctMDIxMjc5RDY3RTMw0hMLSCqADoAIXxAkRUZFQkJFRDMtRUIwOC00NEU0LUI3RTAtNTg0RTA0NzYxQjQ20hMLTCqAEIAIXxAkNTRGNUEyOUItNzVGNy00QzU0LTkxRjMtRDEyOEMwNUVFQUZF0hMLUCqAEoAIXxAkMUZBNTA5REUtQkYyRi00Nzg5LUE2OUMtNjI0QTJGODAyOTM10jY3VFVeTlNNdXRhYmxlQXJyYXmjVFY+V05TQXJyYXnSNjdYWV8QE0ZGTHVtYUJ1bXBDb250YWluZXKlWltcPT5fEBNGRkx1bWFCdW1wQ29udGFpbmVyXkZGQmFzZURTT2JqZWN0XUZGTW9kZWxPYmplY3TSNjdeX1xOU0RpY3Rpb25hcnmiXj5fEA9OU0tleWVkQXJjaGl2ZXLRYmNUcm9vdIABAAgAEQAaACMALQAyADcAUABWAF0AZQBwAHcAeQB7AH0AfwCBAIsAkgCfAKEAowClAMwA0QDYANoA3ADeAOAA4gDkAOYA+wEFAQoBFQEfASQBLgE4AUIBRAFGAU8BWAFhAWoBcwF8AYUBjgG1AboBxQHOAdkB3wHqAfkCBwIQAhkCHgIgAiICSQJOAlACUgJ5An4CgAKCAqkCrgKwArIC2QLeAuAC4gMJAw4DHQMhAykDLgNEA0oDYANvA30DggOPA5IDpAOnA6wAAAAAAAACAQAAAAAAAABkAAAAAAAAAAAAAAAAAAADrg==</data>
+              </filter-video>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="color_global" key="2000" value="0.320857 0.512341"/>
+                <param name="exposure_highlight" key="2009" value="0.452076"/>
+                <param name="exposure_midtone" key="2010" value="0.504975"/>
+                <param name="exposure_shadow" key="2011" value="0.504975"/>
+              </filter-video>
+            </clip>
+            <clip name="Kite" offset="304304/24000s" duration="61061/24000s" start="386386/24000s" tcFormat="NDF">
+              <video offset="386386/24000s" ref="r11" duration="61061/24000s" start="386386/24000s"/>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="color_highlight" key="2001" value="0.216541 0.58071"/>
+                <param name="color_shadow" key="2003" value="0.58498 0.530958"/>
+                <param name="saturation_global" key="2004" value="0.597676"/>
+                <param name="exposure_highlight" key="2009" value="0.427394"/>
+                <param name="exposure_midtone" key="2010" value="0.399837"/>
+                <param name="exposure_shadow" key="2011" value="0.590582"/>
+              </filter-video>
+              <filter-video ref="r12" name="Film Grain">
+                <param name="Amount" key="9999/987114367/100/987114368/2/100" value="0.3758"/>
+                <param name="Style" key="9999/987114367/100/999119356/2/100" value="1 (Realistic Grain)"/>
+              </filter-video>
+            </clip>
+            <clip name="Woman" offset="365365/24000s" duration="93093/24000s" start="513513/24000s" tcFormat="NDF">
+              <video offset="513513/24000s" ref="r13" duration="93093/24000s" start="513513/24000s"/>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="color_highlight" key="2001" value="0.639319 0.554182"/>
+                <param name="color_shadow" key="2003" value="0.717412 0.538324"/>
+                <param name="exposure_highlight" key="2009" value="0.4801"/>
+                <param name="exposure_midtone" key="2010" value="0.298197"/>
+                <param name="exposure_shadow" key="2011" value="0.603856"/>
+              </filter-video>
+            </clip>
+            <clip name="Cafe" offset="458458/24000s" duration="66066/24000s" start="447447/24000s" tcFormat="NDF">
+              <video offset="447447/24000s" ref="r3" duration="66066/24000s" start="447447/24000s"/>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="color_midtone" key="2002" value="0.604511 0.541842"/>
+                <param name="color_shadow" key="2003" value="0.762295 0.553249"/>
+                <param name="saturation_global" key="2004" value="0.421311"/>
+                <param name="saturation_midtone" key="2006" value="0.511602"/>
+                <param name="exposure_highlight" key="2009" value="0.441406"/>
+                <param name="exposure_midtone" key="2010" value="0.308088"/>
+                <param name="exposure_shadow" key="2011" value="0.582264"/>
+              </filter-video>
+            </clip>
+            <clip name="Walking" offset="524524/24000s" duration="58058/24000s" start="606606/24000s" tcFormat="NDF">
+              <video offset="606606/24000s" ref="r14" duration="58058/24000s" start="606606/24000s"/>
+              <filter-video ref="r8" name="Match Color">
+                <data key="effectData">YnBsaXN0MDDUAQIDBAUGYGFYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIERIXGCE0NT9CQ0ZHSktOT1JTV11VJG51bGzTCQoLDA4QV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhDYACoQ+AA4AVWWx1bWFCdW1wc9MLExEUFRZccGVyc2lzdGVudElEgBSABIAFXxAkODZFRTMyQzgtOTQ4RC00MjU2LTg2NTctRjk3RTczM0ExNUE40goLGSCmGhscHR4fgAaACYALgA2AD4ARgBPaCxMiIyQlJicoKSorLC0uLzAxMjNZYmxhY2tCYWxYVGdhaW5ac2F0dXJhdGlvbllidW1wU2lnbWFUbGlmdFlibGFja0JhbFlZd2hpdGVCYWxYWXdoaXRlQmFsWYAIgAcjP4vQHoAAAAAjP+6XemAAAAAjP/OerYAAAAAjPkV5juAAAAAjP0DwVgAAAAAjP6I1rmAAAAAjP4ZJ1kAAAAAjP79nxaAAAABfECQwRTE3OTFEQS0wMTI5LTRENjItODc5Qi1GN0VCOTdGNDJDMjHSNjc4OVokY2xhc3NuYW1lWCRjbGFzc2VzWkZGTHVtYUJ1bXClOjs8PT5aRkZMdW1hQnVtcF5GRkJhc2VEU09iamVjdF1GRk1vZGVsT2JqZWN0WERTT2JqZWN0WE5TT2JqZWN00hMLQCqACoAIXxAkNUM4ODMyMzgtQTM3RS00NDdFLUFEMzctMDAzQTNBNDRGQzRD0hMLRCqADIAIXxAkOUZGM0U2M0QtQzA2NC00NkM5LUFDQzktNkM3QzRCMTdBM0VD0hMLSCqADoAIXxAkQUIwRkMxRTAtNjkwMC00Q0Y0LTk5MUEtOTk1NjkxMTk3MjhD0hMLTCqAEIAIXxAkQTNBMUJGQTktMzIwQy00Mjc0LUEwMzQtMDcwOEQxODZBNjU50hMLUCqAEoAIXxAkODhBQjQ1RDQtRjIzNi00QjRDLUE2MDEtMUFEMkJGMTNBNUIx0jY3VFVeTlNNdXRhYmxlQXJyYXmjVFY+V05TQXJyYXnSNjdYWV8QE0ZGTHVtYUJ1bXBDb250YWluZXKlWltcPT5fEBNGRkx1bWFCdW1wQ29udGFpbmVyXkZGQmFzZURTT2JqZWN0XUZGTW9kZWxPYmplY3TSNjdeX1xOU0RpY3Rpb25hcnmiXj5fEA9OU0tleWVkQXJjaGl2ZXLRYmNUcm9vdIABAAgAEQAaACMALQAyADcAUABWAF0AZQBwAHcAeQB7AH0AfwCBAIsAkgCfAKEAowClAMwA0QDYANoA3ADeAOAA4gDkAOYA+wEFAQoBFQEfASQBLgE4AUIBRAFGAU8BWAFhAWoBcwF8AYUBjgG1AboBxQHOAdkB3wHqAfkCBwIQAhkCHgIgAiICSQJOAlACUgJ5An4CgAKCAqkCrgKwArIC2QLeAuAC4gMJAw4DHQMhAykDLgNEA0oDYANvA30DggOPA5IDpAOnA6wAAAAAAAACAQAAAAAAAABkAAAAAAAAAAAAAAAAAAADrg==</data>
+              </filter-video>
+              <filter-video ref="r6" name="Color Correction">
+                <param name="color_midtone" key="2002" value="0.298975 0.576298"/>
+                <param name="exposure_highlight" key="2009" value="0.453358"/>
+                <param name="exposure_midtone" key="2010" value="0.390528"/>
+                <param name="exposure_shadow" key="2011" value="0.535662"/>
+              </filter-video>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+    <smart-collection name="Projects" match="all">
+      <match-clip rule="is" type="project"/>
+    </smart-collection>
+    <smart-collection name="All Video" match="any">
+      <match-media rule="is" type="videoOnly"/>
+      <match-media rule="is" type="videoWithAudio"/>
+    </smart-collection>
+    <smart-collection name="Audio Only" match="all">
+      <match-media rule="is" type="audioOnly"/>
+    </smart-collection>
+    <smart-collection name="Stills" match="all">
+      <match-media rule="is" type="stills"/>
+    </smart-collection>
+    <smart-collection name="Favorites" match="all">
+      <match-ratings value="favorites"/>
+    </smart-collection>
+  </library>
+</fcpxml>

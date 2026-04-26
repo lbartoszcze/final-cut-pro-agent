@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.5">
+  <resources>
+    <format id="r1" name="FFVideoFormatRateUndefined"/>
+    <format id="r7" name="FFVideoFormat1080p2398" frameDuration="1001/24000s" width="1920" height="1080"/>
+    <asset id="r2" name="0026_sweeping slam 3" uid="42857C72D2D0920007F85CEF7C153F7C" src="file:///premiumbeat-kit/0026_sweeping_slam_3.mp4" start="0s" duration="6s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9vazgDAAAAAAQQMAAAAGUFizKW6niWlgHFL6+UrpCB7ftbeSkAkrWTXtlNCtTRNAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb3dubG9hZHMAAAAeAAAAAQEAAHRyYWlsZXItY29uc3RydWN0aW9uLWtpdF93YXYgMgAADwAAAAEBAABBY3Rpb24gVHJhaWxlcnMAGAAAAAEBAAAwMDI2X3N3ZWVwaW5nIHNsYW0gMy53YXYYAAAAAQYAABAAAAAgAAAAMAAAAEQAAABsAAAAhAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC6QwkAAAAAAAgAAAAEAwAAJIRhBQAAAAAIAAAABAMAACWEYQUAAAAACAAAAAQDAABEhGEFAAAAABgAAAABBgAAxAAAANQAAADkAAAA9AAAAAQBAAAUAQAACAAAAAAEAABBtTuGagAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAApAAAAAAAAAAFEAAAJAEAAAAAAAAQEAAAVAEAAAAAAABAEAAARAEAAAAAAAACIAAAIAIAAAAAAAAFIAAAkAEAAAAAAAAQIAAAoAEAAAAAAAARIAAA1AEAAAAAAAASIAAAtAEAAAAAAAATIAAAxAEAAAAAAAAgIAAAAAIAAAAAAAAwIAAALAIAAAAAAAABwAAAdAEAAAAAAAARwAAAIAAAAAAAAAASwAAAhAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-14 08:43:22 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r3" name="0026_sweeping slam 5" uid="1D1FF006429071A03F7974362473607C" src="file:///premiumbeat-kit/0026_sweeping_slam_5.mp4" start="0s" duration="6s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9vazgDAAAAAAQQMAAAACq9Sip5U15PHyM95dJEdgsKu7hfT/QPVmPuZX8q+nQNNAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb3dubG9hZHMAAAAeAAAAAQEAAHRyYWlsZXItY29uc3RydWN0aW9uLWtpdF93YXYgMgAADwAAAAEBAABBY3Rpb24gVHJhaWxlcnMAGAAAAAEBAAAwMDI2X3N3ZWVwaW5nIHNsYW0gNS53YXYYAAAAAQYAABAAAAAgAAAAMAAAAEQAAABsAAAAhAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC6QwkAAAAAAAgAAAAEAwAAJIRhBQAAAAAIAAAABAMAACWEYQUAAAAACAAAAAQDAABGhGEFAAAAABgAAAABBgAAxAAAANQAAADkAAAA9AAAAAQBAAAUAQAACAAAAAAEAABBtTuGagAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAApAAAAAAAAAAFEAAAJAEAAAAAAAAQEAAAVAEAAAAAAABAEAAARAEAAAAAAAACIAAAIAIAAAAAAAAFIAAAkAEAAAAAAAAQIAAAoAEAAAAAAAARIAAA1AEAAAAAAAASIAAAtAEAAAAAAAATIAAAxAEAAAAAAAAgIAAAAAIAAAAAAAAwIAAALAIAAAAAAAABwAAAdAEAAAAAAAARwAAAIAAAAAAAAAASwAAAhAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-14 08:44:18 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r4" name="0026_sweeping slam 6" uid="66EE3713255DA08251807A0EBD4F71FB" src="file:///premiumbeat-kit/0026_sweeping_slam_6.mp4" start="0s" duration="312000/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9vazgDAAAAAAQQMAAAANr8EhN4HpFWqHHIB/jbpPhdNrVmzXmnYsk8p8BHGkyqNAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwACQAAAAEBAABEb3dubG9hZHMAAAAeAAAAAQEAAHRyYWlsZXItY29uc3RydWN0aW9uLWtpdF93YXYgMgAADwAAAAEBAABBY3Rpb24gVHJhaWxlcnMAGAAAAAEBAAAwMDI2X3N3ZWVwaW5nIHNsYW0gNi53YXYYAAAAAQYAABAAAAAgAAAAMAAAAEQAAABsAAAAhAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAAC6QwkAAAAAAAgAAAAEAwAAJIRhBQAAAAAIAAAABAMAACWEYQUAAAAACAAAAAQDAABHhGEFAAAAABgAAAABBgAAxAAAANQAAADkAAAA9AAAAAQBAAAUAQAACAAAAAAEAABBtTuGagAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAApAAAAAAAAAAFEAAAJAEAAAAAAAAQEAAAVAEAAAAAAABAEAAARAEAAAAAAAACIAAAIAIAAAAAAAAFIAAAkAEAAAAAAAAQIAAAoAEAAAAAAAARIAAA1AEAAAAAAAASIAAAtAEAAAAAAAATIAAAxAEAAAAAAAAgIAAAAAIAAAAAAAAwIAAALAIAAAAAAAABwAAAdAEAAAAAAAARwAAAIAAAAAAAAAASwAAAhAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-14 08:43:56 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r5" name="0039_drone_screams" uid="538B1F3274C2E6A608CD06B1906DAAC2" src="file:///premiumbeat-kit/0039_drone_screams.mp4" start="0s" duration="5766190/48000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <bookmark>Ym9va0wDAAAAAAQQMAAAAD+MdC+eKm0fo+Lx/t+Cwpnt8IpFs37GAOdawbSsGSwpSAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABEAAAABAQAAM0QgVHJhaWxlciBUaXRsZXMAAAAGAAAAAQEAAEFzc2V0cwAACwAAAAEBAABNdXNpYyAmIFNGWAAWAAAAAQEAADAwMzlfZHJvbmVfc2NyZWFtcy53YXYAABwAAAABBgAAEAAAACAAAAAwAAAAQAAAAFwAAABsAAAAgAAAAAgAAAAEAwAA1ZMCAAAAAAAIAAAABAMAALdDCQAAAAAACAAAAAQDAADwQwkAAAAAAAgAAAAEAwAAmmlkBQAAAAAIAAAABAMAAKBpZAUAAAAACAAAAAQDAAC0RmYFAAAAAAgAAAAEAwAAzEZmBQAAAAAcAAAAAQYAAMQAAADUAAAA5AAAAPQAAAAEAQAAFAEAACQBAAAIAAAAAAQAAEG8vWIaAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAUAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAACgAAAAAAAAAAUQAAA0AQAAAAAAABAQAABoAQAAAAAAAEAQAABYAQAAAAAAAAIgAAA0AgAAAAAAAAUgAACkAQAAAAAAABAgAAC0AQAAAAAAABEgAADoAQAAAAAAABIgAADIAQAAAAAAABMgAADYAQAAAAAAACAgAAAUAgAAAAAAADAgAABAAgAAAAAAAAHAAACIAQAAAAAAABHAAAAgAAAAAAAAABLAAACYAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 14:30:40 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r6" name="204_short_destroyer_0030" uid="BF29AE945AD61D1D539446B407DB7168" src="file:///premiumbeat-kit/204_short_destroyer_0030.mp4" start="0s" duration="1323001/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+      <bookmark>Ym9va1ADAAAAAAQQMAAAAMkU4Rm0lisoWh6dDrXWpVrXXJs+heoodhdxpraawQvuTAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAE1pY2hhZWwABgAAAAEBAABNb3ZpZXMAABEAAAABAQAAM0QgVHJhaWxlciBUaXRsZXMAAAAGAAAAAQEAAEFzc2V0cwAACwAAAAEBAABNdXNpYyAmIFNGWAAcAAAAAQEAADIwNF9zaG9ydF9kZXN0cm95ZXJfMDAzMC53YXYcAAAAAQYAABAAAAAgAAAAMAAAAEAAAABcAAAAbAAAAIAAAAAIAAAABAMAANWTAgAAAAAACAAAAAQDAAC3QwkAAAAAAAgAAAAEAwAA8EMJAAAAAAAIAAAABAMAAJppZAUAAAAACAAAAAQDAACgaWQFAAAAAAgAAAAEAwAAtEZmBQAAAAAIAAAABAMAAFVHZgUAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBvHKG+gAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAFAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAApAAAAAAAAAAFEAAAOAEAAAAAAAAQEAAAbAEAAAAAAABAEAAAXAEAAAAAAAACIAAAOAIAAAAAAAAFIAAAqAEAAAAAAAAQIAAAuAEAAAAAAAARIAAA7AEAAAAAAAASIAAAzAEAAAAAAAATIAAA3AEAAAAAAAAgIAAAGAIAAAAAAAAwIAAARAIAAAAAAAABwAAAjAEAAAAAAAARwAAAIAAAAAAAAAASwAAAnAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-15 14:30:40 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r9" name="Starry Background" uid="03A086C0DB99A11202816DDDBE221455" src="file:///premiumbeat-kit/Starry_Background.mp4" start="2002/24000s" duration="182182/24000s" hasVideo="1" format="r7">
+      <bookmark>Ym9va8gDAAAAAAQQMAAAAJa8H2oko115y3R3N45QJz0KnLVOxoGyn9r4tV9qZtEG6AIAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAHAAAAAQEAAEFyY2hpdmUAEQAAAAEBAAAzRCBUaXRsZSBUdXRvcmlhbAAAAAoAAAABAQAAR2FsYXh5Lm1vdgAAEAAAAAEGAAAQAAAAIAAAADAAAABMAAAACAAAAAQDAACeNwAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAABZSCAAAAAAACAAAAAQDAAAXUggAAAAAABAAAAABBgAAeAAAAIgAAACYAAAAqAAAAAgAAAAABAAAQby7PCEAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAABgAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0FyY2hpdmUvCAAAAAQDAAAAAAC/0QEAAAgAAAAABAAAQbugh5cAAAAkAAAAAQEAADEzMjA2RTY5LTNBMDctMzU2OC1CMjI4LTczRDAyRTUxQTNGNxgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEAAAAAEBAAAvVm9sdW1lcy9BcmNoaXZlCAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAYAAAAP7///8A8AAAAAAAAAcAAAACIAAANAIAAAAAAAAFIAAApAEAAAAAAAAQIAAAtAEAAAAAAAARIAAA6AEAAAAAAAASIAAAyAEAAAAAAAATIAAA2AEAAAAAAAAgIAAAFAIAAAAAAAAEAAAAAwMAAADwAAAEAAAAAwMAAAAAAAAEAAAAAwMAAAEAAAAUAAAAAQYAAKgCAAC0AgAAwAIAALQCAAC0AgAAqAAAAP7///8BAAAAQAIAAA0AAAAEEAAAYAAAAAAAAAAFEAAAuAAAAAAAAAAQEAAA4AAAAAAAAABAEAAA0AAAAAAAAAAAIAAAzAIAAAAAAAACIAAAjAEAAAAAAAAFIAAAAAEAAAAAAAAQIAAAIAAAAAAAAAARIAAAQAEAAAAAAAASIAAAIAEAAAAAAAATIAAAMAEAAAAAAAAgIAAAbAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-10 21:02:25 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r12" name="Sci-Fi Flare" uid="87F6B78A8DB10919EF170596A671C1FE" src="file:///premiumbeat-kit/Sci-Fi_Flare.mp4" start="2002/24000s" duration="51051/24000s" hasVideo="1" format="r7">
+      <bookmark>Ym9va8wDAAAAAAQQMAAAAGRVYdTLR+WoavLUtHlYZ5fQCftxKTHX9vJoHPvZ+sxS7AIAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAHAAAAAQEAAEFyY2hpdmUAEQAAAAEBAAAzRCBUaXRsZSBUdXRvcmlhbAAAABAAAAABAQAAU2NpLUZpIEZsYXJlLm1vdhAAAAABBgAAEAAAACAAAAAwAAAATAAAAAgAAAAEAwAAnjcAAAAAAAAIAAAABAMAAAIAAAAAAAAACAAAAAQDAAAWUggAAAAAAAgAAAAEAwAAGlIIAAAAAAAQAAAAAQYAAHwAAACMAAAAnAAAAKwAAAAIAAAAAAQAAEG8u0FrAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAYAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9BcmNoaXZlLwgAAAAEAwAAAAAAv9EBAAAIAAAAAAQAAEG7oIeXAAAAJAAAAAEBAAAxMzIwNkU2OS0zQTA3LTM1NjgtQjIyOC03M0QwMkU1MUEzRjcYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABAAAAABAQAAL1ZvbHVtZXMvQXJjaGl2ZQgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAADgCAAAAAAAABSAAAKgBAAAAAAAAECAAALgBAAAAAAAAESAAAOwBAAAAAAAAEiAAAMwBAAAAAAAAEyAAANwBAAAAAAAAICAAABgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAFAAAAAEGAACsAgAAuAIAAMQCAAC4AgAAuAIAAKgAAAD+////AQAAAEQCAAANAAAABBAAAGQAAAAAAAAABRAAALwAAAAAAAAAEBAAAOQAAAAAAAAAQBAAANQAAAAAAAAAACAAANACAAAAAAAAAiAAAJABAAAAAAAABSAAAAQBAAAAAAAAECAAACAAAAAAAAAAESAAAEQBAAAAAAAAEiAAACQBAAAAAAAAEyAAADQBAAAAAAAAICAAAHABAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-10 21:20:39 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r13" name="Blue Flare" uid="D24E774D815D12EAFE51A12AEF1B57F8" src="file:///premiumbeat-kit/Blue_Flare.mp4" start="2002/24000s" duration="51051/24000s" hasVideo="1" format="r7">
+      <bookmark>Ym9va8wDAAAAAAQQMAAAAID0777Fmd5MOfe5vyfVbGSerPfmZV8yiJssrpilgYGQ7AIAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAHAAAAAQEAAEFyY2hpdmUAEQAAAAEBAAAzRCBUaXRsZSBUdXRvcmlhbAAAAA4AAAABAQAAQmx1ZSBGbGFyZS5tb3YAABAAAAABBgAAEAAAACAAAAAwAAAATAAAAAgAAAAEAwAAnjcAAAAAAAAIAAAABAMAAAIAAAAAAAAACAAAAAQDAAAWUggAAAAAAAgAAAAEAwAANFIIAAAAAAAQAAAAAQYAAHwAAACMAAAAnAAAAKwAAAAIAAAAAAQAAEG8vAZdAAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAYAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9BcmNoaXZlLwgAAAAEAwAAAAAAv9EBAAAIAAAAAAQAAEG7oIeXAAAAJAAAAAEBAAAxMzIwNkU2OS0zQTA3LTM1NjgtQjIyOC03M0QwMkU1MUEzRjcYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABAAAAABAQAAL1ZvbHVtZXMvQXJjaGl2ZQgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAGCiNHQAAAAIAAAAAAQAAEG58PFXAAAAJAAAAAEBAABBRUEzRkM5Qi1CNzhDLTNDOUUtOUM2OS1BOTQ3RjFCNzdDNjgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAADgCAAAAAAAABSAAAKgBAAAAAAAAECAAALgBAAAAAAAAESAAAOwBAAAAAAAAEiAAAMwBAAAAAAAAEyAAANwBAAAAAAAAICAAABgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAFAAAAAEGAACsAgAAuAIAAMQCAAC4AgAAuAIAAKgAAAD+////AQAAAEQCAAANAAAABBAAAGQAAAAAAAAABRAAALwAAAAAAAAAEBAAAOQAAAAAAAAAQBAAANQAAAAAAAAAACAAANACAAAAAAAAAiAAAJABAAAAAAAABSAAAAQBAAAAAAAAECAAACAAAAAAAAAAESAAAEQBAAAAAAAAEiAAACQBAAAAAAAAEyAAADQBAAAAAAAAICAAAHABAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-11 11:21:45 -0500"/>
+      </metadata>
+    </asset>
+    <asset id="r16" name="Galaxy" uid="03A086C0DB99A11202816DDDBE221455" src="file:///premiumbeat-kit/Galaxy.mp4" start="2002/24000s" duration="182182/24000s" hasVideo="1" format="r7">
+      <bookmark>Ym9va8gDAAAAAAQQMAAAAJa8H2oko115y3R3N45QJz0KnLVOxoGyn9r4tV9qZtEG6AIAAAQAAAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAHAAAAAQEAAEFyY2hpdmUAEQAAAAEBAAAzRCBUaXRsZSBUdXRvcmlhbAAAAAoAAAABAQAAR2FsYXh5Lm1vdgAAEAAAAAEGAAAQAAAAIAAAADAAAABMAAAACAAAAAQDAACeNwAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAABZSCAAAAAAACAAAAAQDAAAXUggAAAAAABAAAAABBgAAeAAAAIgAAACYAAAAqAAAAAgAAAAABAAAQby7PCEAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAABgAAAABCQAAZmlsZTovLy9Wb2x1bWVzL0FyY2hpdmUvCAAAAAQDAAAAAAC/0QEAAAgAAAAABAAAQbugh5cAAAAkAAAAAQEAADEzMjA2RTY5LTNBMDctMzU2OC1CMjI4LTczRDAyRTUxQTNGNxgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEAAAAAEBAAAvVm9sdW1lcy9BcmNoaXZlCAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAYKI0dAAAAAgAAAAABAAAQbnw8VcAAAAkAAAAAQEAAEFFQTNGQzlCLUI3OEMtM0M5RS05QzY5LUE5NDdGMUI3N0M2OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAYAAAAP7///8A8AAAAAAAAAcAAAACIAAANAIAAAAAAAAFIAAApAEAAAAAAAAQIAAAtAEAAAAAAAARIAAA6AEAAAAAAAASIAAAyAEAAAAAAAATIAAA2AEAAAAAAAAgIAAAFAIAAAAAAAAEAAAAAwMAAADwAAAEAAAAAwMAAAAAAAAEAAAAAwMAAAEAAAAUAAAAAQYAAKgCAAC0AgAAwAIAALQCAAC0AgAAqAAAAP7///8BAAAAQAIAAA0AAAAEEAAAYAAAAAAAAAAFEAAAuAAAAAAAAAAQEAAA4AAAAAAAAABAEAAA0AAAAAAAAAAAIAAAzAIAAAAAAAACIAAAjAEAAAAAAAAFIAAAAAEAAAAAAAAQIAAAIAAAAAAAAAARIAAAQAEAAAAAAAASIAAAIAEAAAAAAAATIAAAMAEAAAAAAAAgIAAAbAEAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+      <metadata>
+        <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+          <array>
+            <string>Apple ProRes 422</string>
+          </array>
+        </md>
+        <md key="com.apple.proapps.mio.ingestDate" value="2016-04-11 11:21:45 -0500"/>
+      </metadata>
+    </asset>
+    <effect id="r8" name="Basic 3D" uid=".../Titles.localized/3D.localized/Basic 3D.localized/Basic 3D.moti"/>
+    <effect id="r10" name="50s TV" uid=".../Effects.localized/Looks.localized/50s TV.localized/50s TV.moef"/>
+    <effect id="r11" name="Vignette" uid=".../Effects.localized/Stylize.localized/Vignette.localized/Vignette.moef"/>
+    <effect id="r14" name="Focus" uid=".../Effects.localized/Blur.localized/Focus.localized/Focus.moef"/>
+    <effect id="r15" name="Color Correction" uid="FFColorCorrectionEffect"/>
+  </resources>
+  <library location="file:///Volumes/Archive/Untitled.fcpbundle/">
+    <event name="3D Trailer Titles" uid="872E44EA-FE4C-9254-E60B-E520E1D04E65">
+      <clip name="0026_sweeping slam 3" duration="6s" format="r1">
+        <audio offset="0s" ref="r2" duration="6s" role="dialogue" srcCh="1, 2"/>
+      </clip>
+      <clip name="0026_sweeping slam 5" duration="6s" format="r1">
+        <audio offset="0s" ref="r3" duration="6s" role="dialogue" srcCh="1, 2"/>
+      </clip>
+      <clip name="0026_sweeping slam 6" duration="4680000/720000s" format="r1">
+        <audio offset="0s" ref="r4" duration="4680000/720000s" role="dialogue" srcCh="1, 2"/>
+      </clip>
+      <clip name="0039_drone_screams" duration="86492850/720000s" format="r1">
+        <audio offset="0s" ref="r5" duration="86492850/720000s" role="dialogue" srcCh="1, 2"/>
+      </clip>
+      <clip name="204_short_destroyer_0030" duration="21600017/720000s" format="r1">
+        <audio offset="0s" ref="r6" duration="21600017/720000s" role="dialogue" srcCh="1, 2"/>
+      </clip>
+      <clip name="Blue Flare" duration="51051/24000s" start="2002/24000s" format="r7" tcFormat="NDF">
+        <video offset="2002/24000s" ref="r13" duration="51051/24000s" start="2002/24000s"/>
+      </clip>
+      <clip name="Galaxy" duration="182182/24000s" start="2002/24000s" format="r7" tcFormat="NDF">
+        <video offset="2002/24000s" ref="r16" duration="182182/24000s" start="2002/24000s"/>
+      </clip>
+      <clip name="Sci-Fi Flare" duration="51051/24000s" start="2002/24000s" format="r7" tcFormat="NDF">
+        <video offset="2002/24000s" ref="r12" duration="51051/24000s" start="2002/24000s"/>
+      </clip>
+      <project name="3D Trailer Titles" uid="6690105F-B287-42BF-878E-9C99D141695C">
+        <sequence duration="2882880/24000s" format="r7" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <title name="Basic 3D: INFINITE LOOP" offset="0s" ref="r8" duration="168168/24000s" start="86486400/24000s">
+              <param name="Build Out" key="9999/10000/2/102" value="0"/>
+              <param name="Position" key="9999/10085/10086/1/100/101" value="0 -12.8399"/>
+              <param name="Anchor Point" key="9999/10085/10086/1/100/107" value="0 68.1327"/>
+              <param name="Alignment" key="9999/10085/10086/2/354/2959511101/401" value="1 (Center)"/>
+              <param name="Anchor Point" key="9999/10085/10086/2/357" value="0 (Character)"/>
+              <param name="Position" key="9999/10085/10086/2/358" value="0 69"/>
+              <param name="Alignment" key="9999/10085/10086/2/373" value="0 (Left) 2 (Bottom)"/>
+              <param name="Anchor Position" key="9999/10085/10086/2/375" value="2 (Typographic Center)"/>
+              <param name="Rotation" key="9999/10085/10086/5/10088/89/527/512/516" value="-21 -500 0 0 (Use Rotation)"/>
+              <param name="Rotation" key="9999/10085/10086/5/3000190033/89/527/512/516" value="-21 -570 0 1 (Use Orientation)"/>
+              <param name="Retime: In" key="9999/15365/100/1831547585/2/100">
+                <keyframeAnimation>
+                  <keyframe time="86492406/24000s" value="0.0539"/>
+                  <keyframe time="86493407/24000s" value="0.0602"/>
+                  <keyframe time="86494408/24000s" value="0.01"/>
+                  <keyframe time="86495409/24000s" value="0"/>
+                </keyframeAnimation>
+              </param>
+              <param name="Speed: In" key="9999/15365/100/1831926367/2/100" value="13 (Decelerate)"/>
+              <param name="Fade Duration: In" key="9999/15365/100/2928895728/2/100" value="0"/>
+              <param name="Speed: Out" key="9999/1828084260/100/1831929138/2/100" value="12 (Ease In)"/>
+              <param name="Fade Duration: Out" key="9999/1828084260/100/2929344721/2/100" value="0.375"/>
+              <param name="Animation Style " key="9999/2963027180/100/2979355852/2/100" value="8 (Tumble Zoom Down)"/>
+              <text>
+                <text-style ref="ts1">INFINITE</text-style>
+                <text-style ref="ts2"> LOOP</text-style>
+              </text>
+              <text-style-def id="ts1">
+                <text-style font="Marion" fontSize="150" fontFace="Regular" fontColor="1 0.999974 0.999991 1" baseline="29" alignment="center">
+                  <param name="Depth" key="504" value="38"/>
+                  <param name="Depth Direction" key="506" value="2 (Centered)"/>
+                  <param name="Front Edge" key="500" value="2 (Round)"/>
+                  <param name="Front Edge Size" key="502" value="3.38 3.38"/>
+                  <param name="Back Edge" key="501" value="0 (Same As Front)"/>
+                  <param name="Lighting" key="527">
+                    <param name="Lighting Style" key="508" value="9 (Diagonal Right)"/>
+                    <param name="Intensity" key="526" value="0.2"/>
+                    <param name="Environment" key="512">
+                      <param name="Type" key="533" value="7 (Soft Box Above)"/>
+                      <param name="Intensity" key="514" value="1.89"/>
+                      <param name="Rotation" key="516" value="-21 -500 0 0 (Use Rotation)"/>
+                      <param name="Environment Normalization" key="523" value="0.2"/>
+                    </param>
+                  </param>
+                  <param name="Material" key="509">
+                    <param name="Material" key="528" value="1 (Multiple)"/>
+                  </param>
+                  <param name="Hidden Channel" key="532" value="1"/>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.2 0.2"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="1"/>
+                    <param name="Sequence ID" key="2" value="2000"/>
+                    <param name="Is Edited" key="5" value="1"/>
+                  </param>
+                  <param name="Material" key="material:Old Steel">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflectivity" key="106" value="0.1648"/>
+                      <param name="Glossiness" key="105" value="0.3676"/>
+                      <param name="Depth" key="128" value="0.4047"/>
+                      <param name="Intensity" key="119" value="2.5 2.5"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="1">
+                        <param name="Image" key="1" value="3000076056"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.336315 0.336315 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0.37"/>
+                        <param name="Black Level" key="11" value="0.0153499"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.576342 0.576342"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="3000076054"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="0 (Normal)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Highlight Sharpness" key="130" value="0.75"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Distress:8 (Custom Bumps)">
+                      <param name="Layer Type" key="3" value="8 (Custom Bumps)"/>
+                      <param name="Type" key="4" value="0 (Scratches 1)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Bump Map Gain" key="107" value="0.322"/>
+                      <param name="Image" key="109">
+                        <param name="Image" key="1" value="3000076055"/>
+                        <param name="Bump Map Type" key="12" value="1 (Normal)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.01 0.01 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Surface" key="113" value="2 (Image)"/>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Color" key="3" value="0.972718 0.972741 0.972728"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Color" key="3" value="0.625859 0.625874 0.625866"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.3"/>
+                      <param name="Image Options" key="114">
+                        <param name="Image" key="1" value="3000076054"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.813368 0.813368"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="4"/>
+                    <param name="Sequence ID" key="2" value="2400"/>
+                    <param name="Is Edited" key="5" value="0"/>
+                    <param name="Shared Placement" key="106">
+                      <param name="Placement" key="3" value="0 (Independent)"/>
+                      <param name="Place On" key="2" value="0 (Object)"/>
+                      <param name="Side Placement" key="8" value="0 (Normal)"/>
+                      <param name="Position" key="5" value="0 -4.7"/>
+                      <param name="Scale" key="6" value="1 1 1 133 0.07 0.07"/>
+                      <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                    </param>
+                  </param>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.1 0.1"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="8"/>
+                    <param name="Sequence ID" key="2" value="2600"/>
+                    <param name="Is Edited" key="5" value="0"/>
+                  </param>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.1 0.1"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="16"/>
+                    <param name="Sequence ID" key="2" value="2800"/>
+                    <param name="Is Edited" key="5" value="0"/>
+                  </param>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.18 0.18"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="2"/>
+                    <param name="Sequence ID" key="2" value="2200"/>
+                    <param name="Is Edited" key="5" value="1"/>
+                  </param>
+                </text-style>
+              </text-style-def>
+              <text-style-def id="ts2">
+                <text-style font="Marion" fontSize="150" fontFace="Regular" fontColor="1 0.999974 0.999991 1" baseline="29" alignment="center">
+                  <param name="Depth" key="504" value="38"/>
+                  <param name="Depth Direction" key="506" value="2 (Centered)"/>
+                  <param name="Front Edge" key="500" value="2 (Round)"/>
+                  <param name="Front Edge Size" key="502" value="3.38 3.38"/>
+                  <param name="Back Edge" key="501" value="0 (Same As Front)"/>
+                  <param name="Lighting" key="527">
+                    <param name="Lighting Style" key="508" value="9 (Diagonal Right)"/>
+                    <param name="Intensity" key="526" value="0.2"/>
+                    <param name="Environment" key="512">
+                      <param name="Type" key="533" value="7 (Soft Box Above)"/>
+                      <param name="Intensity" key="514" value="1.89"/>
+                      <param name="Rotation" key="516" value="-21 -570 0 1 (Use Orientation)"/>
+                      <param name="Contrast" key="517" value="58"/>
+                      <param name="Environment Normalization" key="523" value="0.2"/>
+                    </param>
+                  </param>
+                  <param name="Material" key="509">
+                    <param name="Material" key="528" value="1 (Multiple)"/>
+                  </param>
+                  <param name="Hidden Channel" key="532" value="1"/>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.2 0.2"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="1"/>
+                    <param name="Sequence ID" key="2" value="2000"/>
+                    <param name="Is Edited" key="5" value="1"/>
+                  </param>
+                  <param name="Material" key="material:Old Steel">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflectivity" key="106" value="0.1648"/>
+                      <param name="Glossiness" key="105" value="0.3676"/>
+                      <param name="Depth" key="128" value="0.4047"/>
+                      <param name="Intensity" key="119" value="2.5 2.5"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="1">
+                        <param name="Image" key="1" value="3000076056"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.336315 0.336315 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0.37"/>
+                        <param name="Black Level" key="11" value="0.0153499"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.576342 0.576342"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="3000076054"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="0 (Normal)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Highlight Sharpness" key="130" value="0.75"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Distress:8 (Custom Bumps)">
+                      <param name="Layer Type" key="3" value="8 (Custom Bumps)"/>
+                      <param name="Type" key="4" value="0 (Scratches 1)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Bump Map Gain" key="107" value="0.322"/>
+                      <param name="Image" key="109">
+                        <param name="Image" key="1" value="3000076055"/>
+                        <param name="Bump Map Type" key="12" value="1 (Normal)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.01 0.01 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Surface" key="113" value="2 (Image)"/>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Color" key="3" value="0.972718 0.972741 0.972728"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Color" key="3" value="0.625859 0.625874 0.625866"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.3"/>
+                      <param name="Image Options" key="114">
+                        <param name="Image" key="1" value="3000076054"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="0 (Normal)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.813368 0.813368"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="4"/>
+                    <param name="Sequence ID" key="2" value="2400"/>
+                    <param name="Is Edited" key="5" value="0"/>
+                    <param name="Shared Placement" key="106">
+                      <param name="Placement" key="3" value="0 (Independent)"/>
+                      <param name="Place On" key="2" value="0 (Object)"/>
+                      <param name="Side Placement" key="8" value="0 (Normal)"/>
+                      <param name="Position" key="5" value="0 -4.7"/>
+                      <param name="Scale" key="6" value="1 1 1 133 0.07 0.07"/>
+                      <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                    </param>
+                  </param>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.1 0.1"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="8"/>
+                    <param name="Sequence ID" key="2" value="2600"/>
+                    <param name="Is Edited" key="5" value="0"/>
+                  </param>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.1 0.1"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="16"/>
+                    <param name="Sequence ID" key="2" value="2800"/>
+                    <param name="Is Edited" key="5" value="0"/>
+                  </param>
+                  <param name="Material" key="material:Brushed Circular">
+                    <param name="Layer" key="layer:Finish:4 (Custom Specular)">
+                      <param name="Layer Type" key="3" value="4 (Custom Specular)"/>
+                      <param name="Type" key="4" value="0 (Subtype)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="1 (Shared)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Glossiness" key="105" value="0.6481"/>
+                      <param name="Depth" key="128" value="12.19"/>
+                      <param name="Reverse Depth" key="129" value="1"/>
+                      <param name="Intensity Image" key="121">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Intensity Image" key="131" enabled="0">
+                        <param name="Image" key="1" value="2999994967"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Shininess" key="120" value="0.8 0.8"/>
+                      <param name="Shininess Image" key="122">
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                      </param>
+                      <param name="Shininess Image" key="132" enabled="0">
+                        <param name="Image" key="1" value="2999994966"/>
+                        <param name="Wrap Mode" key="5" value="1 (Repeat)"/>
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="1 (Shared)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                        <param name="White Level" key="10" value="0"/>
+                        <param name="Black Level" key="11" value="1"/>
+                      </param>
+                      <param name="Surface Blend" key="110" value="1"/>
+                      <param name="Specular Color Image" key="123">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Anisotropic" key="112">
+                        <param name="Geometry" key="113" value="1 (Cylindrical)"/>
+                        <param name="Place On" key="126" value="1 (Object)"/>
+                        <param name="Anisotropic Angle Image" key="124">
+                          <param name="Placement" key="7">
+                            <param name="Placement" key="3" value="0 (Independent)"/>
+                            <param name="Place On" key="2" value="0 (Object)"/>
+                            <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                            <param name="Position" key="5" value="0 0"/>
+                            <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                            <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                          </param>
+                        </param>
+                        <param name="Position" key="114" value="-3 -4"/>
+                        <param name="Highlight Sharpness" key="130" value="1"/>
+                      </param>
+                    </param>
+                    <param name="Layer" key="layer:Substance:8 (Generic)">
+                      <param name="Layer Type" key="3" value="8 (Generic)"/>
+                      <param name="Type" key="4" value="0 (Aged Concrete)"/>
+                      <param name="Placement" key="200">
+                        <param name="Placement" key="3" value="0 (Independent)"/>
+                        <param name="Place On" key="2" value="0 (Object)"/>
+                        <param name="Side Placement" key="8" value="0 (Normal)"/>
+                        <param name="Position" key="5" value="0 0"/>
+                        <param name="Scale" key="6" value="1 1 1 72 1 1"/>
+                        <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                      </param>
+                      <param name="Reflection Gradient" key="108">
+                        <param name="RGB" key="1">
+                          <param name="RGB1" key="1">
+                            <param name="Location" key="1" value="0.00276942"/>
+                            <param name="Middle" key="2" value="0.565176"/>
+                            <param name="Color" key="3" value="0.958058 0.998723 0.983774"/>
+                          </param>
+                          <param name="RGB2" key="2">
+                            <param name="Location" key="1" value="0.249049"/>
+                            <param name="Color" key="3" value="0.906843 0.907045 0.913793"/>
+                          </param>
+                          <param name="RGB3" key="3">
+                            <param name="Color" key="3" value="0.219322 0.219328 0.219325"/>
+                          </param>
+                        </param>
+                      </param>
+                      <param name="Shininess" key="109" value="0.7741"/>
+                      <param name="Image Options" key="114">
+                        <param name="Placement" key="7">
+                          <param name="Placement" key="3" value="0 (Independent)"/>
+                          <param name="Place On" key="2" value="0 (Object)"/>
+                          <param name="Side Placement" key="8" value="1 (Turn 90º)"/>
+                          <param name="Position" key="5" value="0 0"/>
+                          <param name="Scale" key="6" value="0.3 0.3 1 72 1 1"/>
+                          <param name="Rotation" key="7" value="0 0 0 0 (Use Rotation)"/>
+                        </param>
+                      </param>
+                      <param name="Brightness" key="111" value="0.18 0.18"/>
+                      <param name="Thickness" key="120" value="0.89 0.3842"/>
+                      <param name="Enable Edge" key="116" enabled="0"/>
+                    </param>
+                    <param name="Apply To" key="1" value="2"/>
+                    <param name="Sequence ID" key="2" value="2200"/>
+                    <param name="Is Edited" key="5" value="1"/>
+                  </param>
+                </text-style>
+              </text-style-def>
+              <adjust-crop mode="trim">
+                <trim-rect>
+                  <param name="top">
+                    <keyframeAnimation>
+                      <keyframe time="86491405/24000s" value="18.8889" curve="linear"/>
+                    </keyframeAnimation>
+                  </param>
+                  <param name="bottom">
+                    <keyframeAnimation>
+                      <keyframe time="86491405/24000s" value="18.8889" curve="linear"/>
+                    </keyframeAnimation>
+                  </param>
+                </trim-rect>
+              </adjust-crop>
+              <adjust-transform>
+                <param name="scale">
+                  <keyframeAnimation>
+                    <keyframe time="86486400/24000s" value="1.2 1.2"/>
+                    <keyframe time="2599654542/720000s" value="0.83 0.83"/>
+                  </keyframeAnimation>
+                </param>
+              </adjust-transform>
+              <adjust-blend>
+                <param name="amount">
+                  <keyframeAnimation>
+                    <keyframe time="86653567/24000s" value="1"/>
+                    <keyframe time="173309135/48000s" value="0"/>
+                  </keyframeAnimation>
+                </param>
+              </adjust-blend>
+              <clip name="0039_drone_screams" lane="-6" offset="18018/5s" duration="169169/24000s" format="r1">
+                <adjust-volume amount="-30.0461dB"/>
+                <audio offset="0s" ref="r5" duration="86492850/720000s" role="dialogue" srcCh="1, 2"/>
+              </clip>
+              <clip name="204_short_destroyer_0030" lane="-5" offset="2594592000/720000s" duration="2045872/720000s" start="19554144/720000s" format="r1">
+                <audio offset="0s" ref="r6" duration="21600017/720000s" role="dialogue" srcCh="1, 2"/>
+              </clip>
+              <clip name="0026_sweeping slam 3" lane="-4" offset="86486400/24000s" duration="230416/48000s" start="28792/24000s" format="r1">
+                <audio offset="0s" ref="r2" duration="6s" role="dialogue" srcCh="1, 2"/>
+              </clip>
+              <clip name="Sci-Fi Flare" lane="1" offset="86486400/24000s" duration="10010/24000s" start="2002/24000s" tcFormat="NDF">
+                <adjust-crop mode="trim">
+                  <trim-rect top="12.7778" bottom="12.7778"/>
+                </adjust-crop>
+                <adjust-blend mode="8 (Add)"/>
+                <video offset="2002/24000s" ref="r12" duration="51051/24000s" start="2002/24000s"/>
+              </clip>
+              <clip name="Sci-Fi Flare" lane="-2" offset="86494408/24000s" duration="43043/24000s" start="10010/24000s" tcFormat="NDF">
+                <adjust-crop mode="trim">
+                  <trim-rect top="12.7778" bottom="12.7778"/>
+                </adjust-crop>
+                <adjust-blend mode="8 (Add)"/>
+                <video offset="2002/24000s" ref="r12" duration="51051/24000s" start="2002/24000s"/>
+              </clip>
+              <clip name="Blue Flare" lane="-1" offset="86494408/24000s" duration="51051/24000s" start="2002/24000s" tcFormat="NDF">
+                <adjust-crop mode="trim">
+                  <trim-rect top="12.7778" bottom="12.7778"/>
+                </adjust-crop>
+                <adjust-blend mode="8 (Add)"/>
+                <video offset="2002/24000s" ref="r13" duration="51051/24000s" start="2002/24000s"/>
+              </clip>
+              <clip name="0026_sweeping slam 6" lane="-5" offset="86578769/24000s" duration="153600/48000s" format="r1">
+                <audio offset="0s" ref="r4" duration="4680000/720000s" role="dialogue" srcCh="1, 2"/>
+              </clip>
+              <clip name="0026_sweeping slam 5" lane="-4" offset="86602369/24000s" duration="106400/48000s" format="r1">
+                <audio offset="0s" ref="r3" duration="6s" role="dialogue" srcCh="1, 2"/>
+              </clip>
+              <spine lane="-3" offset="18018/5s">
+                <clip name="Starry Background" offset="0s" duration="168168/24000s" start="2002/24000s" tcFormat="NDF">
+                  <adjust-crop mode="trim">
+                    <trim-rect top="12.7778" bottom="12.7778"/>
+                  </adjust-crop>
+                  <video offset="2002/24000s" ref="r9" duration="182182/24000s" start="2002/24000s"/>
+                  <filter-video ref="r10" name="50s TV">
+                    <param name="Amount" key="9999/987129459/100/987129460/2/100">
+                      <keyframeAnimation>
+                        <keyframe time="76076/24000s" value="0"/>
+                        <keyframe time="169169/24000s" value="0.3469"/>
+                      </keyframeAnimation>
+                    </param>
+                    <param name="Brightness" key="9999/987129459/100/999207546/2/100" value="0"/>
+                  </filter-video>
+                  <filter-video ref="r11" name="Vignette">
+                    <param name="Size" key="9999/987213582/987213591/3/987213589/1" value="0.91"/>
+                    <param name="Blur Amount" key="9999/987213582/987213591/3/987213589/2" value="0"/>
+                    <param name="Darken" key="9999/987213582/987213591/3/987213589/3" value="0.5"/>
+                  </filter-video>
+                </clip>
+              </spine>
+              <filter-video enabled="0" ref="r14" name="Focus">
+                <param name="Amount" key="9999/11249/100/11250/2/100" value="0.1055"/>
+                <param name="Width" key="9999/11249/100/1978911431/2/100" value="0.5242"/>
+                <param name="Softness" key="9999/11249/100/999242278/2/100" value="0.44598"/>
+              </filter-video>
+              <filter-video ref="r15" name="Color Correction">
+                <param name="color_midtone" key="2002" value="0.577679 0.531522"/>
+                <param name="color_shadow" key="2003" value="0.553752 0.499067"/>
+              </filter-video>
+              <filter-video ref="r14" name="Focus">
+                <param name="Amount" key="9999/11249/100/11250/2/100" value="0.0612"/>
+                <param name="Width" key="9999/11249/100/1978911431/2/100" value="0.4696"/>
+                <param name="Emphasis" key="9999/11249/100/999234268/2/100" value="0.5"/>
+                <param name="Softness" key="9999/11249/100/999242278/2/100" value="0.50817"/>
+              </filter-video>
+            </title>
+            <gap name="Gap" offset="168168/24000s" duration="2714712/24000s" start="86400314/24000s"/>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
