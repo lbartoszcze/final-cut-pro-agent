@@ -32,7 +32,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Per-clip grade | Different grade for each clip based on its own stats | ❌ currently one look across the whole edit |
 | Shot-matching | Match all clips to a hero shot's colour | ❌ FCP has `FFColorMatchUserEffect`; not emitted |
 | Color space conform | Auto SDR↔HDR, Rec.709↔Rec.2020 conversion | ❌ schema reference: `references/pipeline-neo/TimelineSample.fcpxml` (134× `adjust-colorConform`) |
-| Custom LUT | Load a `.cube` LUT and apply | ❌ schema reference: `references/cutlass/test_color_correction.fcpxml` (`FFCustomLUT`) |
+| Custom LUT | Load a `.cube` LUT and apply | ✅ `--lut=<path.cube>`. ffmpeg `lut3d` filter and FCP `<filter-video uid="FFCustomLUT">` with the LUT path as the URL param. Stacks on top of `--look`. |
 | Per-section grade | Verse-cool / chorus-warm by section | ❌ |
 | Template grade carry-through | Inherit grade from a `--template` reference | ✅ |
 

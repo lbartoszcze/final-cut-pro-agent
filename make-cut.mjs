@@ -16,7 +16,7 @@ import { dirname, join, basename, resolve, extname } from "node:path";
 import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "./lib/edit.mjs";
 import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume } from "./lib/fcpxml.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
-import { LOOKS, LOOK_EFFECT_DECL, resolveLook } from "./lib/render/grades.mjs";
+import { LOOKS, LOOK_EFFECT_DECL, LUT_EFFECT_DECL, resolveLook, lutFcpFilter } from "./lib/render/grades.mjs";
 import { probeLoudness, parseAspect, parseFps } from "./lib/render/ffmpeg.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -29,7 +29,7 @@ const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 function parseArgs(argv) {
   // Default look: cinematic (teal-orange) in cadence mode. Templates already
   // ship their own grade; --look=none disables explicitly.
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9", fps: "29.97" };
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9", fps: "29.97", lut: "" };
   for (const a of argv) {
     const m = a.match(/^--([^=]+)=(.+)$/);
     if (m) out[m[1]] = m[2];
@@ -122,16 +122,13 @@ if (args.template) {
   effectsXml = templateData.effects.map((e) => "    " + e.raw).join("\n");
 }
 
-// Resolve the requested color look. In template mode --look stacks on top of
-// whatever grade the template already carries; in cadence mode the look is
-// the only grade. --look=none disables.
-const firstClip = clipPaths[0];
-const look = resolveLook(args.look, firstClip);
-const lookXml = look.fcp;
-if (look.fcp) {
-  // Append our Color Correction effect to the resources block. Doesn't
-  // collide with template effects since LOOK_EFFECT_ID is "rL1".
-  effectsXml = (effectsXml ? effectsXml + "\n    " : "    ") + LOOK_EFFECT_DECL;
+// --look stacks on top of any template grade; --lut stacks on top of --look.
+const look = resolveLook(args.look, clipPaths[0]);
+let lookXml = look.fcp;
+if (look.fcp) effectsXml = (effectsXml ? effectsXml + "\n    " : "    ") + LOOK_EFFECT_DECL;
+if (args.lut) {
+  effectsXml = (effectsXml ? effectsXml + "\n    " : "    ") + LUT_EFFECT_DECL;
+  lookXml = lookXml + lutFcpFilter(resolve(args.lut));
 }
 
 const probed = clipPaths.map((p, i) => ({
