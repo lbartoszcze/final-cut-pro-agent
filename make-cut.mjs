@@ -15,7 +15,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join, basename, resolve, extname } from "node:path";
 import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "./lib/edit.mjs";
 import { asset, format, assetClip, gap, transition, title, document, rt } from "./lib/fcpxml.mjs";
-import { parseTemplate, applyTemplate } from "./lib/render/template.mjs";
+import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const RATE_NUM = 30000, RATE_DEN = 1001, FPS = RATE_NUM / RATE_DEN;
@@ -97,8 +97,24 @@ const beatFrames = Math.round((60 / bpm) * FPS);
 const barFrames = beatFrames * 4;
 let totalFrames = bars * barFrames;
 
+// Pre-parse template so we know what effect IDs it uses and can place the
+// user's asset IDs above that range. Cadence mode uses default base of r10.
+let templateData = null;
+let assetIdBase = 10;
+let effectsXml = null;
+if (args.template) {
+  templateData = parseTemplate(resolve(args.template));
+  let maxId = 1;
+  for (const e of templateData.effects) {
+    const m = e.id.match(/^r(\d+)$/);
+    if (m) maxId = Math.max(maxId, parseInt(m[1]));
+  }
+  assetIdBase = maxId + 1;
+  effectsXml = templateData.effects.map((e) => "    " + e.raw).join("\n");
+}
+
 const probed = clipPaths.map((p, i) => ({
-  id: `r${10 + i}`,
+  id: `r${assetIdBase + i}`,
   src: p,
   name: basename(p, extname(p)),
   durFrames: probeDurationFrames(p),
@@ -109,7 +125,7 @@ const spine = [];
 let cutGlobalIdx = 0;
 let titlesEmitted = 0;
 if (args.template) {
-  const tpl = parseTemplate(resolve(args.template));
+  const tpl = templateData;
   const probedSec = probed.map((p) => p.durFrames / FPS);
   const resolved = applyTemplate(tpl, probedSec);
   totalFrames = Math.max(barFrames, Math.round(tpl.totalSec * FPS));
@@ -125,6 +141,10 @@ if (args.template) {
     const a = probed[r.srcIdx];
     const startFrames = Math.max(0, Math.round(r.srcInSec * FPS));
     const safeDur = Math.min(durFrames, Math.max(2, a.durFrames - startFrames - 1));
+    // Carry the template clip's filter-video + adjust-* + param children
+    // through to the substituted clip — this is what makes the color grade,
+    // transform, audio adjustments, etc. apply to the user's footage.
+    const children = sanitizeInnerXml(r.innerXml);
     spine.push(assetClip({
       name: `${a.name} ${cutGlobalIdx + 1}`,
       ref: a.id,
@@ -133,6 +153,7 @@ if (args.template) {
       durFrames: safeDur,
       rateNum: RATE_NUM,
       rateDen: RATE_DEN,
+      children,
     }));
     cutGlobalIdx++;
   }
@@ -218,6 +239,7 @@ const xml = document({
   rateDen: RATE_DEN,
   assetsXml,
   spineXml: spine.join("\n            "),
+  effectsXml,
 });
 
 const outPath = join(HERE, args.out);
