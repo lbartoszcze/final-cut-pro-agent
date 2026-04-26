@@ -1,0 +1,7 @@
+/.screens/
+/.cua/
+/.work/
+/cut.fcpxml
+/cut-rendered.mp4
+*.DS_Store
+node_modules/
