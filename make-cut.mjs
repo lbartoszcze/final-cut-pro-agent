@@ -120,7 +120,9 @@ for (let bar = 0; bar < bars; bar++) {
     // Cap clip duration at probed length so FCP doesn't error on out-of-range.
     const idx = pickClipIndex(args.style, cutGlobalIdx, probed.length);
     const a = probed[idx];
-    const startFrames = Math.min(0, Math.max(0, Math.floor((cutGlobalIdx % 4) * 30)));
+    // Vary in-point per cut so a repeated source doesn't always start at 0.
+    const headroom = Math.max(0, a.durFrames - durFrames - 1);
+    const startFrames = headroom === 0 ? 0 : Math.floor((cutGlobalIdx * 13) % headroom);
     durFrames = Math.min(durFrames, a.durFrames - startFrames - 1);
     spine.push(assetClip({
       name: `${a.name} ${cutGlobalIdx + 1}`,
