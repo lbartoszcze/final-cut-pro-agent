@@ -14,9 +14,10 @@ import { execFileSync, spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join, basename, resolve, extname } from "node:path";
 import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "./lib/edit.mjs";
-import { asset, format, assetClip, gap, transition, title, document, rt } from "./lib/fcpxml.mjs";
+import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume } from "./lib/fcpxml.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
 import { LOOKS, LOOK_EFFECT_DECL, resolveLook } from "./lib/render/grades.mjs";
+import { probeLoudness } from "./lib/render/ffmpeg.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const RATE_NUM = 30000, RATE_DEN = 1001, FPS = RATE_NUM / RATE_DEN;
@@ -27,7 +28,7 @@ const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 function parseArgs(argv) {
   // Default look: cinematic (teal-orange) in cadence mode. Templates already
   // ship their own grade; --look=none disables explicitly.
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic" };
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05" };
   for (const a of argv) {
     const m = a.match(/^--([^=]+)=(.+)$/);
     if (m) out[m[1]] = m[2];
@@ -135,6 +136,25 @@ const probed = clipPaths.map((p, i) => ({
   durFrames: probeDurationFrames(p),
 }));
 
+// Per-clip loudness measurement → per-clip dB gain toward target.
+// args.audio-target is integrated LUFS (e.g. -16 web, -14 YouTube, -23 EBU R128).
+// "off" disables the audio normalization entirely.
+const audioTarget = args["audio-target"] === "off" ? null : parseFloat(args["audio-target"]);
+const audioFadeSec = parseFloat(args["audio-fade"]);
+const perClipGainDB = new Array(probed.length).fill(null);
+if (audioTarget !== null && Number.isFinite(audioTarget)) {
+  for (let i = 0; i < probed.length; i++) {
+    const m = probeLoudness(probed[i].src);
+    if (m && Number.isFinite(m.inputI) && m.inputI > -70) {
+      perClipGainDB[i] = audioTarget - m.inputI;
+    }
+  }
+}
+function audioChildrenFor(srcIdx, durSec) {
+  if (audioTarget === null || perClipGainDB[srcIdx] === null) return "";
+  return adjustVolume({ amountDB: perClipGainDB[srcIdx], fadeInSec: audioFadeSec, fadeOutSec: audioFadeSec, durSec });
+}
+
 // --- Template mode: borrow cadence from a reference fcpxml ----------------
 const spine = [];
 let cutGlobalIdx = 0;
@@ -160,7 +180,9 @@ if (args.template) {
     // through to the substituted clip — this is what makes the color grade,
     // transform, audio adjustments, etc. apply to the user's footage.
     // Append the user-requested look filter on top so --look stacks.
-    const children = sanitizeInnerXml(r.innerXml) + lookXml;
+    // Also stack the per-clip audio normalization (template's adjust-volume
+    // is preserved in innerXml; ours is additional gain toward target LUFS).
+    const children = sanitizeInnerXml(r.innerXml) + audioChildrenFor(r.srcIdx, safeDur / FPS) + lookXml;
     spine.push(assetClip({
       name: `${a.name} ${cutGlobalIdx + 1}`,
       ref: a.id,
@@ -203,7 +225,7 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
       durFrames,
       rateNum: RATE_NUM,
       rateDen: RATE_DEN,
-      children: lookXml,
+      children: audioChildrenFor(idx, durFrames / FPS) + lookXml,
     }));
     if (sectionChanged && ci === 0) {
       const tFrames = transitionFrames(args.style, true, FPS);
