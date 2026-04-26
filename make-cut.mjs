@@ -1,20 +1,12 @@
 #!/usr/bin/env node
-// FCPXML edit generator for Final Cut Pro.
-// Usage:
-//   node make-cut.mjs                                       # test-pattern, montage, 16 bars, 140 bpm
-//   node make-cut.mjs --mode=clips --clips=./footage         # arrange folder of clips
-//   node make-cut.mjs --mode=clips --clips=./footage --style=cinematic --bpm=92 --bars=24
-//   node make-cut.mjs --style=jump-cut --bpm=140             # synth test patterns at 140 bpm
-//   node make-cut.mjs --template=references/premiumbeat/box-office-impact.fcpxml \
-//                     --clips=./footage                       # apply a reference's cadence to your clips
-// Styles: montage, cinematic, jump-cut, slow-mo. Modes: clips, test-pattern.
+// FCPXML edit generator for Final Cut Pro. Run --help for full flag list.
 
 import { writeFileSync, readdirSync, statSync, mkdirSync, existsSync } from "node:fs";
 import { execFileSync, spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join, basename, resolve, extname } from "node:path";
 import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "./lib/edit.mjs";
-import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume } from "./lib/fcpxml.mjs";
+import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume, marker } from "./lib/fcpxml.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
 import { LOOKS, LOOK_EFFECT_DECL, LUT_EFFECT_DECL, resolveLook, lutFcpFilter } from "./lib/render/grades.mjs";
 import { probeLoudness, parseAspect, parseFps } from "./lib/render/ffmpeg.mjs";
@@ -29,7 +21,7 @@ const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 function parseArgs(argv) {
   // Default look: cinematic (teal-orange) in cadence mode. Templates already
   // ship their own grade; --look=none disables explicitly.
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9", fps: "29.97", lut: "" };
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9", fps: "29.97", lut: "", "auto-chapters": "1", markers: "" };
   for (const a of argv) {
     const m = a.match(/^--([^=]+)=(.+)$/);
     if (m) out[m[1]] = m[2];
@@ -156,6 +148,11 @@ function audioChildrenFor(srcIdx, durSec) {
   if (audioTarget === null || perClipGainDB[srcIdx] === null) return "";
   return adjustVolume({ amountDB: perClipGainDB[srcIdx], fadeInSec: audioFadeSec, fadeOutSec: audioFadeSec, durSec });
 }
+const autoChapters = args["auto-chapters"] !== "0";
+function chapterMarkerFor(label, startFrames) {
+  if (!autoChapters) return "";
+  return marker({ startSec: startFrames / FPS, value: label.charAt(0).toUpperCase() + label.slice(1), kind: "chapter-marker", rateNum: RATE_NUM, rateDen: RATE_DEN });
+}
 
 // --- Template mode: borrow cadence from a reference fcpxml ----------------
 const spine = [];
@@ -219,6 +216,7 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
     const headroom = Math.max(0, a.durFrames - durFrames - 1);
     const startFrames = headroom === 0 ? 0 : Math.floor((cutGlobalIdx * 13) % headroom);
     durFrames = Math.min(durFrames, a.durFrames - startFrames - 1);
+    const newChapter = ((bar === 0 && ci === 0) || (sectionChanged && ci === 0)) ? chapterMarkerFor(sec, startFrames) : "";
     spine.push(assetClip({
       name: `${a.name} ${cutGlobalIdx + 1}`,
       ref: a.id,
@@ -227,7 +225,7 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
       durFrames,
       rateNum: RATE_NUM,
       rateDen: RATE_DEN,
-      children: audioChildrenFor(idx, durFrames / FPS) + lookXml,
+      children: audioChildrenFor(idx, durFrames / FPS) + lookXml + newChapter,
     }));
     if (sectionChanged && ci === 0) {
       const tFrames = transitionFrames(args.style, true, FPS);

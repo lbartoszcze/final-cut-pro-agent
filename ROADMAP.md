@@ -120,7 +120,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Hook (opening 3-5s) | Strongest content first | ❌ |
 | B-roll insertion | Cutaways layered above primary spine | ❌ |
 | Establishing shots | Wide opener for new locations | ❌ |
-| Story beats | Key-moment markers user can jump to | ❌ schema: `<chapter-marker>` |
+| Story beats | Key-moment markers user can jump to | ✅ `--auto-chapters=1` (default) emits a `<chapter-marker>` at each section boundary (intro / verse / chorus / outro). FCP exports these as ITT chapters in Share / Master File. |
 | Reaction shots | Insert reactions at emotional beats | ❌ |
 | Pacing variation | Long holds in cinematic, short cuts in chorus | ✅ via cadence per style |
 
@@ -146,7 +146,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Concern | What it is | Status |
 |---|---|---|
 | Project / event / library structure | FCPXML wraps in `<library><event><project><sequence>` | ✅ `lib/fcpxml.mjs` `document()` |
-| Markers | Generic + chapter | ❌ schema: `<marker>` / `<chapter-marker>` |
+| Markers | Generic + chapter | 🟡 chapter-markers auto-emitted at section boundaries via `--auto-chapters` (above). Explicit `--markers=<time:label,...>` and generic non-chapter `<marker>` not yet wired. |
 | Roles (Dialogue / Music / Effects / Nat) | Audio role tagging for stem export | ❌ |
 | Keywords / smart collections | Auto-tag clips for filter-based bins | ❌ schema: `<smart-collection>` + `<match-clip>` family |
 | Versions / iterations | V1 / V2 / fine-cut tracking | ❌ |
