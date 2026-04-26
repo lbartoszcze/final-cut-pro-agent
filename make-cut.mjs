@@ -16,6 +16,7 @@ import { dirname, join, basename, resolve, extname } from "node:path";
 import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "./lib/edit.mjs";
 import { asset, format, assetClip, gap, transition, title, document, rt } from "./lib/fcpxml.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
+import { LOOKS, LOOK_EFFECT_DECL, resolveLook } from "./lib/render/grades.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const RATE_NUM = 30000, RATE_DEN = 1001, FPS = RATE_NUM / RATE_DEN;
@@ -24,7 +25,9 @@ const FRAME_DUR = `${RATE_DEN}/${RATE_NUM}s`;
 const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 
 function parseArgs(argv) {
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "" };
+  // Default look: cinematic (teal-orange) in cadence mode. Templates already
+  // ship their own grade; --look=none disables explicitly.
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic" };
   for (const a of argv) {
     const m = a.match(/^--([^=]+)=(.+)$/);
     if (m) out[m[1]] = m[2];
@@ -113,6 +116,18 @@ if (args.template) {
   effectsXml = templateData.effects.map((e) => "    " + e.raw).join("\n");
 }
 
+// Resolve the requested color look. In template mode --look stacks on top of
+// whatever grade the template already carries; in cadence mode the look is
+// the only grade. --look=none disables.
+const firstClip = clipPaths[0];
+const look = resolveLook(args.look, firstClip);
+const lookXml = look.fcp;
+if (look.fcp) {
+  // Append our Color Correction effect to the resources block. Doesn't
+  // collide with template effects since LOOK_EFFECT_ID is "rL1".
+  effectsXml = (effectsXml ? effectsXml + "\n    " : "    ") + LOOK_EFFECT_DECL;
+}
+
 const probed = clipPaths.map((p, i) => ({
   id: `r${assetIdBase + i}`,
   src: p,
@@ -144,7 +159,8 @@ if (args.template) {
     // Carry the template clip's filter-video + adjust-* + param children
     // through to the substituted clip — this is what makes the color grade,
     // transform, audio adjustments, etc. apply to the user's footage.
-    const children = sanitizeInnerXml(r.innerXml);
+    // Append the user-requested look filter on top so --look stacks.
+    const children = sanitizeInnerXml(r.innerXml) + lookXml;
     spine.push(assetClip({
       name: `${a.name} ${cutGlobalIdx + 1}`,
       ref: a.id,
@@ -187,6 +203,7 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
       durFrames,
       rateNum: RATE_NUM,
       rateDen: RATE_DEN,
+      children: lookXml,
     }));
     if (sectionChanged && ci === 0) {
       const tFrames = transitionFrames(args.style, true, FPS);
