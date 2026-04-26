@@ -17,7 +17,7 @@ import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipI
 import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume } from "./lib/fcpxml.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
 import { LOOKS, LOOK_EFFECT_DECL, resolveLook } from "./lib/render/grades.mjs";
-import { probeLoudness } from "./lib/render/ffmpeg.mjs";
+import { probeLoudness, parseAspect } from "./lib/render/ffmpeg.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const RATE_NUM = 30000, RATE_DEN = 1001, FPS = RATE_NUM / RATE_DEN;
@@ -28,7 +28,7 @@ const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 function parseArgs(argv) {
   // Default look: cinematic (teal-orange) in cadence mode. Templates already
   // ship their own grade; --look=none disables explicitly.
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05" };
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9" };
   for (const a of argv) {
     const m = a.match(/^--([^=]+)=(.+)$/);
     if (m) out[m[1]] = m[2];
@@ -254,7 +254,11 @@ if (!args.template) {
   }
 }
 
-const fmt = format({ id: "r1", name: "FFVideoFormat1080p2997", frameDuration: FRAME_DUR, width: "1920", height: "1080" });
+const aspect = parseAspect(args.aspect);
+const fmtName = aspect.w === 1920 && aspect.h === 1080
+  ? "FFVideoFormat1080p2997"
+  : `FFVideoFormat${aspect.h}p2997`;
+const fmt = format({ id: "r1", name: fmtName, frameDuration: FRAME_DUR, width: String(aspect.w), height: String(aspect.h) });
 const assetsXml = probed.map((a) => asset({
   id: a.id,
   name: a.name,

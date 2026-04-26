@@ -49,7 +49,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Lens correction | Distortion / vignetting compensation | ❌ |
 | Sharpening / unsharp | Edge enhancement | ❌ |
 | Noise reduction | Denoise grain or sensor noise | ❌ schema: `<adjust-noiseReduction>` |
-| Aspect-ratio reframing | Auto re-crop 16:9 → 9:16 (vertical) and 1:1 (square) | ❌ |
+| Aspect-ratio reframing | Auto re-crop 16:9 → 9:16 (vertical) and 1:1 (square) | ✅ `--aspect=<w:h[:fit\|fill]>`. Accepts `16:9`, `9:16`, `1:1`, `4:5`, `2.35:1`, `<w>x<h>`. `:fill` center-crops; default `:fit` letterboxes. Both FCPXML format declaration and ffmpeg renderer respect the flag. |
 | Vignetting | Soft edge darkening | ❌ |
 | Film grain overlay | Synthetic grain texture | ❌ schema: PremiumBeat `Film Grain.moef` |
 | Lens flares / light leaks | Stylistic overlays | ❌ |
@@ -58,8 +58,8 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 
 | Concern | What it is | Status |
 |---|---|---|
-| Per-clip volume | Match clips to a target level | ❌ schema: `<adjust-volume>` |
-| Audio fades | Fade in / out at clip edges | ❌ schema: `<fadeIn>` / `<fadeOut>` |
+| Per-clip volume | Match clips to a target level | ✅ `--audio-target=<LUFS>` (default -16). Per-clip `loudnorm` measure → emit `<adjust-volume amount="N dB">` in FCPXML AND apply `loudnorm` filter in ffmpeg renderer. Audio-less clips → silence-padded. |
+| Audio fades | Fade in / out at clip edges | ✅ `--audio-fade=<sec>` (default 0.05). `<fadeIn>` / `<fadeOut>` param children in FCPXML + `afade` in ffmpeg. |
 | Music ducking under dialogue | Auto-lower music when speech is present | ❌ schema: secondary storyline + `keyframeAnimation` on volume |
 | Loudness normalization | Hit a target LUFS (–14 YouTube / –23 broadcast) | ❌ schema: `<adjust-loudness>` |
 | Hum reduction | 50/60 Hz mains hum filter | ❌ schema: `<adjust-humReduction>` |
@@ -128,9 +128,9 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 
 | Concern | What it is | Status |
 |---|---|---|
-| Aspect ratio | 16:9 / 9:16 / 1:1 / 2.35:1 | 🟡 1080p 16:9 hardcoded — no `--aspect` flag |
+| Aspect ratio | 16:9 / 9:16 / 1:1 / 2.35:1 | ✅ `--aspect=<spec>` with `:fit` (letterbox) or `:fill` (center-crop) modes |
 | Frame rate | 23.976 / 24 / 25 / 29.97 / 30 / 50 / 59.94 / 60 | 🟡 29.97 hardcoded |
-| Resolution | 720p / 1080p / 4K | 🟡 1920×1080 hardcoded |
+| Resolution | 720p / 1080p / 4K | 🟡 derived from `--aspect`; max dimension still capped at 1920 / 1080 |
 | Codec | H.264 / H.265 / ProRes / DNxHR | 🟡 H.264 hardcoded in renderer; FCPXML is codec-agnostic |
 | Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | 🟡 Rec. 709 hardcoded |
 | HDR vs SDR | Dolby Vision / HDR10 vs SDR | ❌ |
