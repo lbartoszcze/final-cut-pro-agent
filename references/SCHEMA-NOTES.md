@@ -77,6 +77,29 @@ The five `premiumbeat/` extractions surfaced four element types that don't appea
 
 The PremiumBeat extractions also use `fadeOut` (audio fade-out, complement to `fadeIn`), `metadata` wrappers around bookmark blobs, and `array` + `string` literal-typed param values that show how non-numeric parameter values are structured.
 
+## Additional elements found in pipeline-neo + SpliceKit
+
+The second round of vendoring (TimelineSample, SecondaryStoryline, CaptionSample, CutSample, plus the SpliceKit Test Library) added another wave of schema:
+
+| Element | Source | What it does |
+|---|---|---|
+| `caption` + `text-style-def` per caption | CaptionSample | FCP's caption / subtitle schema. Each `<caption>` carries text + start/duration; FCP recognizes WebVTT-style ITT roles. |
+| `adjust-stabilization` | TimelineSample, CutSample | Per-clip image stabilization adjustment. `<adjust-stabilization smoothing="1.0" type="auto"/>`. |
+| `adjust-transform` | TimelineSample, plus cutlass | Position / scale / rotation / anchor adjustment, child of `asset-clip`. The native form of FCP's Transform inspector edits. |
+| `adjust-noiseReduction` | SecondaryStoryline | Audio noise-reduction adjustment, child of `asset-clip`. |
+| `adjust-humReduction` | SpliceKit Test Library | Audio hum-reduction (50/60Hz mains) adjustment. |
+| `adjust-loudness` | SpliceKit Test Library | Loudness normalization adjustment for audio targets. |
+| `adjust-conform` | SpliceKit Test Library | Spatial conform (Fit / Fill / None) clip-level. |
+| `pan-rect` | TimelineSample | Pan-and-scan rectangle for cropping during retime. |
+| `timeMap` + `timept` | TimelineSample, SecondaryStoryline | Retime container plus time-point keyframes (already noted from extreme-action — pipeline-neo confirms canonical structure). |
+| `analysis-marker` | SpliceKit Test Library | Auto-detection markers (FCP's people-detection, shot-type, scene-change). |
+| `collection-folder` | SpliceKit Test Library | Browser-bin folder grouping in the library sidebar. |
+| `keyword-collection` | SpliceKit Test Library | Smart collection filtered by keyword annotations. |
+| `match-analysis-type` + `match-shot` | SpliceKit Test Library | Smart-collection filters that operate on automated analysis results — filter for "wide shot", "people", "stable footage", etc. |
+| `rating` + `shot-type` | SpliceKit Test Library | Per-clip rating (favorite / reject) and shot-type metadata (wide, medium, close-up). |
+
+Combined with the originals plus PremiumBeat, the references now collectively cover ~62 distinct elements vs the 18 the current emitter handles. The biggest single-file reference is `splicekit/Test_Library_Info.fcpxml` at 1.8 MB — a real edited library exported from FCP via OpenTimelineIO.
+
 ## Highest-leverage gaps to close first
 
 1. **`bookmark` inside `media-rep`** — real FCP exports always include a base64 security-scoped fs bookmark. Without it, FCP must re-locate the source media on import, which prompts the user. Generating one requires AppleScript / Foundation `URL.bookmarkData()`; for emitter purposes, omitting it is the current behaviour and means re-locate-on-import.

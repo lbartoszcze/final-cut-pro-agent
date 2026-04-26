@@ -1,6 +1,6 @@
 # References
 
-This directory vendors thirteen FCPXML files that exercise the schema far more deeply than `lib/fcpxml.mjs` currently does. They exist because the first commit of this repo was written without examining a single sophisticated Final Cut Pro export — its schema vocabulary turned out to be a tiny subset of what FCP actually emits.
+This directory vendors nineteen FCPXML files that exercise the schema far more deeply than `lib/fcpxml.mjs` currently does. They exist because the first commit of this repo was written without examining a single sophisticated Final Cut Pro export — its schema vocabulary turned out to be a tiny subset of what FCP actually emits.
 
 ## On "Super Bowl ad level"
 
@@ -27,6 +27,23 @@ The closest legitimate proxies are what is here. The `premiumbeat/` set in parti
 | `test_color_correction.fcpxml` | `filter-video` wrapping a color-effect uid inside an `asset-clip`, parameter-driven adjustment via `param`. The static form of a color grade. |
 | `test_keyframe_animation.fcpxml` | `param` element with nested `keyframeAnimation` holding `keyframe` children, each carrying `time` + `value`. Authoritative example for animated parameters. |
 | `test_complex_compositing.fcpxml` | Multi-lane stacking: `lane` attribute on `asset-clip` and `title` for picture-in-picture, lower-thirds-over-clip, split-screen. `adjust-transform` children specifying anchor / position / scale / rotation. |
+
+### `pipeline-neo/` — production test fixtures (MIT, [TheAcharya/pipeline-neo](https://github.com/TheAcharya/pipeline-neo))
+
+The most schema-diverse references in the collection. pipeline-neo is the modern Swift 6 successor to reuelk/pipeline.
+
+| File | What it demonstrates | Stats |
+|---|---|---|
+| `TimelineSample.fcpxml` | Biggest schema-coverage fixture. `adjust-stabilization`, `adjust-transform`, `pan-rect`, `timeMap` + `timept` retiming, `fadeOut` audio fade, `filter-audio` + `filter-video`, plus 134 `adjust-colorConform` calls. | 265 KB / 278 `md` / 190 `param` |
+| `TimelineWithSecondaryStorylineWithAudioKeyframes.fcpxml` | Connected secondary storylines (b-roll above primary spine), `keyframeAnimation` on audio volume params, `adjust-noiseReduction`. Music-video edits use this constantly. | 131 KB / 44 `keyword` / 44 `asset-clip` |
+| `CaptionSample.fcpxml` | The ONLY reference with `<caption>` schema — 45 captions with full `text-style-def` per caption. Required for any subtitle / closed-caption work. | 36 KB / 45 `caption` |
+| `CutSample.fcpxml` | Cuts-heavy timeline with `adjust-stabilization` on multiple clips, inline `<data>` audio blobs, `clip` wrapper element vs `asset-clip`. | 74 KB |
+
+### `splicekit/` — biggest real-world export (MIT, [elliotttate/SpliceKit](https://github.com/elliotttate/SpliceKit))
+
+| File | What it demonstrates | Stats |
+|---|---|---|
+| `Test_Library_Info.fcpxml` | Largest reference at 1.8 MB. Originally an OpenTimelineIO interop test library. Surfaces `adjust-conform`, `adjust-humReduction`, `adjust-loudness`, `analysis-marker`, `collection-folder`, `keyword-collection`, `match-analysis-type`, `match-shot`, `rating`, `shot-type`. Authoritative reference for audio cleanup + library organization. | 1.8 MB |
 
 ### `premiumbeat/` — extracted from Shutterstock + PremiumBeat editor kits
 
