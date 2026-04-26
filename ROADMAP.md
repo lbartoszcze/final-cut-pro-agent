@@ -81,7 +81,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 |---|---|---|
 | Cross-dissolve at section boundaries | Soft seam between intro / verse / chorus / outro | 🟡 emitted in cadence-mode FCPXML; not respected in ffmpeg renderer (concat only) |
 | Hard cuts | The default — no transition | ✅ |
-| Fade in from black / fade out to black | Section opener and closer | ❌ |
+| Fade in from black / fade out to black | Section opener and closer | ✅ `--fade-from-black=<sec>` and `--fade-to-black=<sec>` (default 0). ffmpeg `fade=t=in/out:color=black` on the first / last cut. |
 | Wipes / push / slide | Stylistic transitions | ❌ |
 | Audio crossfade across cut | Smooth audio when picture cuts | ❌ schema: `Audio Crossfade` filter, see `references/pipeline-neo/TimelineSample.fcpxml` |
 
@@ -138,7 +138,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Vertical re-export | Re-render 16:9 source for 9:16 distribution | ❌ |
 | Safe areas | Text inside title-safe / action-safe boxes | ❌ |
 | Caption format export | ITT / SRT / WebVTT side-files | ❌ |
-| Length cap | Hard limit (TikTok 60s, Reels 90s, YouTube Shorts 60s) | ❌ |
+| Length cap | Hard limit (TikTok 60s, Reels 90s, YouTube Shorts 60s) | ✅ `--max-duration=<sec>`. Drops cuts whose start is past the cap; trims the boundary cut so total duration matches exactly. |
 | Loudness target | YouTube –14 LUFS, broadcast –23 | ❌ |
 
 ## 10 · Workflow & metadata
