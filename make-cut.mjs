@@ -9,7 +9,7 @@ import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipI
 import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume, marker } from "./lib/fcpxml.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
 import { LOOKS, LOOK_EFFECT_DECL, LUT_EFFECT_DECL, resolveLook, lutFcpFilter } from "./lib/render/grades.mjs";
-import { probeLoudness, parseAspect, parseFps } from "./lib/render/ffmpeg.mjs";
+import { probeLoudness, parseAspect, parseFps, resolvePlatform } from "./lib/render/ffmpeg.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 // Frame-rate is now configurable via --fps. RATE_NUM / RATE_DEN / FPS /
@@ -19,13 +19,10 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 
 function parseArgs(argv) {
-  // Default look: cinematic (teal-orange) in cadence mode. Templates already
-  // ship their own grade; --look=none disables explicitly.
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", "audio-target": "-16", "audio-fade": "0.05", aspect: "16:9", fps: "29.97", lut: "", "auto-chapters": "1", markers: "" };
-  for (const a of argv) {
-    const m = a.match(/^--([^=]+)=(.+)$/);
-    if (m) out[m[1]] = m[2];
-  }
+  const sup = {};
+  for (const a of argv) { const m = a.match(/^--([^=]+)=(.+)$/); if (m) sup[m[1]] = m[2]; }
+  const p = sup.platform ? resolvePlatform(sup.platform) : null;
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", lut: "", platform: "", "audio-target": String(p?.audioTarget ?? -16), "audio-fade": "0.05", aspect: p?.aspect ?? "16:9", fps: p?.fps ?? "29.97", "max-duration": p?.maxDuration != null ? String(p.maxDuration) : "", "auto-chapters": "1", markers: "", ...sup };
   if (out.clips) out.mode = "clips";
   return out;
 }

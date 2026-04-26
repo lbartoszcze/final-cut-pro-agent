@@ -135,11 +135,11 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | 🟡 Rec. 709 hardcoded |
 | HDR vs SDR | Dolby Vision / HDR10 vs SDR | ❌ |
 | Bitrate target | Quality vs file size | ❌ ffmpeg defaults only |
-| Vertical re-export | Re-render 16:9 source for 9:16 distribution | ❌ |
+| Vertical re-export | Re-render 16:9 source for 9:16 distribution | ✅ via `--aspect=9:16:fill` (re-runs the full render targeting the new aspect). Also covered by `--platform=tiktok\|reels\|youtube-shorts`. |
 | Safe areas | Text inside title-safe / action-safe boxes | ❌ |
 | Caption format export | ITT / SRT / WebVTT side-files | ❌ |
 | Length cap | Hard limit (TikTok 60s, Reels 90s, YouTube Shorts 60s) | ✅ `--max-duration=<sec>`. Drops cuts whose start is past the cap; trims the boundary cut so total duration matches exactly. |
-| Loudness target | YouTube –14 LUFS, broadcast –23 | ❌ |
+| Loudness target | YouTube –14 LUFS, broadcast –23 | ✅ `--audio-target=<LUFS>` directly, or via `--platform=<name>` which sets it (-14 for web, -23 for broadcast EBU R128, -24 for broadcast US ATSC A/85). |
 
 ## 10 · Workflow & metadata
 
