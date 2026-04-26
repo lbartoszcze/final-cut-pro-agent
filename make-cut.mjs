@@ -5,6 +5,8 @@
 //   node make-cut.mjs --mode=clips --clips=./footage         # arrange folder of clips
 //   node make-cut.mjs --mode=clips --clips=./footage --style=cinematic --bpm=92 --bars=24
 //   node make-cut.mjs --style=jump-cut --bpm=140             # synth test patterns at 140 bpm
+//   node make-cut.mjs --template=references/premiumbeat/box-office-impact.fcpxml \
+//                     --clips=./footage                       # apply a reference's cadence to your clips
 // Styles: montage, cinematic, jump-cut, slow-mo. Modes: clips, test-pattern.
 
 import { writeFileSync, readdirSync, statSync, mkdirSync, existsSync } from "node:fs";
@@ -13,6 +15,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join, basename, resolve, extname } from "node:path";
 import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "./lib/edit.mjs";
 import { asset, format, assetClip, gap, transition, title, document, rt } from "./lib/fcpxml.mjs";
+import { parseTemplate, applyTemplate } from "./lib/render/template.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const RATE_NUM = 30000, RATE_DEN = 1001, FPS = RATE_NUM / RATE_DEN;
@@ -21,7 +24,7 @@ const FRAME_DUR = `${RATE_DEN}/${RATE_NUM}s`;
 const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
 
 function parseArgs(argv) {
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml" };
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "" };
   for (const a of argv) {
     const m = a.match(/^--([^=]+)=(.+)$/);
     if (m) out[m[1]] = m[2];
@@ -92,7 +95,7 @@ if (args.mode === "clips") {
 
 const beatFrames = Math.round((60 / bpm) * FPS);
 const barFrames = beatFrames * 4;
-const totalFrames = bars * barFrames;
+let totalFrames = bars * barFrames;
 
 const probed = clipPaths.map((p, i) => ({
   id: `r${10 + i}`,
@@ -101,14 +104,45 @@ const probed = clipPaths.map((p, i) => ({
   durFrames: probeDurationFrames(p),
 }));
 
-// Build spine: gap intro (no clip until bar 0 ends) is omitted; we drop
-// straight into the first cut on bar 0 beat 0.
+// --- Template mode: borrow cadence from a reference fcpxml ----------------
 const spine = [];
 let cutGlobalIdx = 0;
+let titlesEmitted = 0;
+if (args.template) {
+  const tpl = parseTemplate(resolve(args.template));
+  const probedSec = probed.map((p) => p.durFrames / FPS);
+  const resolved = applyTemplate(tpl, probedSec);
+  totalFrames = Math.max(barFrames, Math.round(tpl.totalSec * FPS));
+  for (const r of resolved) {
+    const offsetFrames = Math.round(r.offsetSec * FPS);
+    const durFrames = Math.max(2, Math.round(r.durSec * FPS));
+    if (r.kind === "title") {
+      spine.push(title({ offsetFrames, durFrames, rateNum: RATE_NUM, rateDen: RATE_DEN, text: r.text || r.name || "Title" }));
+      titlesEmitted++;
+      continue;
+    }
+    if (r.kind === "transition" || r.kind === "gap") continue;
+    const a = probed[r.srcIdx];
+    const startFrames = Math.max(0, Math.round(r.srcInSec * FPS));
+    const safeDur = Math.min(durFrames, Math.max(2, a.durFrames - startFrames - 1));
+    spine.push(assetClip({
+      name: `${a.name} ${cutGlobalIdx + 1}`,
+      ref: a.id,
+      offsetFrames,
+      startFrames,
+      durFrames: safeDur,
+      rateNum: RATE_NUM,
+      rateDen: RATE_DEN,
+    }));
+    cutGlobalIdx++;
+  }
+}
+
+// --- Cadence mode: procedural cut grid driven by --bpm --bars --style ------
 let prevSec = null;
 let prevEndOffset = 0;
 
-for (let bar = 0; bar < bars; bar++) {
+if (!args.template) for (let bar = 0; bar < bars; bar++) {
   const cuts = planBarCuts(args.style, bars, bar);
   const sec = sectionOf(bar, bars);
   const sectionChanged = prevSec !== null && prevSec !== sec;
@@ -145,16 +179,19 @@ for (let bar = 0; bar < bars; bar++) {
   prevSec = sec;
 }
 
-// Title overlays: lane 1 above the spine.
-const titles = planTitles(bars, args.mode === "clips" ? basename(resolve(args.clips)) : `${args.style.toUpperCase()} CUT`);
-for (const t of titles) {
-  spine.push(title({
-    offsetFrames: t.barIdx * barFrames,
-    durFrames: t.holdBars * barFrames,
-    rateNum: RATE_NUM,
-    rateDen: RATE_DEN,
-    text: t.text,
-  }));
+// Title overlays for cadence mode (template mode emits its own titles inline).
+let titles = [];
+if (!args.template) {
+  titles = planTitles(bars, args.mode === "clips" ? basename(resolve(args.clips)) : `${args.style.toUpperCase()} CUT`);
+  for (const t of titles) {
+    spine.push(title({
+      offsetFrames: t.barIdx * barFrames,
+      durFrames: t.holdBars * barFrames,
+      rateNum: RATE_NUM,
+      rateDen: RATE_DEN,
+      text: t.text,
+    }));
+  }
 }
 
 const fmt = format({ id: "r1", name: "FFVideoFormat1080p2997", frameDuration: FRAME_DUR, width: "1920", height: "1080" });
@@ -167,10 +204,14 @@ const assetsXml = probed.map((a) => asset({
   rateDen: RATE_DEN,
 })).join("\n    ");
 
+const projectName = args.template
+  ? `template:${basename(args.template, ".fcpxml")}`
+  : `${args.style} ${bars}b @ ${bpm}`;
+
 const xml = document({
   formatNode: fmt,
   eventName: "FCP Agent",
-  projectName: `${args.style} ${bars}b @ ${bpm}`,
+  projectName,
   sequenceFormat: "r1",
   durFrames: totalFrames,
   rateNum: RATE_NUM,
@@ -181,4 +222,8 @@ const xml = document({
 
 const outPath = join(HERE, args.out);
 writeFileSync(outPath, xml);
-console.log(`Wrote ${args.out} (${args.style}, ${args.mode}, ${bars} bars @ ${bpm} bpm, ${probed.length} source clips, ${cutGlobalIdx} cuts, ${titles.length} titles)`);
+const titleCount = args.template ? titlesEmitted : titles.length;
+const summary = args.template
+  ? `template ${basename(args.template)}, ${probed.length} source clips, ${cutGlobalIdx} cuts, ${titleCount} titles`
+  : `${args.style}, ${args.mode}, ${bars} bars @ ${bpm} bpm, ${probed.length} source clips, ${cutGlobalIdx} cuts, ${titleCount} titles`;
+console.log(`Wrote ${args.out} (${summary})`);
