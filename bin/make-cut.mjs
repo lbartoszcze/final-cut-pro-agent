@@ -1,77 +1,43 @@
 #!/usr/bin/env node
 // FCPXML edit generator for Final Cut Pro. Run --help for full flag list.
 
-import { writeFileSync, readdirSync, statSync, mkdirSync, existsSync } from "node:fs";
-import { execFileSync, spawnSync } from "node:child_process";
+import { writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join, basename, resolve, extname } from "node:path";
-import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "./lib/edit.mjs";
-import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume, marker } from "./lib/fcpxml.mjs";
-import { parseTemplate, applyTemplate, sanitizeInnerXml } from "./lib/render/template.mjs";
-import { LOOKS, LOOK_EFFECT_DECL, LUT_EFFECT_DECL, resolveLook, lutFcpFilter } from "./lib/render/grades.mjs";
-import { probeLoudness, parseAspect, parseFps, resolvePlatform } from "./lib/render/ffmpeg.mjs";
+import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "../lib/edit.mjs";
+import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume, marker, parseCustomMarkers, emitCustomMarkers, emitOrphanMarkers } from "../lib/fcpxml.mjs";
+import { parseTemplate, applyTemplate, sanitizeInnerXml } from "../lib/render/template.mjs";
+import { LOOKS, LOOK_EFFECT_DECL, LUT_EFFECT_DECL, resolveLook, lutFcpFilter } from "../lib/render/grades.mjs";
+import { probeLoudness, parseAspect, parseFps, resolvePlatform } from "../lib/render/ffmpeg.mjs";
+import { detectTempo, snapTempo } from "../lib/analyze/beats.mjs";
+import { analyzeShots } from "../lib/analyze/motion.mjs";
+import { rankShots, pickShotForCut, planBrolls } from "../lib/analyze/score.mjs";
+import { enrichShotsWithFaces } from "../lib/analyze/faces.mjs";
+import { listClipsInFolder, probeDurationFrames, makeTestPatterns } from "../lib/source/sources.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-// Frame-rate is now configurable via --fps. RATE_NUM / RATE_DEN / FPS /
-// FRAME_DUR are computed below after parseArgs() so the user's --fps choice
-// drives every subsequent rational-time conversion in this file.
-
-const VIDEO_EXT = new Set([".mp4", ".mov", ".m4v", ".mkv", ".avi"]);
+const ROOT = join(HERE, "..");
 
 function parseArgs(argv) {
   const sup = {};
   for (const a of argv) { const m = a.match(/^--([^=]+)=(.+)$/); if (m) sup[m[1]] = m[2]; }
   const p = sup.platform ? resolvePlatform(sup.platform) : null;
-  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", lut: "", platform: "", "audio-target": String(p?.audioTarget ?? -16), "audio-fade": "0.05", aspect: p?.aspect ?? "16:9", fps: p?.fps ?? "29.97", "max-duration": p?.maxDuration != null ? String(p.maxDuration) : "", "auto-chapters": "1", markers: "", ...sup };
+  const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", lut: "", platform: "", "audio-target": String(p?.audioTarget ?? -16), "audio-fade": "0.05", aspect: p?.aspect ?? "16:9", fps: p?.fps ?? "29.97", "max-duration": p?.maxDuration != null ? String(p.maxDuration) : "", "auto-chapters": "1", markers: "", music: "", "smart-pick": "1", "hook-sec": "3.5", brolls: "1", "match-cuts": "1", faces: "0", "custom-markers": "", ...sup };
   if (out.clips) out.mode = "clips";
   return out;
 }
 
-function listClipsInFolder(folder) {
-  const abs = resolve(folder);
-  return readdirSync(abs)
-    .filter((n) => VIDEO_EXT.has(extname(n).toLowerCase()))
-    .map((n) => join(abs, n))
-    .filter((p) => statSync(p).isFile())
-    .sort();
-}
-
-// Probe a video file's duration in frames at the project rate. Falls back to
-// 600 frames (~20s @ 30fps) if ffprobe is missing or the file is malformed.
-function probeDurationFrames(path) {
-  try {
-    const out = execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", path], { encoding: "utf8" }).trim();
-    const sec = parseFloat(out);
-    if (!Number.isFinite(sec) || sec <= 0) return 600;
-    return Math.max(30, Math.round(sec * FPS));
-  } catch {
-    return 600;
-  }
-}
-
-// Synthesize N color-bar test patterns into .work/. Each is 8s @ 30fps so the
-// downstream cadence has plenty of head-room when picking sub-clips.
-function makeTestPatterns(workDir) {
-  if (!existsSync(workDir)) mkdirSync(workDir, { recursive: true });
-  const palette = [
-    "color=c=0x1a1a1a", "color=c=0x222831",
-    "color=c=0x393e46", "color=c=0xeeeeee",
-    "color=c=0xff5722", "color=c=0x00adb5",
-  ];
-  const out = [];
-  for (let i = 0; i < palette.length; i++) {
-    const path = join(workDir, `pattern-${i}.mp4`);
-    if (!existsSync(path)) {
-      const filter = `${palette[i]}:s=1920x1080:r=${RATE_NUM}/${RATE_DEN}:d=8,drawtext=text='SCENE ${i + 1}':fontcolor=white:fontsize=120:x=(w-text_w)/2:y=(h-text_h)/2`;
-      const r = spawnSync("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", filter, "-c:v", "libx264", "-pix_fmt", "yuv420p", path], { encoding: "utf8" });
-      if (r.status !== 0) throw new Error("ffmpeg failed:\n" + (r.stderr || "").slice(-1000));
-    }
-    out.push(path);
-  }
-  return out;
-}
-
 const args = parseArgs(process.argv.slice(2));
+let downbeatOffsetSec = 0;
+if (args.music) {
+  // --music=<path> overrides --bpm with auto-detected tempo + downbeat phase.
+  // Result is snapped to the nearest integer (or half-step) so a clean
+  // 120-BPM source doesn't drift into 119.57 fractional cadence.
+  const t = detectTempo(resolve(args.music));
+  args.bpm = String(snapTempo(t.bpm));
+  downbeatOffsetSec = t.downbeatOffsetSec;
+  console.log(`[music] detected ${t.bpm.toFixed(2)} BPM → snapped to ${args.bpm}, downbeat @ ${downbeatOffsetSec.toFixed(3)}s`);
+}
 const bpm = parseInt(args.bpm);
 const bars = parseInt(args.bars);
 if (!Number.isFinite(bpm) || bpm < 30) throw new Error(`bad --bpm: ${args.bpm}`);
@@ -88,7 +54,7 @@ if (args.mode === "clips") {
   clipPaths = listClipsInFolder(args.clips);
   if (clipPaths.length === 0) throw new Error(`no video files in ${args.clips}`);
 } else {
-  clipPaths = makeTestPatterns(join(HERE, ".work", "patterns"));
+  clipPaths = makeTestPatterns(join(ROOT, ".work", "patterns"), RATE_NUM, RATE_DEN);
 }
 
 const beatFrames = Math.round((60 / bpm) * FPS);
@@ -124,7 +90,7 @@ const probed = clipPaths.map((p, i) => ({
   id: `r${assetIdBase + i}`,
   src: p,
   name: basename(p, extname(p)),
-  durFrames: probeDurationFrames(p),
+  durFrames: probeDurationFrames(p, FPS),
 }));
 
 // Per-clip loudness measurement → per-clip dB gain toward target.
@@ -145,6 +111,22 @@ function audioChildrenFor(srcIdx, durSec) {
   if (audioTarget === null || perClipGainDB[srcIdx] === null) return "";
   return adjustVolume({ amountDB: perClipGainDB[srcIdx], fadeInSec: audioFadeSec, fadeOutSec: audioFadeSec, durSec });
 }
+let ranked = null;
+if (args["smart-pick"] !== "0" && args.mode === "clips" && !args.template) {
+  console.log(`[shots] analysing ${probed.length} source clips for motion + scene cuts...`);
+  const shotsByClip = probed.map((p) => analyzeShots(p.src, p.durFrames / FPS));
+  if (args.faces !== "0") { console.log(`[faces] haarcascade face detection at 5 fps...`); enrichShotsWithFaces(probed.map((p) => p.src), shotsByClip); }
+  ranked = rankShots(shotsByClip);
+  const total = shotsByClip.reduce((n, s) => n + s.length, 0);
+  console.log(`[shots] ${total} shots; hook motion=${ranked?.hook.motionAvg.toFixed(2)} faceFrac=${(ranked?.hook.faceFraction || 0).toFixed(2)}`);
+}
+const customMarkers = parseCustomMarkers(args["custom-markers"]);
+const customMarkersEmitted = new Set();
+const sectionCutCounts = { intro: 0, verse: 0, chorus: 0, outro: 0 };
+const HOOK_SEC = parseFloat(args["hook-sec"]) || 3.5;
+const matchCutsOn = args["match-cuts"] !== "0";
+let hookCutCount = 0;
+let prevShot = null;
 const autoChapters = args["auto-chapters"] !== "0";
 function chapterMarkerFor(label, startFrames) {
   if (!autoChapters) return "";
@@ -206,14 +188,31 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
     const c = cuts[ci];
     const offsetFrames = bar * barFrames + Math.round(c.beatStart * beatFrames);
     let durFrames = Math.max(2, Math.round(c.beatLen * beatFrames));
-    // Cap clip duration at probed length so FCP doesn't error on out-of-range.
-    const idx = pickClipIndex(args.style, cutGlobalIdx, probed.length);
+    // Smart pick: section-aware shot, anchored to shot in-point.
+    // Plain pick: round-robin clip with offset jitter (back-compat path).
+    let idx, startFrames;
+    if (ranked) {
+      const offsetSec = offsetFrames / FPS;
+      const hookIdx = offsetSec < HOOK_SEC ? hookCutCount++ : -1;
+      const shot = pickShotForCut(ranked, sec, sectionCutCounts[sec] || 0, hookIdx, matchCutsOn ? prevShot : null);
+      idx = shot.clipIdx;
+      prevShot = shot;
+      const shotStartF = Math.round(shot.start * FPS);
+      const shotEndF = Math.round(shot.end * FPS);
+      const shotLen = Math.max(2, shotEndF - shotStartF - 1);
+      startFrames = shotStartF;
+      durFrames = Math.min(durFrames, shotLen);
+      if (hookIdx < 0) sectionCutCounts[sec] = (sectionCutCounts[sec] || 0) + 1;
+    } else {
+      idx = pickClipIndex(args.style, cutGlobalIdx, probed.length);
+      const a0 = probed[idx];
+      const headroom = Math.max(0, a0.durFrames - durFrames - 1);
+      startFrames = headroom === 0 ? 0 : Math.floor((cutGlobalIdx * 13) % headroom);
+    }
     const a = probed[idx];
-    // Vary in-point per cut so a repeated source doesn't always start at 0.
-    const headroom = Math.max(0, a.durFrames - durFrames - 1);
-    const startFrames = headroom === 0 ? 0 : Math.floor((cutGlobalIdx * 13) % headroom);
     durFrames = Math.min(durFrames, a.durFrames - startFrames - 1);
     const newChapter = ((bar === 0 && ci === 0) || (sectionChanged && ci === 0)) ? chapterMarkerFor(sec, startFrames) : "";
+    const cmXml = emitCustomMarkers(customMarkers, customMarkersEmitted, offsetFrames, startFrames, durFrames, RATE_NUM, RATE_DEN, FPS);
     spine.push(assetClip({
       name: `${a.name} ${cutGlobalIdx + 1}`,
       ref: a.id,
@@ -222,7 +221,8 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
       durFrames,
       rateNum: RATE_NUM,
       rateDen: RATE_DEN,
-      children: audioChildrenFor(idx, durFrames / FPS) + lookXml + newChapter,
+      role: "dialogue",
+      children: audioChildrenFor(idx, durFrames / FPS) + lookXml + newChapter + cmXml,
     }));
     if (sectionChanged && ci === 0) {
       const tFrames = transitionFrames(args.style, true, FPS);
@@ -234,6 +234,15 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
     cutGlobalIdx++;
   }
   prevSec = sec;
+}
+
+spine.push(emitOrphanMarkers(customMarkers, customMarkersEmitted, RATE_NUM, RATE_DEN, FPS));
+let brollCount = 0;
+if (ranked && args["brolls"] !== "0" && !args.template) {
+  for (const b of planBrolls(ranked, sectionOf, bars, barFrames / FPS)) {
+    const a = probed[b.clipIdx];
+    spine.push(assetClip({ name: `${a.name} broll ${++brollCount}`, ref: a.id, offsetFrames: Math.round(b.tOnTimeline * FPS), startFrames: Math.round(b.srcInSec * FPS), durFrames: Math.max(2, Math.round(b.durSec * FPS)), rateNum: RATE_NUM, rateDen: RATE_DEN, lane: "1", role: "video", children: lookXml }));
+  }
 }
 
 // Title overlays for cadence mode (template mode emits its own titles inline).
@@ -282,7 +291,7 @@ const xml = document({
   effectsXml,
 });
 
-const outPath = join(HERE, args.out);
+const outPath = resolve(ROOT, args.out);
 writeFileSync(outPath, xml);
 const titleCount = args.template ? titlesEmitted : titles.length;
 const summary = args.template

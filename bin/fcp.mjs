@@ -14,12 +14,12 @@ import {
   activate, listClips, listEvents, listProjects, selectEvent,
   listTimelineClips, keystroke, keyCode, setEffectSearch, findEffectRow,
   doubleClick, sleep,
-} from "./lib/fcp-ax.mjs";
+} from "../lib/fcp-ax.mjs";
 import {
   cuaInit, cuaSnapshotCmd, cuaClickCmd, cuaPlayCmd, cuaStopCmd,
   cuaPressCmd, cuaTypeCmd, cuaFindCmd, cuaEffect, cuaColorPreset,
   cuaTitle, cuaShare, cuaExport, cuaUndo, cuaRedo,
-} from "./lib/fcp-cua-cmds.mjs";
+} from "../lib/fcp-cua-cmds.mjs";
 
 const CMD = {
   open([file]) {

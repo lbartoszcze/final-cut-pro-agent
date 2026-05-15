@@ -1,0 +1,18 @@
+{
+  "name": "final-cut-pro-agent",
+  "version": "0.2.0",
+  "description": "Auto-editor that produces music-synced, content-aware cuts as either finished MP4/MOV or .fcpxml for Final Cut Pro.",
+  "type": "module",
+  "bin": {
+    "cut": "bin/cut.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "render": "node lib/render/video.mjs",
+    "fcpxml": "node make-cut.mjs",
+    "fcp": "node fcp.mjs"
+  },
+  "license": "MIT"
+}
