@@ -11,7 +11,7 @@ import { LOOKS, LOOK_EFFECT_DECL, LUT_EFFECT_DECL, resolveLook, lutFcpFilter } f
 import { probeLoudness, parseAspect, parseFps, resolvePlatform } from "../lib/render/ffmpeg.mjs";
 import { detectTempo, snapTempo } from "../lib/analyze/beats.mjs";
 import { analyzeShots } from "../lib/analyze/motion.mjs";
-import { rankShots, pickShotForCut, planBrolls } from "../lib/analyze/score.mjs";
+import { rankShots, pickShotForCut, planBrolls, groupMulticam, multicamRewriteOne } from "../lib/analyze/score.mjs";
 import { enrichShotsWithFaces } from "../lib/analyze/faces.mjs";
 import { listClipsInFolder, probeDurationFrames, makeTestPatterns } from "../lib/source/sources.mjs";
 
@@ -123,6 +123,8 @@ if (args["smart-pick"] !== "0" && args.mode === "clips" && !args.template) {
 const customMarkers = parseCustomMarkers(args["custom-markers"]);
 const customMarkersEmitted = new Set();
 const sectionCutCounts = { intro: 0, verse: 0, chorus: 0, outro: 0 };
+const mcGroups = args.multicam !== "0" ? groupMulticam(probed.map((p) => p.src)) : null;
+const mcState = { lastAngle: null };
 const HOOK_SEC = parseFloat(args["hook-sec"]) || 3.5;
 const matchCutsOn = args["match-cuts"] !== "0";
 let hookCutCount = 0;
@@ -209,21 +211,13 @@ if (!args.template) for (let bar = 0; bar < bars; bar++) {
       const headroom = Math.max(0, a0.durFrames - durFrames - 1);
       startFrames = headroom === 0 ? 0 : Math.floor((cutGlobalIdx * 13) % headroom);
     }
+    if (mcGroups) idx = multicamRewriteOne(idx, probed.map((p) => p.src), mcGroups, mcState);
     const a = probed[idx];
     durFrames = Math.min(durFrames, a.durFrames - startFrames - 1);
     const newChapter = ((bar === 0 && ci === 0) || (sectionChanged && ci === 0)) ? chapterMarkerFor(sec, startFrames) : "";
     const cmXml = emitCustomMarkers(customMarkers, customMarkersEmitted, offsetFrames, startFrames, durFrames, RATE_NUM, RATE_DEN, FPS);
-    spine.push(assetClip({
-      name: `${a.name} ${cutGlobalIdx + 1}`,
-      ref: a.id,
-      offsetFrames,
-      startFrames,
-      durFrames,
-      rateNum: RATE_NUM,
-      rateDen: RATE_DEN,
-      role: "dialogue",
-      children: audioChildrenFor(idx, durFrames / FPS) + lookXml + newChapter + cmXml,
-    }));
+    const kws = [sec]; if (ranked && offsetFrames / FPS < HOOK_SEC) kws.push("hook");
+    spine.push(assetClip({ name: `${a.name} ${cutGlobalIdx + 1}`, ref: a.id, offsetFrames, startFrames, durFrames, rateNum: RATE_NUM, rateDen: RATE_DEN, role: "dialogue", keywords: kws, children: audioChildrenFor(idx, durFrames / FPS) + lookXml + newChapter + cmXml }));
     if (sectionChanged && ci === 0) {
       const tFrames = transitionFrames(args.style, true, FPS);
       if (tFrames > 0) {

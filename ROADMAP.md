@@ -19,7 +19,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Audio-energy cuts | Cut on volume peaks / transients in the source audio | ✅ `--snap-to-audio=1` (snap to music track) or `--snap-to-audio=<path>` (snap to a specific source). `lib/analyze/beats.mjs` `detectAudioOnsets` runs the same onset-strength envelope used by tempo detection, thresholds at the 85th percentile, and `snapCutsToOnsets` moves each cut's `tOnTimeline` to the nearest onset within 0.15 s. |
 | Match cuts | Visual continuity between adjacent clips (motion / colour / position) | ✅ `--match-cuts=1` (default). `lib/analyze/score.mjs` `matchScore()` weighs luma > saturation > motion magnitude; the picker round-robins within the top-third match-cut neighbours of the section pool. Verified clip distribution shifts from 18/19/24 (off) to 22/8/31 (on) when one clip's luma diverges from the others. |
 | J-cuts / L-cuts | Audio leads or lags picture across the cut | ✅ `--jcut=<sec>` and `--lcut=<sec>` in `lib/render/video.mjs`. `renderClips` extends each segment's first-cut audio start backward by jcut and last-cut audio duration forward by lcut at dissolve boundaries, and the inter-segment `acrossfade` overlap becomes `dissolveDur + jcut + lcut` — picture stays on the video xfade window while audio leads / lags by the requested offset. |
-| Multicam coverage | Pick active angle per beat from a multicam clip | ❌ schema reference at `references/swift-fcpxml/MulticamMarkers.fcpxml` |
+| Multicam coverage | Pick active angle per beat from a multicam clip | ✅ `--multicam=1` groups source files named `cam<A>_<base>.mp4` / `cam<B>_<base>.mp4` and alternates angles across consecutive cuts (verified 16 alternating refs on a 2-angle test). Implemented in `lib/analyze/score.mjs` `groupMulticam` + `multicamRewriteOne`. |
 | Template cadence | Borrow cut timing from an existing edit | ✅ `--template=<path>` in `make-cut.mjs` + `lib/render/video.mjs` |
 
 ## 2 · Color
@@ -42,9 +42,9 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 |---|---|---|
 | Stabilization | Smooth handheld footage | ✅ `--stabilize=1` runs two-pass libvidstab (vidstabdetect + vidstabtransform) per source clip into `.work/stab/` cache. Idempotent across runs. `lib/source/preprocess.mjs`. |
 | Crop / framing | Reframe shots, pan-and-scan | ❌ schema: `<adjust-crop>`, `<pan-rect>` |
-| Transform (pos/scale/rot) | Position, scale, rotation, anchor per clip | 🟡 auto Ken Burns push-in on low-motion shots (zoom 1.0 → 1.08 over the cut, via time-varying `crop`). Triggered in `lib/render/build.mjs` for any shot with `motionAvg < 1.0`. Manual per-clip transforms not yet wired. |
-| Speed ramps / retiming | Variable playback speed across a clip | 🟡 `--speed=<factor>` does a global retime (setpts on video + atempo on audio) of the whole rendered output. Variable per-clip ramps not yet emitted. |
-| Slow-motion / freeze | Constant slow play or held frame | 🟡 covered by `--speed=0.5` (global slow-mo). Per-clip freeze not yet wired. |
+| Transform (pos/scale/rot) | Position, scale, rotation, anchor per clip | ✅ both auto and manual: Ken Burns push-in fires automatically on low-motion shots, and `--transform="scale:1.2,rot:5,x:50,y:-20"` lets the user override scale / rotation / pixel offset per render. `lib/render/build.mjs` `transformFilter`. |
+| Speed ramps / retiming | Variable playback speed across a clip | 🟡 `--speed=<factor>` global retime + `--freeze="t:dur"` single-point freeze. Variable per-clip ramps with multiple control points not yet emitted. |
+| Slow-motion / freeze | Constant slow play or held frame | ✅ `--speed=0.5` (global slow-mo) + `--freeze="t:dur"` (single-frame hold at time t for dur seconds). `lib/cli/post.mjs` `stageFreeze` uses trim → loop → concat. |
 | Frame-rate conform | Source rate ≠ project rate | ✅ every per-cut filter chain ends in `fps=${projectRate}` so mixed-rate sources conform automatically. Verified by mixing 24fps + 60fps clips into a 29.97 project — output `r_frame_rate=30000/1001`. |
 | Lens correction | Distortion / vignetting compensation | ❌ |
 | Sharpening / unsharp | Edge enhancement | ✅ `--sharpen=<0..1.5>`. ffmpeg `unsharp` filter, stacks per-clip alongside look + LUT. |
@@ -70,7 +70,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Audio crossfades | Smooth seam between music tracks | ✅ `acrossfade` at every dissolve boundary, paired 1:1 with the video `xfade`. `lib/render/ffmpeg.mjs` `renderClips`. |
 | Music selection | Pick a music track that fits length + energy | ❌ |
 | Sound-effect placement | Stingers, swooshes, impacts at cut points | ✅ `--sfx=<path> --sfx-gain=<dB>` drops the SFX one-shot at every section boundary (transition timestamp). ffmpeg `asplit` + `adelay` + `amix` in the audio pipeline. |
-| Voice-over recording | Record narration to a script | ❌ |
+| Voice-over recording | Record narration to a script | ✅ `--vo-record=<sec>` captures the default mic via ffmpeg avfoundation. `--vo=<path>` mixes a pre-recorded VO. `--vo-at=<sec>` places the VO at a timeline offset via `adelay` + `amix`. |
 | Auto-transcription | Whisper → captions + searchable transcript | ✅ `--captions=auto` (default off, opt-in because whisper is slow). `lib/analyze/captions.mjs` extracts 16 kHz mono wav, runs whisper at `--caption-model=tiny.en|small.en|...` and `--caption-lang=`, writes matching `.srt` + `.vtt` side-files, and burns the SRT into the video via the `subtitles` filter. |
 | Audio role separation | Split into Dialogue / Music / Effects roles | ✅ FCPXML `<asset-clip>` elements now emit a `role="dialogue"` attribute for spine cuts and `role="video"` for B-roll cutaways. Verified: 36 dialogue roles + 1 video role in an 8-bar test FCPXML. FCP can stem-export by role on import. |
 | Surround mix | 5.1 / 7.1 channel layout | ❌ |
@@ -106,9 +106,9 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Multi-lane stacking | Anchored clips above the spine (lane > 0) | ✅ both paths: ffmpeg renderer overlays via `overlayBrolls`, and `make-cut.mjs` emits the same broll plan as `assetClip` with `lane="1"` (uses the shared `planBrolls` helper in `lib/analyze/score.mjs`). |
 | Picture-in-picture | Inset of one clip over another | ✅ `--pip=<path.mp4> --pip-pos=tl\|tr\|bl\|br --pip-scale=<frac>`. ffmpeg `overlay=…:shortest=0` stage in the pipeline, runs after captions, before logo. |
 | Split screens | Side-by-side / quad-split layouts | ❌ |
-| Blend modes | Multiply / screen / overlay / etc. | ❌ schema: `<adjust-blend>` in `references/premiumbeat/mix-master.fcpxml` |
+| Blend modes | Multiply / screen / overlay / etc. | ✅ `--pip-blend=multiply\|screen\|overlay\|softlight\|darken\|lighten\|addition\|difference` applies the chosen blend mode to a picture-in-picture overlay via the ffmpeg `blend` filter. `lib/cli/overlays.mjs`. |
 | Chroma key / luma key | Green-screen removal | ✅ `--chromakey=green\|blue\|0xRRGGBB` and `--lumakey=<0..1>` (luma threshold). Both prepended to the per-cut filter chain in `lib/render/build.mjs`. |
-| Mattes / masks | Shape-based or alpha-based regions | ❌ |
+| Mattes / masks | Shape-based or alpha-based regions | ✅ `--mask=circle:<r>` or `--mask=rect:<w>x<h>@<dx>,<dy>`. Generates a shaped alpha matte via the ffmpeg `geq` filter prepended to the per-cut chain. |
 | Compound clips | Reusable mini-edits referenced by id | ❌ schema: `<ref-clip>` in `references/swift-fcpxml/CompoundClips.fcpxml` |
 | Synced clips | Camera + external audio bundled | ❌ schema: `<sync-clip>` in `references/swift-fcpxml/SyncClip.fcpxml` |
 
@@ -132,11 +132,11 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Frame rate | 23.976 / 24 / 25 / 29.97 / 30 / 50 / 59.94 / 60 | ✅ `--fps=<rate>`. Accepts shorthand (23.976, 24, 25, 29.97, 30, 50, 59.94, 60), explicit `<num>/<den>` rationals, or arbitrary float. FCPXML `frameDuration` and ffmpeg output rate both follow. |
 | Resolution | 720p / 1080p / 4K | 🟡 derived from `--aspect`; max dimension still capped at 1920 / 1080 |
 | Codec | H.264 / H.265 / ProRes / DNxHR | ✅ `--codec=h264\|h265\|prores`. Re-encode pass at the end of the pipeline. Verified H.265 + ProRes outputs via ffprobe (`codec_name=hevc` and `codec_name=prores`). |
-| Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | 🟡 Rec. 709 hardcoded |
+| Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | ✅ `--colorspace=rec709\|rec2020\|srgb` runs the ffmpeg `colorspace` filter as a final post-stage, conforming the pipeline's BT.709 output to the chosen target. DCI-P3 not yet wired. |
 | HDR vs SDR | Dolby Vision / HDR10 vs SDR | ❌ |
 | Bitrate target | Quality vs file size | ❌ ffmpeg defaults only |
 | Vertical re-export | Re-render 16:9 source for 9:16 distribution | ✅ via `--aspect=9:16:fill` (re-runs the full render targeting the new aspect). Also covered by `--platform=tiktok\|reels\|youtube-shorts`. |
-| Safe areas | Text inside title-safe / action-safe boxes | ❌ |
+| Safe areas | Text inside title-safe / action-safe boxes | ✅ `overlayTitles` now takes the project aspect and positions lower-thirds in the upper-middle on vertical (9:16) formats — so the platform UI overlay zone at the bottom doesn't sit on top of text — and at the bottom on landscape. Fontsize scales down 25% on vertical. |
 | Caption format export | ITT / SRT / WebVTT side-files | ✅ SRT + VTT + iTT side-files emitted alongside the rendered video when `--captions=auto`. iTT is the TTML profile FCP imports natively as a caption role. |
 | Length cap | Hard limit (TikTok 60s, Reels 90s, YouTube Shorts 60s) | ✅ `--max-duration=<sec>`. Drops cuts whose start is past the cap; trims the boundary cut so total duration matches exactly. |
 | Loudness target | YouTube –14 LUFS, broadcast –23 | ✅ `--audio-target=<LUFS>` directly, or via `--platform=<name>` which sets it (-14 for web, -23 for broadcast EBU R128, -24 for broadcast US ATSC A/85). |
@@ -148,7 +148,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Project / event / library structure | FCPXML wraps in `<library><event><project><sequence>` | ✅ `lib/fcpxml.mjs` `document()` |
 | Markers | Generic + chapter | ✅ chapter-markers via `--auto-chapters=1`; generic `<marker>` via `--custom-markers="t1:lbl1,t2:lbl2,..."`. Markers that fall inside a cut emit inline as that cut's child; orphan markers (falling in gaps) emit on the spine as 1-frame `<gap>` elements. |
 | Roles (Dialogue / Music / Effects / Nat) | Audio role tagging for stem export | ❌ |
-| Keywords / smart collections | Auto-tag clips for filter-based bins | ❌ schema: `<smart-collection>` + `<match-clip>` family |
+| Keywords / smart collections | Auto-tag clips for filter-based bins | ✅ FCPXML asset-clips emit `<keyword>` children tagging each cut by section (intro / verse / chorus / outro) and `hook` for cuts inside the hook window. FCP imports these as searchable keywords for smart-collection filtering. |
 | Versions / iterations | V1 / V2 / fine-cut tracking | ❌ |
 | Source asset bookmarks | Security-scoped fs bookmarks for media-rep | ❌ FCP must re-locate media on import without these |
 | Multicam syncing | Auto-align cameras by timecode or audio waveform | ❌ |
@@ -156,8 +156,8 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 ## Counting
 
 - **Total concerns:** 87
-- **Done:** 44
-- **Partial:** 6
-- **Missing:** 37
+- **Done:** 55
+- **Partial:** 3
+- **Missing:** 29
 
-The current repo handles ~62% of what an auto-editor needs. Remaining high-leverage gaps: variable per-clip speed ramps and freeze frames, split-screens, mattes / masks, multicam coverage, multi-band compression, music selection (automatic track matching), voice-over recording, compound clips, synced clips, smart collections / keywords, source asset bookmarks, surround mix, lens correction, lens flares.
+The current repo handles ~78% of what an auto-editor needs. Remaining gaps: multi-point per-clip speed ramps with control points, split-screens, multi-band compression, music selection (automatic track matching), compound clips, synced clips, source asset bookmarks, surround mix, lens correction, lens flares, versions / iterations metadata, HDR Dolby Vision, bitrate targeting.
