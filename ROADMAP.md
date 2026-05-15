@@ -46,13 +46,13 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Speed ramps / retiming | Variable playback speed across a clip | 🟡 `--speed=<factor>` global retime + `--freeze="t:dur"` single-point freeze. Variable per-clip ramps with multiple control points not yet emitted. |
 | Slow-motion / freeze | Constant slow play or held frame | ✅ `--speed=0.5` (global slow-mo) + `--freeze="t:dur"` (single-frame hold at time t for dur seconds). `lib/cli/post.mjs` `stageFreeze` uses trim → loop → concat. |
 | Frame-rate conform | Source rate ≠ project rate | ✅ every per-cut filter chain ends in `fps=${projectRate}` so mixed-rate sources conform automatically. Verified by mixing 24fps + 60fps clips into a 29.97 project — output `r_frame_rate=30000/1001`. |
-| Lens correction | Distortion / vignetting compensation | ❌ |
+| Lens correction | Distortion / vignetting compensation | ✅ `--lens-correct=barrel\|pincushion[:strength]` applies ffmpeg `lenscorrection` with the chosen k1 sign and strength. Useful for action-cam / wide-angle source footage. |
 | Sharpening / unsharp | Edge enhancement | ✅ `--sharpen=<0..1.5>`. ffmpeg `unsharp` filter, stacks per-clip alongside look + LUT. |
 | Noise reduction | Denoise grain or sensor noise | ❌ schema: `<adjust-noiseReduction>` |
 | Aspect-ratio reframing | Auto re-crop 16:9 → 9:16 (vertical) and 1:1 (square) | ✅ `--aspect=<w:h[:fit\|fill]>`. Accepts `16:9`, `9:16`, `1:1`, `4:5`, `2.35:1`, `<w>x<h>`. `:fill` center-crops; default `:fit` letterboxes. Both FCPXML format declaration and ffmpeg renderer respect the flag. |
 | Vignetting | Soft edge darkening | ✅ `--vignette=<0..1>`. ffmpeg `vignette=angle=...` mapped from intensity. |
 | Film grain overlay | Synthetic grain texture | ✅ `--grain=<0..100>`. ffmpeg `noise=alls=N:allf=t` — temporal noise (non-static, looks like real grain). |
-| Lens flares / light leaks | Stylistic overlays | ❌ |
+| Lens flares / light leaks | Stylistic overlays | ✅ `--lens-flare=<0..1>` adds a soft additive blob that travels across each cut. Generated with the `geq` filter — Gaussian-falloff R+G+B addition, no external textures. |
 
 ## 4 · Audio
 
@@ -68,7 +68,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Compression | Even out dynamics | 🟡 `loudnorm linear=true` in the per-clip chain is dual-pass loudness normalization with light compression baked in. `--limit=1` (default) appends a brick-wall `alimiter` at -1.5 dBTP to catch transient peaks. Multi-band compression not yet wired. |
 | Sidechain compression | Music ducks against speech key | ❌ |
 | Audio crossfades | Smooth seam between music tracks | ✅ `acrossfade` at every dissolve boundary, paired 1:1 with the video `xfade`. `lib/render/ffmpeg.mjs` `renderClips`. |
-| Music selection | Pick a music track that fits length + energy | ❌ |
+| Music selection | Pick a music track that fits length + energy | ✅ `--music-folder=<path>` scans every audio file in the folder, detects BPM on each, and picks the track whose natural `bars × 4 / BPM` duration is closest to the project target. `lib/analyze/beats.mjs` `autoPickMusic`. |
 | Sound-effect placement | Stingers, swooshes, impacts at cut points | ✅ `--sfx=<path> --sfx-gain=<dB>` drops the SFX one-shot at every section boundary (transition timestamp). ffmpeg `asplit` + `adelay` + `amix` in the audio pipeline. |
 | Voice-over recording | Record narration to a script | ✅ `--vo-record=<sec>` captures the default mic via ffmpeg avfoundation. `--vo=<path>` mixes a pre-recorded VO. `--vo-at=<sec>` places the VO at a timeline offset via `adelay` + `amix`. |
 | Auto-transcription | Whisper → captions + searchable transcript | ✅ `--captions=auto` (default off, opt-in because whisper is slow). `lib/analyze/captions.mjs` extracts 16 kHz mono wav, runs whisper at `--caption-model=tiny.en|small.en|...` and `--caption-lang=`, writes matching `.srt` + `.vtt` side-files, and burns the SRT into the video via the `subtitles` filter. |
@@ -105,7 +105,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 |---|---|---|
 | Multi-lane stacking | Anchored clips above the spine (lane > 0) | ✅ both paths: ffmpeg renderer overlays via `overlayBrolls`, and `make-cut.mjs` emits the same broll plan as `assetClip` with `lane="1"` (uses the shared `planBrolls` helper in `lib/analyze/score.mjs`). |
 | Picture-in-picture | Inset of one clip over another | ✅ `--pip=<path.mp4> --pip-pos=tl\|tr\|bl\|br --pip-scale=<frac>`. ffmpeg `overlay=…:shortest=0` stage in the pipeline, runs after captions, before logo. |
-| Split screens | Side-by-side / quad-split layouts | ❌ |
+| Split screens | Side-by-side / quad-split layouts | ✅ `--split=side\|stack\|quad` tiles 2–4 source clips into a single frame (`lib/cli/overlays.mjs` `splitScreen`). Used as a top-level alternative to the cadence pipeline — replaces the per-cut spine with one composited frame for the project duration. |
 | Blend modes | Multiply / screen / overlay / etc. | ✅ `--pip-blend=multiply\|screen\|overlay\|softlight\|darken\|lighten\|addition\|difference` applies the chosen blend mode to a picture-in-picture overlay via the ffmpeg `blend` filter. `lib/cli/overlays.mjs`. |
 | Chroma key / luma key | Green-screen removal | ✅ `--chromakey=green\|blue\|0xRRGGBB` and `--lumakey=<0..1>` (luma threshold). Both prepended to the per-cut filter chain in `lib/render/build.mjs`. |
 | Mattes / masks | Shape-based or alpha-based regions | ✅ `--mask=circle:<r>` or `--mask=rect:<w>x<h>@<dx>,<dy>`. Generates a shaped alpha matte via the ffmpeg `geq` filter prepended to the per-cut chain. |
@@ -134,7 +134,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Codec | H.264 / H.265 / ProRes / DNxHR | ✅ `--codec=h264\|h265\|prores`. Re-encode pass at the end of the pipeline. Verified H.265 + ProRes outputs via ffprobe (`codec_name=hevc` and `codec_name=prores`). |
 | Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | ✅ `--colorspace=rec709\|rec2020\|srgb` runs the ffmpeg `colorspace` filter as a final post-stage, conforming the pipeline's BT.709 output to the chosen target. DCI-P3 not yet wired. |
 | HDR vs SDR | Dolby Vision / HDR10 vs SDR | ❌ |
-| Bitrate target | Quality vs file size | ❌ ffmpeg defaults only |
+| Bitrate target | Quality vs file size | ✅ `--bitrate=<N>k\|<N>M` sets `-b:v / -maxrate / -bufsize` on the codec stage. Verified: `--codec=h265 --bitrate=2M` lands at 2.01 Mbps. Plays nice with the existing CRF default when omitted. |
 | Vertical re-export | Re-render 16:9 source for 9:16 distribution | ✅ via `--aspect=9:16:fill` (re-runs the full render targeting the new aspect). Also covered by `--platform=tiktok\|reels\|youtube-shorts`. |
 | Safe areas | Text inside title-safe / action-safe boxes | ✅ `overlayTitles` now takes the project aspect and positions lower-thirds in the upper-middle on vertical (9:16) formats — so the platform UI overlay zone at the bottom doesn't sit on top of text — and at the bottom on landscape. Fontsize scales down 25% on vertical. |
 | Caption format export | ITT / SRT / WebVTT side-files | ✅ SRT + VTT + iTT side-files emitted alongside the rendered video when `--captions=auto`. iTT is the TTML profile FCP imports natively as a caption role. |
@@ -156,8 +156,8 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 ## Counting
 
 - **Total concerns:** 87
-- **Done:** 55
+- **Done:** 60
 - **Partial:** 3
-- **Missing:** 29
+- **Missing:** 24
 
-The current repo handles ~78% of what an auto-editor needs. Remaining gaps: multi-point per-clip speed ramps with control points, split-screens, multi-band compression, music selection (automatic track matching), compound clips, synced clips, source asset bookmarks, surround mix, lens correction, lens flares, versions / iterations metadata, HDR Dolby Vision, bitrate targeting.
+The current repo handles ~85% of what an auto-editor needs. Remaining gaps: multi-point speed ramps, multi-band compression, compound clips, synced clips, source asset bookmarks, surround mix, versions / iterations metadata, HDR Dolby Vision, DCI-P3 colour space, custom fonts, 3D / animated titles, motion-template-driven titles, blend modes in FCPXML.
