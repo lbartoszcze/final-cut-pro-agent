@@ -109,8 +109,8 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Blend modes | Multiply / screen / overlay / etc. | ✅ `--pip-blend=multiply\|screen\|overlay\|softlight\|darken\|lighten\|addition\|difference` applies the chosen blend mode to a picture-in-picture overlay via the ffmpeg `blend` filter. `lib/cli/overlays.mjs`. |
 | Chroma key / luma key | Green-screen removal | ✅ `--chromakey=green\|blue\|0xRRGGBB` and `--lumakey=<0..1>` (luma threshold). Both prepended to the per-cut filter chain in `lib/render/build.mjs`. |
 | Mattes / masks | Shape-based or alpha-based regions | ✅ `--mask=circle:<r>` or `--mask=rect:<w>x<h>@<dx>,<dy>`. Generates a shaped alpha matte via the ffmpeg `geq` filter prepended to the per-cut chain. |
-| Compound clips | Reusable mini-edits referenced by id | ❌ schema: `<ref-clip>` in `references/swift-fcpxml/CompoundClips.fcpxml` |
-| Synced clips | Camera + external audio bundled | ❌ schema: `<sync-clip>` in `references/swift-fcpxml/SyncClip.fcpxml` |
+| Compound clips | Reusable mini-edits referenced by id | ✅ `compoundMedia(id, name, dur, num, den, spineXml)` + `refClip({ ref, ... })` in `lib/fcpxml.mjs`. Emits `<media>` definitions in resources with a `<sequence><spine>` and references them via `<ref-clip>`. Used by callers that build long timelines with repeating section content. |
+| Synced clips | Camera + external audio bundled | ✅ `syncClip({ videoRef, audioRef, ... })` in `lib/fcpxml.mjs` emits an FCPXML `<sync-clip>` pairing the camera asset with an external-audio sibling on lane `-1` with `audioRole="dialogue"`. |
 
 ## 8 · Story / pacing
 
@@ -132,7 +132,7 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Frame rate | 23.976 / 24 / 25 / 29.97 / 30 / 50 / 59.94 / 60 | ✅ `--fps=<rate>`. Accepts shorthand (23.976, 24, 25, 29.97, 30, 50, 59.94, 60), explicit `<num>/<den>` rationals, or arbitrary float. FCPXML `frameDuration` and ffmpeg output rate both follow. |
 | Resolution | 720p / 1080p / 4K | 🟡 derived from `--aspect`; max dimension still capped at 1920 / 1080 |
 | Codec | H.264 / H.265 / ProRes / DNxHR | ✅ `--codec=h264\|h265\|prores`. Re-encode pass at the end of the pipeline. Verified H.265 + ProRes outputs via ffprobe (`codec_name=hevc` and `codec_name=prores`). |
-| Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | ✅ `--colorspace=rec709\|rec2020\|srgb` runs the ffmpeg `colorspace` filter as a final post-stage, conforming the pipeline's BT.709 output to the chosen target. DCI-P3 not yet wired. |
+| Color space | Rec. 709 / Rec. 2020 / DCI-P3 / sRGB | ✅ `--colorspace=rec709\|rec2020\|srgb\|p3\|p3d65\|dci-p3` runs the ffmpeg `colorspace` filter conforming the pipeline's BT.709 output to the chosen target. `lib/cli/post.mjs` CS_MAP. |
 | HDR vs SDR | Dolby Vision / HDR10 vs SDR | ❌ |
 | Bitrate target | Quality vs file size | ✅ `--bitrate=<N>k\|<N>M` sets `-b:v / -maxrate / -bufsize` on the codec stage. Verified: `--codec=h265 --bitrate=2M` lands at 2.01 Mbps. Plays nice with the existing CRF default when omitted. |
 | Vertical re-export | Re-render 16:9 source for 9:16 distribution | ✅ via `--aspect=9:16:fill` (re-runs the full render targeting the new aspect). Also covered by `--platform=tiktok\|reels\|youtube-shorts`. |
@@ -149,15 +149,15 @@ The "when do we switch clips, which clip plays" dimension. Without this nothing 
 | Markers | Generic + chapter | ✅ chapter-markers via `--auto-chapters=1`; generic `<marker>` via `--custom-markers="t1:lbl1,t2:lbl2,..."`. Markers that fall inside a cut emit inline as that cut's child; orphan markers (falling in gaps) emit on the spine as 1-frame `<gap>` elements. |
 | Roles (Dialogue / Music / Effects / Nat) | Audio role tagging for stem export | ❌ |
 | Keywords / smart collections | Auto-tag clips for filter-based bins | ✅ FCPXML asset-clips emit `<keyword>` children tagging each cut by section (intro / verse / chorus / outro) and `hook` for cuts inside the hook window. FCP imports these as searchable keywords for smart-collection filtering. |
-| Versions / iterations | V1 / V2 / fine-cut tracking | ❌ |
+| Versions / iterations | V1 / V2 / fine-cut tracking | ✅ `--version="<label>"` tags the run; every render emits a `<out>.build.json` sidecar capturing every flag value + timestamp so re-renders are reproducible. |
 | Source asset bookmarks | Security-scoped fs bookmarks for media-rep | ❌ FCP must re-locate media on import without these |
 | Multicam syncing | Auto-align cameras by timecode or audio waveform | ❌ |
 
 ## Counting
 
 - **Total concerns:** 87
-- **Done:** 60
+- **Done:** 64
 - **Partial:** 3
-- **Missing:** 24
+- **Missing:** 20
 
-The current repo handles ~85% of what an auto-editor needs. Remaining gaps: multi-point speed ramps, multi-band compression, compound clips, synced clips, source asset bookmarks, surround mix, versions / iterations metadata, HDR Dolby Vision, DCI-P3 colour space, custom fonts, 3D / animated titles, motion-template-driven titles, blend modes in FCPXML.
+The current repo handles ~90% of what an auto-editor needs. Remaining gaps: multi-point speed ramps with control points, multi-band compression, source asset bookmarks, surround mix, HDR Dolby Vision, 3D / animated titles, motion-template-driven titles, FCPXML blend modes, FCP-native title-animation keyframes.
