@@ -1,92 +1,99 @@
 #!/usr/bin/env node
-// fcp.mjs - Final Cut Pro automation CLI. Two backends:
-//   AX + cliclick  (raises FCP):
-//     open, clips, events, projects, select-event, play, stop, in, out,
-//     blade, swap-effect, undo, redo
-//   cua-driver     (FCP stays backgrounded):
-//     cua-init, cua-snapshot, cua-click, cua-play, cua-stop, cua-press,
-//     cua-type, cua-find, cua-effect, cua-color-preset, cua-title,
-//     cua-share, cua-export, cua-undo, cua-redo
+// CLI wrapper around the non-capturing Final Cut Pro AX driver.
+//
+// Every command here dispatches into Final Cut Pro via osascript Accessibility
+// actions only — no cliclick, no keystroke-to-frontmost, no AXRaise/activate,
+// no screenshots. The user's cursor, keyboard, screen, and frontmost window
+// are not touched.
+//
+// macOS will prompt once for Accessibility + Automation permission for
+// "Final Cut Pro" and "System Events" the first time the controlling terminal
+// runs any of these. Grant it in Settings → Privacy & Security → Accessibility
+// and ... → Automation. After that the actions are silent.
 
-import { execFileSync } from "node:child_process";
-import { resolve } from "node:path";
-import {
-  activate, listClips, listEvents, listProjects, selectEvent,
-  listTimelineClips, keystroke, keyCode, setEffectSearch, findEffectRow,
-  doubleClick, sleep,
-} from "../lib/fcp-ax.mjs";
-import {
-  cuaInit, cuaSnapshotCmd, cuaClickCmd, cuaPlayCmd, cuaStopCmd,
-  cuaPressCmd, cuaTypeCmd, cuaFindCmd, cuaEffect, cuaColorPreset,
-  cuaTitle, cuaShare, cuaExport, cuaUndo, cuaRedo,
-} from "../lib/fcp-cua-cmds.mjs";
+import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel } from "../lib/fcp-ax.mjs";
+
+function sleep(sec) { return new Promise((r) => setTimeout(r, sec * 1000)); }
 
 const CMD = {
+  // Read-only / launch
+  running() { console.log(isRunning() ? "yes" : "no"); },
+  launch() { launchBackground(); console.log("launched (background)"); },
   open([file]) {
     if (!file) throw new Error("open <path>");
-    execFileSync("open", ["-a", "Final Cut Pro", resolve(file)]);
+    openFile(file);
+    console.log(`opened ${file}`);
   },
-  clips() { console.log(JSON.stringify(listClips(), null, 2)); },
-  events() { console.log(listEvents()); },
-  projects() { console.log(listProjects()); },
-  "select-event"([label]) {
-    if (!label) throw new Error("select-event <name>");
-    selectEvent(label);
+  find([needle]) {
+    if (!needle) throw new Error("find <substring>");
+    process.stdout.write(findInTree(needle));
   },
-  tracks() { console.log(JSON.stringify(listTimelineClips(), null, 2)); },
-  play() { activate(); keyCode(49); },          // space
-  stop() { activate(); keyCode(49); },
-  rewind() { activate(); keystroke("a", ["control"]); }, // jump to start
-  in() { activate(); keystroke("i"); },
-  out() { activate(); keystroke("o"); },
-  blade() { activate(); keystroke("b"); },     // blade tool
-  select() { activate(); keystroke("a"); },    // select tool
+  // Generic menu click: `cut fcp menu File Save`, `cut fcp menu File Share "Master File…"`
+  menu(args) {
+    if (args.length < 2) throw new Error('menu <top> [<submenu>...] <leaf>   e.g. menu File Save');
+    clickMenu(args);
+    console.log(`menu: ${args.join(" → ")}`);
+  },
+  // Canonical actions, all via menu — never keystroke-to-frontmost.
+  save() { clickMenu(["File", "Save Project"]); console.log("saved"); },
+  close() { clickMenu(["File", "Close Project"]); console.log("closed"); },
+  undo() { clickMenu(["Edit", "Undo"]); console.log("undo"); },
+  redo() { clickMenu(["Edit", "Redo"]); console.log("redo"); },
 
-  "swap-effect"([effectName]) {
-    if (!effectName) throw new Error("swap-effect <effect-name>");
-    activate();
-    keystroke("5", ["command"]);                // open Effects browser
-    sleep(0.3);
-    setEffectSearch(effectName);
-    const coord = findEffectRow(effectName);
-    if (coord === "none") throw new Error(`effect not found: ${effectName}`);
-    doubleClick(coord);
-    sleep(0.6);
-    console.log(`applied ${effectName}`);
+  // Apply an effect to the selected timeline clip via menu + AX.
+  //   1. Open Effects browser via Window menu.
+  //   2. Set the search field's value (no keystrokes).
+  //   3. AXPress the row whose label matches.
+  async "apply-effect"([name]) {
+    if (!name) throw new Error("apply-effect <effect-name>");
+    if (!isRunning()) throw new Error("Final Cut Pro is not running. `cut fcp launch` first.");
+    clickMenu(["Window", "Show in Workspace", "Effects"]);
+    await sleep(0.4);
+    setTextField("Search", name);
+    await sleep(0.4);
+    pressByLabel(name);
+    console.log(`applied effect: ${name}`);
   },
 
-  undo() { keystroke("z", ["command"]); },
-  redo() { keystroke("z", ["command", "shift"]); },
+  // Share via File → Share → <preset> (default preset name is "Master File…").
+  async share([preset = "Master File…"]) {
+    if (!isRunning()) throw new Error("Final Cut Pro is not running. `cut fcp launch` first.");
+    clickMenu(["File", "Share", preset]);
+    console.log(`share invoked: ${preset}`);
+  },
 
-  share() { keystroke("e", ["command"]); },
-  export() { keystroke("e", ["command"]); },
-
-  // Cua-backed (background-safe) commands.
-  "cua-init":         cuaInit,
-  "cua-snapshot":     cuaSnapshotCmd,
-  "cua-click":        cuaClickCmd,
-  "cua-play":         cuaPlayCmd,
-  "cua-stop":         cuaStopCmd,
-  "cua-press":        cuaPressCmd,
-  "cua-type":         cuaTypeCmd,
-  "cua-find":         cuaFindCmd,
-  "cua-effect":       cuaEffect,
-  "cua-color-preset": cuaColorPreset,
-  "cua-title":        cuaTitle,
-  "cua-share":        cuaShare,
-  "cua-export":       cuaExport,
-  "cua-undo":         cuaUndo,
-  "cua-redo":         cuaRedo,
+  help() { printHelp(); },
 };
 
-const [cmd, ...rest] = process.argv.slice(2);
-if (!cmd || !CMD[cmd]) {
-  console.error("Usage: node fcp.mjs <command> [args...]");
-  console.error("Commands: " + Object.keys(CMD).join(", "));
-  process.exit(1);
+function printHelp() {
+  console.log("cut fcp — non-capturing Final Cut Pro driver");
+  console.log("");
+  console.log("Every command dispatches via macOS Accessibility actions only.");
+  console.log("No cursor warp, no keystroke-to-frontmost, no screen capture,");
+  console.log("no focus-stealing activate — Final Cut Pro can stay backgrounded.");
+  console.log("");
+  console.log("Commands:");
+  console.log("  cut fcp running                    is Final Cut Pro running?");
+  console.log("  cut fcp launch                     launch FCP in the background (-g)");
+  console.log("  cut fcp open <path>                open a project / .fcpxml (background)");
+  console.log("  cut fcp menu <top> [...] <leaf>    click any menu item, e.g. menu File Save");
+  console.log("  cut fcp save                       File → Save Project");
+  console.log("  cut fcp close                      File → Close Project");
+  console.log("  cut fcp undo / redo                Edit → Undo / Redo");
+  console.log("  cut fcp apply-effect <name>        apply effect to selected timeline clip");
+  console.log("  cut fcp share [<preset>]           File → Share → preset (default 'Master File…')");
+  console.log("  cut fcp find <substring>           dump AX-tree matches (debugging)");
+  console.log("");
+  console.log("First-time use: grant Accessibility + Automation permission for");
+  console.log("Final Cut Pro + System Events to this terminal in Settings.");
 }
+
+const [cmd, ...rest] = process.argv.slice(2);
+if (!cmd || cmd === "-h" || cmd === "--help") { printHelp(); process.exit(0); }
+if (!CMD[cmd]) { console.error(`unknown subcommand: ${cmd}. 'cut fcp help' for list.`); process.exit(2); }
 try {
-  CMD[cmd](rest);
+  const r = CMD[cmd](rest);
+  if (r && typeof r.then === "function") r.catch((e) => { console.error(e.message); process.exit(1); });
 } catch (e) {
   console.error(e.message);
   process.exit(1);
