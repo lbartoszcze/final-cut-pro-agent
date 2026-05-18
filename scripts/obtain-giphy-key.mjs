@@ -1,20 +1,14 @@
 #!/usr/bin/env node
-// Obtain a Giphy developer API key autonomously.
-//
-//   1. Generate a fresh @wisentmedia.com email + password.
-//   2. Drive developers.giphy.com/join via Playwright (from sibling weles).
-//   3. Poll Resend's receiving API for the verification message.
-//   4. Click the verification link.
-//   5. Sign in, create an app, extract the API key from the dashboard.
-//   6. Persist GIPHY_API_KEY=<key> to <repo>/.env.
-//
-// If signup hits a CAPTCHA or anti-bot wall, the script halts at that
-// point with a labeled blocker.
+// Obtain a Giphy developer API key autonomously: signup at giphy.com/join
+// (CapSolver-solved reCAPTCHA) -> Resend-polled email verify -> dashboard
+// -> create app -> persist GIPHY_API_KEY to <repo>/.env. Each failure path
+// prints a labeled BLOCKER and exits non-zero.
 
 import { fileURLToPath } from "node:url";
 import { dirname, join, resolve } from "node:path";
 import { writeFileSync, existsSync, readFileSync } from "node:fs";
 import { request as httpsRequest } from "node:https";
+import { pollInbox, fetchEmailBody, extractGiphyVerifyLink } from "../lib/giphy/resend-inbox.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, "..");
@@ -81,49 +75,6 @@ const USERNAME = `fcpagent${randSlug().slice(0, 8)}`;
 
 console.log(`[giphy-key] email: ${EMAIL}`);
 console.log(`[giphy-key] username: ${USERNAME}`);
-
-async function pollInbox(toAddr, sinceMs, maxWaitMs = 120000) {
-  const start = Date.now();
-  while (Date.now() - start < maxWaitMs) {
-    const list = await new Promise((res, rej) => {
-      const r = httpsRequest({
-        method: "GET", host: "api.resend.com", path: "/emails/receiving?limit=20",
-        headers: { authorization: `Bearer ${RESEND_KEY}` },
-      }, (resp) => {
-        let body = ""; resp.setEncoding("utf8");
-        resp.on("data", (c) => body += c);
-        resp.on("end", () => { try { res(JSON.parse(body)); } catch (e) { rej(e); } });
-      });
-      r.on("error", rej); r.end();
-    });
-    const match = (list.data || []).find((m) => {
-      const to = (m.to || []).join(" ");
-      return to.includes(toAddr) && new Date(m.created_at).getTime() > sinceMs;
-    });
-    if (match) return match;
-    await new Promise((r) => setTimeout(r, 4000));
-  }
-  return null;
-}
-
-async function fetchEmailBody(id) {
-  return new Promise((res, rej) => {
-    const r = httpsRequest({
-      method: "GET", host: "api.resend.com", path: `/emails/receiving/${id}`,
-      headers: { authorization: `Bearer ${RESEND_KEY}` },
-    }, (resp) => {
-      let body = ""; resp.setEncoding("utf8");
-      resp.on("data", (c) => body += c);
-      resp.on("end", () => { try { res(JSON.parse(body)); } catch (e) { rej(e); } });
-    });
-    r.on("error", rej); r.end();
-  });
-}
-
-function extractVerifyLink(text) {
-  const m = text && text.match(/https:\/\/developers\.giphy\.com\/[^\s"<>]*verify[^\s"<>]*/i);
-  return m ? m[0] : null;
-}
 
 async function run() {
   let chromium;
@@ -203,27 +154,62 @@ async function run() {
   console.log("[giphy-key] submit clicked: " + submitOk);
   await page.waitForTimeout(6000);
 
-  // Capture post-submit state. Giphy creates the account immediately on
-  // signup (the session cookie is set) — there is no email-verify gate for
-  // basic API access, so proceed straight to the developer dashboard with
-  // the same browser context.
-  const postSubmit = await page.evaluate(() => ({
-    url: location.href,
-    err: (document.querySelector(".form-error, .error, [class*='error' i]") || {}).innerText || "",
-    bodyHead: document.body.innerText.slice(0, 400),
-  }));
+  // The React form is nondeterministic: the first submit sometimes lands on
+  // a partial "Already started creating an account? Finish Sign Up" state
+  // instead of "Check your Email!". Recover: click "Finish Sign Up", else
+  // re-click submit — up to 4 rounds — until the email-sent confirmation.
+  for (let r = 0; r < 4; r++) {
+    const st = await page.evaluate(() => document.body.innerText.slice(0, 300));
+    if (/check your email/i.test(st)) break;
+    const action = /finish sign\s*up/i.test(st) ? "finish" : "resubmit";
+    console.log(`[giphy-key] recovery ${r + 1}: ${action}`);
+    await page.evaluate((a) => {
+      if (a === "finish") {
+        const el = Array.from(document.querySelectorAll("a,button,span,div"))
+          .find((x) => /finish sign\s*up/i.test((x.textContent || "").trim()) && x.offsetParent !== null);
+        if (el) el.click();
+      } else {
+        const b = Array.from(document.querySelectorAll("button, input[type=submit]"))
+          .filter((x) => /sign\s*up|create account|join/i.test(x.textContent || x.value));
+        if (b.length) b[b.length - 1].click();
+      }
+    }, action);
+    await page.waitForTimeout(5000);
+  }
+
+  const postSubmit = await page.evaluate(() => ({ url: location.href, head: document.body.innerText.slice(0, 200) }));
   console.log("[giphy-key] post-submit:", JSON.stringify(postSubmit));
 
-  console.log("[giphy-key] step 5: open developer dashboard (same session)");
+  // Giphy emails a "Confirm Your GIPHY Account" link
+  // (https://giphy.com/verify/registrant/<uuid>). Poll Resend, visit it in
+  // THIS page so the verified session cookie is set on the same context the
+  // dashboard OAuth flow reuses.
+  console.log("[giphy-key] step 4b: poll Resend for confirmation email");
+  const msg = await pollInbox(RESEND_KEY, EMAIL, sinceMs);
+  if (!msg) {
+    console.error("[giphy-key] BLOCKER: no confirmation email within 120s. URL: " + postSubmit.url);
+    await browser.close(); process.exit(5);
+  }
+  console.log("[giphy-key] email id=" + msg.id + " subject=" + msg.subject);
+  const full = await fetchEmailBody(RESEND_KEY, msg.id);
+  const link = extractGiphyVerifyLink(full.html || full.text || JSON.stringify(full));
+  if (!link) {
+    console.error("[giphy-key] BLOCKER: no verify/registrant link. keys: " + Object.keys(full).join(","));
+    await browser.close(); process.exit(6);
+  }
+  console.log("[giphy-key] step 4c: visit verify link " + link);
+  await page.goto(link, { waitUntil: "networkidle" });
+  await page.waitForTimeout(3000);
+  console.log("[giphy-key] post-verify url: " + page.url());
+
+  console.log("[giphy-key] step 5: open developer dashboard (verified session)");
   await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "networkidle" });
   await page.waitForTimeout(3000);
   let dash = await page.evaluate(() => ({ url: location.href, body: document.body.innerText.slice(0, 3000) }));
   console.log("[giphy-key] dashboard url:", dash.url);
 
-  // If the dashboard bounced to a login, the giphy.com session cookie is
-  // not shared with developers.giphy.com — sign in explicitly there.
   if (/log\s*in|sign\s*in/i.test(dash.body) && !/create.*app|api key/i.test(dash.body)) {
-    console.log("[giphy-key] dashboard wants login — authenticating on developers.giphy.com");
+    console.log("[giphy-key] dashboard wants login — authenticating");
     const liEmail = await page.$("input[type=email], input[name=email], input[placeholder*='Email' i]");
     if (liEmail) {
       await liEmail.fill(EMAIL);
@@ -231,14 +217,12 @@ async function run() {
       if (liPw) await liPw.fill(PASSWORD);
       await page.evaluate(() => {
         const b = Array.from(document.querySelectorAll("button, input[type=submit]"))
-          .find((x) => /log\s*in|sign\s*in/i.test(x.textContent || x.value));
-        if (b) b.click();
+          .filter((x) => /log\s*in|sign\s*in/i.test(x.textContent || x.value));
+        if (b.length) b[b.length - 1].click();
       });
       await page.waitForTimeout(5000);
-      // OAuth consent: developers.giphy.com authorizes via giphy.com OAuth.
-      // After login the grant page may show an Authorize/Allow button.
       const authBtn = await page.$("text=/authorize|allow|continue/i");
-      if (authBtn) { console.log("[giphy-key] clicking OAuth authorize"); await authBtn.click(); await page.waitForTimeout(4000); }
+      if (authBtn) { console.log("[giphy-key] OAuth authorize"); await authBtn.click(); await page.waitForTimeout(4000); }
       await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "networkidle" });
       await page.waitForTimeout(3000);
       dash = await page.evaluate(() => ({ url: location.href, body: document.body.innerText.slice(0, 3000) }));
@@ -246,43 +230,43 @@ async function run() {
   }
 
   // Create an app if none exists yet (button text varies: "Create an App").
-  const createBtn = await page.$("text=/create an app/i");
+  // Dashboard CTA is "Create an API Key". The modal: App Name input, an
+  // API-vs-SDK choice (we want API), and a "Create App" submit. The key
+  // then renders on the dashboard as a 32-char token by the app name.
+  const createBtn = await page.$("text=/create an api key/i");
   if (createBtn) {
-    console.log("[giphy-key] creating an app");
+    console.log("[giphy-key] step 6: Create an API Key");
     await createBtn.click();
-    await page.waitForTimeout(2000);
-    const nameField = await page.$("input[type=text], input[name*='name' i]");
+    await page.waitForTimeout(2500);
+    const nameField = await page.$("input[type=text], input[name*='name' i], input[placeholder*='App' i]");
     if (nameField) await nameField.fill("fcp-agent-broll");
-    const apiOpt = await page.$("text=/API/i");
-    if (apiOpt) await apiOpt.click();
+    const apiCard = await page.$("text=/^\\s*API\\s*$/i");
+    if (apiCard) await apiCard.click();
+    await page.waitForTimeout(800);
     await page.evaluate(() => {
-      const b = Array.from(document.querySelectorAll("button"))
-        .find((x) => /create app|create|confirm/i.test(x.textContent));
-      if (b) b.click();
+      const b = Array.from(document.querySelectorAll("button, input[type=submit]"))
+        .filter((x) => /create app|create api key|create|confirm|submit/i.test(x.textContent || x.value));
+      if (b.length) b[b.length - 1].click();
     });
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(5000);
     await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "networkidle" });
     await page.waitForTimeout(3000);
-    dash = await page.evaluate(() => ({ url: location.href, body: document.body.innerText.slice(0, 3000) }));
+    dash = await page.evaluate(() => ({ url: location.href, body: document.body.innerText.slice(0, 4000) }));
   }
 
-  console.log("[giphy-key] dashboard body head:", dash.body.slice(0, 600));
-  const keyMatch = dash.body.match(/\b[A-Za-z0-9]{32,40}\b/);
+  console.log("[giphy-key] dashboard body head:", dash.body.slice(0, 800));
+  const keyMatch = dash.body.match(/\b[a-zA-Z0-9]{32}\b/);
   if (!keyMatch) {
     console.error("[giphy-key] BLOCKER: dashboard did not surface an API key. Body above.");
     await browser.close();
     process.exit(7);
   }
   const apiKey = keyMatch[0];
-  console.log("[giphy-key] extracted key (first 8 chars): " + apiKey.slice(0, 8) + "...");
-
+  console.log("[giphy-key] extracted key (first 8): " + apiKey.slice(0, 8) + "...");
   let envBody = existsSync(ENV_PATH) ? readFileSync(ENV_PATH, "utf8") : "";
-  if (envBody.match(/^GIPHY_API_KEY=/m)) {
-    envBody = envBody.replace(/^GIPHY_API_KEY=.*$/m, `GIPHY_API_KEY=${apiKey}`);
-  } else {
-    if (envBody && !envBody.endsWith("\n")) envBody += "\n";
-    envBody += `GIPHY_API_KEY=${apiKey}\n`;
-  }
+  envBody = envBody.match(/^GIPHY_API_KEY=/m)
+    ? envBody.replace(/^GIPHY_API_KEY=.*$/m, `GIPHY_API_KEY=${apiKey}`)
+    : (envBody && !envBody.endsWith("\n") ? envBody + "\n" : envBody) + `GIPHY_API_KEY=${apiKey}\n`;
   writeFileSync(ENV_PATH, envBody);
   console.log("[giphy-key] wrote " + ENV_PATH);
   await browser.close();
