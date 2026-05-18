@@ -12,7 +12,7 @@
 // and ... → Automation. After that the actions are silent.
 
 import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel } from "../lib/fcp-ax.mjs";
-import { getAttr, setAttr, performAction, selectElement, dialogPress, dialogSetField, dumpTree } from "../lib/fcp-ax-generic.mjs";
+import { getAttr, setAttr, performAction, selectElement, dialogPress, dialogSetField, dumpTree, listMenus } from "../lib/fcp-ax-generic.mjs";
 
 function sleep(sec) { return new Promise((r) => setTimeout(r, sec * 1000)); }
 
@@ -104,6 +104,7 @@ const CMD = {
     console.log(`dialog field "${field}" set`);
   },
   dump() { process.stdout.write(dumpTree()); },
+  menus() { process.stdout.write(listMenus()); },
 
   help() { printHelp(); },
 };
@@ -127,6 +128,7 @@ function printHelp() {
   console.log("  cut fcp share [<preset>]           File → Share → preset (default 'Export File (default)…')");
   console.log("  cut fcp find <substring>           dump AX-tree matches (debugging)");
   console.log("  cut fcp dump                       dump every element of window 1 (role | desc | value)");
+  console.log("  cut fcp menus                      catalog every menu-bar-reachable FCP command");
   console.log("");
   console.log("Universal AX primitives — reach any element (Inspector, dialog, etc):");
   console.log("  cut fcp ax-get <attr> <needle>     read AX attribute (e.g. AXValue, AXSize, AXEnabled)");

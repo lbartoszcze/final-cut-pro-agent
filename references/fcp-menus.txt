@@ -1,0 +1,634 @@
+Apple > About This Mac
+Apple > System Information
+Apple > System Settings…, 1 update
+Apple > App Store…, 12 updates
+Apple > Recent Items
+Apple > Recent Items > Applications
+Apple > Recent Items > Adobe Acrobat
+Apple > Recent Items > Show “Adobe Acrobat” in Finder
+Apple > Recent Items > App Store
+Apple > Recent Items > Show “App Store” in Finder
+Apple > Recent Items > Final Cut Pro
+Apple > Recent Items > Show “Final Cut Pro” in Finder
+Apple > Recent Items > Google Chrome
+Apple > Recent Items > Show “Google Chrome” in Finder
+Apple > Recent Items > QuickTime Player
+Apple > Recent Items > Show “QuickTime Player” in Finder
+Apple > Recent Items > Steam
+Apple > Recent Items > Show “Steam” in Finder
+Apple > Recent Items > System Settings
+Apple > Recent Items > Show “System Settings” in Finder
+Apple > Recent Items > Total War WARHAMMER III
+Apple > Recent Items > Show “Total War WARHAMMER III” in Finder
+Apple > Recent Items > Total War: WARHAMMER III
+Apple > Recent Items > Show “Total War: WARHAMMER III” in Finder
+Apple > Recent Items > WhatsApp
+Apple > Recent Items > Show “WhatsApp” in Finder
+Apple > Recent Items > Documents
+Apple > Recent Items > analysts.png
+Apple > Recent Items > Show “analysts.png” in Finder
+Apple > Recent Items > chains.png
+Apple > Recent Items > Show “chains.png” in Finder
+Apple > Recent Items > chart.png
+Apple > Recent Items > Show “chart.png” in Finder
+Apple > Recent Items > claude-blocker.mp4
+Apple > Recent Items > Show “claude-blocker.mp4” in Finder
+Apple > Recent Items > darkpool.png
+Apple > Recent Items > Show “darkpool.png” in Finder
+Apple > Recent Items > dividends.png
+Apple > Recent Items > Show “dividends.png” in Finder
+Apple > Recent Items > EVIDENCE.fcpxml
+Apple > Recent Items > Show “EVIDENCE.fcpxml” in Finder
+Apple > Recent Items > paper_diff.pdf
+Apple > Recent Items > Show “paper_diff.pdf” in Finder
+Apple > Recent Items > paper_revised_35pageslimit.pdf
+Apple > Recent Items > Show “paper_revised_35pageslimit.pdf” in Finder
+Apple > Recent Items > Your.Friends.and.Neighbors.S02E06.1080p.WEB.h264-GRACE[EZTVx.to].mkv
+Apple > Recent Items > Show “Your.Friends.and.Neighbors.S02E06.1080p.WEB.h264-GRACE[EZTVx.to].mkv” in Finder
+Apple > Recent Items > Servers
+Apple > Recent Items > Macintosh HD
+Apple > Recent Items > Clear Menu
+Apple > Force Quit…
+Apple > Force Quit Final Cut Pro
+Apple > Sleep
+Apple > Restart…
+Apple > Restart
+Apple > Shut Down…
+Apple > Shut Down
+Apple > Lock Screen
+Apple > Log Out Lukasz Bartoszcze…
+Apple > Log Out Lukasz Bartoszcze
+Final Cut Pro > About Final Cut Pro
+Final Cut Pro > Learn About Apple Creator Studio…
+Final Cut Pro > Settings…
+Final Cut Pro > Command Sets
+Final Cut Pro > Command Sets > Customize…
+Final Cut Pro > Command Sets > Import…
+Final Cut Pro > Command Sets > Export…
+Final Cut Pro > Command Sets > Command Sets
+Final Cut Pro > Command Sets > Default
+Final Cut Pro > Download Demo Project…
+Final Cut Pro > Download Content Library
+Final Cut Pro > Provide Final Cut Pro Feedback…
+Final Cut Pro > Services
+Final Cut Pro > Services > Activity Monitor
+Final Cut Pro > Services > Allocations & Leaks
+Final Cut Pro > Services > File Activity
+Final Cut Pro > Services > System Trace
+Final Cut Pro > Services > Services Settings…
+Final Cut Pro > Hide Final Cut Pro
+Final Cut Pro > Hide Others
+Final Cut Pro > Show All
+Final Cut Pro > Quit Final Cut Pro
+Final Cut Pro > Quit and Keep Windows
+File > New
+File > New > Project…
+File > New > Event…
+File > New > Library…
+File > New > Folder
+File > New > Keyword Collection
+File > New > Library Smart Collection
+File > New > Compound Clip…
+File > New > Multicam Clip…
+File > Open Library
+File > Open Library > Other…
+File > Open Library > From Backup…
+File > Open Library > Clear Recents
+File > Close Library
+File > Library Properties
+File > Import
+File > Import > Media…
+File > Import > Reimport from Camera/Archive…
+File > Import > Redownload Remote Media…
+File > Import > Final Cut Pro for iPad Project…
+File > Import > iMovie iOS Projects…
+File > Import > XML…
+File > Import > Captions…
+File > Import > Image Playground…
+File > Transcode Media…
+File > Relink Files
+File > Relink Files > Original Media…
+File > Relink Files > Proxy Media…
+File > Export XML…
+File > Export Captions…
+File > Share
+File > Share > Export File (default)…
+File > Share > Apple Devices 720p…
+File > Share > Apple Devices 1080p…
+File > Share > Apple Devices 4K…
+File > Share > Social Platforms…
+File > Share > HEVC - High Efficiency Video…
+File > Share > Apple Vision Pro (MV-HEVC)…
+File > Share > Add Destination…
+File > Send to Compressor
+File > Send to Compressor > New Batch
+File > Send to Compressor > iTunes Store Package
+File > Send to Compressor > IMF Package
+File > Save Video Effects Preset…
+File > Save Audio Effects Preset…
+File > Copy to Library
+File > Copy to Library > New Library…
+File > Move to Library
+File > Move to Library > New Library…
+File > Consolidate Library Media…
+File > Consolidate Motion Content…
+File > Delete Generated Clip Files…
+File > Merge Events
+File > Close Timeline
+File > Close Other Timelines
+File > Reveal Source in Browser
+File > Reveal Project in Browser
+File > Reveal in Finder
+File > Reveal Proxy Media in Finder
+File > Move to Trash
+Edit > Undo
+Edit > Redo
+Edit > Cut
+Edit > Copy
+Edit > Copy Timecode
+Edit > Paste
+Edit > Paste as Connected Clip
+Edit > Delete
+Edit > Replace with Gap
+Edit > Select All
+Edit > Select Clip
+Edit > Deselect All
+Edit > Select
+Edit > Select > Select Next
+Edit > Select > Select Previous
+Edit > Select > Select Above
+Edit > Select > Select Below
+Edit > Paste Effects
+Edit > Paste Attributes…
+Edit > Remove Effects
+Edit > Remove Attributes…
+Edit > Duplicate Project
+Edit > Duplicate Project As…
+Edit > Snapshot Project
+Edit > Keyframes
+Edit > Keyframes > Cut
+Edit > Keyframes > Copy
+Edit > Keyframes > Paste
+Edit > Keyframes > Delete
+Edit > Track
+Edit > Track > Object Transform
+Edit > Track > Effect Shape Mask
+Edit > Track > Color Correction Shape Mask
+Edit > Connect to Primary Storyline
+Edit > Insert
+Edit > Append to Storyline
+Edit > Overwrite
+Edit > Source Media
+Edit > Source Media > All
+Edit > Source Media > Video Only
+Edit > Source Media > Audio Only
+Edit > Overwrite to Primary Storyline
+Edit > Collapse to Connected Storyline
+Edit > Lift from Storyline
+Edit > Add Cross Dissolve
+Edit > Add Color Adjustment
+Edit > Add Color Board
+Edit > Add Channel EQ
+Edit > Add Adjustment Clip
+Edit > Connect Title
+Edit > Connect Title > Basic Title
+Edit > Connect Title > Basic Lower Third
+Edit > Insert Generator
+Edit > Insert Generator > Placeholder
+Edit > Insert Generator > Gap
+Edit > Connect Freeze Frame
+Edit > Captions
+Edit > Captions > Transcribe to Captions
+Edit > Captions > Add Caption
+Edit > Captions > Edit Caption
+Edit > Captions > Split Captions
+Edit > Captions > Resolve Overlaps
+Edit > Captions > Extract Captions
+Edit > Captions > Duplicate Captions to New Language
+Edit > Captions > Duplicate Captions to New Language > Afrikaans
+Edit > Captions > Duplicate Captions to New Language > Arabic
+Edit > Captions > Duplicate Captions to New Language > Bangla
+Edit > Captions > Duplicate Captions to New Language > Bulgarian
+Edit > Captions > Duplicate Captions to New Language > Catalan
+Edit > Captions > Duplicate Captions to New Language > Chinese (Cantonese)
+Edit > Captions > Duplicate Captions to New Language > Chinese (Simplified)
+Edit > Captions > Duplicate Captions to New Language > Chinese (Traditional)
+Edit > Captions > Duplicate Captions to New Language > Croatian
+Edit > Captions > Duplicate Captions to New Language > Czech
+Edit > Captions > Duplicate Captions to New Language > Danish
+Edit > Captions > Duplicate Captions to New Language > Dutch
+Edit > Captions > Duplicate Captions to New Language > English
+Edit > Captions > Duplicate Captions to New Language > Estonian
+Edit > Captions > Duplicate Captions to New Language > Finnish
+Edit > Captions > Duplicate Captions to New Language > French
+Edit > Captions > Duplicate Captions to New Language > German
+Edit > Captions > Duplicate Captions to New Language > Greek
+Edit > Captions > Duplicate Captions to New Language > Hebrew
+Edit > Captions > Duplicate Captions to New Language > Hindi
+Edit > Captions > Duplicate Captions to New Language > Hungarian
+Edit > Captions > Duplicate Captions to New Language > Icelandic
+Edit > Captions > Duplicate Captions to New Language > Indonesian
+Edit > Captions > Duplicate Captions to New Language > Italian
+Edit > Captions > Duplicate Captions to New Language > Japanese
+Edit > Captions > Duplicate Captions to New Language > Kannada
+Edit > Captions > Duplicate Captions to New Language > Kazakh
+Edit > Captions > Duplicate Captions to New Language > Korean
+Edit > Captions > Duplicate Captions to New Language > Lao
+Edit > Captions > Duplicate Captions to New Language > Latvian
+Edit > Captions > Duplicate Captions to New Language > Lithuanian
+Edit > Captions > Duplicate Captions to New Language > Luxembourgish
+Edit > Captions > Duplicate Captions to New Language > Malay
+Edit > Captions > Duplicate Captions to New Language > Malayalam
+Edit > Captions > Duplicate Captions to New Language > Maltese
+Edit > Captions > Duplicate Captions to New Language > Marathi
+Edit > Captions > Duplicate Captions to New Language > Norwegian
+Edit > Captions > Duplicate Captions to New Language > Polish
+Edit > Captions > Duplicate Captions to New Language > Portuguese
+Edit > Captions > Duplicate Captions to New Language > Punjabi
+Edit > Captions > Duplicate Captions to New Language > Romanian
+Edit > Captions > Duplicate Captions to New Language > Russian
+Edit > Captions > Duplicate Captions to New Language > Scottish Gaelic
+Edit > Captions > Duplicate Captions to New Language > Slovak
+Edit > Captions > Duplicate Captions to New Language > Slovenian
+Edit > Captions > Duplicate Captions to New Language > Spanish
+Edit > Captions > Duplicate Captions to New Language > Swedish
+Edit > Captions > Duplicate Captions to New Language > Tagalog
+Edit > Captions > Duplicate Captions to New Language > Tamil
+Edit > Captions > Duplicate Captions to New Language > Telugu
+Edit > Captions > Duplicate Captions to New Language > Thai
+Edit > Captions > Duplicate Captions to New Language > Turkish
+Edit > Captions > Duplicate Captions to New Language > Ukrainian
+Edit > Captions > Duplicate Captions to New Language > Urdu
+Edit > Captions > Duplicate Captions to New Language > Vietnamese
+Edit > Captions > Duplicate Captions to New Language > Welsh
+Edit > Captions > Duplicate Captions to New Language > Zulu
+Edit > Captions > Duplicate Captions to New Format
+Edit > Captions > Duplicate Captions to New Format > iTT
+Edit > Captions > Duplicate Captions to New Format > CEA-608
+Edit > Captions > Duplicate Captions to New Format > SRT
+Edit > Find…
+Edit > Find and Replace Title Text…
+Edit > Writing Tools
+Edit > Writing Tools > Show Writing Tools
+Edit > Writing Tools > Proofread
+Edit > Writing Tools > Rewrite
+Edit > Writing Tools > Make Friendly
+Edit > Writing Tools > Make Professional
+Edit > Writing Tools > Make Concise
+Edit > Writing Tools > Summarize
+Edit > Writing Tools > Create Key Points
+Edit > Writing Tools > Make List
+Edit > Writing Tools > Make Table
+Edit > Writing Tools > Compose…
+Edit > AutoFill
+Edit > AutoFill > Contact…
+Edit > AutoFill > Passwords…
+Edit > AutoFill > Credit Card…
+Edit > Start Dictation…
+Edit > Emoji & Symbols
+Trim > Blade
+Trim > Blade All
+Trim > Join Clips
+Trim > Trim Start
+Trim > Trim End
+Trim > Trim to Selection
+Trim > Extend Edit
+Trim > Align Audio to Video
+Trim > Nudge Left
+Trim > Nudge Right
+Mark > Set Range Start
+Mark > Set Range End
+Mark > Set Clip Range
+Mark > Clear Selected Ranges
+Mark > Favorite
+Mark > Delete
+Mark > Unrate
+Mark > Show Keyword Editor
+Mark > Remove All Keywords
+Mark > Remove All Analysis Keywords
+Mark > Hide Clip
+Mark > Markers
+Mark > Markers > Add Marker
+Mark > Markers > Add Marker and Modify
+Mark > Markers > Modify Marker
+Mark > Markers > Nudge Marker Left
+Mark > Markers > Nudge Marker Right
+Mark > Markers > Delete Marker
+Mark > Markers > Delete Markers in Selection
+Mark > Go to
+Mark > Go to > Range Start
+Mark > Go to > Range End
+Mark > Go to > Beginning
+Mark > Go to > End
+Mark > Previous
+Mark > Previous > Frame
+Mark > Previous > Edit
+Mark > Previous > Marker
+Mark > Previous > Keyframe
+Mark > Next
+Mark > Next > Frame
+Mark > Next > Edit
+Mark > Next > Marker
+Mark > Next > Keyframe
+Clip > Create Storyline
+Clip > Synchronize Clips…
+Clip > Reference New Parent Clip
+Clip > Open Clip
+Clip > Audition
+Clip > Audition > Open
+Clip > Audition > Preview
+Clip > Audition > Create
+Clip > Audition > Duplicate as Audition
+Clip > Audition > Duplicate from Original
+Clip > Audition > Next Pick
+Clip > Audition > Previous Pick
+Clip > Audition > Finalize Audition
+Clip > Audition > Replace and add to Audition
+Clip > Audition > Add to Audition
+Clip > Show Video Animation
+Clip > Show Audio Animation
+Clip > Solo Animation
+Clip > Show Tracking Editor
+Clip > Show Magnetic Mask Editor
+Clip > Show Generic Editor
+Clip > Enable Beat Detection
+Clip > Expand Audio
+Clip > Expand Audio Components
+Clip > Detach Audio
+Clip > Break Apart Clip Items
+Clip > Enable
+Clip > Rename Clip
+Clip > Solo
+Clip > Add to Soloed Clips
+Modify > Analyze and Fix…
+Modify > Adjust Content Created Date and Time…
+Modify > Apply Custom Name
+Modify > Apply Custom Name > Clip Date/Time
+Modify > Apply Custom Name > Custom Name with Counter
+Modify > Apply Custom Name > Original Name from Camera
+Modify > Apply Custom Name > Scene/Shot/Take/Angle
+Modify > Apply Custom Name > Edit…
+Modify > Apply Custom Name > New…
+Modify > Assign Audio Roles
+Modify > Assign Audio Roles > Edit Roles…
+Modify > Assign Video Roles
+Modify > Assign Video Roles > Edit Roles…
+Modify > Assign Caption Roles
+Modify > Assign Caption Roles > Edit Roles…
+Modify > Edit Roles…
+Modify > Enhance Light and Color
+Modify > Balance Color
+Modify > Match Color…
+Modify > Add Magnetic Mask
+Modify > Smart Conform
+Modify > Enhance Audio
+Modify > Match Audio…
+Modify > Adjust Volume
+Modify > Adjust Volume > Up (+1 dB)
+Modify > Adjust Volume > Down (-1 dB)
+Modify > Adjust Volume > Silence (-∞)
+Modify > Adjust Volume > Reset (0dB)
+Modify > Adjust Volume > Absolute…
+Modify > Adjust Volume > Relative…
+Modify > Adjust Audio Fades
+Modify > Adjust Audio Fades > Crossfade
+Modify > Adjust Audio Fades > Apply Fades
+Modify > Adjust Audio Fades > Remove Fades
+Modify > Adjust Audio Fades > Fade In
+Modify > Adjust Audio Fades > Fade Out
+Modify > Add Keyframe to Selected Effect in Animation Editor
+Modify > Change Duration…
+Modify > Retime
+Modify > Retime > Slow
+Modify > Retime > Slow > 50%
+Modify > Retime > Slow > 25%
+Modify > Retime > Slow > 10%
+Modify > Retime > Smooth Slo-Mo
+Modify > Retime > Smooth Slo-Mo > 50%
+Modify > Retime > Smooth Slo-Mo > 25%
+Modify > Retime > Smooth Slo-Mo > 10%
+Modify > Retime > Fast
+Modify > Retime > Fast > 2x
+Modify > Retime > Fast > 4x
+Modify > Retime > Fast > 8x
+Modify > Retime > Fast > 20x
+Modify > Retime > Normal (100%)
+Modify > Retime > Hold
+Modify > Retime > Blade Speed
+Modify > Retime > Custom Speed…
+Modify > Retime > Reverse Clip
+Modify > Retime > Reset Speed 
+Modify > Retime > Automatic Speed
+Modify > Retime > Speed Ramp
+Modify > Retime > Speed Ramp > to 0%
+Modify > Retime > Speed Ramp > from 0%
+Modify > Retime > Instant Replay
+Modify > Retime > Instant Replay > 100%
+Modify > Retime > Instant Replay > 50%
+Modify > Retime > Instant Replay > 25%
+Modify > Retime > Instant Replay > 10%
+Modify > Retime > Rewind
+Modify > Retime > Rewind > 1x
+Modify > Retime > Rewind > 2x
+Modify > Retime > Rewind > 4x
+Modify > Retime > Jump Cut at Markers
+Modify > Retime > Jump Cut at Markers > 3 frames
+Modify > Retime > Jump Cut at Markers > 5 frames
+Modify > Retime > Jump Cut at Markers > 10 frames
+Modify > Retime > Jump Cut at Markers > 20 frames
+Modify > Retime > Jump Cut at Markers > 30 frames
+Modify > Retime > Video Quality
+Modify > Retime > Video Quality > Fast (Floor)
+Modify > Retime > Video Quality > Fast (Nearest Frame)
+Modify > Retime > Video Quality > Good (Frame Blending)
+Modify > Retime > Video Quality > Better (Optical Flow)
+Modify > Retime > Video Quality > Best (Machine Learning)
+Modify > Retime > Preserve Pitch
+Modify > Retime > Speed Transitions
+Modify > Retime > Show Retime Editor
+Modify > Render All
+Modify > Render Selection
+View > Playback
+View > Playback > Play
+View > Playback > Play Selection
+View > Playback > Play Around
+View > Playback > Play from Beginning
+View > Playback > Play to End
+View > Playback > Play Full Screen
+View > Playback > Loop Playback
+View > Sort Library Events By
+View > Sort Library Events By > Date
+View > Sort Library Events By > Name
+View > Sort Library Events By > Ascending
+View > Sort Library Events By > Descending
+View > Browser
+View > Browser > Toggle Filmstrip/List View
+View > Browser > Group Clips By
+View > Browser > Group Clips By > None
+View > Browser > Group Clips By > Content Created
+View > Browser > Group Clips By > Date Imported
+View > Browser > Group Clips By > Reel
+View > Browser > Group Clips By > Scene
+View > Browser > Group Clips By > Duration
+View > Browser > Group Clips By > File Type
+View > Browser > Group Clips By > Roles
+View > Browser > Group Clips By > Camera Name
+View > Browser > Group Clips By > Camera Angle
+View > Browser > Group Clips By > Ascending
+View > Browser > Group Clips By > Descending
+View > Browser > Sort By
+View > Browser > Sort By > Content Created
+View > Browser > Sort By > Name
+View > Browser > Sort By > Take
+View > Browser > Sort By > Duration
+View > Browser > Sort By > Ascending
+View > Browser > Sort By > Descending
+View > Browser > Clip Name Size
+View > Browser > Clip Name Size > Small
+View > Browser > Clip Name Size > Medium
+View > Browser > Clip Name Size > Large
+View > Browser > Clip Names
+View > Browser > Waveforms
+View > Browser > Show Hidden Clips
+View > Browser > Marked Ranges
+View > Browser > Used Media Ranges
+View > Browser > Skimmer Info
+View > Browser > Continuous Playback
+View > Show in Viewer
+View > Show in Viewer > Angles
+View > Show in Viewer > 360°
+View > Show in Viewer > Video Scopes
+View > Show in Viewer > Both Fields
+View > Show in Viewer > Title/Action Safe Zones
+View > Show in Viewer > Show Custom Overlay
+View > Show in Viewer > Choose Custom Overlay
+View > Show in Viewer > Choose Custom Overlay > Add Custom Overlay…
+View > Show in Viewer > Color Channels
+View > Show in Viewer > Color Channels > All
+View > Show in Viewer > Color Channels > Alpha
+View > Show in Viewer > Color Channels > Red
+View > Show in Viewer > Color Channels > Green
+View > Show in Viewer > Color Channels > Blue
+View > Show in Event Viewer
+View > Show in Event Viewer > Angles
+View > Show in Event Viewer > 360°
+View > Show in Event Viewer > Video Scopes
+View > Show in Event Viewer > Both Fields
+View > Show in Event Viewer > Title/Action Safe Zones
+View > Show in Event Viewer > Show Custom Overlay
+View > Show in Event Viewer > Choose Custom Overlay
+View > Show in Event Viewer > Color Channels
+View > Show in Event Viewer > Color Channels > All
+View > Show in Event Viewer > Color Channels > Alpha
+View > Show in Event Viewer > Color Channels > Red
+View > Show in Event Viewer > Color Channels > Green
+View > Show in Event Viewer > Color Channels > Blue
+View > Toggle Inspector Height
+View > Show Duplicate Ranges
+View > Timeline Index
+View > Timeline Index > Clips
+View > Timeline Index > Tags
+View > Timeline Index > Roles
+View > Timeline Index > Captions
+View > Show Audio Lanes
+View > Expand Subroles
+View > Timeline History Back
+View > Timeline History Forward
+View > Show Precision Editor
+View > Zoom In
+View > Zoom Out
+View > Zoom to Fit
+View > Vertical Zoom to Fit
+View > Zoom to Samples
+View > Beat Detection Grid
+View > Timeline Scrolling
+View > Skimming
+View > Clip Skimming
+View > Audio Skimming
+View > Snapping
+View > Enter Full Screen
+Window > Minimize
+Window > Minimize All
+Window > Zoom
+Window > Zoom All
+Window > Fill
+Window > Center
+Window > Move & Resize
+Window > Move & Resize > Halves
+Window > Move & Resize > Left
+Window > Move & Resize > Right
+Window > Move & Resize > Top
+Window > Move & Resize > Bottom
+Window > Move & Resize > Quarters
+Window > Move & Resize > Top Left
+Window > Move & Resize > Top Right
+Window > Move & Resize > Bottom Left
+Window > Move & Resize > Bottom Right
+Window > Move & Resize > Arrange
+Window > Move & Resize > Left & Right
+Window > Move & Resize > Left & Quarters
+Window > Move & Resize > Right & Left
+Window > Move & Resize > Right & Quarters
+Window > Move & Resize > Top & Bottom
+Window > Move & Resize > Top & Quarters
+Window > Move & Resize > Bottom & Top
+Window > Move & Resize > Bottom & Quarters
+Window > Move & Resize > Quarters
+Window > Move & Resize > Return to Previous Size
+Window > Full Screen Tile
+Window > Remove Window from Set
+Window > Go To
+Window > Go To > Libraries
+Window > Go To > Photos, Videos, and Audio
+Window > Go To > Titles and Generators
+Window > Go To > Viewer
+Window > Go To > Event Viewer
+Window > Go To > Comparison Viewer
+Window > Go To > Timeline
+Window > Go To > Inspector
+Window > Go To > Color Inspector
+Window > Go To > Next Tab
+Window > Go To > Previous Tab
+Window > Show in Workspace
+Window > Show in Workspace > Sidebar
+Window > Show in Workspace > Browser
+Window > Show in Workspace > Event Viewer
+Window > Show in Workspace > Comparison Viewer
+Window > Show in Workspace > Inspector
+Window > Show in Workspace > Timeline
+Window > Show in Workspace > Timeline Index
+Window > Show in Workspace > Audio Meters
+Window > Show in Workspace > Effects
+Window > Show in Workspace > Transitions
+Window > Show in Secondary Display
+Window > Show in Secondary Display > Browser
+Window > Show in Secondary Display > Viewers
+Window > Show in Secondary Display > Timeline
+Window > Workspaces
+Window > Workspaces > Default
+Window > Workspaces > Organize
+Window > Workspaces > Color & Effects
+Window > Workspaces > Dual Displays
+Window > Workspaces > Save Workspace as…
+Window > Workspaces > Update Workspace
+Window > Workspaces > Open Workspace Folder in Finder
+Window > Record Voiceover
+Window > Background Tasks
+Window > Project Properties
+Window > Project Timecode
+Window > Source Timecode
+Window > A/V Output
+Window > Output to VR Headset
+Window > Bring All to Front
+Window > Arrange in Front
+Window > Final Cut Pro
+Help > Final Cut Pro Help
+Help > What’s New in Final Cut Pro
+Help > Magnetic Timeline Tutorial
+Help > Keyboard Shortcuts
+Help > Download Additional Content
+Help > Logic Effects Reference
+Help > Supported Cameras
+Help > Apps for Final Cut Pro
+Help > Service and Support
+Help > Gather App Diagnostics
