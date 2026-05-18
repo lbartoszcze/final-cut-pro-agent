@@ -1,0 +1,779 @@
+so you've got in the hang of shooting
+vertical videos for Instagram reels and
+Tik Tok but you want to upgrade from
+editing all of that on your phone to
+your computer the absolute best way to
+do that is with Final Cut Pro there are
+a lot of great video editing tools out
+there but Final Cut is the best way to
+organize all your Clips put the good
+parts in sequence and have something
+ready to post as fast as possible and
+the nice thing is it scales so we do
+this as a business we not only create
+our own social media but we create
+hundreds of videos for clients every
+year so today we're going to start from
+the beginning creating a library and
+scaling that up to be able to make as
+many videos as you need let's get
+started the first step is going to start
+on our iPhone cuz that's where all of
+our footage is this is a bunch of clips
+that we shot at the rodeo recently and
+you could just transfer everything all
+at once select all of it I think today
+it's going to be worthwhile to just
+select my favorites and send those so
+I'm not clogging out my computer quite
+as much so then I can just look at all
+my recent favorites select them all and
+airdrop them to my computer now as these
+transfer one note I'll make is that I
+shot a lot of this in slow motion make
+sure that you've edited that slow motion
+the way that you want before you
+transfer because you can't change it
+afterwards so do it on the phone some
+really quick steps in the finder before
+we jump into Final Cut Pro I'm going to
+create a folder called Rodeo highlights
+and if I move through this stuff too
+fast I have videos about the basics of
+Final Cut Pro and if this video looks
+familiar we're going to create a media
+folder but that was a few years ago a
+few iPhones ago I want to make sure
+we're up to date so in that media folder
+I'm also going to to create a folder
+called video and audio and whatever else
+might happen to be in the project you're
+creating maybe you have images you don't
+have to create more folders than you're
+going to use and now we're going to grab
+all of those airdropped videos drag them
+into the video folder and we're on our
+way now into Final Cut Pro we're going
+to go to file new library and yes I
+create a new library for every video
+project that I'm going to create the
+only exception is if a bunch of videos
+share the same video clips then I could
+use one library for multiple videos I'm
+going to also call this Rodeo highlights
+and to save some time I'm going to
+select that text and copy it cuz I'm
+going to use it once more and save now
+if we go back to the finder we're going
+to see that is what a library looks like
+one thing I want you to keep an eye on
+is the size of that Library I'm going to
+try to show you how to keep it small
+very common issue in Final Cut Pro is
+the library balloons and becomes
+enormous and it does not have to so I'll
+show you all the settings in each know
+just if that starts getting big double
+check settings so now in Final Cut Pro
+over here on the left this is your
+library make sure it's selected I want
+you to look at one thing before we get
+in there on the right it says Rodeo
+highlights standard gamma SDR did you
+record your video in SDR or HDR because
+the default on iPhone is HDR I recommend
+everybody switch it to SDR if you don't
+know you're going to have to look into
+this but just make sure that it matches
+the way that you shot everything I do is
+in SDR great now we're going to import
+our videos and there's a a big button
+for it here which we could click or we
+could go to file import or I'm going to
+try to remind you guys of what some of
+the most important shortcuts are and
+Final Cut we're going to say command I
+for import and the slow way to do this
+is I could try to navigate to that same
+folder but I'm going to do a little
+shortcut go back to the finder and just
+drag the media folder and now it's
+showing me all of that content so I want
+to import all of these videos there they
+are I'm just going to click select them
+all I'm pretty much ready let's just
+take a look at these settings on the
+right here most of the defaults are okay
+we don't want to add a bunch of these
+analysis features this will slow down
+your import and you're probably not
+going to end up using them anyway we're
+going to look over here at files and
+check out copy to library so what final
+cat wants to do is put all of the video
+clips and audio and all that inside of
+the library so that's when it would
+start to get big we're trying to avoid
+that so we're going to manage it
+ourselves and say leave files in place
+rest of these defaults are fine import
+selected and let's double check did the
+Library get big it's only 4 megabytes
+perfect that's just like metadata all
+the library should be storing is
+information about the edit but not the
+actual files there's one more thing we
+can do to prevent that bloat in Final
+Cut we're going to go to settings and if
+you click import you can change this
+default for everything so I always have
+that set to leave files in place and
+then everything that you import will be
+treated that way the one other change if
+you have an M1 or newer Mac I strongly
+recommend turning off background render
+this was really useful with older Macs
+that were tooo slow to playback footage
+we just don't need this feature anymore
+and it'll create a ton of huge cache
+files you don't need and the last thing
+just personal preference go to General
+and switch color correction to color
+wheels that's the industry standard I
+think color boards are kind of weird but
+that's up to you great okay we're ready
+we've got all of our footage imported
+into our browser this is our browser
+here on the left they are inside of an
+event you only really need one event for
+most things I don't spend much time
+worrying about events but as we move our
+Mouse so long we can skim through and
+see the highlights of our footage and
+you can see I've kind of resized things
+to optimize for this vertical view like
+the default might be something like this
+doesn't make any sense we're editing
+vertical so let's kind of move it over
+like that make sure we got enough space
+with our timeline here and speaking of
+we don't have a timeline yet let's
+create our very first one we could
+either click new project or like I said
+I like shortcuts command in will give
+you the new project dialogue we're going
+to say command paste because remember I
+copied Rodeo highlights that's the title
+I always just title it the same thing as
+the fold
+and we have a shortcut called vertical
+that can get us started in some of the
+presets there's not a lot of
+customization required here the defaults
+are kind of close but vertical has some
+like glitches I I don't know why it does
+this first of all it goes to 720 that's
+less than HD you want at least 1080 by
+1920 that's normal HD footage you can do
+4K but um social media doesn't support
+it so when you upload it it's down
+sampled to 1080 and even if you're
+shooting in 24p it's converted to 30p so
+for social media I find 1080 30p that's
+like the good setting there's kind of a
+bug in Final Cut That it switches the
+color space to rec 609 instead of 709
+you don't need to understand this 709 is
+the standard I don't even know if this
+matters if you change it but Rec 709 is
+correct so I always do switch it let's
+hit okay and now we've got all of our
+footage over here on the left and a
+timeline below we're ready to start
+editing so depending how you shot your
+footage and what you're trying to create
+there's a lot of ways to work with this
+usually the fastest one at work
+especially for like a highlight reel I
+think this is really fun you just select
+all and drag that footage down see you
+can tell it's selected cuz it's yellow
+it's going to come up again yellow is
+selected we're going to drag it down
+into the timeline now we've got what is
+this 24 minute and 40 second video that
+is that is way too long so quick
+shortcut we can just rightclick any of
+that footage while it's selected say
+change duration notice there's a
+shortcut for this you don't need to
+memorize it but change duration and this
+is where it's displaying the duration
+we're just going to say 1 0 for 1 second
+and now every clip is going to play back
+for exactly 1 second there are times you
+can just throw this together and it'll
+make good footage instantly without any
+effort but today we're going to have to
+do a little work cuz you're going to
+notice that uh some of these clips
+there's there's better moments so uh
+here here's a good example I'm going to
+zoom in command plus and here's the 1
+second like that's not that's not the
+good part so if I just click on the clip
+it is selected because it's yellow and I
+can see handlebars on the left and right
+if I click and drag I can open up
+everything that's inside of that clip
+see kind of all the stuff that's
+contained inside and keep expanding and
+eventually oh there's the good part
+that's what I was looking for okay so
+what I really wanted was at the end of
+the clip but it just selected the
+beginning so lesson one that's a a
+common way to edit your Clips you can
+zoom in and out grab the handlebars and
+move them around like that you're going
+to end up needing to do that a lot but I
+can show you a way that we can still do
+this quick time change thing to get a
+very fast edit out of here so instead of
+the editing in the timeline I'm going to
+do a little pre-editing I just select it
+all and I'm going to hit delete clear my
+timeline let's start from scratch come
+back to the browser and it's worth just
+spending a few minutes doing some basic
+sorting in here there's a lot of
+management you can do with very little
+effort here because I can scrub through
+and I can instantly see even from these
+thumbnails like this is the cool part I
+didn't even need to watch all this junk
+up here I could just go straight to this
+move my handlebars in the browser and
+now I've selected the cool fire shot
+make it smaller and if I drag that now
+I've got the good part in my timeline
+that's pretty good but I like shortcuts
+more than clicking so I'm just going to
+hover my mouse to this first frame of
+the fire and press I for in so it's an
+in point I'm going to move my mouse just
+hovering to the end of the fire I'm
+going to press o for out setting an out
+point now I can click and drag and bring
+that down or there's better ways there's
+a shortcut I press the E key and that
+drops it down so now I'm just going to
+quickly go through all of my footage set
+in andout points and press e like I
+really don't need to spend too much time
+here but make sure I find the good stuff
+and that's what's finding its way into
+the final edit and if you want to get
+extra organized okay so this moment is
+great what i' do is say in and out he's
+getting in while another horse is riding
+away I've got in andout points I'm going
+to press f for favorite and you can see
+there's a little green line that's been
+added over that segment later I could go
+back and just say show me my favorites
+and it's like remembered that moment
+that's we want to go one step further
+we're not going to do that today we're
+just going to drop them all right into
+the time line and there we go just a
+couple minutes and I've got a pretty uh
+sensical timeline kind of makes sense
+here I'm going to select all again use
+that same trick change duration back
+down to 1 second and look at this we've
+got something that is a lot more
+watchable we got fire and cowboys and
+things make a little more sense so I got
+a duplicate there now if you made a
+mistake like I just did where I don't
+quite have the right moment like the
+horse starts to go by but not not quite
+there okay I'm going to go into my tools
+and look for trim now that's not true
+we're not going to go into the tools I'm
+going to press t for trim that's what
+I'll do I'm going to press T and I'm
+just going to move my clip left and
+right until these previews show me that
+the horse enters and kind of leaves the
+frame and that's the 1 second that I
+want make sure something cool is
+happening same with this I just kind of
+missed the fire there let's trim it to
+make sure fire is going through that
+whole shot and if I want to move Clips
+around like put this fire Clips together
+I can just move it to the left that's
+the magnetic timeline of followup Pro
+very helpful with quick edits like this
+just kind of create some sense of order
+here that makes a little more sense
+which none of this actually does these
+are kind of Random clips but I have also
+the audio playing in the background of
+these which I don't want like it's um
+it's not professionally recorded audio
+it's not helping tell the story here if
+you look at the bottom of each clip you
+can see the audio is still playing back
+and I could just turn it down right
+there locally on the clip I could do
+that for each one that takes too long so
+instead command a select everything on
+the timeline and up here in the
+inspector click on your audio tool make
+sure that your volume is turned all the
+way down I'll just say minus 99 uh or
+you can grab the slider and move it
+around and now there is no audio coming
+from my Clips cuz I'm going to put
+something much better in now if you
+watched my videos before you have heard
+artlist playing music in the background
+cuz that's my go-to source for music and
+audio effects and art list is the
+sponsor of today's video so I'm going to
+search for cowboy cinematic and there
+are so many good cinematic Clips here I
+love this new feature highlights that'll
+just skip to the good part of the song
+so I kind of know what it's all
+about perfect I'm going to download the
+MP3 usually I use the MP3 instead of the
+wave cuz I don't need to edit it later
+like the smaller file size now I'll go
+back to the finder and remember we
+created an audio folder very helpful we
+can just drag the music in there there
+is our audio so the way I like to add
+this to Final Cut is actually just drag
+and drop like I keep my finder window
+open and I just grab the whole audio
+folder and I drag it over to my final
+cut event part of the reason I do it it
+this way is now it has a keyword on it
+see this key it is keyworded as audio so
+I can find all of my audio together
+later same trick works for video I can
+drag that over now everything is in a
+video keyword too there's a lot of ways
+to use these keywords the keywords are
+more helpful than events like some
+people try to use these events as
+folders the keywords are the way to
+organize things now to say organized I'm
+going to right click and say assign
+audio rules this is music it ises not
+dialogue now it's the right color I'm
+going to drag it underneath zoom out and
+just like my video I'm going to set an
+in point and an out point for the good
+part of the song all right pretty good
+just need to trim the ends so that it
+all lines up now we'll come back to our
+list for some sound effects I'm going to
+look for flames
+of let's try strong wind driven flame
+add it to the audio folder drag it over
+now to stay organized assign audio roll
+we're going to make an effect and just
+make sure that it starts at the same
+time as a flame and we're good to
+go so I'm betting you've heard of
+artlist before you know they have great
+music or you've used them yourself cuz
+like they're amazing but what you may
+not have tried is their new voiceover
+tool art list wants to be the go-to
+platform with all of the assets that any
+Creator needs they're the first ones to
+have professional quality AI voiceovers
+from professional voice actors I don't
+know if you're as sick as I am of the AI
+voiceovers on Tik Tok these sound so
+much better so let me show you how you
+can use them first you're going to go
+through and just listen to some of the
+different samples they have here every
+child deserves someone who believes in
+them once upon a time simplifying your
+life means focusing on what so let's
+narrow it down I kind of wanted it to
+sound like this guy is narrating it so
+let's say we're looking for a male we
+can do video categories I'm going to go
+for trailers select the voice and then
+type what you want them to say up top
+hit generate and in just a few seconds
+really quickly we have our first voice
+over there's more to a cowboy than a hat
+and Boots that's not bad let's try
+adding it to our video I have to turn
+down our music to hear it there's more
+to what cowboys than a hat and Boots all
+right that voice is great but it's too
+soft for what we're looking for let's
+use that same text but this time rural
+there's more to a cowboy than a hat and
+boots oh yes that is what I'm looking
+for that's great it's a way of life okay
+so there's a few things you always want
+to do when you're editing a voiceover or
+a roll in Final Cut Pro if you've
+recorded it yourself you're going to
+have to master it but it's already
+pre-master from artless or sounds great
+still we're going to do the same thing
+so let's say you wanted to change the
+volume we might go into effects over
+here and really often I go to levels and
+I grab my limiter drop it on there and
+this lets me just turn up the gain turn
+up the volume without actually clipping
+but since this is already loud enough
+let's just turn it down as an example
+here and see how that's edited the whole
+thing but I might want to chop this up
+so what I can do is I'm going to right
+click and go to new compound clip or
+shortcut I use all the time option G
+creates a compound clip doesn't matter
+what you name it say okay and a compound
+clip is kind of like a folder if I
+double click it I'm like inside of a
+folder that has that same audio so now I
+click back and I I'm back in my normal
+timeline I can go in and out of a
+compound clip and I'm going to add some
+Cuts so I'm going to use command B for
+the blade tool to trim between his
+sentences here and kind of just break it
+up so he says these things spread
+throughout the whole video there's more
+to a cowboy than a hat and boots but
+then later I remember I forgot to add EQ
+it's okay if I just double click any
+part of it I'm back inside that compound
+clip I can go grab my EQ drag it on top
+and now that effect is changing
+everything within the whole video maybe
+I'm going to kind of scoop it like that
+make sure the EQ is before the limiter
+and now when I go back to my timeline
+it's applied to the voice over all
+throughout the same goes for a-roll this
+is so powerful and useful any long clip
+should be in a compound clip so you can
+make these changes there's more a cowboy
+than a hat and Boots okay but I want
+that first sentence to have a little
+more personality so I'm going to go back
+to Art list and I'm just going to
+regenerate that first sentence I'm going
+to look at my voice settings and I can
+do things like emotional range and I'm
+going to crank that to Super expressive
+and same with style let's give it a
+little bit of a style boost now I'm
+going to generate it again so let's see
+the difference her first one sounded
+like this there's more to a cowboy than
+a hat and boots and now we're at this
+Boots which I love like you can go
+through different performances with the
+same voice and of course it also
+understands punctuation so if this was a
+question there's more to a cowboy than a
+hat and boots I mean it's pretty good
+like I I don't know I don't know how
+they do it but this is really
+professional quality voiceover work like
+I'm I'm amazed what this is able to do
+so quickly without having to send a
+bunch of emails back and forth and
+iterate you can just do it yourself all
+in one place and all of these voiceovers
+are covered by the artless license so
+how get access to it well if you've
+already got an artless Max subscription
+like I do you've already got it it's
+right there you can start playing with
+it right now if you have a standard
+subscription it's an easy upgrade or
+there is a dedicated voiceover plan if
+that's the only tool that you need from
+art list or if you've never used art
+list before you can create a free
+account and just start playing around
+with it use the basics and just see what
+it's like so there's a link in the
+description below I'd love it if you
+click that to go check it out so that
+they know you came from this video and
+thanks again to artlist for sponsoring
+this video now if you are recording your
+voice over final cat has an amazingly
+helpful new feature that I use all the
+time let's say you're you're responsible
+enough to leave the sink running while
+you talk there's more to a cowboy than a
+hat and Boots now that's a terrible
+voiceover I would never actually record
+it with that much noise in the
+background but there is a really
+powerful feature when you have your
+audio selected go up here to your audio
+tools and turn on voice isolation let's
+hear it again there's more to a cowboy
+than a hat and boots there's more to a
+cowboy than a hat and boots there's more
+to a cowboy there's more to a cowboy
+this separates the voice in the
+background and does a pretty good job of
+it not as good as professional software
+when I'm doing it for real I use isotope
+RX tools that do an incredible job but
+this is very usable often I'll just turn
+it to 30% to subtly remove like say a
+bit of air conditioning in the
+background this one I've got to show you
+if you haven't found it already best new
+feature in Final Cut Pro in a while I
+love it okay so this clip it's already
+slow motion of the horse running but but
+it's too fast I want this horse to run
+by forever I want to be much slower so
+in the olden days you could click on the
+clip and then go over to here or you
+know I prefer command R to bring up your
+speed tools and then over top you've got
+this little speed control and I could
+just say slow 25% that's going to slow
+it down quite a bit let's watch what
+happens ooh that does not look good it's
+stutters a lot for a while we've also
+had better Optical flow this does some
+frame blending so you can see it is
+smoother but it looks weird like you
+know this has been edited now check this
+out we're going to go to smooth slow
+motion this is using AI to do a lot more
+work
+25% and check this out it just it's slow
+motion it's amazing it really fills in
+those gaps and what's crazy is now I
+could turn this all the way down to like
+10% I would have never done this in the
+past and now it's usable at 10% even if
+you didn't shoot in 60 frames or 120
+frames per second you can slow anything
+down now I love this feature and the
+fact that it actually works blows me
+away but what really kills me is the way
+Final Cut does color management it's
+still not good I did a whole video about
+editing log footage and Final Cut but
+this is what they gave us instead so
+here's a new tool so let's pick a clip
+and up here in the top right we're going
+to go to our color tools right now
+there's no Corrections on it we're going
+to add a color adjustment layer this is
+relatively new and this is a machine
+learning AI tool called enhance light
+and color let's click it I just find it
+to be pretty unpredictable like it's
+using machine learning to average out
+colors and sometimes it does a good job
+but I find overall what it's doing like
+let's try it again here
+it wants to squash the highlights a bit
+bring up the shadows and also it seems
+to cool off the shadows in virtually
+everyone like these it finds all these
+images too warm like this should be a
+good candidate color is pretty bad and
+when I enhance it it it just doesn't do
+what I would want it to do it just like
+made the background kind of blue and uh
+I don't know just made it all cooler and
+more contrasty I just find it a bit
+unpredictable and it seems like when the
+feature came out everybody loved it on
+first inspection but now that I've tried
+it a few times I just I haven't found it
+useful but what would be useful is color
+management D Vinci resolve does it Final
+Cut get on it I want color management
+throughout the whole program that makes
+sense but let's give him a little Credit
+One new feature they did add that helps
+is now I can rename those color
+adjustment layers and say I don't know
+this is like auto adjust you can name
+each layer so that it's organized that
+wasn't there before so it's a welcome
+addition now since we're doing this on a
+computer instead of a phone you can
+really refine certain effects with more
+detail than you could otherwise so I
+just want to show you one cool trick you
+do need an external plugin for this but
+it's pretty awesome so if I grabb this
+clip and I copy it and I paste it and
+put it on top I'm going to open up my
+effects and I've installed Roto AI which
+is this really cool tool from motion V
+effect drag it on top and let's actually
+make this one clip a little bit longer
+and again these are two of the same clip
+on top of each other they're doing the
+exact same thing I'm going to click on
+the top one go into my roto Ai and just
+kind of paint over myself quickly here I
+don't have to do a very good
+job then I'm going to hit tracker and
+track forward and track backward all the
+frames are tracked you can see AI has
+cut me out for all of those instead of
+merged I'm going to say masked video and
+I'm going to add a title in here I know
+it doesn't really fit but I'll grab this
+one from nkb HD put it under this clip
+of me walking and check this out put in
+my own text make it bigger make it way
+bigger and check that out isn't that
+awesome like this used to be so hard
+you'd have to like manually cut it out
+and now you can just throw it together
+in a few minutes and I've got to be
+harsh about Final Cut Pro here because
+this is one of the downsides of it when
+you compare it especially to something
+like resolve
+tools like this are built into resolve
+for free whereas you have to pay for a
+lot of the plugins that I use all the
+time in Final Cut Pro that's not ideal
+like I I wish more of this was built in
+I hope they keep adding and Final Cuts
+not updating as fast as resolve but
+resolve is way more complicated so is
+Premiere Final Cut is so much faster to
+edit in so that's why I keep using it
+and now let's say we want to do some
+color grading again this is Final Cut
+color grading much simpler and quicker
+than in resolve I'm going to go into my
+titles and grab an adjustment layer if
+you don't have an adjustment layer for
+Final Cut Pro yet you kind of need it it
+should be built in but at least this
+one's free so all of the links will be
+in the description for everything I'm
+using in this video if you need that
+Roto AI or adjustment layers or anything
+um you can definitely find it down below
+but let's throw an adjustment layer on
+top of everything trigger right to the
+end and now we're going to go into
+effects go into color and drag a custom
+L onto the adjustment layer now you're
+going to have to grab a l from the
+internet I have tutorials about this but
+there are a million of them out there
+I'll use one of my stalman lets and
+check this out this is a lot more
+cinematic I'll just kind of flip it on
+and off as we're watching here you can
+kind of turn the opacity up and down
+depending how dramatic you want it to be
+and this is just a great way to sort of
+color the whole timeline all at once
+sometimes you still need to go in and
+like this clip is now a little too like
+red and saturated so I might turn down
+the saturation make it a little darker
+you know you still might need to go
+through and color correct each
+individual clip but it's nice being able
+to throw an overall look on top of
+everything so that it's just kind of
+ready to go and it's got a look to it
+right away common question I get is how
+to do captions in Final Cut Pro there is
+a plugin called caption generator for
+Final Cut it's in the App Store it does
+its job well but it's very clunky to use
+I actually usually end up just adding
+captions inside of the social media app
+instead of in Final Cut but we still
+need to export this to make sure we have
+the highest quality upload in the ends
+so we're going to go to file and share
+and Export or what I'm going to do is
+I'm going to press command e which is
+our export shortcut the info tab you
+don't have to worry about this you can
+change that later settings that's what
+we're concerned about we're going to
+make sure this is correct so there are
+two common settings I use either in
+audio and video you want to make sure
+that well you're not exporting in Pras
+that's too big for social media makes no
+sense there's an h264 setting here that
+is kind of the the largest quick preset
+that you can do out of Final Cut Pro
+that's the setting that I use most of
+the time if you want to be a little bit
+smaller but still great I also use the
+Apple devices um multi-pass better
+setting which also looks good A little
+bit smaller little bit faster upload but
+I prefer just my archive to be a little
+larger so I'm going to let it be that
+h264 you're just going to find whatever
+your export folder is hit save and there
+you go uh if you want to see the
+progress it's up here in the top left
+and before you upload one more step to
+double check in Instagram and Tik Tok
+and threads I noticed I had this turned
+off the other day turn on highest
+quality uploads they all have them in
+different places in the settings so
+search for where to turn it on but you
+might have it turned off and you went to
+all this effort of making it look
+amazing and you upload it in standard de
+instead of HD or who knows what and it
+doesn't look as good as you want so
+that's the last tip of this video I hope
+this was helpful there was a lot to go
+over so if you have any other questions
+I've got a whole playlist all about
+editing and Final Cut Pro and it's
+definitely going to answer any of your
+questions or just throw the questions in
+the comments below and I'll get back to
+you thanks for watching guys I'll see
+you in the next
+video there's more to a cowboy than a
+hat and boots it's a way of life
+it's about grit and
+dedication and Rodeo is the chance for
+every cowboy to share their passion with
+the world
+[Music]

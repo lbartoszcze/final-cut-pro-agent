@@ -1,0 +1,140 @@
+so it turns out i've been doing this
+wrong for a long time but i found out
+how to fix it i went to youtube.com and
+i actually found out what they prefer
+and what they recommend
+to upload as a video file to their
+website and so this is what i found let
+me show you what i've been doing and
+then how to fix it and how to upload it
+correctly with great quality as well as
+small file sizes
+you got to just press record to get to
+your export settings make sure you have
+your project selected go to file and
+then you can go to
+share master file or what you can do is
+you can come over here to the share
+button
+and then you can also go to master file
+by clicking on that
+right there so now we have this window
+and this is where we're going to get
+into all the information i'm going to
+show you exactly what you need to do
+to upload to youtube specifically to
+youtube so right now on
+info we can see a few things we can see
+that our project is 4k which is great
+that's what i wanted at we can see it's
+at 23.98 frames per second
+great that's what i want it as and right
+here is the file size so we can see it's
+a
+mov we can see that it's 161 megabytes
+now sometimes when you first get into
+here what you'll notice is
+right now i've set to h.264 but usually
+it's at like an apple
+pro does and this is going look it's
+like twice the file size this is going
+to give you
+huge file sizes and it's not even
+recommended to do this
+for youtube it's really not necessary so
+what i've been doing for the longest
+time
+is changing my video codec to an h.264
+a lot of people do this it still works
+it still goes to youtube it's
+fine but this leaves you with a mov well
+turns out
+youtube actually wants a mp4 so i'm
+going to show you how to do that
+in final cut pro right now what you need
+to do is go to your format
+and instead of video and audio it's just
+normally set to you want to go to
+computer this is going to change it to a
+mp4
+and this is also still an h.264 file but
+we're going to go to
+better quality because we want the best
+quality possible
+now you can't really mess with this and
+and change the quality
+but better quality is going to give you
+the best quality possible
+our resolution that's fine our color
+space audio format all this stuff is
+fine
+that's all you have to change is format
+to computer make sure you're on better
+quality
+and this is going to give you even a
+smaller file and i think why they want a
+mp4 than a mov is because i believe
+mov runs more natively on like apple
+devices where mp4 is more of a global
+standard and all the devices that are
+android pc windows all that kind of
+stuff are going to run
+mp4 files even faster so i believe that
+your
+mp4 files once you upload that to
+youtube is actually going to run faster
+upload faster on
+all devices and so that's great and
+that's what you want to do especially
+when youtube
+is recommending that now let me show you
+how to save this as a preset so you
+don't have to go through all those steps
+every single time you can just do it in
+one click what you want to do is go back
+up here to the share button and we are
+actually going to add
+a destination because right now when i
+click on master file even though i just
+change it to an mp4
+i go back into my settings and it's
+changed back to an h.264 mov file so we
+don't want that we're going to cancel
+this
+we are going to add a new destination
+and from here
+all you really got to do is drag in
+export file drag it
+right there it's fine if you want it at
+the very top that's great as well
+when you click on it this is where you
+can actually change the preset
+so format again we're going to change
+this to computer we're going to change
+this to better quality
+and then resolution i like to leave mine
+at 4k
+but you can always change that if you
+edit in hd what you can also do here
+which is cool is change the name so we
+can change this to
+mp4 if we want to do that and then once
+you hit the close button
+everything's saved you don't have to
+click save you go back up here you're
+going to see our
+mp4 at the very top we're going to click
+that we go to our settings and look
+everything is saved
+and we can hit next and you can see this
+actually updated the resolution to match
+what my timeline is at so it's going to
+do that automatically which is perfect
+then we're going to go to next we can
+save it to our desktop or save it to
+wherever we'd like
+and then that is going to export for you
+click on the screen to watch more final
+cut pro 10
+tutorials and i'll see you guys in the
+next video

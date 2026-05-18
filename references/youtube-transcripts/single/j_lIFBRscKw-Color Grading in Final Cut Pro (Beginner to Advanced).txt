@@ -1,0 +1,467 @@
+hey guys welcome back to another final
+cut pro tutorial and today
+we're learning all about how to color
+correct and color grade our footage
+so we're going to start with beginner
+and move all the way up to intermediate
+advanced i'm no colorist but i'm going
+to tell you the workflow that i follow
+so we're going to first start with our
+correction and fixing the colors
+and exposure in our clips then moving on
+to
+unique situations like we're underwater
+or when the drone is panning
+and the exposures or colors are changing
+and finally we're going to finish
+off with color grading and giving our
+footage a
+look and a final result something that
+we are happy with
+so let's get into it all right here is
+our editor
+it's completely empty except for some
+footage on the side first thing we want
+to do when it comes to color grading
+is open up our preferences
+and select here like i already have
+selected color wheels we don't want to
+use color board as it doesn't give us
+as much freedom as color wheels so
+select that
+all right next we're gonna drag a clip
+into the timeline for example this
+clip here of iceland now we wanna start
+correcting
+this footage so we're gonna go to view
+look at video scopes
+[Music]
+and here are the two scopes that i
+always select i have the vector scope
+and i have rgb overlay and the way you
+can change that
+is by selecting them on the side here
+also here
+by clicking view you get to select two
+one three or something like this
+but i always like just these two all
+right let's get a better look
+at this and a bigger screen what you
+want to do is
+bring these colors you can see here you
+want to try and bring them together
+and we do that over here in the color
+wheels so let me briefly explain on the
+right side of the color wheel we have
+exposure
+and that's on the master wheel that's
+the whole image on the left side we have
+saturation up and down
+and down at the bottom we have white
+balance on the right side we warm up the
+photo on the left we cool it down on the
+video sorry
+and the bottom is the magenta and greens
+on the opposite sides of the color wheel
+so let's go back to the master and if
+you notice on the other sides of the
+wheel we have orange
+and the opposite is teal so we have
+yellow then we have blue
+and on the other side we have magenta
+and green and notice how that affects
+the rgb overlay on the left side here
+the more saturated the color the higher
+it will be in the chart
+and the other wheels on the charts such
+as mid-tones shadows and highlights are
+for more control
+within our adjustments all right let's
+get started and color correct this
+footage
+starting with the white balance so by
+sliding
+it to the right you can see the colors
+come together so that pulls a bit of the
+blues out
+so as you can see the reds are still
+lower than the other ones so we can try
+and add reds in the highlights to raise
+them up
+there we go now you can see they're
+completely aligned
+so let's toggle that on and off to see
+the difference as you can see the clip
+was a little bit blue before
+and now it looks a little bit better
+colored
+with the white here is the luminosity or
+the luma and you want to bring
+this one this line here all the way up
+to close to 100 and the bottom
+down to zero usually you want to start
+with that so we'll bring down shadows
+the minute you touch the line that means
+you've lost information in the shadows
+and that's called crushing the blacks
+and then we're going to raise the
+highlights
+all the way up close to 100 sometimes
+you can go over
+if you want that look it's fine for
+example there's no information in the
+sky but if you like that look that's
+fine
+so we'll bring them just to 100.
+and as you can see there's still a
+little bit of darkness here so i'm going
+to raise the mid-tones
+that brings the detail back into the
+shot
+sometimes when you raise the mid-tone
+too high you can bring down the shadows
+again
+all right that shot looks better let's
+toggle it on and off
+so that right there is corrected footage
+let's move on to another clip
+as you can see in this shot it's a bit
+pink in these mountains
+so we want to correct this by pulling
+the magenta out of this tint as you can
+see right away it's looking better
+by adding green second of all we can
+bring down the shadows right down to the
+bottom
+we can raise the highlights a bit but as
+you can see we've got a bit of a green
+peeking over here in our highlights so
+we can pull highlights
+away from green because that is the
+opposite outside on the color wheel
+let's pull highlights away from green
+you see what's happening
+well that brought more pink into the
+photo we can desaturate the highlights
+to get rid of some of that pink all
+right let's bring mid-tones down
+get them down we're losing detail in
+this waterfall at the top here
+so we've got to bring those highlights
+down a bit there still
+a little too much pink overall in the
+photo so i'm going to pull the mid tones
+away from pink
+there we go so now we've fixed that
+problem of the greens and the highlights
+and we've balanced the color a little
+bit better let's look before and after
+so as you can see it was pink here the
+image is a bit flat
+looks much better now let's try another
+clip and let's say
+we're using this interview footage
+whenever you're using
+interview footage you always want to
+start by making a compound clip
+interview one because when you have this
+interview let's say you're cutting it up
+and you're fixing all of the errors in
+the interview
+if you're then you pull that out so
+let's say i want to fix this clip right
+here
+and i want it to affect all of my pieces
+i just double click
+and now i fix this bring the shadows
+down
+raise the masters
+that way when i go back into the clip
+that's affected all of them together
+alright next we'll look at some log
+footage here we have
+two clips one is a little bit blue
+and one is a little bit orange
+so as you can see here we've got the
+blue and the highlights
+and we need to correct that so right
+away we can pull
+some orange into the clip and all of a
+sudden you see
+our colors are lining up we got to put
+more reds into the highlights
+and as you can see they're lining up and
+we will
+bring the shadows down bring all the mid
+tones up to get more
+light in the shot highlights up
+we've got a bit of clipping here so
+maybe we won't go too high
+shadows down okay let's look at a really
+orange shot
+so the white balance was off on the
+camera here made a mistake if you want
+to correct for that we have way too much
+red
+so let's bring blue back into the shot
+as you can see
+the red is coming down and we're in the
+mid tone area
+let's pull away from red
+or we can do the whole thing all the way
+from red add some more blue to the shot
+and now let's contrast
+let's bring the mid tones up
+still a little bit too much red
+let's pull away from magenta add some
+green
+there we go let's that looks a bit
+corrected
+much better so as you can see there's
+some clipping here but that's no problem
+that's just the light in the windows
+that's no worries so that clip looks
+much better
+let's look at another shot here when we
+have the cup the white balance is
+way off if we have a scenario like this
+and we want to
+match these grades we just copy ctrl c
+and over here shift ctrl v
+and that will add the attributes so
+there we go color wheel
+add and all of a sudden we have matching
+clips
+so we've shared our color color
+correction onto the other clip
+excuse the background noise that's my
+mac
+humming to try and keep up with the
+screen recording here
+next let's look at two unique scenarios
+so one is underwater footage
+look at the difference in the color here
+so every time we shoot
+underwater we lose the reds so we have
+to bring back the reds in the shot
+because it's
+definitely blue dominant so right away
+let's add some magenta
+let's add red into the mid tones with
+this you kind of gotta play around with
+it to try and get the best looking image
+so bring we can bring the shadows down
+to the bottom
+you can raise it up a little bit
+highlights can go up a bit we're going
+to lose some but that's okay
+let's bring more red into the shot raise
+that right up
+bring that down we don't want to lose
+too much blue because of course we are
+under water after all so we don't want
+this color to be red or green we want
+someone to be blue however look at the
+detail we brought back into the
+subjects look at how much contrast and
+color
+back natural color back we can make this
+more saturated we just boost these
+colors
+and that way we can still hold on to the
+blue so next we have a drone shot what
+happens when
+drone pan is down is it's too dark right
+as we hit here
+we want to put in a keyframe right here
+we want to go to the middle of our clip
+and that's what we want to
+fade on some more
+exposure here and
+here and now watch our clip adjust as it
+pans down
+it's panning down and it adjusts
+all right so these clips that you see
+here i've actually got from
+storyblocks which is the sponsor of
+today's video
+storyblocks has 1 million royalty-free
+assets
+i've been using this service for 2 years
+now and it's awesome it's an affordable
+subscription
+with unlimited downloads it's a big time
+saver for example sometimes i'm editing
+winter footage in the wrong season i'm
+in a hot place
+storyblocks comes to the rescue and i
+can get some snow footage or whatever i
+need to fill in that spot
+if i'm in a different country and i am
+missing some b-roll of that country
+storyblocks has footage from all over
+the world which is amazing
+you can just get back to editing and
+finishing more projects
+if you're interested in using star
+blocks check the link in my description
+for more all right so here we are to the
+last portion of the video and that
+is the grading portion of the video
+giving it its final look
+so what we do here i have some clips
+from iceland i'm going to drag over an
+adjustment layer so i can apply the look
+to all of the clips
+now this only works after we've color
+corrected all the clips
+you can't just slap on a lut or a grade
+and expect it to
+fix all of your clips we have the color
+correct then we can put on our look
+and it can apply to all the clips if you
+don't have an adjustment layer in your
+final cut already link is in the
+description or you can download a free
+one
+so here we can adjust the colors of our
+clips let's say we want to bring
+our shadows into this range here and
+maybe our mid tones we want to make more
+orange
+let's say we want to make the master
+more colorful so here's where we can get
+a bit more technical we bring in our
+color curves
+we can if you want you can bring more
+contrast into the image by
+doing a slight s curve if you want more
+of a hazy moody
+summertime vibe you can add some fade
+to it that could that might be a look
+that you want for some films not
+typically
+travel too much bring that back
+now we're going to go to hue saturation
+curves this is where we can get really
+technical with the various colors
+so let's say we're adding just this
+single clip and we have a hue saturation
+curve
+we will select the hue by clicking on
+that
+let's say we want the yellow and now we
+can adjust
+the color of the grass so look more
+green more orange we're going to do it
+to the whole
+adjustment layer so let's go greens
+let's bring them more
+no we want to adjust like this
+so the yellowish greens we want to bring
+them into the more of a more orange
+range
+and then whenever you're looking at a
+color grade you want to look at the
+opposite
+side let's look at this color here click
+on it
+there it is and you can see i can make
+it more teal or make it more purple
+depending on how you like so that's
+where you have the freedom
+to work with the colors in the hue
+saturation and
+luma curves let's see we want to adjust
+the brightness of the blues we click on
+the eyedropper
+we click over here and we can bring up
+the brightness of the blues
+all right we have talked a lot about
+landscapes now look
+now let's look at some portraits
+so we have three portraits here and
+that's where our
+vector scope comes into play this line
+here regardless of ethnicity
+is the skin tone line and you always
+want to line up your
+luminosity and your color along that
+line so this one's a bit too orange
+needs to be a bit
+more along there so that's properly
+corrected now let's say we want to add
+a more of a grade to this for example
+let's say like a teal
+look and orange in the highlights
+what i don't like about that is his
+beard has kind of gone aqua
+let's have a look the way to fix that is
+we go to our
+hue saturation sliders we put option
+click this is our luma line so this is
+the shadows
+this is the highlights so if we pull
+that down
+you can see that actually pulls the
+out of his beard see that
+because there's nothing worse than teal
+shadows
+all over a video just kidding kind of
+okay next one we're going to do color
+masking so click over here color mask
+and want to
+select your skin tone with the
+eyedropper tool then view the mask and
+we're going to
+slide these hsl bars all the way
+until her skin tone is completely white
+we're going to mask out her entire
+skin so once you've successfully done
+that then you're going to click
+on view mask again to see the image
+select outside and we want to change the
+color of the outside when we adjust the
+master wheel it's a bit aggressive so
+let's reset that
+do the mid tones and as you can see
+we're changing the
+background and the darker parts of the
+photo so this is completely subjective
+when you're creating looks it's
+completely up to you lastly i'm going to
+pull
+the color out of the shadows like i did
+last time
+and there we go i've completed it let's
+take a look at the before and after
+so once you understand how the color
+wheels work a little bit you can play
+around with the colors and pick a look
+that you like
+however if you want to try out the
+colors that i use in all my travel
+videos
+then just click the link in the
+description and you'll see my luts there
+for sale
+and you're looking at four of the before
+and afters of four of my luts
+in my latest pack they're super easy to
+add to your footage you just type in lut
+add that custom lot on top of your
+footage go to the drop down menu
+markers and luts and pick one of them
+and there boom done if i provided you
+with some value i'd appreciate it if you
+checked out that link
+all right that wraps up for today's
+video i hope you learned something in
+this color green tutorial make sure you
+follow me over on instagram
+give this video a like and subscribe if
+you aren't already and we'll catch you
+in the next one
+so this is um so with underwater
+and and
+do i

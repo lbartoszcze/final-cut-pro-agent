@@ -1,0 +1,463 @@
+if you're making vertical reels for
+tick-tock instagram reels or youtube
+shorts there's no reason it can't be
+just as precisely edited as a netflix
+show and today i'm going to show you how
+to get started doing that in final cut
+pro also this video is brought to you by
+art list more about them later for the
+sake of this video let's assume that
+we're shooting on our iphones and i'm
+going to edit this reel that i just did
+for my wife last night actually her
+nails getting done very simple and i'm
+just going to select them all and
+airdrop them to myself the first couple
+steps are in the finder before we move
+into final cut i'm going to select all
+of those downloaded videos create a new
+folder and call it i don't know whatever
+the project's going to be so
+anya's nails
+then inside that anya's nails i'm going
+to create a new folder and call it media
+and this media folder might have videos
+or images in this case just videos but
+it could have anything in there so i'm
+going to head over to final cut pro and
+create a new library and then i can save
+it inside that anya's nails folder
+and all this is moving too fast at the
+end of the video i'll have links to all
+my final cut videos that'll go even more
+in depth on some of these steps because
+i know i can move a little quickly
+something to point out along the way i
+do create a library for each project
+that i'm working on so here was one from
+kew gardens another from las vegas
+now inside this library we're going to
+create a new project now we're going to
+have to click use custom settings here
+because we're not doing things totally
+standard this isn't a horizontal video
+it's a vertical video
+this is basically the whole key step
+here final cut recently introduced these
+vertical templates that weren't there
+before and something important to note
+is it often defaults to 720 by 1280 i
+don't know why like not even 1080 you
+want it to at least be 1080 by 1920
+that's proper hd
+and 29.97 is the most common frame rate
+um if you're shooting on a phone so i'm
+gonna stick with that you're gonna have
+to look at your footage to check what
+you actually did but if you don't know
+what frame rate you shot at it's
+probably
+okay things are taking a little more
+shape let's go to the next step and
+we'll go to file
+import media
+in the media folder we've got all of the
+videos and i'm just going to shift-click
+to select all of them because you're
+going to import everything at once and i
+want to draw attention to this option on
+the right here it says copy to library
+or leave files in place if you've
+watched my other final cut videos i like
+to leave files in place for more
+advanced edits but since we're doing a
+simple one here i'm going to say copy to
+library this is the default what final
+cut typically does so we're going to use
+that not worry about any of these other
+options here and just say import
+selected and now let's go back to finder
+take another look at what happened here
+so there's no confusion here's all that
+original media this is where those
+videos are that we started with now if
+we click on the library you'll see the
+size of it has grown it's 440 megabytes
+now that's because it copied all of
+these inside of this library so i can
+actually delete that folder if i go back
+in my project i can confirm all the
+videos are still there because there's a
+copy that final cut made and it's in
+that library all these different
+interface areas can be resized so that
+we can do a little bit of custom scaling
+i'd really like to see final cut let me
+make this as big as i want like put the
+vertical video on the right of the
+screen you can't do that right now all
+you can really do is stretch it up and
+down because you want to see as much of
+it as possible so all i have to do is
+select all of them and i'm just going to
+drag them down here into the timeline
+and to make this the easiest edit in
+history now that all this is in here i
+know that it just needs to kind of run
+sequentially all i'm going to do is say
+command a so i select all i'm going to
+right click
+and say change duration to one second
+and just like that my timeline's gone
+down from seven minutes to uh 23 seconds
+and if you're editing for social media
+that's probably more realistic now
+before i hit play i know that the audio
+in this is not useful so i'm going to
+select all these clips i can click and
+drag and over here in the inspector
+you'll see a little audio icon if you
+hover over it'll tell you what they do
+this is the audio inspector i'm going to
+click on it
+and turn the volume all the way down so
+none of these clips have volume anymore
+you see that at the bottom that there
+was a little waveform if i turn them
+back up if i turn them down that
+waveform is gone so there's no audio
+and now i can just play so if you've got
+a montage just clips that go one after
+the other this is a really quick way to
+get them in order but sometimes you need
+to select a certain part of it so for
+example these two last clips they're not
+really showing what she intended so i'm
+going to click on the clip drag it out
+and now i can see the whole thing you
+see how i did that either side has
+little handles that turn yellow
+and red as you click on them and then
+you know that you're grabbing onto the
+edges of the clip red means you can't
+drag it any further in that direction
+yellow means it's got some room to move
+and if you're seeing something different
+right now i'm on the default select tool
+the shortcut for that is a and other
+tools will behave differently but this
+is the one that we use most often so you
+can hit a to make sure you're using the
+same default tool that i am and expand
+this out and so what i'm looking for is
+where anya shows off her nails here just
+like that now i can just click on the
+right drag that shorter find where the
+clip begins
+drag that over here and i've got two
+different takes of this but i don't need
+the second one now i chose this take
+and now i've got a full sequence like
+this could be the reel just like this
+but of course we're going to take a
+little bit further let's say i want to
+change which part of the clip i'm
+viewing i press command plus to zoom in
+obviously command minus would zoom out
+and in our tools instead of the default
+select i'm going to use trim and what
+this does is as i click in the middle of
+the clip it's moving which part of the
+clip is being used so i can just kind of
+move it around until it's using the part
+that i want these are incredibly short
+here's a better example so in this one
+you can't even see the nail being
+painted so i'm going to move it over
+until we do now let's watch it
+great half a second of a nail being
+painted now let's say you don't want to
+use one of these clips great chance to
+show off the magnetic timeline that
+you've heard so much about this is what
+a lot of people love about final cut i
+can just click on a clip press delete
+and they snap together like magnets i'm
+going to undo redo so you see what's
+happening there it's kind of got gravity
+towards the left so that it always wants
+to close any spaces that you create in
+the timeline so if i move back to the
+start and i hit play which is also
+spacebar i can see well great i've got a
+reel of some nails being done
+cool
+now i know you might be really invested
+in this nail video we made but let's
+move to an even more exciting one this
+one we just did in las vegas it's a lot
+more exciting to watch but it's still
+missing something important that's music
+and i know just where to find it and go
+straight to artless dot io where i've
+been getting stock music for years now
+because it's not just music they have
+lots of sound effects too so let me show
+you just how quick and easy it is to
+find a song i can say video theme i
+already know that this is a travel video
+and now it gives me a pre-selected list
+of great travel songs i can narrow it
+down by things like the amount of energy
+that i want it to have let's say it's
+medium fast and then i can also add a
+genre let's say this is gonna be a pop
+song once i find something that i like
+the vibe of it i can also click this
+button over here and it's gonna
+recommend more similar songs that have
+the same tone or the same speed once i
+found one i like i can just click
+download mp3 to keep it small
+i'm going to put it in my media folder
+and i can actually just drag it into
+final cut it's another way to add things
+i'm going to put it below
+all of the video and i'll show you how
+easy it is to edit the video to the beat
+but first a few more things about art
+list they've got some great licensing
+options to get you access to unlimited
+music and sound effects starting with
+the personal plan at 9.99 or if you need
+to cover more uses like broadcast tv
+paid ads or any online platform you can
+get the unlimited plan for 1660 a month
+which really gives you this confidence
+when you're doing commercial videos that
+your client is going to get exactly what
+they're expecting and now is a great
+time to sign up because they've got this
+all in pack that just provides a ton of
+different features like sound effects
+visual effects in fact i'm going to drop
+in one of their included film mats that
+is in the bundle you can also add their
+film grain and also these color preset
+luts and all of a sudden my video looks
+a lot more like film so you've got a
+worldwide license at a great price and
+our list is always adding more songs and
+more musicians so you can stay ahead of
+the trends so sign up now because it
+lets them know you heard about art list
+on this channel and it also gets you
+that all impact with the presets and the
+sound effects and the vfx and then you
+will also get two months free at art
+list again link is in the description
+thanks again to our list so now if i hit
+play you get all of it okay but i want
+to time this a little better so i'm
+going to cut some of the beginning of
+this video off and bring this way
+forward so that the drop happens right
+as that first shot ends another thing
+you can see happening is that it's
+snapping between the clips that's this
+thing over here see snap it'll snap from
+clip to clip and i can drag this over
+and now we should get a nice perfectly
+timed drop
+[Music]
+perfect when you want to end the song
+you can click on any segment and press
+command
+b and now it is cut those in half it's a
+blade b is for blade here is the blade
+tool as well now using my default select
+tool i'm going to select the end of that
+and delete it and now the song
+is the length of the video i'm just
+going to drag out that end and it will
+snap to the very last moment now that
+we've got music in here i'm just going
+to show you how easy it is to edit to
+the beat without even listening to the
+song i know that these yellow peaks are
+when the beat is hitting so i can just
+click and drag each clip to line up with
+that
+if i play it all back i've got 17 epic
+seconds of our recent trip to las vegas
+all right now the last step we're going
+to export this all we got to do is go to
+file share
+export you want to double check down
+here that the settings are what you
+expected 1080 by 1920 and 29.97 frames
+per second also up here the only thing
+you want to change is go over to
+settings and this is where you set the
+format i don't know what it defaults to
+but let's choose a useful one i often
+use apple devices and go to better
+encoding h264
+and make sure that the resolution is
+turned up as high as it can be that's
+all you got to do
+hit next and i'm just going to save it
+into this folder with all my other reels
+if you want to watch progress you can
+click this little circle up here and see
+it export we covered the simplest way to
+edit it but i know i can talk a little
+fast so i'm going to go through it all
+again and throw in a few more pro tips
+this time with a real of my photography
+and videos that we shot on another
+recent trip it was all shot on film
+actually this is the yashica t4 super d
+the first steps are similar i'm going to
+go on my phone and find all of the
+images i want to use air drop them to my
+computer create a new folder called euro
+trip film
+inside i'll make a media folder this
+time i'll have photos videos
+and audio and you'll see why i'm making
+manual folders in two seconds because
+i'm going to organize it myself this
+time i'll select and drag
+all the video and all the photos
+i'll go back to our list use some of the
+playlists i've already created and just
+download a song and add it to the audio
+folder now i'm all organized in the
+finder time to get back to final cut
+i'm going to create file new library put
+it in eurotrip film and give it whatever
+name you want now i'm going to import
+things a little bit differently first
+i'm going to change the default
+preference of this by going to
+preferences and i want to leave files in
+place this is how i do things for
+youtube and any more important serious
+editing project and then i'm going to go
+to file
+import media again if i open up your
+trip film here's all the photos and
+videos that i plan to use now i'm going
+to press command a to select all those
+files and look over here to the right
+we're going to use leave files in place
+i already organized them i know where
+they are i don't need to copy them to my
+library and i'm going to say import all
+again ignoring everything over here on
+the right and i don't have a project yet
+so i'm going to create a new project
+again i'll use that vertical template
+this time i'm going to make it 4k which
+is 2160 by 3840 same frame rate i'm
+going to quickly name it here again this
+is the one that actually changes the
+export name of your final file the
+project name so this one kind of matters
+a little more i guess and click ok so
+i've got a timeline at the bottom over
+here on my left in the browser i have
+all of my photos and videos and i still
+want this to be really quick but i want
+to be a little more precise about what i
+add in so i'm going to zoom in and see
+what these clips look like instead of
+just dragging them all in i'm going to
+select my favorite section from each
+clip it's going to kind of play out like
+a vlog so i'll start with this video of
+traveling from calgary to london and a
+concept that's in all video editing
+software so this is transferable you can
+press i and that's going to select an in
+point see how the selection moved this
+little yellow selector at the end of the
+part i want to use i'm going to press o
+and that's in and out now you see this
+is what is selected in the clip i can
+click and drag this down to the timeline
+i also have some buttons here that will
+help move it down to the timeline if i
+want but for now let's just click and
+drag to keep it simple
+and you can see i'm really quickly just
+skimming over these videos selecting my
+favorite parts and dragging them down
+i'm trying not to be too picky about it
+i can refine it later but also the point
+of reels or tic tocs are to post a lot
+of them so just think quickly follow
+your instincts just choose the best part
+of the clip as soon as you see it
+again i'm not going to use any of this
+audio so i will command a to select all
+i'm going to turn the volume all the way
+down and then go into my audio keyword
+and here is that art list song and i can
+just drag it down below command minus to
+zoom out of my timeline grab the end of
+it make it the same length as the clips
+since i know i've selected the best
+parts and i know i want this video to
+move fast i can select all again and say
+right click change duration and i can
+make this
+15 frames now each one's only gonna be
+half a second because i know i want this
+one to move quickly also notice that i
+put two clips in the wrong place this is
+loading filament to the camera that
+should be near the beginning so i can
+just click and drag and the magnetic
+timeline will help me out and the other
+thing i want in this reel is to show the
+results from these video clips so now i
+just kind of need to match them all up
+photos to the videos that they align
+with
+so first i know i want those cactuses
+there they are i'm just going to drag it
+down
+drop it in right after the digital
+cactus and there it is there's the
+result grab the side make it shorter and
+now you notice there's black bars on the
+top and bottom maybe i want those maybe
+i don't i'm going to say that i don't
+and over here in the inspector if you
+scroll to the bottom there's spatial
+conform right now it's set to fit i'm
+going to switch that to fill it's going
+to make the image the same size as the
+frame so now i've got no more black bars
+after i've finished adding all the clips
+in i'm going to select them all again
+and let's do that right click make
+everything half a second again including
+the photos and also whether selected i'm
+going to click this little film icon
+over here in the inspector scroll down
+to the bottom
+spatial conform we're going to fill so
+they all are full frame and after i
+adjust the timing a little bit more this
+is my video
+now if you're confused about editing the
+instagram reels tick tock or any other
+vertical video you're working on don't
+worry i've got more final cut pro
+tutorials that go even more in depth so
+click on that video watch it next and
+i'll see you in the next
+you

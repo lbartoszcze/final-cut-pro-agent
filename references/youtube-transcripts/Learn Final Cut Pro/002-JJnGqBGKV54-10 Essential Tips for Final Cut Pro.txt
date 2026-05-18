@@ -1,0 +1,524 @@
+hi tyler stallman whether you're just
+getting started with final cut pro or
+you've been using it for years
+this video will have at least one tip
+and or trick that you're going to start
+using
+every single day and thanks to
+squarespace for sponsoring this video
+the best place to host your portfolio
+online
+and let's start at the very beginning by
+creating a new library
+once again i'm going to be using footage
+we shot for northwater in
+the fall and typically i name my library
+the same thing is a folder that i
+put it inside and everything else and
+now this brings us to our first tip
+which is something that's good to figure
+out early on when you're using final cut
+is
+when do you want to create a new library
+versus adding to an existing one
+and i think part of this confusion comes
+from the language that final cut uses so
+inside of our library we will create
+projects and give my project the exact
+same name
+the word library implies that it's going
+to hold on to a lot of different
+projects like
+a library but that can get pretty messy
+in final cut so i would keep the
+projects inside of your library all
+related so they're all sharing footage
+maybe they're all part of the same
+shoot but more or less i have one
+library per project
+next i'll show you how i do my file and
+folder structure so i did already edit
+this video so there is a file structure
+existing right here
+and i will have a folder for videos
+images audio
+and inside of video there can be
+different either shoot days or
+cameras depending on exactly what i'm
+doing i like to try to keep it very
+loosely organized i know some people use
+events as the primary way of organizing
+footage within final cut but i find
+keywords
+way more useful so here i'm going to
+import everything
+i am going to leave files in place
+because i don't like final cut
+managing my files more about that in a
+minute
+but what i'm going to do is import the
+audio images and video
+and i'm going to select keywords from
+folders this is going to take
+the title of each folder and use it as a
+keyword
+so now all of our footage is in the
+library and if we open up our event here
+you can see that there are a series of
+keywords so now our event can be
+anything i often don't rename them but i
+don't know we can just
+name the same things the project if we
+want more importantly we're now able to
+really
+find things so we had two days of
+shooting for this commercial and we used
+two different cameras so the gimbal
+shots are shot on the eos r
+so i'm gonna make the browser a little
+bit bigger here and select a1
+and day two and then just by the file
+name i can tell these are all
+of the eos r videos select them all
+command k to open up keywords and i'm
+just going to call this canon r
+then with those days still selected i'm
+going to go down and i can tell again by
+the file name these are all the c200
+files
+and you can add as many keywords as you
+want but i'd strongly recommend
+only add the amount that are actually
+useful to you so for example with
+cameras
+these have different log profiles on
+them so i have to color grade them
+differently
+so if i select all of my c200 footage
+this was shot in canon log2 so if i go
+into info i can select
+the custom c log 2 profile that i made
+which you can download below it's based
+on alexa luts and
+it looks great it's my favorite lut that
+i've got
+and now all the shots are in beautiful
+rec 709 full
+contrast so they look good again
+i've also got one that i use for c log c
+log 3 and most importantly a film
+emulation that i put on virtually every
+single project
+including this one right now so if you
+want to download my luts link is in the
+description below
+i'm actually going to take a little step
+back select the library click modify
+settings and let's take a look at where
+we're storing things so
+right now the media is set to be stored
+inside of the library
+if you're storing it in the library
+that's how apple tries to make it easier
+for you i really prefer to choose
+the video folder and keep it all in
+there it makes it easier to move
+files around and nothing i always do
+this caused huge problems for me it's
+actually part of the reason i switched
+to premiere for a few years
+until i figured this out final cut can
+start to take up
+your whole hard drive if you let it one
+way to prevent it is to change your
+cache location from
+inside of the library to the root folder
+of the
+main project and i put it right there so
+it is visible to me
+the reason for this is now it is just
+it's completely visible if i click on it
+i can see
+right now it's 27 megabytes that's
+nothing by the end of editing this it
+will be hundreds of gigabytes it will be
+enormous
+and you can just delete it when you're
+done you don't actually need to keep the
+cache file around you can actually just
+delete it as you're editing
+so whenever i need to clear up hard
+drive space i look at completed projects
+and just delete all those cache files
+from the finder the other big thing is
+that when you are importing your files
+make sure that you
+have a close look at where your files
+are being copied to because if you click
+copy as opposed to leave in place it'll
+create duplicates
+of all of your videos same thing goes
+for create optimized media
+and i mean kind of create proxies just
+make sure that you're watching those
+because you don't want to end up having
+multiple versions of all the same videos
+because you can fill a whole hard drive
+in just a few minutes
+so to be clear i never create optimized
+and i do create proxy media
+if i'm working with files that slow my
+computer down like the r5
+r6 a7s3 all these new cameras really can
+slow down editing all right in this next
+tip
+i learned from a friend that does really
+high-end commercial work for like
+mercedes-benz and game of thrones and
+like all
+the big stuff thomas grove carter has
+great tutorials of his own
+but the first thing i do when i'm
+sorting b-roll style footage which this
+isn't narrative none of this stuff
+connects but i'm gonna go through
+everything and like well i should go to
+the start and i want to watch
+every single clip so you're just kind of
+checking out what you have and as you
+see
+good moments you press i and then when
+the good part's over you press o and now
+you set in in and out so if we look over
+here there is a
+yellow section that is selected now your
+first instinct might be to
+drag this down to the timeline or press
+the e key and that drops into the
+timeline
+don't drop it in the timeline yet the
+much more useful thing to do
+is press the f key now this favorites it
+you can see that there is a
+small green line above it here and
+you're going to go through watching all
+your clips actually i see she's got an
+elastic on her wrist there we got that
+off
+here okay so yeah let's use these ones
+another favorite and you can just really
+quickly the big goal here is just to
+like remove
+all of the junk so i'm going to press i
+and
+oh in that general section this whole
+take is junk so i'm going to select it
+and press delete
+it works better for you sometimes i use
+the mouse and just select the good part
+like this
+good old-fashioned click and drag oh and
+this kid he ruined the shot
+and you're gonna go through and watch
+every single shot that you took
+and select your favorite parts of it now
+why are we doing this because at the end
+instead of viewing all clips you can
+just view favorites and these are
+just the sections that we decided are
+the best and this can take a few hours
+so i'm just going to quickly show you
+this is what it looks like on the
+completed project so you end up with a
+lot like
+favorite everything you think you might
+possibly use
+so you have a lot of clips to choose
+from anything that doesn't get favorited
+might get lost in the future and
+probably won't end up in your final edit
+and then a beautiful thing if you shot
+things in sequence which i don't know we
+kind of did here like this is all just
+b-roll so there's no real sequence but
+if i select everything that is related
+here in the favorites
+and i drag them down into the timeline i
+like i basically just have
+a watchable video now it's like it's
+it's edited i mean
+kind of like this is not the final thing
+so we're gonna have to delete a lot of
+this
+and the reason for all this is it's
+scalable and non-destructive so you can
+always go back and find
+alternate versions that you liked you're
+not like losing stuff which
+can happen if you add it straight to the
+timeline it's very hard to go back
+and find another version of a take that
+you might have liked
+if you want to know more from thomas
+grove carter he's been on the podcast a
+few times and he
+is a damn genius when it comes to final
+cut pro so
+check out those episodes and check out
+his tutorials too great guy that
+technique of
+favoriting everything is really great
+for b-roll or if your shots are broken
+up a lot when i do videos
+like this that i'm recording right now
+it's one long take of a-roll
+and then i cut that up so i'm gonna open
+up a new project so in this one i was
+breaking down my
+c200 rig and i treat this very
+differently so what i do here is i drop
+the whole thing
+on the timeline here is you know
+beginning to end all the bloopers and
+everything in between
+and then instead of just starting to cut
+the important step is first
+i press option g and create a new
+compound clip and this can just be
+called
+a roll clip whatever like totally
+doesn't matter what it is the point is
+now
+when you start editing so i put some you
+know random
+cuts in here chop it up delete something
+if i double click and go inside
+the compound clip everything is still
+there and i can make changes that are
+now affected all the way through so for
+example this has absolutely no color in
+it if i add the saturation
+back into the log it is all the way
+through that whole thing and this
+is so helpful for long clips if you're
+trying to keep a whole bunch of stuff in
+sync
+that was shot at the exact same time
+it's way easier when it's inside a
+compound clip and this is how i edit
+things this might be
+super basic if you've been editing for a
+while but if you haven't seen this yet
+it'll
+change everything for you okay i'm not
+doing this for real so it doesn't really
+matter what i'm saying here i'm just
+going to go through and okay
+i know that this is a first take and
+what you might do the most basic thing
+is to select the blade tool with b cut
+then you'd go back to select tool click
+that and delete it
+that's one way to remove things now the
+thing that you should start doing and
+hopefully you already have been is you
+go to the part of the timeline where you
+want the clip to start
+and you press option left square bracket
+and it will
+trim a ripple trim everything before
+that point
+so then at the end of my take i will
+press command
+b for the blade tool it'll just cut
+things and then i go to the beginning of
+the next take i can tell those are false
+starts uh
+i think this is the real one over here
+and i press option
+left square bracket and it will trim
+everything to the left
+now i could also do that in the other
+direction i could go to the beginning
+the next take over here press command
+b and then from here when i start
+looking at my phone
+i could press option and right square
+bracket and it will trim everything to
+the right
+this is essential to being fast in final
+cut pro if you are not editing this way
+you are probably editing much more
+slowly and to take that further i
+actually go in and i customize
+all of mine so if i switch over you can
+see i've already saved it
+and all that's doing is i've got like
+trim and trim start
+i assign those to just be the left and
+right bracket without
+any modification keys because i just use
+them so much and now i'm going to jump
+back into north water here i've added
+those favorite clips into
+a timeline and let's say i've added
+everything but it's a little bit too
+long
+very important is to create duplicates
+as you move along now something to keep
+in mind is the difference between
+duplicate
+and snapshot project is something i just
+learned i didn't actually know this
+difference
+if you're using compound clips duplicate
+will make those compound clip changes
+propagate through all of the different
+versions so if i duplicate this
+northwater fall 1 will have any compound
+clip changes or multi-cam clip changes
+whereas if i go
+snapshot project now those compound
+clips
+live completely on their own so it
+depends on how you're structuring things
+snapshots are kind of the safest where
+you're least likely to screw things up
+but as you go along and especially when
+you're making shorter edits of your
+project
+be sure to save them by duplicating and
+snapshotting your project
+as you go so you can revert back to
+earlier changes and now since we were so
+organized as we
+created our project i've got i've got a
+new tip i just figured this out recently
+so as a youtuber
+i create too much footage like this is
+4k raw that i'm shooting in right now
+and i do not want to keep all of that
+but i do want to keep all of my favorite
+b-roll shots so
+when i'm done editing everything if it's
+the kind of project where
+i can throw the other stuff away not
+every project is like that if you're
+working for a client
+make sure they know if you're supposed
+to hold on to all the footage or not
+but if it's that kind of project where
+you get to make decisions you can go and
+select all your favorite clips here
+which
+is actually not that much footage go to
+file
+and send to compressor and it will send
+eight clips in this case all to
+compressor
+and i'm going to select all and
+depending how important the project is
+i'll either use
+prores 422 or prores lt start batch
+and now it's just going to save my
+favorite moments of the most important
+so what i can end up archiving is a
+really small folder that has everything
+that i used in the edit
+plus a little bit more and it's just
+it's really easy to go back
+and reuse those clips for future youtube
+videos
+but you've got to be warned this can
+break your final cut project because now
+these are new video files they won't
+line up with the ones that you are
+editing with
+so there's some caveats this is just a
+way to store
+b-roll footage so in my case i like to
+create a bit of an archive
+of older clips that we've shot in
+previous videos of
+say products that might show up in
+future videos but it's way smaller than
+holding on to the all the originals and
+i've got one more quick one but after
+i thank squarespace for sponsoring this
+video which is the best place to host
+your video portfolio on the internet
+of course you can upload to youtube or
+vimeo or
+instagram or all sorts of social
+platforms but in the end you don't
+really own
+or control those spaces squarespace is
+somewhere that you can completely design
+the whole website to fit your brand
+you can customize the domain name and
+most importantly you have full control
+forever because you own this website
+their templates and design tools make it
+just as easy as using a social network
+to set something up that feels like
+it's yours and that looks beautiful to
+your audience but they won't know that
+it came from a template because
+you can customize it so much so easily
+squarespace's seo and analytics tools
+are also everything you need
+to really run a professional website so
+let's say you're building a store and
+you are trying to sell a product
+you can keep an eye on every detail of
+it both of making sure that people
+find you online and where they are
+visiting on your site
+to make sure you get conversions there
+is so much you can do with squarespace
+so go
+check them out today at squarespace.com
+once you've started a free trial and
+built a simple website in just a few
+minutes
+then you go to squarespace.com tyler
+stallman
+and using offer code tyler stallman you
+can get 10 off your first
+website or domain i've been using
+squarespace kind of forever
+and i'm going gonna keep using it
+because their sites are beautiful and
+easy to use
+and thanks again squarespace for
+sponsoring this video so i've added some
+music and voice over to this clip but in
+order to hear it we're gonna have to
+turn down the music now
+in the olden days what i would do is
+that option click to add
+different points on the audio track and
+then i would drag them down let's zoom
+in a little
+so now we've got a little fade as it's
+going there's a way easier way to do
+that that i didn't know about till
+recently
+instead i use the r key which stands for
+range
+i select the range of my voiceover and i
+just drag down
+on the audio and now i'm ducking in
+exactly that spot
+who knew i mean maybe you did let me
+know what great tips i missed in here
+because i'd love to do this video
+again with all sorts of new things
+thanks again for watching guys
+and don't forget to check out the
+podcast stallman podcast on whatever
+podcast player you use
+and i'll see you in the next video did i
+already say that
+anyway bye guys
+you

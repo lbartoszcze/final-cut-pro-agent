@@ -1,0 +1,258 @@
+I'm going to take you behind the scenes
+of how I edit a think media YouTube
+video inside of Final Cut Pro I'm also
+going to share some of my favorite
+effects plugins and tools that I use as
+well as some tips for saving time and
+leveling up the edits in your videos you
+got to just press record hey guys my
+name is Nal with think media let's get
+right into this video I'm going to take
+you behind the scenes of how I actually
+edit a YouTube video and I've had a
+couple people ask me kind of what do I
+do first and what do I do last so I want
+to answer that question as well as tell
+you guys everything that I use to make
+my videos kind of stand out and look
+professional now the very first thing I
+do is organize my footage into folders
+this is a must if you're trying to stay
+organized and you don't want to lose
+your videos because it will happen and
+trust me get in the habit of just making
+folders and keeping everything organized
+now the easiest way to do this is
+actually create a folder that's going to
+be a template and then every time you
+start a new project all you have to do
+is copy that folder paste it into
+wherever you want if it's going to be on
+a hard drive or wherever you're going to
+edit your video and then you're going to
+retitle the name of this folder to the
+name of your project it's those little
+things that save you just a little bit
+of time and as you edit for years and
+years it saves you a lot of time now the
+second step in my process is I start
+cutting down my a-roll what you're
+looking at right now me talking to the
+camera this is considered my a-roll this
+is by far the most boring part of the
+process you just got to grind through it
+and get it done there's really no
+creativity with cutting out your
+mistakes keeping all the good parts and
+kind of trimming the ends just takes a
+lot of time and it's really boring
+however I just heard about a tool called
+switch take that I am actually
+experimenting right now for the very
+first time and basically you can edit
+live so as I'm shooting this video I am
+keeping my good takes and I can also
+Mark what takes are bad so when I import
+it into Final Cut Pro all my bad takes
+are going to be cut out automatically
+and ideally if this works all great it's
+going to save me so much time and so I
+want to make a video on it if it does
+well I'm going to leave a link in the
+description where you guys can go and
+check out that video because if this
+works the I think it is this is going to
+be a game Cher for editing and it's
+going to save me probably a couple hours
+a week now the past couple years without
+this app what I've done is I've actually
+just put all of my a-roll inside of my
+timeline and then I just skim through I
+see the audio waveforms and I just
+listen to the first couple of words and
+then I jump forward listen to the first
+couple words because I mess up a lot and
+my last take is always going to be my
+best take so as I start skimming through
+the video I can hear that I'm just
+repeating myself because I messed up at
+some point and so I'm starting that
+sentence now I actually have a video
+where I explain this in a bit more depth
+and so I'll leave a link in the
+description if you want to check that
+out now the third step that I do in my
+editing process is I watch my A- roll
+all the way through and I analyze it now
+the major tip here is you want to hit L
+on the keyboard and this is going to put
+you at 1.5 times speed that way you
+don't have to listen to your video at
+just a normal Pace cuz you already know
+what you really said so just listening
+to it at a faster pace is going to save
+you time as well as I'm watching my
+video I'm intentionally listening for
+parts that might be boring or where I
+repeat myself stuff that I want to
+delete and think that it doesn't really
+need to be in the video after that the
+fourth step that I do is I add in my
+b-roll b-roll are those clips that go
+over the a-roll so right now as I'm
+talking this is the a-roll and then I
+add in these other clips that are a bit
+more interesting and something for you
+to look at as I talk about it so let's
+say I'm talking about YouTube and I'm
+talking about cameras then I'm going to
+show you some b-roll about that now the
+site that we've been using at think
+media is story blocks.com and I do
+recommend it because they have a huge
+library and so for just generic stuff
+you can find almost anything for what
+you're looking for you're going to find
+it on Story blocks.com the fifth step in
+my process is I add in text effects and
+Transitions and usually around this time
+is when I go ahead and I add my end card
+onto the end of my video this is
+definitely where it starts to get a lot
+more fun even with the b-roll and these
+effects and transitions this is where
+you get to kind of spice things up add a
+little bit of that sauce onto your video
+now there are some free built-in Final
+Cut Pro effects that I use in a lot of
+my YouTube videos and so I want to share
+those with you guys as well as some of
+the paid plugins that I think are
+definitely worth it that you should
+probably buy too some of the most common
+ones that I use when it comes to these
+YouTube videos is a crop in so right now
+as I crop in my face I crop back out
+this just helps kind of re-engage the
+viewer and mix things up now the second
+one I use it's a little bit more
+dramatic and that's Ken burs this is
+that slow zoom in or zoom out effect I
+do this just inside of Final Cut Pro
+using the Ken burs now this is actually
+a new feature that Final Cut pro has
+added which is a bit of 2D tracking so
+right now I can add some text to my face
+and move around or Graphics whatever I
+want to do and this is a really cool
+effect because it just spices things up
+and it's super easy to do all you have
+to do is grab your text hover it over
+your face or an object that you want it
+to track to then you analyze it and it
+just sticks right to it let's talk about
+some of the paid plugins that I use for
+these think media videos one of the ones
+I've been using more recently for these
+videos is this title effect where you
+see the titles come in and out this is
+an effect called text animator and it's
+by Esco now some of the newer plugins
+that I recently got and I've been able
+to play with on these think media videos
+are from motion V effect now they
+actually have a pack specifically for
+YouTubers and these are pretty cool
+because you get a little bit of
+everything so you're going to get some
+text you're going to get some popups
+with your social media handles basically
+everything you need to get started as a
+YouTuber you could just go byy the m 3
+kit and you're going to have a lot of
+the stuff that you're going to need to
+get started on YouTube and look like a
+professional because it just drag and
+drop it's really easy to use and
+everything is customizable too so you
+can go in there you can mess with the
+duration mess with the In-N-Out
+animations and I definitely recommend
+buying it now there's a few other packs
+that they have that I really enjoy one
+of them is the m lowers bar and this is
+a whole huge pack of lower thirds that
+you can use in your videos and if you
+don't edit videos you don't understand
+how long it takes to actually come up
+with something like that so being able
+to just download this and buy it off
+their sites and then drag it onto your
+timeline and be able to just put
+everything in there and it looks super
+professional it's really cool and it's
+going to save you a lot of time another
+one I've been playing a lot with
+recently is their M Tile kinetic 2 and
+these are some really cool text effects
+that you can add into your YouTube
+videos one other thing to mention is
+story blocks actually does have some
+cool stuff that you can use if you want
+a little subscribe button or a like
+button this is a great way to go
+especially if you already have story
+blocks now I'm going to have links for
+all of this stuff in the description
+down below so make sure you go check
+that out if you're interested in getting
+any of this stuff now the sixth step in
+my process is I edit the audio so I
+added my music I added my sound effects
+and I also go through and I do a little
+bit of tweaks to the audio that you're
+listening to right now I think media we
+love using epidemic sounds they have a
+great music library but they also have a
+great sound effects Library kind of
+twoin one so if you are looking for a
+paid music site where you can still make
+money and monetize your videos
+definitely recommend epidemicsounds.com
+the seventh step in my process is to
+finalize my hook now the hook is at the
+very beginning of the video and I like
+to spend just a little bit of extra time
+refining that hook because it is so
+important for YouTube videos one of the
+things that I like doing is adding in
+captions to that beginning of the hook
+so people can see what I'm saying and it
+just is really engaging with the video I
+like using the text effects from the
+mtitle kinetic or from the text animator
+and I use that to add a little bit of
+Animation to my text so when it comes in
+and comes out it looks all fancy my next
+step is to go through and color grade
+all of my footage from slog 3 to
+something that I like like I use this
+called Utopia from Phantom Luts in
+their pack called Airy looks and I like
+the look that it gives me just right
+from the L then after that I go ahead
+and I export my video and I watch it one
+more time just to make sure there are no
+more mistakes in the video if you're a
+beginner and this is really exciting and
+you want to be able to use plugins and
+effects but you don't really understand
+the basics yet so maybe it's a little
+bit overwhelming I want you to click on
+the screen and watch this video and I
+walk you through Final Cut Pro 10 I show
+you all the basics I show you everything
+you need to know to get started as a
+beginner and I will see you guys in the
+next video
+[Music]

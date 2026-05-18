@@ -1,0 +1,155 @@
+Final Cut Pro is amazing, but if you've
+ever tried to add subtitles, you'll know
+how painful it can be. So, today I'm
+going to show you how to add subtitles
+the easy way in Final Cut. Now, just
+briefly, there's basically three main
+ways that you can add subtitles to
+videos in Final Cut Pro. Number one is
+using the built-in captions tool. Now,
+this is good obviously because it's
+free. It's fairly accurate, but it's
+really designed for creating more like
+closed caption subtitles, so you really
+can't restyle them very well. also quite
+difficult to adjust in terms of like the
+sentence lengths and all that kind of
+stuff. So if you're looking for stylized
+captions on things like short form
+videos, this is not really ideal. Number
+two, you've got external tools. So
+there's things like obviously auto
+captions on YouTube itself. You can use
+third party platforms or other automatic
+captioning tools online. But the big
+downside to this obviously is that you
+have to export your content, upload it
+somewhere else, and then redownload,
+reupload to YouTube. So it's more
+involved. The third way is with plugins
+within Final Cut Pro itself, and this is
+what I personally recommend. The
+downside is generally you have to pay a
+bit extra. I personally haven't been
+able to find any really good free
+subtitling plugins for Final Cut. If you
+know of any, please let me know in the
+description. But so far, the best one I
+have found is the auto captioning tool
+from Motion VFX. So, today I'm just
+going to show you how I use it because I
+actually do think it's the best
+subtitling captioning tool for Final Cut
+at this point. And this video isn't
+sponsored by Motion VFX or anything like
+that. This is just honestly the best
+solution I've found so far. Okay, so
+here we are inside of Final Cut Pro and
+this is a YouTube short that I've
+already pre-made and I've already got
+dialogue in this. I just recently got
+the Keyron K4 H. So that sounds good,
+but obviously no captions. So the way to
+do it with this Motion VFX plugin is
+obviously to install the plugin first.
+So, I won't go through that in this
+video, but once you've installed it,
+it'll be here in your extensions tab,
+and then it's called M Captions AI. I'll
+leave a link in the description. Just
+open this up and you'll have this window
+here. Now, what you want to do is just
+drag the project that you want captions
+to be added to into this little
+checkered box here. So, I'll just drag
+captions tutorial 1 right here. It says
+drop file here. Let go. And then, as you
+can see, captions tutorial 1 is matching
+this project here. And then just click
+analyze audio. This will take about 30
+seconds depending on the length of your
+clip. Mine is about what? A minute and
+20 seconds. So, obviously, if it's
+longer, it might take a little bit
+longer, but won't take long at all. And
+while we're waiting for that, you can
+see if I turn the favorites off, you've
+got all these different presets right
+here, which you can choose from. So, if
+you just mouse over a preset, it'll give
+you a preview of the style of the
+captions. Obviously, some of them look a
+bit tacky. I probably wouldn't be using
+those ones. some kind of cool ones like
+this handwritten one. I'm a big fan of
+that. But this is finished analyzing. So
+that's ready to go. And now we have to
+do is just select one of these caption
+styles that we like. Double click it.
+And that adds it into the modification
+area here. From here, we can literally
+just drag and drop and add our captions
+in. So you just go down here. It says
+drag from here and literally drag this
+timeline into your project. If we zoom
+in, you can see these are all captions
+that are ready to go. So, if I play this
+back, I just recently got the Keyron K4
+H, and I've genuinely been surprised at
+how much I've been enjoying it. That's
+it. That's literally that easy. If you
+want to modify it, I personally really
+like this minimalistic caption style.
+So, I'm just going to double click that.
+And you can change things like the font.
+So, I'm going to change this to my
+personal favorite, which is lemon milk.
+You can adjust the size of the font. So,
+I usually like it a bit smaller. You can
+adjust the position, so how high or low
+it is on your video. And then the text
+width is basically how many words you
+have in each line. So again, I like to
+keep it short. So somewhere around the
+20 mark is pretty good. Then I can just
+delete this original caption timeline.
+And then redrag in the new one. If I
+play this back, I just recently got the
+Keyron K4 H. And I've genuinely been
+surprised at how much I've been enjoying
+it. As you can see, it's perfect. Ready
+to go. If you do need to modify, if the
+AI gets words wrong, all you have to do
+is click on that particular caption.
+Then here you can modify the text. So
+you can say like palm rest for example.
+If you need to modify the length of the
+caption, the best way I found is to hold
+down option, click and drag the caption
+above itself and then disable the one
+underneath it with V. And then you can
+just adjust the length to whatever you
+want. The reason I don't modify the
+actual caption within this timeline is
+because if you adjust the length of
+this, it's going to adjust the length of
+all the rest of the captions beyond it
+and they're all going to be out of sync.
+So you have to duplicate it, disable the
+original, and then you'll be fine. So,
+there you go. I hope that was helpful.
+If you do want to check out the plugin,
+I'll leave a link down in the
+description. It's an affiliate link.
+Feel free to use it. Don't have to,
+obviously. It will just help support my
+channel if you do. Otherwise, if you're
+learning more about Final Cut Pro, I've
+actually got an online course teaching
+you video editing within Final Cut Pro
+using the exact same system that I use
+to create all of my content. There's a
+link to that in the description.
+Otherwise, if you want more free YouTube
+tutorials on how to use Final Cut Pro,
+check this playlist out right

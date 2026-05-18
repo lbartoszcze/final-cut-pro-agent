@@ -1,0 +1,458 @@
+there's been a theme at every iPad
+announcement for the last few years we
+have incredible Hardware but we're
+missing the professional quality
+software to really put it to use that
+has finally changed Apple announced both
+Final Cut Pro and also logic pro for the
+iPads as long as you have an M1 or newer
+I've been editing with Final Cut for the
+last few weeks so I'm going to give you
+a tour of the interface the usability
+what the workflow is like to edit videos
+on your iPad we'll talk about the value
+of Apple's new subscription model and
+I'll let you know as a professional
+editor that's been using Final Cut Pro
+for years now what do I really think a
+Final Cut Pro for the iPad let's take a
+look at what Final Cut for iPad does
+best and that is quickly sorting through
+a lot of footage to make a quick edit so
+we're traveling right now which is kind
+of a perfect use case for this we are in
+Spain and we went to Rwanda the other
+day and made a cool little video so I'll
+just show you how I'd quickly edit that
+if you want to set up your timeline
+settings here just so you know automatic
+usually really does get it right just
+based on whatever the settings of the
+first clip that you drop in are so I'm
+going to leave it on that for today and
+hit continue and as we import a footage
+this is one of the things that's going
+to limit how I can actually use Final
+Cut for iPad and it might be the same
+for you it doesn't support external hard
+drives at the moment so all of these
+clips are in my library which is very
+convenient and quick to work with they
+synced over iCloud so they're already
+here even though I shot them on my
+iPhone but the downside is it takes up a
+lot of space on your iPad so you're
+going to need a very large iPad and even
+then it will fill up because these are
+creating duplicate copies of the videos
+inside of the library as well as in my
+photos folder so you just have to be
+aware that it could get pretty big and
+you'll have to offload them when you're
+done editing the interface is very
+familiar as a final cut editor on the
+Mac it looks similar but it is different
+it's clearly optimized for touch and
+I'll just show you how I would quickly
+go through and edit some of this the
+easiest way is that you can do just
+click on any of the I should say tap on
+any of the clips over here in the
+browser and you can just grab these
+yellow handles and select the best part
+of it and then you could just press hold
+and drag it into your timeline that's
+kind of the most obvious way I think
+that most people would end up adding
+things but there are more efficient ways
+Apple's put some thought into this so
+let's find another nice clip here I
+could hit play and then as it goes
+through I could set an in point wait
+till it's at the end of the good part
+and set an out point but there is a more
+efficient way to do that there's a jog
+wheel which you can activate up here and
+then it appears over here on the right
+also you can move it around if it's kind
+of like getting in your way you can grab
+it and move it up and down but this is a
+metaphor based off old Hardware that
+video editors would use and what I like
+about it is that it lets you scrub
+through with momentum so you can kind of
+throw the footage around if we find a
+longer clip here as I go through it's
+you know this is a 40 second clip but I
+could go from beginning to end in just
+one second so I can frame by frame find
+the beginning of the movement here
+set an out point
+then quickly flick through to the end
+where does the end there we go and I can
+set an out point and now I've got my
+markers and instead of clicking and
+dragging tapping and dragging which is
+always a little slower I'm going to use
+the append button here which just drops
+it into the end of the timeline this is
+the most useful way that I'm usually
+adding Clips to the timeline you could
+also insert them in between Clips if
+that's something you want but what I'm
+doing most of the time is appending
+another way you could edit is that you
+could say select grab a bunch of Clips
+append them all into the timeline and
+now they're all here everything
+including the parts that you don't want
+and then you could go through and use
+some of these tools Down Below on the
+right here these are things I use all
+the time on the Mac so I could find the
+key moment here and use the blade tool
+so that's going to cut between my two
+clips and then I can move the playhead
+again and these two will trim everything
+from the beginning of the playhead then
+I'm going to go from this wide shot the
+close-up here trim everything from the
+beginning and then I think I have
+another close-up oh yeah there it is so
+I can use the blade tool and zoom in on
+what's going on here this one will trim
+everything to the right and because the
+magnetic timeline as I'm doing this all
+the footage is just sucked together it's
+very helpful for that so let's say the
+magnetic timeline is not behaving the
+way you would expect if you for your
+example drag a clip away and there is a
+gap that is because you have the
+position tool on this is helpful this
+tool can do a lot of things but the kind
+of default behavior is to have it off so
+just be aware if that becomes purple
+then you might be using an alternate
+method of editing I find a lot of people
+run into that on the Mac as well and one
+more way of editing this is actually
+going to be a really useful tool for
+anybody that wants to do a bit more of a
+pro workflow going from the iPad to the
+Mac is that as you select these in and
+out points as you go instead of dragging
+them into the timeline you can also add
+favorites and see how this becomes green
+both in the browser and in this preview
+of the clip that means that it's been
+favorited so I'm going to quickly go
+through grab a few random favorite
+moments and the power of this favoriting
+tool is that it's um useful later so if
+you just add things to the timeline it's
+kind of hard to go back and find those
+clips that you liked to you know sort of
+sort them in different ways but as you
+can see when we create favorites here
+now I'm able to sort them using this
+little sorting tool there's various ways
+you can sort it by media type or
+favorites show favorited and now look we
+only have those moments it's just the
+part of the clip that we asked for so
+I'm going to clear out my whole timeline
+here just delete everything I've done
+grab all of these clips
+append and now I almost have like a
+little edited video because since it's
+only the good parts as it plays back
+it'll almost be slightly edited then all
+you have to do later is sort of trim
+them tighten them up but that metadata
+is retained As you move the project onto
+the max you could have one editor
+selecting your favorites and then
+another editor doing the final edit on
+the Mac with the iPad being so portable
+I think one of the biggest advantages
+will be this sort of quick and dirty
+type of edit when you're like on the go
+I made a little either Instagram reel or
+Tick Tock a vertical video that can show
+you as an example I think this is going
+to be something it's very strong for so
+this was kind of a perfect editing
+scenario for traveling because my iPad
+is a small device I can carry it with me
+and it already had all of the footage
+from my iPhone that I'd been shooting
+since it synced over iCloud so I didn't
+even have to airdrop or transfer it
+anyway it was just already available
+only took a few minutes to put this
+together and as you can see it's using
+that Dynamic music which I hope this
+feature starts getting a larger library
+but as you stretch it the music just
+becomes the length that you want it to
+be I mean this can be 10 minutes long if
+you want I would love for other
+third-party developers to be able to add
+music to this I know it's possible so
+please Apple they did say that more
+effects will be coming soon from third
+parties so I can't wait to see that
+there's some good ones in here but I
+think we could especially see more from
+motion VFX I use those all the time on
+the Mac one really cool new effect is
+scene removal mask and I was hoping to
+do it on this clip so that she would be
+over top of the title unfortunately you
+just have to be aware that it needs to
+be used on a clip where there's no
+Motion in it so the background should
+stay static where just the subject is
+moving I don't have an example of that
+I'm moving all the time and all my Clips
+so I wasn't really able to test that one
+so all these things are what I think
+Final Cut does great on the iPad here's
+a few that it falls a bit flat so this
+is footage from either my traditional
+bigger cameras that I'd use in the
+YouTube videos or drones and when I say
+flat let me show you what I mean so I've
+selected this clip I'm going to open up
+the inspector and over here there are
+some basic Lut tools so I can say that
+this was shot in Canon log 2. if I turn
+that off you can see it's a completely
+flat image like there's you know no
+saturation no contrast in it if I turn
+on log processing it does know that this
+is Canon okay right so there's contrast
+here this this doesn't look good this is
+not how I would typically color grade my
+footage basically all professional
+cameras are going to be shooting in log
+so the lack of proper log support is
+unfortunate it does mean there's going
+to be some limitations of the type of
+footage I can work with on the iPad if
+you are going to be doing color grading
+you're going to be needing to look at
+something like DaVinci Resolve which has
+all of its color Tools in here which is
+actually insane that they were able to
+do so much but it's act it's editor like
+the way you cut footage together in
+resolve I really I don't I don't like it
+I mean I find it much much stronger over
+in Final Cut Pro so this is what I'd use
+for editing whereas resolve has those
+color grading tools oh and while I'm
+talking about things I miss from the Mac
+one other one if I drop this drone shot
+in here is I really wish it had all of
+the speed ramping tools that the Mac has
+so in my inspector over here I am able
+to just turn up the speed of that clip
+but on the Mac I was able to add speed
+ramping so I'd be like okay this first
+part I want to be really quick and then
+I want to slow down gradually here I
+could cut it and then instantly it slows
+down and speeds up but it's just not
+nearly as elegant as the way that it
+happens on the Mac so this has always
+been an advantage of Final Cut over the
+other editors let me play it back for
+you here but now it is just kind of more
+similar to what you're seeing on other
+software I didn't do a great job there
+but that's what I'm saying speed ramping
+I hope they match the features that are
+available on the Mac for that and
+obviously another big difference from
+the Mac is that it is now subscription
+when you are using a final cut for iPad
+I don't love subscriptions and not ideal
+but the pricing is pretty reasonable
+five dollars a month or 49 a year so for
+example I paid 300 for Final Cut Pro for
+the Mac it would take about six years to
+pay that much here I really hope this
+means that more support is coming for
+Final Cut That updates will happen often
+because for example with Adobe if you
+just want Premiere you're spending
+twenty dollars a month that's four times
+as much but you're getting updates all
+the time Adobe has been really
+aggressive with their updates for
+reference though you can get a free copy
+of resolve so that's where Final Cut
+sits basically in the middle uh Adobe
+products are much more expensive Final
+Cuts a lower priced subscription and
+resolve starts off free and then you can
+also do a one-time payment to own it so
+let's take a look at a more complete
+edit here back to our day trip to Ronda
+one feature I love because I used to try
+to do this on the Mac and there was no
+easy way so I'd actually do screen
+recordings in my iPad then put it over
+top and that's live drawing so here I'll
+delete this one I did before show you
+again unfortunately I don't have great
+handwriting so you're just gonna have to
+bear with me if I had an apple pencil
+with me I'm sure it would look a little
+bit better but I'm just going to do my
+best here what it would really be useful
+for is actually arrows like pointing at
+things or highlighting features on the
+screen I'm going to use it for that all
+the time and as it plays back you can
+also change the speed so let's see
+oh that fits actually perfectly inside
+of that clip but uh in other examples it
+may not you can open the inspector and
+over here say how long do I want it to
+take to draw so I could have it be much
+much quicker let's say and then just
+takes a moment for it to appear on
+screen all this footage that I'm
+scrubbing through by the way this is 4K
+footage running on an M2 iPad Pro
+playback is perfectly smooth and it's at
+higher quality you can set that quality
+by the way so right now it's playing at
+high quality you can also have
+performance if it was slowing down a
+little bit it also supports video scopes
+just like you're used to on the Mac the
+waveforms and vectorscope all the things
+that you may need for color grading
+hopefully better color tools come at
+some point by the way let's actually
+look at those just really quickly if I
+pick a clip and do any of these need it
+so if I want to actually modify these
+colors let's look at what those are I
+can open up the inspector here add
+effects and I'm going to use color
+adjustments now at first glance it seems
+like there's a lot of power in here and
+turn off the browser so I can see this
+bigger unfortunately the footage just
+doesn't respond in the way I'd want it
+to like moving the exposure it instantly
+Clips it doesn't seem to understand that
+exposure is mostly about the mid-tones
+brightness has a bit more of that effect
+but it also has a weird response on the
+kind of saturation in the shadows this
+is not a great color grading tool I
+would expect more power out of it than
+this of course there's more tools than I
+had time to get to in here a lot going
+on and eventually I'll get to all of it
+I still have to understand some of them
+myself but there's also things like
+multi-cam support I didn't have any
+multicam footage to work with on this
+example the volume is always available
+so you can turn your Clips up and down
+remember to close it sometimes I'd find
+that the behavior wasn't as expected but
+it's because I left my volume panel open
+over here in options you can change the
+appearance of the timeline like clip
+height this is kind of important to play
+with your audio meters can be turned on
+and off which are visible on the right
+snapping I generally have this on so the
+clips click together and that is your
+Whirlwind tour of Final Cut Pro for iPad
+I've been a final cut editor for years
+now starting with seven and then I was
+at the announcement of Final Cut Pro 10
+at nav back in 2011 and I've loved it it
+is a fantastic workflow I use it for our
+professional work and for YouTube it's
+extremely fast and thoughtfully designed
+and it's hard for me when I switch over
+to either resolve or Premiere because
+Apple had a real breakthrough with the
+magnetic timeline and I just I prefer it
+over everything else Final Cut Pro for
+iPad is missing some big things things
+that are important to me and just my
+daily workflow they're not even that
+advanced like file management all you
+can do is keep all of your Clips inside
+the library on the iPad and you can move
+that library to a Mac to do further
+editing it doesn't go backwards you
+can't bring it from the Mac to the iPad
+but a real limitation is that you're not
+using any external storage meaning all
+the files have to be on an iPad so I
+know that Apple's doing this for ease of
+use it's much easier for a beginner user
+to understand but it means that my iPad
+is going to fill up quickly so you're
+going to need a really big one and even
+if it's big you're going to have to be
+moving files on and off of it somehow
+I'm not sure how they would expect file
+management to work if you edited a lot
+on the iPad probably my other biggest
+disappointment is the lack of color
+management in general of course this can
+come in the future basic things like Lut
+support which is available in other
+editors like cap cut or lumafusion and
+this is a problem because whenever
+record on bigger cameras like this is
+the Lumix s52x I record in log so the
+image is completely flat and needs a lot
+added to it to even be usable and I
+don't plan to switch away from not using
+logs so to me what I'd be editing the
+most often on an iPad is iPhone footage
+which is the thing that's what I was
+doing today it looked great but it's a
+more limited use case than when I'm on
+the Mac but you know what overall I
+think Apple has done some amazing things
+here this is the best video editing
+interface I've used on an iPad I've
+tried to get used to Fusion it has every
+feature you want I know people do real
+jobs using it but the interface is
+horrifying it does not look nice it
+doesn't feel good to be in there it's
+very clunky and hard to get used to
+other apps like resolve which they did
+an amazing job of bringing almost like
+the full app onto the iPad but it's
+almost a one-to-one transfer of resolve
+from the desktop I really like that
+Apple thought through the touch
+interfaces how would you want to
+experience an app on the iPad and it
+shows it is much more intuitive than any
+of those other editors so if you don't
+have a lot of files to manage you're not
+doing extensive color grading you don't
+need big effects Final Cut Pro is the
+best editor for iPad
+[Music]
+Network
+Sports
+oh

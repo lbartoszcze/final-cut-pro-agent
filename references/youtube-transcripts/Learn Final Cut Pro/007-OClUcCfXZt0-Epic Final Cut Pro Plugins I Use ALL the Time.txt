@@ -1,0 +1,203 @@
+there are a lot of reasons that I choose
+Final Cut Pro to edit all my videos I
+mean most people know that it's really
+fast and the interface is intuitive so
+it's quick to learn but I think often
+people underwrite how powerful it is
+part of the reason is that it really
+gets more powerful once you get a few
+key plugins so in this video I'm going
+to show you how I used some of my
+favorites subscribers I've definitely
+seen them before you probably didn't
+even realize there were plugins they're
+all from motion VFX I've been using
+their stuff for a long time they have a
+ton of incredible products and this
+isn't a sponsored video I was talking to
+them about some of the plugins that I
+love and they offered to put them all
+together into a set so I will get some
+commissions if you click on the link in
+the description below but otherwise
+hopefully you just find something useful
+here let's start with one that'd be
+perfect for the kind of video making
+right now M tutorial so it's got all the
+things that will help guide your viewer
+through the instructions you're giving
+on screen there are so many in here I'm
+not going to be able to go through all
+of them just a few that I do use a good
+example here is click and you can see
+how easy it is to click and drag it into
+the timeline a blank screen recording
+without guidance is is hard to follow so
+I'm just going to grab this little
+cursor move it on top of my real cursor
+and when I play it back boom you can
+tell exactly where I clicked and there's
+a few others like arrows that can
+emphasize movement there's also a bunch
+of helpful ways to highlight the frame
+like I like this scribbly highlighter
+not only can you position it to be on
+the part of the screen that you want but
+each of The Strokes you can move around
+so it has a custom look to it as well
+can I tell you a secret a lot of the
+most powerful plugins are pretty subtle
+so this Zoom effect I use all the time
+you just drag the title onto your
+timeline and I'm going to combine it
+with a highlight here in this shot I'm
+trying to draw attention to how long the
+processing takes I'll put the Highlight
+on top of the progress bar and I'm going
+to zoom in and position it right over
+the Highlight so we watch a playback you
+can see how long it takes for a pixel 7
+Pro to process a portrait mode photo a
+little longer than I'd like but it
+really clearly guides the eye where to
+look and with a lot of these plugins you
+can turn on and off animate in and
+animate out so I could start the zoom in
+the middle of a shot and then end the
+shot before zooming out out so that we
+just stay zoomed in you don't always
+need to both move in and out another
+useful way to highlight things is the
+selection line I'll start by making it
+my usual yellow make the line fatter and
+then I can actually change the exact
+shape of How It's circling things but I
+can give it a kind of hand-drawn look so
+it doesn't have to be a perfect circle
+it can kind of be around the shape of
+the area we want to look at I can add a
+description in this case there's already
+text on screen so I don't need it and if
+I want it to look more handwritten I can
+turn off closed lines and just manually
+move these exactly where I want them to
+be oh and it's important to put it under
+this Zoom layer so that as I zoom in it
+looks like I'm zooming in on the
+handwriting that's happening and it all
+clicks together I can usually put these
+subtle looks to use in every video I
+make but let's take a look at some
+Bolder plugins next is m music video and
+obviously this is for anybody that
+shoots music videos there's a ton of
+stuff in here like some great typography
+for opening titles
+or closing credits okay but let's
+stylize this a bit let's add a burn
+effect
+for these first two shots you can
+quickly add a letterbox which animates
+in and kind of gives you a cinematic
+aspect ratio in just a few seconds and
+if you don't have an anamorphic lens you
+can add one in post
+but you know what keeps me coming back
+to a music video The subtle effects
+there's actually some really great ones
+in here too zoom in and zoom out are
+some of my favorites it also comes with
+some basic transitions so instead of a
+hard cut I can drop this on make it a
+little shorter and then we get this
+crazy Digital Dissolve but I'm telling
+you it's a subtle effects that are the
+most useful so let's use zoom out I'll
+put this at the start of the clip and it
+gives us a continuous zoom out so what
+we get now is a match cut and then
+pulling out to see all of the specs
+about these two cell phones of course
+you can do zooms with keyframes in Final
+Cut but it's way slower to do and also
+keyframe support isn't great and Final
+Cut it could be a lot better so I really
+like dropping these on and this shot
+leads us to our next plugins let's take
+a look at M features if you talk about
+products or anything with specs or
+benchmarks these are perfect for you
+there's just a whole bunch of basically
+comparisons between different products
+advantages disadvantages just a whole
+bunch of ways of displaying data without
+spending any time laying it out yourself
+so I customize these two to have my
+channel font they animate in and then on
+their own they also animate out so I
+don't have to go to all the work of
+keyframing and all this other stuff that
+motion can handle well Final Cut Pro
+can't handle that well and I think a lot
+of Premiere editors don't even know you
+can do in Final Cut motion VFX also have
+a ton of title presets you might have
+actually seen some of them in apple
+Keynotes one set that I've been using a
+lot lately is called M title kinetic 2.
+they have pretty simple animations that
+are easy to layout easy to work with but
+they really look like you put a lot more
+work into it so let's just find one that
+works we'll drag it over here let's time
+it right as he lands
+nice change it to my channel font it'll
+make it bigger there's already a
+gradient here which I really like these
+colors they've chosen I don't know we
+can just mix them up a little
+probably gonna make it worse going so
+fast and we get a result that looks like
+we put a lot more time into it than we
+did by the way here's a little trick if
+you're using white text which I do all
+the time it can be really helpful to
+just make sure that your white point in
+Final Cut Pro isn't too high so we could
+drag it down a bit in the highlights a
+bit in the mid tones and just make sure
+that text is visible in my videos I
+usually try to have any clipping points
+any true white be less than white the
+white point should be lower than the
+Pure White of the background on your
+screen okay one more that's really
+useful this is called M counter this is
+how I used it in my recent video
+comparing the pixel 7 Pro to the iPhone
+14 pro you can see it just shows how
+long each of them takes so as I go
+through the timer keeps going even while
+the iPhone on the right is finished the
+pixel is still processing but there's a
+ton of different formats you can have it
+be more of like a progress bar or if
+you're running a time lapse you could be
+showing the duration of the whole thing
+and you can set it over any number range
+you could freeze it on a specific number
+if you haven't tried to animate numbers
+or time in Final Cut Pro before well I
+have and take it for me it's miserable
+so don't do it just let motion VFX do it
+for you each of these plugins can do way
+more than enough time to show you in
+this video but all of them combined this
+set really will make Final Cut Pro way
+more powerful so head over to motionbfx
+see how they work see what else I didn't
+have time to show you today and if you
+want to learn more about editing in
+Final Cut Pro I've got a whole playlist
+for you to watch next I'll see you over
+there guys

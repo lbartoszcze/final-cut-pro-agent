@@ -1,0 +1,623 @@
+today i'm going to show you guys how to
+make your audio sound as good as
+possible
+inside of final cut pro 10. so if you're
+a beginner and you don't even know much
+about
+audio editing this is the perfect video
+for you i'm going to walk you step by
+step
+everything that i do to my videos when
+editing them to make the audio sound as
+good as possible
+you gotta just press record now before
+we get into this tutorial it's
+definitely recommended to wear
+headphones when you are audio editing
+typically your headphones are gonna be
+so much better to listen to audio
+than something like a built-in computer
+speaker or a monitor speaker most people
+don't have expensive
+speakers but they do have some
+headphones laying around so plug those
+in and that's going to be better off
+for you to start editing your audio so
+here in final cut pro 10 you can see
+that i do have
+some clips down here and we are going to
+be editing the audio of these video
+clips
+to make it sound as good as possible i'm
+going to walk you through
+everything that i do step by step so you
+guys can see exactly my process
+not saying that my process is the best
+process but if you are a beginner i
+promise you you are going to learn a few
+things here that are going to make your
+audio sound a lot better so stay to the
+end of this video so you do not miss out
+but the first thing that i like to do is
+actually the eq now this is something
+that i didn't do for a long time because
+i was just kind of overwhelmed with it
+and to be honest i'm not a professional
+when it comes to doing this so i'm going
+to show you what i do and i'm going to
+try and teach it in a basic way that a
+beginner could follow and understand
+and practice some of this stuff in your
+own video so let's get right into it
+first thing we want to do is to select a
+clip that we want to edit
+so i'm going to go ahead and select this
+first clip and if we hit play we can
+hear that the audio
+right now then you are hearing me sounds
+fine but it's a little bit low
+we are going to fix that next but i am
+going to adjust the eq
+first and then you'll see why i do that
+first later but what we do
+is we go up here and we are going to see
+this little sound mixer box
+this sound mixer box if we click this
+it's going to open up
+see equalization it's going to open up
+this window right here
+this is called the graphic equalizer
+right now it's set to flat and you can
+see that each point is set to zero
+decibels now if i raise
+this point which is 32 hertz this is
+going to be at 12 decibels and that's
+going to raise
+that lower basey frequency up higher so
+that it's louder
+or i could reduce that to negative 20 db
+and that is going to make it very very
+quiet so
+each of these decibels are related to a
+different hurts a different
+frequency dragging them up are gonna
+emphasize that make them louder
+dragging them down are gonna get rid of
+that now the reason
+i use this is to actually make my audio
+sound
+better so i adjust these up and down and
+it can actually make
+your microphone sound a lot cleaner a
+lot smoother
+and sometimes when recording on dslrs or
+mirrorless cameras
+it just doesn't sound full it doesn't
+sound super good
+and actually just messing with this a
+little bit can make your voice
+sound a lot cleaner and honestly can
+really make a cheap microphone sound
+expensive if you get this right like
+they can sound really really good
+if you mess with these settings
+correctly now what i like to do is
+actually set this first
+clip on a loop and it's really simple to
+do this you need to make sure that your
+loop
+playback is on all you got to do is hit
+command l and that is going to turn it
+on
+or if it's already on that would turn it
+off but command l to turn it back on
+and then instead of hitting the space
+bar for play like we always do
+we're going to hit this forward slash
+button hitting this button is going to
+play it and then put it on a loop so
+that it goes over and over again
+and as it's playing you're going to see
+me do a few things here you're going to
+see me moving this up and down seeing
+what sounds better now typically voices
+don't
+fall in this range or in this range it's
+usually
+in that middle range and so these i
+might be able to move around a little
+bit but i won't really notice
+much until i get into this range of the
+eq
+another thing i'm looking for here is
+the background ac
+unit there is a noise removal plug-in
+that i'm going to show you guys how to
+use
+but actually messing with this i might
+be able to find that maybe the ac
+is on a specific channel frequency and
+if i pull it down
+it's going to get rid of that so i'm
+looking to get rid of some of those
+unwanted noises by lowering the
+frequency and then i'm looking to kind
+of mess with the rest of them
+to get my voice sounding as clear and
+full as possible
+so we're gonna go ahead and loop this
+and then i am going to mess with the eq
+if you're listening to this audio right
+now then you are hearing me edit this
+audio to make it sound better
+so right here you can see as i pulled
+this up it's actually
+increasing the ac unit in the background
+so i definitely don't want to do that
+and by the way you never want to boost
+any of these up to 20 decibels
+i usually boost them if i'm going to
+boost them around the six decibel mark
+um but you do not want to go that high
+but the reason i'm doing that now
+is so i can hear it better and i go okay
+this is where the ac unit is falling in
+and so these are the kind of things that
+i'm listening for while editing
+listening to this audio right now then
+you are hearing me edit this audio to
+make it sound better
+all right now in this channel i'm also
+really getting
+that ac unit as well i'm gonna hit play
+so you guys can hear that
+now instead of just reducing this all
+the way to get rid of that noise
+this ac unit sound is actually tied to
+some of the same frequencies as my voice
+so it's going to sound a bit funny
+if i just pull this all the way down if
+you're listening to this audio right now
+it sounds pretty dead my voice kind of
+sounds like it's coming through a
+telephone or a walkie-talkie
+so this is where you really have to kind
+of play back and forth go through it a
+few times and see what's going to sound
+best because you want to take away some
+of those noises you don't want
+but you also want your voice sounding
+really nice
+audio to make it sound better if you're
+you are hearing me edit this
+so in this channel i feel like as i pull
+it up i'm starting to get that
+walkie-talkie telephone effect again and
+it's making my voice just sound a lot
+less
+full and so bringing that up i
+definitely don't want to do i'm going to
+leave it at zero
+i could even bring it down a little bit
+if i don't want that but for now i'm
+going to leave it at zero and move on to
+the next one
+audio to make it
+now once i've gone through i made some
+simple adjustments i'll put it on loop
+and i'll kind of click it on and off to
+see how it
+sounds if it's if it's starting to sound
+worse then i'm doing something wrong if
+it's starting to sound better i'm on the
+right track
+what i'll do is i'll go back through
+these again and i'll start to just tweak
+them
+little by little until i get something
+that i'm happy with you are hearing me
+edit this audio to make it sound better
+now then you are hearing
+so i definitely feel with it on i am
+getting less of that ac
+unit sound in the background and i feel
+like my voice is a little bit fuller
+there's a few things i can tweak here so
+i'm going to play it through a couple
+more times
+and just make some small tweaks to the
+audio
+now it's just a subtle difference but i
+do definitely think this sounds a whole
+lot better and so i'm pretty happy with
+how this is sounding
+once i'm done all you got to do is hit
+that x and this is going to save
+everything so i'm going to hit x and now
+what i can do is i can see over here
+and turn off and on just from this tab
+right here if i do want to go back in
+and make some changes
+i can click on that sound board again
+and this is going to pull up
+the same window now one thing that i
+like to add here and there i don't use
+it all the time but i do really like
+using it and it's helped me a lot
+and that's the compressor now to find it
+if you go to the effects tab by clicking
+on this you are going to see that it's
+set to video
+but if you scroll down you are going to
+see audio and it says all we can click
+on that
+and from here we can search for
+compressor you can drag that onto your
+clip now watch what happens to the
+waveform when i let go
+it's going to boost stuff up now the
+compressor is really good
+for boosting up low ends where stuff is
+quiet
+and it's also good for not clipping
+those high ends it tries to keep
+everything
+together more level so here's a great
+example when i was shooting my how to
+vlog
+video with my wife we had one shotgun
+microphone right in between us
+but i just talked a little bit louder
+than her so her audio
+was a lot quieter and so when i threw
+the compressor on it brought her voice
+up so that we were at about the same
+audio level
+and that i wasn't much louder than her
+but we both had that same
+loudness now there's a whole lot that
+you can do with compressor if you open
+up the parameters you can mess with all
+these and see what's going to sound best
+for you
+typically what i do sometimes is just
+leave it how it
+is now this is the beginner's tutorial
+so i am not going to touch
+anything but you can see here even the
+audio form looks a lot
+like a lot more level it doesn't look
+like the low parts are as low so if i
+listen to this back things are going to
+sound a lot louder that work quieter and
+so you can hear what that sounds like
+now again i don't always love using the
+compressor because what i found is
+sometimes when you
+are quiet and it boosts stuff up it can
+boost up that background noise like the
+ac
+or other things like that so definitely
+something to experiment with but it can
+be a lifesaver like it was for me
+on that video with my wife and ended up
+sounding really really good for this
+clip i'm actually going to remove that
+and my next step that i would do if i
+was editing this
+is to set my audio levels i like to do
+the compressor first because that kind
+of messes with that but setting the
+levels is really simple all you need to
+do is drag this
+up and down so you can see if i drag it
+up to 12 db
+that's going to make it as loud as
+possible or if i drag it down
+that is going to make it quieter now
+when setting your audio levels you want
+to make sure that nothing is clipping
+above this zero db audio levels right
+here so if i play it through
+i'm gonna see where this is falling i
+want it to fall right around negative
+six
+uh even if it goes up above that that's
+fine as long as it doesn't pass over
+zero if you're listening to this audio
+right now then you are hearing me edit
+this audio to make it sound better
+so it sounds pretty good i honestly
+could increase that to
+uh you know seven or eight but if you
+notice something right here right right
+when i
+tried to pull that up it just jumped up
+to 12. well what you can do to do
+precise adjustments is hold down the
+command button and then when you do this
+i can go from six to seven to eight
+pretty easily because it slows
+everything down so i'm going to go ahead
+and move that to 7
+and that is a nice little hack that you
+can do one other thing you can do is go
+up here and you can actually just change
+your db by typing this in if i want to
+go to 7.5
+or something you can do that and you can
+also
+drag this as well i'm gonna leave mine
+at 7 db
+i'll do one last check make sure it's
+not clipping in this beginning part
+where it's nice and loud and it looks
+perfect the next thing that i might add
+is a noise removal this can help get rid
+of that background noise and so
+if i go up here and i go to my audio
+analysis tab and i click
+show this is going to give us some more
+options and you can see right here it
+says noise removal if i click that it's
+automatically set to 50
+and typically this is a bit too much i
+find that it kind of distorts the voice
+too much it just doesn't sound the best
+so we're gonna hit play
+and see how this sounds at 50 percent if
+then you are
+it's actually taking away from the
+quality of the voice and so i am going
+to bring this down
+even though it did get rid of that
+background noise and it's just my voice
+you don't hear the ac at all it's not
+worth it because
+it just doesn't sound as good if you're
+make it sound better now
+then you are hearing me edit this audio
+to make it sound so what i found is
+right at 30
+for this clip specifically it gets rid
+of that background noise without messing
+with my voice a bunch
+and again i don't even use this all the
+time because it can mess with your voice
+so much
+and i actually have a video on how to
+record your audio with no background
+noise so definitely check that out by
+clicking the link in the description
+that's going to save your life because
+you do not want to be using this noise
+removal
+but if you get into an instance where
+you might need to
+this is always there to help save you if
+you need it
+so let's say that we like this audio and
+we want to copy and paste it to all the
+clips in the timeline what you can do is
+you can click your clip you can hit
+command c and then if you select both
+your other clips
+if you hit shift command v this is going
+to be
+paste attributes now the other clips
+already have
+a color wheels and a hue saturation on
+i just want to copy over these audio
+attributes so i'm going to
+deselect everything on this side and
+from this i can copy and paste all this
+which looks great i'll hit paste
+and now all my clips are going to have
+the same audio
+everything that i just changed on that
+first clip is now on all my clips
+alright so i got a few more things to
+show you guys but first like this video
+and then comment down below
+what other final cut pro 10 tutorials do
+you want to see from me
+let me know in the comments down below
+so i just dragged some music into my
+timeline and i have a few more tips for
+you guys that's going to help a lot with
+your videos
+and so first off one major mistake that
+i see a lot of people do is they add in
+their backup music
+way too loud and so i like to start by
+bringing mine down all the way to about
+negative
+32 decibels now really this is just
+by ear and hearing how it sounds with
+your video and obviously if like the
+chorus or the drop happens in this
+in the song that might need to come a
+little bit lower but you just want to
+listen to this and
+honestly i tell people you'd rather
+under do it than overdo it because i've
+clicked off videos before where
+the background music was just too loud
+and it's annoying so again you'd rather
+just bring that a little bit too low
+than a little bit too high
+audio to make it sound better now i
+can't even hear that music so i'm gonna
+actually bring that up
+what i've noticed is that usually the
+chorus or the loudest part of the song
+that is going to be around negative 32
+sometimes these beginning parts
+in in the video can be anywhere at
+negative 16 negative 12
+really just depends on the song but
+that's just something to listen for
+as you're editing the music if you're
+like that sounds pretty good right at
+negative 20 db it's just in the
+background it's not overpowering
+but we can see here as it starts to get
+louder i'll show you guys how to
+actually make that quieter so let's say
+actually right at this part
+right here we want to boost this part of
+the song maybe there's going to be some
+b-roll or
+something cool is happening and there's
+no one talking so we just want to
+increase the audio of the music so that
+it kind of takes over the video now how
+you do this is you can hit
+r and this is going to bring up your
+range selector
+and once you select how much you want of
+this song
+to increase you can then drag it back up
+like this
+most people want to bring it to zero
+because that's how
+it just imports as zero decibels but
+that actually is going to be
+too loud because when i'm talking you
+know how we recorded stuff and
+it ends up being around negative six
+decibels well that's what i found is
+that you don't want
+your music really going over negative
+six decibels sometimes because
+it can just sound really really loud
+compared to your voice when you're
+talking
+you can see that i also have some
+keyframes here and you can totally move
+these around if you want it to fade in
+slower
+or if you want it to fade in really
+quickly you can move these closer
+together and you still can change the
+loudness right here by dragging it up
+and down
+better and a lot cleaner
+okay well i think that sounds pretty
+good again this stuff is all by ear so
+what i recommend
+is watching some videos that you like on
+youtube
+listening to it and hearing how their
+background music comes in is it really
+loud
+is it really quiet and try to match that
+in your editing
+so let's say this is the end of the
+video if you want to fade out the music
+right here we are going to can't see it
+right now with the playhead over it but
+right here we're going to see
+this little icon and if you drag this
+over this allows you to
+fade out the music so if i drag it over
+even more
+it's going to fade out even slower this
+would be a very quick fade out and so
+this is what that sounds like
+if you want to fade out the music
+now same at the beginning i usually like
+to fade in the beginning of my music
+just a little bit and you can do that at
+the beginning as well
+just by doing that you can do the same
+thing with a video clip so if i want to
+fade in the audio
+of this video clip you can drag this in
+as well you can do that on any clip
+video you can fade it in or fade it out
+now if you want to separate your audio
+if you click on a video you can right
+click
+and then you can detach the audio and
+this is going to
+allow you to extend this over and maybe
+fade it in
+and then i can do the same thing with
+this one as well and this is going to
+allow your clips to be smoother as they
+transition into each other especially if
+you're talking quick
+and your cuts are fast this is going to
+help from any sort of weird pops that
+might happen
+if you're like a frame off and it's
+cutting off the very beginning of your
+word
+if you detach your audio you can
+actually extend that
+so that your word or whatever you're
+saying is finishing
+and you can also use this in many ways
+so knowing how to detach the audio is a
+very useful thing
+just right click detach audio now i just
+found out about this trick this last
+year and it's been
+really really cool because i didn't even
+know you could do this but i've loved
+using that and that is soloing a track
+so let's say you added in your music
+maybe you have your sound effects you
+have everything
+in but you want to edit your audio you
+forgot to edit your audio and that's
+fine you don't have to edit your audio
+first when editing a video but let's say
+you have
+all the sound effects all this music and
+now it's time for you to do the eq
+adjust the levels well what you can do
+instead of playing this with music over
+it like this
+audio right now then you are hearing me
+you can either select
+your audio clip and hit v and that's
+going to disable this clip so if i play
+this again
+right now then you are hearing me now
+all you can hear is my voice i can click
+on the clip i can edit the eq i can do
+whatever i want to this clip but let's
+say there's a bunch of sound effects and
+maybe a whole bunch of other stuff
+happening another way you can do this
+let's go ahead and hit v on that again
+another way you can do this is click on
+the clip that you want to solo out
+and then you can hit these headphones
+and that is going to make
+everything else in this timeline grayed
+out because
+it's all muted and now all that you can
+hear is the clip you have selected and
+you can also select
+all the clips you want let's say you
+want all the talking head clips just to
+be selected you can select
+all of those you can then hit the
+headphone icon and that's going to work
+as well
+the shortcut for this is option s so
+let's say i want to select all my
+talking head because i want to go ahead
+and edit that audio i can hit
+option s and that's going to disable
+everything else
+so when i'm editing this audio all i
+hear
+is my voice click on the screen to watch
+another final cut pro 10 tutorial
+and i'll see you guys in the next video
+[Applause]
+[Music]

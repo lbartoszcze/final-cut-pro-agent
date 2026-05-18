@@ -1,0 +1,193 @@
+number one is to hit b which is going to
+bring up your blade tool and you can
+hover
+over your video and select wherever
+you'd like to make a cut to make this
+even quicker if you hit command b it is
+automatically going to cut for you
+wherever your playhead is
+using command b like this is going to
+make a cut on the layer you have
+selected but if you want to make a cut
+on all the layers on top
+of your play head you can do shift
+command b
+and that is going to make cuts on every
+single layer where your play head is at
+you got to just press record number two
+is to hit a which is going to bring up
+your selector tool and from there you
+can select the clips that you want to
+delete
+and you can go ahead and delete those
+number three is to hit
+l this is going to start your footage
+and when you hit it again it's gonna
+play back your video
+even faster this makes it a lot easier
+to watch back your videos at a faster
+speed in order for you to save time
+when editing freeze frames can be really
+cool to add to your videos and it's
+really easy in final cut pro 10
+all you have to do is hover over the
+spot where you want it to freeze
+you will select your clip and hit option
+f this is going to add in a freeze frame
+you can drag it to the left to make it
+shorter you can drag it to the right to
+make it longer
+and when you watch it back your freeze
+frame is going to happen and then the
+rest of the video is going to continue
+on
+once the freeze frame is over when
+making precise cuts in final cut pro 10
+you want to zoom into your timeline so
+you can see
+everything going on usually what you do
+is you go over here you click this
+button
+and then you can zoom in like this but a
+much quicker
+way to do this is by hitting command
+plus and this is going to zoom
+into your timeline and then hitting
+command minus is going to zoom out of
+your timeline i use this tool all the
+time to zoom in and refine my cuts and
+zooming in really just makes it a whole
+lot easier right here we can see that
+our audio is pretty quiet but if you
+want to make your audio
+louder at a certain point or quieter at
+a certain point all you need to do is
+hit
+r and this is going to pull up the range
+selector this is going to work on an
+audio or video clip you just need to
+select a piece that you want to be
+quieter or louder and
+from here once that's selected all you
+got to do is drag up
+on that audio making it louder or you
+can make it
+softer you can then drag these keyframes
+out a bit longer for a smoother
+transition
+to the louder part of the song
+[Music]
+next up is shortcuts for copy cut and
+paste i use these all the time so
+knowing the shortcuts really comes in
+handy to copy you just need to hit
+command c
+if you want to cut you can hit command x
+to paste the clip you can hit command
+v or if you want to paste the attributes
+like the effects the color grade
+you can hit command option v and that is
+going to add
+everything from your clip to this next
+clip but let's say you want to add
+everything
+but the crop what you can do is hit
+shift command v and this is going to
+paste your attributes from here
+you can select what you want to copy
+over to the next clip or not
+so i want to add in all these effects my
+entire color grade
+but i don't want to add in my crop i'll
+select that so it is not selected
+anymore i'll go ahead i'll hit paste now
+my color grade has copied over to this
+clip without adding a crop
+now let's say you've copied and pasted
+all your effects onto
+all your clips in your video but now
+you're going through and you want to
+change something
+instead of going through clip by clip
+and deleting something like an
+eq what you can do is select all the
+clips
+and now you're going to hit shift
+command x and now you can remove
+attributes and so i'm going to select
+the eq get rid of that
+i'm going to hit remove and now that
+clip does not have the eq added onto it
+these tools
+definitely work best in bulk when you
+are selecting multiple clips and adding
+and subtracting attributes from them now
+for this next one i use this every
+single time i edit a youtube video when
+i'm ready to start editing the audio i
+go up here and before i actually start
+messing with the eq
+i put the clip that i want to edit on a
+loop
+all you have to do is hit the forward
+slash and if your playback is set to
+loop which you can change that in your
+settings
+then it is going to loop once it reaches
+the end of the clip
+every time you color grid you really
+should be looking at your scope so
+hitting command 7
+is going to pull that up and then
+hitting command 7 again is going to get
+rid of it when trimming a clip you could
+b and then hit a again select the clip
+you want to delete and that is going to
+trim it off
+but there's actually a faster way to do
+it if you know this is the end
+of your clip and you want the rest of it
+to be gone you can hit option
+close bracket and that is going to
+automatically delete the rest of the
+clip for you holding down option and
+hitting
+open bracket is going to do the same
+thing on the other end trimming the
+beginning of the clip
+if you temporarily want to disable
+something on your edit you can hit
+v and that will remove it without
+deleting it and you can do the same
+thing
+with an audio file so you can watch it
+back without the audio without deleting
+your audio and then hitting v again
+is going to bring those assets right
+back if you want to just listen to an
+audio track instead of disabling all the
+sound effects and audio in the video
+what you can do is select the video or
+audio track that you want to listen to
+and hit option
+s on your keyboard and option s to bring
+it back and you can do this with
+multiple clips so if we want to select
+both of these clips and hit option s
+that is going to disable everything else
+and solo out just these tracks so we can
+listen to these
+only have you ever done something you
+did not want to do and you wanted to go
+back like delete your entire project
+well you just have to hit command
+z and that is going to bring it right
+back now if you want to redo what you
+did instead of
+undoing you can hit shift command z and
+that is going to
+redo what you just did click on the
+screen to watch another final cut pro 10
+tutorial and i'll see you guys in the
+next
+video

@@ -1,0 +1,384 @@
+In this video, I'm going to show you
+absolutely everything you need to know
+about animation inside of Final Cut Pro.
+And I promise you, if you stick with me
+through this video, you're probably
+going to learn a thing or two that you
+didn't know was even possible.
+Real quick, let's cover the basics. How
+do you do animation in Final Cut? Well,
+you have several different ways. One is
+to simply come over to your video
+inspector, and you'll see stuff like
+your transform, crop, and distort. And
+then over to the right of those are all
+of these gray diamonds. Clicking those
+gray diamonds gives you a key frame. If
+you want to delete a key frame, you can
+click it again and that will remove it.
+But clicking and dragging specific
+numbers here on the right side really
+isn't the easiest way to animate an
+object in Final Cut. So, a much better
+way to do so is to use the transform
+tool. That can be found here in the
+bottom left corner of your viewer. or
+you can press shiftt on your keyboard.
+Clicking that gives us the transform
+tool. And you'll notice if I zoom out
+here with command minus, we have this
+bounding box. And I can click and drag
+my object around. Here in the direct
+center is the anchor point. So this is
+from where all of the animations are
+going to be taking place. So what do I
+mean by that specifically? Well, if I
+were to come over to the right side and
+adjust the anchor point so that's
+resting at the bottom of this rectangle,
+then I were to adjust the scale, you'll
+notice that the rectangle is slowly
+scaling in towards that anchor point.
+Additionally, if I were to go ahead and
+adjust the rotation, our rectangle would
+be rotating around that anchor point. So
+again, this is what it would look like
+if everything was centered. It's scaling
+towards the center or it's rotating
+around the center. So you can use this
+to dynamically enhance your animations
+just simply by adjusting where this
+anchor point is taking place.
+Additionally, we have this little
+rotation handle. So I can just click and
+drag to rotate our object as much as we
+like. And you'll notice that that
+bounding box on the outside is also
+rotating. To add a key frame, you have
+several different options. Like I showed
+previously, you can use these gray
+diamonds on the right side, or you can
+come up here to the top left corner and
+click here to add a key frame. By
+clicking that, it's going to
+automatically add a key frame for all of
+the transform variables here on the
+right side. You'll notice that we didn't
+get any key frames here in our crop tool
+or our distort tool. So, it's just
+specifically the transform tool that
+will automatically get those key frames
+by clicking that button. Now, we can
+simply move our playhead forward in the
+timeline. So, I'll go forward two
+seconds. And if I click and drag my
+object, Final Cut Pro will automatically
+add in another key frame because we
+previously had a key frame. So, you'll
+notice here in the top right corner that
+the position parameter already has this
+automatic key frame applied for us. So,
+this can be an incredibly fast way to
+animate because we just need to move our
+playhead forward, move our object, move
+our playhead forward, move our object,
+so on and so forth. And all of those key
+frames will automatically be added in.
+Maybe you accidentally added a key frame
+that you didn't want. Well, you can
+simply come up here to the top left and
+we can push this back button and that
+will take us back to the most recent key
+frame. Or we can of course also push
+forward. Once we do that, we can delete
+a key frame by clicking this icon here.
+And now that has been removed. And
+you'll notice we're just down to three
+key frames. So pushing play, we have
+this really basic animation of our
+square just moving around on the screen.
+And it's actually quite smooth. But
+maybe you don't want the animation to be
+very smooth. Well, that's where this
+next part of key frames comes into play.
+We can simply rightclick on any of these
+different key frames and we can change
+them over to linear or to smooth. By
+default, they will always be smooth if
+you're working with the position
+parameter. Most of the time, this is a
+good thing, but it can be really
+annoying. And I know I'm going to get a
+comment asking if you can change the
+default on this. At this time of making
+this video, no, it's not possible to
+change the default, unfortunately. What
+we can do is just change these over to
+linear. And I'll go ahead and do it for
+all three of these. And you'll
+immediately notice that my lines have
+been straightened out. So this is going
+to give us a much more jagged animation.
+There's going to be no sort of easing to
+the object. Another great way to work
+with key frames is maybe you're not
+happy with the end position of your
+object. You might expect that you would
+need to be at the key frame point before
+making any changes to your object. But
+you can actually just click directly on
+a key frame and move it around on the
+screen. So if you decide that you're not
+happy with this end position here, you
+can very simply do that. If you want to
+take your key frames way further, you're
+going to want to start using some bezier
+curves. Earlier we had these smooth key
+frames. So I'll just right click on
+these and change them all back over to
+smooth. So, now that my object is back
+to these smooth key frames, there's some
+really cool things we can do with them.
+If I were to push command and click and
+drag on this specific key frame, you'll
+start to notice that I get these handles
+that come off of it. And this is
+actually curving the line of our
+animation. So, I don't need to go in and
+add individual key frames to create this
+curved line. We can go ahead and have
+Final Cut Pro do all of the heavy
+lifting. So, let's go ahead and play
+back and see how that animation looks.
+It's kind of going along this curve
+motion and then at the very end it
+plummets down really quite hard. So,
+looking at this animation, it's not
+quite the desired effect I'm going for.
+So, we can go ahead and adjust this
+animation. To adjust this animation, I'm
+going to push option and click on this.
+And you'll see that that's giving me
+these two handles for our object. And
+because I pushed option, it essentially
+broke these two handles. So I'm going to
+push and hold option again and click on
+this handle. And you'll notice that that
+kind of adjusts it. So now I'm working
+with both handles. And now I have
+released the option key and that's going
+to stay in that sort of handle mode. But
+then if we push option and click and
+drag again, that's going to break them
+apart. So we can really adjust this
+animation to our liking. And I'm again
+I'm not holding down option as I do
+this. These two points are just
+completely broken because we used the
+option key previously. So if you ever
+want your two handles to be attached to
+each other, go ahead and push and hold
+option for the first time and that will
+essentially reset it. We could also
+adjust this first animation point. Maybe
+we don't want to adjust the handles on
+this left side. So we could push option
+and now they're broken apart. We can
+drag that out to our liking. Adjust this
+how we want. So, you do have quite a bit
+of control when it comes to your key
+frames here in the viewer that you might
+not first suspect. Now, if we're being
+honest, the controls here don't have as
+many settings as I would like. I would
+love a lot more control over the easing
+and final positions of everything and
+the actual timing of the animation, but
+this is what's given inside of Final Cut
+Pro. That said, there is quite a bit
+more we can do using the video animation
+inspector. To get access to that, you're
+just going to find your clip down here
+in the timeline, right click on it, and
+then select show video animation. You
+can also get that with CtrlV. Once we've
+expanded that, you'll notice the various
+key frames happening here throughout our
+timeline. And this is the number one way
+to adjust the speed of your animation.
+If you find an animation is too slow or
+too fast, this is the place you want to
+go. To adjust the speed of the
+animation, you can just simply click and
+drag directly on your key frames. And
+you'll notice now if I were to play this
+back, the speed is much faster on the
+animation. Or if we stretch it way out
+and push play, the animation is far
+slower. When you need to adjust the
+timing of your animation, you definitely
+need to jump into the animation
+inspector. But there's actually a lot
+more cool stuff you can do with this
+video animation inspector. If we go over
+to the left side firstly, we can
+completely disable the animation of our
+object. So you'll notice it's not
+animating anywhere at all. We can also
+go ahead and change the exact parameter
+that we're working with because
+sometimes you'll want to work with only
+the position. Sometimes you only want to
+work with the scale. To do that, you're
+just going to click on this little down
+arrow next to each parameter and we can
+change that here. So let's go ahead and
+change this over to the scale. And now
+we can see that the other key frames
+have turned black, indicating that we
+can't click on them. So we know where
+the key frames are happening in time and
+space on the timeline, but we can't
+actually access them, which saves us a
+lot from accidentally clicking the wrong
+key frame. But if I were to come over
+here to the far right and click to add a
+key frame on our scale, or if we were to
+push option K, which is a great way to
+do it, we can see that we've created a
+key frame here. We can move forward. We
+could increase the scale and now those
+two animation key frames are happening
+here on our timeline. And we can adjust
+their timing independently of the timing
+of the position key frames. And I do
+have just a couple more quick tips for
+you when it comes to the video animation
+inspector. If you find that a key frame
+is just not quite in the right spot,
+it's just a frame or two off, and you
+don't want to click and drag and try and
+get it just right, all you need to do is
+push comma or period, and that allows
+you to move it in one frame increments.
+So, here's comma, and here's period.
+Additionally, if you find that you have
+an exact position that you want to get
+your object back to in a really easy
+way, you can simply click on a specific
+key frame and you can push option shift
+C. So, it's not command C like the
+regular type of copying, but you can
+copy it with option shift C. And then if
+you want to paste that, you can push
+option shiftV. And now that will appear
+over here. You can even select multiple
+key frames at once by holding down
+shift. Then we can do option shift C and
+option shiftV and paste those. So if you
+have a recurring animation, you can go
+ahead and do that down here in the
+animation inspector. So when it comes to
+the transform tools inside of Final Cut
+Pro, the rotation, position, scale, that
+is about all you can really do. And if
+you ask me, it is a little bit
+unfortunate. I do think there should be
+more tools here inside of Final Cut Pro.
+And I'm really hoping that this video is
+outdated when you watch it and all those
+tools have been added into Final Cut
+Pro. That said, there are some hidden
+tools inside of this animation inspector
+that I think everybody needs to be aware
+of and so I wanted to add them to this
+video. These tools are more specifically
+for effects. Well, one super common
+effect in Final Cut Pro is simply
+adjusting the opacity of a specific
+object. But what we can do is come down
+here inside of our animation inspector.
+And you'll notice that the opacity has a
+different icon that is not available on
+these other parameters. That icon
+indicates that we can expand this out.
+And it gives us some really cool
+controls that I wish were available
+everywhere in Final Cut. If we click
+that, we have now expanded this. And you
+can also get that by just doubleclicking
+on the opacity line. And you'll notice
+that my opacity line is right here. And
+I just simply click and drag that up and
+down. And that adjusts the opacity on
+our object. So one thing we can do with
+this little display menu is by pushing
+option and clicking to add a key frame.
+So I can go ahead and add in multiple
+key frames here. And much like the key
+frames that you might work with when it
+comes to audio, you can do the same
+things here. So I just simply click and
+drag this down. And now we have this
+nice straight line for our opacity. But
+additionally, we can rightclick directly
+on the line between these two key
+frames, and that gives us this submen.
+So right now, everything is set to
+linear, but we can change this over to
+ease, or we could rightclick the other
+one and select ease out. Additionally,
+coming over here to the right side, we
+can click and drag directly on this
+handle. And just like with our audio, we
+now have this fader handle. So, this is
+a super fast and efficient way to add in
+a little opacity animation to the end of
+your object. We can also use the range
+selection tool to quickly add a whole
+bunch of key frames. If we push R, get
+our range selection tool and click and
+drag across here on our opacity, then
+drag that down, you'll notice that it's
+automatically added in four key frames
+for me here in the video animation
+inspector. This doesn't just apply for
+opacity, but it also applies for a lot
+of the other effects inside of Final Cut
+Pro when they have this little slider
+here. So, what I mean by that is let's
+go ahead and look up the 50s TV effect
+and I'll apply that onto our object. And
+you'll notice that I have this little
+amount slider here, which I can adjust.
+But on top of that, if we come up here
+to the top of our video animation
+inspector, we have that same expansion
+icon. So, I can go ahead and double
+click on that. And now we have access.
+We can add in all of the easing. We can
+use this handle to fade everything out
+here if we want to. And so, that's
+pretty much everything you could
+possibly need to know about animation in
+Final Cut Pro. But if you're like me and
+you look at the animation tools in Final
+Cut and find them to be quite a bit
+lacking, then you have a few options.
+One is to simply check out a lot of my
+Apple Motion tutorials where I teach all
+about animation and how to get it over
+into Final Cut Pro. But another super
+great option is to check out this
+comprehensive list of my favorite
+animation plugins that I've made for
+Final Cut Pro. So, I'll have a link down
+below. They are affiliate links and it's
+just some of the animation tools I rely
+on so heavily directly inside of Final
+Cut. So, if that interests you, make
+sure you check out that link. And I'm
+going to try and continue to update that
+list as I find more and more amazing
+animation tools. Thank you again, and I
+cannot wait to see you in the next one.

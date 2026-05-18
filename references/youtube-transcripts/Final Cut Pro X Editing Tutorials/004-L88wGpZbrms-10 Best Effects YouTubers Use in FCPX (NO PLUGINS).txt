@@ -1,0 +1,727 @@
+i'm going to share with you 10 effects
+built into final cut pro 10 that you can
+start using in your videos today
+to spice it up a little bit to level up
+and you're going to want to stay tuned
+for all 10 effects because you probably
+haven't heard of all of these and they
+are going to turn you
+into a pro editor in no time you got to
+just press record hey guys my name is
+noel molt with think media now number
+one is to use text pop-ups this is
+really popular when it comes to
+youtubers and it's pretty simple inside
+of final cut pro 10.
+let me show you exactly what i'm talking
+about and then i will show you how
+to do it now let's get right into this
+video because we have a lot to talk
+about
+yeah cheesy jokes welcome to the youtube
+channel
+so as you saw here this text was popping
+up now i'm going to delete this and
+start from scratch to show you guys
+exactly
+how to do this first things first you
+want to go into your text and i'm just
+going to go ahead and use
+a custom one right here i'm going to
+drag this over i'm kind of going to
+resize this so that you know it's as
+long as
+what i am saying because i'm going gonna
+have them pop up right as i say the word
+it's gonna pop up you have a lot to talk
+and it's gonna end right about there so
+now that that's all set i'm gonna go
+ahead and put in my text now that i have
+my text on the screen it's pretty simple
+what i like to do first is actually get
+in here and just cut them
+up to the words now this doesn't have to
+be perfect because it's actually really
+easy to
+retime these so that it pops up at
+exactly when you want to
+but what i like to do is just really
+quickly go through and cut these up
+into the different words okay that's not
+perfect but you know somewhere around
+here now you can see that i've cut up
+the titles
+what i'm going to do now is start over
+here on number one
+and i am going to go to crop and then
+change this to trim
+so if it's on crop you don't want that
+you want to change this to
+trim from here all you have to do is
+take this right side
+of the box and start to drag it over
+trimming off
+every single word except for your first
+word now what we could do is go over
+click this again
+go to trim and go ahead and do the exact
+same thing we just did leaving our
+second word
+and our first word uh visible now now we
+could just do this for every single text
+but to speed up your workflow a little
+bit you could do a copy and paste
+all you gotta do is select one that
+you've already trimmed you're gonna hit
+command
+c go to your next one and then you're
+gonna hit command
+option v from there it's going to chop
+off most of the words and you just have
+to drag it to
+your next word so i'm gonna go ahead and
+do this with the rest of them and it
+really doesn't take that long and you
+get yourself a really cool effect
+by the end of it obviously on your last
+one here you want to leave all the words
+visible and now we can go through we can
+watch it
+and see if we need to kind of retime any
+of the words
+so i can maybe move this second to last
+word
+latte talk about we have a lot to talk
+now that's looking pretty good and it's
+as easy as that just using the trim tool
+you also could use the mask tool but i
+found for stuff like this
+using the trim tool has found to be
+easier for me next up i'm going to show
+you guys how to blur out a piece of the
+image whether you want to
+censor it or hide it you can definitely
+do that inside of final cut pro x
+i've done this before for clients where
+they needed to actually blur
+out a brand or something in the
+background like an address
+and so i've had to use this before but
+i'll show you how to do that right now
+so first off we have our clip right here
+and for this case i'm just going to blur
+out my coffee cup because it's moving
+and i'll show you guys how to kind of
+move that around as well so the first
+step you actually want to do
+is to copy and paste the clip that you
+are going to blur
+and put one on top of the other so i'm
+going to go ahead and move this
+right on top of there now we have two
+different clips now the top one is going
+to be our blur and we're going to use a
+mask
+to control what we want to blur so let's
+start with our effects and actually
+going to pick out a blur there's two
+that i like to use
+one is just kind of your classic out of
+focus blur and
+the second one is more of a pixelated
+blur so i'll show you where both of
+those are if you go over here to blur
+you can see right here that if i throw
+this on top everything is out of focus
+it's a pretty nice blur this is kind of
+something that you would see on tv
+however i'd like to use the pixelate
+blur because it's just kind of fun and
+funny and so i like to use that
+sometimes if we click on all
+and we go to search for pixel we'll see
+a pixelate right here and if we throw
+that
+on top you are going to see that it does
+this whole pixelating effect and you can
+really choose how much you want to do
+that let's get the copy up here
+and maybe we want to make it even more
+blurry now that we have
+done our blur what we want to do next is
+pick our mask
+so i'm going to search for mask make
+sure you're dragging this on
+the top layer of your video and from
+here
+you can start to draw a mask around
+what you want to blur out and we'll just
+go ahead and blur out this entire
+coffee cup now from here it doesn't look
+too good but you can start to mess
+around so that it fits around
+whatever it is that you're blowing out a
+bit better and then we want to
+use the feather tool this is going to
+make it look a whole lot smoother
+you can even drag this past 100 if you
+would like and so you know this is
+looking fine for me
+as far as a blur goes i think it looks
+great now you can see the issue here is
+that the coffee cup kind of comes into
+the blower and it also goes
+out of the blur so what i'm going to
+show you how to do is how to move
+this blur effect over neat overnight
+over top of a moving object so i'm going
+to move it to the first frame that it
+comes into
+which is right here and i'm just going
+to drag this entire masking tool with
+the blur effect
+over that mug so that's right there i'm
+going to go ahead and start my keyframes
+underneath your mask you want to open up
+your transforms and then you're going to
+click this keyframe button right here on
+position
+and i like to go about three or four
+frames and move
+the mask if i'm moving it really fast
+maybe i would do less every frame or
+every other frame
+but for something like this you can
+really get away with three four frames
+so i'm gonna start here and i'm just
+going to move forward three frames
+now that i move forward three frames i'm
+going to move my mask
+back up move forward three frames again
+continue to move my mask
+and i'm gonna do this for the entire
+clip
+now that i'm done you can see that the
+mask is actually starting on the clip
+and i don't want it to start on the clip
+so to go to my first keyframe i'm going
+to hit this button
+right here and then i'm going to go back
+a few frames
+and move this all the way out so as we
+go forward now it's going to come up
+with the mug
+which is perfect so let's hit play and
+see what this looks like
+awesome so the blur is moving around
+with the mug and it looks great and
+blurred
+and the nice thing about this is now
+that we've done a mask that's moving
+we can actually replace this effect with
+anything so if we wanted to change this
+to our other blur it's really easy as
+just
+dragging this on top of the clip and
+deleting the pixelate button
+now we want to move this back up top
+right where the pixelate was and from
+here you can mess with the amount of
+blur
+you can make it more blurry less blurry
+and you're gonna see that the same
+effect happens all the movement have
+been
+kept the same but now it's just a
+different type of blur
+next up i'm gonna show you guys a little
+stop motion effect i use this on my
+wife's channel where her name pops up
+and i kind of made this stop-motion
+effect
+with her name and i did that all
+manually inside of final cut pro 10
+so i'm going to show you exactly how i
+did that so right here i did a little
+text that says hello everybody and i'm
+going to show you kind of what this
+effect looks like
+just kind of bounces back and forth kind
+of like a stop-motion vibe
+so it's really easy to do this what i'm
+going to do is actually delete all of
+this but keep
+one of my text so first of all you want
+to start with what it could be a picture
+it could be text it really could be
+whatever
+you want it to be to kind of do this
+effect and so all of it is going to be
+the same whether it's text a picture
+graphic whatever so the trick here is to
+make your text three frames
+long and then we're gonna go from there
+so let's start by doing that one two
+three i'm gonna go ahead hit b which is
+the blade tool i'm going to chop
+that off now i have this text that is
+three frames long
+and what you want to do is hit command c
+v and you're going to paste it this next
+one what you want to do is go to your
+transform tool
+and you want to adjust it just a little
+bit you don't want to do it a lot but
+you just want to change it
+slightly you're then going to copy and
+paste that one
+right after it and you're going to do
+the same thing you're just going to
+adjust the rotation a little bit
+maybe even the positioning a little bit
+c command v and do the same
+thing again make sure that it's not too
+crazy all over the place or it might be
+a bit too much
+but you guys will get the hang of this
+and then once you have about six to ten
+of these
+you're just going to command copy all of
+them and paste those over and over again
+so i'll just do a couple more here
+adjusting it just slightly so that they
+look a little bit different giving that
+stop
+motion effect all right now that i have
+done seven of them i'm gonna go ahead
+and hit play
+and see how it looks i think it looks
+pretty good and once you're happy with
+how it looks all you have to do is copy
+and paste that over and over again to
+make it as long
+as you want so i hit command c to copy
+i'll hit command
+v and then command v again again again
+as long as i want it to last
+and once you have it as long as you want
+you have a really cool stop motion
+effect to your youtube videos next up
+i'm going to show you guys how to add
+overlays to make your shot a bit more
+interesting so
+when i first started using this i was
+actually adding some muzzle flashes to
+some guns for these little action films
+that i was shooting with my friends
+but really this works for anything if
+you want to do light leaks or any sort
+of glitches
+stuff like that this works really well
+it basically just takes the black
+in a background image or a video and it
+makes it transparent so when you overlay
+onto your video it's going to be
+transparent and the black will go away
+and everything else is going to be on
+top of your image so right here you can
+see that the video is pretty bland
+so i'm going to add some overlays just
+to spice things up a little bit right
+here i have this glitch overlay which i
+think i just got off of youtube but it
+kind of has these numbers kind of techy
+uh computer things going on and so to
+get rid of the black so that it shows
+through
+all you have to do is select the video
+come up here to blend mode and you're
+going to change that to
+screen once you've done that you see
+that you get these textures coming
+and there is no more black screen
+everything is transparent and it kind of
+adds to this cool computer shot going on
+so i'm gonna do the same exact thing
+with this glitch effect right here which
+we actually got off of story blocks
+and so i'm gonna go to blend mode change
+that again to screen and this is gonna
+add a cool little transition to my next
+shot and so let me show you what this
+looks like now
+i think it's really cool it adds a lot
+to the shot and again you can get
+creative with this and add tons of stuff
+to your footage to make it look cooler
+again those light leaks i've used a lot
+of times different glitch effects stuff
+like that
+you can add on top of your video by
+using the screen
+blend mode i'm gonna show you guys how
+to do this effect where it shows you the
+before and after so if you're redoing a
+room or if you're doing like a color
+grade like i am doing here
+you can actually do a sliding effect to
+show the before
+versus the after now right here i have
+an adjustment layer and a clip and this
+adjustment layer is just adding in my
+color to my shot so you can see this is
+what it looks like completely
+flat and then you have your adjustment
+layer now with this effect
+you actually can't use an adjustment
+layer and i'll show you why later so
+what i want to do
+is i want to copy this i'm going to
+delete my adjustment layer and i'm just
+going to paste that onto my
+actual video now in order for this
+effect to work
+you do need two clips so i'm going to
+copy
+this exact clip and paste this now this
+would work exactly if it was
+your before shot and your after shot but
+for me
+i'm going to do before my color grade
+and after my color grade so the top one
+is going to be
+the after shot and the before is going
+to be the bottom so what i'm going to do
+is delete everything on this bottom clip
+to make it flat again
+and you can see here if i mute this
+video feed on top
+our bottom layer is the before our top
+layer is the
+after from here you're going to go into
+the transitions and you're going to go
+to the search and look up
+wipe and then you are going to drag the
+wipe transition
+onto the top layer you can actually
+delete this end one and then you want to
+extend this to make it a lot longer
+and i'll show you guys what this looks
+like now so right now
+you can't even see the top layer you
+just see the before shot which is down
+and then as it plays through you are
+going to see this wipe effect where it
+shows you the color grade
+that i've done you can adjust the
+duration of the white by dragging it
+left and right to make it longer or
+shorter you can also
+click on this transition and if you go
+up here you're going to see that you
+have a few different options so if you
+want to go from left to right
+you can also do that so now it is
+dragging from
+the left side to the right side you can
+also change
+the edge treatment i usually like to
+leave this on feather where it just kind
+of blends in
+the two videos but you also could do
+like a solid color like this
+and make it white or black and you can
+make the border color a lot
+smaller and then that way it's kind of
+showing you the before after
+using a line of color to distinguish the
+two now i don't know about you but have
+you ever
+accidentally gotten like a shotgun
+microphone in your shot or a light in
+your shot like you can see up here i
+have this
+light up there it was not supposed to be
+in my shot but it was
+but luckily in final cut pro there is a
+fix that you can do for this
+what you want to do is copy and paste
+the clip that you are going to cover
+and so we are going to cover up this
+light right here so what i'm going to do
+here is take this color right around
+here because it's going to be
+you know about the same color i'm just
+going to drag that
+over the light and then feather it out
+so that no one can tell
+in our effects we're going to be looking
+for the mask tool and we can just draw a
+simple mask i'm going to drag that on
+top
+now from here i just want to take this
+color you know about the same
+size of the light and then close that
+off so
+now that we've done that we are going to
+take the feather option and put that to
+a hundred
+and then on our transform or you can go
+to this right here
+we are going to drag this up above now
+if i completely remove
+the bottom layer you're going to see
+what's happening here i'm taking this
+color
+that i just got with the mask and then
+i'm actually going to
+feather this out a bit more so that it's
+much smoother
+and all you have to do is make sure that
+it's completely covering
+up that light or the microphone whatever
+it is you want to hide in the shot
+you can do this simply by adding in a
+mask and dragging something over top of
+it
+and then by adding in some feathering
+you're really going to smooth out this
+shot so it looks nice and clean and now
+it looks like there was no light ever
+there so i can click this on and off you
+can see that's before
+and this is after another really cool
+easy trick that i use for our think
+media videos
+is ken burns so you can see here that we
+have a few different b-roll shots
+and they're just pretty simple right
+they're not too exciting they're pretty
+boring there's not a lot of camera
+movement happening
+so what i'm going to do here is let me
+trim this one first but what i'm going
+to do here is add in some ken burns and
+this is going to emulate a camera
+movement so
+all you got to do is click this arrow
+right here we're going to go to crop
+and down here you're going to hit ken
+burns now here you have a start option
+and the
+n option so you can see it starts
+completely wide and then it zooms in
+ending a bit closer i'll show you what
+this looks like
+now it looks like there is a zoom
+happening and so we're going to do the
+same thing with this next shot but i'm
+going to show you a few more things that
+you can do with this
+so here we can see that now it's doing a
+zoom out where it's starting
+in tight and then it is coming and
+zooming out showing us the entire
+shot but if you want to switch that
+around so it's also zooming in
+all you have to do is hit these little
+arrows right here and that is going to
+swap these for you so it's
+also going to do another zoom in for you
+and if we actually want to just switch
+that back it's as simple as moving that
+now if you want to make it
+really drastic and zoom in a bunch you
+can move these around as much as you
+want i don't like to
+make it super obvious i like to do kind
+of a subtle
+zoom in or zoom out effect but whatever
+floats your boat you can definitely do
+and mess around with these as well after
+adding in those ken burns you can see
+that this movement to the shot really
+just adds a lot to these b-roll clips
+and gives it a bit more spice and i
+definitely think it's something worth
+messing with because it can really take
+your shot to the next level just adding
+that little bit of camera movement
+really can make a big difference for
+this next effect we use this all the
+time at think media this is when our
+text
+swooshes in and swooshes out and we add
+in the sound effects i'm gonna show you
+how we do that so
+right here you see that i have my name i
+have my instagram handle all you gotta
+do is go to your transitions and look
+for slide this is the transition that i
+use
+you can drag this right over your image
+or your text and then you want to click
+on this transition and come up here and
+this is where you mess with the settings
+so
+we have slide in which is exactly what i
+want and then at the end it's going to
+slide out
+and the direction i want to go is right
+so that's perfect that's kind of the
+preset that it's set to
+but you'll see here when it goes to the
+other clip
+that's not what i want happening so
+something wrong is here so i'm going to
+click on this transition
+and we are going to go back up here we
+can see that it's set to slide in i
+don't want it to slide in i want it to
+and for the direction i want it to slide
+to the left so it goes back that way
+now if we watch again
+slides in slides out
+that's perfect now from here all we have
+to do to make the null mult text do the
+same
+exact thing is hit copy and paste onto
+this one
+now it's not going to paste both
+transitions you need to go back up here
+you need to hit command c
+click down here hit command v now it has
+perfectly
+copy and pasted every transition onto
+both of them
+so when we hit play they both come in at
+the same exact time they both go out at
+the same exact time if you want to make
+these quicker or longer you can drag
+this to the left to make it quicker you
+can also drag it to the right
+to make it last longer be a longer slide
+and then you would just match these up
+so that they match
+and this is just going to come in a bit
+slower the next effect i want to show
+you guys
+is the handheld effect so we're going to
+search for a handheld and drag this
+over our clip and this is going to give
+our static
+tripod shot a handheld look so once we
+hit play
+we're going to see that it looks like
+someone is holding the camera
+they're a little bit shaky but we can
+mess with those settings by clicking
+on our video and up here and effects we
+can mess with the shakiness and the
+distance
+if we want to make it more shaky we can
+drag it to the right if we want to make
+it less shaky we can drag to the left
+i like to keep my shakiness around 15 to
+10 and then my distance i like to bring
+back down about to 10 to 15
+as well and we can see what this looks
+like now with those settings
+it's definitely a lot less shaky this is
+a bit more of my taste
+and i like to throw this in on videos to
+just spice things up and get people on
+their toes because when they're seeing
+the same shot
+over and over again they can start to
+tune it out so cropping in cropping out
+adding in these handheld effects this is
+great for resetting the viewers
+attention to get them to watch longer
+little stuff like this
+does wonders and i think it's a really
+cool effect that you can add
+to your videos i know i got a lot of
+questions on that in a previous video so
+for those of you asking
+that is exactly how i do it now i've
+actually had a lot of people ask me
+about this effect that i'm going to show
+as well and this is when the camera
+tracks on my face so as i move my face
+around
+the camera tracks with me let me show
+you exactly how i do it and i use
+keyframes to do it but there's a trick
+here that makes it a whole lot easier so
+i'm going to drag
+this custom text onto my video and then
+i'm just going to add in
+the letter x it really could be anything
+it could be a dot let's just do a dot
+and i'm going to drag this right into
+the middle of
+my eyes now this looks really weird at
+the moment but i promise you guys
+it's going to be a really cool effect so
+on this clip right now we have
+scaled the image so that it is a bit
+closer and you can see that as i hit
+play
+i move my head around like this and i'm
+just going to do a little camera track
+on my face now the reason i put the dot
+right there is because
+for these keyframes i want to make sure
+that my
+middle of my face stays in the center of
+the frame the entire time
+that is what's going to make this look
+really interesting look really cool
+and the camera kind of move with my head
+as i move it around so now that i have
+the video selected i'm going to add
+a keyframe and i'm just going to go
+frame by frame moving this image around
+to stay
+on track with this little dot in the
+center of the screen
+for something like this i'll go forward
+every two frames or if there's a lot of
+movement i'll just do it frame by frame
+but for something like this i could
+probably get away by jumping for
+two frames adding a keyframe jump
+forward two frames again and adding a
+new keyframe
+and for those of you asking if you're
+brand new once you move something around
+it automatically adds in a keyframe for
+you so all you got to do is start your
+keyframes
+once and then we can jump forward two
+frames once you move it like this you
+can see that this has a check mark if i
+jump forward two more frames
+you can see that it is not selected yet
+there is no keyframe but as i move this
+around it adds in
+a keyframe for me jump for two frames
+and just do this throughout the entire
+thing
+all right now before we watch this we
+wanna get rid of this dot so i'll delete
+that and then i'm gonna hit the play
+button
+all right so that's pretty cool so you
+can see as you're talking you know it
+crops in and it does this funny little
+tracking on the face effect again people
+ask me about that one that's exactly how
+i do it if you want to watch my final
+cut pro 10 tutorials for beginners then
+click on the screen and check out that
+playlist i made it for you guys so
+please check it out and i'll see you
+guys in the next video
+[Music]

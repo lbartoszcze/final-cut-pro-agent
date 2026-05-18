@@ -1,0 +1,314 @@
+today we're gonna take a look at how to
+do advanced editing in Final Cut Pro X
+so stick around hey what's up guys is
+Marcos and this channel is all about
+helping you create better video so you
+can build your brand so if you're new to
+this channel subscribe right now so you
+don't miss a thing
+alright so before we get started if you
+haven't already watched my learn Final
+Cut Pro X in 13 minutes watch that video
+first because it will give you an
+introduction into using Final Cut Pro X
+so that's for beginners once you watch
+that come back to this video because I'm
+gonna go over some very advanced editing
+features in Final Cut Pro X so without
+further ado let's jump over to computer
+and let's get started
+here we are in my desktop and this is my
+external hard drive I would highly
+recommend that you always save your
+video footage and your audio to an
+external hard drive don't store on your
+computer otherwise it's gonna slow it
+down all right so here's a bunch of
+folders these are videos that I've
+worked on in the past these are all my
+YouTube videos I always start by
+creating a new folder whenever I'm
+working on a project so the important
+thing about advanced editing is having a
+workflow so this is my workflow I create
+folder for each project so let's take a
+look at one of these like this jump-cuts
+let's say I just imported all my video
+footage and my audio for audio
+recordings here I'm gonna be creating a
+new project out of this footage alright
+so I start by importing and then I have
+to keep track of which audio corresponds
+to which video clip so zero zero seven
+corresponds to zoom zero zero one that's
+very important to be aware of that
+because we're going to be syncing this
+audio with the video so let's start by
+opening up Final Cut Pro X
+let's maximize this alright so by
+default if Final Cut Pro X will open the
+last project we worked on but we want to
+close everything otherwise our computer
+will slow down since it's trying to
+manage multiple projects so we want to
+close it the closes down this is our
+last project file close library DIY
+quick release you want to have like this
+whenever you're starting a new project
+you don't want to have anything open so
+go to file new actually I'm gonna skip
+over this because you probably already
+know how to do all of this alright so
+command I to import footage you'll
+notice that I did not create optimized
+media I think my computer handles 4k
+footage just fine without creating
+optimized media so let's sync the audio
+z 0 0 7 corresponds to zoom 0 0 1 you
+hold on the command button or key and
+you tap it right click synchronize clips
+and you want to use the audio for
+synchronization click OK and let's drag
+this over to our timeline and I'm gonna
+change the view of this because I want
+to see the audio you can do something
+like that or like this so first of all
+we have to turn off the audio coming off
+the camera otherwise it's gonna sound
+bad so if we unchecked storyline that's
+how you know it turns off the audio from
+the camera and you only keep the
+connected which is assumed h1 which is
+what we want
+alright so to close down windows you
+want to do this as much as you can
+because you'll have more space to work
+with
+let's close down the library control
+command 1 command 4 to close the
+inspector command 4 to open it up again
+and then command 5 is for the video and
+audio effects like transitions and that
+and sometimes it's better to just have
+it closed until you need it
+command 5 to close that alright so let's
+see here there's a bunch of dead space
+here this is where I began talking so
+one of the things you need to learn
+about is keyboard shortcuts try to use
+them as much as you can so we don't have
+to use
+our mouth so try to keep this mouth up
+here because if if you have your mouth
+up down here it might interfere with the
+keyboard shortcut so keep it up here so
+to go to the beginning of this video hit
+the up arrow key and now to fast-forward
+hold down the shift and the right arrow
+key and it'll fast-forward to the right
+now to move one frame at a time just hit
+the right arrow key I want to bring the
+video clip over to the right so hold
+down the option left bracket key and it
+moves everything to the right now let's
+say I want to make cut now let me move
+forward in this timeline and I want to
+make a cut here because there's death
+space so instead of hitting the or
+grabbing your blade to just hit command
+V it makes a cut there now to fast
+forward shift right arrow key or shift
+left arrow key to fast-forward to the
+left now let's drag the clip again to
+the left or to the right actually option
+left bracket key and you can do the same
+thing let's say I'm gonna do fast
+forward I'm gonna make a cut here
+command B or command Z to undo whenever
+you mess up shift alright lets me let me
+make a cut here command B and then I'm
+gonna move to the left shift right there
+we go and I'm gonna bring the the clip
+to the left so option right bracket key
+it brings everything to the left so
+that's how it works
+if you want to zoom in command + command
+- command + to zoom in command minus to
+zoom out you can also use let's see if
+I'm really sumed in here and I want to
+do a fast zoom out shift C and I'll
+bring all the timeline into view now
+that we have that let's move on to color
+grading - color great faster I like to
+use an adjustment layer and I'll link to
+a video where you can get an adjustment
+layer so ctrl command 1 to open our
+library and here's the custom adjustment
+layer you can drag this over and we're
+gonna be applying the color grade to all
+of our footage
+using this adjustment layer alright
+command 6 to open up the colors wheels
+there it is
+control command 1 to 2 close that down
+the other thing down command 7 is to
+open up these scopes which I use a lot
+now I'm not gonna go over color grading
+that's a whole different topic and I can
+spend you know 20 minutes just explain
+it so I'll link to other videos check
+out this videos here and also I'll leave
+some links in the description so you can
+check out how to color great so
+basically the idea is to add some color
+grade here to add more contrast
+there's our highlights I can add
+saturation there and our image is
+already looking better so you can check
+this to see the difference I shot this
+in NASA log 2 which is a flat picture
+profile so you know you just have to do
+some tweaking to it to get the colors
+out alright so come in command 7 to open
+up scopes you can also change the view
+to the vectorscope and different
+waveforms a histogram and all I don't
+use a histogram that much I use a wave
+form in the vectorscope again check out
+the videos on how to color great and you
+can also what you do is let's say I'm
+using this setup often and I'm using the
+same lights same settings on my camera I
+can save the effects preset that way
+whenever I come back to edit something
+to color grade I can just select this
+preset in it'll automatically color
+great for me so I already have some here
+folder which I use often whenever I'm do
+using this setup because I save time
+with the color grading so think about
+that whenever you're you're shooting
+anything try to use the same settings
+and have the same repeatable workflow
+that way it speeds up your editing
+process lastly I just want to go over
+some very helpful keyboard shortcuts
+which are gonna help you save time again
+let me close the scopes and let me close
+the inspector so to add a title is ctrl
+T whenever you're editing editing a
+title make sure your playhead is over
+your title command for again to open it
+I am always opening and closing the
+inspector and all those windows
+and you go here to change the text you
+probably already know that and you can
+also make a copy of this title by
+selecting it holding down the option key
+and dragging it over sometimes you need
+to create multiple titles and that makes
+it easier to create copies at the same
+title to add a transition between two
+Clips like I have here make sure that
+this is selected command T to add the
+default transition and we zoom in here
+you can see we can drag this make it
+shorter make it longer that's up to us
+to decide also whenever let's say I'm
+doing key framing like this how this
+title let's say I wanted to slide it in
+you go up arrow key to go to the
+beginning and we're gonna add some key
+frames here you can add it to the x-axis
+so we add a keyframe there and let's
+move it out of place there we go now
+let's move forward like ten frames shift
+right arrow key chef's shift arrow right
+arrow key we move ten frames and then
+let's not add another keyframe and let's
+go to the center by hitting the zero
+enter so if we play this it moves you
+see that and if you want to change the
+key framing you can do control V select
+the title clip control V and it will
+show us the the animation so we can drag
+this keyframe to the to the left you
+want if you want it to slide in much
+faster so play it you see that or if we
+want it to go really slow you see that
+so that's really neat to do that you can
+always say oh I don't like this this
+title at all I just want to get rid of
+it you can just select the V button and
+it'll you know disable it because let's
+say you change your mind and you want to
+come back to it so that's an option I
+want to show you two more things before
+I end this video one of them is how to
+crop in so let's say I want to make a
+cut here again let's not use our
+playhead let's move to the left make a
+cut here command B and I want to zoom in
+to this video on a scale and we could go
+to the inspector and
+use the sliders over here but personally
+I like to use this here and what I like
+to do is actually zoom out maybe like 25
+percent and then I can just drag this
+over and what I'm doing is zooming in or
+copying the image actually not actually
+cropping but zooming in and then I can
+reposition this wherever I want I can
+zoom out if I needed to I just flip the
+image I don't want that and just
+reposition it and make sure that these
+lines or that my video is not
+accidentally cropped in the wrong way
+otherwise we're gonna have black bars so
+that's why I like to soup mount just to
+make sure my whole video is taking over
+the the space I have set okay so that
+looks good click done you can go back to
+fit and there you go I assumed in from
+this to this I assumed it that's pretty
+neat the other thing you can do is
+create a freeze-frame sometimes let's
+say you want to just freeze part of your
+screen you can select it make sure your
+playhead is where you want it to be go
+to edit add freeze frame and here it
+just froze up this image and you can
+extend this or make it shorter it's up
+to you so that's something that you
+might use once in a while it's good to
+know about it so those are the major
+things I use and I like to keep it
+simple and fast and those are the things
+whenever you can try to learn the
+keyboard shortcuts like for the freeze
+frame is you can see here it's that's
+shift F I think that's shift let me see
+no it's that means option F there it is
+it's option F so whenever you can like I
+said have those in mind or right in
+somewhere so you can quickly refer to
+them and eventually they become a habit
+and you can edit much faster alright so
+those are the features I use most often
+I know there's a bunch of other stuff
+but this is the stuff that I find the
+most useful and that I use almost every
+time I sit down to edit so please let me
+know if you have questions any comments
+anything you I wasn't clear about please
+let me know down in the comments
+action also if you liked this video
+please let me know by hitting the like
+button if you haven't already subscribed
+please go ahead and do so because I'm
+making videos like this every week and
+you don't want to miss it
+as always guys I want to thank you for
+watching and I'll see you on the next
+video
+[Music]

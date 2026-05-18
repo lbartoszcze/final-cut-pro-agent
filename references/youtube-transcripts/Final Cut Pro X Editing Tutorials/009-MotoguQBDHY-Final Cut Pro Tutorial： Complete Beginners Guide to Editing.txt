@@ -1,0 +1,3407 @@
+welcome to the complete guide to editing
+inside a final cut pro 10 for beginners
+so if you're brand new to this software
+then this is going to be the perfect
+video for you i'm going to walk you
+through everything that you need to know
+to get started so you can start making
+videos in final cut pro 10. this is
+definitely a video that i wish i had
+when i was starting out this would have
+saved me so much time if i could have
+watched a video like this in this video
+i share a lot of practical tips for
+editing not just do i show you how to
+edit but i actually share with you how
+to edit faster tips for improving your
+editing and i show you some really cool
+effects that you can do inside of final
+cut pro 10. so we all know this is a
+paid for software and i want to show you
+all the cool things that you can do in
+this as a beginner to really utilize
+this program i'm going to show you how
+to color grade your footage to make it
+look better as well as editing audio to
+make your audio sound as good as
+possible with that all being said let's
+get right into the master class you
+gotta just press record hey guys my name
+is noel noel with think media now make
+sure you like this video and save this
+video to a playlist so that you can
+always come back to this video if you
+need to i'm gonna cover a whole lot in
+this video and you're probably not gonna
+pick up every single thing the first
+time watching this video it's going to
+take practice and you may need to come
+back and refer to this video so save it
+to a playlist and we could just hang out
+again now in this first section of the
+video i'm going to show you how to open
+up final cut pro 10 how to actually
+start a project and get your footage
+inside the software i'm gonna give you a
+little virtual tour of final cut as well
+as some basics to start editing video so
+let's get into the first section where
+we cover all of the basics right now now
+before we even open up final cut pro we
+do want to get our footage whether
+that's on an sd card or your phone onto
+your computer so if you do have an sd
+card which looks like this you can plug
+that into your computer if your computer
+does not have an sd card slot you can
+get an adapter we'll have links for all
+these resources in the description down
+below if you have something like an
+iphone you can actually airdrop it
+straight onto your computer but you want
+to stay organized so we're going to
+create a folder on our desktop right
+here and i actually have an sd card so
+this is my sd card right here i'll go
+into dcim and right here i have some
+fuji footage over here and just on my
+computer in my movies folder i have
+think media videos and i'm gonna create
+a brand new folder and we're gonna title
+this uh final cut tutorial obviously for
+your name you can name it whatever you'd
+like that's easy to remember for the
+project that you are working on at this
+point we are going to select the footage
+from our sd card which is over here i'm
+going to hold down shift after selecting
+the top one and then select the bottom
+one i'm going to drag that over my final
+cut tutorial up here we get this loading
+bar it's going to take a few minutes to
+copy all our videos over onto our folder
+and then up next we are going to import
+that into final cut pro x the reason i
+like to do this is kind of as a backup
+so having the actual videos on your
+computer if something does go wrong and
+you happen to lose your footage somehow
+or you accidentally delete it then you
+still have those original files on the
+sd card and you can easily re-link those
+inside the software so that's why i like
+to always copy my footage onto my
+computer first or you can use something
+like a samsung t5 hard drive and you can
+edit straight off of that but to keep
+things simple we're just going to keep
+everything on the computer all right now
+that our videos are in our folder we can
+actually open up this folder make sure
+they're all in there and what we can do
+too is make a new folder and we can
+title this videos and that way maybe
+when we download some music and we want
+to add that into our project we can
+always come back to this folder we can
+make a new folder called music we can
+put all our music in here we can do the
+same for images maybe one for b-roll and
+a-roll if you want to separate your
+videos but this keeps everything
+organized and that's what i do for my
+projects is i have different folders for
+all my assets in the video so having
+those folders really keeps me organized
+if i ever go back to that project i
+don't have missing files so it's
+definitely something you want to get in
+the habit of doing now let's open up
+final cut pro x if you just downloaded
+it or installed it or if you want to you
+can get a 90 day free trial we'll have a
+link in the description when you first
+install it you're going to want to go
+down here and open up your launchpad on
+your launchpad you are going to see your
+app somewhere over here mine is on the
+second page right here and if you want
+to bring it down here you just can drag
+it and this will put it inside of this
+little dock so that way it's easy to
+access you can just go down here and hit
+final cut pro and double tap it and this
+is going to open up the software now
+this is what it looks like when you
+first open it up and the first step to
+do to import our footage is create a
+library on this left side over here we
+see that this is where a library would
+go but since we don't have one we're
+gonna go to file we're going to go to
+new and we're going to select library
+for the name i just like to leave it as
+the same name as my project so i'll just
+do you know final cut tutorial it
+doesn't even have to be the same it
+doesn't really matter but to keep
+organized we are going to place it in
+the same folder so in movies and think
+media videos i'm going to add final cut
+tutorial and i'm just going to put it
+inside of this folder we'll hit save and
+now if i go back to that folder you are
+going to see that we have a library
+right here this library is going to hold
+everything so if you ever need to get
+back in there and edit you can actually
+go right in here you can double click
+this and it's going to open up that
+library with the videos that you have in
+there right here is where you have an
+event and this is where you're going to
+upload some of that footage we click on
+it once we can rename it and we are just
+going to call this fuji footage and that
+way i can upload all my fuji footage in
+here and it's really easy to know that
+this is where my fuji footage is with
+that selected we're going to hit import
+media and this is going to open up our
+media import tab i'm gonna find my
+footage by going to nolan mold then
+going to movies and then think media
+videos right here is my final cut
+tutorial and if i select that it's
+actually just going to import everything
+inside of this folder obviously the
+library can't be imported but i do have
+my video in there so i'm just going to
+select that and then over here we have a
+lot of options on this right hand side
+we can see right here that it's going to
+add to our existing event fuji footage
+which we just made and then as far as
+files go you want to leave files in
+place if you copy to the library your
+library is going to get very large and i
+actually just like to keep everything
+separate and in my own folders and so
+this is the way i do it to stay
+organized if you copy it to the library
+you can do that as well but things seem
+to be a bit less organized when i do
+that as far as keywords go we can leave
+both of those checked and then for
+analyze video i like to leave both of
+these unchecked for transcode under
+optimized media if you have some weird
+file sizes this is going to make it more
+compatible with final cut pro by making
+it a pro res file or you can create
+proxy medias which is what i like to use
+so if you have a slow computer you can
+create a proxy media and basically it's
+a low resolution file size and so it's a
+lot smaller files and they run a lot
+faster on your computer and then you can
+sub those out when you start editing and
+then when you go to export your final
+project you basically replace your
+hi-res whether it's 4k or just even 1080
+and then your final edit is going to
+have those original files back in place
+but it makes the editing so much easier
+and so much faster especially if you
+have a slow computer so i'm going to
+select create proxy media and for my
+codec prores proxy is going to work fine
+h.264 will work as well but i like to
+use the prores proxies frame size i'm
+going to leave at 50
+and after that we're just going to hit
+import all now we can see that we have
+footage inside of final cut pro and up
+here we have a loading bar so if we
+select this this is actually going to
+show us the background tasks that are
+happening right now there is transcoding
+and analysis that just means that it's
+creating the proxy files for us if we
+click this down it's transcoding making
+the proxy clips for each of these clips
+right now now as that runs in the
+background we can carry on now in order
+to start editing we need a project so
+events are kind of what carries your
+music your pictures your videos and your
+project is your edit it's where the
+videos and all the files will go into
+you'll mess around with them and that
+project is what you'll export and again
+the library is what holds everything to
+create a new project we'll go to file
+new and select project for our project
+name i'll just name it final cut
+tutorial it's going to be in the event
+fuji footage which is perfect for me and
+for video i'm going to leave it at 4k
+but if you shot in 1080 then hit 1080p
+hd but for me mine is in 4k and this is
+the correct resolution for frame rate i
+actually shot in 23.98 frames per second
+uh rendering codec all this stuff is
+fine color space is fine audio all that
+stuff you won't need to touch from there
+you'll hit ok and right up here you'll
+now see we have a project also down here
+we can now move this playhead because we
+have a project and this is our project
+timeline this is where we are going to
+edit everything back up here in the
+vents where we have our videos you can
+see we can scrub through here and this
+is going to allow us to view this
+footage even before we add it to our
+project if you scrub over your video and
+hit the space bar this is actually going
+to play it for you so let's say all
+right this is the clip i want to use you
+can either select it once and drag it
+into your timeline or let me delete that
+now let's say you just want to use the
+second half of this clip you can
+actually drag this and just bring down
+that second half of the clip or what you
+could do is just bring the entire clip
+down and trim it down here while it's
+already in the timeline if you hold down
+shift you can select all your clips and
+just throw those in the timeline and
+edit it from there i do this a lot of
+the time i just throw them all in and
+then i start editing inside of my
+project with some videos on the timeline
+if you select one of these clips over
+here we have our effect so if this is
+not popping up yet you can click this
+button right here and that's going to
+bring up your effects if you want to add
+a transition you can actually click this
+one and this is going to be your
+transitions and it's as simple as
+dragging and dropping so let's say we
+want to use this cross dissolve i'll
+drag this over the second clip and right
+now it's going to say there's not enough
+extra media just hit create transition
+and this is going to transition a cross
+dissolve between the two clips
+and if you want to delete that you can
+just select your transition and hit
+delete and that's going to get rid of
+that transition back over here on
+effects you can do the same thing you
+can drag an effect right here and now
+you have a 50s tv effect and if you want
+to delete an effect you can select your
+clip up here in the right hand corner
+this is your properties right now at the
+top we see effects we can just select
+50s tv and delete that so over here on
+the right hand side this is all your
+information about your clip or maybe
+your audio so you can see over here we
+can mess with our opacity we can change
+that uh transform is like the
+positioning and so you can move that
+around you can also scale your image by
+dragging the slider or you can select
+the scale and maybe you want to make it
+200 you can do that as well now what i
+like to do what i think is a lot easier
+is right down here we have this little
+drop down menu you can do a transform
+tool and this is your scale right here
+you can move the positioning around you
+can scale it up or down you know do
+whatever you want to do with that to
+reset this all you got to do is go back
+up here and hit reset and that's going
+to put everything back to normal for
+your transform tool if we change this to
+crop this allows us to crop in on an
+image or crop out on an image and trim
+allows you to actually trim off an image
+so if you want to make it more of a
+square image add something else in there
+you know you can do that with trim
+another important thing to look at on
+this viewer window is this percentage
+right here so we have the 70
+if we want to make that 50
+this actually isn't changing the scale
+or anything like that it's just changing
+the size of it inside of our software so
+if i want to make this as big as
+possible for this window i would just
+hit fit and that is going to fit it in
+here so as i move these around if i want
+to make this bigger this is just
+automatically going to make it smaller
+for me or make it bigger if i make the
+window bigger so to recap down here is
+where we are going to edit our project
+up here is all of our videos so to
+actually get these onto your project you
+have to bring them down into the
+timeline but this is where they all are
+so if i delete some of these they are
+still going to be up here they're not on
+the project they're not on the final
+video but it's not like i'm deleting
+them out of the software if i want to
+put them back in i can by just dragging
+it back onto the timeline over here we
+have our event as well as our library
+and you can create new events if you
+want to maybe you have like a part two
+or day two and you wanna separate the
+days uh you could do that by just naming
+it day two and then you have a brand new
+event so if you see no footage you might
+be on the wrong event you need to go to
+a different event where you have your
+project you have your other footage but
+this also allows you to organize things
+inside of final cut if that makes it
+easier for you typically i just keep
+everything inside of one event so i have
+nine clips in my events folder right
+here and i'm gonna drag all of these
+onto my timeline i'm holding down shift
+and select this last one i'm just gonna
+simply drag those and now i have all my
+videos inside of my project i'm gonna
+zoom in a little bit here so i can see
+what's going on to do that you can hit
+command plus button or if you hit
+command minus button this is going to
+zoom out now editing is as simple as
+removing clips and keeping the good
+stuff so that's what we're gonna do
+first we're gonna go through and start
+removing some of the pieces that we
+don't want in our final video so to hit
+play so far on my video i'll hit the
+space bar i'm just looking at the camera
+kind of getting ready to talk and if i
+zoom in on this clip right here you see
+these audio waveforms down here this is
+when i start talking and this is when i
+want the video to start when i actually
+start saying stuff also you might notice
+there's this black vignetting on these
+corners on this camera i'm going to show
+you how to fix that how to kind of crop
+in a little bit we'll do that next but
+first this is what you're going to use
+most of the time which is your blade
+tool to pull up your blade tool you can
+go over here and you can select the
+blade or you could hit b but this is
+kind of your tool so you have select you
+can trim position range selection but i
+just like to learn these shortcuts and
+so i will hit b and you can see right
+here now my cursor is a blade all you
+have to do is select where you want to
+make your cut and when you click on that
+you can see that there's now a splice
+right in between these videos so now we
+have one cut in the video kind of making
+it two videos so we can select this
+first part and if we hit delete now the
+beginning of this video starts when i
+start talking let's go to the end of
+this clip and do the same thing over
+here so i'm talking and this is where
+i'm going to end it now if you hit
+command b this is going to make a cut
+for you right where your playhead is and
+so this right here is the playhead so
+where your playhead is is where it's
+going to start playing your video so
+with over there i hit command b and this
+is what happened i'll select the second
+half of the clip and i will delete that
+now that right there is a big piece of
+editing just kind of getting rid of the
+parts that you don't want and keeping
+all the good stuff another thing you can
+do here if you want to extend this clip
+or maybe shorten it is hover over the
+end of the clip and you're going to see
+this trim tool now if you hold down if
+you click and hold down you can drag
+this to the left to start cutting off
+more of this clip on the left if you
+want to extend it you can drag it to the
+right now if i want to do the same thing
+on the right clip i'm going to slightly
+move it to the right and now you see
+that bracket has flipped now this means
+i am trimming this right clip so i can
+extend it to the left but this red
+marker lets me know this is the
+beginning of the clip so i'm going to
+start cutting everything out that i
+don't want and i want it to start right
+there let's bring this clip back and
+that is allowing you to trim those so
+that you can extend them shorten them
+lengthen them do what you want with that
+i use that tool a whole lot as well now
+let's say i want this clip actually to
+go first before this very first clip all
+you have to do is select the clip you
+want to move you can drag it and we're
+going to drag that right in front and
+now everything kind of snaps into place
+now this clip is going to play first and
+this clip is now going to play second
+now let's say we want to add an effect
+over here we have our effects window and
+let's say we want to add the camcorder
+so i'm going to drag that onto this clip
+here and now you're going to see that we
+have this camcorder effect just by
+dragging that now if i select this clip
+over here in the inspector tool we can
+mess with the amount of this effects
+being added we'll leave that at 100 you
+can change the text to whatever you want
+to say let's say think the size all this
+stuff is adjustable so if you ever want
+to adjust something go over here into
+the effects tab make sure you have your
+effect selected and then you can mess
+with some of these effects now let's add
+a transition so i'm going to go over to
+my transitions by clicking this and we
+are going to let's say this circle one
+we are going to drag this right in
+between these two clips now let's play
+it through and see how it looks
+so it's pretty cool but let's say i want
+to speed it up and make it a faster
+transition all you need to do is trim
+and shorten up that transition so with a
+trim tool just like we were making a
+clip shorter we're going to use this to
+make our transition sorter so with the
+bracket facing the right way to the left
+we know that we are selecting this uh
+transition so we are going to bring that
+in and that brings in both sides for us
+now it's a quicker transition and if you
+want to make it extra long you can drag
+that out and this now has your
+transition being extra long
+now let's say you want to move the
+transition a little bit to the left or
+the right so it starts earlier or maybe
+it starts later if you hover over the
+middle you can actually move this
+transition let's say we want it to start
+sooner this is going to cut off what we
+were just having but let's say we wanted
+to cut off that anyways that's how you
+can move the transition within the clip
+to play earlier or later let's say we
+like it right here but we don't want all
+this dead space all you need to do is
+hit b to bring up your blade tool we are
+going to cut right there then we're
+going to delete this clip and now it's
+going to start when i start talking all
+right let's get rid of this vignette
+that i was telling you guys about the
+dark corners all you got to do is crop
+in so with your clip selected if you go
+right here we are going to change this
+from trim to crop now i can actually
+crop in on my clip so i'm going to make
+sure that this vignette is not showing
+by zooming in a bit and then we are
+going to reposition where we want it
+when we're done we're going to hit done
+now we've actually cropped in on the
+image so that we're not seeing the
+vignetting and you can crop in on any
+clip i use this a lot to kind of crop in
+on my face crop it back out so this is a
+great tool to use and to know how to use
+now if we want to mess with the audio
+and make the audio louder on this
+specific clip we can hover over this
+line right here if we hover over this
+line we are going to see 0.0 db this is
+the standard the neutral place for your
+audio to be at so as you import any sort
+of audio as you import any sort of video
+it's going to start at 0 db you can then
+add plus 2 plus 12 db minus 12 db you
+can mess around and add or take away
+from the volume so we are going to
+increase the volume i'm simply just
+going to drag up this line right here
+and this is going to actually boost up
+those waveforms you can see that now it
+says 5 db and if you don't have your
+audio waveforms right here all you got
+to do is select this and this is going
+to bring them up for you so now when i
+play my clip it's going to be louder
+than it was before and if i want to
+completely silence it i can bring that
+to zero you can see there's no audio
+happening right here and then i can
+bring the audio back up i'm like okay i
+want it right around
+9 db perfect this is exactly where i
+want it and that's how you can adjust
+the volume now if we want to add text up
+here we have our test and generator so
+i'm going to select this we have titles
+and we have generators generators are
+kind of like backgrounds is how i would
+explain them so one i use a lot is just
+a custom which is a color and then from
+here we can change the color to whatever
+we want so let's say we want the color
+to be white i'll drag this like that now
+i have a white background and i can add
+text to this and so we'll go over to
+titles now these different titles have
+different effects we can see this one is
+dramatic and if i hover over from left
+to right we're going to see kind of the
+effect that it does and if you like one
+you can simply drag it onto your clip
+clearly it's a white text over white
+background so we can't see it so what
+we'll do is first let's change the face
+which is going to be the color and so
+we're going to hit show and we are going
+to change the color to let's change it
+to a blue now if you want to change your
+text you can just double click on title
+and this is going to highlight
+everything for you now we have this text
+bubble popped up so we'll change this to
+think media and now let's play this
+through to see how it looks
+now the one i typically use is just a
+custom and this is just your basic text
+so let's change this text to black and
+now up here we have this text so we can
+change this to think media we can change
+the font if we want you can move around
+by dragging this here you can also
+change the font size mess with any of
+the properties all under here under this
+properties tab back on the timeline if
+we just want to delete a clip i'm like
+okay i don't really want this in there
+you can select the whole thing you can
+delete this and then up here if you want
+to use it again you can bring it back
+you can see that there's an orange
+underlined this means i'm using the clip
+right now on my timeline this makes it
+really easy to see the clips that you
+haven't used yet and so i can hover over
+it and see if i want to bring that back
+in so if you delete something in your
+project it's still going to be there in
+your event and then from there you can
+just bring it back into your project if
+you'd like now if you aren't seeing
+these orange lines all you need to do is
+go to view go to browser and make sure
+that used media ranges is selected now
+in order to use some music let's import
+it into final cut pro first we're gonna
+right click right here and we're gonna
+hit import media i have a song on my
+desktop so i'm gonna select that song
+and then hit import selected from here
+i'm gonna drag this entire song down
+here onto my timeline we can do the same
+thing with audio that we can with video
+so if we want to trim this then we can
+do that if we want to lower the audio
+then we can definitely do that by
+bringing that down i'll then drag this
+to the beginning of the project and then
+if i want to fade in the audio so it
+doesn't start abruptly there is a little
+ball right here and if you drag that to
+the right this is going to be a fade in
+for your music and you can also do this
+on videos by just dragging these to the
+right this is going to fade in your
+audio so that doesn't start abruptly but
+it just fades in you can also fade out
+your audio by doing the same thing on
+the other end congratulations you now
+have the basics to start editing videos
+but there is a whole lot more to learn
+stuff that's going to make your life
+easier stuff that's going to make your
+videos a lot better and one of those
+things is audio editing your audio to
+sound as good as possible as well as
+learning you know how loud your video
+should be are very simple things that i
+can teach you and i'm going to teach you
+right now with the basics of audio
+editing but first i want to remind you
+that i cover a whole lot in this video
+yes this is for beginners but there
+still is a lot to go over for example in
+this audio section that we're going to
+go over i show you how to use the
+equalization to make your microphone
+sound as good as possible do you
+actually have to do this for your
+beginning videos no not really but this
+is something that you should do over
+time so once you're comfortable just
+starting to edit videos and getting that
+process these are things that i wish i
+knew when i was a beginner because these
+are things that are going to level up
+your audio your video all this stuff as
+quick as possible but with that being
+said let's jump right into audio editing
+now before we get into this tutorial
+it's definitely recommended to wear
+headphones when you are audio editing
+typically your headphones are going to
+be so much better to listen to audio
+than something like a built-in computer
+speaker or a monitor speaker most people
+don't have expensive speakers but they
+do have some headphones laying around so
+plug those in and that's gonna be better
+off for you to start editing your audio
+so here in final cut pro 10 you can see
+that i do have some clips down here and
+we are going to be editing the audio of
+these video clips to make it sound as
+good as possible i'm going to walk you
+through everything that i do step by
+step so you guys can see exactly my
+process not saying that my process is
+the best process but if you are a
+beginner i promise you you are going to
+learn a few things here that are going
+to make your audio sound a lot better so
+stay to the end of this video so you do
+not miss out but the first thing that i
+like to do is actually the eq now this
+is something that i didn't do for a long
+time because i was just kind of
+overwhelmed with it and to be honest i'm
+not a professional when it comes to
+doing this so i'm going to show you what
+i do and i'm going to try and teach it
+in a basic way that a beginner could
+follow and understand and practice some
+of this stuff in your own video so let's
+get right into it first thing we want to
+do is to select a clip that we want to
+edit so i'm gonna go ahead and select
+this first clip and if we hit play we
+can hear that the audio link to this
+audio right now then you are hearing me
+sounds fine but it's a little bit low we
+are going to fix that next but i am
+going to adjust the eq first and then
+you'll see why i do that first later but
+what we do is we go up here and we are
+going to see this little sound mixer box
+this sound mixer box if we click this
+it's going to open up see equalization
+it's going to open up this window right
+here this is called the graphic
+equalizer right now it's set to flat and
+you can see that each point is set to
+zero decibels now if i raise this point
+which is 32 hertz this is going to be 12
+decibels and that's going to raise that
+lower bassy frequency up higher so that
+it's louder or i could reduce that to
+negative 20 db and that is going to make
+it very very quiet so each of these
+decibels are related to a different uh
+hurts a different frequency dragging
+them up are going to emphasize that make
+them louder dragging them down are going
+to get rid of that now the reason i use
+this is to actually make my audio sound
+better so i adjust these up and down and
+it can actually make your microphone
+sound a lot cleaner a lot smoother and
+sometimes when recording on dslrs or
+mirrorless cameras it just doesn't sound
+full it doesn't sound super good and
+actually just messing with this a little
+bit can make your voice sound a lot
+cleaner and honestly can really make a
+cheap microphone sound expensive if you
+get this right like they can sound
+really really good if you mess with
+these settings correctly now what i like
+to do is actually set this first clip on
+a loop and it's really simple to do this
+you need to make sure that your loop
+playback is on all you got to do is hit
+command l and that is going to turn it
+on or if it's already on that would turn
+it off but command l to turn it back on
+and then instead of hitting the space
+bar for play like we always do we're
+going to hit this forward slash button
+hitting this button is going to play it
+and then put it on a loop so that it
+goes over and over again and as it's
+playing you're going to see me do a few
+things here you're going to see me
+moving this up and down seeing what
+sounds better now typically voices don't
+fall in this range or in this range it's
+usually in that middle range and so
+these i might be able to move around a
+little bit but i won't really notice
+much until i get into this range of the
+eq another thing i'm looking for here is
+the background ac unit there is a noise
+removal plug-in that i'm going to show
+you guys how to use but actually messing
+with this i might be able to find that
+maybe the ac is on a specific
+channel frequency and if i pull it down
+it's going to get rid of that so i'm
+looking to get rid of some of those
+unwanted noises by lowering the
+frequency and then i'm looking to kind
+of mess with the rest of them to get my
+voice sounding as clear and full as
+possible so we're gonna go ahead and
+loop this and then i am going to mess
+with the eq
+if you're listening to this audio right
+now then you are hearing me edit this
+audio to make it sound better if you're
+listening to this audio right now then
+you are hearing me edit this audio to
+make it sound better so right here you
+can see as i pulled this up it's
+actually increasing the ac unit in the
+background so i definitely don't want to
+do that and by the way you never want to
+boost any of these up to 20 decibels i
+usually boost them if i'm going to boost
+them around the six decibel mark
+but you do not want to go that high but
+the reason i'm doing that now is so i
+can hear it better and i go okay this is
+where the ac unit is falling in
+and so these are the kind of things that
+i'm listening for while editing
+make it sound better all right now in
+this channel i'm also really getting
+that ac unit as well i'm going to hit
+play so you guys can hear that now then
+make it sound better now instead of just
+reducing this all the way to get rid of
+that noise this ac unit sound is
+actually tied to some of the same
+frequencies as my voice so it's gonna
+sound a bit funny if i just pull this
+all the way down you're listening to
+this audio right now it sounds pretty
+dead my voice kind of sounds like it's
+coming through a telephone or a
+walkie-talkie so this is where you
+really have to kind of play back and
+forth go through it a few times and see
+what's going to sound best because you
+want to take away some of those noises
+you don't want but you also want your
+voice sounding really nice
+you are hearing me edit this so in this
+channel i feel like as i pull it up i'm
+starting to get that walkie-talkie
+telephone effect again and it's making
+my voice just sound a lot less
+full and so bringing that up i
+definitely don't want to do i'm going to
+leave it at zero i could even bring it
+down a little bit if i don't want that
+but for now i'm gonna leave it at zero
+and move on to the next one
+make it sound better if you're listening
+to this audio right now then you are
+hearing me edit this audio to make it
+sound better if you're listening to this
+edit this audio to make it now once i've
+gone through i made some simple
+adjustments i'll put it on loop and i'll
+kind of click it on and off to see how
+it sounds if it's if it's starting to
+sound worse then i'm doing something
+wrong if it's starting to sound better
+i'm on the right track what i'll do is
+i'll go back through these again and
+i'll start to just tweak them little by
+little until i get something that i'm
+happy with you are hearing me edit this
+you are hearing
+so i definitely feel with it on i am
+getting less of that ac unit sound in
+the background and i feel like my voice
+is a little bit fuller there's a few
+things i can tweak here so i'm going to
+play it through a couple more times and
+just make some small tweaks to the eq
+audio now it's just a subtle difference
+but i do definitely think this sounds a
+whole lot better and so i'm pretty happy
+with how this is sounding once i'm done
+all you got to do is hit that x and this
+is going to save everything so i'm going
+to hit x and now what i can do is i can
+see over here and turn off and on just
+from this tab right here if i do want to
+go back in and make some changes i can
+click on that sound board again and this
+is going to pull up the same window now
+one thing that i like to add here and
+there i don't use it all the time but i
+do really like using it and it's helped
+me a lot and that's the compressor now
+to find it if you go to the effects tab
+by clicking on this you are going to see
+that it's set to video but if you scroll
+down you are going to see audio and it
+says all we can click on that and from
+here we can search for compressor you
+can drag that onto your clip now watch
+what happens to the waveform when i let
+go it's going to boost stuff up now the
+compressor is really good for boosting
+up low ends where stuff is quiet and
+it's also good for not clipping those
+high ends it tries to keep everything
+together more level so here's a great
+example when i was shooting my how to
+vlog video with my wife we had one
+shotgun microphone right in between us
+but i just talked a little bit louder
+than her so her audio was a lot quieter
+and so when i threw the compressor on it
+brought her voice up so that we were at
+about the same audio level and that i
+wasn't much louder than her but we both
+had that same loudness now there's a
+whole lot that you can do with
+compressor if you open up the parameters
+you can mess with all these and see
+what's going to sound best for you
+typically what i do sometimes is just
+leave it how it is now this is the
+beginner's tutorial so i am not going to
+touch anything but you can see here even
+the audio form looks a lot uh like a lot
+more level it doesn't look like the low
+parts are as low so if i listen to this
+back things are going to sound a lot
+louder that work quieter and so you can
+hear what that sounds like if you're
+make it sound better now again i don't
+always love using the compressor because
+what i found is sometimes when you are
+quiet and it boosts stuff up it can
+boost up that background noise like the
+ac or other things like that so
+definitely something to experiment with
+but it can be a lifesaver like it was
+for me on that video with my wife and
+ended up sounding really really good for
+this clip i'm actually going to remove
+that and my next step that i would do if
+i was editing this is to set my audio
+levels i like to do the compressor first
+because that kind of messes with that
+but setting the audio levels is really
+simple all you need to do is drag this
+up and down so you can see if i drag it
+up to 12 db that's going to make it as
+loud as possible or if i drag it down
+that is going to make it quieter now
+when setting your audio levels you want
+to make sure that nothing is clipping
+above this 0db
+audio levels right here so if i play it
+through i'm going to see where this is
+falling i want it to fall right around
+negative six uh even if it goes up above
+that that's fine as long as it doesn't
+pass over zero if you're listening to
+this audio right now then you are
+sound better so it sounds pretty good i
+honestly could increase that to uh you
+know seven or eight but if you notice
+something right here right right when i
+tried to pull that up it just jumped up
+to twelve well what you can do to do
+precise adjustments is hold down the
+command button and then when you do this
+i can go from six to seven to eight
+pretty easily because it slows
+everything down so i'm gonna go ahead
+and move that to seven and that is a
+nice little hack that you can do one
+other thing you can do is go up here and
+you can actually just change your db by
+typing this in if i want to go to 7.5 or
+something you can do that
+and you can also drag this as well i'm
+going to leave mine at 7 db i'll do one
+last check make sure it's not clipping
+in this beginning part where it's nice
+and loud and it looks perfect the next
+thing that i might add is a noise
+removal this can help get rid of that
+background noise and so if i go up here
+and i go to my audio analysis tab and i
+click show this is going to give us some
+more options and you can see right here
+it says noise removal if i click that
+it's automatically set to 50 and
+typically this is a bit too much i find
+that it kind of distorts the voice too
+much it just doesn't sound the best so
+we're gonna hit play and see how this
+sounds at fifty percent you're listening
+it's actually taking away from the
+quality of the voice and so i am going
+to bring this down
+even though it did get rid of that
+background noise and it's just my voice
+you don't hear the ac at all
+it's not worth it because it just
+doesn't sound as good if you're
+make it sound better now then you are
+sound so what i found is right at 30 for
+this clip uh specifically it gets rid of
+that background noise without messing
+with my voice a bunch and again i don't
+even use this all the time because it
+can mess with your voice so much and i
+actually have a video on how to record
+your audio with no background noise so
+definitely check that out by clicking
+the link in the description that's going
+to save your life because you do not
+want to be using this noise removal but
+if you get into an instance where you
+might need to this is always there to
+help save you if you need it so let's
+say that we like this audio and we want
+to copy and paste it to all the clips in
+the timeline what you can do is you can
+click your clip you can hit command c
+and then if you select both your other
+clips if you hit shift command v this is
+going to be paste attributes now the
+other clips already have a color wheels
+and a hue saturation on them i just want
+to copy over these audio attributes so
+i'm going to deselect everything on this
+side and from this i can copy and paste
+all this which looks great i'll hit
+paste and now all my clips are going to
+have the same audio everything that i
+just changed on that first clip is now
+on all my clips so i just drag some
+music into my timeline and i have a few
+more tips for you guys that's going to
+help a lot with your videos and so first
+off one major mistake that i see a lot
+of people do is they add in their
+background music way too loud and so i
+like to start by bringing mine down all
+the way to about negative 32 decibels
+now really this is just by ear and
+hearing how it sounds with your video
+and obviously if like the chorus or the
+drop happens in this in the song that
+might need to come a little bit lower
+but you just want to listen to this and
+honestly i tell people you'd rather
+under do it than overdo it because i've
+clicked off videos before where the
+background music was just too loud and
+it's annoying so again you'd rather just
+bring that a little bit too low than a
+little bit too high if you're listening
+sound better now i can't even hear that
+music so i'm going to actually bring
+that up what i've noticed is that
+usually the chorus or the loudest part
+of the song that is going to be around
+negative 32. sometimes these beginning
+parts in in the video can be anywhere at
+negative 16 negative 12 really just
+depends on the song but that's just
+something to listen for as you're
+editing the music if you're listening to
+sound better now like that sounds pretty
+good right at negative 20 db it's just
+in the background it's not overpowering
+but we can see here as it starts to get
+louder i'll show you guys how to
+actually make that quieter so let's say
+actually right at this part right here
+we want to boost this part of the song
+maybe there's going to be some b-roll or
+something cool is happening and there's
+no one talking so we just want to
+increase the audio of the music so that
+it kind of takes over the video now how
+you do this is you can hit r and this is
+going to bring up your range selector
+and once you select how much you want of
+this song to increase you can then drag
+it back up like this most people want to
+bring it to zero because that's how it
+just imports as zero decibels but that
+actually is going to be too loud because
+when i'm talking you know how we
+recorded stuff and it ends up being
+around negative six decibels well that's
+what i found is that you don't want your
+music really going over negative six
+decibels sometimes because it can just
+sound really really loud compared to
+your voice when you're talking you can
+see that i also have some keyframes here
+and you can totally move these around if
+you want it to fade in slower or if you
+want it to fade in really quickly you
+can move these closer together and you
+still can change the loudness right here
+by dragging it up and down better and a
+lot cleaner
+[Music]
+okay well i think that sounds pretty
+good again this stuff is all by ear so
+what i recommend is watching some videos
+that you like on youtube listening to it
+and hearing how their background music
+comes in is it really loud is it really
+quiet and try to match that in your
+editing so let's say this is the end of
+the video if you want to fade out the
+music right here we are going to can't
+see it right now with the playhead over
+it but right here we're going to see
+this little icon and if you drag this
+over this allows you to fade out the
+music so if i drag it over even more
+it's going to fade out even slower this
+would be a very quick fade out and so
+this is what that sounds like if you
+want to fade out the music
+now same at the beginning i usually like
+to fade in the beginning of my music
+just a little bit and you can do that at
+the beginning as well just by doing that
+you can do the same thing with a video
+clip so if i want to fade in the audio
+of this video clip you can drag this in
+as well you can do that on any clip
+audio video you can fade it in or fade
+it out now if you want to separate your
+audio if you click on a video you can
+right click and then you can detach the
+audio and this is going to allow you to
+extend this over and maybe fade it in
+and then i can do the same thing with
+this one as well and this is going to
+allow your clips to be smoother as they
+transition into each other especially if
+you're talking quick and your cuts are
+fast this is going to help from any sort
+of weird pops that might happen if
+you're like a frame off and it's cutting
+off the very beginning of your word if
+you detach your audio you can actually
+extend that so that your word or
+whatever you're saying is finishing and
+you can also use this in many ways so
+knowing how to detach the audio is a
+very useful thing just right click
+detach audio now i just found out about
+this trick this last year and it's been
+really really cool because i didn't even
+know you could do this but i've loved
+using that and that is soloing a track
+so let's say you added in your music
+maybe you have your sound effects you
+have everything in but you want to edit
+your audio you forgot to edit your audio
+and that's fine you don't have to edit
+your audio first when editing a video
+but let's say you have all the sound
+effects all this music and now it's time
+for you to do the eq adjust the levels
+well what you can do instead of playing
+this with music over it like this audio
+right now then you are hearing me you
+can either select your audio clip and
+hit v and that's going to disable this
+clip so if i play this again here right
+now then you are hearing me now all you
+can hear is my voice i can click on the
+clip i can edit the eq i can do whatever
+i want to this clip but let's say
+there's a bunch of sound effects and
+maybe a whole bunch of other stuff
+happening another way you can do this
+let's go ahead and hit v on that again
+another way you can do this is click on
+the clip that you want to solo out and
+then you can hit these headphones and
+that is going to make everything else in
+this timeline grayed out because it's
+all muted and now all that you can hear
+is the clip you have selected and you
+can also select all the clips you want
+let's say you want all the talking head
+clips just to be selected you can select
+all of those you can then hit the
+headphone icon and that's going to work
+as well the shortcut for this is option
+s so let's say i want to select all my
+talking head because i want to go ahead
+and edit that audio i can hit option s
+and that's going to disable everything
+else so when i'm editing this audio all
+i hear is my voice up next we have our
+keyboard shortcuts now this is going to
+save you a whole lot of time now i go
+over a lot of keyboard shortcuts really
+quickly so you might want to have a pen
+and paper close by to write some of
+these down but even just picking up a
+few of these is going to make your life
+so much easier and save you so much time
+so here are my favorite keyboard
+shortcuts for final cut pro 10. number
+one is to hit b which is going to bring
+up your blade tool and you can hover
+over your video and select wherever
+you'd like to make a cut to make this
+even quicker if you hit command b it is
+automatically going to cut for you
+wherever your playhead is using command
+b like this is going to make a cut on
+the layer you have selected but if you
+want to make a cut on all the layers on
+top of your playhead you can do shift
+command b and that is going to make cuts
+on every single layer where your
+playhead is at number two is to hit a
+which is going to bring up your selector
+tool and from there you can select the
+clips that you want to delete and you
+can go ahead and delete those number
+three is to hit l this is going to start
+your footage and when you hit it again
+it's going to play back your video even
+faster this makes it a lot easier to
+watch back your videos at a faster speed
+in order for you to save time when
+editing freeze frames can be really cool
+to add to your videos and it's really
+easy in final cut pro 10 all you have to
+do is hover over the spot where you want
+it to freeze you will select your clip
+and hit option f this is going to add in
+a freeze frame you can drag it to the
+left to make it shorter you can drag it
+to the right to make it longer and when
+you watch it back your freeze frame is
+going to happen and then the rest of the
+video is going to continue on once the
+freeze frame is over when making precise
+cuts in final cut pro 10 you want to
+zoom into your timeline so you can see
+everything going on usually what you do
+is you go over here you click this
+button and then you can zoom in like
+this but a much quicker way to do this
+is by hitting command plus and this is
+going to zoom into your timeline and
+then hitting command minus is going to
+zoom out of your timeline i use this
+tool all the time to zoom in and refine
+my cuts and zooming in really just makes
+it a whole lot easier right here we can
+see that our audio is pretty quiet but
+if you want to make your audio louder at
+a certain point or quieter at a certain
+point all you need to do is hit r and
+this is going to pull up the range
+selector this is going to work on an
+audio or video clip you just need to
+select a piece that you want to be
+quieter or louder and from here once
+that's selected all you got to do is
+drag up on that audio making it louder
+or you can make it softer you can then
+drag these keyframes out a bit longer
+for a smoother transition to the louder
+part of the song
+next up is shortcuts for copy cut and
+paste i use these all the time so
+knowing the shortcuts really comes in
+handy to copy you just need to hit
+command c if you want to cut you can hit
+command x to paste the clip you can hit
+command v or if you want to paste the
+attributes like the effects the color
+grade you can hit command option v and
+that is going to add everything from
+your clip to this next clip but let's
+say you want to add everything but the
+crop what you can do is hit shift
+command v and this is going to paste
+your attributes from here you can select
+what you want to copy over to the next
+clip or not so i want to add in all
+these effects my entire color grade but
+i don't want to add in my crop i'll
+select that so it is not selected
+anymore i'll go ahead i'll hit paste now
+my color grade has copied over to this
+clip without adding a crop now let's say
+you've copied and pasted all your
+effects onto all your clips in your
+video but now you're going through and
+you want to change something instead of
+going through clip by clip and deleting
+something like an eq what you can do is
+select all the clips and now you're
+going to hit shift command x and now you
+can remove attributes and so i'm going
+to select the eq get rid of that i'm
+going to hit remove and now that clip
+does not have the eq added onto it these
+tools definitely work best in bulk when
+you are selecting multiple clips and
+adding and subtracting attributes from
+them now for this next one i use this
+every single time i edit a youtube video
+when i'm ready to start editing the
+audio i go up here and before i actually
+start messing with the eq i put the clip
+that i want to edit on a loop all you
+have to do is hit the forward slash and
+if your playback is set to loop which
+you can change that in your settings
+then it is going to loop once it reaches
+the end of the clip every time you color
+grid you really should be looking at
+your scope so hitting command 7 is going
+to pull that up and then hitting command
+7 again is going to get rid of it when
+trimming a clip you could hit b and then
+hit a again select the clip you want to
+delete and that is going to trim it off
+but there's actually a faster way to do
+it if you know this is the end of your
+clip and you want the rest of it to be
+gone you can hit option close bracket
+and that is going to automatically
+delete the rest of the clip for you
+holding down option and hitting open
+bracket is going to do the same thing on
+the other end trimming the beginning of
+the clip if you temporarily want to
+disable something on your edit you can
+hit v and that will remove it without
+deleting it and you can do the same
+thing with an audio file so you can
+watch it back without the audio without
+deleting your audio and then hitting v
+again is going to bring those assets
+right back if you want to just listen to
+an audio track instead of disabling all
+the sound effects and audio in the video
+what you can do is select the video or
+audio track that you want to listen to
+and hit option s on your keyboard and
+option s to bring it back and you can do
+this with multiple clips so if we want
+to select both of these clips and hit
+option s that is going to disable
+everything else and solo out just these
+tracks so we can listen to these only
+have you ever done something you did not
+want to do and you wanted to go back
+like delete your entire project well you
+just have to hit command z and that is
+going to bring it right back now if you
+want to redo what you did instead of
+undoing you can hit shift command z and
+that is going to redo what you just did
+now since we're on the track of saving
+time i actually have a few more tips for
+you guys that are not keyboard shortcuts
+but these are going to help you save so
+much time because getting started when
+video editing when it takes a long time
+and it's a slow process it's just not as
+fun we want to be able to do it quickly
+and get our videos out as quick as
+possible so here are some ways to save
+some time editing tip number one is to
+use proxies nolan what is a proxy
+good question a proxy is a lower quality
+version of your actual video so you can
+edit with this lower quality version
+your computer runs a whole lot faster
+you're not going to run into drop frame
+rates or loading times anything like
+that because it's it's lower quality and
+then at the very end of editing you
+switch out the lower quality with your
+good quality and it does all the magic
+and it replaces all those files and then
+when you export it it looks beautiful it
+looks high quality and it's gorgeous and
+you save time because you're editing
+with the lower quality stuff making your
+computer run faster this is how you do
+inside of final cut pro x you can see
+right here i have my library set up i
+got my event and project ready to go i'm
+solid all i need to do is import some
+footage i'm gonna right click i'm gonna
+hit import media and at this point let
+me go to the correct folder right here
+in my hide likes and comments folder is
+an upcoming video i'm gonna edit for
+think media to the right you are going
+to see this transcode section this is
+where you can actually create the
+proxies and i'll show you how this is
+stored and all that kind of good stuff
+but there are basically two different
+things you need to know here you got
+optimized media and you have proxy media
+optimized media basically says that it's
+going to take your sony or canon files
+whatever you're shooting with it's going
+to turn it into a progress file and that
+is going to run smoother inside of final
+cut pro 10. now a lot of you guys
+probably already had that turned on but
+your files are still running so because
+it's 4k and you know your computer
+probably is not that good well proxy is
+going to be better for you if your
+computer is older or if your videos are
+running slow in your editing software
+now under our proxy media we have prores
+proxy and we have h.264
+honestly you could use either of these
+i've tried both of them out and they
+both run great on my computer but i like
+to use prores proxies because final cut
+pro likes to use prores because it's
+apple and anyways doesn't matter but i
+like to use prores proxy and here you
+can choose a frame size now i shoot all
+my stuff in 4k 50 is gonna turn that in
+to 1080 hd and it actually doesn't even
+look too bad i mean of course it is
+lower quality but it honestly really
+doesn't look that bad i definitely
+recommend trying that out and seeing how
+your computer runs now if it's still
+running a little bit slow you can set it
+to a lower resolution like 25 or 12.5
+percent 25 for me i've used it before
+and it definitely works great 50 works
+for me too but 25 is a lower quality and
+it's just going to give you faster files
+to work with when editing down here you
+could also set it to you know 1080 hd
+which is the same as 50 but you have
+those options down here for me i'm just
+going to leave mine at 50 percent you
+don't need to have optimized media
+selected because we are going to be
+using proxies the whole time so from
+here all you have to do is hit import
+selected and because i have the folder
+selected that is going to make proxy
+files for everything in the folder nice
+and easy i'm going to hit import
+selected boom so we are importing and
+you're going to see something right up
+here if you click on this circle you are
+going to get this window and this is
+going to tell you what is happening and
+it tells you that it's transcoding and
+analysis remember we are transcoding
+some of our footage right now so if i
+bring this down you can see there's
+three clips that it is turning into
+proxy files so we're gonna give this a
+few minutes we're gonna take a sip of
+water and uh come back to it when it's
+ready to go
+am i the only one who uses a gigantic
+water bottle
+100. okay sweet so we're all done and we
+can exit out of this our proxy files are
+now made before i show you how to
+actually use these in final cut pro x
+let me show you where they are stored so
+inside the folder where i actually
+uploaded all that footage it was two
+video files and one audio file we have
+an optimized media and proxy media now
+this kind of confuses me because i
+didn't select optimize media but in here
+we have the it looks like it is the
+audio but for some reason it's a mov but
+it's the audio file anyway so there's
+that but then in our proxy which is what
+we're going to be using we have our
+video files i couldn't get that word out
+so right here if i open this up we can
+see that it doesn't even look that bad
+honestly but this is our proxy file and
+then we have our screen share and you
+can see this definitely does look a bit
+lower quality than what it actually was
+okay this is how you use them now in
+final cut pro 10 for people wondering
+where they're stored that is exactly
+where they're stored nice and easy okay
+moving on so let's go ahead and just
+throw my entire video down into this
+timeline so i can show you guys how to
+use this so we got our video right here
+and basically all you need to do is go
+to this upper right hand corner where it
+says view and change this from optimized
+original to proxy now proxy only or
+proxy preferred here's the difference
+proxy only will only show you proxies so
+if you have something in there that was
+not proxied if i add in a new video that
+maybe i didn't make into a proxy file
+it's not going to show that's why i like
+to use proxy preferred because then it
+can mix in the two and it's using
+proxies if it has it so i'm just going
+to select proxy preferred and now this
+video in my timeline is the proxy now
+before going out to actually share and
+export the video you want to make sure
+you change this back to optimized
+original it's okay if you forget because
+uh final cut pro actually let you know
+we'll say hey do you want to export your
+proxies and you're going to say no and
+then you're going to go back you're
+going to change it and then re-export it
+so don't worry about that but that's how
+you do it and that is going to speed up
+your workflow a ton especially if you
+have an older laptop an older computer
+definitely start using proxies i hate
+the the spinning wheel of death the drop
+frames all that stuff it slows it down
+we're trying to save time number two i'm
+gonna call speedy rough cut okay we are
+going to speed through and fly through
+this uh 11 minute and 24 second clip and
+trim it down by this little editing
+workflow thing that i do
+let me show you so i filmed the video in
+one long clip and i need to trim it down
+into all the good parts and i'm going to
+show you exactly how i do this for every
+single video and i swear it saves me so
+much time now if you are going through
+and you're starting at the beginning and
+you're just hitting play
+and you're watching this like this is
+boring you don't want to watch this we
+can skip through all of this and save a
+bunch of time the main thing that you
+want to look for here is the audio
+waveforms we are going to be editing
+while looking at the audio waveforms and
+that is these little waveforms down here
+we are going to be using these right
+here you can see there are no waveforms
+which means it's silent which means i'm
+not talking and therefore we can go
+ahead and just cut that out to start
+with okay so that's that that's kind of
+the idea but we're gonna get deeper and
+i'm gonna show you how you can really
+start to save time by using these
+waveforms now because i shot this video
+i already know that this beginning part
+really is nothing because i kind of mess
+with the background and then i come back
+over and i start right around this point
+so i'm going to go ahead and just chop
+all this off and i'm going to show you
+how to do this right now so officially
+right here is when i start uh the video
+and i start trying to talk to it now
+instead of hitting play and listening to
+my entire take what i do is i hit play i
+listen to the first like three four five
+words and then i move it to the next
+audio waveform and then i move to the
+next one and the next one because what
+happens when i shoot videos like this is
+i often mess up and then i'll redo what
+i was trying to say and when i move on
+to my next sentence i know that my last
+take was my best take and so that's how
+i get my rough cut let me actually just
+show you exactly how i do this now in
+order to disable
+now in order to turn off
+now in order to turn off your
+in order to hide your now in order to
+hide your your dislikes and your likes
+and forget to hide your dislikes and
+you're like
+what i like to do okay i moved on
+because what i was saying is in order to
+disable in order to turn off whatever
+right
+right here it was uh the last time that
+i said that when i jumped forward to
+this next waveform i was talking about
+something different so i know for sure
+that this is at least probably my last
+take i know that this was the same thing
+but i'm going to go ahead and delete all
+of that and now i'm going to listen to
+this again it looks like there might be
+some pauses right in this area maybe in
+this area i can't tell if i just talked
+slower there or if that's an actual
+pause but i'm going to go ahead and
+listen to that right now
+now in order to hide your dis
+videos first thing one
+you want to make sure
+once you have done
+studio okay so i know that's all good
+because i kept talking i never stopped
+and so i'm going to go ahead and hit b
+on my keyboard and select right there
+because i know that's the end of the
+clip and i'm going to do the same thing
+again so you can see here that i'm
+really trying to figure out what i want
+to say this is probably the hook in the
+video and so i'm going to fast forward
+because look all of this is just nothing
+i'm kind of probably writing something
+out i'm thinking about what i'm going to
+say i'm going to do it again right here
+all right here we go
+now i'm going to show you now i'm going
+to show you right now i'm going to show
+you how to do this on a video
+you can also do this
+all right so this right here this is it
+i'm going to delete all of this
+and keep going i'm going to show you how
+this when you are uploading this that
+way you never every time you can just do
+let's say you want to and you can also
+you can all you can also do this on
+now if you wanted to do this
+on all your videos you
+also do this on multiple videos so i'm
+actually saying the same thing here so i
+know that i redid it i just changed the
+wording a little bit and also here's
+another thing i can see that i talked
+for a long time right here which makes
+me think that this is probably my best
+take so i'm going to go ahead and delete
+that because i already know that i redid
+it and uh but let me hear it because i
+might have redone it i don't remember
+but that's why you just listened to the
+first little bit you don't have to
+listen to all of it you can do that in
+the next step so that's basically how i
+go through the first cut on every single
+think media video i look at the
+waveforms i listen to the first couple
+words and then i figure out which was my
+last take which was my best take and i
+move on from there so now that i have a
+rough cut in order to just go ahead and
+watch it through maybe i want to cut
+some pieces out instead of playing it
+back at 100 and just watching it at 100
+what i'm gonna do is i'm hit the
+spacebar and then i'm going to hit the
+letter l now this is going to work on
+any editing software and this is going
+to speed up your playback so that you
+can listen and watch it at a faster time
+than 100
+which is awesome because you don't need
+to watch the whole thing back at 100
+especially when it's just a rough cut
+and you're editing it uh to trim down
+the fat and all that kind of stuff so
+i'm going to hit the space button then
+i'm going to hit l to speed it up now in
+order to hide your disc
+on youtube as well as turn off the
+comments on your videos first you want
+to do is log into your youtube account
+now i use this all the time sometimes i
+have 20 minute long tutorials on here
+that i'm watching back and just by
+hitting that l button to watch it back
+i'm saving myself like five minutes okay
+every time i watch it all the way
+through and that really adds up over
+time as you are editing your project
+inside your editing software tip number
+four is to copy and paste attributes
+most of us know that you can hit command
+c and then command v to copy and paste a
+clip to another clip but what happens is
+that this pastes everything onto the
+next clip that includes any audio
+effects any cropping any sort of luts
+that you put on is going to paste
+everything well in order just to copy
+and paste a few things that you want to
+move on whether it's just some audio
+effects or maybe a color grade or maybe
+a crop you can do that all you need to
+do is select your clip we are going to
+hit command c and there are a few things
+different on this clip than the rest of
+the clips but let's say i want to paste
+that the color grade only i don't want
+to paste the crop you can see i have a
+crop here crops back out i just want to
+paste the color grade what you want to
+do is hit shift command v and this is
+going to pull up your paste attributes
+now this is really cool because you can
+select and deselect things that you do
+not want to paste over so like i said i
+do not want my crop so i'm going to go
+ahead and just unselect that and i
+changed the volume i do not want to
+adjust the volume on this next clip and
+now all i'm pasting over is this custom
+lut so i'll hit paste and you can see it
+has not affected the audio it has not
+affected the crop it's just sent over my
+lut i use this all the time especially
+for audio because usually i have a grade
+done and then i'll do my audio editing
+last and i copy just the audio maybe the
+volume and some eq and stuff like that
+i'll copy it and paste it to all the
+clips and it's not going to affect any
+of my crop ins crop outs or handheld
+shakes or anything that i do like that
+it's only going to paste over my audio
+effects same with luts and different
+effects like that if you are adding on
+effects whether it be a crop or a lut
+onto every single clip that you want
+that's going to be a waste of time
+select all of them and just do paste
+attributes select what you want it to be
+it saved me a whole lot of time so now
+you know tip number five is to create
+presets this saves you so much time
+because instead of eq'ing the same mic
+over and over again you can actually
+create say an eq like this for this usb
+mic and then i can use that every single
+time i use this mic it's a preset it's
+built out i can click one button and
+it's gonna do the rest for me this works
+with video effects this works with color
+grading you can actually save a lot
+maybe with some tweaks that you've made
+to it and then save this as a preset
+that way when you add in the lut it's
+also gonna add in those little tweaks
+that you've made to kind of make it your
+own and fit your camera best here's how
+you do it first let's start with an
+audio preset so you can see here that
+i've made some adjustments to the eq on
+this microphone i can exit out of this
+you can see that is the only thing i've
+done here let's say i want the db to be
+zero okay perfect now to save this as a
+preset all you have to do is go down
+here hit save effects preset from here
+you can select what you want to save so
+i'm just going to call this samson q2u
+because that is the microphone that i am
+using you're also going to see other
+options if you add in some sort of like
+reverb or noise reduction you're going
+to have those options here you can
+select them but for me all i've done is
+some eq and volume which is fine and i
+and you definitely want to make sure
+that stretch to fit is selected that way
+it takes whatever clip and it stretches
+it out to the full thing so that your
+effect is saved to your entire clip from
+here all you got to do is hit save now
+what you can do is go over to your
+effects you can scroll down to audio and
+you can see that you have custom and
+here are some of my custom ones so i'm
+going to use the samsung qtu that i just
+made and i'm going to drag it over this
+clip right here now you can see that it
+has added in my eq to be exactly like
+the other one this is great if you use
+the same mic for your youtube videos you
+definitely want to be saving presets
+in the same room every time you don't
+need to do that just create a preset and
+drag and drop and you're gonna be set to
+go you can do the same thing with video
+so you can see i have a lut here and
+then i have some color wheels where i
+just change some like contrast stuff
+like that but if i want to save this as
+a preset both of these together i can go
+to save effects preset now here i do
+want my custom lot my color wheels but i
+do not want my crop and stretch to fit
+is fine i can go ahead and rename this
+to the a7s3 which is the camera that i'm
+using for this shot now something here
+and this is the same with audio but the
+audio one was correct here it's set to
+the category 360. i actually don't want
+to save it to 360. i'll save it to a new
+category and we can call it custom you
+can really call it whatever you want but
+i'll just go ahead and call it custom as
+well you'll hit create and from there
+it's going to save to a brand new
+category called custom so now over here
+in the effects if we go to custom you
+are going to see my a7 s3 preset we can
+scroll over something that has no color
+on it and boom drag and drop and you're
+good to go so now you know the basics of
+editing your videos and you know how to
+speed up that workflow so you can be
+more of a professional editor but let's
+get into some of the fun stuff that you
+can do inside of the software because
+there is a whole lot you can do inside
+of final cut and there's a lot of cool
+cut pro so these are going to be 10
+effects that a lot of youtubers use in
+their videos that you can do in yours
+too and this is for beginners i'm gonna
+walk you through step by step exactly
+how to do this so check out these 10
+effects now number one is to use text
+pop-ups this is really popular when it
+comes to youtubers and it's pretty
+simple inside of final cut pro 10. let
+me show you exactly what i'm talking
+about and then i will show you how to do
+it now let's get right into this video
+because we have a lot to talk about
+yeah cheesy jokes
+welcome to the youtube channel so as you
+saw here this text was popping up now
+i'm going to delete this and start from
+scratch to show you guys exactly how to
+do this first things first you want to
+go into your text and i'm just going to
+go ahead and use a custom one right here
+i'm going to drag this over i'm kind of
+going to resize this so that you know
+it's as long as what i am saying because
+i'm gonna have them pop up right as i
+say the word it's gonna pop up you have
+a lot to talk about
+and it's gonna end right about there so
+now that that's all set i'm gonna go
+ahead and put in my text now that i have
+my text on the screen it's pretty simple
+what i like to do first is actually get
+in here and just cut them up to the
+words now this doesn't have to be
+perfect because it's actually really
+easy to retime these so that it pops up
+at exactly when you want to but what i
+like to do is just really quickly go
+through and cut these up into the
+different words okay that's not perfect
+but you know somewhere around here now
+you can see that i've cut up the titles
+what i'm going to do now is start over
+here on number one and i am going to go
+to crop and then change this to trim so
+if it's on crop you don't want that you
+want to change this to trim from here
+all you have to do is take this right
+side of the box and start to drag it
+over trimming off every single word
+except for your first word now what we
+could do is go over click this again go
+to trim and go ahead and do the exact
+same thing we just did leaving our
+second word and our first word
+visible now now we could just do this
+for every single text but to speed up
+your workflow a little bit you could do
+a copy and paste all you got to do is
+select one that you've already trimmed
+you're going to hit command c go to your
+next one and then you're going to hit
+command option v from there it's going
+to chop off most of the words and you
+just have to drag it to your next word
+so i'm gonna go ahead and do this with
+the rest of them and it really doesn't
+take that long and you get yourself a
+really cool effect by the end of it
+obviously on your last one here you want
+to leave all the words visible and now
+we can go through we can watch it and
+see if we need to kind of retime any of
+the words
+we have a lot to talk about
+so i can maybe move this second to last
+word latte talk about we have a lot to
+talk about
+now that's looking pretty good and it's
+as easy as that just using the trim tool
+you also could use the mask tool but i
+found for stuff like this using the trim
+tool has found to be easier for me next
+up i'm going to show you guys how to
+blur out a piece of the image whether
+you want to censor it or hide it you can
+definitely do that inside of final cut
+pro x i've done this before for clients
+where they needed to actually blur out a
+brand or something in the background
+like an address and so i've had to use
+this before but i'll show you how to do
+that right now so first off we have our
+clip right here and for this case i'm
+just gonna blur out my coffee cup
+because it's moving and i'll show you
+guys how to kind of move that around as
+well so the first step you actually want
+to do is to copy and paste the clip that
+you are going to blur and put one on top
+of the other so i'm going to go ahead
+and move this right on top of there now
+we have two different clips now the top
+one is going to be our blur and we're
+going to use a mask to control what we
+want to blur so let's start with our
+effects and actually going to pick out a
+blur there's two that i like to use one
+is just kind of your classic out of
+focus blur and the second one is more of
+a pixelated blur so i'll show you where
+both of those are if you go over here to
+blur you can see right here that if i
+throw this on top everything is out of
+focus it's a pretty nice blur this is
+kind of something that you would see on
+tv however i'd like to use the pixelate
+blur because it's just kind of fun and
+funny and so i like to use that
+sometimes if we click on all and we go
+to search for pixel we'll see a pixelate
+right here and if we throw that on top
+you are going to see that it does this
+whole pixelating effect and you can
+really choose how much you want to do
+that let's get the copy up here and
+maybe we want to make it even more
+blurry now that we have done our blur
+what we want to do next is pick our mask
+so i'm going to search for mask make
+sure you're dragging this on the top
+layer of your video and from here you
+can start to draw a mask around exactly
+what you want to blur out and we'll just
+go ahead and blur out this entire coffee
+cup now from here it doesn't look too
+good but you can start to mess around so
+that it fits around whatever it is that
+you're blowing out a bit better and then
+we want to use the feather tool this is
+going to make it look a whole lot
+smoother you can even drag this past 100
+if you would like and so you know this
+is looking fine for me as far as a blur
+goes i think it looks great now you can
+see the issue here is that the coffee
+cup kind of comes into the blower and it
+also goes out of the blur so what i'm
+going to show you how to do is how to
+move this blur effect over neat
+overnight over top of a moving object so
+i'm going to move it to the first frame
+that it comes into which is right here
+and i'm just going to drag this entire
+masking tool with the blur effect over
+that mug so that's right there i'm going
+to go ahead and start my keyframes
+underneath your mask you want to open up
+your transforms and then you're going to
+click this keyframe button right here on
+position and i like to go about three or
+four frames and move the mask if i'm
+moving it really fast maybe i would do
+less every frame or every other frame
+but for something like this you can
+really get away with three four frames
+so i'm gonna start here and i'm just
+going to move forward three frames now
+that i move forward three frames i'm
+going to move my mask back up move
+forward three frames again
+continue to move my mask
+and i'm to do this for the entire clip
+now that i'm done you can see that the
+mask is actually starting on the clip
+and i don't want it to start on the clip
+so to go to my first keyframe i'm going
+to hit this button right here and then
+i'm gonna go back a few frames and move
+this all the way out so as we go forward
+now it's going to come up with the mug
+which is perfect so let's hit play and
+see what this looks like
+awesome so the blur is moving around
+with the mug and it looks great and
+blurred and the nice thing about this is
+now that we've done a mask that's moving
+we can actually replace this effect with
+anything so if we wanted to change this
+to our other blur it's really easy as
+just dragging this on top of the clip
+and deleting the pixelate button now we
+want to move this back up top right
+where the pixelate was and from here you
+can mess with the amount of blur you can
+make a more blurry less blurry and
+you're going to see that the same effect
+happens all the movement have been kept
+the same but now it's just a different
+type of blur next up i'm going to show
+you guys a little stop motion effect i
+use this on my wife's channel where her
+name pops up and i kind of made this
+stop-motion effect with her name and i
+did that all manually inside of final
+cut pro 10 so i'm gonna show you exactly
+how i did that so right here i did a
+little text that says hello everybody
+and i'm gonna show you kind of what this
+effect looks like just kind of bounces
+back and forth kind of like a stop
+motion vibe so it's really easy to do
+this what i'm going to do is actually
+delete all of this but keep one of my
+text so first of all you want to start
+with what it could be a picture it could
+be text it really could be whatever you
+want it to be to kind of do this effect
+and so all of it is going to be the same
+whether it's text a picture graphic
+whatever so the trick here is to make
+your text three frames long and then
+we're gonna go from there so let's start
+by doing that one two three i'm gonna go
+ahead hit b which is the blade tool i'm
+going to chop that off now i have this
+text that is three frames long and what
+you want to do is hit command c command
+v and you're going to paste it this next
+one what you want to do is go to your
+transform tool and you want to adjust it
+just a little bit you don't want to do
+it a lot but you just want to change it
+slightly you're then going to copy and
+paste that one right after it and you're
+going to do the same thing you're just
+going to adjust the rotation a little
+bit maybe even the positioning a little
+bit command c
+command v and do the same thing again
+make sure that it's not too crazy all
+over the place or it might be a bit too
+much but you guys will get the hang of
+this and then once you have about six to
+ten of these you're just going to
+command copy all of them and paste those
+over and over again so i'll just do a
+couple more here adjusting it just
+slightly so that they look a little bit
+different giving that stop motion effect
+all right now that i have done seven of
+them i'm gonna go ahead and hit play and
+see how it looks
+i think it looks pretty good and once
+you're happy with how it looks all you
+have to do is copy and paste that over
+and over again to make it as long as you
+want so i hit command c to copy i'll hit
+command v and then command v again again
+again as long as i want it to last and
+once you have it as long as you want you
+have a really cool stop motion effect to
+your youtube videos next up i'm going to
+show you guys how to add overlays to
+make your shot a bit more interesting so
+when i first started using this i was
+actually adding some muzzle flashes to
+some guns for these little action films
+that i was shooting with my friends but
+really this works for anything if you
+want to do light leaks or any sort of
+glitches stuff like that this works
+really well it basically just takes the
+black in a background image or a video
+and it makes it transparent so when you
+overlay that onto your video it's going
+to be transparent and the black will go
+away and everything else is going to be
+on top of your image so right here you
+can see that the video is pretty bland
+so i'm going to add some overlays just
+to spice things up a little bit right
+here i have this glitch overlay which i
+think i just got off of youtube but it
+kind of has these numbers kind of techy
+uh computer things going on and so to
+get rid of the black so that it shows
+through all you have to do is select the
+video come up here to blend mode and
+you're going to change that to screen
+once you've done that you see that you
+get these textures coming through and
+there is no more black screen everything
+is transparent and it kind of adds to
+this cool computer shot going on so i'm
+gonna do the same exact thing with this
+glitch effect right here which we
+actually got off of story blocks and so
+i'm gonna go to blend mode change that
+again to screen and this is gonna add a
+cool little transition to my next shot
+and so let me show you what this looks
+like now
+i think it's really cool it adds a lot
+to the shot and again you can get
+creative with this and add tons of stuff
+to your footage to make it look cooler
+again those light leaks i've used a lot
+of times different glitch effects stuff
+like that you can add on top of your
+video by using the screen blend mode i'm
+gonna show you guys how to do this
+effect where it shows you the before and
+after so if you're redoing a room or if
+you're doing like a color grade like i
+am doing here you can actually do a
+sliding effect to show the before versus
+the after now right here i have an
+adjustment layer and a clip and this
+adjustment layer is just adding in my
+color to my shot so you can see this is
+what it looks like completely flat and
+then you have your adjustment layer now
+with this effect you actually can't use
+an adjustment layer and i'll show you
+why later so what i want to do is i want
+to copy this i'm going to delete my
+adjustment layer and i'm just going to
+paste that onto my actual video now in
+order for this effect to work you do
+need two clips so i'm going to copy this
+exact clip and paste this now this would
+work exactly if it was your before shot
+and your after shot but for me i'm going
+to do before my color grade and after my
+color grade so the top one is going to
+be the after shot and the before is
+going to be the bottom so what i'm going
+to do is delete everything on this
+bottom clip to make it flat again and
+you can see here if i mute this video
+feed on top our bottom layer is the
+before our top layer is the after from
+here you're going to go into the
+transitions and you're going to go to
+the search and look up wipe and then you
+are going to drag the wipe transition
+onto the top layer you can actually
+delete this end one and then you want to
+extend this to make it a lot longer and
+i'll show you guys what this looks like
+now so right now you can't even see the
+top layer you just see the before shot
+which is down here and then as it plays
+through you are going to see this wipe
+effect where it shows you the color
+grade that i've done you can adjust the
+duration of the white by dragging it
+left and right to make it longer or
+shorter you can also click on this
+transition and if you go up here you're
+going to see that you have a few
+different options so if you want to go
+from left to right you can also do that
+so now it is dragging from the left side
+to the right side you can also change
+the edge treatment i usually like to
+leave this on feather where it just kind
+of blends in the two videos but you also
+could do like a solid color like this
+and make it white or black and you can
+make the border color a lot smaller and
+then that way it's kind of showing you
+the before after using a line of color
+to distinguish the two now i don't know
+about you but have you ever accidentally
+gotten like a shotgun microphone in your
+shot or a light in your shot like you
+can see up here i have this light up
+there it was not supposed to be in my
+shot but it was but luckily in final cut
+pro there is a fix that you can do for
+this what you want to do is copy and
+paste the clip that you are going to
+cover and so we are going to cover up
+this light right here so what i'm going
+to do here is take this color right
+around here because it's going to be you
+know about the same color i'm just going
+to drag that over the light and then
+feather it out so that no one can tell
+in our effects we're going to be looking
+for the mask tool and we can just draw a
+simple mask i'm going to drag that on
+top now from here i just want to take
+this color you know about the same size
+of the light and then close that off so
+now that we've done that we are going to
+take the feather option and put that to
+a hundred and then on our transform or
+you can go to this right here we are
+going to drag this up above now if i
+completely remove the bottom layer
+you're going to see what's happening
+here i'm taking this color that i just
+got with the mask and then i'm actually
+going to feather this out a bit more so
+that it's much smoother and all you have
+to do is make sure that it's completely
+covering up that light or the microphone
+whatever it is you want to hide in the
+shot you can do this simply by adding in
+a mask and dragging something over top
+of it and then by adding in some
+feathering you're really going to smooth
+out this shot so it looks nice and clean
+and now it looks like there was no light
+ever there so i can click this on and
+off you can see that's before and this
+is after another really cool easy trick
+that i use for our think media videos is
+ken burns so you can see here that we
+have a few different b-roll shots and
+they're just pretty simple right they're
+not too exciting they're pretty boring
+there's not a lot of camera movement
+happening so what i'm going to do here
+is let me trim this one first but what
+i'm going to do here is add in some ken
+burns and this is going to emulate a
+camera movement so all you got to do is
+click this arrow right here we're going
+to go to crop and down here you're going
+to hit ken burns now here you have a
+start option and the n option so you can
+see it starts completely wide and then
+it zooms in ending a bit closer i'll
+show you what this looks like
+now it looks like there is a zoom
+happening and so we're going to do the
+same thing with this next shot but i'm
+going to show you a few more things that
+you can do with this so here we can see
+that now it's doing a zoom out where
+it's starting in tight and then it is
+coming and zooming out showing us the
+entire shot but if you want to switch
+that around so it's also zooming in all
+you have to do is hit these little
+arrows right here and that is going to
+swap these for you so it's also going to
+do another zoom in for you and if we
+actually want to just switch that back
+it's as simple as moving that now if you
+want to make it really drastic and zoom
+in a bunch you can move these around as
+much as you want i don't like to make it
+super obvious i like to do kind of a
+subtle zoom in or zoom out effect but
+whatever floats your boat you can
+definitely do and mess around with these
+as well after adding in those ken burns
+you can see that this movement to the
+shot really just adds a lot to these
+b-roll clips and gives it a bit more
+spice and i definitely think it's
+something worth messing with because it
+can really take your shot to the next
+level just adding that little bit of
+camera movement really can make a big
+difference for this next effect we use
+this all the time at think media this is
+when our text swooshes in and swooshes
+out and we add in the sound effects i'm
+going to show you how we do that so
+right here you see that i have my name i
+have my instagram handle all you got to
+do is go to your transitions and look
+for slide this is the transition that i
+use you can drag this right over your
+image or your text and then you want to
+click on this transition and come up
+here and this is where you mess with the
+settings so we have slide in which is
+exactly what i want and then at the end
+it's going to slide out and the
+direction i want to go is right so
+that's perfect that's kind of the preset
+that it's set to but you'll see here
+when it goes to the other clip
+that's not what i want happening so
+something wrong is here so i'm going to
+click on this transition and we are
+going to go back up here we can see that
+it's set to slide in i don't want it to
+slide in i want it to slide out and for
+the direction i want it to slide to the
+left so it goes back that way now if we
+watch again
+slides in
+slides out that's perfect now from here
+all we have to do to make the null
+multex do the same exact thing is hit
+copy and paste onto this one now it's
+not going to paste both transitions you
+need to go back up here you need to hit
+command c click down here hit command v
+now it has perfectly copy and pasted
+every transition onto both of them so
+when we hit play
+they both come in at the same exact time
+they both go out at the same exact time
+if you want to make these quicker or
+longer you can drag this to the left to
+make it quicker you can also drag it to
+the right to make it last longer be a
+longer slide and then you would just
+match these up so that they match and
+this is just going to come in a bit
+slower the next effect i want to show
+you guys is the handheld effect so we're
+going to search for a handheld and drag
+this over our clip and this is going to
+give our static tripod shot a handheld
+look so once we hit play we're going to
+see that it looks like someone is
+holding the camera they're a little bit
+shaky but we can mess with those
+settings by clicking on our video and up
+here and effects we can mess with the
+shakiness and the distance if we want to
+make it more shaky we can drag it to the
+right if we want to make it less shaky
+we can drag to the left i like to keep
+my shakiness around 15 to 10 and then my
+distance i like to bring back down about
+to 10 to 15 as well and we can see what
+this looks like now with those settings
+it's definitely a lot less shaky this is
+a bit more of my taste and i like to
+throw this in on videos to just spice
+things up and get people on their toes
+because when they're seeing the same
+shot over and over again they can start
+to tune it out so cropping in cropping
+out adding in these handheld effects
+this is great for resetting the viewers
+attention to get them to watch longer
+little stuff like this does wonders and
+i think it's a really cool effect that
+you can add to your videos i know i got
+a lot of questions on that in a previous
+video so for those of you asking that is
+exactly how i do it now i've actually
+had a lot of people ask me about this
+effect that i'm going to show you guys
+as well and this is when the camera
+tracks on my face so as i move my face
+around the camera tracks with me let me
+show you exactly how i do it and i use
+keyframes to do it but there's a trick
+here that makes it a whole lot easier so
+i'm going to drag this custom text onto
+my video and then i'm just going to add
+in the letter x it really could be
+anything it could be a dot let's just do
+a dot and i'm going to drag this right
+into the middle of my eyes now this
+looks really weird at the moment but i
+promise you guys it's going to be a
+really cool effect so on this clip right
+now we have scaled the image so that it
+is a bit closer and you can see that as
+i hit play
+i move my head around like this and i'm
+just going to do a little camera track
+on my face now the reason i put the dot
+right there is because for these
+keyframes i want to make sure that my
+middle of my face stays in the center of
+the frame the entire time that is what's
+gonna make this look really interesting
+look really cool and the camera kind of
+move with my head as i move it around so
+now that i have the video selected i'm
+going to add a keyframe and i'm just
+gonna go frame by frame moving this
+image around to stay on track with this
+little dot in the center of the screen
+for something like this i'll go forward
+every two frames or if there's a lot of
+movement i'll just do it frame by frame
+but for something like this i could
+probably get away by jumping for two
+frames adding a keyframe jump forward
+two frames again and adding a new
+keyframe and for those of you asking if
+you're brand new once you move something
+around it automatically adds in a
+keyframe for you so all you got to do is
+start your keyframes once and then we
+can jump forward two frames once you
+move it like this you can see that this
+has a check mark if i jump forward two
+more frames you can see that it is not
+selected yet there is no keyframe but as
+i move this around it adds in a keyframe
+for me jump forward two frames and just
+do this throughout the entire thing
+all right now before we watch this we
+want to get rid of this dot so i'll
+delete that and then i'm going to hit
+the play button
+all right so that's pretty cool so you
+can see as you're talking you know it
+crops in and it does this funny little
+tracking on the face effect again people
+ask me about that one that's exactly how
+i do it moving on to color grading no
+matter what camera you have color
+grading can really level up your camera
+make it look nicer by adding some
+saturation or contrast to your shot i'm
+going to share what you need to know
+about color correction and color grading
+for the beginner so without further ado
+here it is now there is a difference
+between color grading and color
+correction most people just call it
+color grading which is totally fine but
+we're going to cover both of those in
+this video and show you how to do that
+to your footage color grading basically
+is adding a stylistic look to your
+footage to make it look cinematic or
+vibrant something like that whereas
+color correction is kind of fixing the
+white balance fixing the exposure the
+contrast stuff like that so we're going
+to cover both of those things in this
+video so let's get right into it now the
+very first thing you want to do inside a
+final cut pro x is make sure that your
+proxies are not on if you go to this
+view tab right here we can see that if
+we had proxy preferred or proxy only
+then we would want to change that to
+optimized original so make sure you just
+hit optimized original and that is going
+to bring up your original files which is
+going to be best for color grading you
+don't want to color grade or color
+correct your proxy files you want to
+make sure you have those original files
+to color grade with that selected i like
+to go to the next step and i like to
+open up my scopes kind of get everything
+ready for color grading and i'll show
+you what those scopes are if you go up
+to the view tab you are going to see
+video scopes right here you can also hit
+command 7 to bring those up and if we
+click that we're going to see these uh
+colors the red the green the blue and
+we're going to change all this but these
+things are going to make it a lot easier
+for us to color grade and i'll show you
+how to use this but instead of doing
+this i actually like to change up my
+workspace just a little bit so that
+these are as big as possible and the
+easiest way to do this is if you go up
+here to window you will see workspaces
+and right here there's color and effects
+if you pull this up you are going to see
+this entire left side just go away and
+this is going to make everything nice
+and big for you perfect for color
+grading and color correcting so this is
+a very nice workspace that you can use
+if you are color grading and if you want
+to change that back maybe you're ready
+to go back
+to the edit what you can do is go up to
+window hover over workspaces and you can
+go back to default and this is going to
+put it back just how you had it so going
+back to my workspaces going to color and
+effects i actually don't need all four
+of these so what i like to do is go up
+here to view and then i'm gonna change
+this just to two one on top one on
+bottom now this is looking great and if
+you want to use it like this which is
+how i use it you can go back up to
+window you can go to workspaces you can
+actually save this workspace we'll just
+call it color grading which i already
+have mine saved as color grading but if
+you hit save this is going to save this
+workspace for you so that you don't have
+to go in and mess with this every time
+you just go to window workspace now when
+you hit color grading it is going to
+pull this up how you like it now if
+you're a beginner and you're just
+learning how to color grade the odds are
+you don't really have a flat log image
+which would look something like this
+right here this is a flat image or what
+they would call a log image the odds are
+you're shooting some videos on your
+standard picture profile on your camera
+now that's totally fine you can still
+mess with these colors and i'm gonna
+show you how to do that that's why i
+have some footage here where it's a bit
+colored already this is just the
+standard picture profile on the sony zv1
+and i have some different clips here
+that we're going to look at this one
+right here with my face in it show you
+how to kind of color when there are some
+skin tones in there as well as just some
+random shots here with a lot of
+different greens and blues different
+colors to mess around with now something
+you want to get familiar with is your
+color inspector what you can do is hit
+the color board right here and if you
+drag this onto your clip in this
+inspector right here you are going to
+see a color board and you can open that
+up and from here you can make some
+adjustments but i actually do not like
+to use the color board now instead of
+doing that this is actually a shortcut
+as well you can just click on this
+little color inspector triangle right
+here and this is going to pull up uh the
+same thing for you but this is actually
+called the color wheels now odds are if
+you click on that it's gonna pull up
+your color board to change that just go
+into final cut pro go to preferences and
+right here under general we can see
+color correction and it's going to be
+set onto color board just naturally but
+we want to set this to color wheels with
+that selected we can exit out of that
+now you can see when you click on this
+triangle it's just going to pull up your
+color wheels right here let's start by
+taking a look at these four wheels and
+what they do and how they can affect
+your image this top wheel right here is
+our master wheel so this is going to
+affect everything we have shadows mid
+tones and highlights but the master is
+going to affect all of those all three
+shadow midtones and highlights now the
+left side of the wheel is our saturation
+you can see it's a bit more blue up here
+and it's a bit more faded out down here
+that lets you know that it is the
+saturation so as we go up this is going
+to make things a lot more saturated you
+can see how much more vibrant this image
+is and if i bring it all the way down
+you can see that it's going to turn to
+black and white there is no saturation
+to these colors now each wheel kind of
+has the same layout on the left side you
+are going to have that saturation so
+let's go to shadows and if i pull those
+all the way down you're gonna see that
+the shadows are now black and white but
+we still have some mid-tones and
+highlights a lot of these blues still
+have some color now back up here on
+master the right side of the wheel is
+going to be our exposure you can see up
+here it's a bit brighter down here it's
+darker so as we increase the master it's
+going to make everything much brighter
+starting to blow out some of our image
+doesn't look the best but as we darken
+it this is going to darken our entire
+image make everything a lot darker now
+right here in the center we can actually
+move this little point around and this
+is going to add color into our entire
+shot so if i drag this up into the
+magenta it's going to make everything a
+bit more magenta i can do the same if i
+want to pull that into the green or i
+want to make it warmer make it a bit
+orange you can do that by dragging these
+around in each of these wheels now real
+quick i'm just going to throw these all
+around i'm going to show you how to
+reset these if you ever need to so let's
+say you want to reset all of it all you
+have to do is click on this little reset
+button and that is going to bring
+everything back to normal for this one
+wheel but let's say you don't want to
+bring everything back you just want to
+bring back maybe this piece right here
+if you double click that is going to
+bring back just that property i can do
+the same with the saturation by double
+clicking it's going to bring it back
+double clicking gonna bring it back so
+that's how you can kind of reset some of
+these values as you are going through
+your color grade like i mentioned these
+are gonna work the same as the master
+however this is only going to affect
+your shadows this is only going to
+affect your highlights this is only
+going to affect your mid tones and so
+you can mess with each of these by only
+affecting you know a specific part of
+your shot after i show you what all of
+these do i'm going to walk you through
+exactly how i color correct and color
+grade a shot so stick with me we're
+almost there these are the things that
+you need to know before you start color
+correcting down here we have temperature
+tint and hue now this was shot on auto
+white balance on the sony zv1 but if you
+mess up your white balance this is where
+you could fix some of those issues by
+sliding these around so this temperature
+if you drag it to the right this number
+is going to increase and that is going
+to increase the warmth of your shot and
+the tint is going to increase in magenta
+as you pull it to the right and as you
+pull it to the left it is going to add
+green to your shot if you pull the
+temperature left it's going to be cooler
+and adding that blue tone to your shot
+messing with the hue is going to adjust
+all of your colors and kind of swing
+them around on your colors wheel making
+it look a bit funky this is not
+something that i ever use but maybe if
+you're shooting a music video or you
+know there might be an instance where
+you would use this this is where you can
+mess with the hue down here under mix i
+usually just leave at 1 but if you want
+to dial it back so that it's not at 100
+strength it's kind of like the opacity
+of this effect you can drag this to the
+left and zero you can see that there is
+nothing happening and to the right you
+can see this is with everything applied
+i usually leave this at one and i just
+dial everything in exactly how i want it
+but that is there if you ever want to
+dial it back and forth you can do that
+if you also want to see kind of the
+before and after what you can do is
+uncheck this box and this is going to
+disable it and then if you check it
+again it's going to bring it back now
+that you know what these wheels do let's
+actually color correct and color grade
+this image to look a bit better a bit
+more vibrant maybe a bit more summery
+but first we want to take a look at
+these scopes over here now these might
+be a bit intimidating but i promise you
+it's really easy if you just take the
+time and understand what these are it's
+going to help you so much right now
+we're just going to ignore this vector
+scope which is this circle up here and
+we are gonna kind of save that for our
+part two of this video which is gonna be
+a bit more advanced where i'm gonna
+cover stuff like luts you know film
+simulations adjustment layers grading
+log images getting correct skin tone
+stuff like that is gonna be an advanced
+tutorial where i will use the
+spectroscope once that part 2 advanced
+tutorial comes out make sure you check
+that out because you're going to learn
+so much more but you definitely need to
+watch this video first because this is
+going to lay down the foundations of
+color correcting and color grading so
+that you're not completely lost when it
+comes to the advanced tutorial but for
+now we're just going to focus on this
+waveform down here which is our luma
+waveform now if you ever want to change
+these you can click on this right here
+and change this from luma sometimes i
+use the rgb overlay now this waveform
+right here is actually showing us the
+values in this shot so as i move this
+around you're gonna see this also moves
+because this is showing us exactly what
+is on screen and it's showing us the
+brightness of the shot now on this
+waveform we have some numbers the main
+thing that you want to look at is this
+100 number if you go above this line you
+are gonna start losing information in
+your shot so for example if we go to our
+highlights and we boost these highlights
+you can see that the entire graph is now
+moving up because it's showing us the
+brightness of the shot so as i move
+these highlights above 100 you are going
+to see that the sky is starting to lose
+a lot of its color it just is white now
+because it is over this 100 line so you
+want to try and keep things that you
+want to have color things that you want
+to be in the shot below that 100 line
+this is the same with the shadows as i
+start to decrease the shadows we are
+going below this zero line and that
+means that we are losing color and
+details in the shadows it's starting to
+take colors and just make them black so
+typically you want most your colors to
+be above zero and below 100. as i move
+these mid-tones you are going to see
+that the waveform kind of scrunches
+upwards or if i move it down it's
+starting to scrunch downwards and i
+really use mid-tones for adding contrast
+so let's go to this shot right here and
+i'm going to color correct and color
+gray this a bit exactly how i would do
+this for my own video first things first
+you want to make sure you have that clip
+selected and then we can start making
+our adjustments now when looking at the
+shot one of the things i want to fix is
+how dark it is around my face because
+it's a bit too contrasty for me and so
+first thing that i would do is go over
+to my mid-tones and on this right side
+we have that exposure and i'm just going
+to increase this to bring some of that
+life back into those mid-tones so we can
+see what's going on in the shadows now
+when i did that you can see that i
+actually lifted this entire thing up so
+even though i was just messing with the
+mid-tones the shadows were a bit
+affected as well and i still want
+contrast in this shot so what i'll do is
+i will take my shadows and i'm going to
+bring those down just to the bottom of
+this graph to see how this looks so far
+that's looking pretty good i'm going to
+mess with my highlights see if i want to
+bring those down or up but honestly
+where they're at is pretty good you know
+everything's at the top of this 100 and
+so far i'm happy with how this looks if
+i click this on and off you can see how
+much we really brought back into the
+face how much we brought back into the
+shot just by adjusting those mid-tones
+up and then bringing the shadows back
+down to keep the contrast but also bring
+life to those shadows when it comes to
+adding saturation i like to use the
+master wheel so it affects the entire
+shot so i'm just going to increase it
+just a hair now that i'm liking how this
+looks i kind of want to give this a warm
+summer vibe and so we're going to mess
+with some of the colors add a bit of
+warmth into the shot first i'm going to
+start with the temperature and just kind
+of increase this and see what this looks
+like and you can see as i increase the
+warmth it gets a bit green as well so
+i'm going to grab the tint and i'm going
+to bring it this way to add some magenta
+back into this shot now the highlights
+i'm just going to add some warmth to
+this by dragging it towards these
+oranges and now my skin is getting a bit
+too orange and so what i'll do is i'll
+go to my mid-tones i'm going to pull it
+in the opposite direction adding a bit
+of blue to the midtones i'm also going
+to add a little bit of blue into the
+shadows and maybe increase my highlights
+even more i'm also going to bring my
+highlights down just a hair now this is
+definitely more of a stylized shot
+everything is a bit warmer it looks very
+summery very warm so if i click this on
+and off you can see the before and after
+is pretty crazy right look how dark this
+is it looks really cool it looks natural
+but when i click this on everything is
+much warmer the shadows have been lifted
+and i like the warmth that we're getting
+in the sky in those greens i think it
+looks really awesome when it comes to
+color grading there's no correct way to
+do it it definitely is just finessing in
+the colors messing with it it takes a
+while to figure out you know where you
+want your colors in the shadows the mid
+tones the highlights and so practice
+just start messing with shots there is
+no wrong way to do this just start
+messing around with it see how it looks
+and you'll get better over time now i'm
+going to show you a really cool trick
+that you can do here in final cut but
+first let's copy over these effects
+command c we're going to paste them onto
+this by hitting option command v now we
+can see that it copied everything over
+but it's not looking too good so i'm
+gonna go back into my color wheels and
+make a few adjustments to the exposure i
+think it looks a little bit flat so
+we're gonna add a little more contrast
+to the shot
+that's looking a bit better i kind of
+like having the highlights a bit lower i
+think it looks really cool for this shot
+okay now that i like how this is looking
+looks very warm very cinematic what i'm
+going to do is actually add in a new
+thing by clicking up this down arrow
+right here we're going to add in our hue
+saturation curves now in this video
+we're just going to take a look at these
+top three the huber's tube the hueversat
+and the hubris luma i'm going to show
+you what these do and how they can
+really affect your image if we click
+this eyedropper right here on hue vs hue
+i can select any color i want and it is
+going to show me what color it is right
+here and as i drag this up and down it's
+actually going to mess with that color
+specifically so it's not going to mess
+with the hue on all the colors like that
+one little hue wheel did this is going
+to mess with just that one color so if i
+want to make that blue water a bit more
+blue i can drag it down like this and
+it's going to add in some more blues and
+just change the hue of what the pool
+originally was i'm also going to do this
+with the green so if i click on this
+little green right here there's some
+different colors in this tree so like
+this is going to be a little bit
+different than say this green back here
+you can see the screen has a lot more
+blue in it but i want to mess with these
+colors right here so as i drag these
+down they can get really bizarre really
+blue and you can mess with these and
+kind of fine tune exactly the look that
+you're going for let's say i'm really
+liking this shot but i think the blue in
+the pool is just a bit too saturated i
+like the color i just want it less
+saturated this is what the humor sat is
+for so if you click the eyedropper and
+then select the pool color from here if
+you drag it down you can desaturate the
+pool and if you drag it up it is just
+going to increase the saturation so i'm
+going to keep it right about there and
+i'm going to do the same thing with
+these trees because the green is a
+really cool green i just do not like how
+saturated it is
+okay now this is looking really cool so
+if i turn this off you can see what this
+looks like before and then i turn it on
+this is what it looks like after so this
+is where you can get really creative and
+really stylize a look and color grade
+using this hue saturation curves is a
+really fun tool just to mess around with
+the colors and make something that is
+really unique now that i really like
+this look i'm going to copy and paste
+this image onto a new video so so far it
+looks pretty good but i'm going to show
+you guys actually the main reason why i
+use the hue saturation curves and it's
+typically with skin tones and kind of
+decreasing maybe some of the redness in
+the skin or if the skin is just too
+saturated bringing that saturation down
+just a little bit and i basically use
+this in almost every single think media
+video and what i do is i go into the
+huber saturation use the eye dropper i
+select the skin and then this allows me
+to really refine that saturation in the
+skin tones if i want to bring it down
+just a hair i can and usually the
+redness you know on my cheeks or my nose
+sometimes can just get a little bit too
+red when i add in saturation and so i
+can click on my cheeks or my nose and
+maybe bring you know this area down a
+little bit you can see that the lips now
+have no color and so i just bring it
+back up until i think it has a good
+enough saturation but not too much this
+is before any of the hue saturation
+curves and this is after the hue
+saturation curves this is before the
+entire image and this is after now in
+this next section someone asked me and
+they said how can i edit my videos
+better and i made a video on five and a
+half tips to edit videos better now the
+first tip i actually already went over
+earlier in this video so you are going
+to see the four and a half tips that are
+really going to level up your videos
+these are things that really can just
+take your video to the next level
+whether that's on youtube or wherever it
+is that you are posting your videos
+these are things that are going to help
+keep the audience engaged when they are
+watching your videos tip number two is
+to cover your edits if your video feels
+choppy maybe how to stop a lot when
+talking to the camera and edit in all
+these little pieces piece by piece one
+thing you can do is cover your edit to
+make it look like you are just talking
+to the camera forever and never really
+stopping let me show you what i'm
+talking about and what not to do now
+when a video is choppy just like this
+you can tell when i stop talking and
+when i start talking again so let me
+show you how to fix this and how to hide
+these cuts and the first one is to crop
+in by cropping in it resets the viewer's
+attention and it looks like you just
+kept talking but in reality all you did
+was crop the image in and then you crop
+the image back out and it looks like you
+just kept talking even though there was
+a few cuts within this take another
+thing you can do to hide your cuts is to
+insert b-roll footage adding some video
+to overlay on your footage is a great
+way to hide those cuts so no one really
+knows when you stop talking and start
+talking again it just sounds like a
+fluent conversation tip number three
+this one is really really important and
+it's to cut it out trim the fat keep the
+meat keep the good stuff get rid of
+everything else you want your video to
+be as long as it needs to be but as
+short as possible now if you're a new
+editor you're probably asking well how
+do i know what to cut out i feel like i
+need all of this stuff in there when in
+reality i promise you you can cut things
+out the first mindset shift is to watch
+it as a viewer watch it as if you're
+watching someone else's video now a
+really cool hack you can do here is
+actually bring someone else into the
+room to watch your edit now you're gonna
+watch it with them and what you'll
+notice is when they're watching it
+you're gonna be a lot more critical of
+your own work and you're gonna know when
+they're getting tired and bored of
+watching your video and you're gonna be
+like yeah that's not the best i can cut
+that out tip number four is to use sound
+effects adding some sound effects to
+your videos for transitions or when
+stuff pops up on the screen or when text
+comes on the screen just like this is a
+great way to level up your production
+value this also helps keep the viewers
+engaged helping them watch longer and in
+return helping the youtube algorithm
+pick up your video so you get more views
+this fit tip is really the most
+important tip and it's the one thing
+that i would tell anyone if they said
+give me one tip on editing to level up i
+would tell them this but before we get
+to that like this video and then comment
+down below what other questions do you
+have about youtube content creation that
+i can help you with let me know down
+below okay now the fifth tip is pacing
+is everything once someone clicks on
+your video the most important thing that
+you can do is keep them there you want
+to keep the audience retention and one
+of the main things to do this is by your
+pacing if your video starts off very
+slow odds are people are going to click
+out and bounce on to the next video
+starting off with the right pacing is
+great but you want to keep that going
+throughout the video so people keep
+watching to the very end so let me give
+you one practical way on how you can do
+this change up the music changing the
+music in the middle of a video is a
+great way for the viewer to know
+whatever just happened is over and we're
+on to something new there's a sad moment
+in your video where
+things aren't going right and just
+everything's sad you know using that sad
+music can really bring the viewer in to
+what you're feeling and this is great
+for pacing and then change the music
+because i'm not sad anymore the video is
+moving on and people are now engaged in
+what's next changing your music needs to
+happen at the right moment so if there's
+something new happening this is a great
+time to change the music if there is
+drama or something exciting these are
+all great chances to change the music
+and start new now i actually have
+another half tip because it totally goes
+with pacing so here is tip five and a
+half it's to stop the music this can be
+really powerful in your videos if you're
+saying something important stopping the
+music can let the viewer know what i'm
+saying is important and you need to be
+listening to me this is definitely great
+for certain moments you can pick that
+music back up again but when you stop it
+it's like an exclamation mark on what
+you're saying i was watching last chance
+to you basketball in episode one and
+they used this technique brilliantly
+during the game number 42 kept getting
+these calls against him that weren't
+really right and he gets angry in storms
+off the court the music is building and
+building and he heads for the locker
+room so check this out
+yeah that was intense but what they did
+here with the editing was totally
+amazing the music is building and
+building and then he goes into the
+locker room he smacks the locker and the
+music stops he lets out this big yell
+and you can just tell that this is an
+intense moment as soon as he hit that
+locker the music stops because you know
+something shifted you know that he
+snapped and i think if they would have
+added music to this moment where he
+yells and he throws the chair i think it
+could have been a little bit cheesy so
+stopping the music really was powerful
+and it brought me into the screen
+wondering what was gonna happen next and
+this editing technique that they use on
+last chance u you can also do on your
+youtube videos once you've finished your
+edit inside the software you have all
+your videos you have your music files
+you have everything ready to go now you
+need to export this into one single
+video so i'm going to share with you the
+best export settings specifically for
+youtube so if you're going to upload
+this to youtube these are going to be
+the best settings that you can do
+following google and youtube's
+guidelines to get to your export
+settings make sure you have your project
+selected go to file and then you can go
+to share master file or what you can do
+is you can come over here to the share
+button and then you can also go to
+master file by clicking on that right
+there so now we have this window and
+this is where we're going to get into
+all the information i'm going to show
+you exactly what you need to do to
+upload to youtube specifically to
+youtube so right now on info we can see
+a few things we can see that our project
+is 4k which is great that's what i
+wanted at we can see it's at 23.98
+frames per second great that's what i
+want it as and right here is the file
+size so we can see it's a dot mov we can
+see that it's 161 megabytes now
+sometimes when you first get into here
+what you'll notice is right now i've set
+to h.264 but usually it's at like an
+apple pro does and this is going look
+it's like twice the file size this is
+going to give you huge file sizes and
+it's not even recommended to do this for
+youtube it's really not necessary so
+what i've been doing for the longest
+time is changing my video codec to an
+h.264 a lot of people do this it still
+works it still goes to youtube it's fine
+but this leaves you with a mov well it
+turns out youtube actually wants a dot
+mp4 so i'm gonna show you how to do that
+in final cut pro right now what you need
+to do is go to your format and instead
+of video and audio what it's just
+normally set to you want to go to
+computer this is going to change it to a
+dot mp4 and this is also still an h.264
+file but we're going to go to better
+quality because we want the best quality
+possible now you can't really mess with
+this and and change the quality but
+better quality is going to give you the
+best quality possible our resolution
+that's fine our color space audio format
+all this stuff is fine that's all you
+have to change is format to computer
+make sure you're on better quality and
+this is going to give you even a smaller
+file and i think why they want a dot mp4
+than a mov is because i believe mov runs
+more natively on like apple devices
+where mp4 is more of a global standard
+and all the devices that are android pc
+windows all that kind of stuff are going
+to run mp4 files even faster so i
+believe that your mp4 files once you
+upload that to youtube it's actually
+going to run faster upload faster on all
+devices and so that's great and that's
+what you want to do especially when
+youtube is recommending that now let me
+show you how to save this as a preset so
+you don't have to go through all those
+steps every single time you can just do
+it in one click what you want to do is
+go back up here to the share button and
+we are actually going to add a
+destination because right now when i
+click on master file even though i just
+change it to an mp4 i go back into my
+settings and it's changed back to an
+h.264 mov file so we don't want that
+we're going to cancel this we are going
+to add a new destination and from here
+all you really got to do is drag in
+export file drag it right there it's
+fine if you want it at the very top
+that's great as well when you click on
+it this is where you can actually change
+the preset so format again we're going
+to change this to computer we're going
+to change this to better quality and
+then resolution i like to leave mine at
+4k but you can always change that if you
+edit in hd what you can also do here
+which is cool is change the name so we
+can change this to dot mp4
+if we want to do that and then once you
+hit the close button everything's saved
+you don't have to click save you go back
+up here you're going to see our mp4 at
+the very top we're going to click that
+we go to our settings and look
+everything is saved and we can hit next
+and you can see this actually updated
+the resolution to match what my timeline
+is at so it's going to do that
+automatically which is perfect then
+we're going to go to next we can save it
+to our desktop or save it to wherever
+we'd like and then that is going to
+export for you now this next section is
+so important it's going to save you from
+buying a bunch of hard drives for all
+these videos it's also going to save you
+from wasting your time and all this
+frustration on it we all know videos can
+take up a lot of space on our computers
+and so you want to dump it onto a hard
+drive when you're completely done with
+it well the issue with final cut pro 10
+is that it holds on to these render
+files that makes your library super
+large so i'm going to show you how to
+reduce that library size and this is
+without deleting any videos without
+deleting any assets simply by deleting
+render files and this is going to save
+you a whole lot of space so when you
+dump it onto a hard drive you don't have
+like 300 gigabytes on the hard drive you
+only have like 50. so this is definitely
+something that you need to do on every
+single project so let me show you how to
+save a bunch of space on these library
+files once you start editing i haven't
+really started this edit yet but once
+you do start editing you're going to see
+that library just skyrocket and the
+gigabytes and the file size is going to
+be huge but i'm going to show you right
+now how to do that but let me open up a
+different library first so in this
+project called film yourself in 10 easy
+steps this was a video that i did for
+think media and in here you can see that
+i have my library and it is
+377 gigabytes it's absolutely ridiculous
+how big it is but i'm going to show you
+how to shrink that number down so let's
+open up this library so if we select on
+the library and we look over here we can
+see again it's 377.76
+gigabytes and so before we send this to
+the external hard drive we want to
+shrink that number that's going to save
+us a lot of space save us a lot of money
+and so that is step number five which is
+delete the render files now after doing
+a little bit of research i found that
+this number is so big because it's
+storing all of the render files and
+basically what this means is when you're
+editing a video and let's say you oh
+right here we can see there are these
+dots above the timeline this is what
+needs to be rendered right now so you
+can see all the stuff needs to be
+rendered and as that is rendered it's
+basically creating more space in that
+library so as you can see this is
+starting to render but it's actually
+going to increase our library space as
+that happens and it makes everything
+easier to play back but we don't need
+that when we're done editing the project
+and you can see now the number is going
+up because it is starting to render and
+we're not editing this project so let's
+go ahead and delete our render files how
+we do that is we select the library and
+then we go up to file and we want to go
+to
+delete generated library files right
+here you're going to have some options
+to delete render files and now there's
+two options one is to delete the unused
+only so any footage that you were
+editing that is not now in that final
+project it's going to delete those
+render files and it can keep all the
+render files from the project that
+you've already edited however i'm
+probably never going to touch this
+project again and i want to save more
+space and so what i can do is select all
+and this is going to delete all the
+render files and that's okay it's not
+going to delete any video it's not going
+to delete any of the assets it's just
+deleting kind of like the mock-ups that
+final cut makes in order to run faster
+and to play back your video quicker one
+other thing to note is that you can
+still edit this project so let's say we
+delete all our render files we throw
+onto our hard drive but then we bring it
+back and we want to make some more edits
+it's totally okay it just needs to
+re-render now of course that is going to
+then take up more space but when you're
+completely done with the project there's
+so many projects that i edit that i just
+don't ever touch again and so this is my
+new method is i just delete all the
+render files because if i ever do need
+to go back i definitely can and i can
+re-render everything so i'm gonna hit
+okay and we're gonna see this 378.9
+gigabyte file drop but first we need to
+go to our event so it can refresh and
+then we are going to hit the library
+again and look at this it is less than a
+gigabyte it is
+532.7 megabytes so i'm going to go ahead
+and close out final cut pro because i
+have auto render on after about five
+seconds of not moving the mouse around
+it's going to start rendering again and
+that's going to add more file size and
+you can actually turn that off and mess
+with the settings but i'm gonna go ahead
+and just close down final cut pro now
+that i've closed down final cut pro we
+can see here in the film yourself folder
+that this library is less than one
+gigabyte which is amazing so from here
+we have step number six which is to copy
+the entire folder onto your external
+hard drive so i'm just gonna go ahead
+and grab this folder and drag it over my
+external hard drive and this is going to
+start to copy and the entire project in
+its entirety is going to be 76 gigabytes
+rather than you know 400 plus gigabytes
+so just doing that you know saved us
+over 300 gigabytes which is amazing and
+then why you see the 76 gigabytes is
+from the original raw video that is
+inside of that folder under video coming
+up in the future we are going to make
+more advanced final cut pro 10 tutorials
+so let me know down in the comments what
+do you want to learn what do you want to
+see me cover in the meantime click on
+the screen to learn how some of your
+favorite youtubers edit their youtube
+videos and how you can do the same as
+well you're going to learn a whole lot
+inside of that video so click on the
+screen and i'll see you guys in the next
+video

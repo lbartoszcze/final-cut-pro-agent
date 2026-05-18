@@ -1,0 +1,442 @@
+Out of all the professional video
+editing software, Final Cut Pro should
+be the easiest to work with, but there's
+a few things that really trip people up.
+So, today we're going to go through
+those big hurdles, get them out of the
+way so you can start cutting much more
+effectively. First up is turning off
+background rendering. You can actually
+see it's happening right here. I want to
+get that to stop. So, I'm going to go
+into settings, go to playback, and just
+turn off background render. Now, what is
+this doing? This is basically for slower
+computers. So, if you have something
+older than an M1 Mac, maybe you want to
+turn this on, but it's going to generate
+huge, enormous files that fill up your
+computer in an effort to make things a
+little speedier. Modern Macs can handle
+most footage that you throw at it. So,
+this feature is on by default cuz it
+used to make things easier for people
+with slow computers. Now, I think it's
+more of an advanced feature that should
+be off by default and only turn it on if
+you know you need it. Next, we want to
+stop storing our files inside of the
+library. So, I'm using a recent YouTube
+video as an example. You can see there's
+a lot going on in here. And if we take a
+look at the library, notice that it's
+only 11.4 megabytes. That's very small.
+Now, there's a lot of reasons you might
+want to keep your library small. And for
+me, it's about file management,
+simplicity, and also sharing that
+library with my editor. It's small
+enough that it can just be attached to
+an email. So, you can see in the finder
+that this project has a bunch of
+different folders organizing either the
+A-roll here, I've got the music here,
+clips from another camera. I just want
+to manage my clips manually for a ton of
+different reasons. Then, we can also see
+this is the cache. So, that's what the
+render files were generating. And right
+now, it's almost 1 GB. So, let's change
+those settings on an existing file. I'm
+going to go to the inspector up in the
+top right. And on the left, you're going
+to open up your browser. Now, you'll
+select your library. In this case, it's
+Hypershell. And then back in the
+inspector on the right, we're going to
+click modify settings. These are the
+defaults where Final Cut likes to store
+all the files. Now I want to make some
+changes. For media, I'm just going to
+click library and instead I'll say
+choose. And then in the file picker,
+I'll just navigate to the folder where
+I'm storing my library. And I choose
+that. And then I'll do the exact same
+thing for cache. Change it from in
+library to my project folder titled
+Hypershell. And now when I click okay,
+everything is going to be inside of that
+folder when I look for it in the finder.
+And the advantage of storing your cache
+locally, like these are all temporary
+files. You don't need these, especially
+after you're done editing. Right now,
+this is 4 GB at any time I want to make
+some space, I can just delete that file,
+and I've cleared up some room on my
+computer. You can also delete the cache
+when the library is open by going to
+delete generated library files. But the
+nice thing about organizing it in the
+Finder is once you're done working on
+all the projects, you can just delete
+all the cache files for all of them
+without opening every single library.
+Put all your A-roll in a compound clip.
+So, you know what I mean by A-roll,
+right? That's when you're talking to
+camera like I am right now. This is
+A-roll. Or in this example, I'm talking
+to camera walking on a treadmill wearing
+robot legs. So, what I can do now is
+open up that compound clip by double
+clicking. And anything I want to change
+about it, let's say I want to make all
+of my A-roll black and white, for
+example. Now, when I go back to my main
+timeline, all those clips are black and
+white. It's been applied everywhere. The
+same adjustments carry through to each
+time I'm using a clip from that A-roll.
+So, let's see how we did it. So, all
+I've done is dropped my one long talking
+clip onto the timeline. You can see it's
+in log format now. There's no color
+adjustments. Nothing's happened. First
+thing I'm going to do is rightclick and
+go to new compound clip. You can name it
+if you want to stay organized. And now
+we can just start editing. Since this is
+a very rough version, I'll just look at
+the audio waveforms and cut around them
+so that it just shows me all of the
+talking sections. And I want to make the
+same adjustments to everything so it
+matches, right? I could drag a custom L
+onto one of them. select my stallman let
+to transform from log to recx 709. The
+link is down below and it's especially
+good if you shoot Canon Lumix or on your
+iPhone if you're shooting Apple log.
+It's very helpful. And then like I could
+copy that and then I could select
+everything else and I could say paste.
+But now I've accidentally applied it
+twice here. Like this is why you don't
+do it this way. It can get complicated.
+Undo. Instead I'm going to open up my
+A-roll. Click on it once. Drop the L
+just one time. Now the whole clip has
+been edited. And when I go back to the
+main timeline, look at that. All of it
+has the exact same adjustments. Same
+thing goes for audio mixing. So, I'll
+add a limiter that applies to the whole
+A-roll. This is how you should be
+mastering your A-roll is within one
+compound clip. Or how about the remove
+attributes shortcut. When I was copy
+pasting those color effects a minute
+ago, I ran into a common problem. Let's
+recreate it. Let's get rid of that L in
+my compound clip. So, now everything in
+the timeline is log again. Let's just
+pretend I did want to apply it to
+individual clips. So, I copied it,
+selected everything except that clip and
+pasted it. Now, they all have the same
+effect on them. But now, what happens if
+I want to make a change? I want to add
+another L for my iPhone film pack. It's
+designed to go on top of recx 709 and
+just add a little more personality to
+the color. So, now I've got two LUTs. I
+copy, select all, I paste. Oh, and now
+look at this. I'm like double Luting
+everything. I just select everything
+that I want to apply this to. And here's
+the shortcut. It is commandshiftx.
+This opens up remove attributes. In case
+you don't want to use the shortcut, I
+will show you where it is in the menu.
+You go to edit, remove attributes, and
+this gives you the opportunity to remove
+any attributes you've got on here like
+transform or stabilization, whatever it
+is. I clear everything away that I'm
+about to replace. And then I paste it on
+top. Now I'll have my two LUTs on top of
+all of my clips and they match again. So
+that's it. It's kind of simple, but it
+took me a long time to find this one.
+Before you paste any attribute, clear
+all of the relevant old ones. I think
+probably every single YouTube project
+I've created for the last few years has
+had at least one tool made by Motion
+VFX. Like here, found one right away.
+Zoom in. I use this all the time. But
+let's check out their latest brand new
+tool that doesn't even need Final Cut
+Pro to run. It's called M Upscaler AI.
+And they've been working on this for a
+long time. Basically, can take any of
+your footage, upscale it locally on your
+computer, and massively improve the
+sharpness. Let's test it out. So, I've
+got a bunch of clips from this project,
+and oh no, the resolution. It's only
+720, 720, and this one's only 540. All
+right, let's see what M upscaler can do.
+All you need to do is drag and drop, and
+you can do it in batches. And check it
+out. You can even go all the way up to
+8K. And again, since this runs locally
+on your machine, it means that you're
+not spending credits. Like, you don't
+have to pay per time that you process
+it. You just purchase it once and then
+it keeps running whatever you need to.
+And as we go, it is previewing it. So,
+if you just click, it turns it off.
+Check out those giant pixels. You can
+actually see the squares and on. So then
+I click start. My computer works on it
+for a while. Go get a coffee. And then
+I've gone from 540 all the way up to 4K.
+And we go from pixelated mush to visible
+detail. Motion V effects is an essential
+part of my workflow. And m upscaler AI
+is an amazing new tool in the toolkit.
+So even if it's not the specific tool
+you need, go check out Motion BX.
+There's a link in the description below.
+There are so many things that you can
+put to use. There's titles, there's
+transitions, and if you head to that
+link fast enough, they're having an
+insane sale for just a few more days. If
+you've watched my videos, you'll
+definitely recognize them. So, thanks
+again to Motion FX for sponsoring this
+video. Transform LUTs should be the last
+step of color grading. Now, there are a
+few steps into color grading. Let's do
+it. All right, so I'm going to copy
+these two LUTs we have. They're useful.
+Select all, remove those attributes, and
+we're going to do the color grading
+inside our compound clip. So, we've got
+our transform L turning it into rec 709.
+And we've got our film L giving it some
+life, but there's something still a
+little bit off about the color. For one
+thing, looking at my waveform over here,
+I want the whites to be a little bit
+brighter. And also see that like the
+whites of the wall are a little warmer
+than I'd like them to be. So, what might
+you do? You might open up your color
+tools. You'd select your favorite tool.
+For me, that's color wheels. And you'd
+grab the relevant wheel. For me, I'm
+going to grab highlights right now. And
+just slightly cool them down. So, in
+this example, it basically works fine
+cuz we're not making big adjustments.
+But on more complex grades, I'm making a
+big mistake because I'm putting my color
+wheels last. The whole point of shooting
+in log in a flat profile is to have a
+lot more room for making corrections. It
+opens up whole new worlds of color
+flexibility. You need to be adding those
+color wheels to the very beginning. See,
+when I did that, that it makes a bigger
+adjustment cuz it's getting closer to
+the root of your image. It's almost like
+working on the RAW file. So, we're going
+to reset that. And this is where you
+want to make your color adjustments.
+They have a much more photochemical type
+effect. So even moving exposure like
+grabbing these midtones looks much more
+accurate to an exposure shift where
+again let's move them on top. And now if
+I were to move my midtones up and down,
+see how it like looks completely faded
+or it starts to clip the blacks. Putting
+your color adjustments before your
+transform L is essential. Don't forget
+it. Check if your log footage is rec 709
+or WC 2020. I'm including this tip
+especially for iPhone shooters, although
+it can apply to other cameras. But let's
+take a look at how Apple log behaves
+when you're applying LUTs. So, we are
+going to grab our custom L, drag it on,
+select from the brand new Stallman
+transform LUTs, and this is Apple log
+one. So, we're going to use Apple log
+standard. Now, check out the look of
+this footage. You might say, Tyler, you
+made some terrible LUTs. This skin tone
+looks magenta. Everything looks bad. I
+mean, maybe that's the real reason I'm
+including this because I get so many
+emails asking like, "Why did the colors
+look weird?" Very simple fix. The input
+for the original Apple log from iPhone
+15 or 16 is wreck 2020 and that will fix
+the whole thing. Basically, Apple log is
+prepared for an HDR workflow even though
+most of us don't use it. So, you just
+need to do this color space conversion
+from 709 to 2020. Now, if you are
+working with an iPhone 17, it's a little
+bit different. It shoots an Apple log 2
+which you know well it's flat looks
+exactly the same. Let's drag a custom L
+over here. Select the Stallman log Apple
+log 2 transform. Comes in three
+different flavors and right out of the
+gate it looks correct. You can see they
+effectively match each other. Apple log
+Apple log 2. Now there is an Apple color
+space that is wider than rec 2020 but it
+doesn't make a huge difference. The
+biggest effect in your color grading
+workflow is this. For Apple log 2, you
+select rec 709. And for Apple log 1, you
+select recre 2020. I know this is kind
+of mundane, but a lot of people get
+tripped up on it, so hopefully that
+helped somebody out there. Label your
+cameras before making a multi-cam clip.
+Here's another one you can file under.
+It took me way too long to figure out.
+Okay, so let's say you recorded from
+multiple cameras, like I do so often.
+Here's an overhead and an A-roll cam.
+They all need to sync together, so I'm
+going to rightclick and say new multicam
+clip. Usually I don't even bother to
+name these and I'll let it synchronize
+real quick. So let's open up the
+multiam. Final Cut is usually great at
+this. But what's going on here? Like
+I've got one long clip and the short
+ones in the middle. And so even though
+I'm actually only using two cameras
+here, I've got four tracks. I mean I
+could do simple fixes. Like I could just
+drag this up. But let's say I've got a
+lot more in this project. Let's say it
+was more complicated. Here's the correct
+way to do things. Select all the clips
+from the same camera. In this case,
+there's just two of them. And go to the
+inspector over here in the top right. Go
+to info and at the bottom of your
+inspector panel, you have to make sure
+you're inside of settings and then
+you'll see camera name. And you're just
+going to want to name this anything. I
+mean, in my case, it's going to be
+a-roll. You could just say cam A1, two,
+doesn't matter. Just name it something.
+So, I'm going to select the other two
+and name them overhead. And now I select
+all of those clips. Again, rightclick,
+new multicam, click okay. And look how
+organized it is right out of the gate. I
+don't need to fix anything. My four
+files are in two tracks and I can just
+now cut between them like a regular
+multicam. Change key frames from smooth
+to linear. You only know that there's a
+problem with smooth versus linear key
+frame adjustments if you've tried to fix
+them before. So, if you haven't, you're
+in for a treat. I think Jesse Driftwood
+taught me this one. So, here's the
+animation I've got right now where these
+two logos appear. Let's say I want to
+zoom in on one of them afterwards. I
+want to zoom into Photoshop and then
+move over to the Affinity logo. I'm
+going to use an adjustment clip for all
+this. I'm just going to put it on top of
+all of these areas and key frame using
+that. That's not the tip, although
+adjustment clips are great. So, I add a
+position key frame here. I move forward
+a few frames, add another and a zoom key
+frame, and then I just make my
+adjustments. So, I, you know, kind of
+move things around. So, I'm zooming into
+the PS Photoshop logo. Let's take a look
+at what that feels like. Okay, that's no
+good. Look at this. It does this weird
+like hook around. It overshoots the
+location and comes back. That's not what
+I want. I just want to move to the logo.
+Okay, what's wrong here? To fix it, I'm
+going to right click. Again, this is all
+happening on the adjustment layer. So,
+I'm going to say show video animation.
+And you can see my key frames are right
+here. So, I could just move those around
+if you wanted to. But to fix this
+weirdness, I have to click on this
+dropown next to all, select position,
+then rightclick my key frame and change
+it from smooth to linear. And I have to
+do this on each individual key frame. As
+far as I know, this is the only way to
+do this, which is insane. I don't know
+why the default is smooth. It makes no
+sense. Now, let's play through the whole
+animation again. And look at that. It
+just moved. A linear movement is what
+we're looking for because the zoom is
+linear. So, why isn't the position I
+don't know. Anyway, don't get me started
+on why this happens. But that's the fix.
+Show video animation position. Change it
+to linear. This is a tip I shouldn't
+have to be giving. It makes no sense.
+instead of key frames. Sometimes you
+want the slide transition. But by the
+way, there's a better way to animate.
+Often I'm not even using key frames. So
+let's delete that adjustment layer. And
+since this is a complete project, I'll
+show you how I actually animated it. So
+these first two, this is a motion VFX
+effect. This is just a slide transition.
+All you need to do is click on
+transitions over here on the right.
+Search for slide. It comes built in with
+Photoshop. And just drag it on top. And
+you see it looks wrong right now because
+it's sliding in. In the inspector, I
+need to change it from slide in to slide
+out. And that's it. Now I've got an
+animation. Again, the way that I was
+showing you before, it's going down to
+hide under the desk. And it also moves
+faster. So, I'm just going to make that
+a quicker transition. And there we go.
+Hopefully, we cleared up a few
+bottlenecks that might have been slowing
+you down in Final Cut Pro. But if that
+wasn't enough Final Cut Pro tips, I've
+got so many more. There's a whole
+playlist of them, in fact, cuz I spend a
+lot of time in this app and I know it
+pretty well. So, if you check out those
+next videos, I think you'll find
+something helpful. Thanks for watching,
+guys, and I'll see you in the next one.

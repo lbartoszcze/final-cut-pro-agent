@@ -1,0 +1,557 @@
+in this video i'm going to show you how
+to build a robot to edit for you
+no i'm not i'm actually not going to
+show you how to do that maybe one day
+but i am going to share with you five
+tips to speed up your editing workflow
+so that you can save time because
+who's got time for editing nobody's got
+time for that without further ado let's
+jump right into this video here we go
+you got to just press record
+quick warning for you guys out there i
+am going to be using final cut pro 10
+in this video but these tips are going
+to work with any editing software so you
+definitely want to stay tuned
+but if you're using final cut pro 10
+then you are superior than everyone else
+i'm sorry omar all right let's get into
+it tip number one is to use
+proxies nolan what is a proxy
+good question a proxy is a lower quality
+version of your actual video so you can
+edit with this lower quality version
+your computer runs a whole lot faster
+you're not going to run into
+drop frame rates or loading times
+anything like that because
+it's it's lower quality and then at the
+very end of editing you switch out the
+lower quality with your good quality and
+it does all the magic
+and it replaces all those files and then
+when you export it it looks beautiful
+it looks high quality and it's gorgeous
+and you save time because you're editing
+with the lower quality stuff making your
+computer run faster
+this is how you do it inside of final
+cut pro x you can see right here i have
+my library set up i got my event
+and project ready to go i'm solid all i
+need to do is import some footage
+i'm gonna right click i'm gonna hit
+import media and at this point let me go
+to the correct
+folder right here in my hide likes and
+comments folder is an upcoming video i'm
+going to edit for think media
+to the right you are going to see this
+transcode
+section this is where you can actually
+create the proxies
+and i'll show you how this is stored and
+all that kind of good stuff but
+there are basically two different things
+you need to know here you got optimized
+media and you have proxy media
+optimized media basically says that it's
+going to take your sony or canon files
+whatever you're shooting with it's going
+to turn it into a
+progress file and that is going to run
+smoother inside of final cut pro 10. now
+a lot of you guys probably already had
+that turned on but your files are still
+running so
+because it's 4k and you know your
+computer probably is not that good
+well proxy is going to be better for you
+if your computer is older
+or if your videos are running slow in
+your editing software now under our
+proxy media we have prores proxy and we
+have h.264
+honestly you could use either of these
+i've tried both of them out and they
+both run
+great on my computer but i like to use
+prores proxies because final cut pro
+likes to use pro res because it's apple
+and anyways
+doesn't matter but i like to use prores
+proxy and here you can choose a frame
+size now i shoot all my stuff
+in 4k 50 is gonna turn that in to 1080
+hd
+and it actually doesn't even look too
+bad i mean of course it is lower quality
+but it honestly really doesn't look that
+bad i definitely recommend trying that
+out and seeing how your computer runs
+now if it's still running a little bit
+slow
+you can set it to a lower resolution
+like 25
+or 12.5 percent 25 for me i've used it
+before and it definitely
+works great 50 works for me too but 25
+is a lower quality and it's just going
+to give you faster
+files to work with when editing down
+here you could also set it to you know
+1080 hd which is the same as 50
+but you have those options down here for
+me i'm just going to leave mine at 50
+percent
+you don't need to have optimized media
+selected because we are going to be
+using proxies the whole time so from
+here all you have to do is hit import
+selected
+and because i have the folder selected
+that is going to make proxy files
+for everything in the folder nice and
+easy i'm going to hit
+import selected boom so we are importing
+and you're going to see something right
+up here if you click on this circle
+you are going to get this window and
+this is going to tell you
+what is happening and it tells you that
+it's transcoding and analysis
+remember we are transcoding some of our
+footage right now
+so if i bring this down you can see
+there's three clips that it is
+turning into proxy files so we're gonna
+give this a few minutes we're gonna take
+a sip of water
+and uh come back to it when it's ready
+to go
+[Music]
+am i the only one who uses a gigantic
+water bottle
+99 100. okay sweet so we're all done
+and we can exit out of this our proxy
+files are now made
+before i show you how to actually use
+these in final cut pro x let me show you
+where they are stored
+so inside the folder where i actually
+uploaded all that footage it was two
+video files and one audio file we have
+an optimized media and proxy media now
+this kind of confuses me because i
+didn't select
+optimize media but in here we have the
+it looks like it is the audio but for
+some reason it's a
+mov but it's the audio file anyway so
+there's that but then in our proxy which
+is what we're going to be using
+we have our video files i
+couldn't get that word out so right here
+if i open this up we can see that it
+doesn't even look that bad honestly but
+this
+is our proxy file and then we have our
+screen share
+and you can see this definitely does
+look a bit lower quality than what it
+actually was
+okay this is how you use them now in
+final cut pro 10 for people wondering
+where they're stored
+that is exactly where they're stored
+nice and easy okay moving on so let's go
+ahead and just throw my entire video
+down
+into this timeline so i can show you
+guys how to use this so we got our video
+right here and basically all you need to
+do is go to this upper right hand corner
+where it says view
+and change this from optimized original
+to proxy now proxy only or proxy
+preferred here's the difference proxy
+only
+will only show you proxies so if you
+have something in there that was not
+proxied if i
+add in a new video that maybe i didn't
+make into a proxy file it's not going to
+show that's why i like to use proxy
+preferred because then it can mix in the
+two
+and it's using proxies if it has it so
+i'm just going to select proxy preferred
+and now this video in my timeline is the
+proxy
+now before going out to actually share
+and export the video
+you want to make sure you change this
+back to optimized original
+it's okay if you forget because uh final
+cut pro actually let you know
+we'll say hey do you want to export your
+proxies and you're going to say no
+and then you're going to go back you're
+going to change it and then re-export it
+so
+don't worry about that but that's how
+you do it and that is going to speed up
+your workflow a ton
+especially if you have an older laptop
+an older computer
+definitely start using proxies i hate
+the the spinning wheel of death
+the drop frames all that stuff it slows
+it down we're trying to save time
+number two i'm gonna call speedy rough
+cut okay we are going to
+speed through and fly through this uh 11
+minute and 24
+second clip and trim it down by this
+little editing
+workflow thing that i do let me show you
+so i filmed the video in one
+long clip and i need to trim it down
+into all the good parts
+and i'm going to show you exactly how i
+do this for every single video and i
+swear it saves me so much time
+now if you are going through and you're
+starting at the beginning and you're
+just hitting play
+and you're watching this like this is
+boring you don't want to watch this
+we can skip through all of this and save
+a bunch of time the main thing that you
+want to look for here
+is the audio waveforms we are going to
+be editing
+while looking at the audio waveforms and
+that is
+these little waveforms down here we are
+going to be using these
+right here you can see there are no
+waveforms which means it's silent which
+means i'm not talking
+and therefore we can go ahead and just
+cut that out to start with okay
+so that's that that's kind of the idea
+but we're gonna get deeper and i'm gonna
+show you how you can really start to
+save time
+by using these waveforms now because i
+shot this video i already know
+that this beginning part really is
+nothing because i kind of mess with the
+background and then i come back over and
+i start
+right around this point so i'm going to
+go ahead and just chop all this off
+and i'm going to show you how to do this
+right now so officially
+right here is when i start the video and
+i start trying to talk to it now instead
+of hitting play and listening to my
+entire take
+what i do is i hit play i listen to the
+first like
+three four five words and then i move to
+the next
+audio waveform and then i move to the
+next one and the next one
+because what happens when i shoot videos
+like this is i often mess up
+and then i'll redo what i was trying to
+say and when i move on to my next
+sentence i know that my last take
+was my best take and so that's how i get
+my rough cut let me actually just show
+you exactly how i do this
+now in order to disable now in order to
+turn off
+now in order to turn off your in order
+to hide your
+now in order to hide your dislikes and
+your likes and
+to hide your dislikes and you're like
+what i like to do
+okay i moved on because what i was
+saying is in order to disable in order
+to turn off whatever right
+right here it was uh the last time that
+i said that when i
+jumped forward to this next waveform i
+was talking about something different
+so i know for sure that this is at least
+probably my last take i know that this
+was the same thing but i'm gonna go
+ahead and delete
+all of that and now i'm going to listen
+to this again
+it looks like there might be some pauses
+right in this area maybe in this area
+i can't tell if i just talked slower
+there or if that's an actual pause
+but i'm going to go ahead and listen to
+that right now now in order to hide your
+dis
+videos first thing one you want to make
+sure
+once you have done studio okay so i know
+that's all good because i kept talking i
+never stopped and so i'm going to go
+ahead and hit
+b on my keyboard and select right there
+because i know that's the end of the
+clip
+and i'm going to do the same thing again
+so you can see here that i'm really
+trying to figure out what i want to say
+this is probably the hook in the video
+and so i'm going to fast forward because
+look all of this is just nothing i'm
+kind of probably writing something out
+i'm thinking about what i'm going to say
+i'm going to do it again right here all
+right here we go
+now i'm going to show you now i'm going
+to show you right now i'm going to show
+you how to do this on a video
+you can also do this all right so this
+right here this is it i'm going to
+delete all of this
+and keep going i'm going to show you how
+this when you are uploading
+this that way you never every time you
+can just do
+let's say you want to and you can also
+you can all you can also do this on
+mult now if you wanted to do this
+on all your videos you also do this on
+multiple videos
+so i'm actually saying the same thing
+here so i know that i redid it i just
+changed the wording a little bit
+and also here's another thing i can see
+that i talked for a long time right here
+which makes me think that this is
+probably my best take
+so i'm going to go ahead and delete that
+because i already know that i redid it
+and but let me hear it because i might
+have redone it i don't remember but
+that's why you just listened to the
+first little bit you don't have to
+listen to all of it
+you can do that in the next step so
+that's basically how i go through
+the first cut on every single think
+media video i look at the waveforms i
+listen to the first couple words and
+then i figure out which was my last take
+which was my best take and i move on
+from there so now that i have a rough
+cut in order to just go ahead and watch
+it
+through maybe i want to cut some pieces
+out instead of playing it back
+at 100 and just watching it at 100
+what i'm gonna do is i'm hit the space
+bar and then i'm going to hit the letter
+l now this is going to work on any
+editing software and this is going to
+speed up your playback so that you can
+listen and watch it
+at a faster time than a hundred percent
+which is awesome because
+you don't need to watch the whole thing
+back at 100 especially when it's just a
+rough cut and you're editing it
+uh to trim down the fat and all that
+kind of stuff so i'm going to hit the
+space button then i'm going to hit l to
+speed it up
+now in order to hide your disc on
+youtube as well as comments
+on your videos first you want to do is
+log into your youtube account now i use
+this all the time sometimes i have 20
+minute long tutorials on here that i'm
+watching back
+and just by hitting that l button to
+watch it back i'm saving myself like
+five minutes
+okay every time i watch it all the way
+through and that really adds up over
+time as you are editing
+your project inside your editing
+software tip number four
+is to copy and paste attributes most of
+us know that you can hit command c
+and then command v to copy and paste a
+clip to another clip but what happens is
+that
+this pastes everything onto the next
+clip that includes any audio effects
+any cropping any sort of luts that you
+put on
+is going to paste everything well in
+order just to copy and paste
+a few things that you want to move on
+whether it's just some audio effects or
+maybe a color grade or maybe
+a crop you can do that all you need to
+do is select your clip we are going to
+hit command
+c and there are a few things different
+uh on this clip than the rest of the
+clips but let's say i want to paste that
+the color grade only i don't want to
+paste the crop you can see i have a crop
+here
+crops back out i just want to paste the
+color grade what you want to do is hit
+shift command
+v and this is going to pull up your
+paste attributes now this is really cool
+because
+you can select and deselect things that
+you do not want to paste over
+so like i said i do not want my crop so
+i'm going to go ahead and just
+unselect that and i changed the volume i
+do not want to adjust the volume on this
+next clip and now all i'm pasting over
+is this custom lut so i'll hit paste and
+you can see it has not affected
+the audio it has not affected the crop
+it's just sent over
+my lut i use this all the time
+especially for audio because usually i
+have a grade done and then i'll do my
+audio editing last
+and i copy just the audio maybe the
+volume and some eq and stuff like that
+i'll copy it and paste it to all the
+clips and it's not going to affect any
+of my crop ins crop outs
+or handheld shakes or anything that i do
+like that it's only going to
+paste over my audio effects same with
+luts and different effects like that if
+you are adding on
+effects whether it be a crop or a lut
+onto every single clip that you want
+that's gonna be a waste of time select
+all of them and just do paste attributes
+select what you want it to be
+it saved me a whole lot of time so now
+you know tip number five
+is to create presets this saves you so
+much time because instead of eq'ing the
+same mic
+over and over again you can actually
+create say an eq
+like this for this usb mic and then i
+can use that
+every single time i use this mic it's a
+preset it's built out i can click one
+button and it's gonna do the rest for me
+this works with video effects this works
+with color grading you can actually save
+a lot maybe with some tweaks that you've
+made to it and then save this as a
+preset that way when you add in the lut
+it's also going to add in those little
+tweaks that you've made to kind of make
+it your own and fit your camera best
+here's how you do it first let's start
+with an audio preset so you can see here
+that i've made
+some adjustments to the eq on this
+microphone
+i can exit out of this you can see that
+is the only thing i've done here
+let's say i want the db to be zero okay
+perfect
+now to save this as a preset all you
+have to do is go down here hit save
+effects preset from here you can select
+what you want to save so i'm just going
+to call this
+samsung q2u because that is the
+microphone that i am using
+you're also gonna see other options if
+you add in some sort of like reverb or
+noise reduction you're gonna have those
+options here you can select them
+but for me all i've done is some eq and
+volume which is fine
+and i and you definitely want to make
+sure that stretch to fit is selected
+that way
+it takes whatever clip and it stretches
+it out to the full thing
+so that your effect is saved to your
+entire clip
+from here all you got to do is hit save
+now what you can do is go over to your
+effects you can scroll down to
+audio and you can see that you have
+custom and here are some of my
+custom ones so i'm going to use the
+samsung qtu that i
+just made i'm going to drag it over this
+clip right here
+now you can see that it has added in my
+eq
+to be exactly like the other one this is
+great if you use the same mic for your
+youtube videos
+you definitely want to be saving presets
+because instead of eq'ing the same
+mic in the same room every time you
+don't need to do that just create a
+preset and drag and drop and you're
+gonna be set to go you can do the same
+thing with video so you can see i have a
+lut here and then i have some color
+wheels where i just change some like
+contrast stuff like that
+but if i want to save this as a preset
+both of these together i can go to save
+effects preset now here i do want my
+custom lot my color wheels but i do not
+want my crop
+and stretch to fit is fine i can go
+ahead and rename this to
+the a7s3 which is the camera that i'm
+using for this shot
+now something here and this is the same
+with audio but the audio one was correct
+here it's set to the category 360. i
+actually don't want to save it to 360.
+i'll save it to a new category
+and we can call it custom you can really
+call it whatever you want but i'll just
+go ahead
+and call it custom as well you'll hit
+create and from there it's going to save
+to a brand new category
+called custom so now over here in the
+effects if we go to custom you are going
+to see my a7
+s3 preset we can scroll over something
+that has
+no color on it and boom drag and drop
+and you're good to go click or tap on
+the screen for editing tips for making
+better
+youtube videos i will see you guys in
+the next video

@@ -1,0 +1,391 @@
+if you've noticed over the last few
+years video on the internet especially
+YouTube looks so much better than it
+used to and a lot of that reason is cuz
+people are shooting in 10 bit log so it
+doesn't matter how nice of a camera you
+bought if you're not shooting log you're
+probably giving up a ton of image
+quality So today we're going to talk
+about the correct workflow in Final Cut
+Pro to get all that image quality out of
+your log footage still have tons of
+flexibility to color grade it and if you
+want make it look cinematic in the end
+we're going to be using appal cuz ever
+since that was added to the iPhone 15
+Pro it massively improved what you can
+get out of a cell phone it still blows
+me away and you can match it to other
+cameras so this workflow Works
+regardless of what your camera is Canon
+Sony Fuji Lumix doesn't matter this is
+the way to work with log footage in
+Final Cut Pro as quickly as possible I'm
+going to explain log to anybody that
+hasn't worked with it before it's not
+the codec that's prores or h265 HC
+things like that log is a color profile
+and basically it looks like this it
+looks completely flat and this is just a
+way of preserving a lot more data and
+therefore flexibility in your image by
+removing the saturation and contrast a
+very loose analogy or I guess the effect
+of it is similar to shooting Raw photos
+it preserves all of that flexibility so
+that the image isn't baked in but the
+problem is raw video is really huge so
+log preserves that flexibility in a more
+compressed format there's a lot more to
+it but you don't need to know it to work
+with it so let's dig into a timeline
+here this is a bunch of footage from the
+Calgary stamped I've just kind of thrown
+it in the timeline I haven't done much
+editing to it but as you can see it
+already looks normal this basically
+looks like iPhone footage you know
+contrasty nice it's not what we're here
+for we want to look better than this and
+the fact that it looks normal is
+actually just a trick of Final Cut Pro
+if we reveal it in browser right click
+again and reveal it in finder this is
+what it looks like this is what you see
+when you record it on your phone there's
+no saturation no contrast so what's
+happening in the background here is
+final cut is applying a l and it's doing
+a really good job like what blows me
+away is this footage matches an iPhone
+so well even though it was shot in log
+it just kind of strips away the
+oversharpening and stuff so over here in
+the inspector we're going to scroll down
+click on settings this is where we're
+going to find various metadata settings
+a whole bunch of stuff is in here
+specifically camera L appal you can see
+it just detected what the footage is and
+if I turn it off we go back to our flat
+no contrast image so I could do that one
+clip at a time instead I'm going to go
+over here to the browser and select
+everything in this whole project go to
+camera L and turn it off and now before
+we get too far I've also got to point
+out that we're going to be grading in
+standard dynamic range not HDR High
+dynamic range is the default on most
+phones and that's actually what appal
+log is capturing in but it's not
+supported by a lot of apps it's a much
+more complicated workflow and it's just
+harder to grade it well like it's easy
+to kind of make mistakes so we're going
+to be working in SDR workflow which is
+just still the most most common used by
+most creators today so what we want to
+do is go over here to color space
+override right now it says that it's off
+but it's actually defaulting to rec 2020
+even though it's not telling us because
+it's not overriding anything we want to
+override it to rec 709 that is the
+standard dynamic range color space so
+when your timeline looks like this all
+flat and boring what I think a lot of
+people are tempted to do is select a
+clip they're going to go over here their
+color correction tools and they're
+probably going to turn up the overall
+saturation of the image start messing
+with the contrast turn down those blacks
+turn up the white Point let's turn on
+some of our visualizations see what's
+going on this is going totally off the
+rails okay maybe like that uh you know
+like we're sort of getting a normal-ish
+image but never do this please don't do
+this it is the most common mistake and
+you can never get reliable results log
+is created to be transformed in a
+scientific prec prce way there are tools
+to get much closer so you don't want to
+rely on your own eyeballs to try to get
+it there you want a good L now I'm going
+to be using my L but you got to take my
+word for it that I'm not making this
+video just to sell my L there's others
+out there you can go find a good one
+there's plenty Google it if you want I
+like mine there's a link to it below if
+you want but there are many different
+ways to find a good lot just find one
+that looks good to you because the
+built-in one from Apple is meant to look
+like a normal iPhone so if you want the
+same results I'm going to have here you
+can try out mine but I'm not here to
+sell it to you you can use whatever you
+like and it's going to be the same
+workflow so let's clear away those messy
+changes and let's do it the right way
+now everything looks flat and boring the
+whole timeline but we're going to start
+with just one clip work on that first
+then we're going to expand it to the
+rest and start off by opening your
+effects browser click on color this is
+the next most important step people get
+this wrong all the time even if you know
+how to use a l okay so we're going to
+put a custom L on here just drag it over
+onto the clip that we're going to be
+working on a new feature in Final Cut Is
+labeling your effects so let's call this
+Apple log transform just to stay
+organized and let's pretend we've never
+added a l before so you're going to
+click that drop down say choose custom l
+in your finder you'll navigate to the ls
+you've downloaded select them and now
+here they are available in our dropdown
+so I'm going to select appal to rec709
+and now we're getting somewhere this
+looks like proper footage if you want a
+bit of a comparison here's a similar
+clip using the Apple transform so this
+is the default what you get out of
+camera here it is with my L it's a bit
+thicker kind of punchier but if that's
+all you could do with log you wouldn't
+be watching this tutorial here's where
+the magic happens you need to make all
+of your changes before that log
+transform happens so you're going to
+select color wheels drop them on here as
+well and this is what's most important
+the changes all need to happen before
+the transform you see that so I'm gonna
+actually I'm gonna turn the transform
+off I'm going to call this primaries
+meaning where I make the biggest changes
+like exposure and white balance and if
+you go into them you really can't tell
+what I'm doing if you move them around
+like this but it needs to be happening
+on this flat version of the image let's
+look at a demonstration there's a lot of
+dynamic range going on this clip
+specifically if we look at the sky here
+it's pretty much blown out so let's
+pretend we just wanted to expose for the
+sky we could bring those highlights back
+and you see we're actually recovering
+quite a lot of detail here that's pretty
+good and that's because the prime Aries
+the adjustments were happening before
+the long transform now let's copy those
+adjustments paste them into another clip
+right next to it and now we'll just move
+those primaries afterwards look at the
+difference here we really lose all of
+that detail in the sky like you can even
+see it in the waveform here there are
+supposed to be lights in the sky over
+there and they're fully recovered if
+you're grading the log footage but if
+you're grading after it's logged like
+you're just grading the re 709 you can't
+recover nearly as much of a difference
+like check out trying to recover the
+blue if I open up primaries after the
+transform and I crank up the saturation
+that's what it looks like now let's go
+to the primaries
+before look at all that blue there's so
+much data there this is why you shoot
+log like this is how you recover the
+data don't even bother shooting log if
+you're going to adjust it after you've
+transformed it so let's do some quick
+color grading in the primaries I'll
+usually control exposure in my midtones
+here if I was to affect the white
+balance usually I'm doing that in the
+midtones I don't actually love using
+these temperature sliders cuz see how it
+hits the highlights and the Shadows a
+bit too much most of color temperature
+really lives in the midtones here this
+all basic color grading stuff so I'm not
+going to go any further with it but you
+might also want to add uh let's go into
+color again uh some Hue saturation
+curves another way to do that is
+actually up here if you're like in your
+editing area you can also add correction
+there a bunch to choose from here again
+Hue saturation curves I use all the time
+you can use whatever you want but these
+come in handy a lot and again I'm going
+to make sure that that is happening
+before the transform so we've got one
+clip mostly ready to go but we've got a
+whole timeline to edit here how do we do
+that I'll show you in one second but
+first I want to show you this crazy AI
+tool that really speeds up your editing
+like for real I'm using it to edit this
+video I've been using it a lot of my
+recent YouTube videos it's called gling
+and it's kind of amazing if you ever
+edit yourself talking it's just the best
+way to do it so I recorded a little demo
+here to show you I've already dropped it
+in and you can see it's cre transcript
+of everything that I said so we can
+watch it back when people are color
+grading when
+PE I do this all the time like what I'm
+actually recording has so many mistakes
+stops and starts but gling understands
+that it knows how YouTubers talk and it
+can remove all of these dead ends and
+these words that don't go anywhere so
+you can see at this beginning here I
+started to say okay to show you then I
+repeated myself and I said to show you
+how gling works it's already cut that
+out so if I turn on skip cuts and I hit
+play I basically already have a fully
+edited YouTube video and I didn't do
+anything it understands the context and
+it really gets things right A lot of the
+time now the only step I need to do is I
+kind of proofread it and make sure that
+it's not screwing anything up like here
+I changed my phrasing I said first when
+people are color grading then the next
+time I said when people try to correct
+log footage it didn't realize those were
+the same sentence so I can just click
+this little cut and now I've removed
+that whole line and I just kind of
+proofread the whole thing then I'm ready
+to go if I want I can also change the
+paste so it can remove more or less
+pauses as I go through so like I could
+crank it up and it's going to remove
+pauses between words I don't want to go
+that fast I want to keep it pretty
+natural and when I'm done and I hit
+export it's got a ton of different
+options so this isn't just for Final Cut
+Pro but that is what I'm going to use
+today and I'm going to select multicam
+because there is a really great trick
+here in the same Library I will import
+XML open it up and I've got a a edited
+timeline all ready to go but what's
+great is I can now open up that multicam
+add some different angles so now if I
+open up my multic cam editor I can just
+cut between different angles as it's
+playing gling has already edited the
+whole thing for me so all I got to do
+now is choose the angles this is so
+insanely powerful check out gling in the
+link in the description below and thanks
+again to gling for sponsoring this video
+so back to getting the rest of our
+timeline graded I'll select my one clip
+that looks good command C to copy then
+command a to select all of my timeline
+I'm going to use command click to
+deselect that one clip since it's
+already graded then I press command
+shift and V this is going to paste
+whatever attributes you want across all
+of these clips so take a look at it make
+sure they make sense you might have done
+some slow motion and stuff I don't want
+to paste that I don't want to paste
+volume I'm looking to paste the color
+effects across everything hit paste and
+now my whole timeline has a basic color
+grade done to it but let's say you made
+a mist AK I changed my mind all the time
+so for example I had lowered the
+exposure on that one clip that didn't
+need to be everywhere so let's reset all
+of that and now I need to adjust them
+all again this is a super helpful
+shortcut I learned that I'm constantly
+putting to you so I'm going to command C
+to copy again select all including the
+one that I'm on right now and I'm going
+to press command shift X this brings up
+remove attributes how helpful is that so
+I'm just going to remove all of those
+effects that I just applied everything
+is now back to log I've still copied
+things sitting in my clipboard and I can
+press command shift V again and paste
+those
+attributes back in and now everything is
+caligor and I've got completely neutral
+primaries no adjustments have been made
+so now I could go like one clip at a
+time decide that needs to be warmed up
+so needs to be darkened let's say also
+warmed up a little I don't even know if
+I do that it's like at a very different
+clip okay this one's missing maybe some
+contrast and it's a little cool so bring
+down Shadows a little little bring back
+the saturation warm it up a little
+whatever you need to do now you can
+apply it on a clip by clip basis now
+let's say you want to take the look a
+little bit further make it look a bit
+more filmic you can select a clip again
+we're going to drag another custom let
+on top and there's a lot of lets out
+there that can be applied over top of
+Rec 709 so I have a bunch in my pack
+that'll really push the colors around
+they're not like corrective so this can
+happen afterwards and they're usually a
+little too strong so dial them back to
+maybe like 50% and then you've got
+something kind of interesting so you'd
+want to do the step before you've
+applied it to everything so now I would
+copy select all command shift X command
+shift paste and now everything would
+have that same filmic look applied on
+top and actually there's another common
+way I do this so I'm going to delete
+that custom let you're going to have to
+add an adjustment layer for some reason
+these aren't built in the Final Cut but
+if you just Google them or look in the
+description I'll provide a link you can
+download them and you'll just drag it on
+top of everything so if I zoom out I can
+look at the whole timeline make sure
+it's applied to everything put a custom
+L on top of that adjustment layer and
+look at that the whole timeline now has
+that same filmic look applied to it so
+that's how you work with appal log in
+Final Cut Pro I really hope this was
+helpful to you guys let me know if you
+have any questions all the links are in
+the description below thanks again to
+gling for sponsoring this video and I'll
+see you guys in the next one
+[Music]

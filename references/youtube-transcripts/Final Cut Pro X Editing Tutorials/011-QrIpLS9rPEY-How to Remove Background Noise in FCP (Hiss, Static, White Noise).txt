@@ -1,0 +1,191 @@
+this is the new best way to remove
+background noise in final cut pro first
+thing you want to do is select your clip
+and once you get that selected in the
+upper right hand corner we are going to
+go to this audio symbol this is the
+audio inspector and inside here the old
+way of doing this was just to use the
+noise removal but this thing was
+absolutely terrible it did not work so
+well now final cut pro actually just
+came out with a brand new tool and it's
+called voice isolation and honestly this
+thing i think it might be magic this
+tool is perfect for removing background
+noise whether you have an air
+conditioner in the background or you
+have some hiss white noise static or
+even just loud background noise in the
+background of your shots so let's see
+just how good this voice isolation tool
+is we're gonna test it on two different
+levels first we're gonna start with a
+level one clip which is difficulty easy
+and then we're going to jump to a level
+10 clip which is difficulty hard scratch
+that difficulty extremely hard so right
+here is our level one clip which is
+pretty easy we have an air conditioner
+in the background and take a listen to
+this sean was sitting right underneath
+it and it was pretty loud yeah i mean
+my hard goal is now this thing is pretty
+loud and annoying but we're gonna see if
+we can remove this air conditioner from
+the shot and just isolate his voice so
+we select the clip and then we're gonna
+go back up here under voice isolation
+and automatically it's going to set it
+to 50 percent and let's play it and see
+how it sounds and then from there we can
+adjust in fact like that is the language
+that alex hermosi and that sounds pretty
+good and just for reference let me show
+you what this sounds like with it turned
+off in fact like that is the language
+that alex hermosie and layla speak is
+like the reason they do it is now like i
+said this thing is like magic and it
+does a really good job but we can
+actually increase this a little bit if
+we want to just by sliding this up to
+let's try seventy percent and see how
+that sounds in fact like that is the
+language that alex hermosie and layla
+honestly at 75 that is sounding really
+really good level one complete let's
+move on to level 10 difficulty extremely
+hard take a listen to this and let's see
+if we can make it sound any better the
+your first thing to do after joining is
+to watch niche finder which i know is
+something to watch and we have all this
+other stuff yeah that's that's going to
+be pretty difficult to remove all that
+background noise but stay tuned because
+i do have some audio tricks inside of
+final cut pro that you can do to make
+this sound a lot better even after doing
+the voice isolation tool so let's just
+get right into it first things first
+let's just go ahead and apply the voice
+isolation at 50 and see how it sounds
+after joining is to watch niche finder
+which i know is something to watch now
+it sounds pretty good but the background
+noise is still bleeding through just a
+little bit so i'm going to play it again
+and increase the percentage no it's
+other stuff but like there's nothing
+like it so 100 is just a bit too much
+but i feel like right around that 80
+percent is where it sounds pretty good
+without distorting the voice too much
+like i said though there are a few other
+tricks we want to do to this clip to
+make it sound better now the first thing
+we're going to do sounds a little bit
+backwards or counter-intuitive but we're
+actually going to add in some background
+music or background sound effects the
+reason we do this is because when we
+remove all of that background noise it's
+just him talking and he's talking really
+loud and it doesn't sound quite natural
+to watch niche finder but if we add in
+some sound effects or some music it's
+going to sound a lot better i'm going to
+be using epidemicsound.com and you guys
+can try this too you can get a 30 day
+free trial by going to
+thinkmediasounds.com
+and then do exactly what i'm going to do
+on this video first we'll start off by
+downloading a sound effect that is going
+to sound natural in the background of
+the video all you got to do is go to the
+search bar and then we are going to type
+in something like people talking and
+we're going to see what pops up right
+here we have a large exterior crowd
+which sounds like it would be good but
+let's take a listen and see if it fits
+all right i love that sound effect so
+we're gonna go over here to download and
+just like that i can download this and
+then apply it inside of final cut pro so
+now i'm gonna drag the volume of the
+sound effects down to about negative 12
+decibels and let's hear what it sounds
+like with and without the sound effects
+to watch niche finder which i know it's
+like it the nice thing about removing
+backer noise and then adding it in later
+is it still sounds natural but you're
+able to mix the volume exactly how you
+want now the other thing you can do is
+add in background music but there's a
+trick you can do to the actual song to
+make it sound a lot better when it's
+paired with a human voice now back on
+epidemicsound.com we are going to go to
+music and one of my favorite things to
+do is actually browse through the
+playlist that they have they have
+amazing music in these playlists makes
+it really easy to find the right song
+one of my favorite playlists is called
+podcast hip hop and in here there is
+just a bunch of really cool beats that
+would work perfect to go in the
+background of this clip another great
+feature they have is that you can sort
+through these playlists or really any of
+the music by genre mood vocals duration
+or bpm so i'm gonna go over to mood and
+then i'm gonna select happy going with
+those happy vibes and i'm gonna listen
+to these and see which one i want
+okay okay okay i think that's the song
+we're gonna go to download and we're
+gonna download that to my computer and
+then just drag that right into final cut
+pro so here's what we need to do with
+the music to make it sound really really
+good with his voice the first step is
+we're just gonna quiet down the track a
+little bit so we can edit it to the
+voice the next step to this is to
+actually select the music track and then
+we're gonna go up here in the audio
+inspector and we are going to mess with
+the equalizer so that it's not clashing
+with his voice as much and i'm gonna
+keep this super simple i'm just going to
+play the clip and then drag this down a
+little bit in the higher ends so that
+his voice is going to stand out a little
+bit more after joining is to watch niche
+finder which i know is something to
+watch that sounds much better and the
+last step which is the icing on the cake
+is we want to select the actual clip
+with the audio of sean talking and then
+we are going to eq his voice as well
+your first thing to do but like there's
+nothing like it so now let's listen to
+what level 10 sounds like before and
+then after your first thing to do after
+joining is to watch niche finder which i
+know is something to watch and we have
+all this other stuff but like there's
+nothing like it that is much easier to
+hear his voice and even with all that
+background noise we made it sound a lot
+better if you want to see my favorite
+effects plugins and tools that i use in
+final cut pro to edit these videos then
+click on the screen and i will see you
+guys in the next video
+[Music]

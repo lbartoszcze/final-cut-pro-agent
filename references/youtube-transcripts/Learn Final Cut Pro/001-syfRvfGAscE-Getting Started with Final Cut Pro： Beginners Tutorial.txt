@@ -1,0 +1,696 @@
+we're gonna go through all the basics of
+final cut pro i'm gonna make it really
+easy for you but we're also gonna build
+habits so you can edit professional
+videos down the line my name is tyler
+stallman let's get started so first a
+tour of the interface here is an
+existing project that's already underway
+over here on the left you're going to
+notice a bunch of beautiful footage by
+the way as we look through this i can't
+take credit for these shots these are
+courtesy of stoxy united sponsor of
+today's video and more about stocks
+later over here in your browser you've
+got everything you might end up using in
+your project so i've already loaded this
+in i'll show you how to do that in a sec
+but just to give you a sense that this
+is where you preview it this is just
+like the staging ground of like figuring
+out what you've got
+i've also got music later in here
+everything goes in the browser and
+that's where you preview stuff and by
+the way if you can't see enough of what
+you're looking at you can resize all
+these areas by grabbing the between
+lines you can also press the command
+minus command plus to zoom in and out
+and make these clips bigger or smaller
+and there's a couple tabs on the browser
+that opens up your libraries so in here
+i've got a few other projects open so
+this is a completed commercial project
+for a skincare brand that we did it
+gives you a better sense of what a
+completed timeline might look like but
+we're not there yet so we're going to go
+back into our final cut for beginners
+project and close the libraries for now
+here in the middle this is our viewer
+that is currently showing us our
+beautiful stock footage and that's just
+going to play whatever you have selected
+so right now it's playing the bottom of
+the screen if i click over here in the
+browser again we're going to start
+seeing stuff from the browser by the way
+see i'm just like moving my mouse and
+it's scrubbing around through the clip
+if you don't like that some people find
+it confusing to move around that quickly
+you can press s
+that turns off scrubbing and now you
+won't get that effect as your mouse
+moves around the screen instead uh you'd
+have to like click and drag but so yeah
+i'm going to keep it on and press s
+again and now wherever my mouse is on a
+clip it'll show me that exact frame here
+in the viewer moving to the right of the
+screen we've got the inspector right now
+it's showing us color adjustments we can
+make on this but there's all sorts of
+stuff in here again tabs will show us
+the way this one gives us different
+things like opacity if you want to
+change how much you see through a clip
+or the
+zoom amount
+basically all the properties about a
+clip are over here in the inspector and
+you can switch between different things
+like right now this would transform the
+clip and this will show me specific
+details about it i can get more details
+down here there's a lot to see don't get
+overwhelmed you don't need to worry
+about it much yet um the first things
+we'll like we'll leave it on the video
+inspector tab
+to start with and then down here below
+at the bottom this is our timeline this
+is what editing is it's putting a bunch
+of clips in a row so that they play back
+as a sequence so it's not just one long
+clip we've got some different layers of
+them on top of each other we've got
+music on the bottom and i'll show you
+how to use it in two seconds but for now
+i'll just keep scrubbing back and forth
+because i like seeing this footage but
+um also worth knowing is that wherever
+you've clicked last you'll see this very
+subtle blue border and that's how you
+know which of these panels is selected
+so right now you can tell the timeline
+if i click the viewer there's a little
+bit of a bluish purple up here at the
+top if i click the inspector depending
+which panel is selected
+different keys and shortcuts will do
+different things in that area so for
+example a basic shortcut you could have
+guessed if i click on the inspector and
+i press command plus it will zoom in
+command minus will zoom out if i do that
+over here in the browser it'll do the
+same thing it'll zoom in and out of my
+clips so that's the overall interface
+structure of final cut pro
+and i might be moving a little bit
+quickly but don't worry i will show you
+how we put this all together and if it's
+overwhelming just re-watch this video
+once you're done with it because there's
+a lot of details in here and i know it's
+hard to absorb in real time but i want
+to keep this video short enough that uh
+you have time to watch it twice okay so
+uh let's let's put this all together now
+let's leave final cut for a second go
+back to the finder and set this all up
+from scratch so first i'm going to use
+an external disk if you're using your
+internal you might fill it up really
+quickly so an external ssd is always
+helpful and i'm going to create a new
+folder call it final cut pro
+getting started
+and inside of there i'm going to create
+a folder called video and another one
+called audio
+and sometimes i need one called images
+too whatever kinds of media that's how i
+sort things but the sorting you got to
+kind of do it in the finder before
+you've set everything else up so now we
+go when we launch final cut pro and this
+is what it's going to look like when you
+haven't done anything yet just a pretty
+big blank screen we're gonna go file new
+library i've explained libraries in a
+previous video and why i use a different
+library for every single project unless
+all the videos share footage but usually
+new library every project that video
+will help a lot the link is in the
+description below and i usually name it
+the same thing as the folder
+and let's minimize final cut and look at
+what that did so now there is a library
+inside of our project folder and this is
+how i kind of organize things before we
+customize the library or build anything
+there's one preference i recommend
+changing based on the way that i edit
+and that's in the import section of
+preferences i'm going to change it to
+leave files in place so that allows all
+of those folders we just created to stay
+organized the way that you made them if
+you do copy to library it will make
+duplicate files inside of a library file
+and
+apple says it's easier i find it a
+little harder to let apple manage your
+media so we're going to leave files in
+place oh and williman preferences i just
+want to point out in the playback
+section this background render option
+this is kind of significant for how
+final cut works and how it's so fast
+whenever you stop working final cut just
+starts to render your video so that when
+you export it it's like ready to go this
+can slow down your machine if your
+machine is really like overtaxed because
+it's rendering all the time but if you
+have a reasonably fast machine then your
+final export is super speedy so
+try to keep it on if you can but if you
+find your machine slowing down you can
+turn it off it depends i just want to
+point this out for later okay i'm gonna
+leave it on back to editing so now let's
+get some videos in here i'm gonna go
+back to the finder where i was a moment
+ago and here are the videos that i
+downloaded from stoxxy i'm just going to
+select them all and again file
+management starts in the finder and i'm
+going to drag them to the video folder
+that i created so now i know where they
+all are doesn't really matter what
+they're named i don't have to worry
+about any of that now let's go back into
+final cut and there's two ways to do
+this one you can click import which it's
+good to see this import dialog because
+it shows you all the options and all the
+preferences you could use
+looks a little more complicated i'll
+show you the easy way in a sec but again
+same thing that i don't want to copy to
+library that could create duplicates i'm
+going to leave files in place i'm just
+going to navigate to it which is on my
+external drive here you can see a
+preview of everything you're about to
+import lots of preferences over here on
+the right good to know this in the
+future we're not going to use it today
+so instead i'm actually going to close
+this import dialog
+go back to the finder and i'm going to
+click and drag this whole video folder
+onto this date now we haven't talked
+about the date yet but the date is just
+the default name for an event an event
+is a folder i this is this is a place
+where people can get confused so an
+event in final cut pro is effectively
+just a folder i usually only actually
+have one event per project i don't even
+rename it so i'm going to just leave
+that what it is and inside you'll notice
+it created a keyword do this little key
+it's because the keyword is the name of
+the folder i imported so now when i go
+back to the finder and click and drag my
+audio folder to the same place
+i have all my audio is keyworded now our
+browser has a bunch of media to work
+with but our timeline it's still empty
+down here so you can either click new
+project or it's good to know where it is
+file
+new project and i usually name my
+projects the same thing as the library
+unless i have like different versions of
+edits or something a project is
+basically a timeline final cut made some
+of their naming of this stuff a little
+bit confusing like i think some people
+think of the library as projects and
+some people think of projects as
+timelines
+the names are a little confusing so just
+look at the way that i use them this
+project
+is the timeline we're about to create so
+there are some preferences to look at
+here right now i was about to create a
+vertical video that's not what this is
+this is 4k footage and i'm going to be
+doing it at 24 frames per second
+rounded down and those the only things
+you really need to look at here is the
+actual resolution make sure it matches
+whatever it is you shot and that the
+frame rate again is like similar to what
+you're using the rest of this you don't
+really have to worry about it most of
+the time you can also use automatic
+settings which will do it based on what
+you import in the timeline but i always
+like to customize it and we say okay and
+now we have a timeline at the bottom
+hopefully you're with me so far so now
+if i am looking at the library you can
+see there is a project in our library
+there's no footage in a project yet and
+now watch they create the fastest edit
+ever so i'm just gonna select all and
+i'm going to drag it all into the
+timeline and because the stoxy footage
+looks so good i don't have to do
+anything else and it kind of looks like
+a movie already and to make it faster
+here i'll do this like change duration
+and make everything half a second okay
+and now we've got a very cool edit and
+you know about soxy already because
+they're awesome not just for sponsoring
+this video but they're a community of
+filmmakers and photographers
+including yours truly that provide
+really good quality art that's easy for
+you to license for your next project so
+that means it's royalty-free very
+stress-free you can basically use it for
+anything without getting worried about
+whether it's covered by the license or
+not but if you need they do also have
+extended licenses market freezes and
+exclusivity so you can just talk to them
+about whatever your specific needs are
+but the basic license covers most things
+the search is easy to use and stoxy has
+powerful discovery tools so it's easy to
+find exactly the shots that you're
+looking for for your project whatever it
+is the quality of work there is really
+next level one cool feature is that they
+shoot in like narrative sequences a lot
+of the time so you'll be able to find
+multiple shots to tell a complete story
+so it's not just one offs like the shots
+can link together and keep some kind of
+common style location or characters
+throughout your footage and stocks these
+contributors are a community unlike any
+other it's a cooperative so everybody
+actually has a say in how the companies
+run and that means that it's really
+allowed it to thrive and that's why when
+i call them artists
+i mean it and it's not all the cool
+trendy lifestyle stuff i showed you here
+you can also check them out to find you
+know great business office environments
+for landscapes just head over to stocks
+click the link in the description below
+and thanks doxie for sponsoring this
+video i really like what you do now back
+to final cut all right now let's set it
+for real that was a bit of a cheat
+throwing at all my timeline let's delete
+all that select all delete now we're
+going to go back to the browser and
+select some good moments that we like so
+uh one way you could do that is just by
+mousing over things again we have the
+scrub tool on i could just move and i
+could just click and drag and that
+selects the area that i want to use and
+i could either drag that down to the
+timeline or i told you i was going to
+build some good habits for you guys
+we're going to click on it make sure
+it's yellow and then press e that is the
+key that will drop it to the end of the
+timeline it's usually how i'm adding
+clips into it if you're not the kind of
+person that uses shortcuts now's the
+time to start you should really be using
+shortcuts so i'll keep telling them to
+you if navigating and if you haven't
+figured out how to navigate the browser
+yet again i've got the scrubber thing on
+so i just moved through it till i like a
+moment maybe i want to turn around here
+so right at the turnaround
+i could press play and that'll preview
+it in real time she's just looking
+around okay cool so maybe that's what i
+want to use the other way to insert
+things is as you're playing
+you can press the i key for in and when
+you're done press o and that section is
+now selected so in and out is the range
+of the clip that's going to be used and
+now when i press the e key again
+that'll drop it into the end of the
+timeline and even if i move my playhead
+like if i move the playhead forward and
+i'm going to use the next clip here and
+i say in and i say out and then i press
+e it still jumps to the end of the
+timeline a tip i've mentioned in other
+videos is that as you're previewing
+stuff over here can be really helpful to
+instead of just adding it directly to
+the timeline press you're in
+and out and then press the f key and you
+see there's a little green line here
+that means it's been favorited so later
+i could go back and i could sort by all
+my favorites and then you can just refer
+back to like all the favorite moments of
+the whole shoot that you've got but
+that's a little advanced for now for now
+we'll just keep dropping them into the
+timeline as you're playing through your
+browser when you hit the spacebar it
+will actually just keep playing from one
+clip to the other so in our case again
+this looks sort of edited as it just
+plays through if it's not playing from
+one to the other there is something
+called loop by the way i forget where
+things are in menus sometimes so you can
+always click help and i'm going to look
+for loop oh there it is it's in playback
+loop or more importantly the shortcut
+for it is
+command l so uh that will just keep
+playing the same clip over and over when
+it gets to the end you can see it just
+looped
+i prefer to keep it on playing from one
+clip to the next clip now let's skip
+ahead i'm going to look at the timeline
+that i already edited and now it looks a
+little different you can see there are
+some layers so a very important concept
+in final cut is that there is something
+called a primary timeline which is
+designated by this darker strip here in
+the overall timeline and that's really
+where you start like in a basic edit
+like this you could do everything with
+just the primary timeline and you don't
+have to start having stacks of different
+clips on top of each other by the way if
+you're coming from a different video
+editing software this is probably what's
+going to trip you up more than anything
+is the magnetic timeline but
+if you're new to video editing this is
+the thing that will make you never want
+to leave final cut pro because the
+magnetic timeline is the best i do see
+youtube videos showing people how to
+disable the magnetic timeline
+if you're doing that
+stop using final cut like that
+it's like the whole point
+of the the reason that it's so quick to
+work with like final cut isn't just fast
+because it's optimized for mac hardware
+it's fast because the metaphors
+accelerate your workflow and have you
+build up momentum as you go it kind of
+wants you
+to make the next edit as soon as
+possible and pushes you towards it and i
+always appreciate that so i can always
+finish and edit it faster in final cut
+than in any other software so thanks
+final cut now magnetic timeline what am
+i talking about that's apple's marketing
+term for the fact that if i pull this
+out you can see things either snap
+together or snap open it either makes
+space for or closes the space of any
+clip that i add to it now you're
+probably like why would that be
+confusing to anybody that seems so
+simple well here i'm going to add a
+piece of music
+underneath it and now here's probably
+the main thing that trips people up with
+the magnetic timeline music is now you
+know it just like plays through the
+whole clip as things go by it just keeps
+playing and um if i grab this first clip
+and move it the music comes with it this
+is very different from how other editors
+work and basically as things get stacked
+on top of each other they create these
+tiny little lines so you can see this
+one is going down the music it's going
+up if you're ever grabbing clips and
+moving them and they're connected in a
+way you don't want it's really easy to
+change it you just have to remember the
+shortcut which is command option hold
+those down and then just click on
+wherever it is you want to move the
+connection to so i'm going to click on
+the music and now the connection has
+moved to this other clip or in the case
+of this b-roll i could you know these
+connect a little bit more right this
+person might be what these aren't the
+same shoes it's not the same person okay
+but i want to connect these i can
+command option click and now the line is
+connected there so those two are
+together this makes it so much easier to
+not make mistakes when you're editing in
+final cut and it's the hardest thing for
+me to go back to let's say resolve or
+premiere
+is that you can make a change earlier in
+your edit and it kind of breaks
+everything later in your edit whereas
+final cut keeps everything together and
+you can keep moving quickly and just
+trust the software to not let things
+fall apart anyway this is this is like
+why i keep using final cut forever
+because the metaphor just makes a lot of
+sense to my brain so right now the
+length of the clips that are playing
+like their duration was set by the in
+and out points that we originally
+established but
+after we've added them all to the
+timeline we probably want to make some
+changes now i have a special way of
+doing that that i didn't learn for a
+little while and so i'm going to pass it
+along to you oh wait first one little
+thing the music doesn't take up the
+whole length of the video right now so
+here's one way to do it this is the the
+first way i learned is you just can
+click and grab the end of any clip or
+any piece of music and drag it to the
+link that you want to use you're
+probably going to keep using that
+forever it is always useful but it's
+definitely not the fastest way to do
+things usually i've added too much of
+clips like they're longer than i want
+them to be and i want to trim them down
+so
+let's say that bike shot i want to be a
+little bit shorter so i click on the
+clip and i look at where the playhead is
+and when i press option right square
+bracket kind of an obscure shortcut but
+it will trim everything to the right of
+where the playhead was on that selected
+clip and then i could also do that at
+the beginning and i could press option
+left square bracket and it trims
+everything to the left this is called
+the ripple delete because the changes
+ripple through the rest of the timeline
+like everything else slips into place as
+i remove that little section in fact i
+use it so much that i like to go into
+the commands and i customize them and
+like the only customization i do is i
+make it so that just pressing that
+square bracket that does the trim
+instead of needing the option key by the
+way my philosophy on customizing keys in
+general is don't do it too much because
+you're gonna go on somebody else's
+computer someday and you won't know how
+to use it so uh i just make a few small
+changes
+like removing those modifiers so now
+we've tightened up our edit and it plays
+back at a speed that we like
+we can kind of finish it right let's
+like tweak the things at the end and
+make it exactly what we want okay so for
+example this shot i believe this is
+actually shot on film and it just
+doesn't quite match our other stuff so
+i'm going to use the inspector layer to
+make a few changes to this so that
+it is more in line with the others i
+don't want to remove it so i make sure
+that it's selected there'll be that
+yellow border around it and then inside
+of the inspector i can do a few things
+uh first you can see that there are
+black borders on this because this is a
+four by three ratio that's the
+super eight i think you can see the
+camera menu there's the cameraman in
+here so um it is cropped uh in a
+different way than the rest of the
+footage so to make it match i'm gonna
+click on the zoom slider and drag it
+until i've lost those edges which is
+kind of boring i know i'm like cutting
+out the cool film stuff a bit but uh
+just for this example i can still see
+some on the left there so i got to go
+just a little bit more
+that is not actually making it any
+better but
+it does match now other things we might
+want to make match uh commonly are the
+colors so we're going to click on this
+little color inspector tab right now and
+i've got a different default here if you
+want to check this out you can go in
+your preferences and you can get a
+variety of defaults depending on what
+you choose as your color correction
+default thing i don't like the color
+board color wheels are standard like
+that's the industry standard so
+i changed that so that this is what i
+see at first and this is looking very
+blue compared to everything i mean it's
+quite a blue shot so i'm going to start
+by grabbing my midtones
+warm them up a whole bunch then i just
+look at it like next to the shots beside
+it it just feels more at home it's a
+little less out of place
+also maybe a little darker in the
+mid-tones and next in the inspector tab
+we got to know about the audio i've only
+got music in here none of these clips
+have their own audio so i'm going to
+click on the music to show it to you
+the most important thing is volume i
+mean do i need to tell you that you can
+just move it up and down but you've got
+to click on the audio thing to know
+about that um also there are effects
+that you can add so for example um in
+addition to just turning it down
+sometimes you might want to like
+uniformly raise or lower the whole
+volume inside of this button here are
+all of the effects so i know there's a
+plug-in called gain gain is just like
+volume and i can drag this over here and
+i can say okay everything gets turned
+down by i don't know whatever mostly i'm
+just trying to show you that all the
+effects are over here so um you can also
+apply video effects so for example
+there's a bunch of color stuff that's
+very helpful here you can put luts on
+top so if i click and drag that onto
+here now in the inspector i can see some
+lut options and i'm going to apply one
+of my luts which you can download if you
+want and it just gives it a bit of a
+film look to kind of match that other
+film shot there's tons of effects in
+here dig around see what you can find
+but then also right beside it there are
+transitions try to keep your transitions
+kind of basic don't go crazy with them
+that's like an editing tip but we are
+going to use one here we are going to
+fade out to black at the end using fade
+to color i can grab these small edges to
+make it longer or shorter click on it
+i've got to set my mid point to the end
+otherwise it would start to fade
+halfway through the or finish fading
+halfway through the clip so i want to
+finish fading at the end of the clip and
+now i play it
+and it fades to black now before you
+rewind this video and start watching
+from the beginning i'm going to tell you
+one more important tip like this is
+actually quite important and can slow
+people down a lot if they don't get it
+with final cut final cut creates these
+big cache files that's what the
+rendering was doing remember when we
+were in the preferences and we disabled
+or enabled depending on how you work
+background render that's creating those
+giant cache files so we click on our
+library you can see for example that it
+is in the library there is 1.4 gigs it's
+not very big yet but this can grow a lot
+like hundreds of gigs eventually to keep
+everything organized again this is with
+the library selected go to storage
+locations and modify settings
+for the media i'm just going to choose
+like the root folder for the whole
+project and then for cache i'm going to
+choose that same folder and now when i
+go back to the finder this is the cache
+file and you can see how big it is it's
+not actually that big but now you can
+just quickly delete it if you ever need
+to make room for things that cache is
+just speeding up final cut it's not
+necessary for the edit but it can be
+enormous
+so it's good to know where to find it
+and how to delete it you can also if
+you've kept it in your library go to
+file delete generated library files and
+there's some options here to delete
+cache and other stuff now i know that
+was a lot but i've got a playlist that
+will walk you through a whole bunch of
+other editing tips to make this easy for
+you editing should be fun it shouldn't
+be too hard it's a lot of the reason i
+like final cut pro because it keeps it
+fun thanks for watching guys i'll see
+you in the next video

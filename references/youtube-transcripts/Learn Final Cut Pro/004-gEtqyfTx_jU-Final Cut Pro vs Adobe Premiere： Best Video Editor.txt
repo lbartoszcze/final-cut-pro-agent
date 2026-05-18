@@ -1,0 +1,332 @@
+recently I was doing exactly what you're
+doing right now watching a bunch of
+YouTube videos comparing different video
+editing software and I realized a lot of
+them have weird biases towards whichever
+software the Creator just switched to
+usually they're either excited about how
+much faster finally like a pro is gonna
+be or if these cool new features that
+they're gonna get out of Premiere Pro
+also more and more I'm seeing people
+talk about switching to DaVinci Resolve
+we're not gonna address that in this
+video because I just feel like it's not
+quite there as a mainstream inally
+editor yet it's gonna get there if you
+don't spend any money it's amazing go
+download it now a quick thank you this
+video sponsor CleanMyMac X more about
+them later so how are you gonna choose
+which software to use you could just
+look at a list of features you're ever
+gonna find that premier has more things
+that it can do it's a longer list that's
+not telling the whole story at all I
+went and talked to some professional
+editors doing some of the best work in
+the world and they both made different
+software choices thomas grove carter
+uses Final Cut Pro when he works for
+trim editing based in London he works on
+major commercials for Nike outtie
+Mercedes and music videos for ed Sheeran
+Major Lazer
+and more Q have definitely seen his work
+he is incredible hey Tyler how you doing
+can you tell me a bit about why you
+choose to use Final Cut but I found the
+Final Cut 10 is the fastest way I'm able
+to work as an editor is the only enemy
+that I feel really lets me get into a
+proper creative flow and just keep
+working getting the ideas from my head
+onto the screen you've also probably
+seen some videos by Johnny Harris he is
+doing the Border's series on Vox media
+where he travels around the world in his
+little documentaries about countries
+that he's in and how they interact it's
+amazing stuff it's mind-blowing it's
+absolutely beautiful he's really
+advanced title sequences and he relies
+on Premiere Pro and After Effects to get
+his work done what I love about premiere
+is just the flexibility within it and
+the customization that
+I can edit a vlog probably in half the
+time with final cut if it's
+chronological and simple but as soon as
+it gets super complicated and I need
+four or five six tracks of video to play
+around with Final Cut just turns into a
+nightmare for me the app itself is
+really deep and complex I think it's
+kind of everything's like turned off by
+default all the settings are hidden or
+the all the functions and buttons and
+things are just sort of hidden away and
+you can pop them all out and all that
+complexity is there brand new editors
+who've never edited with anything before
+pick up Final Cut ten really really
+quickly it's people who have known
+normal NLE timelines you have to kind of
+unlearn a bit of muscle memory and the
+way things work as things are a little
+bit inverted in borders episodes there
+are a ton of visual effects you have a
+lot of map animations you have a lot of
+titling you have a lot going on a lot
+more than I do
+what is it about premiere in the Adobe
+suite - lets you do that definitely
+integration with After Effects is a big
+one for me could you do in After Effects
+Final Cut workflow no I could I totally
+could
+more and more I find myself rendering
+out MOV files for MP fours from After
+Effects so that I've got effectively a
+video file
+I feel like Final Cut optimizes for
+being up to lay down footage in the way
+you shot it in a way that is so much
+faster and so much smarter but that's
+not what orders it is borders is not
+it's not a blog it's not chronology it
+ends up in some janky renditions that
+has nothing to do with chronology it has
+to do with topics and story beats that
+are that just grouped very differently
+and after effects or sorry Final Cut Pro
+does not seem to facilitate at least to
+my knowledge that's sort of a workflow
+that's very very nonlinear when I look
+around I can see a lot more examples of
+feature films that have used premiere to
+edit the feature than Final Cut ten avid
+was was or is the standard thing that
+people cut in Final Cut 7 came in and
+sort of worked of that same meta form
+that became popular and I think when
+Final Cut ten kind of threw everything
+out and decided to reimagine the way
+things worked premiere is a great
+replacement for that Final Cut 7 and
+avid workflow it's kind of it works in
+the same way yeah but there have been
+big productions that have used final
+cuts and I think it's just it's a bigger
+commitment from the people who from the
+editing department I mean right where I
+work now there's a guy who a couple of
+editors are working on a like a six-part
+channel for Netflix drama here which
+they're doing their 50 shoot days
+they're getting rushes every single day
+and I think big Hollywood studios
+probably when things work you kind of
+stick with what's working there's no
+point rocking the boat actually did try
+with the intention of switching and
+quickly ran into a ceiling of like man I
+feel like I'm learning this but I don't
+feel like it it has the capacity to do
+it what I need us for my specific
+workflow how often do you run into
+performance or stability or reliability
+issues with Premiere I'll just have like
+days at a time where Premiere is just
+acting up where it's either freezing or
+it's crashing render times certainly are
+just it takes a long time like I'm
+looking at my 16 minute edit right now
+with just chuck full of stuff you know
+it's eight layers deep and like
+everything and I know every time I want
+to render or something now it's gonna be
+you know 35 minutes 40 minutes with my
+Big Mac tout beast of a laptop and
+there's nothing I can do about that
+what's something that you do feel
+missing from the Final Cut pipeline so
+the easy a collaboration with other
+editors whether necessarily needs to be
+tied to shared storage or if it's
+cloud-based I don't know exactly what it
+is but kind of a nicer I mean it works
+well now we have multiple editors
+working on projects and we've got
+jellyfish and we kind of share projects
+and stuff like that was well but it'd be
+nice if there was a bit more of a
+seamless way of doing it
+thanks so much for your insights Johnny
+and good luck with the next episode of
+borders so after I did these interviews
+I thought I had the whole story figure
+it out it's kind of been like this for
+years Final Cut is faster and can get
+the job done easier it's a little more
+elegant but Premiere is more versatile
+and just has more stuff that it can do
+in total in fact I already tried to
+record this video two times basically
+saying that test test and then something
+weird happened before I was able to
+release the video I got this text
+message from Johnny just out of nowhere
+Hey
+I'm in a coffee shop finishing up
+borders we'll get into that in a second
+but first I want to thank a sponsor of
+this video Mac paws latest Mac cleaning
+software CleanMyMac X it helps you clean
+out all the clutter on your machine and
+get it back to running the way that it
+did on the day that you bought it and I
+guarantee if you're a video editor you
+have some clutter sitting around and it
+can definitely help with that I've been
+using it for years and years and it's
+always been able to help me clean out
+some of my hard drive find some extra
+space when I don't have any left and I
+know there is some sketchy Mac cleaning
+software out there but Mac paw is an
+important part of the developer
+community and the software has been
+notarized by Apple as being malware free
+and it was even voted app of the month
+on producthunt I put it on all of my
+machines because with the click of a
+single button it can do work that takes
+you hours to do on your own in the
+finder so to find out more click the
+link in the description below and thanks
+again to CleanMyMac x for supporting
+this video hey Tyler I'm in a coffee
+shop finishing up orders and I just
+outputted the final which I mean look at
+this thing it's ginormous
+these episodes usually take like 30 to
+40 minutes to output and they just
+output it into the 10 minutes and this
+is like an 18 minute episode so it's
+like longer than it's ever been I don't
+know what so out of nowhere premieres
+performance got way better and then I
+saw this other video by Matthew Morris
+where she was comparing some really
+powerful modern pcs to the MacBook Pro
+in getting really surprising results so
+I called up Matthew I want to know what
+happened I was really surprised so when
+I ran these tests I did two specific
+tests I render a video and then play
+back because how is the timeline gonna
+feel when we're editing a video is it
+going to be slow are we gonna have a
+frustrating experience and to my
+surprise the MacBook Pro beat out all
+the laptops except for my crazy specked
+out desktop PC and it did it by a
+considerable amount of time and then
+when I did the playback test you know
+premiere still drops a lot of frames but
+the MacBook Pro happened to drop the
+least amount of frames so now it's
+interesting I mean it makes it a little
+bit harder to choose if premiere isn't
+so much slower it takes one of the
+advantages away from Final Cut and while
+all of this was happening then I saw on
+Twitter that Jonathan Morrison is also
+working on a video comparing Final Cut
+and Premiere so I had to give him a call
+to see what he was finding did you find
+anything really interesting in your test
+like is there anything that you didn't
+expect to see I think probably what I
+was most surprised with is how maybe how
+hard Adobe's working on the Mac side of
+things where I feel like there's this
+narrative that you know if you want to
+use premiere you have to get a PC
+because it's optimized to work better
+and we built this custom rigged PC build
+that it's an awesome machine it's super
+powerful but you know if don't like the
+20 atti in there that's a really
+expensive card and it's powerful for
+sure but the performance for what you
+would think you would get on the PC side
+of things it's not as drastic as you
+might think
+after doing all this did you find any
+simple way to break down a
+recommendation for somebody if they have
+no predisposition to premiere or final
+cut what's something that could help
+them choose for me if you're on a Mac
+you should use Final Cut just point
+blank I don't think there's a better
+option in terms of just get out of the
+way speed
+it's really smart you know with premiere
+that was another thing that I noticed
+where even you know shooting sixteen by
+nine using two to one frames and then
+dropping that and a project is one thing
+but when I was actually shooting two to
+one video in Premiere it won't auto
+scale it to the project so it'll just
+drop it in and won't know the difference
+right and Final Cut you drop it in it
+scales it appropriately and those little
+things where you're not thinking about
+it yeah I think in the in the end it's
+not really that interesting whether
+people want to get really excited and
+angry about different brands but like in
+the end you know right she was something
+that you end up feeling good about and
+when you're using it you feel like
+you're able to focus on the job and not
+so much on the conversation about
+members PC cuz it's not it's not
+actually that interesting conversation
+already I feel like I could make an
+equally awesome video in Premiere it's
+not that it's a bad program I just
+obviously I'm comfortable in Final Cut
+and you know they make great things in
+Premiere just it depends on how you use
+it the machine you're using it and I
+don't think you know it's as unoptimized
+or as bad as some people including maybe
+my older self would have would have
+given it a hard time for I wanted this
+to be a pretty straightforward video if
+you want these features choose final cut
+on these features choose premier but you
+know what it's actually kind of hard to
+choose these days but I hope this has
+helped inform you a bit about why you
+might prefer one or the other in the end
+they can both do absolutely anything you
+want them to you won't be limited by
+using either piece of software but the
+conversation doesn't have to stop there
+all these people have been guests on my
+podcast as well and we've gone way more
+in depth on topics like this another
+creative up schools photography
+filmmaking development design whatever
+it is you do we've probably talked about
+it on the show
+Stallman podcast calm I'll see you guys
+over there I'll hear you guys or someone
+see you or hear you gotta find a better
+sign off

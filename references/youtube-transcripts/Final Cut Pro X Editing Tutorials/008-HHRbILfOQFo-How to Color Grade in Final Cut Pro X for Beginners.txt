@@ -1,0 +1,612 @@
+if you're a beginner to color grading
+maybe you're new to final cut pro 10
+this is the perfect video for you i'm
+going to walk you through
+everything you need to know about color
+correction and color grading
+in final cut pro 10. i'm going to show
+you how to use these tools in final cut
+pro to make your footage look as good
+as possible you gotta just press record
+hey guys my name is noel mult with think
+media and i'm excited to jump into this
+video now there is a difference between
+color grading and color correction
+most people just call it color grading
+which is totally fine but we're gonna
+cover both of those
+in this video and show you how to do
+that to your footage
+color grading basically is adding a
+stylistic look to your footage to make
+it look
+cinematic or vibrant something like that
+whereas color correction
+is kind of fixing the white balance
+fixing the exposure the contrast stuff
+like that so we're going to cover both
+of those things in this video
+so let's get right into it now the very
+first thing you want to do
+inside a final cut pro x is make sure
+that your proxies are not
+on if you go to this view tab right here
+we can see that if we had proxy
+preferred or proxy only
+then we would want to change that to
+optimized original so make sure you just
+hit optimized
+original and that is going to bring up
+your original files
+which is going to be best for color
+grading you don't want to color grade or
+color correct
+your proxy files you want to make sure
+you have those original files
+to color grade with that selected i like
+to go to the next step and i like to
+open up my scopes kind of get everything
+ready for color grading and i'll show
+you what those scopes are
+if you go up to the view tab you are
+going to see video scopes right here you
+can also hit command
+7 to bring those up and if we click that
+we're going to see
+these uh colors the red the green the
+blue and we're going to change all this
+but these things are going to make it a
+lot easier for us to color grade
+and i'll show you how to use this but
+instead of doing this i actually like to
+change up my workspace just a little bit
+so that
+these are as big as possible and the
+easiest way to do this
+is if you go up here to window you will
+see
+workspaces and right here there's color
+and effects if you pull this up
+you are going to see this entire left
+side just go away and this is going to
+make everything nice and big for you
+perfect for color grading and color
+correcting so this is a very nice
+workspace that you can use
+if you are color grading and if you want
+to change that back maybe you're ready
+to go back
+uh to the edit what you can do is go up
+to window hover over workspaces and you
+can go back to default and this is going
+to put it back
+just how you had it so going back to my
+workspaces going to color and effects
+i actually don't need all four of these
+so what i like to do is go up here to
+view
+and then i'm going to change this just
+to two one on top one on bottom now this
+is looking great and if you want to use
+it like this which is how i use it
+you can go back up to window you can go
+to workspaces you can actually
+save this workspace we'll just call it
+color grading which i already have mine
+saved
+as color grading but if you hit save
+this is going to save this workspace for
+you
+so that you don't have to go in and mess
+with this every time you just go to
+window
+workspace now when you hit color grading
+it is going to pull this up
+how you like it now if you're a beginner
+and you're just learning how to color
+grade the odds are you don't really have
+a flat
+log image which would look something
+like this
+right here this is a flat image or what
+they would call
+a log image the odds are you're shooting
+some videos on your standard picture
+profile on your camera now that's
+totally fine you can still mess with
+these colors
+and i'm gonna show you how to do that
+that's why i have some footage here
+where it's a bit colored already
+this is just the standard picture
+profile on the sony zv1
+and i have some different clips here
+that we're going to look at this one
+right here with my face in it show you
+how to kind of color
+when there are some skin tones in there
+as well as just some random
+shots here with a lot of different
+greens and blues different colors to
+mess around with now something you want
+to get familiar with
+is your color inspector what you can do
+is hit the color board right here and if
+you drag this
+onto your clip in this inspector right
+here you are going to see a color board
+and you can open that up
+and from here you can make some
+adjustments but i actually
+do not like to use the color board now
+instead of doing that this is actually a
+shortcut as well you can just click
+on this little color inspector triangle
+right here and this is going to pull up
+the same thing for you but this is
+actually called the color wheels now
+odds are if you click on that it's going
+to pull up your color board
+to change that just go into final cut
+pro go to preferences and right here
+under general we can see color
+correction and it's going to be set onto
+color board just naturally but we want
+to set this
+to color wheels with that selected we
+can exit out of that
+now you can see when you click on this
+triangle it's just going to pull up your
+color wheels
+right here let's start by taking a look
+at these four wheels and what they do
+and how they can affect your image this
+top wheel right here is our master wheel
+so this is going to affect
+everything we have shadows mid-tones and
+highlights but the master is going to
+affect
+all of those all three shadow mid tones
+and highlights now the left side of the
+wheel
+is our saturation you can see it's a bit
+more blue up here and it's a bit more
+faded out down here that lets you know
+that it is the saturation so as we go up
+this is going to make things a lot more
+saturated you can see
+how much more vibrant this image is and
+if i bring it all the way down you can
+see that it's going to turn to black and
+white
+there is no saturation to these colors
+now each wheel kind of has the same
+layout on the left side you are going to
+have that saturation so let's go to
+shadows and if i pull those all the way
+down you're gonna see that the shadows
+are now black and white but we still
+have some mid-tones and highlights a lot
+of these blues
+still have some color now back up here
+on master the right side of the wheel is
+going to be our exposure you can see up
+here it's a bit brighter
+down here it's darker so as we increase
+the master
+it's going to make everything much
+brighter starting to blow out some of
+our image
+doesn't look the best but as we darken
+it this is going to darken
+our entire image make everything a lot
+darker now right here in the center we
+can actually move
+this little point around and this is
+going to add color
+into our entire shot so if i drag this
+up into the magenta
+it's going to make everything a bit more
+magenta i can do the same if i want to
+pull that into the green
+or i want to make it warmer make it a
+bit orange you can do that by dragging
+these around
+in each of these wheels now real quick
+i'm just going to throw these all around
+i'm going to show you how to
+reset these if you ever need to so let's
+say you want to reset
+all of it all you have to do is click on
+this little reset button
+and that is going to bring everything
+back to normal for this one wheel
+but let's say you don't want to bring
+everything back you just want to bring
+back
+maybe this piece right here if you
+double click that is going to bring back
+just that property i can do the same
+with the saturation by double clicking
+it's going to bring it back double
+clicking going to bring it back so
+that's how you can kind of reset some of
+these values
+as you are going through your color
+grade like i mentioned these are gonna
+work the same as the master however this
+is only going to affect
+your shadows this is only going to
+affect your highlights this is only
+going to affect your mid tones and so
+you can mess with each of these by only
+affecting you know a specific part of
+your shot
+after i show you what all of these do
+i'm gonna walk you through exactly how i
+color correct and color grade a shot
+so stick with me we're almost there
+these are the things that you need to
+know before you start
+color correcting down here we have
+temperature tint and hue now
+this was shot on auto white balance on
+the sony zv1 but if you mess up your
+white balance this is where you could
+fix
+some of those issues by sliding these
+around so this temperature if you drag
+it to the right
+this number is going to increase and
+that is going to increase
+the warmth of your shot and the tint is
+going to increase in
+magenta as you pull it to the right and
+as you pull it to the left it is going
+to add
+green to your shot if you pull the
+temperature left it's going to be cooler
+and adding that blue tone
+to your shot messing with the hue is
+going to adjust all of your colors
+and kind of swing them around on your
+colors wheel making it look a bit funky
+this is not something that i
+ever use but maybe if you're shooting a
+music video or you know there might be
+an instance where you would use this
+this is where you can mess with the hue
+down here under mix i usually just leave
+at 1 but if you want to dial it back so
+that it's not at 100
+strength it's kind of like the opacity
+of this effect you can drag this to the
+left
+and zero you can see that there is
+nothing happening and to the right you
+can see this is
+with everything applied i usually leave
+this at one and i just dial everything
+in
+exactly how i want it but that is there
+if you ever want to dial
+it back and forth you can do that if you
+also want to see kind of the before and
+after
+what you can do is uncheck this box and
+this is going to
+disable it and then if you check it
+again it's going to bring it back now
+that you know what these wheels do let's
+actually color correct and color grade
+this image to look a bit better a bit
+more vibrant maybe a bit more summery
+but first we want to take a look at
+these scopes over here now these might
+be a bit intimidating but i promise you
+it's really easy if you just take the
+time
+and understand what these are it's going
+to help you so much right now we're just
+going to ignore
+this vector scope which is this circle
+up here
+and we are gonna kind of save that for
+our part two of this video which is
+gonna be a bit more advanced where i'm
+gonna cover stuff
+like luts you know film simulations
+adjustment layers grading log
+images getting correct skin tone stuff
+like that is gonna be an
+advanced tutorial where i will use the
+spectroscope once that part 2 advanced
+tutorial comes out
+make sure you check that out because
+you're going to learn so much more but
+you definitely need to watch this video
+first because this is going to lay down
+the foundations of color correcting and
+color grading so that you're not
+completely
+lost when it comes to the advanced
+tutorial but for now we're just going to
+focus on this waveform down here
+which is our luma waveform now if you
+ever want to change these you can click
+on this right here and change this from
+luma sometimes i use the rgb
+overlay now this waveform right here is
+actually showing us the
+values in this shot so as i move this
+around you're gonna see
+this also moves because this is showing
+us exactly
+what is on screen and it's showing us
+the brightness
+of the shot now on this waveform we have
+some numbers the main thing that you
+want to look at
+is this 100 number if you go above this
+line
+you are gonna start losing information
+in your shot so for example if we
+go to our highlights and we boost these
+highlights you can see that the entire
+graph is now moving up
+because it's showing us the brightness
+of the shot so as i move these
+highlights
+above a hundred you are going to see
+that the sky is starting to lose
+a lot of its color it just is white now
+because it is over
+this 100 line so you want to try and
+keep things that you want to have color
+things that you want to be in the shot
+below that 100 line
+this is the same with the shadows as i
+start to decrease the shadows we are
+going below
+this zero line and that means that we
+are losing color and details
+in the shadows it's starting to take
+colors and just make them
+black so typically you want most your
+colors to be
+above zero and below 100.
+as i move these mid-tones you are going
+to see that the waveform kind of
+scrunches upwards or if i move it down
+it's starting to scrunch
+downwards and i really use mid-tones for
+adding contrast so let's go to this shot
+right here and i'm going to color
+correct and color gray this a bit
+exactly how i would do this for my own
+video
+first things first you want to make sure
+you have that clip selected and then we
+can start making
+our adjustments now when looking at the
+shot one of the things i want to fix
+is how dark it is around my face because
+it's a bit too
+contrasty for me and so first thing that
+i would do is go over to my mid-tones
+and on this right side we have that
+exposure
+and i'm just going to increase this to
+bring some of that life back
+into those mid-tones so we can see
+what's going on in the shadows now when
+i did that you can see that i actually
+lifted this entire thing up so even
+though i was just messing with the
+mid-tones the shadows were a bit
+affected as well
+and i still want contrast in this shot
+so what i'll do is i will take
+my shadows and i'm going to bring those
+down just to the bottom of this graph to
+see how this
+looks so far that's looking pretty good
+i'm going to mess with my highlights see
+if i want to bring those down or
+up but honestly where they're at is
+pretty good you know everything's at the
+top
+of this 100 and so far i'm happy with
+how this looks if i click this
+on and off you can see how much we
+really brought back
+into the face how much we brought back
+into the shot just by adjusting those
+mid-tones up and then bringing the
+shadows back down to keep the contrast
+but also bring life to those shadows
+when it comes to adding saturation i
+like to use the master wheel so it
+affects the entire shot so i'm just
+going to increase it
+just a hair now that i'm liking how this
+looks i kind of want to give this a warm
+summer vibe and so we're going to mess
+with some of the colors add a bit of
+warmth into this shot first i'm going to
+start with the temperature and just kind
+of increase this and see what this looks
+like and you can see as i increase the
+warmth it gets a bit
+green as well so i'm going to grab the
+tint and i'm going to bring it this way
+some magenta back into this shot now the
+highlights i'm just going to add
+some warmth to this by dragging it
+towards these oranges
+and now my skin is getting a bit too
+orange and so what i'll do is i'll go to
+my mid tones i'm going to pull it in the
+opposite direction
+adding a bit of blue to the midtones i'm
+also going to add a little bit of blue
+into the shadows and maybe increase my
+highlights even more
+i'm also gonna bring my highlights down
+just the hair now this is definitely
+more of a stylized shot
+everything is a bit warmer it looks very
+summery
+very warm and so if i click this on and
+off you can see the before and after
+is pretty crazy right look how dark this
+is it looks really cool
+it looks natural but when i click this
+on everything is much warmer the shadows
+have been lifted and i like the warmth
+that we're getting in the sky
+and those greens i think it looks really
+awesome when it comes to color grading
+there's no correct way to do it it
+definitely is just finessing in the
+colors
+messing with it it takes a while to
+figure out you know where you want your
+colors in the shadows
+the mid-tones the highlights and so
+practice just start messing with shots
+there is no wrong way to do this just
+start messing around with it see how it
+looks
+and you'll get better over time now i'm
+going to show you a really cool trick
+that you can do here in final cut but
+first let's copy over these effects
+command c
+we're going to paste them onto this by
+hitting option command v
+now we can see that it copied everything
+over but it's not
+looking too good so i'm gonna go back
+into my color wheels and make a few
+adjustments to the exposure i think it
+looks a little bit flat so we're gonna
+add a little more contrast
+to the shot
+that's looking a bit better i kind of
+like having the highlights a bit lower i
+think it looks really cool
+for this shot
+okay now that i like how this is looking
+looks very warm very cinematic what i'm
+going to do
+is actually add in a new thing by
+clicking up this down arrow right here
+we're going to add in our hue saturation
+curves
+now in this video we're just going to
+take a look at these top three the
+hubers hue
+the huber sat and the hubris luma i'm
+gonna show you what these do
+and how they can really affect your
+image if we click this eyedropper right
+here on hue vs hue
+i can select any color i want and it is
+going to show me what color it is right
+here
+and as i drag this up and down it's
+actually going to mess with that color
+specifically so it's not going to mess
+with the hue on all the colors like that
+one little hue wheel did
+this is going to mess with just that one
+color so if i want to make that blue
+water
+a bit more blue i can drag it down like
+this and it's going to add in
+some more blues and just change the hue
+of what the pool originally was
+i'm also going to do this with the green
+so if i click
+on this little green right here there's
+some different colors in this tree so
+like this is going to be a little bit
+different
+than say this green back here you can
+see the screen has a lot more blue in it
+but i want to mess with these colors
+right here so as i drag these down
+they can get really bizarre really blue
+and you can mess with these and kind of
+fine tune
+exactly the look that you're going for
+let's say i'm really liking this shot
+but i think
+the blue in the pool is just a bit too
+saturated i like the color i just want
+it less saturated this is what the
+huever sat is for so if you click
+the eyedropper and then select the pool
+color
+from here if you drag it down you can
+desaturate the pool
+and if you drag it up it is just going
+to increase
+the saturation so i'm going to keep it
+right about there and i'm going to do
+the same thing with these trees because
+the green is a really cool green i just
+do not like how saturated it is
+okay now this is looking really cool so
+if i turn this off you can see what this
+looks like before
+and then i turn it on this is what it
+looks like after so this is where you
+can get
+really creative and really stylize a
+look and color grade
+using this hue saturation curves is a
+really fun tool
+just to mess around with the colors and
+make something that is really unique
+now that i really like this look i'm
+going to copy and paste this image onto
+a new video so so far it looks pretty
+good but i'm going to show you guys
+actually the main reason why i use the
+hue saturation curves
+and it's typically with skin tones and
+kind of decreasing maybe some of the
+redness in the skin
+or if the skin is just too saturated
+bringing that saturation down just a
+little bit and i basically use this in
+almost every single think media video
+and what i do is i go into the huber
+saturation
+use that eyedropper i select the skin
+and then this allows me to really
+refine that saturation in the skin tone
+so if i want to bring it down just a
+hair i can and usually the redness you
+know on my cheeks or my nose sometimes
+can just get a little bit
+too red when i add in saturation and so
+i can click on my cheeks
+or my nose and maybe bring you know this
+area down a little bit you can see that
+the lips now have no color
+and so i just bring it back up until i
+think it has a good enough
+saturation but not too much this is
+before any of the hue saturation curves
+and this is
+after the hue saturation curves this is
+before the entire
+image and this is after click on the
+screen to watch another final cut pro 10
+tutorial or you can click on the bottom
+screen if you want to watch our advanced
+part 2 color grading video i'll see you
+guys in the next video

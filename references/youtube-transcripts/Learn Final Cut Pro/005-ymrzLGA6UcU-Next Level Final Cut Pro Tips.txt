@@ -1,0 +1,399 @@
+hi Tyler stalman now I think most people
+at this point realize that Final Cut Pro
+is really fast and generally pretty easy
+to use but I think it's led to this
+common misconception that it's only for
+simple projects if you want something
+more complicated you've got to use more
+complicated software and I'm here to
+bust that myth just a little bit we're
+going to go into some slightly more
+advanced tips and tricks so if you're
+already familiar with Final Cut this
+will take you a step further and if you
+don't know the basics yet I got a
+playlist all about that let's get
+started first off speed ramps so this is
+a pretty common thing these days where
+you just suddenly speed up footage and
+in this drone shot you can see that we
+have like a lot of motion at the
+beginning when we're flying over Anya
+here but then gradually it just goes
+into the same thing for a while so what
+I want to happen is that all of a sudden
+it ramps up and this part plays really
+quickly the way I used to do this the
+wrong way is that you might cut
+something here click on it and then go
+to this little speed tool and you could
+say fast and it may play plays it 20
+times and that would you know give us
+our basic effect where suddenly it
+speeds up but there is a much better way
+so first we're going to find the moment
+in the video we want to transition and
+you know traditionally you might press
+command B which would cut it and then
+you could select each side of the clip
+change those but instead we're going to
+press shift B and it's sort of like a
+blade tool that only affects the speed
+and now we can go to the drop down and
+say this is going to be 20 times faster
+and we can make the speed ramp more
+gradual now let's play
+it all right that's just about what I
+wanted now I'm going to make a few
+tweaks here first of all I want to ramp
+into the speed up a little more so it's
+more gradual and then also I got the
+point slightly wrong that's not where I
+want it to happen I want to happen just
+as her head disappears so what I can do
+instead is double click on this
+transition Point edit the source frame
+and just move it over till it's exactly
+where I want it and there we go I got a
+nice clean speed ramp all contained
+within one clip here's another tip if
+you want to customize your commands I'd
+recommend giving something to a commonly
+used speed ramp so I'm going search for
+Speed and I'm going to look for fast
+eight times and I give that shift eight
+as the shortcut and now if I select a
+clip that will instantly jump it down to
+being that speed so if you're somebody
+like me that speed ramps all the time
+you can do it really quickly also got a
+handy shortcut I've been using a lot for
+transitions so a visual transition I
+could select between two clips and press
+command T and it will add the default
+which is just a basic dissolve from one
+clip to another I don't use dissolve
+transitions very often so I can actually
+go in and one that I do use a bit is
+slide so I can right click it and say
+make default now if I press command T
+this is my new default transition I
+would not use it like that but I do use
+it especially for screen recordings but
+I can tell you're still not excited cuz
+you are a classy editor and you wouldn't
+use a Cheesy transition like that so
+we're going to jump over to another kind
+of video this is where there's a lot
+more speaking and a roll and what I do
+use all the time is I'd select two clips
+instead of command press option T and
+that gives me if I zoom way in here a
+very subtle audio transition so that it
+Blends smoothly from One Clip to the
+other you can modify that if you want
+make it shorter but this is extremely
+helpful for talking head videos or
+especially things like podcasts where
+you want to blend together a cut so you
+can't hear the cut I use option T all
+the time but there's another way to fix
+those cheesy transitions you could go
+get some nice transitions so motion VFX
+sponsor of this video has some beautiful
+ones so over here I've got some already
+installed in my M film mat these are
+some film transitions I'm just going to
+like drop a few on let's watch them back
+to
+back boom
+what else we got o a film
+burn nice and if it's not exactly to
+your liking there's a lot of different
+controls you can change about it so
+maybe let's crank up the saturation of
+those light leaks may you want to turn
+off the scratches change the way that
+the blur is visible and let's take a
+look cool but that's just one of so many
+things the motion bfx can do I want to
+show you some more of the film emulation
+stuff cuz I really like it so if I go
+into my effects we'll take a look at M16
+mm and this is basically just film
+emulation full vintage Vibes and I'm
+just going to put a different one on
+each clip let's like watch them all back
+to back so now I've taken my drone home
+videos and Hyper stylize them in just a
+few seconds and like I say this is just
+the drag and drop version but you can
+get in there and customize it all you
+want and there's a whole bunch of motion
+bfx stuff that I've been using in my
+videos for over 5 years now you've seen
+them before here this is a good example
+this Arrow this humble simple arrow has
+shown up so many times and the reason I
+like it is cuz I can really customize it
+so I can turn off these rough edges
+which usually I do and I can move it
+around and kind of create different
+shapes with it so it can be curving this
+way and then I rotate it now it's
+pointing over here then I going to move
+the whole thing over here and I can make
+it yellow and I can make it thicker all
+this flexibility means that this one
+Arrow plugin I've used over and over and
+it animates into place and it can
+animate out but it's just a really
+versatile tool that I keep coming back
+to motion B effect loves Final Cut
+almost as much as I do they have a team
+of highly skilled in-house developers
+that are constantly working on infinite
+different plugins that do everything you
+can imagine some of them are clean and
+simple titles used by tons of your
+favorite YouTubers some are professional
+and corporate Styles so you can use them
+for your clients and like the film
+emulation I was showing you some of it
+is just super stylish and meant to make
+your video look cool so whatever project
+you're working on in Final Cut motion V
+effects will have something for you
+check out the link in the description
+thanks to motion VFX let's keep going
+and for this next tip I'm going to use
+some of their cinematic titles let's try
+an unexpected Letter Okay so this Title
+Here is using some fonts by default
+let's check out what they are it's
+something called lto light now I have a
+YouTube channel and if you have any sort
+of Channel or client you continually
+work for I highly recommend that you go
+into your fonts and choose whatever
+their standard font is and make it into
+a preset so now I just click and
+instantly it's using my brand of font
+which is the one that I always use this
+video is not about an unexpected letter
+it's about an unexpected final cut
+tutorial so this can come in handy all
+the time let's start again I'm going to
+actually delete that one and use a
+default title there's a shortcut for
+that it is control T we're using every
+single T shortcut today and there you go
+by default there's just text in the
+middle of the screen I'm going change
+what it says now my font is
+beas BAS NOA I'm select I don't know
+what's kind of a common beginning font
+size and there's other parameters here
+you can do a default color I mean maybe
+I'll make one for yellow cuz I I do use
+that specific color of yellow pretty
+often uh I usually have a little bit of
+higher tracking let's say four and now
+up here I want to save all formats and
+appearance attributes I'm going to name
+it how about yellow bass and there it is
+it is stored along with all the others
+that I regularly go to in all my final
+cut videos I think one of the most
+useful tips is always showing you to put
+all of your a roll into one compound
+clip so now I'm going to take that
+another step further so here I've got a
+whole bunch of stuff that is all a-roll
+and as usual press option G and now it
+is inside of a compound clip so if I
+make some edits and then I go inside the
+clip and do something to all of them
+like let's say add one of my transform
+Luts uh this one Cog 2 all of a sudden
+everything looks great all throughout
+and then I go back to my edits and it's
+there now that was just one example of
+the power of a compound clip I'll show
+you another way I use it so here's some
+a-roll of me talking blah blah blah if I
+make the timeline bigger I can see there
+is something going on here this this is
+noise this is just background
+ambient like hiss or whatever let's
+listen to
+it it's just ambient room tone it's in
+every audio file but I like to clean it
+up as much as possible so here's how I
+do it the only way I found that really
+preserves all the audio quality now I'm
+sure somebody will point out this is
+built into Final Cut you can click noise
+removal this does not sound very good
+you can hear it processing the spoken
+word and I don't recommend using it
+first up we're going to press option G
+turn this into a compound clip and then
+go ins inside it now I need to create a
+wave file and this is because I need to
+do some of this processing externally
+none of it can be done in real time well
+enough in Final Cut so I do need to use
+outside tools so I'm going to right
+click reveal this clip in the browser
+now I'm going to reveal it in my finder
+and there it is then I open up
+compressor which is the sister software
+to Final Cut Pro drag that clip into
+compressor I go to my audio formats
+select wave drag it to the clip and hit
+start batch now you don't have to use
+compress to do this anything that'll
+take a video file and extract a high
+quality wave file from it will do the
+same thing and now you can take that
+wave and use any professional audio
+software you have and do a highquality
+pass of noise removal I like isotope so
+I open up RX8 let's zoom into an area
+that is nothing but noise that is the uh
+orange part if you can't tell there I'm
+going to go to Voice D noise and
+importantly click learn this is the
+difference is live processing is much
+harder and if you learn a section of the
+existing noise and then remove it from
+everything else it sounds so much better
+my reduction amount usually is between
+like 8 and maybe 12 let's go to 10 and
+you can see the before and after that
+orange the noise is really cleaned up
+let's hear before and after so
+before and
+after now there's all sorts of different
+types of noise removal that I can do but
+again always learning it and rendering
+it into the file has higher quality it's
+like video game graphics compared to
+pre-rendered you can always pre-render
+at a higher quality level great now I
+just save that wave file all right now
+we're back in Final Cut I'm just going
+to grab that wave drag it into my
+compound clip make sure that it aligns
+with the beginning mute the original so
+now the audio is coming from the wave
+file instead of from the video file and
+when I go back to my timeline it just
+looks like a normal clip I can't really
+tell what happened this can also speed
+up Final Cut CU if you have a bunch of
+different audio filters running in real
+time it can slow down your software but
+let's look at another way that compound
+Clips can help and that's with
+multitrack so let's open up the multicam
+and this has three different angles the
+first one is just me talking the next
+one is my screen recording and after
+that is both and they need to be in sync
+here and they need to follow through
+with any changes I make for example if I
+change the color grading on me it needs
+to show up in the a-roll and in the
+mixed a-roll and screen recording angle
+so I'll show you how to do it this clip
+and this one are both already compound
+Clips cuz that's what we do here then
+I'll create a new angle I'll call it
+both Clips I don't know copy my screen
+recording line it up with the beginning
+cuz they have to be in sync and select
+both clips and paste it in there all
+right now we're going to need to go
+deeper an extra level of nesting so I'm
+going to select that and create a new
+compound clip out bit I'm going to call
+it both again and then I'm going to
+select my a
+roll go inside that both compound clip
+paste my a roll and now I have both of
+them in sync on one end angle and all I
+have to do is lay them out so I don't
+know I could do things like make it
+smaller uh maybe here I'll do the
+simplest version I'll just put me in the
+corner that's something you can do for
+you know basic uh tutorial videos I'm
+going to crop the left crop the right
+and good enough for now now if you're
+not already impressed by compound Clips
+there's one more thing you can do with
+it and I do it at the end of most videos
+so as we're watching you can keep an eye
+on the right here and see our levels
+they're actually they're actually pretty
+good I messed this pretty well but often
+you'll find an imbalance between your
+levels let's say you're mixing different
+sources and some of them are turned down
+using the volume slider and they're not
+completely even between them you do the
+best you can but at the end I go and I
+say command a select all of my clips and
+then again press option G which creates
+a compound clip I call it audio master
+and now there's just one track for
+everything if I double click it it's
+like my regular Video Edit it's all
+inside of there but if I go back I have
+one compound clip with everything and on
+top of that I can add a limiter which is
+usually what I do just to kind of boost
+the volume I turn up the gain a bit and
+the nice thing about a limiter instead
+of just using volume is that there is a
+limit on the output so if I start
+playing it here if I turn this up too
+high you can see it never Clips it never
+hits the red if I turned up the output
+level eventually it could start clipping
+we don't want it to clip so basically a
+limiter is a more or less safe way to to
+increase your volume you can't go too
+far with it but it does help you get
+more of a consistent output and it's all
+thanks to these compound clips now my
+final tip this is for the YouTubers out
+there it was in the podcast recently but
+I think I haven't had it in any of my
+final cut tutorials it comes from
+Patrick Tomaso I had them on the show so
+of course he gave it to us but it's very
+simple when you're uploading video go to
+share export file and if you're like me
+most of the time I select video and
+audio and I go with h264 it creates a
+big beefy h264 file that looks really
+good and is you know good to hold on to
+I'd rather archive that than what we're
+about to do but instead you go to format
+Apple devices make sure that you're in
+your full resolution I usually use
+better quality in code and if you use
+these export settings your processing
+time on YouTube can be cut from several
+hours down to several minutes it's
+actually like magic I have no idea why
+it does this but it completely changes
+how long you can wait for your video to
+be done so I sure hope something in this
+video was helpful and I hope you go
+check out motion via facts again link is
+in the description and I'll see you guys
+in the next video

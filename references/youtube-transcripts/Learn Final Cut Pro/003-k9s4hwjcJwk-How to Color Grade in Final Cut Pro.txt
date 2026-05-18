@@ -1,0 +1,819 @@
+this video is sponsored by squarespace
+the best place to build your portfolio
+all right here's the final cut pro
+grading tutorial you will have wished
+you watched
+earlier we're going to cover everything
+from the basics of transforming your log
+footage to making it look really
+cinematic
+and there's a lot of ways to color grade
+in final cut there's no one correct way
+to do it but there's
+a lot of wrong ways to do it so i'm
+going to lay things out in the simplest
+way i can we're going to move
+kind of quickly but by the end you'll
+know the right way to do this without
+screwing up your footage or picking up
+too many bad habits on the way so i'm
+going to use this commercial that we
+shot a while ago for a brand called
+northwater and you know what you're
+after is probably something like this
+let's look at the before and after of a
+final here
+here's one way that this could have that
+cinematic look but
+i don't want you to get too focused on
+this end result because this part's the
+easy part it's
+everything before that that really
+matters so let's get this back to a
+neutral place i'm going to turn off all
+those effects actually i'm going to
+delete those effects
+and just restore everything to the
+original log that it was shot in so this
+is what the footage looked like this
+is canon log two c log two
+first step before anything edit your
+footage
+i know it can be tempting to grade as
+you go but if you're not finished
+editing and you start grading you can
+waste a lot of time
+digging into files that you don't end up
+using and it slows down your render time
+so
+finish your edit and then do a few
+preference changes so i like to go into
+final cut preferences
+and under general you can choose the
+default color correction method
+i would absolutely not use color board i
+always have it on color wheels which is
+the most useful the most standard way of
+adjusting colors
+and so all that does is if i select a
+clip and i go to the color adjustment
+area
+you can see this is what shows up by
+default and that's what i like let's
+also turn
+on our scopes which you can find in the
+view menu but i strongly recommend
+remembering the shortcut command 7.
+because i
+turn them on and off a lot while i'm
+editing so try to remember command 7.
+the way i use mine is i go to view and i
+show two of them at a time one is a
+vector scope and the other is an
+rgb overlay if you're not already sure
+how to read these the vectorscope is
+basically a saturation chart so if i
+crank the saturation make this look
+really bad you can see how saturated
+each color is
+in the image this will become very
+important later on i'll show you how it
+works
+and then i use rgb overlay as my
+waveform
+a lot of people choose luma that's
+really common advice
+but i find you actually lose information
+here and i'll show you why rgb overlay
+is
+much more useful later all this will
+make sense in a bit another little thing
+setting up final cut for grading is
+you're going to want to grab an
+adjustment layer i've got some links to
+free ones you can download in the
+description
+to oversimplify what this does
+everything below it ends up inheriting
+the look that you give it so you've seen
+those files now if i turn on the effects
+they all change in the exact same way so
+that they can all
+match you can imagine why this is handy
+but for now we're going to delete it
+come back to it later just get it
+installed so you're ready and the last
+thing on your checklist make sure you
+have the transform luts for the log
+file that you're working with if you
+shot in log i'll explain how to use that
+right now let's get into this log
+profiles these super flat to saturated
+things are very common in modern
+cameras i mean i'm shooting in it right
+now for example even the new iphone 12
+can shoot in 10 bit log which is
+very impressive but it's the best way to
+get the most
+image quality out of your your colors
+and your dynamic range
+if you're not shooting a log things are
+simpler you can skip this chapter you
+could of course do it yourself so let's
+look at the most basic things if i click
+on this clip
+i could go over here to my color wheels
+bring the shadows down
+and looking over at my waveform on the
+left here i can see once they start
+getting near zero that means they're
+almost black then i could bring my
+highlights
+up until they start getting kind of
+close to 100 i never want them to
+actually clip but they're you know sort
+of touching that 100 line
+and then bring back the saturation which
+i prefer to do mostly in the mid tones
+and highlights a little less in the
+shadows
+you can see something like that that's
+basically restoring the color and
+contrast to this image
+but i don't recommend doing it manually
+like that you should go find a good
+transform so for example part of the
+reason i really like the c200 is it
+transforms really
+cleanly like it looks great as soon as i
+add
+one simple lut which in my case this is
+a
+lot that i adapted from the alexa
+transform so
+we can put on the log 2 and you can see
+it really brings it back to looking
+beautiful so when you see people's
+before and after and they show the log
+image and then they show this like
+that's not interesting that's really
+really easy everything else is the hard
+part okay but what did i just do i
+skipped around a lot here so
+over here on the right uh you know
+there's the overall inspector this is
+where our filters will end up showing up
+there is the
+color inspector this is where our wheels
+are and some of the other tools that if
+you click here you can get a preview
+we'll play with them later
+and on the info tab here there is
+camera lut now this is one place that
+you can place your transform it is the
+simplest workflow method
+and if i go back and i select again the
+the lut here
+it's very easy to stay organized and you
+could i could select everything and i
+could apply that same
+lutch to all the files that i'm working
+with in this case though i'm also
+working with some stock footage
+so you got to be careful not to apply it
+to the wrong thing and the best time to
+use that method is with controlled
+lighting so
+here's another different example this is
+a recent youtube video
+and everything's basically the same
+right just like this video i'm recording
+now i'm sitting in the exact same place
+not much is changing shot to shot and
+here's a very good trick if you have a
+long take like
+me talking i i'm going to open it up and
+you can see that i've actually put it in
+a compound clip
+the way to do a compound clip is just
+select any video and press
+option g and then inside that clip
+any changes you make will show up
+everywhere so if i go in here i can turn
+my effects on now you can see my color
+grade
+if i click back it changes all of the
+talking shots so i don't have to go back
+and grade each clip individually it can
+be really hard to keep that in sync
+if you have a long clip put it inside a
+compound clip
+but now if we look at our commercial
+again a lot of this is shot outdoors
+there's a lot more dynamic range and
+shifting light
+values and stuff so we want to be more
+careful with it
+so we're going to do this the slightly
+more complicated way i'm going to select
+the clip
+go to the effects menu over here and
+inside of color i'm going to select
+custom lut and i'm just going to drag
+that over and drop it onto my clip now
+you can see up here in effects we now
+have custom lut
+and i'm going to use my alexa adapted
+lut that i like for c log2 and there we
+go
+same effect as before the big difference
+here is now i can make adjustments
+before the transform does that make any
+sense at all i'm going to try to show
+you right here so
+if i drag this lut onto a clip and i add
+this is the incorrect transform so this
+is a c log 2 transform to a c log 1 clip
+let's say i want to recover those clouds
+so i drag my highlights down see how
+they're just becoming gray but there's
+no detail there
+well if we look over at our effects
+stack here like these are applied in the
+order you see them so the top is first
+and goes towards the bottom
+if i move that adjustment above my
+transform
+all of a sudden i've recovered all of
+those highlights like that's a huge
+difference
+this is what happens if you try to make
+your adjustments after your transform
+light
+this is what happens if you apply them
+before your transform light and this
+info panel is the first step in this
+stack
+of of lut so if i apply it here there is
+no way for me to then
+later recover all that information and
+maybe you're already stuck at this point
+you're like wait i don't have a nice
+transform lut that makes my footage look
+beautiful well there's a lot of options
+out there i'll put some links in the
+description below so you can find some
+of them
+my favorite unfortunately isn't on final
+cut pro yet it is called cinematch it's
+coming soon it's available on
+premiere and resolve right now but there
+are luts for
+all the different camera manufacturers i
+don't really like the canon ones or the
+sony ones
+because let's say you're shooting on an
+8-bit camera like an eos r
+or an a7s2 or something like that those
+transform luts from canon and sony
+assume
+that you have the more professional
+cameras they didn't really design them
+for the consumer cameras and the
+transforms look weird and why am i
+explaining this examples help
+more so let's look at the built-in
+transform the final cut comes with so
+this is
+for canon log2 and we compare it to the
+one that i'm using
+there's a whole world of difference so
+compare some of the different transforms
+and choose one that you like
+again links in the description below
+including you can purchase the ones that
+i use if you want so now we want to make
+all the footage that was shot on the
+c200 look the same so i'm going to
+select that clip hit command
+c for copy and go to other clips and
+press command
+shift v like command shift paste
+and now you can choose exactly which
+video attributes you are going to apply
+i don't need to apply the scaling
+transform just the lut so i'm going to
+turn that
+off paste and now this clip also looks
+good so let's do that to everything
+and now as we flick through we can see
+that everything
+looks contrasty it looks like proper
+footage transform complete but there's
+still a lot to learn about them don't
+think you've mastered it because you've
+just found one lut that kind of works
+in fact if you have a lut pack and all
+of them just have like standard log
+transform don't use that it doesn't
+really work step two
+correction so this is at least as
+important as transforms
+if you don't have your colors looking
+accurate all those
+fun filters and luts you're gonna add
+later are gonna look like crap so
+you gotta lay a foundation first and
+that's what we're doing so these shots
+look
+pretty good overall i mean you know it'd
+be nice to do this on one of the most
+majestic
+shots because it just looks good but um
+i think i could demonstrate it more
+clearly in a little
+simple b-roll shot like this so first of
+all
+we want to be adjusting for both the
+white balance and skin tones
+in this case we're looking at the white
+balance and what i'm looking at here is
+over here on the left hand side
+are our rgb overlay waveforms i can make
+them a little bigger so i can
+really clearly see them and without
+looking at the actual image over here i
+can tell that this is a little bit too
+blue
+because our blues are higher up here in
+the highlights and there's also
+something going on down here in the
+so these shadows correspond to this dark
+part of the backpack
+and this streak going across the top
+this is all that gray back there so this
+should be
+pretty neutral and fortunately it's
+really easy to do that so we're going to
+start by
+creating a correction layer and first we
+look at the highlights honestly you can
+do it with this by
+feel and just start like moving these in
+a circle and you can see what happens
+over there see those waveforms moving
+around
+i'm basically just going to keep moving
+them until they start to
+line up and converge
+and once they're all in a line and white
+that means
+the white balance is now neutral can you
+see that as i click it on and off this
+like blue
+cast just disappears that you didn't
+even really see it before but now you
+definitely see it when it goes away and
+also let's keep our order of operations
+correct here i'm going to move those
+color wheels before our transform light
+and also the shadows this dark area over
+here
+you can see that there's some color
+visible in them where this should just
+be straight up
+black so as we move it around those will
+gradually start to line up but keep an
+eye on your highlights too like
+everything is moving even though i'm
+only grabbing the shadows
+and sometimes if you move it until they
+are perfectly aligned
+like that now we have made our
+highlights too warm
+so we can bounce back and start to play
+with our highlights again but there's
+also such thing as
+playing with it too much so kind of find
+this balance where both of them
+are mostly white and now if we turn this
+on and off
+you can see we got rid of a lot of color
+cast there and then the other most
+important thing is skin tone so
+in this example we have lots of skin
+tones to look at and we're going to use
+our vector scope a little more for this
+one so i'm going to make it a bit bigger
+and i find it really helpful to just
+crank the saturation when you're getting
+started make it too saturated
+and all of a sudden it gets really big
+over here you can clearly see what's
+going on
+now make sure that in your vector scope
+preferences you do have show skin tone
+indicator on
+and that is this subtle line that is
+running
+up and to the left and that is the
+universal hue
+level of skin tone regardless of the
+complexion of the person whether they're
+darker or lighter
+the hue of their skin should be
+somewhere pretty close to that line
+in this example this orange roof up here
+is actually kind of distracting us so
+i'm going to zoom
+in a whole bunch now everything that
+we're seeing the vectorscope like all
+the orange stuff
+is pretty much his skin and over here i
+have a little bit of gray now i'm just
+going to kind of
+tweak both of those until they're you
+know pretty much
+lining up right on it and then i can
+restore that saturation back to normal
+and zoom back out you know one more
+thing you might have been considering is
+you might have been looking at well what
+about this temperature in tint slider
+like
+if we're going to be fixing the white
+balance right like why don't i drag this
+to be more yellow or more blue
+let me try to demonstrate why i don't
+like these if i start to move the
+temperature slider to get her
+skin over here to align with our skin
+tone line
+you can see that here in the highlights
+it's starting to get like
+weirdly yellow like if i drag this far
+look at how yellow the highlights are
+and the shadows
+everything got super yellow it's really
+not discerning about which parts the
+image you're trying to affect
+whereas if you were setting white
+balance within your camera it would look
+a lot more like this which here i'm just
+grabbing the mid-tones and can you see
+that i've got the skin right on the line
+like it looks a lot better
+but our highlights haven't moved so much
+like our highlights are still neutral
+which is exactly what we want we don't
+want to add
+weird coloration to different parts of
+the image just to fix our skin or white
+balance
+so don't use the sliders use the color
+wheels we're gonna look at the contrast
+so there's a few things you could do
+from color wheels like
+you can bring your shadows a little
+closer to the bottom if i look over to
+the left you can see they're
+almost touching zero i don't want them
+to clip and go below zero
+and then highlights can go up towards a
+hundred
+if there's anything that would be
+clipped in your image then you could be
+right at i'd put it at 95. but in this
+photo nothing actually should be pure
+white like those clouds aren't supposed
+to be blown out so i'm going to keep
+them down below
+my white point of 95 which by the way
+you can move this line i just
+i set it here because for this project
+95 is my white point that's actually up
+to you
+but now our image kind of makes sense
+this doesn't let us affect what is
+called
+mid-tone contrast for that i'm going to
+go here and use
+color curves and a curve lets us be a
+little more precise about where we are
+moving the highlights and shadows up and
+down towards the right are the
+highlights and towards the left are the
+and anywhere you click you add a point
+so i'm going to add a point towards the
+right for highlights
+point towards the left for shadows and
+i'll bring the shadows
+a little bit down and the highlights a
+little bit
+up the classic s curve
+and i think actually i'm losing too many
+details in those shadows and this is
+this is why i don't do with color wheels
+i'm going to take that off i'm just
+going to do this
+inside of my color curves and this is
+just a totally different
+type of contrast like see how i can move
+these points closer together
+that contrast looks different from this
+contrast
+and this is up to you this is a creative
+decision exactly where you want it to
+land
+you know i like to have what i call you
+know a little bit of mid-tone contrast
+by having these a little bit closer
+together and
+that that'll be different from your
+other contrast so you add this
+to taste it's up to you and before we
+move on i want to emphasize why i don't
+use the
+luma waveform i'm going to make it
+bigger so we can see what's going on
+here if
+i switch back to luma you can see that
+it's only
+barely bumping up against a hundred you
+know looking at this waveform
+everything seems fine nothing's really
+clipping here from what i can tell
+but if i switch back to rgb overlay you
+can see there's actually a lot of the
+blue channel
+that has clipped that is past 100. that
+is bad that is horrible like we have a
+beautiful expensive camera here
+and we're just making it look cheap like
+these clips this looks
+horrible this is what an old-fashioned
+camcorder looks like
+the reason you paid for your nice new
+camera is so you could get
+rich tones which you know basically they
+have to be below 100
+to do that so you can only see that
+really clearly for me in the rgb overlay
+so that i can see blue is now no longer
+clipping and while we're on this clip a
+final thing that i like to do
+is i usually bring my mid-tones down a
+little bit for
+things i want to feel a little more
+cinematic a little cinema
+ish is um the the mid-tones coming down
+gives it that sort of like richness of
+tone let's do it to a few different
+clips the best way i'd describe it is it
+makes the colors
+feel thicker like they're just kind of
+more substantial whereas
+if you're bringing it down say in the
+highlights like it just looks darker and
+and flatter
+those mid tones coming down that's where
+you get the the sort of the juice
+the richness of of cinema so yeah i i
+really like to
+keep those a little bit low so something
+in the image is kind of up near 95
+but a lot of those mid-tones are coming
+down towards the the lower half of
+of the waveform and by the way 10-second
+rant it is offensive to me
+that photo editing apps do not have
+these waveform functionalities these
+scopes inside of them things like vector
+scopes
+are essential to me why can't i check my
+skin tones in photoshop the same way i
+can in final cut pro
+it's totally insane and maddening that
+yeah photography doesn't have these
+basic monitoring tools
+i don't understand it anyway back to
+back to final cut now there's another
+trick i have up my sleeve i do this
+very often where i'll add what is called
+a hue saturation curve
+and go into it and look for saturation
+versus saturation now everything on the
+right is the most saturated parts of the
+image the left
+is desaturated what i do is add a few
+points
+on the right side and bring it down so
+what this means
+is that the most saturated parts of the
+image
+are a little less saturated like i don't
+go crazy with it
+it's a very gentle slope but if you i
+turn it on and off you can see that it's
+those blues that are just
+way more saturated than her skin for
+example
+it helps bring everything a little bit
+more into the same
+saturation value sometimes i find
+oranges sort of clip
+and this just kind of brings it back
+whatever the color is
+it'll recover some of those clipped
+saturation points
+now let's get into the fun part adding
+film emulation adding some looks
+but first a quick thank you to our
+sponsor squarespace
+now whatever kind of filmmaker you are
+i'm just going to guess that you might
+sometimes want to show your work off to
+the rest of the world
+am i right well squarespace is the best
+possible way to do that they help you
+create portfolios either for filmmaking
+or photography by embedding your work in
+the highest quality
+and surrounding it with a website that
+is all your design
+you can post things on social media that
+can get lots of views but you don't
+actually control that
+and it can get shut down at a moment's
+notice so don't rely on another platform
+to keep your precious work online
+invisible
+take control with squarespace you're
+going to be able to design every aspect
+of it in just a few minutes it's really
+simple
+they have drag and drop templates that
+are completely responsive created by
+their professional designers
+and then the back end is taken care of
+for you so you can see all the analytics
+that you're going to need
+the seo is done for you you really don't
+have to learn anything to run
+a professional website even if you
+already know how to do one it's so much
+easier to let squarespace take care of
+it for you
+so i'd highly recommend go to
+squarespace.com and just spend a few
+minutes
+designing your new website and then when
+you are ready to launch
+you can head to squarespace.com
+tylerstallman to get 10
+off your first website or domain i've
+used squarespace for more projects than
+i can count and they all look completely
+different because it's so easy to work
+with so thanks again squarespace
+link in the description moving on to
+luts this is the fun part this is when
+you can go crazy first of all let's put
+an adjustment layer over top
+of everything now all you have to do is
+drag it on top
+it's a title by the way it's inside of
+this title menu and i'm just going to
+extend it
+to cover our whole video here because
+what we're trying to do is
+add a unifying color grade to everything
+that kind of brings it all together i
+use the same lut
+for pretty much everything again we're
+going to go into our effects over here
+i'm going to drag over
+custom lut and select the one that i
+always do and even though i've used this
+a million times it's never
+perfect at the beginning uh you know
+it's a pretty soft one like you might
+want to push this further but
+i'm going to play with it for now first
+of all i don't even use it at 100 all
+the time for this video
+i will but it also does some things i
+don't love so if we turn it on and off
+let's watch our rgb overlay over there
+you can see it's squishing the
+a little more than i really want it to
+so next in the chain
+i'm going to add another color wheel and
+i'm going to bring those highlights up
+just a little bit more i don't want them
+pushed quite that far down
+let's take another look it's pretty good
+and keep in mind anything you do on this
+top layer is now going to be applied
+to everything so you're going to have to
+probably go through all your clips
+again and kind of you know rethink them
+a little like this
+now feels a lot brighter than i want i'm
+going to bring those mids down
+this feels warmer than i want also feels
+more saturated than
+i want but there's really just no way to
+do all of this in one pass you have to
+go through it
+multiple times comparing clip by clip
+and it's also really useful to
+use the compare to so if we go to window
+show in workspace comparison viewer and
+i could click save frame so now i'm
+seeing
+the frame that i was just on and i can
+compare it to anything else so i'll go
+to this other clip
+with our same actress here and uh you
+know look at things like oh is her hair
+a similar shade of red is the saturation
+similar it's their skin
+on a similar level and just kind of sync
+those up so whichever one i've selected
+now that's the only one that i'm
+affecting here here's something i don't
+like that my lut is doing so i'm going
+to manually fix it by going
+to hue saturation curves i'm going to
+use this eyedropper and select the grass
+which is our kind of green area it
+actually happens to be a little more
+yellow
+and i'm going to pull it towards being a
+little more so
+a little more green because to me this
+is a little more
+dead grass this is a little bit more a
+live grass as you make changes like this
+make sure that you flick through the
+rest of the video
+and be sure that it wasn't you know
+damaging anything else like here we have
+a lot of green in this one as well so
+we'll just turn that on and off and yeah
+it's also
+better in this one i like this slightly
+more cyan green here and here's another
+one where i'd bring the midtones down a
+by the way i said there's a million
+different lights out there it's really
+true like let's take a look at some
+others
+just to remind you there's not just one
+way that things can look but i wouldn't
+do a lot to do something like this
+press command 7 to bring our scopes back
+up you can see it's added a ton of green
+to the highlights
+this is a look you'll see in movies this
+is like a legitimate thing to do
+but i try to make sure you have control
+over that don't let the lut
+push your image that far because it's
+really hard to bring it back
+later so again if you go back to mine i
+prefer things that really keep the
+highlights and shadows clean and are
+mostly playing with everything in the
+mid tones
+and now the final step we're going to
+export it and look at it on a lot of
+different devices look at it on your
+phone put it on a white background watch
+it on your tv
+just see it all over the place and get a
+sense of what it really looks like
+because
+everybody has a different device and you
+want to have a sense of how it's going
+to appear
+wherever it's going to be seen and
+there's a lot more to color grading in
+final cut pro than i was able to go over
+here but
+i will help you out with it if you want
+if you follow me on twitter i'm at
+stalman and
+same thing on instagram and if we had
+more time there is so much more to color
+grading in final cut pro than i have
+time for today but if you have any
+questions you can hit me up on twitter
+i'm at stallman
+or listen to the podcast installment
+podcast it's got lots of great info from
+creators you probably like and follow
+but thanks for watching this video guys
+and i'll see you in the next one
+you
