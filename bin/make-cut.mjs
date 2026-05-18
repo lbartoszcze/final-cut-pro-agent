@@ -5,7 +5,8 @@ import { writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join, basename, resolve, extname } from "node:path";
 import { reseed, sectionOf, planBarCuts, transitionFrames, planTitles, pickClipIndex } from "../lib/edit.mjs";
-import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume, marker, parseCustomMarkers, emitCustomMarkers, emitOrphanMarkers } from "../lib/fcpxml.mjs";
+import { asset, format, assetClip, gap, transition, title, document, rt, adjustVolume, marker, parseCustomMarkers, emitCustomMarkers, emitOrphanMarkers, emitCaptions } from "../lib/fcpxml.mjs";
+import { readCaptionsFile, dedupeCues } from "../lib/captions/parse.mjs";
 import { parseTemplate, applyTemplate, sanitizeInnerXml } from "../lib/render/template.mjs";
 import { LOOKS, LOOK_EFFECT_DECL, LUT_EFFECT_DECL, resolveLook, lutFcpFilter } from "../lib/render/grades.mjs";
 import { probeLoudness, parseAspect, parseFps, resolvePlatform } from "../lib/render/ffmpeg.mjs";
@@ -256,6 +257,8 @@ if (!args.template) {
     }));
   }
 }
+
+if (args.captions) spine.push(emitCaptions(dedupeCues(readCaptionsFile(resolve(args.captions))), { rateNum: RATE_NUM, rateDen: RATE_DEN, lang: args["caption-lang"] || "en", format: "ITT" }));
 
 const aspect = parseAspect(args.aspect);
 const fmtName = aspect.w === 1920 && aspect.h === 1080
