@@ -47,6 +47,21 @@ Each video is persisted in two formats:
 011  AFcALHgwX_M   Final Cut Pro: The 9 Things Everyone Gets Wrong
 ```
 
+### `yc-launch/` (7 videos — YC launch / "how to launch your startup" canon)
+
+```
+fetC2EpDtN8   Launch quickly, and iterate.
+3xU050kMbHM   Kat Mañalac - How to Launch (Again and Again)
+u36A-YTxiOw   The Best Way To Launch Your Startup | Startup School
+Nsx5RDVKZSk   Why Startup Founders Should Launch Companies Sooner Than They Think
+PpNHP3-KXoE   Change the way you think about launching.
+Rzlr2tNSl0U   DoorDash's Application Video for YC S13
+f0tPjcgcwnQ   When to Launch Your Startup and When to Wait
+```
+
+These ground the `--style=yc-launch` pack in lib/styles/packs.json with
+actual YC-canon source material rather than archetype guess.
+
 ### `single/` (4 videos)
 
 ```
