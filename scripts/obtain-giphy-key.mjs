@@ -153,23 +153,26 @@ async function run() {
     .filter({ hasText: /sign\s*up|create account|join/i });
   const n = await signUpBtns.count();
   if (n === 0) { console.error("[giphy-key] BLOCKER: no Sign Up button"); await browser.close(); process.exit(8); }
-  await signUpBtns.nth(n - 1).click();  // last = form submit, not tab toggle
-  console.log(`[giphy-key] submit clicked (${n} candidates, used last)`);
+  // force:true keeps the trusted CDP input dispatch (isTrusted:true) but
+  // skips Playwright's occlusion check — the <form> overlays its own submit
+  // button and "intercepts pointer events", which blocked the plain click.
+  await signUpBtns.nth(n - 1).click({ force: true });
+  console.log(`[giphy-key] submit clicked (${n} candidates, used last, force)`);
   await page.waitForTimeout(6000);
 
   // Nondeterministic React form: a stuck submit shows "Already started
-  // creating an account? Finish Sign Up". Recover with real clicks only.
+  // creating an account? Finish Sign Up". Recover with forced trusted clicks.
   for (let r = 0; r < 4; r++) {
     const st = await page.evaluate(() => document.body.innerText.slice(0, 300));
     if (/check your email/i.test(st)) break;
     if (/finish sign\s*up/i.test(st)) {
-      console.log(`[giphy-key] recovery ${r + 1}: Finish Sign Up (real click)`);
+      console.log(`[giphy-key] recovery ${r + 1}: Finish Sign Up (forced click)`);
       const fin = page.locator("text=/finish sign\\s*up/i").first();
-      if (await fin.count()) await fin.click();
+      if (await fin.count()) await fin.click({ force: true });
     } else {
-      console.log(`[giphy-key] recovery ${r + 1}: re-submit (real click)`);
+      console.log(`[giphy-key] recovery ${r + 1}: re-submit (forced click)`);
       const c = await signUpBtns.count();
-      if (c) await signUpBtns.nth(c - 1).click();
+      if (c) await signUpBtns.nth(c - 1).click({ force: true });
     }
     await page.waitForTimeout(5000);
   }
