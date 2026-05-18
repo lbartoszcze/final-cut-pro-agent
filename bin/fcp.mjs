@@ -13,6 +13,7 @@
 
 import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel } from "../lib/fcp-ax.mjs";
 import { getAttr, setAttr, performAction, selectElement, dialogPress, dialogSetField, dumpTree, listMenus } from "../lib/fcp-ax-generic.mjs";
+import { WRAPPERS, WRAPPERS_HELP } from "../lib/fcp-wrappers.mjs";
 
 function sleep(sec) { return new Promise((r) => setTimeout(r, sec * 1000)); }
 
@@ -105,9 +106,27 @@ const CMD = {
   },
   dump() { process.stdout.write(dumpTree()); },
   menus() { process.stdout.write(listMenus()); },
+  wrappers() { printWrappers(); },
+
+  // ---- 153 named wrappers for the FCP menu surface (Edit / Trim / Modify /
+  // Clip / Mark / View / File / Share) — see lib/fcp-wrappers.mjs ----
+  ...WRAPPERS,
 
   help() { printHelp(); },
 };
+
+function printWrappers() {
+  console.log(`Named wrappers (${Object.keys(WRAPPERS).length} total):`);
+  for (const [group, names] of WRAPPERS_HELP) {
+    console.log(`  ${group}:`);
+    let line = "    ";
+    for (const n of names) {
+      if (line.length + n.length > 78) { console.log(line); line = "    "; }
+      line += n + "  ";
+    }
+    if (line.trim().length) console.log(line);
+  }
+}
 
 function printHelp() {
   console.log("cut fcp — non-capturing Final Cut Pro driver");
@@ -129,6 +148,7 @@ function printHelp() {
   console.log("  cut fcp find <substring>           dump AX-tree matches (debugging)");
   console.log("  cut fcp dump                       dump every element of window 1 (role | desc | value)");
   console.log("  cut fcp menus                      catalog every menu-bar-reachable FCP command");
+  console.log("  cut fcp wrappers                   list 153 named-wrapper commands by group");
   console.log("");
   console.log("Universal AX primitives — reach any element (Inspector, dialog, etc):");
   console.log("  cut fcp ax-get <attr> <needle>     read AX attribute (e.g. AXValue, AXSize, AXEnabled)");
