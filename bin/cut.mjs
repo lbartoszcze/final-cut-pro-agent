@@ -64,6 +64,8 @@ function printHelp(topic) {
   console.log("USAGE:");
   console.log("  cut fcpxml <flags>   author a Final Cut Pro project (.fcpxml)");
   console.log("  cut fcp <subcmd>     drive Final Cut Pro (open / effects / Share)");
+  console.log("  cut sfx <op>         brainrot / meme SFX library (list / get / where)");
+  console.log("  cut giphy <op>       Giphy search + fetch as FCP-importable MP4");
   console.log("  cut help [topic]     this help (topic: " + Object.keys(HELP_TOPICS).join(", ") + ", or 'all')\n");
   const topics = topic === "all" || !topic ? Object.keys(HELP_TOPICS) : (HELP_TOPICS[topic] ? [topic] : Object.keys(HELP_TOPICS));
   for (const t of topics) {
@@ -89,7 +91,13 @@ if (!cmd || cmd === "help" || cmd === "--help" || cmd === "-h") {
 }
 if (cmd === "fcpxml") runNode(FCPXML, rest);
 else if (cmd === "fcp") runNode(FCP, rest);
-else {
-  console.error(`unknown subcommand: ${cmd}. Final Cut Pro is the only renderer — try 'cut help'.`);
+else if (cmd === "sfx") {
+  const { main } = await import("../lib/sfx/index.mjs");
+  process.exit((await main(rest)) || 0);
+} else if (cmd === "giphy") {
+  const { main } = await import("../lib/giphy/index.mjs");
+  process.exit((await main(rest)) || 0);
+} else {
+  console.error(`unknown subcommand: ${cmd}. Try 'cut help'.`);
   process.exit(2);
 }

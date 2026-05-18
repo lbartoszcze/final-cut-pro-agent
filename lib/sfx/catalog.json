@@ -1,0 +1,95 @@
+{
+  "_note": "Brainrot / meme SFX registry. URLs are best-effort public mirrors (myinstants.com direct MP3 paths); the fetcher reports clearly on 404 / network errors. User can override per-name via FCP_SFX_DIR=<dir> env var (local file <dir>/<name>.<ext> takes precedence over the cataloged URL).",
+  "sfx": {
+    "vine-boom": {
+      "description": "Classic Vine boom — deep bass thud, comedic emphasis on a punchline or reveal.",
+      "category": "impact",
+      "duration_hint_sec": 1.5,
+      "url": "https://www.myinstants.com/media/sounds/vine-boom.mp3"
+    },
+    "faaa-peter": {
+      "description": "Peter Griffin (Family Guy) extended 'FAAAA' shock yell. Used over a reaction shot.",
+      "category": "voice",
+      "duration_hint_sec": 2.0,
+      "url": "https://www.myinstants.com/media/sounds/peter-griffin-faaaaa.mp3"
+    },
+    "bruh": {
+      "description": "Soundboard 'BRUH' — short male voice, deadpan reaction.",
+      "category": "voice",
+      "duration_hint_sec": 1.0,
+      "url": "https://www.myinstants.com/media/sounds/movie_1.mp3"
+    },
+    "discord-ping": {
+      "description": "Discord notification ping. Used as cut-marker or alert SFX.",
+      "category": "alert",
+      "duration_hint_sec": 0.5,
+      "url": "https://www.myinstants.com/media/sounds/discord-notification.mp3"
+    },
+    "airhorn": {
+      "description": "Mlg airhorn — sustained dub-style horn, comedic peak.",
+      "category": "impact",
+      "duration_hint_sec": 2.5,
+      "url": "https://www.myinstants.com/media/sounds/mlg-airhorn.mp3"
+    },
+    "sad-violin": {
+      "description": "Sad-violin meme phrase — solo violin descending line over a failure beat.",
+      "category": "music",
+      "duration_hint_sec": 6.0,
+      "url": "https://www.myinstants.com/media/sounds/sad-violin.mp3"
+    },
+    "huh-cat": {
+      "description": "Cat 'huh?' — short feline confused vocalization.",
+      "category": "voice",
+      "duration_hint_sec": 0.7,
+      "url": "https://www.myinstants.com/media/sounds/huh-cat_g0sBPNS.mp3"
+    },
+    "bonk": {
+      "description": "Bonk hammer — single dry thud, slapstick.",
+      "category": "impact",
+      "duration_hint_sec": 0.5,
+      "url": "https://www.myinstants.com/media/sounds/bonk.mp3"
+    },
+    "to-be-continued": {
+      "description": "JoJo 'To Be Continued' arrow + Roundabout intro. Used over a freeze-frame ending.",
+      "category": "transition",
+      "duration_hint_sec": 7.0,
+      "url": "https://www.myinstants.com/media/sounds/to_be_continued.mp3"
+    },
+    "error-windows": {
+      "description": "Windows XP error chime — comedic mistake or denial cue.",
+      "category": "alert",
+      "duration_hint_sec": 1.2,
+      "url": "https://www.myinstants.com/media/sounds/erro.mp3"
+    },
+    "mario-jump": {
+      "description": "Mario jump SFX — short ascending boop. Used over an upward motion.",
+      "category": "transition",
+      "duration_hint_sec": 0.4,
+      "url": "https://www.myinstants.com/media/sounds/smb_jump-small.mp3"
+    },
+    "minecraft-villager": {
+      "description": "Minecraft villager 'hmm' — flat low grunt, used over a thinking shot.",
+      "category": "voice",
+      "duration_hint_sec": 0.8,
+      "url": "https://www.myinstants.com/media/sounds/minecraft-villager-sound-effect.mp3"
+    },
+    "wii-shop": {
+      "description": "Wii Shop Channel music — short loop of the iconic ragtime piano.",
+      "category": "music",
+      "duration_hint_sec": 12.0,
+      "url": "https://www.myinstants.com/media/sounds/wii-shop-channel-trap-remix.mp3"
+    },
+    "nope": {
+      "description": "Cartoon 'NOPE' — single male voice rejection. Used over a denial reaction.",
+      "category": "voice",
+      "duration_hint_sec": 0.7,
+      "url": "https://www.myinstants.com/media/sounds/movie_1_2.mp3"
+    },
+    "siren-alarm": {
+      "description": "Tornado siren / alert klaxon — used to escalate urgency or stakes.",
+      "category": "alert",
+      "duration_hint_sec": 4.0,
+      "url": "https://www.myinstants.com/media/sounds/tornado-siren.mp3"
+    }
+  }
+}
