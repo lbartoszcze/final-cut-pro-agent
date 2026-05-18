@@ -90,7 +90,7 @@ async function run() {
   const page = await ctx.newPage();
 
   console.log("[giphy-key] step 1: open join page (giphy.com/join — React SPA)");
-  await page.goto(SIGNUP_URL, { waitUntil: "networkidle" });
+  await page.goto(SIGNUP_URL, { waitUntil: "domcontentloaded" });
   await page.waitForSelector("input[type=email], input[placeholder*='Email' i], input[name*='email' i]");
 
   const fieldNames = await page.evaluate(() =>
@@ -195,12 +195,12 @@ async function run() {
     await browser.close(); process.exit(6);
   }
   console.log("[giphy-key] step 4c: visit verify link " + link);
-  await page.goto(link, { waitUntil: "networkidle" });
+  await page.goto(link, { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(3000);
   console.log("[giphy-key] post-verify url: " + page.url());
 
   console.log("[giphy-key] step 5: open developer dashboard (verified session)");
-  await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "networkidle" });
+  await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(3000);
   let dash = await page.evaluate(() => ({ url: location.href, body: document.body.innerText.slice(0, 3000) }));
   console.log("[giphy-key] dashboard url:", dash.url);
@@ -220,7 +220,7 @@ async function run() {
       await page.waitForTimeout(5000);
       const authBtn = await page.$("text=/authorize|allow|continue/i");
       if (authBtn) { console.log("[giphy-key] OAuth authorize"); await authBtn.click(); await page.waitForTimeout(4000); }
-      await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "networkidle" });
+      await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "domcontentloaded" });
       await page.waitForTimeout(3000);
       dash = await page.evaluate(() => ({ url: location.href, body: document.body.innerText.slice(0, 3000) }));
     }
@@ -246,7 +246,7 @@ async function run() {
       if (b.length) b[b.length - 1].click();
     });
     await page.waitForTimeout(5000);
-    await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "networkidle" });
+    await page.goto("https://developers.giphy.com/dashboard/", { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(3000);
     dash = await page.evaluate(() => ({ url: location.href, body: document.body.innerText.slice(0, 4000) }));
   }
