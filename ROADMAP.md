@@ -56,6 +56,34 @@ Status legend: **✅ in the FCPXML** · **🟡 partial** · **▶ FCP-render-sid
 | Compound clips / sync clips helpers | ✅ `lib/fcpxml.mjs` |
 | Keyword tagging per cut | ✅ |
 
+## Captions / subtitles
+
+| Concern | Status |
+|---|---|
+| SRT/VTT → `<caption lane="-1">` (`--captions`) | ✅ `lib/captions/parse.mjs` |
+| YouTube auto-sub dedupe | ✅ `dedupeCues` |
+| Caption language role (`--caption-lang`) | ✅ iTT role |
+| Driver: Edit > Captions (add/edit/split/transcribe/duplicate) | ✅ `lib/fcp/techniques.mjs` |
+
+## Style packs / genre archetypes
+
+| Concern | Status |
+|---|---|
+| `--style=<pack>` (8 archetypes) | ✅ `lib/styles/packs.json` |
+| `--list-styles` catalog | ✅ `lib/styles/index.mjs` |
+| Pack defaults merge UNDER user CLI flags | ✅ |
+| yc-launch / mkbhd-review grounded in transcript corpus | ✅ `references/youtube-transcripts/` |
+
+## External assets (SFX / Giphy)
+
+| Concern | Status |
+|---|---|
+| Brainrot SFX catalog + fetch (`cut sfx`) | ✅ `lib/sfx/` (15 SFX) |
+| Giphy search + fetch (`cut giphy`, scrape, no key) | ✅ `lib/giphy/index.mjs` |
+| `--sfx=<names\|all>` → audio lane `-2` | ✅ `lib/assets/inject.mjs` |
+| `--gif=<query>` → B-roll lane `2` | ✅ |
+| Autonomous Giphy API-key acquisition | 🟡 `scripts/obtain-giphy-key.mjs` (CapSolver-backed; signup flow) |
+
 ## Driving Final Cut Pro
 
 | Concern | Status |
