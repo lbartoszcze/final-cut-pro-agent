@@ -11,7 +11,7 @@
       "description": "Peter Griffin (Family Guy) extended 'FAAAA' shock yell. Used over a reaction shot.",
       "category": "voice",
       "duration_hint_sec": 2.0,
-      "url": "https://www.myinstants.com/media/sounds/peter-griffin-faaaaa.mp3"
+      "url": "https://www.myinstants.com/media/sounds/peter-griffin-ahhhhhhh.mp3"
     },
     "bruh": {
       "description": "Soundboard 'BRUH' — short male voice, deadpan reaction.",
@@ -41,7 +41,7 @@
       "description": "Cat 'huh?' — short feline confused vocalization.",
       "category": "voice",
       "duration_hint_sec": 0.7,
-      "url": "https://www.myinstants.com/media/sounds/huh-cat_g0sBPNS.mp3"
+      "url": "https://www.myinstants.com/media/sounds/huh-cat.mp3"
     },
     "bonk": {
       "description": "Bonk hammer — single dry thud, slapstick.",
@@ -53,7 +53,7 @@
       "description": "JoJo 'To Be Continued' arrow + Roundabout intro. Used over a freeze-frame ending.",
       "category": "transition",
       "duration_hint_sec": 7.0,
-      "url": "https://www.myinstants.com/media/sounds/to_be_continued.mp3"
+      "url": "https://www.myinstants.com/media/sounds/untitled_1071.mp3"
     },
     "error-windows": {
       "description": "Windows XP error chime — comedic mistake or denial cue.",
@@ -65,7 +65,7 @@
       "description": "Mario jump SFX — short ascending boop. Used over an upward motion.",
       "category": "transition",
       "duration_hint_sec": 0.4,
-      "url": "https://www.myinstants.com/media/sounds/smb_jump-small.mp3"
+      "url": "https://www.myinstants.com/media/sounds/maro-jump-sound-effect_1.mp3"
     },
     "minecraft-villager": {
       "description": "Minecraft villager 'hmm' — flat low grunt, used over a thinking shot.",
@@ -77,7 +77,7 @@
       "description": "Wii Shop Channel music — short loop of the iconic ragtime piano.",
       "category": "music",
       "duration_hint_sec": 12.0,
-      "url": "https://www.myinstants.com/media/sounds/wii-shop-channel-trap-remix.mp3"
+      "url": "https://www.myinstants.com/media/sounds/wii-shop-channel-remix.mp3"
     },
     "nope": {
       "description": "Cartoon 'NOPE' — single male voice rejection. Used over a denial reaction.",
@@ -89,7 +89,7 @@
       "description": "Tornado siren / alert klaxon — used to escalate urgency or stakes.",
       "category": "alert",
       "duration_hint_sec": 4.0,
-      "url": "https://www.myinstants.com/media/sounds/tornado-siren.mp3"
+      "url": "https://www.myinstants.com/media/sounds/tornado_siren-ringtone-1516007.mp3"
     }
   }
 }
