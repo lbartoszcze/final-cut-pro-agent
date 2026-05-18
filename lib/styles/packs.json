@@ -1,0 +1,84 @@
+{
+  "packs": {
+    "yc-launch": {
+      "description": "Y Combinator launch / startup announcement archetype. Founder-direct POV, product demo focus, fast cuts with B-roll punch-ins, clean cinematic grade, mid-tempo cadence, hook in first 3 seconds.",
+      "defaults": {
+        "aspect": "16:9", "fps": "29.97", "look": "cinematic",
+        "bpm": "112", "bars": "24",
+        "audio-target": "-14", "audio-fade": "0.08",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "1",
+        "hook-sec": "3.0", "auto-chapters": "1", "style": "montage"
+      }
+    },
+    "startup-launch": {
+      "description": "Generic startup launch / product reveal. Moderate cuts, founder + product B-roll mix, punchy grade, broadcast LUFS, hook on the product.",
+      "defaults": {
+        "aspect": "16:9", "fps": "29.97", "look": "punch",
+        "bpm": "120", "bars": "20",
+        "audio-target": "-14", "audio-fade": "0.1",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "0",
+        "hook-sec": "3.0", "auto-chapters": "1", "style": "montage"
+      }
+    },
+    "apple-keynote": {
+      "description": "Apple-keynote premium product reveal. Slow 23.98fps cuts, 2.35:1 cinematic, deep grade, long shots, sparse text.",
+      "defaults": {
+        "aspect": "2.35:1", "fps": "23.98", "look": "cinematic",
+        "bpm": "84", "bars": "16",
+        "audio-target": "-16", "audio-fade": "0.2",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "0",
+        "hook-sec": "5.0", "auto-chapters": "1", "style": "linear"
+      }
+    },
+    "tiktok-trending": {
+      "description": "TikTok/Reels/Shorts trending vertical short. 9:16 vertical, 29.97fps via platform preset, fast multi-cut-per-bar cadence, face-aware hook, TikTok LUFS.",
+      "defaults": {
+        "platform": "tiktok", "look": "punch",
+        "bpm": "140", "bars": "24",
+        "audio-target": "-14", "audio-fade": "0.05",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "1",
+        "hook-sec": "2.0", "auto-chapters": "0", "style": "montage"
+      }
+    },
+    "vlog-handheld": {
+      "description": "Handheld vlog (Casey Neistat / personal-doc). 16:9, moderate-fast cuts, on-screen text, audio ducking, hook + B-roll heavy.",
+      "defaults": {
+        "aspect": "16:9", "fps": "29.97", "look": "warm",
+        "bpm": "118", "bars": "24",
+        "audio-target": "-14", "audio-fade": "0.08",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "1",
+        "hook-sec": "2.5", "auto-chapters": "1", "style": "montage"
+      }
+    },
+    "cinematic-235": {
+      "description": "Cinematic 2.35:1 film-look. Slow 23.98fps, deep blacks, long sections, theatrical LUFS, minimal titles.",
+      "defaults": {
+        "aspect": "2.35:1", "fps": "23.98", "look": "cinematic",
+        "bpm": "80", "bars": "12",
+        "audio-target": "-16", "audio-fade": "0.25",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "0", "faces": "0",
+        "hook-sec": "6.0", "auto-chapters": "1", "style": "linear"
+      }
+    },
+    "mkbhd-review": {
+      "description": "Tech-review studio archetype (MKBHD / Linus Tech Tips). 16:9, premium cinematic grade, smooth pans, mid-tempo cadence, B-roll heavy, broadcast LUFS, motion-graphic titles.",
+      "defaults": {
+        "aspect": "16:9", "fps": "23.98", "look": "cinematic",
+        "bpm": "108", "bars": "20",
+        "audio-target": "-14", "audio-fade": "0.12",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "1",
+        "hook-sec": "4.0", "auto-chapters": "1", "style": "montage"
+      }
+    },
+    "corporate-explainer": {
+      "description": "Corporate explainer / SaaS demo. 16:9, mid-pace cuts, lower-third titles, ambient music bed, voiceover-led with audio ducking, restrained warm color, hook on the problem statement.",
+      "defaults": {
+        "aspect": "16:9", "fps": "29.97", "look": "warm",
+        "bpm": "104", "bars": "20",
+        "audio-target": "-14", "audio-fade": "0.15",
+        "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "0",
+        "hook-sec": "4.0", "auto-chapters": "1", "style": "linear"
+      }
+    }
+  }
+}

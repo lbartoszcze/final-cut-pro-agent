@@ -14,13 +14,16 @@ import { analyzeShots } from "../lib/analyze/motion.mjs";
 import { rankShots, pickShotForCut, planBrolls, groupMulticam, multicamRewriteOne } from "../lib/analyze/score.mjs";
 import { enrichShotsWithFaces } from "../lib/analyze/faces.mjs";
 import { listClipsInFolder, probeDurationFrames, makeTestPatterns } from "../lib/source/sources.mjs";
+import { mergeStylePack, listStylePacks } from "../lib/styles/index.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..");
 
 function parseArgs(argv) {
-  const sup = {};
+  let sup = {};
   for (const a of argv) { const m = a.match(/^--([^=]+)=(.+)$/); if (m) sup[m[1]] = m[2]; }
+  if (argv.includes("--list-styles")) { for (const s of listStylePacks()) console.log(`${s.name.padEnd(22)} ${s.description}`); process.exit(0); }
+  if (sup.style && !["montage", "linear"].includes(sup.style)) { sup = mergeStylePack(sup.style, sup); delete sup.style; }
   const p = sup.platform ? resolvePlatform(sup.platform) : null;
   const out = { mode: "test-pattern", style: "montage", bpm: "140", bars: "16", clips: "", out: "cut.fcpxml", template: "", look: "cinematic", lut: "", platform: "", "audio-target": String(p?.audioTarget ?? -16), "audio-fade": "0.05", aspect: p?.aspect ?? "16:9", fps: p?.fps ?? "29.97", "max-duration": p?.maxDuration != null ? String(p.maxDuration) : "", "auto-chapters": "1", markers: "", music: "", "smart-pick": "1", "hook-sec": "3.5", brolls: "1", "match-cuts": "1", faces: "0", "custom-markers": "", ...sup };
   if (out.clips) out.mode = "clips";
