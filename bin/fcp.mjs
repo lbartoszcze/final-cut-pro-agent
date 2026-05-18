@@ -12,6 +12,7 @@
 // and ... → Automation. After that the actions are silent.
 
 import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel } from "../lib/fcp-ax.mjs";
+import { getAttr, setAttr, performAction, selectElement, dialogPress, dialogSetField, dumpTree } from "../lib/fcp-ax-generic.mjs";
 
 function sleep(sec) { return new Promise((r) => setTimeout(r, sec * 1000)); }
 
@@ -65,6 +66,45 @@ const CMD = {
     console.log(`share invoked: ${preset}`);
   },
 
+  // Universal AX primitives — reach any element FCP exposes.
+  "ax-get"([attr, ...rest]) {
+    if (!attr || rest.length === 0) throw new Error("ax-get <attr> <needle...>");
+    const needle = rest.join(" ");
+    process.stdout.write(getAttr(needle, attr));
+    process.stdout.write("\n");
+  },
+  "ax-set"([attr, needleArg, ...valueParts]) {
+    if (!attr || !needleArg || valueParts.length === 0) {
+      throw new Error("ax-set <attr> <needle> <value>");
+    }
+    setAttr(needleArg, attr, valueParts.join(" "));
+    console.log(`ax-set: ${attr} of "${needleArg}" = "${valueParts.join(" ")}"`);
+  },
+  "ax-press"([action, ...rest]) {
+    if (!action || rest.length === 0) throw new Error("ax-press <action> <needle...>");
+    const needle = rest.join(" ");
+    performAction(needle, action);
+    console.log(`ax-press: ${action} on "${needle}"`);
+  },
+  select([...rest]) {
+    if (rest.length === 0) throw new Error("select <needle...>");
+    const needle = rest.join(" ");
+    selectElement(needle);
+    console.log(`selected: ${needle}`);
+  },
+  "dialog-button"([...rest]) {
+    if (rest.length === 0) throw new Error("dialog-button <label...>");
+    const label = rest.join(" ");
+    dialogPress(label);
+    console.log(`dialog button pressed: ${label}`);
+  },
+  "dialog-set"([field, ...valueParts]) {
+    if (!field || valueParts.length === 0) throw new Error("dialog-set <field> <value>");
+    dialogSetField(field, valueParts.join(" "));
+    console.log(`dialog field "${field}" set`);
+  },
+  dump() { process.stdout.write(dumpTree()); },
+
   help() { printHelp(); },
 };
 
@@ -86,6 +126,15 @@ function printHelp() {
   console.log("  cut fcp apply-effect <name>        apply effect to selected timeline clip");
   console.log("  cut fcp share [<preset>]           File → Share → preset (default 'Export File (default)…')");
   console.log("  cut fcp find <substring>           dump AX-tree matches (debugging)");
+  console.log("  cut fcp dump                       dump every element of window 1 (role | desc | value)");
+  console.log("");
+  console.log("Universal AX primitives — reach any element (Inspector, dialog, etc):");
+  console.log("  cut fcp ax-get <attr> <needle>     read AX attribute (e.g. AXValue, AXSize, AXEnabled)");
+  console.log("  cut fcp ax-set <attr> <needle> <v> write AX attribute (slider value, popup choice)");
+  console.log("  cut fcp ax-press <action> <needle> perform AX action (AXPress, AXIncrement, AXShowMenu)");
+  console.log("  cut fcp select <needle>            `select` a selectable element (clip, row, item)");
+  console.log("  cut fcp dialog-button <label>      press a button in the topmost modal sheet");
+  console.log("  cut fcp dialog-set <field> <val>   set a text field in the topmost modal sheet");
   console.log("");
   console.log("First-time use: grant Accessibility + Automation permission for");
   console.log("Final Cut Pro + System Events to this terminal in Settings.");
