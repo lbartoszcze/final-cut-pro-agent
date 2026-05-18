@@ -17,6 +17,8 @@ import { WRAPPERS, WRAPPERS_HELP } from "../lib/fcp-wrappers.mjs";
 import { INSPECTOR, INSPECTOR_HELP } from "../lib/fcp/inspector.mjs";
 import { APPLY, APPLY_HELP } from "../lib/fcp/apply.mjs";
 import { EXTRA, EXTRA_HELP } from "../lib/fcp/menus-extra.mjs";
+import { TECHNIQUES, TECHNIQUES_HELP } from "../lib/fcp/techniques.mjs";
+import { WORKFLOWS, WORKFLOWS_HELP } from "../lib/fcp/workflows.mjs";
 
 function sleep(sec) { return new Promise((r) => setTimeout(r, sec * 1000)); }
 
@@ -111,19 +113,21 @@ const CMD = {
   menus() { process.stdout.write(listMenus()); },
   wrappers() { printWrappers(); },
 
-  // ---- 197 menu wrappers + 27 Inspector/Share + 8 catalog/status + 55 extra ----
+  // ---- 197 menus + 48 Inspector/Share + 8 catalog/status + 56 extra + ~24 techniques + ~12 workflows ----
   ...WRAPPERS,
   ...INSPECTOR,
   ...APPLY,
   ...EXTRA,
+  ...TECHNIQUES,
+  ...WORKFLOWS,
 
   help() { printHelp(); },
 };
 
 function printWrappers() {
-  const total = Object.keys(WRAPPERS).length + Object.keys(INSPECTOR).length + Object.keys(APPLY).length + Object.keys(EXTRA).length;
+  const total = Object.keys(WRAPPERS).length + Object.keys(INSPECTOR).length + Object.keys(APPLY).length + Object.keys(EXTRA).length + Object.keys(TECHNIQUES).length + Object.keys(WORKFLOWS).length;
   console.log(`Named wrappers (${total} total):`);
-  for (const [group, names] of [...WRAPPERS_HELP, ...INSPECTOR_HELP, ...APPLY_HELP, ...EXTRA_HELP]) {
+  for (const [group, names] of [...WRAPPERS_HELP, ...INSPECTOR_HELP, ...APPLY_HELP, ...EXTRA_HELP, ...TECHNIQUES_HELP, ...WORKFLOWS_HELP]) {
     console.log(`  ${group}:`);
     let line = "    ";
     for (const n of names) {
