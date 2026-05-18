@@ -57,8 +57,9 @@ const CMD = {
     console.log(`applied effect: ${name}`);
   },
 
-  // Share via File → Share → <preset> (default preset name is "Master File…").
-  async share([preset = "Master File…"]) {
+  // Share via File → Share → <preset>. Verified default in current FCP
+  // (queried Window > Show in Workspace and File > Share submenu live).
+  async share([preset = "Export File (default)…"]) {
     if (!isRunning()) throw new Error("Final Cut Pro is not running. `cut fcp launch` first.");
     clickMenu(["File", "Share", preset]);
     console.log(`share invoked: ${preset}`);
@@ -78,12 +79,12 @@ function printHelp() {
   console.log("  cut fcp running                    is Final Cut Pro running?");
   console.log("  cut fcp launch                     launch FCP in the background (-g)");
   console.log("  cut fcp open <path>                open a project / .fcpxml (background)");
-  console.log("  cut fcp menu <top> [...] <leaf>    click any menu item, e.g. menu File Save");
-  console.log("  cut fcp save                       File → Save Project");
-  console.log("  cut fcp close                      File → Close Project");
+  console.log("  cut fcp menu <top> [...] <leaf>    click any menu item, e.g. menu Edit Undo");
+  console.log("  cut fcp close-library              File → Close Library");
+  console.log("  cut fcp close-timeline             File → Close Timeline");
   console.log("  cut fcp undo / redo                Edit → Undo / Redo");
   console.log("  cut fcp apply-effect <name>        apply effect to selected timeline clip");
-  console.log("  cut fcp share [<preset>]           File → Share → preset (default 'Master File…')");
+  console.log("  cut fcp share [<preset>]           File → Share → preset (default 'Export File (default)…')");
   console.log("  cut fcp find <substring>           dump AX-tree matches (debugging)");
   console.log("");
   console.log("First-time use: grant Accessibility + Automation permission for");
