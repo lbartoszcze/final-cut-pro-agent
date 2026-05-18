@@ -85,6 +85,19 @@ color / magnetic mask systems cover the same functional need via menu paths.
 cut fcpxml --clips=./footage --music=track.mp3 --bars=24 --style=cinematic \
            --look=cinematic --aspect=2.35:1 --fps=24 --out=cut.fcpxml
 
+# 1a. Genre archetype packs (merge UNDER any explicit flag you also pass)
+cut fcpxml --style=yc-launch --clips=./footage --out=launch.fcpxml
+cut fcpxml --list-styles            # 8 packs: yc-launch, mkbhd-review, ...
+
+# 1b. Burn subtitles from an SRT/VTT (Whisper / yt-dlp output)
+cut fcpxml --clips=./footage --captions=subs.vtt --caption-lang=en --out=cut.fcpxml
+
+# 1c. Drop brainrot SFX + a Giphy B-roll into the timeline
+cut sfx list                        # 15 cataloged SFX
+cut giphy search "celebrate"        # no API key needed (scrape path)
+cut fcpxml --clips=./footage --sfx=vine-boom,airhorn --gif="mind blown" \
+           --out=cut.fcpxml         # SFX -> audio lane -2, GIF -> B-roll lane 2
+
 # 2. Open it in Final Cut Pro (background, doesn't steal focus)
 cut fcp open cut.fcpxml
 
