@@ -14,6 +14,7 @@
 import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel } from "../lib/fcp-ax.mjs";
 import { getAttr, setAttr, performAction, selectElement, dialogPress, dialogSetField, dumpTree, listMenus } from "../lib/fcp-ax-generic.mjs";
 import { WRAPPERS, WRAPPERS_HELP } from "../lib/fcp-wrappers.mjs";
+import { INSPECTOR, INSPECTOR_HELP } from "../lib/fcp/inspector.mjs";
 
 function sleep(sec) { return new Promise((r) => setTimeout(r, sec * 1000)); }
 
@@ -108,16 +109,17 @@ const CMD = {
   menus() { process.stdout.write(listMenus()); },
   wrappers() { printWrappers(); },
 
-  // ---- 153 named wrappers for the FCP menu surface (Edit / Trim / Modify /
-  // Clip / Mark / View / File / Share) — see lib/fcp-wrappers.mjs ----
+  // ---- 197 named wrappers for menu surface + 27 Inspector / Share ops ----
   ...WRAPPERS,
+  ...INSPECTOR,
 
   help() { printHelp(); },
 };
 
 function printWrappers() {
-  console.log(`Named wrappers (${Object.keys(WRAPPERS).length} total):`);
-  for (const [group, names] of WRAPPERS_HELP) {
+  const total = Object.keys(WRAPPERS).length + Object.keys(INSPECTOR).length;
+  console.log(`Named wrappers (${total} total):`);
+  for (const [group, names] of [...WRAPPERS_HELP, ...INSPECTOR_HELP]) {
     console.log(`  ${group}:`);
     let line = "    ";
     for (const n of names) {
