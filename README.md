@@ -42,11 +42,13 @@ FCP stays backgrounded while the driver works.
   dispatchable via `cut fcp menu <Top> [Sub...] <Leaf>` (2-, 3-, and 4-level
   paths verified live). Catalog persisted at `references/fcp-menus.txt`;
   reproduce live with `cut fcp menus`.
-- **309 named wrappers** for the highest-frequency operations — grouped help
+- **346 named wrappers** for the highest-frequency operations — grouped help
   via `cut fcp wrappers`. Breakdown:
   - 197 menu wrappers (Edit / Trim / Modify / Clip / Mark / View / File / Share / Window / App)
   - 56 submenu wrappers (Keyframes / Track / Source Media / Apply Name / Roles / Audition / Browser / Viewer / Index / Sort)
   - 48 Inspector / Color / Audio / Crop setters + complete-Share flow
+  - 25 transcript-derived technique wrappers (conform / LUT / voice-isolate / captions / ...)
+  - 12 multi-step workflow recipes (noise-reduce / log-grade-stack / ken-burns / ...)
   - 8 catalog-apply + status readers
 - **6 universal AX primitives** reach any AXDescription-addressable element:
   `ax-get`, `ax-set`, `ax-press`, `select`, `dialog-button`, `dialog-set`.
@@ -101,7 +103,7 @@ cut fcpxml --clips=./footage --sfx=vine-boom,airhorn --gif="mind blown" \
 # 2. Open it in Final Cut Pro (background, doesn't steal focus)
 cut fcp open cut.fcpxml
 
-# 3. Drive FCP from the CLI (any of the 288 named wrappers + 574 menu paths)
+# 3. Drive FCP from the CLI (any of the 346 named wrappers + 574 menu paths)
 cut fcp volume-up                 # Modify > Adjust Volume > Up (+1 dB)
 cut fcp apply-effect "Vignette"   # search + apply from Effects browser
 cut fcp set-opacity 50            # Inspector Compositing > Opacity
@@ -113,7 +115,7 @@ cut fcp export "Export File (default)…" "MyCut"
 ```
 
 `cut fcp help` shows the base commands; `cut fcp wrappers` lists all
-288 named operations grouped by section; `cut fcp menus` enumerates every
+346 named operations grouped by section; `cut fcp menus` enumerates every
 menu-bar-reachable command.
 
 ## What the authored FCPXML carries
