@@ -47,6 +47,17 @@ Each video is persisted in two formats:
 011  AFcALHgwX_M   Final Cut Pro: The 9 Things Everyone Gets Wrong
 ```
 
+### `mkbhd-method/` (1 video — The Studio breakdown of MKBHD's editing workflow)
+
+```
+eNgD1kg3U14   The MKBHD Method™ For Editing High Quality Videos (The Studio, 43 min, 1.3M views)
+```
+
+Mined for the `mkbhd-review` style pack updates: music run cap 30s,
+dialogue peak -12dB / avg -20dB, dialogue HPF 80Hz, graphic ease ratios
+50/20 out/in, film-stock target 70mm, music genre hint
+uptempo-jazz-bebop, silence-fill ambience threshold 0.5s.
+
 ### `yc-launch/` (7 videos — YC launch / "how to launch your startup" canon)
 
 ```

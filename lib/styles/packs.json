@@ -61,13 +61,23 @@
       }
     },
     "mkbhd-review": {
-      "description": "Tech-review studio archetype (MKBHD / Linus Tech Tips). 16:9, premium cinematic grade, smooth pans, mid-tempo cadence, B-roll heavy, broadcast LUFS, motion-graphic titles.",
+      "description": "Tech-review studio archetype (MKBHD / Linus Tech Tips). 16:9, premium cinematic grade, smooth pans, mid-tempo cadence, B-roll heavy, broadcast LUFS, motion-graphic titles. Defaults updated from the MKBHD Method transcript (eNgD1kg3U14): music run cap, dialogue peak/avg targets, low-cut HPF, ease curve ratios, film-stock target, music genre hint.",
       "defaults": {
         "aspect": "16:9", "fps": "23.98", "look": "cinematic",
         "bpm": "108", "bars": "20",
         "audio-target": "-14", "audio-fade": "0.12",
         "smart-pick": "1", "match-cuts": "1", "brolls": "1", "faces": "1",
-        "hook-sec": "4.0", "auto-chapters": "1", "style": "montage"
+        "hook-sec": "4.0", "auto-chapters": "1", "style": "montage",
+        "music-max-run-sec": "30",
+        "dialogue-peak-db": "-12",
+        "dialogue-avg-db": "-20",
+        "dialogue-lowcut-hz": "80",
+        "graphic-ease-out": "0.50",
+        "graphic-ease-in": "0.20",
+        "film-stock": "70mm",
+        "music-genre-hint": "uptempo-jazz-bebop",
+        "silence-fill": "1",
+        "silence-fill-threshold-sec": "0.5"
       }
     },
     "corporate-explainer": {

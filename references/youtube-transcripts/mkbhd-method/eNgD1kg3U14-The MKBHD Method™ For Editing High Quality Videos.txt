@@ -1,0 +1,1142 @@
+So, if you've been editing videos for
+years, or if you've never edited a video
+before, you'll still get something out
+of this video. Editing isn't just uh
+software and plugins and presets. It's
+decision-m. It's it's a bunch of tiny
+decisions all stacked up on top of each
+other to create a cohesive project. So,
+I asked my editing team to show you how
+they make creative choices. I gave him a
+video of me giving some advice to
+creators and then we pass that file from
+lead editor to color to graphics to
+audio and so you can see how they make
+decisions that stack up into the final
+result. So while watching this video
+look for these four principles that we
+use to create highquality videos here at
+MKBHD. So first good in good out you
+just can't edit your way around poor
+planning and execution. Two, focus. What
+you cut is as important as what you
+keep. Three, don't be boring, but don't
+be insulting. There's more to editing
+than just cutting really fast. And four,
+know your audience. You know, an A+
+quality work designed for a six-year-old
+won't feel like A+ work to a college
+student. So, know who you're talking to.
+So, with these in mind, let's start the
+process. Let's get right into it.
+Beginning with our lead editor, Mariah.
+Take it away.
+I'm Mariah, the lead editor at MKBHD.
+And today we're going to be talking
+about two scenarios that every editor
+has encountered. One where you have too
+much footage and one where you don't
+have enough footage. So, let's look at
+some recent videos and break it down.
+So, first we're going to start with the
+robo taxi video which had way too much
+footage. So, we're going to talk about
+the creative decisions I made to
+subtract. Truly autonomous driving is
+one of the hardest technological
+problems to solve on planet Earth today.
+&gt;&gt; We have kind of the baseline of the
+structure. The structure is the A-roll,
+right? So, him talking, explaining
+what's happening, and then the chaos is
+everything from onsite. So, the first
+thing to do was to go through all of the
+hours of footage from the two cameras we
+had, sync them up for all the rides, and
+then see what happened, what we want to
+keep, and what we want to throw away. I
+keep drafts of everything. So, ideally,
+you want to have everything so you can
+always go back and pull something out
+later if you change your mind. I like to
+color and label everything. That way,
+when I'm looking at my timeline, I can
+tell if I'm overusing too much stuff or
+underutilizing footage that I really
+should be using. So, the second problem
+I had was actually following the script
+too much, which is a weird problem to
+have. So, let's take a look at the
+difference between the first cut and the
+second cut with this. So, this first
+robo taxi ride was fascinating.
+Okay. Yeah, this is great. Everything's
+normal. Robo taxi. Okay.
+&gt;&gt; Hello.
+&gt;&gt; Hello. Fundamentally, it went totally
+fine. The car showed up. We got in. It
+drove like a normal person would. And
+now,
+&gt;&gt; it's probably hard to put your finger on
+why this edit just doesn't feel right.
+And that's just part of the puzzle. And
+it kind of feels like to me that Marquez
+knows something that we don't. A lot of
+the times I'm my own worst enemy. I'll
+be honest, but sometimes Marquez is my
+own worst enemy. And so there's a part
+in the script where he just has a
+section that says intercut commentary
+with the Tesla ride and Whimo ride. The
+problem with the first couple cuts on
+this is I was really trying to force
+having him talking in the A-roll with
+the B-roll from the on-site shoot.
+trying to do present tense and past
+tense. There's all these different times
+of things happening and knowing when is
+the right time for something is really
+hard sometimes. So, as the editor, you
+know, all the footage, you know,
+everything that's happening, but no one
+else does. And so, that's why when you
+need feedback, sharing it with other
+people is really great to get a fresh
+pair of eyes, see it from a different
+perspective, and understand why stuff
+isn't working. With the feedback in
+mind, now let's take a look at the
+second version.
+Okay,
+start ride.
+So, we arrive in 9 minutes. This is our
+&gt;&gt; We've got our feedback. We've moved
+stuff around. We've done a little
+fixing. But what happens when we
+actually need to fully remove a scene
+from the timeline?
+&gt;&gt; My iPhone
+is, I'm pretty sure, still in that robo
+taxi that just drove away. How do I get
+it back? I'm not really sure how to get
+it back. I need to figure this out.
+Marquez straight up lost his phone in
+one of the taxis while he was there. And
+I could have included all of it and it
+would have been dramatic and really
+funny. And in fact, one of the cars kind
+of poked fun at him saying like, "Don't
+forget your valuables after the fact."
+That would have been really funny. But
+does it make sense to put in a video
+that's supposed to be like more
+informational, like something that's
+like very to the point? It was part of
+the experience, but does it kind of lead
+you astray from what we're really trying
+to hone in on? So, when you're trying to
+figure out whether you should keep
+something in your edit or if you should
+get rid of it, really it just comes down
+to the value you're proposing to your
+audience. Does your audience care about
+this or is it not important to what
+you're trying to say? So, now let's
+transition to a scenario where you have
+too little footage.
+&gt;&gt; So, the number one or there's I guess
+two main ways I can decide if a subject
+is worth my audience's time. one is if
+&gt;&gt; and so the second video I'm going to
+show you is a little bit more
+structured, a little more typical for
+the main channel. And this is the video
+that is going to be passed through all
+the stages of post-prouction. You're
+going to hear from Ellis, you're going
+to hear from Vin, you're going to hear
+from like everybody that touched it. For
+this video, we wanted to do something a
+little bit different. And so we asked
+Marquez, "What is something you want to
+talk about that you don't think would be
+a good video or wouldn't perform well?"
+Um, and so he wanted to talk about how
+he picks what videos he makes, which I
+don't think I've ever heard him talk
+about either. What no one tells you is
+when you're the editor, you are at the
+end of the pipeline. If there's a
+problem, you are going to be the one to
+have to deal with it. For this one, my
+fear when we were talking about it is it
+not being visual. And the worst thing
+you can do is probably tell and not
+show. For this video, we chose to use a
+lot of archive footage. And so you'll
+see the problem with that immediately.
+&gt;&gt; I'm Marquez and this is how I pick what
+videos I'm going to make. Two main ways
+I can decide if a subject is worth my
+audience's time. One is if they have
+shown interest in it in the past.
+&gt;&gt; Originally, I had jumped straight from
+the intro of how we pick what videos to
+make straight into the questions and it
+just felt really slow. It kind of had no
+momentum or excitement. If I'm not
+excited and I'm editing it, you're not
+going to be excited. if you're watching
+it. So, now let's watch the second
+version of this intro.
+videos I'm going to make. This is the
+front glass from the iPhone 6. And so,
+here I'm going to show you everything I
+learned about what Spot actually is, but
+I'll leave you with this. I've got my
+upsides and downsides to Vision Pro.
+&gt;&gt; So, the lesson from this re-edit is not
+to make montages. They're great. They
+work sometimes, but ultimately being an
+editor is about focusing on clear
+communication and problem solving. And a
+lot of times you'll be given stuff that
+just isn't very good. It's going to
+happen. Focusing on your experience and
+the tools you have will really just be
+the best thing you can do. But
+ultimately, there was actually a really
+good reason to add the montage to this
+video. Something I will never do to you
+is I will never lie to you. I will not
+pretend this video is something it's
+not. And if I was to do a Mr. Beast
+crazy montage opener with text and stuff
+flying around, I've said it before and I
+said it again. I don't like it and I
+don't think it makes sense for what we
+do. Personally, setting up from the
+get-go that this is a clip from 11 years
+ago. It's not new. It's not fresh, but
+it is a memory. A good intro doesn't
+just hook the audience, but it also sets
+up the expectation for the viewer, and
+that's so, so important. Something else
+I did in this video was a really simple
+thing and it can really uplift a video
+is just adding transitional music. It
+helps move things along and provide
+context. There are some video
+opportunities that have come across my
+inbox or my social feeds that are
+totally disconnected from like purchase.
+&gt;&gt; If I'm treating this like a main channel
+video, Marquez does not like having
+music typically running for more than
+like 20 30 seconds. like he says it
+makes things feel like an ad, but in
+this case there's no product. So really
+like what are we advertising? Usually I
+use it as a transitional period to kind
+of like segue to your brain that we're
+about to switch to something else. So
+you'll hear later from Ellis, but he
+told me something really important that
+stuck with me and that when you're
+picking music, it needs to convey
+something that isn't already being told
+through video. something subliminal,
+something to set the tone, the vibe, or
+set up expectations for later.
+&gt;&gt; I also think YouTube is a treadmill, and
+if you try to chase past success over
+and over and over, you end up kind of
+burning out a little bit. And I think
+you should look at what you enjoy making
+just as much as what worked in the past
+on your channel. So, all of that
+&gt;&gt; just kind of a nice wrap-up. Clearly,
+this video is not completely done. And
+we still have sound to pass off to
+Ellis. We still have a bunch of stuff to
+do, and we also still need to do the
+color, as I'm sure you can tell. So,
+you'll be hearing soon from Vin, who's
+actually going to take over from here,
+and he's going to fix the ugly color.
+Thanks, Vin.
+&gt;&gt; We sit this close normally.
+&gt;&gt; Marquez, what are you editing right now?
+&gt;&gt; Uh, I'm editing a video where I ask
+everyone to subscribe to the studio
+channel. It's going to be a banger.
+Super short.
+&gt;&gt; Hey, Vinn here, art director for MKBHD
+channel. Essentially, color grading is
+putting emphasis and deemphasis on parts
+of your image to tell the story. So, for
+this section, let's talk about prep,
+LUTs, and plugins. For this tutorial,
+I'm just using Da Vinci Resolve. That's
+what I prefer, but you can use any
+editor. Premiere, Final Cut, Sony Vegas.
+They're all good. Based off of this
+clip, you can tell that already before
+the L is applied, there is a big blue
+cast on the whole background. And that's
+because we have two sky panels blasting
+at the ceiling. And then we fine-tuned
+the hue number. We took a couple minutes
+to do that. And we would do camera tests
+to see if the hue is correct for the
+background. 80% of your image should be
+done on camera. And then your last 20%
+is color grading. You can't fix bad
+lighting in post. It doesn't matter what
+camera you're using as long as you're
+shooting in log. And if it happens to
+have 10 bit codec, that's what really
+matters because 8 bit is a little too
+small. You don't get as much dynamic
+range in post. More data basically means
+more flexibility in post. You've
+probably seen this acronym a couple
+times now on the internet. LUT, LUT. It
+stands for lookup table. What does that
+mean? No one really knows, but it's
+essentially a filter that goes on top of
+your footage. On the main channel, we
+seem to gravitate towards just using the
+regular red rec 709 conversion light
+just cuz that's what we're used to. For
+Marquez's A-roll, we shot on a Canon
+C70. If we apply the L, this is the
+default conversion. This is what we saw
+on camera. So, right now, this is just
+the default L. I generally don't like
+using this because it's not catered to
+the camera from the R5, R5 Mark II, C70
+in the C300 Mark II, literally all of
+them shoot clog 2 differently. So Canon
+is not just guilty of this. Sony is very
+guilty of this. They have too many
+cameras and so that SLOG 3 L is going to
+look different on all of their cameras
+based off of the stock Sony L.
+Personally, I don't like using the stock
+LTS unless they're from Red or Ari. Most
+of the time, I would prefer even a
+YouTuber L as an alternative because
+they're catered to the camera. So, here
+we have a custom L from our YouTube
+friend Tyler Stelman. Shout out to
+Tyler. His is actually based off Ari's
+color space. So, you can tell it's a
+little bit more saturated. His is more
+uh stylized, so I can't push and pull as
+much, but it's already so good that I
+don't really want to do much to this.
+Based off of this image, he seems a
+little bit underexposed. So, you should
+have a threewheel editor, and there's an
+offset tab, which is like a general
+exposure. All your editors should have
+that. Plugins can vary in price point.
+Some of them are 100, some of them are
+a,000. This one I'm using is Dehancer.
+It's about 400 bucks for two seats. So,
+in this situation, I have the C70 camera
+selected and CLOG 2 Cinema Gamut. The
+company that made this plugin tests all
+their cameras specifically. So, anytime
+that you see that conversion done, it's
+made for that camera because they all
+shoot a little bit differently. I
+already like the starting point a lot
+better than the stock L. So, for me, I
+would just bump up exposure a little
+bit. And I already have this done, but I
+turn down saturation a little bit. A big
+reason as to why this cost $400 is
+because of the stylistic effects that
+you get along with it. So you have
+things like halation that adds red to
+the edges on the chromatic aberration.
+So any highlight you see has like a
+little red flare to it and it can warm
+up the image a little bit. Makes it look
+a little retro and older. Bloom is
+basically your diffusion filter, but you
+can dial it in post. It lets you pick
+how intense you have it. Um, you can
+even pick what kind of camera like film
+stock it's replicating. Older cameras
+usually bloom harder. So that's why if
+you pick 8 mm, he looks really soft. And
+if you pick 70 mm, that's a more modern
+camera. All of these you can fine-tune
+with the sliders and you basically just
+pick through a bunch of boxes. It's
+pretty easy to use. If you're trying to
+achieve a more stylized look, well,
+you're going to have to do that during
+production because you can't stylize
+what's not stylized. Ultimately, color
+grading should serve the project itself.
+If you don't push yourself in
+production, you can't push your image.
+So, go ahead and take a risk. As of
+right now, this looks pretty good. But
+that's only half of the story. Now, we
+need to spruce it up with some graphics.
+So, let's hand it off to Michael.
+&gt;&gt; Hello, I'm Michael. I'm the head of
+motion design and I'm excited to walk
+you through my process. Let's go ahead
+and break down the overlay animation
+that I made for this video.
+&gt;&gt; So, a mistake I see a lot of newer
+creators making specifically is to look
+at what works on other channels and then
+just try to copy it one for one. I think
+that's the worst thing you can do cuz
+they don't have a reason to watch the
+thing you're making over the thing that
+already exists. So, as it turns out, we
+lost all of the footage of me talking
+directly to camera. So, from here on
+out, you will be seeing a little cartoon
+version of me that Olivia, our other
+animator, so kindly created. Enjoy that.
+Probably for something like this, I
+probably actually spent more time
+developing the flat static graphics in
+Adobe Illustrator than I did actually
+animating them in After Effects. The
+most important part of motion design is
+getting the design part right first. So,
+for me, what that looks like, yeah, just
+building everything in Illustrator
+first. Um, everything that you see is
+made up of uh vectorzed paths, which
+means I can move things independently
+and not be worried about losing
+information or things being stuck
+together without using words um or at
+least very many words. Uh, I wanted to
+show the abstract concept of something
+being viewed on the internet and then
+something being viewed on your computer
+as a like project creative thing that
+you're making. And I felt like the best
+way to do that was YouTube and Final Cut
+Pro. Um, so what I did was I took a
+screenshot of both of those things and I
+oversimplified the heck out of it. I
+mean, this is what Final Cut Pro looks
+like. I mean, maybe that's not a
+surprise to most people watching this
+video, but um, I was like, what parts of
+this make it look like Final Cut Pro?
+And I was like, oh, there's a little
+play button with information like or the
+the time code. Once again, it's like I
+could have included all of this and it
+would have still read as Final Cut, but
+he might have been distracted with like,
+is he talking about color grading? Is he
+talking about the audio levels? Is he
+talking about the effects? Is he talking
+about But it's like, no, he was talking
+about generally making a project.
+Everything I need for this animation has
+been built here. So, at this point,
+we're we're done with with Illustrator
+for the most part, and we're ready to
+transfer to After Effects. I use a
+sneaky little plugin called Overlord,
+just for those who care. It's really
+great at porting things over. But to
+move on, so one of the first things we
+learned in motion design school was the
+12 principles of animation, which is
+originally developed by Walt Disney. And
+a lot of that actually really applies to
+simple graphic animation here as well.
+The main three principles that I want to
+talk about are easing, timing, and
+staging. Easing is, I would say, one of
+the biggest telltale signs between an
+amateur motion design project and a more
+professional motion design project. And
+really what that means is making
+movement feel lifelike and real. So this
+is an example of an object moving with
+no easing.
+It gets the job done. The object moves,
+but there's no life to it. It's very
+robotic. Here is an example of an object
+that um has the easing applied. Uh what
+it shows is the object starting really
+slow and ending really slow and in
+between it has this sort of fluid
+movement. The object on the bottom just
+doesn't feel real. Every single key
+frame in this video, anytime I move
+something, there's easing to it. Um
+meaning that it starts slow, moves fast,
+and ends slow. Ordinarily, if you're
+getting started with After Effects, I
+would not recommend jumping straight
+into plugins because I think it's really
+easy to get distracted and excited about
+flashy plugins that seem to like solve
+all of your your motion design problems.
+But this is one plugin that I do think
+is actually really helpful for all
+motion designers, even if you're just
+getting started. It's called Motion
+Studio. It's designed by someone named
+Matt, who has a YouTube channel called
+Mount Moaph. A lot of times if you want
+to change the ease of an object, you can
+go into the graph editor and you can
+move adjust these handles and it works,
+but it's a little finicky and it's hard
+to be precise with it. So this tool
+allows you to dial in exactly what
+easing quantity you want. So let's say
+we want 50% on the out and 20% on the in
+just sets it for you. Literally every
+single object that I drop into After
+Effects, I highlight the key frames and
+I hit this little preset. Slow at the
+beginning and then really slow at the
+end. It's like a nice easy movement that
+I figured works. There's a whole grid of
+different functions that this thing does
+and some of them are very elaborate, but
+the basics are really great. I'd
+recommend checking out Mount Moaph on
+YouTube and also checking out Motion
+Studio online. They have a whole
+breakdown of everything it does, but
+this is sort of the basics. So, another
+really important principle that applies
+really well to our YouTube videos is
+timing. Really what that translates to
+is making sure that the beats that
+happen with what Marquez is saying line
+up well with the movement that is on
+screen.
+&gt;&gt; I think that's the worst thing you can
+do because they don't have a reason to
+watch the thing you're making over the
+thing that already exists.
+&gt;&gt; So in this case, I want to make sure
+that the spotlight and the eyeballs are
+shifting uh focus from one side to the
+other at the exact time that Marquez is
+saying other person's content. I see so
+many things online where what is being
+talked about and what is being shown has
+a half a second delay or even a second
+delay and you really miss it. Like it's
+actually really hard to follow. One of
+the most important things in design in
+general is being intentional about where
+the viewer's eye goes. With motion
+design, it's a lot to expect viewers to
+focus on the words that someone is
+saying and the visuals on top of that.
+It's really easy to have those fight
+each other and to make it actually
+harder to understand the concept if
+you're distracted by what's on screen.
+It's like step one, so show the shapes.
+Step two, introduce the YouTube video.
+Step three, introduce the timeline. Step
+four, reput the movement back just on
+the video screen to drive home that this
+is a copy of the original. So now you're
+focused back on the shapes again. If we
+were to just have the shapes move right
+away with the timeline, then you'd sort
+of be like taking that in and the shapes
+and all that. But we're we're doing one
+thing at a time. The next thing I want
+people to do is focus on the differences
+between these two. So, we get rid of
+everything that's on YouTube on on the
+timeline and everything. And we're just
+showing the shapes. The little eyeballs
+in in the middle are sort of just like a
+fun element to keep this frame
+interesting cuz otherwise it'd be like a
+pretty boring frame. But we're going
+even further. We're saying I want the
+viewer's eyes to be on this one. And
+then as Marquez is talking about the
+original, I want the eyes to be on the
+original. So, I'm literally putting a
+spotlight on them. It's like I want it
+to be as easy as possible for the viewer
+to like have zero strain when they're
+looking at this. Okay. Effects/plugins
+that I use almost every day in After
+Effects. Uh for main channel, uh number
+one effect that I will slap onto
+something to make it feel on brand uh
+and give it a little bit more energy is
+the glow effect. So, we're going
+stylized glow and we're adding it. I
+think with every effect there's a right
+and wrong way to use it. And I think
+with this one, it can look horrible if
+you just like slap it on there. But a
+lot of times I'll like duplicate it and
+make it a little bit more intentional.
+And that looks like way too much, but
+we're going to dial it back.
+I think a nice subtle glow goes a long
+way. So a lot of times on the studio
+channel we will use an effect called
+turbulence displace paired with an
+expression called wiggle which allows us
+to have clean vector shapes but look a
+little bit like handdrawn sort of uh
+stop motiony. So the circle on the left
+has a bit more of like a handdrawn look
+to it and the circle on the right is is
+just the plain shape. Basically what
+turbulent displace is doing is it's uh
+giving this shape a randomly generated
+slight wobbly variation to it. So with
+one effect you get sort of a smooth
+wobbly egg. And then as we add more
+effects you get more grunge and more
+texture to it. And then we've we've set
+the random seed to have um a wiggle
+effect that basically posterized time
+says every 3 seconds change this value.
+And wiggle says uh every 3 seconds
+change it by 150 points. uh if we
+multiply that by three at different
+sizes, you get uh this handdrawn look.
+People shouldn't be thinking about all
+the stuff that I'm doing in the
+background. People shouldn't be thinking
+about all these freaking key frames and
+all this like easing that takes place to
+make everything feel natural. It's like
+it should just feel like information
+that's easy to understand. People always
+say this and it's really cheesy, but
+good design is invisible. So, this
+animation looks great and I'm really
+happy with where it's at. But in order
+for this to feel super polished, I think
+we need to get some sound design on
+here. So, I'm going to let Ellis do his
+magic.
+&gt;&gt; Thanks, Michael. Now, time to get into
+our threepart series on doing sound and
+videos. And this part one is possibly
+the most important. It's music. Remember
+that speaker video I did on this channel
+like about a year ago? Well, the key to
+making that video work was using Bbop
+rhythm sections under all that stuff I
+was saying. You've probably noticed a
+lot of videos on this channel use
+uptempo jazz rhythm sections as their
+underscore. And it's not an accident.
+You have seen tons of media that uses
+those same Bbop drums and bass to get a
+a frenetic sound, a behind-the-scenes
+sound, an industrious sound, and that
+sounds already in your viewer's head.
+So, when you're picking music for your
+video, you're not just picking a song
+that you like. You're picking a song
+that your viewers will personally
+resonate with. So, where do you find
+that track? Well, the answer is pretty
+obvious. It's epidemicound.com. I don't
+know you. I don't know what kind of
+content you're trying to make, but I do
+know whatever you need, it's on there.
+You need something with some epic cinema
+builds, it's on there. What about some
+'90s grunge stuff, chat? You betcha.
+Japanese classical music, it's on there.
+I've seen it. They even have whatever
+this is.
+[Music]
+Once you have your song, you can
+download the stems and easily start
+editing it. And if you're not
+comfortable editing stems or you're just
+getting started, Epidemic Sound has an
+adapt feature that helps you easily make
+a song fit your video. So much of the
+music and sound effects we use here at
+MKBHD come from Epidemic Sound. And now
+you can get access to that great library
+with the link in the description, which
+will give you a 30-day free trial and
+access to the MKBHD playlist we made for
+you. And now that you know where to get
+your sound and music for your next
+video, we're going to throw it over to
+the newest member of our team, Rufus,
+who will hopefully save you hours of
+time on your next production.
+Hey, I'm Rufus. I record most of our
+videos and I make sure the foundation
+that Ellis gets when he goes in to do
+that sound design is really strong. So,
+why am I talking to you in the editing
+video? You spend a lot of time in the
+edit fixing bad audio. Really, like
+everybody has this problem. This is I've
+had this problem. Eric has had this
+problem. Rich has had this problem. When
+you get bad audio on your desk, you have
+to spend a lot of time fixing it. And if
+you had just placed your microphone,
+which is free and not that hard, you can
+save all of that time, all of that
+strife. So, if you give me 5 minutes,
+I'll show you how to do it. The key to
+recording great sound is 90% putting the
+microphone where it needs to go. The
+rest of it is I'll cover it at the end
+of the lightning round, but it you can
+forget about it for now. Your brain when
+you walk into a room is telling you kind
+of automatically what to focus on. and
+it's doing so subconsciously. A
+microphone does not hear like that. So,
+I'm going to teach you how to hear like
+a microphone in order to think like a
+microphone, to point like a microphone.
+So, what do you want to hear? Well, in
+our case, we want to hear the sound of
+Marquez Brownley, who sat in this very
+chair moments ago. Here at MKBHD, we
+typically use for almost everything
+shotgun microphones. These microphones,
+if you watched our last video, you know
+this, have a polar pattern, which is
+very directional. It hears a lot like a
+cone. But the thing is, the cone has a
+limit. It has an end point. And a
+microphone that's pointed the complete
+wrong direction, but is really close to
+me
+is going to do a much better job of
+hearing me than a microphone that's
+across the room pointed straight at me.
+But we're assuming that your microphone
+is basically close enough. And for us,
+that's kind of that's right on the edge
+of frame. Like this one's literally
+right here. That narrows it down to 180
+degrees. The microphone is going to be
+in front of Marquez somewhere cuz his
+voice is going forward and that's what
+we want to hear. So why is the
+microphone not directly above him or
+directly below him where you often see
+shotgun microphones? Why is it right
+here? Well, it's cuz we're in a room
+with sounds like our air conditioner.
+That air conditioner makes a noise. So
+if we were below Marquez, we'd be
+pointed up at that. So that knocks out
+this bottom position. We also have a
+light right here. The light makes a
+noise. It has a fan in it and you can
+hear that. So, we don't really want the
+microphone to be right by the light. So,
+that knocks out, you know, this chunk.
+And lastly, it's been in front of you
+the whole time, the desk, which you're
+right, it it doesn't make any sound by
+itself, but when Marquez speaks, his
+voice can come out, bounce off of the
+desk, and then into the microphone. We
+don't want to record that. It's like
+shooting Marquez through a mirror. So,
+this position where the mic ended up
+means the cone is pointed at what we
+want to hear and isn't pointed
+at what we don't want to hear. Quick
+lightning round of some questions people
+have asked is how loud should you be
+recording? Uh, if you have a machine
+that's recording sound, which we're
+assuming that you do, it should have
+levels on it that will tell you in decb
+how loud you are. You want to be around
+minus 20ish on average. And the absolute
+loudest someone's going to talk should
+be around minus12. If you're there,
+you're pretty safe. and then it can go
+even a little bit louder and you'll
+still not be clipping. If you hit zero,
+that's clipping and it sounds like this.
+So, you don't want it. Two, generally
+speaking, if you're recording dialogue,
+which we're assuming you are, you want
+to turn on a low cut. It might be on
+your microphone, it might be on your
+recording device, but that basically
+means that wind noise, like sort of
+bumping, rumbling, things like that.
+doesn't completely get rid of them, but
+it makes sure that you don't get so much
+that it overwhelms the dialogue that
+you're trying to record. Third, if
+you're buying your first shotgun
+microphone, stick to the bottom end. The
+Audio Technica AT875R is a great
+microphone. It's pretty cheap and it has
+no reason to sound as good as it does.
+It beats basically all of the
+microphones in the mid-range in my
+opinion, which means if you have that
+microphone and you're using it well,
+upgrading to a mid-range mic is not
+going to make things sound much better.
+upgrading to a flagship like the MKH416,
+the Ships Semit 5U, the DPA 4017, you're
+going to hear a difference, and that's
+worth it. Those are microphones are
+going to last you a lifetime. Only buy
+those if you're ready to really take
+things seriously. Everyone else, the
+mid-range isn't really worth it. If
+you're looking at sound recording and
+this stuff looks big and scary and
+things, it's as simple as pointing the
+microphone at what you want to record
+and not pointing it at what you don't
+want to record. Every part of sound,
+when you get down to it, is like that.
+They're not that complicated. Do not let
+anyone tell you it is more complicated
+than that. So now your video sounds
+good, but your video could sound better.
+What is up gamers? Ellis here, your boy.
+And today we're going to talk about
+sound design. That's the part of the
+production process where you take sounds
+that you didn't record on set and you
+put them in your video. And now I have a
+feeling you're probably wondering one
+big question. Rule number one, things
+that move probably make a sound. To show
+this, let's crack open the OnePlus 13S
+intro we did on the main channel a
+little while back.
+[Applause]
+So, this intro is full of motion.
+There's just so much of it in here, but
+let's focus on the four main moves that
+the phone actually does. First, it turns
+90 degrees to the left. Then, it turns
+90° to the left again. And then it turns
+90° to the left a third time. And then
+the phone falls off screen. Seems pretty
+simple, right? But how do we actually
+know what those moves are supposed to
+sound like? First off, how big is the
+phone? The phone's huge. It's the
+biggest thing on screen. For a lot of
+it, it takes up pretty much the entire
+frame, which means even though the phone
+in real life is phones sized, in video
+life, the phone is ginormous. And what a
+ginormous things sound like. They're
+big. They're low pitched. You could hear
+they have mass. So, let's make the
+phone's motion big and low pitched.
+Easy. But why is it moving? There's no
+actuator. There's no hand. There's no
+machine turning the phone in the video.
+So that means the only thing it's
+touching is air, which is lucky for us
+because air actually makes a lot of
+sounds. It sounds like the right call is
+probably a whoosh. But what kind of
+whoosh? A big low pitched whoosh where
+you can hear the mask.
+All right, so remember that thing that
+Michael said about easing and how it can
+make stuff feel like natural and
+lifelike? That's really important for us
+as sound designers. Let's take a look at
+how these phones actually move, right?
+They're not constant. They start slow
+and then they sort of accelerate in
+their turns. And lucky for us, those big
+whoosh sounds are perfect for that. They
+go
+fantastic, easy, breezy, beautiful
+covergirl. But if you noticed, the last
+move, that last 90° turn in this intro
+does not have any easing on it.
+Michael's computer glitched out. He
+couldn't get the easing to work, and he
+just said, "Let it ride." And so for the
+last sound in this intro, I needed to
+pick something that still sounded big
+and massive, but in real life would have
+no easing, just start and stop. And so
+what better sound
+than a boulder?
+&gt;&gt; That's just a stupid
+&gt;&gt; play this.
+&gt;&gt; It's not just a boulder,
+it's a rock.
+&gt;&gt; Um, didn't you add a slide whistle in
+here, too?
+&gt;&gt; Oh, yeah. Uh, I did do that. Um, I don't
+know. I just kind of freestyled that
+one. It was just sort of like intuition.
+So, uh, I guess we should just move on
+to the next rule.
+Yes, you read that right. Silence
+actually does make a sound. Don't
+believe me? Look at how painful this is.
+I told you silence actually does make a
+sound in our brains because in real life
+I promise you you have never actually
+heard real silence before. Even the
+quietest places on earth still have a
+little bit of sound to them. And so if
+you suck all the sound out of your video
+at any given moment, it's going to feel
+weird and awkward and painful and most
+importantly not believable. So what do
+sound designers use in those sound holes
+that sounds like silence? Well, there
+are two tricks we like to use. The first
+one is called reverb.
+Sound gets everywhere. It's kind of like
+sand after the beach. And as sound
+bounces off all the objects around you,
+it's all going to make it back to your
+ear. And we as humans perceive that as
+this thing we call reverb. Our brains
+actually get a lot of subconscious
+information about the kind of space
+something is happening in from the
+reverb. I use this trick on the OnePlus
+13S video. When we suck all the music
+out and things get silent, I carry
+through a lot of that silence with a
+long reverb tail that lets you know,
+hey, this big empty limitless space
+we're in that exists and it sounds like
+this.
+The other trick we use is called
+ambience, which is just like big fancy
+speak for background noise. Background
+noise is a super clutch way to inject
+some believability into your sequence.
+Check out this shot from our video about
+the fastest car in the world from a
+little bit ago.
+&gt;&gt; That's crazy.
+This shot looks fake. It looks like a
+video game, but I promise it is 100%
+real. There's no CGI. There's no
+compositing. It's just kind of nutso.
+And so, we needed to add a few sound
+effects to kind of make people believe
+that we actually got the shot. And I'll
+tell you this, it wasn't the sound of
+the Porsche that we added in post that
+made it believable. It wasn't the sound
+of the rimats that we added in post that
+made it feel believable.
+It was the sound of the birds that
+weren't even there in real life. There
+were not even birds that day when we
+were shooting. But it's a big up high
+shot. You see all this green tree grass
+around you. No one even noticed I did
+that, which means it worked.
+All right, rule number three is use
+sounds that actually mean stuff to your
+audience. There are some sounds that get
+stuck in your head in a cool emotional
+way. And there's a great example of that
+in this OnePlus intro. Take a look at
+the very first thing that happens in
+this intro, right? We watch the phone
+get traced. It's very simple. It's just
+this writing floating on screen that
+traces the outline of the phone. What
+sound does tracing sound like? There's a
+bunch of obvious answers. There's pencil
+on paper. There is pencil on cardboard.
+There is marker on dry erase board.
+There is chalkstick on chalkboard.
+There's a million different writing
+sounds that we all agree like, "Yep,
+that's what writing sounds like. Heard
+that before? Makes sense." But those
+sounds won't make you feel something.
+I think it's safe to assume that a lot
+of you at home are around my age or
+around Marquez's age. You grew up in
+North America or Europe and you probably
+watched something get traced on TV as a
+kid about 10 million times.
+And whether or not you knew that about
+yourself, that's probably what midair
+tracing sounds like in your heart. So,
+what is actually in that famous Disney
+Channel sound? It's mostly a roadside
+flare and a bell tree. And that is
+exactly what I did in this video.
+&gt;&gt; You are watching Disney Channel.
+&gt;&gt; No one batted an eye. No one questioned
+it. No one even noticed. And that is the
+goal of sound design. So, unless your
+name is Erica Doll or Mark Manini, don't
+try to be a hero. Don't go too hard.
+You'll know you did your job well when
+no one notices your job at all. So, I'm
+gonna put my money where my mouth is and
+actually use these techniques in the uh
+video you're watching right now. So,
+here's the final cut.
+I'm Marquez and this is how I pick what
+front glass from the iPhone 6. And so
+learned about what Spot actually is. But
+I've never regretted making a video just
+for the views. I think most of the
+videos we make, there's a bunch of
+different reasons why I made it. But if
+you want to go all the way to the far
+end of the spectrum of this one we know
+is going to get views. It's the iPhone
+unboxing video. It's just one of those
+things where people like seeing shiny
+new things come out of boxes, and that's
+fine. Actually, the audience is smart.
+They can tell when the creator
+especially is not incredibly excited
+about a video. So, I think a lot of the
+comments were like, "Yeah, this isn't
+important or interesting. Why is this a
+video?" And it's cool to see that
+because they're picking up on exactly
+how I'm feeling about the video, which
+means I communicated it well. But also,
+I didn't regret it because it still
+performed the way we thought it would,
+and it still got people to subscribe and
+to see the channel and see the videos.
+Even if they weren't having the most
+in-depth thoughts after watching a video
+about a new purple colored iPhone, they
+could still subscribe.
+Two main ways I can decide if a subject
+is worth my audience's time. One is if
+they have shown interest in it in the
+past or two is if I'm interested in it
+and I've been able to connect it to
+things that my audience is interested in
+the past. Usually I look forward by
+looking backwards. So I'll give an
+example. A video we did recently which
+was reviewing the robotic hand. I
+thought it was awesome and I was super
+interested in it when I got to test it.
+So that was a pretty good indicator for
+me right off the bat. I've also done a
+video in the past uh talking about uh
+prosthetics, 3D printed prosthetics for
+pets. And while the video didn't get a
+ton of views or attention necessarily,
+it was still really wellreceived and
+people were interested in it. And I
+thought it was a really fun video to
+make. So when we looked at this new
+thing, which is this robotic hand, okay,
+it's new, it's different, but clearly
+it's tech which the audience is
+interested in. And the last time we
+talked about potentially awesome
+prosthetics that people can use, it also
+went really well. So just finding those
+connections to the past made it pretty
+obvious that this would be a fun video
+that would be good to make. And there
+was also the excitement of tying it to a
+certain other video another channel
+made. So it was going to be fun no
+matter what. There are some video
+totally disconnected from like purchase
+decisions. Usually when I make a video,
+even if it seems like kind of
+disconnected or a little bit out there,
+you can in some way connect it to this
+is the tech that's going to affect me as
+a regular person in the future. So the
+stuff that's like this is the super cool
+tech behind like how skyscraper
+elevators work. There's just no way for
+me to connect it to you the viewer.
+Those are the ones I just pass on. So
+mistake I see a lot of newer creators
+making specifically is to look at what
+works on other channels and then just
+try to copy it one for one. I think
+that's the worst thing you can do
+because they don't have a reason to
+thing that already exists. So the more
+you can make it your own interpretation
+or the more you can bring in various
+sources of inspiration the better. But
+so I used to do a lot more list type
+videos like top five this top 10 that
+and they were great. So like format-wise
+you could optimize for attention. You
+count down from 5 to 1 people stay for
+the whole video. You could pick lots of
+different types of topics. It was just
+kind of a free content spin a wheel
+generator, just top five, insert
+whatever you want here. But I stopped
+doing a lot of those because I just felt
+like they didn't uh provide as much
+value as I was hoping. I was hoping to
+help people learn stuff, uh, experience
+stuff, feel like they know what it's
+like to own a gadget before actually
+buying it. And the top fives are more on
+the pure entertainment value side of the
+spectrum. And other channels just
+started doing way more of them, and that
+kind of became their thing. and I just
+stopped doing top fives. I also think
+YouTube is a treadmill and if you try to
+chase past success over and over and
+over, you end up kind of burning out a
+little bit. And I think you should look
+at what you enjoy making just as much as
+what worked in the past on your channel.
+So all of that.
+Hey Olivia, you you did most of the
+graphics on this video, right?
+&gt;&gt; Yeah, I did.
+&gt;&gt; So So you should have a segment in this
+video, right?
+&gt;&gt; No.
