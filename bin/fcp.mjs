@@ -35,8 +35,10 @@ const CMD = {
     console.log(`menu: ${args.join(" → ")}`);
   },
   // Canonical actions, all via menu — never keystroke-to-frontmost.
-  save() { clickMenu(["File", "Save Project"]); console.log("saved"); },
-  close() { clickMenu(["File", "Close Project"]); console.log("closed"); },
+  // FCP libraries auto-save; there is no Save Project menu item. Use
+  // close-library / close-timeline / undo / redo for real menu commands.
+  "close-library"() { clickMenu(["File", "Close Library"]); console.log("library closed"); },
+  "close-timeline"() { clickMenu(["File", "Close Timeline"]); console.log("timeline closed"); },
   undo() { clickMenu(["Edit", "Undo"]); console.log("undo"); },
   redo() { clickMenu(["Edit", "Redo"]); console.log("redo"); },
 
