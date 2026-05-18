@@ -142,38 +142,35 @@ async function run() {
   }, token);
   await page.waitForTimeout(1500);
 
-  console.log("[giphy-key] step 4: submit (LAST 'Sign Up' = form submit; the");
-  console.log("            first 'Sign Up' is just the Login/Signup tab toggle)");
-  const submitOk = await page.evaluate(() => {
-    const btns = Array.from(document.querySelectorAll("button, input[type=submit]"))
-      .filter((b) => /sign\s*up|create account|join/i.test(b.textContent || b.value));
-    if (btns.length === 0) return false;
-    btns[btns.length - 1].click();
-    return true;
-  });
-  console.log("[giphy-key] submit clicked: " + submitOk);
+  // CRITICAL: submit via Playwright locator.click() — NOT page.evaluate
+  // el.click(). A JS .click() inside evaluate dispatches an isTrusted:false
+  // DOM event; React form handlers + reCAPTCHA validation read that flag and
+  // silently drop the submit (this is exactly why earlier runs stuck on
+  // "Finish Sign Up"). locator.click() routes through CDP -> Blink
+  // SetTrusted(true), the same path a human click takes.
+  console.log("[giphy-key] step 4: submit via real (isTrusted) click");
+  const signUpBtns = page.locator("button, input[type=submit]")
+    .filter({ hasText: /sign\s*up|create account|join/i });
+  const n = await signUpBtns.count();
+  if (n === 0) { console.error("[giphy-key] BLOCKER: no Sign Up button"); await browser.close(); process.exit(8); }
+  await signUpBtns.nth(n - 1).click();  // last = form submit, not tab toggle
+  console.log(`[giphy-key] submit clicked (${n} candidates, used last)`);
   await page.waitForTimeout(6000);
 
-  // The React form is nondeterministic: the first submit sometimes lands on
-  // a partial "Already started creating an account? Finish Sign Up" state
-  // instead of "Check your Email!". Recover: click "Finish Sign Up", else
-  // re-click submit — up to 4 rounds — until the email-sent confirmation.
+  // Nondeterministic React form: a stuck submit shows "Already started
+  // creating an account? Finish Sign Up". Recover with real clicks only.
   for (let r = 0; r < 4; r++) {
     const st = await page.evaluate(() => document.body.innerText.slice(0, 300));
     if (/check your email/i.test(st)) break;
-    const action = /finish sign\s*up/i.test(st) ? "finish" : "resubmit";
-    console.log(`[giphy-key] recovery ${r + 1}: ${action}`);
-    await page.evaluate((a) => {
-      if (a === "finish") {
-        const el = Array.from(document.querySelectorAll("a,button,span,div"))
-          .find((x) => /finish sign\s*up/i.test((x.textContent || "").trim()) && x.offsetParent !== null);
-        if (el) el.click();
-      } else {
-        const b = Array.from(document.querySelectorAll("button, input[type=submit]"))
-          .filter((x) => /sign\s*up|create account|join/i.test(x.textContent || x.value));
-        if (b.length) b[b.length - 1].click();
-      }
-    }, action);
+    if (/finish sign\s*up/i.test(st)) {
+      console.log(`[giphy-key] recovery ${r + 1}: Finish Sign Up (real click)`);
+      const fin = page.locator("text=/finish sign\\s*up/i").first();
+      if (await fin.count()) await fin.click();
+    } else {
+      console.log(`[giphy-key] recovery ${r + 1}: re-submit (real click)`);
+      const c = await signUpBtns.count();
+      if (c) await signUpBtns.nth(c - 1).click();
+    }
     await page.waitForTimeout(5000);
   }
 
