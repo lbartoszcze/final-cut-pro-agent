@@ -16,6 +16,7 @@ import { rankShots, pickShotForCut, planBrolls, groupMulticam, multicamRewriteOn
 import { enrichShotsWithFaces } from "../lib/analyze/faces.mjs";
 import { listClipsInFolder, probeDurationFrames, makeTestPatterns } from "../lib/source/sources.mjs";
 import { mergeStylePack, listStylePacks } from "../lib/styles/index.mjs";
+import { buildInjections } from "../lib/assets/inject.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..");
@@ -265,30 +266,18 @@ const fmtName = aspect.w === 1920 && aspect.h === 1080
   ? "FFVideoFormat1080p2997"
   : `FFVideoFormat${aspect.h}p2997`;
 const fmt = format({ id: "r1", name: fmtName, frameDuration: FRAME_DUR, width: String(aspect.w), height: String(aspect.h) });
-const assetsXml = probed.map((a) => asset({
-  id: a.id,
-  name: a.name,
-  src: a.src,
-  durFrames: a.durFrames,
-  rateNum: RATE_NUM,
-  rateDen: RATE_DEN,
-})).join("\n    ");
-
-const projectName = args.template
-  ? `template:${basename(args.template, ".fcpxml")}`
-  : `${args.style} ${bars}b @ ${bpm}`;
-
+let assetsXml = probed.map((a) => asset({ id: a.id, name: a.name, src: a.src, durFrames: a.durFrames, rateNum: RATE_NUM, rateDen: RATE_DEN })).join("\n    ");
+let injClipsXml = "";
+if (args.sfx || args.gif) {
+  const inj = await buildInjections({ sfxSpec: args.sfx || "", gifQuery: args.gif || "", hookSec: parseFloat(args["hook-sec"]), totalFrames, fps: FPS, rateNum: RATE_NUM, rateDen: RATE_DEN, assetIdStart: assetIdBase + probed.length + 100 });
+  if (inj.assetsXml) assetsXml += "\n    " + inj.assetsXml;
+  if (inj.clipsXml) injClipsXml = "\n            " + inj.clipsXml;
+}
+const projectName = args.template ? `template:${basename(args.template, ".fcpxml")}` : `${args.style} ${bars}b @ ${bpm}`;
 const xml = document({
-  formatNode: fmt,
-  eventName: "FCP Agent",
-  projectName,
-  sequenceFormat: "r1",
-  durFrames: totalFrames,
-  rateNum: RATE_NUM,
-  rateDen: RATE_DEN,
-  assetsXml,
-  spineXml: spine.join("\n            "),
-  effectsXml,
+  formatNode: fmt, eventName: "FCP Agent", projectName, sequenceFormat: "r1",
+  durFrames: totalFrames, rateNum: RATE_NUM, rateDen: RATE_DEN, assetsXml,
+  spineXml: spine.join("\n            ") + injClipsXml, effectsXml,
 });
 
 const outPath = resolve(ROOT, args.out);
