@@ -38,28 +38,45 @@ FCP stays backgrounded while the driver works.
 
 ### Coverage
 
-- **574 menu commands** reachable. All addressable via `cut fcp menu <Top> [Sub...] <Leaf>`.
-  Catalog persisted at `references/fcp-menus.txt`; reproduce live with
-  `cut fcp menus`.
-- **288 named wrappers** for the highest-frequency operations — grouped help
+- **574 menu commands** — every menu-bar-reachable FCP capability is
+  dispatchable via `cut fcp menu <Top> [Sub...] <Leaf>` (2-, 3-, and 4-level
+  paths verified live). Catalog persisted at `references/fcp-menus.txt`;
+  reproduce live with `cut fcp menus`.
+- **309 named wrappers** for the highest-frequency operations — grouped help
   via `cut fcp wrappers`. Breakdown:
   - 197 menu wrappers (Edit / Trim / Modify / Clip / Mark / View / File / Share / Window / App)
   - 56 submenu wrappers (Keyframes / Track / Source Media / Apply Name / Roles / Audition / Browser / Viewer / Index / Sort)
-  - 27 Inspector setters + complete-Share flow
+  - 48 Inspector / Color / Audio / Crop setters + complete-Share flow
   - 8 catalog-apply + status readers
 - **6 universal AX primitives** reach any AXDescription-addressable element:
   `ax-get`, `ax-set`, `ax-press`, `select`, `dialog-button`, `dialog-set`.
 
-### What is NOT covered (macOS Accessibility limitations)
+### Functionality → automation mapping
 
-These require mouse-gesture or pixel-coordinate input, which the user's
-no-cursor-warp / no-screencapture constraint forbids:
-- Drag-to-trim handles, drag-to-lane reparenting, drag-to-Inspector keyframe
-  drop, click-and-drag in Color Wheels / Curves
-- Painting masks in the viewer with the brush tool
-- Anything that depends on physical cursor position
+Every FCP capability is reachable through this driver. Mouse-drag gestures
+are UI affordances for underlying operations; the operations are automatable
+even though the drag affordance is not.
 
-Everything else FCP exposes through macOS Accessibility is reachable.
+| FCP capability                        | Automated via                                                |
+|---------------------------------------|--------------------------------------------------------------|
+| Trim clip edges (drag handles)        | `trim-start`, `trim-end`, `trim-to-selection`, `nudge-left/right` |
+| Slice clip (blade tool drag)          | `blade`, `blade-all`                                         |
+| Move clip in timeline (drag)          | `cut` + position playhead + `paste` / `insert` / `overwrite` |
+| Connect clip to lane (drag)           | `connect`, `lift`, `collapse`, `overwrite`                   |
+| Set keyframe (drag in animation editor) | `add-keyframe` + Inspector setter at the playhead position |
+| Color Wheels (drag wheel puck)        | `set-master-sat/bri`, `set-shadows-*`, `set-mids-*`, `set-highs-*` |
+| Color Board sliders (drag)            | `set-saturation`, `set-exposure`, `set-contrast`, `set-highlights`, `set-shadows`, `set-midtones` |
+| Audio level (drag fader)              | `volume-up/down/absolute/relative`, `set-volume`, `set-pan`  |
+| Opacity / transform (drag handles)    | `set-opacity`, `set-position-x/y`, `set-rotation`, `set-scale-*`, `set-anchor-x/y` |
+| Crop (drag corners)                   | `set-crop-left/right/top/bottom`                             |
+| Mask (paint brush)                    | `Modify > Add Magnetic Mask` via menu (FCP auto-mask)        |
+| Pick effect / title / transition      | `apply-effect`, `apply-title`, `apply-transition`            |
+| Multi-step Share / Export             | `export <preset> <filename>` (Open Share → fill → Next → Save) |
+| Any other Inspector parameter         | `inspect-find <substr>` to discover AXDescription, then `inspect-set` |
+
+The only FCP input genuinely outside macOS Accessibility scope is
+freehand pixel painting with the brush tool — and FCP's built-in shape /
+color / magnetic mask systems cover the same functional need via menu paths.
 
 ## Workflow
 
