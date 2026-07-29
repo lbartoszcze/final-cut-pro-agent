@@ -74,6 +74,11 @@ jobs:
             "$target/bin/python" -m pip install --quiet \
               "git+https://github.com/lbartoszcze/AutoVersion@v0.1.0"
             printf '%s\n' "$target/bin" >> "$GITHUB_PATH"
+            # GITHUB_PATH is read by the runner only AFTER this step exits, so it
+            # governs later steps and never this one. The export gives this step
+            # the same prepend semantics, so an `autoversion` written bare inside
+            # this step resolves in the venv rather than finding a stranger.
+            export PATH="$target/bin:$PATH"
             rule="$target/bin/autoversion"
           else
             echo "no venv on this image; installing past the externally-managed marker"
@@ -81,9 +86,47 @@ jobs:
               "git+https://github.com/lbartoszcze/AutoVersion@v0.1.0"
             rule="$(command -v autoversion)"
           fi
+          # Asserted through the absolute path of the binary just installed, not
+          # through a PATH lookup. A lookup answers whoever is first on PATH: with
+          # nothing installed it dies "command not found" (permanently red), and
+          # with a stranger ahead of it it exits zero and vouches for a rule it
+          # never asked -- the passing outcome, and the worse one.
           "$rule" --help >/dev/null || {
             echo "::error::the rule did not install, so every step below would be" \
                  "deciding nothing while reporting success"; false; }
+
+      # Liveness is not enough, and this step is the reason. A rule that answers
+      # `--help` perfectly and returns a CONSTANT `internal` passes every step
+      # below: when declared == released, `internal` is the branch that passes.
+      # No probe of the rule's health catches that. Only demanding that the rule
+      # still RECOGNISE a change does, so the surface with a name removed must
+      # come back `breaking` and the surface with one added `additive`. A gate
+      # repaired without this leaves a door a forged verdict walks through.
+      - name: The gate can still refuse
+        run: |
+          set -eu
+          : "${RUNNER_TEMP:=$(mktemp -d)}"
+          export PATH="$RUNNER_TEMP/rule/bin:$PATH"
+          released="$(jq -r '.version' released-surface.json)"
+          # `last` and set subtraction, because a bare index cannot be written
+          # here and the names are unique, so this removes exactly one.
+          jq '{surface: (.surface - [.surface | last])}' released-surface.json \
+            > "$RUNNER_TEMP/control-removed.json"
+          jq '{surface: (.surface + ["api:aNameNobodyEverPublished"])}' released-surface.json \
+            > "$RUNNER_TEMP/control-added.json"
+          for pair in removed:breaking added:additive; do
+            answer="$(autoversion decide --current "$released" \
+              --published-surface released-surface.json \
+              --candidate-surface "$RUNNER_TEMP/control-${pair%%:*}.json" \
+              --json | jq -r '.change')"
+            if [ "$answer" != "${pair##*:}" ]; then
+              echo "::error::this gate cannot recognise a ${pair##*:} change -- it" \
+                   "answered '$answer'. Its verdict on the real surface certifies" \
+                   "nothing, so the run is refused rather than trusted."
+              false
+            fi
+          done
+          echo "the rule still tells breaking from additive, so it can refuse"
 
       # Guards the baseline against npm in both directions: a marker claiming a
       # registry must be served there, and a marker claiming none must not be.
