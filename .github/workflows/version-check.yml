@@ -16,11 +16,20 @@ name: version-check
 # matters on its own: a shallow clone lacks the tag's tree, so `git archive`
 # fails even once the tag is visible.
 #
-# There is no setup-python step. The runner's python3 is used as it comes,
-# which keeps a pinned version numeral out of this file, and every registry
-# probe lives in one Python transport rather than being split between shell
-# and Python -- a stubbed curl would otherwise leave the Python path on real
-# network and look verified.
+# There is no setup-python step, but the rule does not go into the runner's
+# python3 either. `ubuntu-latest` now points at an Ubuntu whose system
+# interpreter ships the externally-managed marker, so `python3 -m pip install`
+# there fails with `error: externally-managed-environment` -- on every run,
+# before any check happens. That is not a false green, it is its mirror image:
+# a gate that can never pass certifies exactly as little as one that can never
+# fail, and it trains people to ignore a red build. So the rule is installed
+# into a virtualenv under RUNNER_TEMP whose bin joins GITHUB_PATH. That is
+# immune whichever image `ubuntu-latest` resolves to, and it still keeps a
+# pinned interpreter version out of this file.
+#
+# Every registry probe lives in one Python transport rather than being split
+# between shell and Python -- a stubbed curl would otherwise leave the Python
+# path on real network and look verified.
 #
 # The staleness step is a single script invocation rather than the shell
 # spelling, because putting the generator inside a command substitution with a
@@ -51,7 +60,23 @@ jobs:
         run: git fetch --force --tags --unshallow || git fetch --force --tags
 
       - name: Install the rule
-        run: python3 -m pip install --upgrade "git+https://github.com/lbartoszcze/AutoVersion@v0.1.0"
+        run: |
+          set -eu
+          target="$RUNNER_TEMP/rule"
+          if python3 -m venv "$target"; then
+            "$target/bin/python" -m pip install --quiet \
+              "git+https://github.com/lbartoszcze/AutoVersion@v0.1.0"
+            printf '%s\n' "$target/bin" >> "$GITHUB_PATH"
+            rule="$target/bin/autoversion"
+          else
+            echo "no venv on this image; installing past the externally-managed marker"
+            python3 -m pip install --quiet --upgrade --break-system-packages \
+              "git+https://github.com/lbartoszcze/AutoVersion@v0.1.0"
+            rule="$(command -v autoversion)"
+          fi
+          "$rule" --help >/dev/null || {
+            echo "::error::the rule did not install, so every step below would be" \
+                 "deciding nothing while reporting success"; false; }
 
       # Guards the baseline against npm in both directions: a marker claiming a
       # registry must be served there, and a marker claiming none must not be.
