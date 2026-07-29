@@ -62,6 +62,13 @@ jobs:
       - name: Install the rule
         run: |
           set -eu
+          # Both of these are set by the runner and by nothing else. Defaulting
+          # them is what lets the next person paste this body into a terminal to
+          # check the rule still installs, which is the only way anybody here
+          # verifies this file -- Actions is billing-locked, so no step below has
+          # ever executed on a runner.
+          : "${RUNNER_TEMP:=$(mktemp -d)}"
+          : "${GITHUB_PATH:=$(mktemp)}"
           target="$RUNNER_TEMP/rule"
           if python3 -m venv "$target"; then
             "$target/bin/python" -m pip install --quiet \
