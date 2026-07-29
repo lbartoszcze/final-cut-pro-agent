@@ -22,6 +22,12 @@ name: version-check
 # and Python -- a stubbed curl would otherwise leave the Python path on real
 # network and look verified.
 #
+# The staleness step is a single script invocation rather than the shell
+# spelling, because putting the generator inside a command substitution with a
+# pipe discards its exit status: a dead generator then yields an empty marker,
+# and an empty-to-empty comparison passes vacuously. Here the script owns the
+# comparison and its exit status is the step's.
+#
 # Every numbered thing here is a word form for the same reason: `false` rather
 # than an exit status, no fetch-depth, no pinned interpreter.
 

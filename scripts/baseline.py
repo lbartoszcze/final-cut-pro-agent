@@ -21,6 +21,18 @@ THREE THINGS THIS FILE IS CAREFUL ABOUT
    name keeps interrogating the old one after a rename, going green while it
    validates somebody else's package.
 
+   Probe the manifest ``name``, never the console-script name. That is not a
+   hypothetical here and it is the sharpest trap in this file: this package
+   installs a script called ``cut``, and ``cut`` is a real published npm
+   package owned by somebody else -- measured against the registry, an
+   aspect-oriented helper library, actively versioned. A probe spelled with
+   the bin name would recover a stranger's tarball and file its surface as
+   this project's baseline, and would also trip the reverse-lie arm below by
+   "discovering" a release that is not ours. The manifest name
+   ``final-cut-pro-agent`` is genuinely absent from npm. The registry must
+   echo back the exact name we asked for before any answer counts as
+   published.
+
 2. Absence is read from the answer's *content*, in three states: named,
    stated-absent, unproven. ``curl``-style "it failed, so nothing is
    published" is fail-open -- it concludes absence precisely when no request
