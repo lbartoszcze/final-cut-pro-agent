@@ -4,7 +4,7 @@
 The baseline describes the version *actually published*, never the version the
 manifest happens to declare. Preference runs down the adoption guide's table:
 
-    npm-tarball:<file>   a tarball the registry serves
+    npm-tarball:<registry path>   a tarball the registry serves, as it addresses it
     gh-release:<tag>     an asset attached to a GitHub Release
     git-archive:<tag>    a tag, reproduced with ``git archive``
     head:<full sha>      the working revision -- last resort
@@ -41,11 +41,26 @@ THREE THINGS THIS FILE IS CAREFUL ABOUT
    recognise a package the registry certainly serves blames itself instead of
    the registry. That is the fail-closed twin, and it is just as invisible.
 
-3. The tarball filename comes from ``dist.tarball`` in the registry document,
-   never assembled from the package name. The registry serves a scoped
-   package's tarball under its *unscoped* name -- ``@types/node`` yields
-   ``node-26.1.2.tgz`` -- so a constructed filename would mismatch forever on
-   a perfectly healthy artifact.
+Third, and this is the one the fleet corrected after the first draft of this
+   file: the marker carries the tarball's **registry path**, taken from
+   ``dist.tarball`` in the registry document and never assembled from the
+   package name, and never reduced to a basename. Three traps sit in that one
+   decision.
+
+   The registry serves a scoped package's tarball under its *unscoped*
+   filename -- ``@types/node`` yields ``node-<version>.tgz`` -- so a marker
+   built from the scope mismatches forever against a healthy artifact.
+
+   The basename alone is not unique: ``express`` and ``@types/express`` both
+   serve ``express-<version>.tgz``, two different packages with different
+   owners and different contracts. A marker exists to identify the artifact a
+   baseline came from, and ``--assert-current`` compares the whole marker on
+   every registry tier, so a non-unique marker cannot do that job.
+
+   And the *lookup* is still the full scoped name from package.json. The
+   filename drops the scope; the request must not. Stripping a scope to query
+   does not fail closed -- ``@types/node`` and ``node`` are both real packages
+   that answer -- so it would validate a stranger's project.
 """
 
 from __future__ import annotations
@@ -53,7 +68,6 @@ from __future__ import annotations
 import argparse
 import io
 import json
-import os
 import subprocess
 import sys
 import tarfile
@@ -150,6 +164,21 @@ def npm_latest(name: str) -> tuple[str, str] | None:
     if not tarball:
         raise Unproven(f"{name}@{latest}: npm names the release but serves no dist.tarball")
     return latest, tarball
+
+
+def registry_path(tarball_url: str) -> str:
+    """The path by which the registry addresses a tarball, less its leading slash.
+
+    ``https://registry.npmjs.org/@types/express/-/express-<v>.tgz`` becomes
+    ``@types/express/-/express-<v>.tgz``. That is the whole identity of the
+    artifact; the basename is not, because a scoped and an unscoped package
+    whose names share a tail also share one tarball basename.
+    """
+    path = urllib.parse.urlparse(tarball_url).path
+    stripped = path.lstrip("/")
+    if not stripped:
+        raise Unproven(f"{tarball_url!r} has no path, so no marker can identify it")
+    return stripped
 
 
 def surface_of_tarball(url: str) -> list[str]:
@@ -296,10 +325,10 @@ def candidate_baseline(root: Path) -> dict:
     published = npm_latest(name)
     if published is not None:
         version, tarball_url = published
-        filename = os.path.basename(urllib.parse.urlparse(tarball_url).path)
+        path = registry_path(tarball_url)
         return {
             "version": version,
-            "source": f"npm-tarball:{filename} unpacked from the tarball the registry serves for {name}@{version}",
+            "source": f"npm-tarball:{path} unpacked from the tarball the registry serves for {name}@{version}",
             "surface": surface_of_tarball(tarball_url),
         }
 
@@ -379,10 +408,10 @@ def assert_honest(root: Path) -> None:
                 f"{name!r} is absent. The baseline names an artifact nobody can install."
             )
         version, tarball_url = published
-        filename = os.path.basename(urllib.parse.urlparse(tarball_url).path)
-        if filename != detail:
+        path = registry_path(tarball_url)
+        if path != detail:
             raise Dishonest(
-                f"{BASELINE_NAME} names {detail!r} but npm now serves {filename!r} "
+                f"{BASELINE_NAME} names {detail!r} but npm now serves {path!r} "
                 f"for {name}@{version}"
             )
         if document.get("version") != version:
