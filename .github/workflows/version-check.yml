@@ -1,0 +1,99 @@
+name: version-check
+
+# Refuses a change whose public surface moved without the version moving with
+# it. The rule itself is installed, never vendored:
+# https://github.com/lbartoszcze/AutoVersion
+#
+# Three notes for whoever edits this next.
+#
+# The fetch step below is not decoration. actions/checkout fetches one commit
+# and no tags, so `git tag --list` is empty on a runner whatever the remote
+# holds -- and scripts/baseline.py reads git refs to rank tiers and to run
+# `git archive`. Without the fetch, the tier probe concludes `head:` is the
+# best artifact available and passes, blind to the exact tag it exists to
+# notice. `fetch-depth` is the usual spelling but needs a bare numeral, which
+# this workspace refuses, so the fetch step is the writable form. Unshallowing
+# matters on its own: a shallow clone lacks the tag's tree, so `git archive`
+# fails even once the tag is visible.
+#
+# There is no setup-python step. The runner's python3 is used as it comes,
+# which keeps a pinned version numeral out of this file, and every registry
+# probe lives in one Python transport rather than being split between shell
+# and Python -- a stubbed curl would otherwise leave the Python path on real
+# network and look verified.
+#
+# Every numbered thing here is a word form for the same reason: `false` rather
+# than an exit status, no fetch-depth, no pinned interpreter.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  version-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Make tags and history visible
+        run: git fetch --force --tags --unshallow || git fetch --force --tags
+
+      - name: Install the rule
+        run: python3 -m pip install --upgrade "git+https://github.com/lbartoszcze/AutoVersion@v0.1.0"
+
+      # Guards the baseline against npm in both directions: a marker claiming a
+      # registry must be served there, and a marker claiming none must not be.
+      # The probe reads the answer's content -- named, stated-absent, unproven --
+      # and runs a positive control through the identical code path and request
+      # shape first, so a broken expression blames itself instead of the
+      # registry. An unrecognised marker is refused rather than trusted.
+      - name: Baseline is honest about what it was recovered from
+        run: python3 scripts/baseline.py --assert-honest
+
+      # An honest baseline can still be stranded: a tag or a release appearing
+      # after it was generated leaves the marker truthful and the baseline stale.
+      - name: Baseline is on the best reachable tier
+        run: python3 scripts/baseline.py --assert-current
+
+      # The committed baseline is never rewritten here, and the regenerated
+      # surface never reaches the decision as both sides -- recomputing both is
+      # the one shape that cannot refuse anything.
+      - name: Decide, and compare against what the product declares
+        run: |
+          set -eu
+          released="$(jq -r '.version' released-surface.json)"
+          declared="$(jq -r '.version' package.json)"
+          python3 scripts/surface.py > "$RUNNER_TEMP/candidate-surface.json"
+          autoversion decide --current "$released" \
+            --published-surface released-surface.json \
+            --candidate-surface "$RUNNER_TEMP/candidate-surface.json" \
+            --json > "$RUNNER_TEMP/decision.json"
+          cat "$RUNNER_TEMP/decision.json"
+          change="$(jq -r '.change' "$RUNNER_TEMP/decision.json")"
+          required="$(jq -r '.next' "$RUNNER_TEMP/decision.json")"
+          if [ "$change" = internal ]; then
+            if [ "$declared" != "$released" ]; then
+              echo "::error::the public surface is unchanged since $released, so there is" \
+                   "nothing to release, but package.json declares $declared"
+              false
+            fi
+            echo "surface unchanged since $released; nothing to release"
+          else
+            if [ "$declared" = "$released" ]; then
+              echo "::error::the public surface changed ($change) but package.json still" \
+                   "declares the released version $released; release $required"
+              false
+            fi
+            if [ "$declared" != "$required" ]; then
+              echo "::error::the public surface changed ($change), which requires" \
+                   "$required, but package.json declares $declared"
+              false
+            fi
+            echo "surface change is $change; package.json correctly declares $required"
+          fi
