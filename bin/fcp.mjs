@@ -1,142 +1,140 @@
 #!/usr/bin/env node
-// CLI wrapper around the non-capturing Final Cut Pro AX driver.
+// `cut fcp`: the non-capturing Final Cut Pro driver, as a small set of
+// primitives grouped by the object they act on. Every command dispatches
+// into Final Cut Pro via osascript Accessibility actions only — no cliclick,
+// no keystroke-to-frontmost, no AXRaise/activate, no screenshots. The user's
+// cursor, keyboard, screen, and frontmost window are not touched.
 //
-// Every command here dispatches into Final Cut Pro via osascript Accessibility
-// actions only — no cliclick, no keystroke-to-frontmost, no AXRaise/activate,
-// no screenshots. The user's cursor, keyboard, screen, and frontmost window
-// are not touched.
+// There is no command per menu item, Inspector slider or recipe: `menu list`
+// names every menu path `menu click` reaches, and `ax` reaches every element
+// the accessibility tree exposes, so a step a caller needs is composed from
+// these rather than added here as one more verb.
 //
 // macOS will prompt once for Accessibility + Automation permission for
 // "Final Cut Pro" and "System Events" the first time the controlling terminal
 // runs any of these. Grant it in Settings → Privacy & Security → Accessibility
 // and ... → Automation. After that the actions are silent.
 
-import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel } from "../lib/fcp-ax.mjs";
+import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel, osa } from "../lib/fcp-ax.mjs";
 import { getAttr, setAttr, performAction, selectElement, dialogPress, dialogSetField, dumpTree, listMenus } from "../lib/fcp-ax-generic.mjs";
-import { WRAPPERS, WRAPPERS_HELP } from "../lib/fcp-wrappers.mjs";
-import { INSPECTOR, INSPECTOR_HELP } from "../lib/fcp/inspector.mjs";
-import { APPLY, APPLY_HELP } from "../lib/fcp/apply.mjs";
-import { EXTRA, EXTRA_HELP } from "../lib/fcp/menus-extra.mjs";
-import { TECHNIQUES, TECHNIQUES_HELP } from "../lib/fcp/techniques.mjs";
-import { WORKFLOWS, WORKFLOWS_HELP } from "../lib/fcp/workflows.mjs";
 
-function sleep(sec) { return new Promise((r) => setTimeout(r, sec * 1000)); }
-
-const CMD = {
-  // Read-only / launch
-  running() { console.log(isRunning() ? "yes" : "no"); },
-  launch() { launchBackground(); console.log("launched (background)"); },
-  open([file]) {
-    if (!file) throw new Error("open <path>");
-    openFile(file);
-    console.log(`opened ${file}`);
-  },
-  find([needle]) {
-    if (!needle) throw new Error("find <substring>");
-    process.stdout.write(findInTree(needle));
-  },
-  // Generic menu click: `cut fcp menu File Save`, `cut fcp menu File Share "Master File…"`
-  menu(args) {
-    if (args.length < 2) throw new Error('menu <top> [<submenu>...] <leaf>   e.g. menu File Save');
-    clickMenu(args);
-    console.log(`menu: ${args.join(" → ")}`);
-  },
-  // Canonical actions, all via menu — never keystroke-to-frontmost.
-  // FCP libraries auto-save; there is no Save Project menu item. Use
-  // close-library / close-timeline / undo / redo for real menu commands.
-  "close-library"() { clickMenu(["File", "Close Library"]); console.log("library closed"); },
-  "close-timeline"() { clickMenu(["File", "Close Timeline"]); console.log("timeline closed"); },
-  undo() { clickMenu(["Edit", "Undo"]); console.log("undo"); },
-  redo() { clickMenu(["Edit", "Redo"]); console.log("redo"); },
-
-  // Apply an effect to the selected timeline clip via menu + AX.
-  //   1. Open Effects browser via Window menu.
-  //   2. Set the search field's value (no keystrokes).
-  //   3. AXPress the row whose label matches.
-  async "apply-effect"([name]) {
-    if (!name) throw new Error("apply-effect <effect-name>");
-    if (!isRunning()) throw new Error("Final Cut Pro is not running. `cut fcp launch` first.");
-    clickMenu(["Window", "Show in Workspace", "Effects"]);
-    await sleep(0.4);
-    setTextField("Search", name);
-    await sleep(0.4);
-    pressByLabel(name);
-    console.log(`applied effect: ${name}`);
-  },
-
-  // Share via File → Share → <preset>. Verified default in current FCP
-  // (queried Window > Show in Workspace and File > Share submenu live).
-  async share([preset = "Export File (default)…"]) {
-    if (!isRunning()) throw new Error("Final Cut Pro is not running. `cut fcp launch` first.");
-    clickMenu(["File", "Share", preset]);
-    console.log(`share invoked: ${preset}`);
-  },
-
-  // Universal AX primitives — reach any element FCP exposes.
-  "ax-get"([attr, ...rest]) {
-    if (!attr || rest.length === 0) throw new Error("ax-get <attr> <needle...>");
-    const needle = rest.join(" ");
-    process.stdout.write(getAttr(needle, attr));
-    process.stdout.write("\n");
-  },
-  "ax-set"([attr, needleArg, ...valueParts]) {
-    if (!attr || !needleArg || valueParts.length === 0) {
-      throw new Error("ax-set <attr> <needle> <value>");
-    }
-    setAttr(needleArg, attr, valueParts.join(" "));
-    console.log(`ax-set: ${attr} of "${needleArg}" = "${valueParts.join(" ")}"`);
-  },
-  "ax-press"([action, ...rest]) {
-    if (!action || rest.length === 0) throw new Error("ax-press <action> <needle...>");
-    const needle = rest.join(" ");
-    performAction(needle, action);
-    console.log(`ax-press: ${action} on "${needle}"`);
-  },
-  select([...rest]) {
-    if (rest.length === 0) throw new Error("select <needle...>");
-    const needle = rest.join(" ");
-    selectElement(needle);
-    console.log(`selected: ${needle}`);
-  },
-  "dialog-button"([...rest]) {
-    if (rest.length === 0) throw new Error("dialog-button <label...>");
-    const label = rest.join(" ");
-    dialogPress(label);
-    console.log(`dialog button pressed: ${label}`);
-  },
-  "dialog-set"([field, ...valueParts]) {
-    if (!field || valueParts.length === 0) throw new Error("dialog-set <field> <value>");
-    dialogSetField(field, valueParts.join(" "));
-    console.log(`dialog field "${field}" set`);
-  },
-  dump() { process.stdout.write(dumpTree()); },
-  menus() { process.stdout.write(listMenus()); },
-  wrappers() { printWrappers(); },
-
-  // ---- 197 menus + 48 Inspector/Share + 8 catalog/status + 56 extra + ~24 techniques + ~12 workflows ----
-  ...WRAPPERS,
-  ...INSPECTOR,
-  ...APPLY,
-  ...EXTRA,
-  ...TECHNIQUES,
-  ...WORKFLOWS,
-
-  help() { printHelp(); },
-};
-
-function printWrappers() {
-  const total = Object.keys(WRAPPERS).length + Object.keys(INSPECTOR).length + Object.keys(APPLY).length + Object.keys(EXTRA).length + Object.keys(TECHNIQUES).length + Object.keys(WORKFLOWS).length;
-  console.log(`Named wrappers (${total} total):`);
-  for (const [group, names] of [...WRAPPERS_HELP, ...INSPECTOR_HELP, ...APPLY_HELP, ...EXTRA_HELP, ...TECHNIQUES_HELP, ...WORKFLOWS_HELP]) {
-    console.log(`  ${group}:`);
-    let line = "    ";
-    for (const n of names) {
-      if (line.length + n.length > 78) { console.log(line); line = "    "; }
-      line += n + "  ";
-    }
-    if (line.trim().length) console.log(line);
-  }
+function need() {
+  if (!isRunning()) throw new Error("Final Cut Pro is not running. `cut fcp app launch` first.");
 }
+
+function words(parts, usage) {
+  if (parts.length === 0) throw new Error(`usage: cut fcp ${usage}`);
+  return parts.join(" ");
+}
+
+// A process-level AX attribute (AXFrontmost, AXHidden) of Final Cut Pro
+// itself, not of any of its windows.
+function processAttr(attr) {
+  return osa(`tell application "System Events" to return (value of attribute "${attr}" of process "Final Cut Pro") as text`);
+}
+
+// `--panel <menu path>` taken out of a verb's words, or a refusal naming it.
+function panelPath(parts) {
+  const at = parts.indexOf("--panel");
+  if (at < 0) {
+    throw new Error('browser apply needs --panel: the menu path that opens the browser, e.g. --panel "Window > Show in Workspace > Effects"');
+  }
+  const [, panel, ...after] = parts.splice(at);
+  parts.push(...after);
+  if (!panel) throw new Error("--panel needs the menu path that opens the browser");
+  return panel.split(">").map((part) => part.trim());
+}
+
+const GROUPS = {
+  app: {
+    usage: "app status | app launch | app open <path>",
+    verbs: {
+      status() {
+        if (!isRunning()) { console.log("running: no"); return; }
+        console.log("running: yes");
+        console.log(`frontmost: ${processAttr("AXFrontmost")}`);
+        console.log(`hidden: ${processAttr("AXHidden")}`);
+      },
+      launch() { launchBackground(); console.log("launched (background)"); },
+      open(parts) {
+        const file = words(parts, "app open <path>");
+        openFile(file);
+        console.log(`opened ${file}`);
+      },
+    },
+  },
+  menu: {
+    usage: "menu list | menu click <top> [<submenu>...] <leaf>",
+    verbs: {
+      list() { process.stdout.write(listMenus()); },
+      click(path) {
+        const [top, ...below] = path;
+        if (!top || below.length === 0) throw new Error("usage: cut fcp menu click <top> [<submenu>...] <leaf>   e.g. menu click Edit Undo");
+        need();
+        clickMenu(path);
+        console.log(`menu: ${path.join(" → ")}`);
+      },
+    },
+  },
+  // A browser is one of FCP's catalog panes (Effects, Transitions, Titles and
+  // Generators). The pane is opened through the menu path the caller names,
+  // as `menu list` prints it, so no pane location is assumed here. A row that
+  // is not there yet fails the press with the label it looked for.
+  browser: {
+    usage: 'browser apply <name> --panel "<top> > <submenu> > <leaf>"',
+    verbs: {
+      apply(parts) {
+        const panel = panelPath(parts);
+        const name = words(parts, 'browser apply <name> --panel "<top> > <submenu> > <leaf>"');
+        need();
+        clickMenu(panel);
+        setTextField("Search", name);
+        pressByLabel(name);
+        console.log(`applied: ${name}`);
+      },
+    },
+  },
+  ax: {
+    usage: "ax get <attr> <needle> | ax set <attr> <needle> <value> | ax press <action> <needle> | ax select <needle> | ax find <substring> | ax dump",
+    verbs: {
+      get([attr, ...rest]) {
+        const needle = words(rest, "ax get <attr> <needle...>");
+        process.stdout.write(`${getAttr(needle, attr)}\n`);
+      },
+      set([attr, needle, ...value]) {
+        const text = words(value, "ax set <attr> <needle> <value>");
+        setAttr(needle, attr, text);
+        console.log(`ax set: ${attr} of "${needle}" = "${text}"`);
+      },
+      press([action, ...rest]) {
+        const needle = words(rest, "ax press <action> <needle...>");
+        performAction(needle, action);
+        console.log(`ax press: ${action} on "${needle}"`);
+      },
+      select(parts) {
+        const needle = words(parts, "ax select <needle...>");
+        selectElement(needle);
+        console.log(`selected: ${needle}`);
+      },
+      find(parts) { process.stdout.write(findInTree(words(parts, "ax find <substring>"))); },
+      dump() { process.stdout.write(dumpTree()); },
+    },
+  },
+  dialog: {
+    usage: "dialog press <label> | dialog set <field> <value>",
+    verbs: {
+      press(parts) {
+        const label = words(parts, "dialog press <label...>");
+        dialogPress(label);
+        console.log(`dialog button pressed: ${label}`);
+      },
+      set([field, ...value]) {
+        dialogSetField(field, words(value, "dialog set <field> <value>"));
+        console.log(`dialog field "${field}" set`);
+      },
+    },
+  },
+};
 
 function printHelp() {
   console.log("cut fcp — non-capturing Final Cut Pro driver");
@@ -146,38 +144,33 @@ function printHelp() {
   console.log("no focus-stealing activate — Final Cut Pro can stay backgrounded.");
   console.log("");
   console.log("Commands:");
-  console.log("  cut fcp running                    is Final Cut Pro running?");
-  console.log("  cut fcp launch                     launch FCP in the background (-g)");
-  console.log("  cut fcp open <path>                open a project / .fcpxml (background)");
-  console.log("  cut fcp menu <top> [...] <leaf>    click any menu item, e.g. menu Edit Undo");
-  console.log("  cut fcp close-library              File → Close Library");
-  console.log("  cut fcp close-timeline             File → Close Timeline");
-  console.log("  cut fcp undo / redo                Edit → Undo / Redo");
-  console.log("  cut fcp apply-effect <name>        apply effect to selected timeline clip");
-  console.log("  cut fcp share [<preset>]           File → Share → preset (default 'Export File (default)…')");
-  console.log("  cut fcp find <substring>           dump AX-tree matches (debugging)");
-  console.log("  cut fcp dump                       dump every element of window 1 (role | desc | value)");
-  console.log("  cut fcp menus                      catalog every menu-bar-reachable FCP command");
-  console.log("  cut fcp wrappers                   list 153 named-wrapper commands by group");
+  for (const group of Object.values(GROUPS)) {
+    for (const usage of group.usage.split(" | ")) console.log(`  cut fcp ${usage}`);
+  }
   console.log("");
-  console.log("Universal AX primitives — reach any element (Inspector, dialog, etc):");
-  console.log("  cut fcp ax-get <attr> <needle>     read AX attribute (e.g. AXValue, AXSize, AXEnabled)");
-  console.log("  cut fcp ax-set <attr> <needle> <v> write AX attribute (slider value, popup choice)");
-  console.log("  cut fcp ax-press <action> <needle> perform AX action (AXPress, AXIncrement, AXShowMenu)");
-  console.log("  cut fcp select <needle>            `select` a selectable element (clip, row, item)");
-  console.log("  cut fcp dialog-button <label>      press a button in the topmost modal sheet");
-  console.log("  cut fcp dialog-set <field> <val>   set a text field in the topmost modal sheet");
+  console.log("A multi-step job (Share → Export File, a retime prompt) is the same");
+  console.log('primitives in order: menu click File Share "Export File (default)…",');
+  console.log("then dialog set Title <name>, then dialog press Next…, then dialog press Save.");
   console.log("");
   console.log("First-time use: grant Accessibility + Automation permission for");
   console.log("Final Cut Pro + System Events to this terminal in Settings.");
 }
 
-const [cmd, ...rest] = process.argv.slice(2);
+// Every leaf by its whole name ("menu click"), so an unknown object or verb
+// is one refusal below.
+const CMD = Object.fromEntries([
+  ["help", printHelp],
+  ...Object.entries(GROUPS).flatMap(([object, group]) =>
+    Object.entries(group.verbs).map(([verb, run]) => [`${object} ${verb}`, run]),
+  ),
+]);
+
+const [object, verb, ...rest] = process.argv.slice(2);
+const cmd = verb === undefined || object === "help" ? object : `${object} ${verb}`;
 if (!cmd || cmd === "-h" || cmd === "--help") { printHelp(); process.exit(0); }
-if (!CMD[cmd]) { console.error(`unknown subcommand: ${cmd}. 'cut fcp help' for list.`); process.exit(2); }
+if (!CMD[cmd]) { console.error(`unknown command: cut fcp ${cmd}. 'cut fcp help' lists every object and its verbs.`); process.exit(2); }
 try {
-  const r = CMD[cmd](rest);
-  if (r && typeof r.then === "function") r.catch((e) => { console.error(e.message); process.exit(1); });
+  CMD[cmd](rest);
 } catch (e) {
   console.error(e.message);
   process.exit(1);

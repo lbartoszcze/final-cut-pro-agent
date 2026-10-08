@@ -63,7 +63,7 @@ Status legend: **✅ in the FCPXML** · **🟡 partial** · **▶ FCP-render-sid
 | SRT/VTT → `<caption lane="-1">` (`--captions`) | ✅ `lib/captions/parse.mjs` |
 | YouTube auto-sub dedupe | ✅ `dedupeCues` |
 | Caption language role (`--caption-lang`) | ✅ iTT role |
-| Driver: Edit > Captions (add/edit/split/transcribe/duplicate) | ✅ `lib/fcp/techniques.mjs` |
+| Driver: Edit > Captions (add/edit/split/transcribe/duplicate) | ✅ `cut fcp menu click Edit Captions <leaf>` |
 
 ## Style packs / genre archetypes
 
@@ -88,8 +88,9 @@ Status legend: **✅ in the FCPXML** · **🟡 partial** · **▶ FCP-render-sid
 
 | Concern | Status |
 |---|---|
-| Open project/fcpxml in FCP (`cut fcp open`) | ✅ `open -a` |
-| Background effect / colour-preset / Share driver | 🟡 needs an input env that permits GUI automation |
+| Open project/fcpxml in FCP (`cut fcp app open`) | ✅ `open -a` |
+| Menu, catalog browser, accessibility element and modal sheet primitives (`cut fcp menu`, `browser`, `ax`, `dialog`) | 🟡 needs an input env that permits GUI automation |
+| One command per menu item, Inspector setter or recipe | Removed: each was one call of the primitives above, and `menu list` / `ax find` name everything they reach |
 
 ## Removed (non-FCP "other way")
 

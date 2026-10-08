@@ -4,7 +4,7 @@
 // is available) drives FCP itself. There is no non-FCP render path.
 //
 //   cut fcpxml <flags>   → author a Final Cut Pro project (.fcpxml)
-//   cut fcp <subcmd>     → drive Final Cut Pro (open / effects / Share)
+//   cut fcp <object> <verb> → drive Final Cut Pro (app / menu / browser / ax / dialog)
 //   cut help [<topic>]   → flag reference
 
 import { spawn } from "node:child_process";
@@ -48,12 +48,12 @@ const HELP_TOPICS = {
     "--custom-markers=\"t:lbl,t:lbl,...\"   user-defined timeline markers",
   ],
   fcp: [
-    "cut fcp open <file>      open a project / fcpxml in Final Cut Pro",
-    "cut fcp cua-init         prime the background FCP driver",
-    "cut fcp cua-effect <n>   apply an effect by name",
-    "cut fcp cua-color-preset <n>   apply a colour preset",
-    "cut fcp cua-share <name> Share → Master File (export)",
-    "  (the cua / AX driver requires an unrestricted input environment)",
+    "cut fcp app <verb>       Final Cut Pro itself: status, launch, open <file>",
+    "cut fcp menu <verb>      list every menu path, or click one",
+    "cut fcp browser apply <name> --panel \"<menu path>\"   apply from a catalog browser",
+    "cut fcp ax <verb>        read, write, press, select, find or dump any accessibility element",
+    "cut fcp dialog <verb>    press a button or set a field in the topmost modal sheet",
+    "  (`cut fcp help` prints every verb; the AX driver needs Accessibility permission)",
   ],
 };
 
@@ -63,7 +63,7 @@ function printHelp(topic) {
   console.log("project and drives FCP; it never produces video any other way.\n");
   console.log("USAGE:");
   console.log("  cut fcpxml <flags>   author a Final Cut Pro project (.fcpxml)");
-  console.log("  cut fcp <subcmd>     drive Final Cut Pro (open / effects / Share)");
+  console.log("  cut fcp <object> <verb>   drive Final Cut Pro (app / menu / browser / ax / dialog)");
   console.log("  cut sfx <op>         brainrot / meme SFX library (list / get / where)");
   console.log("  cut giphy <op>       Giphy search + fetch as FCP-importable MP4");
   console.log("  cut help [topic]     this help (topic: " + Object.keys(HELP_TOPICS).join(", ") + ", or 'all')\n");
@@ -75,8 +75,8 @@ function printHelp(topic) {
   }
   console.log("WORKFLOW:");
   console.log("  1. cut fcpxml --clips=./footage --music=track.mp3 --bars=24 --style=cinematic --out=cut.fcpxml");
-  console.log("  2. cut fcp open cut.fcpxml          # import into Final Cut Pro");
-  console.log("  3. cut fcp cua-share \"My Master\"     # Share → Master File from FCP\n");
+  console.log("  2. cut fcp app open cut.fcpxml      # import into Final Cut Pro");
+  console.log("  3. cut fcp menu click File Share \"Export File (default)…\"   # then dialog set / dialog press\n");
 }
 
 function runNode(script, rest) {

@@ -38,20 +38,18 @@ FCP stays backgrounded while the driver works.
 
 ### Coverage
 
-- **574 menu commands** — every menu-bar-reachable FCP capability is
-  dispatchable via `cut fcp menu <Top> [Sub...] <Leaf>` (2-, 3-, and 4-level
-  paths verified live). Catalog persisted at `references/fcp-menus.txt`;
-  reproduce live with `cut fcp menus`.
-- **346 named wrappers** for the highest-frequency operations — grouped help
-  via `cut fcp wrappers`. Breakdown:
-  - 197 menu wrappers (Edit / Trim / Modify / Clip / Mark / View / File / Share / Window / App)
-  - 56 submenu wrappers (Keyframes / Track / Source Media / Apply Name / Roles / Audition / Browser / Viewer / Index / Sort)
-  - 48 Inspector / Color / Audio / Crop setters + complete-Share flow
-  - 25 transcript-derived technique wrappers (conform / LUT / voice-isolate / captions / ...)
-  - 12 multi-step workflow recipes (noise-reduce / log-grade-stack / ken-burns / ...)
-  - 8 catalog-apply + status readers
-- **6 universal AX primitives** reach any AXDescription-addressable element:
-  `ax-get`, `ax-set`, `ax-press`, `select`, `dialog-button`, `dialog-set`.
+- **Every menu command** — every menu-bar-reachable FCP capability is
+  dispatchable via `cut fcp menu click <Top> [Sub...] <Leaf>` (2-, 3-, and
+  4-level paths verified live). A catalog is kept at
+  `references/fcp-menus.txt`; `cut fcp menu list` reproduces it live from
+  the running FCP.
+- **Every accessibility element** — `cut fcp ax get|set|press|select`
+  reach any AXDescription-addressable element (Inspector sliders, popups,
+  rows); `cut fcp ax find <substring>` and `cut fcp ax dump` name them.
+- **Catalog browsers** — `cut fcp browser apply <name> --panel "<menu path>"`
+  opens the browser the menu path names, searches it and applies the row.
+- **Modal sheets** — `cut fcp dialog press <label>` and
+  `cut fcp dialog set <field> <value>` complete Share, Save As and prompts.
 
 ### Functionality → automation mapping
 
@@ -61,20 +59,18 @@ even though the drag affordance is not.
 
 | FCP capability                        | Automated via                                                |
 |---------------------------------------|--------------------------------------------------------------|
-| Trim clip edges (drag handles)        | `trim-start`, `trim-end`, `trim-to-selection`, `nudge-left/right` |
-| Slice clip (blade tool drag)          | `blade`, `blade-all`                                         |
-| Move clip in timeline (drag)          | `cut` + position playhead + `paste` / `insert` / `overwrite` |
-| Connect clip to lane (drag)           | `connect`, `lift`, `collapse`, `overwrite`                   |
-| Set keyframe (drag in animation editor) | `add-keyframe` + Inspector setter at the playhead position |
-| Color Wheels (drag wheel puck)        | `set-master-sat/bri`, `set-shadows-*`, `set-mids-*`, `set-highs-*` |
-| Color Board sliders (drag)            | `set-saturation`, `set-exposure`, `set-contrast`, `set-highlights`, `set-shadows`, `set-midtones` |
-| Audio level (drag fader)              | `volume-up/down/absolute/relative`, `set-volume`, `set-pan`  |
-| Opacity / transform (drag handles)    | `set-opacity`, `set-position-x/y`, `set-rotation`, `set-scale-*`, `set-anchor-x/y` |
-| Crop (drag corners)                   | `set-crop-left/right/top/bottom`                             |
-| Mask (paint brush)                    | `Modify > Add Magnetic Mask` via menu (FCP auto-mask)        |
-| Pick effect / title / transition      | `apply-effect`, `apply-title`, `apply-transition`            |
-| Multi-step Share / Export             | `export <preset> <filename>` (Open Share → fill → Next → Save) |
-| Any other Inspector parameter         | `inspect-find <substr>` to discover AXDescription, then `inspect-set` |
+| Trim clip edges (drag handles)        | `menu click Trim "Trim Start"` / `"Trim End"` / `"Trim to Selection"` |
+| Slice clip (blade tool drag)          | `menu click Trim Blade` / `"Blade All"`                      |
+| Move clip in timeline (drag)          | `menu click Edit Cut`, position the playhead, `menu click Edit Paste` / `Insert` / `Overwrite` |
+| Connect clip to lane (drag)           | `menu click Edit "Connect to Primary Storyline"`, `"Lift from Storyline"` |
+| Set keyframe (drag in animation editor) | `menu click Modify "Add Keyframe"` + `ax set AXValue <parameter> <value>` at the playhead |
+| Color Wheels / Color Board (drag)     | `ax find` the control's description, then `ax set AXValue <description> <value>` |
+| Audio level (drag fader)              | `menu click Modify "Adjust Volume" Up` / `Down`, or `ax set AXValue Volume <dB>` |
+| Opacity / transform / crop (drag handles) | `ax set AXValue <Opacity, Position X, Rotation, ...> <value>` |
+| Mask (paint brush)                    | `menu click Modify "Add Magnetic Mask"` (FCP auto-mask)      |
+| Pick effect / title / transition      | `browser apply <name> --panel "<the browser's menu path>"`   |
+| Multi-step Share / Export             | `menu click File Share <preset>`, `dialog set Title <name>`, `dialog press Next…`, `dialog press Save` |
+| Any other parameter                   | `ax find <substr>` to discover its AXDescription, then `ax set` |
 
 The only FCP input genuinely outside macOS Accessibility scope is
 freehand pixel painting with the brush tool — and FCP's built-in shape /
@@ -101,22 +97,29 @@ cut fcpxml --clips=./footage --sfx=vine-boom,airhorn --gif="mind blown" \
            --out=cut.fcpxml         # SFX -> audio lane -2, GIF -> B-roll lane 2
 
 # 2. Open it in Final Cut Pro (background, doesn't steal focus)
-cut fcp open cut.fcpxml
+cut fcp app open cut.fcpxml
 
-# 3. Drive FCP from the CLI (any of the 346 named wrappers + 574 menu paths)
-cut fcp volume-up                 # Modify > Adjust Volume > Up (+1 dB)
-cut fcp apply-effect "Vignette"   # search + apply from Effects browser
-cut fcp set-opacity 50            # Inspector Compositing > Opacity
-cut fcp add-marker                # Mark > Markers > Add Marker
-cut fcp menu File "Share" "Export File (default)…"   # any menu path
+# 3. Drive FCP from the CLI: a few primitives reach every menu path and element
+cut fcp menu list                                   # every menu-bar-reachable path
+cut fcp menu click Modify "Adjust Volume" Up        # any menu path
+cut fcp browser apply Vignette --panel "Window > Show in Workspace > Effects"
+cut fcp ax set AXValue Opacity 50                   # any Inspector control by description
+cut fcp ax find Opacity                             # discover the description first
 
 # 4. Complete the multi-step Share dialog without a mouse
-cut fcp export "Export File (default)…" "MyCut"
+cut fcp menu click File Share "Export File (default)…"
+cut fcp dialog set Title MyCut
+cut fcp dialog press Next…
+cut fcp dialog press Save
 ```
 
-`cut fcp help` shows the base commands; `cut fcp wrappers` lists all
-346 named operations grouped by section; `cut fcp menus` enumerates every
-menu-bar-reachable command.
+`cut fcp help` lists every object (`app`, `menu`, `browser`, `ax`, `dialog`)
+and its verbs. There is no command per menu item, Inspector slider or
+recipe: `menu list` names every path `menu click` reaches, `ax find` and
+`ax dump` name every element `ax get|set|press|select` reaches, and a
+multi-step job is those primitives in order. An unknown object or verb exits
+2 naming the command; a primitive whose element is missing exits 1 with the
+label it looked for.
 
 ## What the authored FCPXML carries
 
@@ -143,17 +146,12 @@ menu-bar-reachable command.
 bin/
   cut.mjs        single-entry CLI (fcpxml / fcp / help)
   make-cut.mjs   authors the .fcpxml
-  fcp.mjs        drives Final Cut Pro (dispatcher; spreads named wrappers)
+  fcp.mjs        drives Final Cut Pro: app / menu / browser / ax / dialog primitives
 lib/
   edit.mjs       cadence / section / title planning
   fcpxml.mjs     FCPXML element builders
   fcp-ax.mjs     fixed-purpose AX helpers (clickMenu, setTextField, ...)
   fcp-ax-generic.mjs  universal AX primitives (getAttr/setAttr/perform/...)
-  fcp-wrappers.mjs    197 menu-bar named wrappers
-  fcp/
-    inspector.mjs     Inspector setters + complete-Share dialog flow (27)
-    apply.mjs         catalog apply (title/transition/generator) + state (8)
-    menus-extra.mjs   submenu wrappers (56)
   render/
     grades.mjs   FCP colour-grade look library
     template.mjs reference-fcpxml cadence/grade parser
