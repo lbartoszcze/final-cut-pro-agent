@@ -18,12 +18,14 @@
 import { isRunning, launchBackground, openFile, clickMenu, findInTree, setTextField, pressByLabel, osa } from "../lib/fcp-ax.mjs";
 import { getAttr, setAttr, performAction, selectElement, dialogPress, dialogSetField, dumpTree, listMenus } from "../lib/fcp-ax-generic.mjs";
 
+class UsageError extends Error {}
+
 function need() {
   if (!isRunning()) throw new Error("Final Cut Pro is not running. `cut fcp app launch` first.");
 }
 
 function words(parts, usage) {
-  if (parts.length === 0) throw new Error(`usage: cut fcp ${usage}`);
+  if (parts.length === 0) throw new UsageError(`usage: cut fcp ${usage}`);
   return parts.join(" ");
 }
 
@@ -37,11 +39,11 @@ function processAttr(attr) {
 function panelPath(parts) {
   const at = parts.indexOf("--panel");
   if (at < 0) {
-    throw new Error('browser apply needs --panel: the menu path that opens the browser, e.g. --panel "Window > Show in Workspace > Effects"');
+    throw new UsageError('browser apply needs --panel: the menu path that opens the browser, e.g. --panel "Window > Show in Workspace > Effects"');
   }
   const [, panel, ...after] = parts.splice(at);
   parts.push(...after);
-  if (!panel) throw new Error("--panel needs the menu path that opens the browser");
+  if (!panel) throw new UsageError("--panel needs the menu path that opens the browser");
   return panel.split(">").map((part) => part.trim());
 }
 
@@ -69,7 +71,7 @@ const GROUPS = {
       list() { process.stdout.write(listMenus()); },
       click(path) {
         const [top, ...below] = path;
-        if (!top || below.length === 0) throw new Error("usage: cut fcp menu click <top> [<submenu>...] <leaf>   e.g. menu click Edit Undo");
+        if (!top || below.length === 0) throw new UsageError("usage: cut fcp menu click <top> [<submenu>...] <leaf>   e.g. menu click Edit Undo");
         need();
         clickMenu(path);
         console.log(`menu: ${path.join(" → ")}`);
@@ -173,5 +175,5 @@ try {
   CMD[cmd](rest);
 } catch (e) {
   console.error(e.message);
-  process.exit(1);
+  process.exit(e instanceof UsageError ? 2 : 1);
 }

@@ -118,7 +118,8 @@ and its verbs. There is no command per menu item, Inspector slider or
 recipe: `menu list` names every path `menu click` reaches, `ax find` and
 `ax dump` name every element `ax get|set|press|select` reaches, and a
 multi-step job is those primitives in order. An unknown object or verb exits
-2 naming the command; a primitive whose element is missing exits 1 with the
+2 naming the command. Missing required primitive arguments also exit 2 with
+the expected usage; a primitive whose element is missing exits 1 with the
 label it looked for.
 
 ## What the authored FCPXML carries
