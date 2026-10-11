@@ -120,7 +120,22 @@ recipe: `menu list` names every path `menu click` reaches, `ax find` and
 multi-step job is those primitives in order. An unknown object or verb exits
 2 naming the command. Missing required primitive arguments also exit 2 with
 the expected usage; a primitive whose element is missing exits 1 with the
-label it looked for.
+label it looked for. `cut fcp app --help` and `cut fcp app launch --help`
+print the object's grammar without invoking Final Cut Pro. The same help
+form applies to every object and verb. `app status`, `app launch`, `menu list`
+and `ax dump` refuse extra operands before dispatch, naming the unexpected
+input. Prototype property names are not commands.
+
+`node --test tests/cli/fcp.test.mjs` exercises the actual `cut` entry point
+on a dedicated macOS host with Final Cut Pro initially stopped. It checks
+help, invalid commands, missing arguments and extra operands, then reads
+application status again to verify that none of these launched the app.
+It does not qualify successful menu, accessibility or editing actions.
+Set `FCP_QUALIFICATION_FIXTURE` to a JSON file declaring `revision` (the
+checkout's full committed revision), `successExit` (the process-success
+code, 0) and `usageExit` (the documented usage-error code, 2). The checkout
+must be clean. Invocation arguments, output, exit status, signal and source
+revision are retained in `target/real-tests/fcp/<run-id>/commands.json`.
 
 ## What the authored FCPXML carries
 

@@ -1,41 +1,66 @@
-// Real test of `cut fcp`'s grammar through the installed entry point
-// (bin/cut.mjs → bin/fcp.mjs): help names the objects and their verbs, an
-// unknown object or verb and the retired one-off verbs are refused naming
-// the command, a verb missing its words is refused with its usage, and
-// `app status` answers whether Final Cut Pro is running. None of these
-// touches Final Cut Pro's window; `app status` only reads the process list.
-//
-//   node --test tests/cli/fcp.test.mjs
+// Real CLI grammar and non-dispatch checks on a dedicated macOS host.
+// Final Cut Pro must initially be stopped. The test never starts or stops it.
+// FCP_QUALIFICATION_FIXTURE names the source revision and declared exit codes.
+// node --test tests/cli/fcp.test.mjs
 
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { resolve } from 'node:path';
-import { test } from 'node:test';
+import { after, before, test } from 'node:test';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { randomUUID } from 'node:crypto';
 
 const root = resolve(import.meta.dirname, '../..');
-// One `cut fcp` call, its words written as the operator types them.
-const cut = (line) => spawnSync(process.execPath, ['bin/cut.mjs', 'fcp', ...line.split(' ')], { cwd: root, encoding: 'utf8' });
+assert.ok(process.env.FCP_QUALIFICATION_FIXTURE, 'FCP_QUALIFICATION_FIXTURE is required');
+const fixture = JSON.parse(readFileSync(process.env.FCP_QUALIFICATION_FIXTURE, 'utf8'));
+assert.ok(Number.isSafeInteger(fixture.successExit), 'fixture.successExit must declare the successful process exit code');
+assert.ok(Number.isSafeInteger(fixture.usageExit), 'fixture.usageExit must declare the CLI usage-error exit code');
+assert.notEqual(fixture.successExit, fixture.usageExit);
+const revision = spawnSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' });
+assert.equal(revision.status, fixture.successExit, revision.stderr);
+assert.equal(revision.stdout.trim(), fixture.revision, 'fixture.revision must identify this checkout');
+const dirty = spawnSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' });
+assert.equal(dirty.status, fixture.successExit, dirty.stderr);
+assert.equal(dirty.stdout, '', 'qualification requires committed source');
+const evidence = resolve(root, 'target/real-tests/fcp', randomUUID());
+mkdirSync(evidence, { recursive: true });
+const report = { revision: fixture.revision, commands: [] };
+const cut = (line) => {
+  const args = ['bin/cut.mjs', 'fcp', ...line.split(' ')];
+  const result = spawnSync(process.execPath, args, { cwd: root, encoding: 'utf8' });
+  report.commands.push({ executable: process.execPath, args, status: result.status, signal: result.signal,
+    stdout: result.stdout, stderr: result.stderr, error: result.error?.message });
+  writeFileSync(resolve(evidence, 'commands.json'), JSON.stringify(report, null, '\t'));
+  assert.ifError(result.error);
+  assert.equal(result.signal, null, result.stderr);
+  return result;
+};
+
+before(() => {
+  const initial = cut('app status');
+  assert.equal(initial.status, fixture.successExit, initial.stderr);
+  assert.match(initial.stdout, /^running: no$/m, 'use a dedicated host with Final Cut Pro initially stopped');
+});
+
+after(() => {
+  const final = cut('app status');
+  assert.equal(final.status, fixture.successExit, final.stderr);
+  assert.match(final.stdout, /^running: no$/m, 'help and rejected input must not launch Final Cut Pro');
+});
 
 function refused(line, message) {
   const result = cut(line);
-  assert.ok(result.status, `cut fcp ${line} succeeded: ${result.stdout}`);
+  assert.equal(result.status, fixture.usageExit, `cut fcp ${line}: ${result.stdout}\n${result.stderr}`);
   assert.match(result.stderr, message);
 }
 
-test('help prints the usage of the grouped primitives', () => {
-  const help = cut('help');
-  assert.ok(!help.status, help.stderr);
-  assert.match(help.stdout, /cut fcp menu click <top> \[<submenu>\.\.\.\] <leaf>/);
-  assert.match(help.stdout, /cut fcp ax set <attr> <needle> <value>/);
-  assert.match(help.stdout, /cut fcp browser apply <name> --panel/);
-  assert.match(help.stdout, /cut fcp dialog press <label>/);
-  assert.match(help.stdout, /cut fcp app status/);
-});
 
 test('an unknown object or verb is refused naming the command', () => {
   refused('sideways', /unknown command: cut fcp sideways/);
   refused('menu', /unknown command: cut fcp menu/);
   refused('menu sideways', /unknown command: cut fcp menu sideways/);
+  refused('constructor', /constructor/);
+  refused('__proto__', /__proto__/);
 });
 
 test('the retired one-off verbs are unknown commands', () => {
@@ -54,8 +79,19 @@ test('a verb missing its words is refused with its usage', () => {
   refused('app open', /usage: cut fcp app open/);
 });
 
-test('app status answers whether Final Cut Pro is running', () => {
-  const status = cut('app status');
-  assert.ok(!status.status, status.stderr);
-  assert.match(status.stdout, /^running: (yes|no)$/m);
+test('group and leaf help succeeds without launching Final Cut Pro', () => {
+  for (const command of ['help', 'app --help', 'menu -h', 'browser --help', 'ax --help', 'dialog -h',
+    'app launch --help', 'app open --help', 'menu click --help', 'browser apply --help',
+    'ax set --help', 'dialog press --help']) {
+    const result = cut(command);
+    assert.equal(result.status, fixture.successExit, `${command}: ${result.stderr}`);
+    assert.equal(result.stderr, '', command);
+  }
 });
+
+test('zero-operand primitives refuse extra input before dispatch', () => {
+  for (const command of ['app status', 'app launch', 'menu list', 'ax dump']) {
+    refused(`${command} unintended-operand`, /unintended-operand/);
+  }
+});
+

@@ -29,6 +29,10 @@ function words(parts, usage) {
   return parts.join(" ");
 }
 
+function noOperands(parts, usage) {
+  if (parts.length) throw new UsageError(`usage: cut fcp ${usage}; unexpected operands: ${parts.join(" ")}`);
+}
+
 // A process-level AX attribute (AXFrontmost, AXHidden) of Final Cut Pro
 // itself, not of any of its windows.
 function processAttr(attr) {
@@ -51,13 +55,18 @@ const GROUPS = {
   app: {
     usage: "app status | app launch | app open <path>",
     verbs: {
-      status() {
+      status(parts) {
+        noOperands(parts, "app status");
         if (!isRunning()) { console.log("running: no"); return; }
         console.log("running: yes");
         console.log(`frontmost: ${processAttr("AXFrontmost")}`);
         console.log(`hidden: ${processAttr("AXHidden")}`);
       },
-      launch() { launchBackground(); console.log("launched (background)"); },
+      launch(parts) {
+        noOperands(parts, "app launch");
+        launchBackground();
+        console.log("launched (background)");
+      },
       open(parts) {
         const file = words(parts, "app open <path>");
         openFile(file);
@@ -68,7 +77,7 @@ const GROUPS = {
   menu: {
     usage: "menu list | menu click <top> [<submenu>...] <leaf>",
     verbs: {
-      list() { process.stdout.write(listMenus()); },
+      list(parts) { noOperands(parts, "menu list"); process.stdout.write(listMenus()); },
       click(path) {
         const [top, ...below] = path;
         if (!top || below.length === 0) throw new UsageError("usage: cut fcp menu click <top> [<submenu>...] <leaf>   e.g. menu click Edit Undo");
@@ -119,7 +128,7 @@ const GROUPS = {
         console.log(`selected: ${needle}`);
       },
       find(parts) { process.stdout.write(findInTree(words(parts, "ax find <substring>"))); },
-      dump() { process.stdout.write(dumpTree()); },
+      dump(parts) { noOperands(parts, "ax dump"); process.stdout.write(dumpTree()); },
     },
   },
   dialog: {
@@ -170,7 +179,16 @@ const CMD = Object.fromEntries([
 const [object, verb, ...rest] = process.argv.slice(2);
 const cmd = verb === undefined || object === "help" ? object : `${object} ${verb}`;
 if (!cmd || cmd === "-h" || cmd === "--help") { printHelp(); process.exit(0); }
-if (!CMD[cmd]) { console.error(`unknown command: cut fcp ${cmd}. 'cut fcp help' lists every object and its verbs.`); process.exit(2); }
+if (Object.hasOwn(GROUPS, object) && !rest.length && (verb === "--help" || verb === "-h")) {
+  console.log(`cut fcp ${GROUPS[object].usage}`);
+  process.exit();
+}
+const [help, ...helpOperands] = rest;
+if (Object.hasOwn(CMD, cmd) && Object.hasOwn(GROUPS, object) && !helpOperands.length && (help === "--help" || help === "-h")) {
+  console.log(`cut fcp ${GROUPS[object].usage}`);
+  process.exit();
+}
+if (!Object.hasOwn(CMD, cmd)) { console.error(`unknown command: cut fcp ${cmd}. 'cut fcp help' lists every object and its verbs.`); process.exit(2); }
 try {
   CMD[cmd](rest);
 } catch (e) {
