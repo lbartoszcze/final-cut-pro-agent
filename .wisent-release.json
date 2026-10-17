@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "product": "final-cut-pro-agent",
+  "releases": false,
+  "reason": "The repository holds the cut command, run from its checkout on the Mac that drives Final Cut Pro; nothing is published to npm or any registry, it hosts nothing, and its only workflow checks the declared surface against the version, so it declares no versioned artifact publisher."
+}
