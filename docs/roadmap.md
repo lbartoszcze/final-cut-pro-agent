@@ -79,10 +79,10 @@ Status legend: **✅ in the FCPXML** · **🟡 partial** · **▶ FCP-render-sid
 | Concern | Status |
 |---|---|
 | Brainrot SFX catalog + fetch (`cut sfx`) | ✅ `lib/sfx/` (15 SFX) |
-| Giphy search + fetch (`cut giphy`, scrape, no key) | ✅ `lib/giphy/index.mjs` |
+| Giphy search + fetch (`cut giphy`, scrape without a key, API with `GIPHY_API_KEY` and `GIPHY_RATING`) | ✅ `lib/giphy/index.mjs` |
 | `--sfx=<names\|all>` → audio lane `-2` | ✅ `lib/assets/inject.mjs` |
 | `--gif=<query>` → B-roll lane `2` | ✅ |
-| Autonomous Giphy API-key acquisition | 🟡 `scripts/obtain-giphy-key.mjs` (CapSolver-backed; signup flow) |
+| Giphy API key provisioning | The operator sets `GIPHY_API_KEY`; account sign-up is a browser workflow, which runs through Weles, not from this repository |
 
 ## Driving Final Cut Pro
 
