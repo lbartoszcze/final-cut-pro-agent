@@ -41,7 +41,8 @@ function clipOf(name, inputs) {
     '-f', 'lavfi', '-i', 'color=c=black:s=320x240:d=2', ...inputs,
     '-c:v', 'libx264', '-pix_fmt', 'yuv420p', clip], { encoding: 'utf8' });
   assert.ifError(made.error);
-  assert.equal(made.status, spawnSync('true').status, made.stderr);
+  // ffmpeg made the clip when no signal ended it and it exited zero.
+  assert.ok(made.signal === null && !made.status, made.stderr);
   return clip;
 }
 
