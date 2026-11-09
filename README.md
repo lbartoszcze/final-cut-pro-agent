@@ -145,7 +145,8 @@ revision are retained in `target/real-tests/fcp/<run-id>/commands.json`.
 - Beat-grid / section cadence (`--bpm`/`--bars`/`--style`, or `--music` for
   auto BPM + downbeat)
 - Section-aware shot selection (`--smart-pick`), visual-continuity match
-  cuts (`--match-cuts`), face-aware hook/chorus + reaction B-rolls
+  cuts (`--match-cuts`, which never repeat the previous shot while the pool
+  holds another), face-aware hook/chorus + reaction B-rolls
   (`--faces`, `--brolls`) on `lane="1"`
 - FCP-native `FFColorCorrectionEffect` grade per clip (`--look`) and
   `FFCustomLUT` (`--lut`)
