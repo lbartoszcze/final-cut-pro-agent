@@ -24,7 +24,7 @@ ANALYZE_H = 180
 def detect(path: str, sample_fps: float = SAMPLE_FPS):
     cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
     if cascade.empty():
-        raise RuntimeError("haarcascade load failed")
+        raise RuntimeError(f"haarcascade load failed: {cv2.data.haarcascades}haarcascade_frontalface_default.xml did not load")
     cap = cv2.VideoCapture(path)
     if not cap.isOpened():
         raise RuntimeError(f"could not open: {path}")
