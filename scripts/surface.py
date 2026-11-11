@@ -191,7 +191,10 @@ def surface(root: Path, tolerant: bool = False) -> list[str]:
     manifest_path = root / "package.json"
     if not manifest_path.is_file():
         raise ScanError(f"{manifest_path}: no package.json; cannot name the console scripts")
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise ScanError(f"{manifest_path}: not JSON ({error})") from error
 
     binmap = manifest.get("bin") or {}
     if isinstance(binmap, str):
