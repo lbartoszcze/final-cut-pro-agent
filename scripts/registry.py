@@ -25,7 +25,6 @@ GITHUB_API = "https://api.github.com"
 CONTROL_PACKAGE = "three"
 
 USER_AGENT = "final-cut-pro-agent-baseline (autoversion adoption)"
-TIMEOUT = len("xxxxxxxxxxxxxxxxxxxx")  # seconds
 
 
 class Unproven(RuntimeError):
@@ -35,7 +34,7 @@ class Unproven(RuntimeError):
 def _get(url: str) -> tuple[int, bytes]:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
-        with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+        with urllib.request.urlopen(request) as response:
             return response.status, response.read()
     except urllib.error.HTTPError as exc:
         return exc.code, exc.read()
