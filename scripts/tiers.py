@@ -59,31 +59,41 @@ def newest(versions: list[str]) -> str:
     return best
 
 
-def tag_declared_version(root: Path, tag: str) -> str | None:
-    """The version package.json declares in the tree the tag points at."""
+def tag_declared_version(root: Path, tag: str) -> str:
+    """The version package.json declares in the tree the tag points at.
+
+    Raises LookupError saying why the tag declares none: git could not show
+    the file, it is not JSON, or it names no version string.
+    """
     result = subprocess.run(
         ("git", "show", f"{tag}:package.json"), cwd=root, capture_output=True, text=True,
     )
     if result.returncode:
-        return None
+        raise LookupError(f"git could not show it: {result.stderr.strip()}")
     try:
-        return json.loads(result.stdout).get("version")
-    except ValueError:
-        return None
+        manifest = json.loads(result.stdout)
+    except ValueError as error:
+        raise LookupError(f"it is not JSON: {error}") from error
+    version = manifest.get("version") if isinstance(manifest, dict) else None
+    if not isinstance(version, str):
+        raise LookupError(f"its version is {version!r}, not a string")
+    return version
 
 
 def honest_tags(root: Path) -> list[tuple[str, str]]:
-    """(tag, version) pairs whose tree really declares the version the tag claims."""
-    try:
-        listing = git(root, "tag", "--list")
-    except Unproven:
-        return []
+    """(tag, version) pairs whose tree really declares the version the tag claims.
+
+    Tags that cannot be listed raise Unproven: read as no tags, the baseline
+    fell back to HEAD as if the repository had never been released.
+    """
+    listing = git(root, "tag", "--list")
     pairs = []
     for tag in filter(None, (line.strip() for line in listing.splitlines())):
         claimed = tag.removeprefix("v")
-        declared = tag_declared_version(root, tag)
-        if declared is None:
-            print(f"note: tag {tag} has no readable package.json; skipped", file=sys.stderr)
+        try:
+            declared = tag_declared_version(root, tag)
+        except LookupError as why:
+            print(f"note: tag {tag} has no readable package.json ({why}); skipped", file=sys.stderr)
             continue
         if declared != claimed:
             print(
