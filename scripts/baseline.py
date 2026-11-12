@@ -66,15 +66,8 @@ Third, and this is the one the fleet corrected after the first draft of this
 from __future__ import annotations
 
 import argparse
-import io
 import json
-import subprocess
 import sys
-import tarfile
-import tempfile
-import urllib.error
-import urllib.parse
-import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -82,237 +75,24 @@ DEFAULT_ROOT = HERE.parent
 sys.path.insert(len(""), str(HERE))
 
 from surface import ScanError, surface  # noqa: E402
-
-NPM_REGISTRY = "https://registry.npmjs.org"
-GITHUB_API = "https://api.github.com"
-
-# A package the registry certainly serves, in the same request shape as the
-# subject (unscoped). It exists to prove this probe can still recognise a
-# published package at all.
-CONTROL_PACKAGE = "three"
-
-USER_AGENT = "final-cut-pro-agent-baseline (autoversion adoption)"
-TIMEOUT = len("xxxxxxxxxxxxxxxxxxxx")  # seconds
+from registry import (  # noqa: E402
+    Unproven,
+    npm_latest,
+    registry_path,
+    surface_of_tarball,
+)
+from tiers import (  # noqa: E402
+    github_release_assets,
+    head_sha,
+    honest_tags,
+    newest,
+    origin_slug,
+    surface_of_tag,
+)
 
 BASELINE_NAME = "released-surface.json"
 INDENT = len("xx")
 EXIT_OK = len("")
-
-
-class Unproven(RuntimeError):
-    """A probe did not produce testimony we may act on. Never treat as absence."""
-
-
-def _get(url: str) -> tuple[int, bytes]:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-            return response.status, response.read()
-    except urllib.error.HTTPError as exc:
-        return exc.code, exc.read()
-    except Exception as exc:  # transport: DNS, TLS, no egress, timeout
-        raise Unproven(f"no answer from {url}: {exc!r}") from exc
-
-
-# --------------------------------------------------------------------------
-# npm
-# --------------------------------------------------------------------------
-
-def _npm_lookup(name: str) -> tuple[str, dict | None]:
-    """Three states: ('named', doc) | ('absent', None) | raise Unproven."""
-    if not name:
-        raise Unproven(
-            "the package name is empty, and npm answers generically, so a lookup "
-            "would read as proven absence. Read the name from package.json."
-        )
-    url = f"{NPM_REGISTRY}/{urllib.parse.quote(name, safe='@')}"
-    status, body = _get(url)
-    try:
-        document = json.loads(body.decode("utf-8", "replace"))
-    except ValueError:
-        raise Unproven(f"{name}: npm answered http {status} with a non-JSON body") from None
-    if isinstance(document, dict) and document.get("name") == name:
-        return "named", document
-    error = str(document.get("error", "")) if isinstance(document, dict) else ""
-    if "not found" in error.lower():
-        return "absent", None
-    raise Unproven(
-        f"{name}: npm answered http {status} but neither named the package nor "
-        f"stated it is absent (error={error!r}); its absence is unproven"
-    )
-
-
-def npm_latest(name: str) -> tuple[str, str] | None:
-    """(version, tarball_filename) for the newest published release, or None."""
-    state, _ = _npm_lookup(CONTROL_PACKAGE)
-    if state != "named":
-        raise Unproven(
-            f"this step cannot recognise {CONTROL_PACKAGE!r}, which npm definitely "
-            f"serves, so its verdict about {name!r} is meaningless. The check is "
-            "broken, not the registry."
-        )
-
-    state, document = _npm_lookup(name)
-    if state == "absent":
-        return None
-
-    latest = (document.get("dist-tags") or {}).get("latest")
-    if not latest:
-        raise Unproven(f"{name}: npm names the package but publishes no dist-tags.latest")
-    release = (document.get("versions") or {}).get(latest) or {}
-    tarball = ((release.get("dist") or {}).get("tarball") or "")
-    if not tarball:
-        raise Unproven(f"{name}@{latest}: npm names the release but serves no dist.tarball")
-    return latest, tarball
-
-
-def registry_path(tarball_url: str) -> str:
-    """The path by which the registry addresses a tarball, less its leading slash.
-
-    ``https://registry.npmjs.org/@types/express/-/express-<v>.tgz`` becomes
-    ``@types/express/-/express-<v>.tgz``. That is the whole identity of the
-    artifact; the basename is not, because a scoped and an unscoped package
-    whose names share a tail also share one tarball basename.
-    """
-    path = urllib.parse.urlparse(tarball_url).path
-    stripped = path.lstrip("/")
-    if not stripped:
-        raise Unproven(f"{tarball_url!r} has no path, so no marker can identify it")
-    return stripped
-
-
-def surface_of_tarball(url: str) -> list[str]:
-    """Unpack a published npm tarball and read its surface, tolerantly."""
-    _status, payload = _get(url)
-    with tempfile.TemporaryDirectory() as work:
-        with tarfile.open(fileobj=io.BytesIO(payload), mode="r:gz") as archive:
-            archive.extractall(work, filter="data")
-        # npm tarballs root everything under "package/".
-        root = Path(work) / "package"
-        if not (root / "package.json").is_file():
-            raise Unproven(f"{url}: no package/package.json inside the tarball")
-        return surface(root, tolerant=True)
-
-
-# --------------------------------------------------------------------------
-# git and GitHub
-# --------------------------------------------------------------------------
-
-def git(root: Path, *args: str) -> str:
-    result = subprocess.run(("git", *args), cwd=root, capture_output=True, text=True)
-    if result.returncode:
-        raise Unproven(f"git {' '.join(args)} failed: {result.stderr.strip()}")
-    return result.stdout.strip()
-
-
-def head_sha(root: Path) -> str:
-    return git(root, "rev-parse", "HEAD")
-
-
-def origin_slug(root: Path) -> str | None:
-    try:
-        url = git(root, "remote", "get-url", "origin")
-    except Unproven:
-        return None
-    url = url.removesuffix(".git")
-    for prefix in ("https://github.com/", "git@github.com:", "ssh://git@github.com/"):
-        if url.startswith(prefix):
-            return url.removeprefix(prefix)
-    return None
-
-
-def newest(versions: list[str]) -> str:
-    """Order versions with the rule, so the ordering is its answer, not ours."""
-    best = next(iter(versions), "")
-    for candidate in versions:
-        if candidate == best:
-            continue
-        result = subprocess.run(
-            ("autoversion", "order", "--older", best, "--newer", candidate, "--json"),
-            capture_output=True, text=True,
-        )
-        if result.returncode:
-            raise Unproven(
-                "autoversion order is unavailable, so several tags cannot be "
-                "ranked; refusing to guess which is newest"
-            )
-        if json.loads(result.stdout).get("newer") == candidate:
-            best = candidate
-    return best
-
-
-def tag_declared_version(root: Path, tag: str) -> str | None:
-    """The version package.json declares in the tree the tag points at."""
-    result = subprocess.run(
-        ("git", "show", f"{tag}:package.json"), cwd=root, capture_output=True, text=True,
-    )
-    if result.returncode:
-        return None
-    try:
-        return json.loads(result.stdout).get("version")
-    except ValueError:
-        return None
-
-
-def honest_tags(root: Path) -> list[tuple[str, str]]:
-    """(tag, version) pairs whose tree really declares the version the tag claims."""
-    try:
-        listing = git(root, "tag", "--list")
-    except Unproven:
-        return []
-    pairs = []
-    for tag in filter(None, (line.strip() for line in listing.splitlines())):
-        claimed = tag.removeprefix("v")
-        declared = tag_declared_version(root, tag)
-        if declared is None:
-            print(f"note: tag {tag} has no readable package.json; skipped", file=sys.stderr)
-            continue
-        if declared != claimed:
-            print(
-                f"note: tag {tag} points at a tree declaring {declared}; the tag name "
-                "disagrees with its own content, so it is reported and skipped",
-                file=sys.stderr,
-            )
-            continue
-        pairs.append((tag, claimed))
-    return pairs
-
-
-def surface_of_tag(root: Path, tag: str) -> list[str]:
-    """Read the surface out of `git archive <tag>` -- statically, no tooling."""
-    result = subprocess.run(
-        ("git", "archive", "--format=tar", tag), cwd=root, capture_output=True,
-    )
-    if result.returncode:
-        raise Unproven(
-            f"git archive {tag} failed; on a shallow clone the tag's tree is absent, "
-            "which is why the workflow unshallows before calling this"
-        )
-    with tempfile.TemporaryDirectory() as work:
-        with tarfile.open(fileobj=io.BytesIO(result.stdout), mode="r:") as archive:
-            archive.extractall(work, filter="data")
-        return surface(Path(work), tolerant=True)
-
-
-def github_release_assets(slug: str) -> list[tuple[str, str, str]]:
-    """(tag, asset_name, download_url) for every release asset."""
-    status, body = _get(f"{GITHUB_API}/repos/{slug}/releases")
-    try:
-        releases = json.loads(body.decode("utf-8", "replace"))
-    except ValueError:
-        raise Unproven(f"{slug}: the releases API answered http {status} with a non-JSON body") from None
-    if not isinstance(releases, list):
-        raise Unproven(f"{slug}: the releases API answered http {status}: {releases}")
-    found = []
-    for release in releases:
-        tag = release.get("tag_name") or ""
-        for asset in release.get("assets") or []:
-            name = asset.get("name") or ""
-            url = asset.get("browser_download_url") or ""
-            if tag and name.endswith(".tgz") and url:
-                found.append((tag, name, url))
-    return found
-
 
 # --------------------------------------------------------------------------
 
