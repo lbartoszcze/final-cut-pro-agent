@@ -1,0 +1,5 @@
+# Paths this repository declares to the size audit, with the reason each one
+# is declared.
+
+# references/: FCPXML exports vendored from MIT-licensed projects and free editor kits (references/README.md names each source), YouTube tutorial transcripts captured with yt-dlp, and fcp-menus.txt, the menu catalogue cut fcp menu list enumerates live.
+references
