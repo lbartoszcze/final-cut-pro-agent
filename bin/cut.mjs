@@ -93,10 +93,10 @@ if (cmd === "fcpxml") runNode(FCPXML, rest);
 else if (cmd === "fcp") runNode(FCP, rest);
 else if (cmd === "sfx") {
   const { main } = await import("../lib/sfx/index.mjs");
-  process.exit((await main(rest)) || 0);
+  process.exit(await main(rest));
 } else if (cmd === "giphy") {
   const { main } = await import("../lib/giphy/index.mjs");
-  process.exit((await main(rest)) || 0);
+  process.exit(await main(rest));
 } else {
   console.error(`unknown subcommand: ${cmd}. Try 'cut help'.`);
   process.exit(2);
