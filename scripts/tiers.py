@@ -28,10 +28,15 @@ def head_sha(root: Path) -> str:
 
 
 def origin_slug(root: Path) -> str | None:
+    """The GitHub owner/name origin points at; None for a checkout with no
+    origin remote or one not on GitHub. Any other git failure is raised: read
+    as no origin, it skipped the GitHub release tier unsaid."""
     try:
         url = git(root, "remote", "get-url", "origin")
-    except Unproven:
-        return None
+    except Unproven as error:
+        if "No such remote" in str(error):
+            return None
+        raise
     url = url.removesuffix(".git")
     for prefix in ("https://github.com/", "git@github.com:", "ssh://git@github.com/"):
         if url.startswith(prefix):
