@@ -1,6 +1,6 @@
 {
   "name": "final-cut-pro-agent",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Auto-editor that authors a Final Cut Pro project (.fcpxml) and drives Final Cut Pro. Final Cut Pro is the only renderer.",
   "type": "module",
   "bin": {
