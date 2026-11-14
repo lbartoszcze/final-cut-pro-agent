@@ -1,0 +1,60 @@
+schemaVersion: 1
+appId: final-cut-pro-agent
+productId: final-cut-pro-agent
+owner: Final Cut Pro Agent maintainers
+repositories:
+  - repository: final-cut-pro-agent
+    mappings:
+      - paths:
+          - bin/**
+          - lib/fcpxml.mjs
+          - lib/edit.mjs
+          - lib/captions/**
+          - lib/analyze/**
+          - lib/source/**
+          - lib/styles/**
+          - lib/cli/**
+          - package.json
+          - .probierz/final-cut-pro-agent/journeys/author-a-cut.mjs
+        journeys: [author-a-cut]
+      - paths:
+          - lib/analyze/**
+          - lib/source/**
+          - tests/measure/**
+          - .probierz/final-cut-pro-agent/journeys/measure-clips.mjs
+        journeys: [measure-clips]
+surfaces:
+  tui:
+    spec: journeys/
+    journeys: [author-a-cut, measure-clips]
+    conditions:
+      TUI_CMD: "{workspace}/final-cut-pro-agent/bin/cut.mjs"
+      WISENT_WORKSPACE: "{workspace}"
+journeys:
+  author-a-cut:
+    owner: Final Cut Pro Agent maintainers
+    timeoutMs: 300000
+    description: From three generated clips, a tone track and captions, cut fcpxml writes an FCPXML project with an asset for every clip and the music, a 24 fps format, a spine that uses the clips, the music on an audio lane and every caption's words; footage that is not media is refused naming the file; Final Cut Pro is not opened.
+    value: An editor gets a Final Cut Pro project with the cut decisions made from their own footage, ready to open.
+  measure-clips:
+    owner: Final Cut Pro Agent maintainers
+    timeoutMs: 120000
+    description: tests/measure/probes.test.mjs measures generated clips with the installed ffprobe and ffmpeg; non-media is refused with ffprobe's words, a silent clip has a length and no loudness, a toned clip has a measured loudness.
+    value: Cut decisions rest on what the footage really holds, never on a guessed length or loudness.
+artifacts:
+  retain:
+    pullRequestDays: 14
+    nightlyDays: 30
+    adhocDays: 7
+  redact: [TOKEN, SECRET, PASSWORD, KEY, COOKIE, AUTH]
+  pii: unlikely
+pullRequestPolicy:
+  minimumEvidence: E2
+  requiredTargets: [tui]
+  requiredJourneys: [author-a-cut, measure-clips]
+releasePolicy:
+  minimumEvidence: E2
+  requiredTargets: [tui]
+  requiredJourneys: [author-a-cut, measure-clips]
+  requireProtectedArtifacts: false
+  requireSecretScan: true
