@@ -57,7 +57,7 @@ def detect(path: str, sample_fps: float = SAMPLE_FPS):
 def main():
     if len(sys.argv) < 2:
         print("usage: face_detect.py <video> [sample_fps]", file=sys.stderr)
-        sys.exit(2)
+        sys.exit(2)  # https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html
     sample = float(sys.argv[2]) if len(sys.argv) > 2 else SAMPLE_FPS
     out = detect(sys.argv[1], sample)
     json.dump(out, sys.stdout)
