@@ -20,6 +20,7 @@ import cv2
 SAMPLE_FPS = 5
 ANALYZE_W = 320
 ANALYZE_H = 180
+PERCENT = 100.0  # The percent sign stands for 0.01: https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values
 
 
 def detect(path: str, sample_fps: float = SAMPLE_FPS):
@@ -48,7 +49,7 @@ def detect(path: str, sample_fps: float = SAMPLE_FPS):
             frames.append({
                 "t": round(idx / src_fps, 3),
                 "n": int(len(faces)),
-                "area_pct": round(100.0 * area / total_px, 2) if total_px else 0.0,
+                "area_pct": round(PERCENT * area / total_px, 2) if total_px else 0.0,
             })
     cap.release()
     return {"fps": sample_fps, "frames": frames}
