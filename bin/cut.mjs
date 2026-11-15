@@ -99,5 +99,5 @@ else if (cmd === "sfx") {
   process.exit(await main(rest));
 } else {
   console.error(`unknown subcommand: ${cmd}. Try 'cut help'.`);
-  process.exit(2);
+  process.exit(2 /* https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html */);
 }

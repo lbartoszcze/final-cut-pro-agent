@@ -188,7 +188,7 @@ if (Object.hasOwn(CMD, cmd) && Object.hasOwn(GROUPS, object) && !helpOperands.le
   console.log(`cut fcp ${GROUPS[object].usage}`);
   process.exit();
 }
-if (!Object.hasOwn(CMD, cmd)) { console.error(`unknown command: cut fcp ${cmd}. 'cut fcp help' lists every object and its verbs.`); process.exit(2); }
+if (!Object.hasOwn(CMD, cmd)) { console.error(`unknown command: cut fcp ${cmd}. 'cut fcp help' lists every object and its verbs.`); process.exit(2 /* https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html */); }
 try {
   CMD[cmd](rest);
 } catch (e) {
