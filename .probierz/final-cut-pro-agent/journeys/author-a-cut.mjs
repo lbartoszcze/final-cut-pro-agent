@@ -19,6 +19,7 @@ function required(name) {
   const value = process.env[name]?.trim();
   if (!value) {
     process.stderr.write(`${name} is not set: run this journey through \`probierz run tui --app final-cut-pro-agent\`\n`);
+    // Usage refusal: https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html
     process.exit(2);
   }
   return value;
@@ -69,6 +70,7 @@ try {
 
 if (broken.length > 0) {
   process.stderr.write(`${broken.join('\n')}\n`);
+  // EXIT_FAILURE: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
   process.exit(1);
 }
 process.stdout.write('cut authored a 24 fps Final Cut Pro project with every clip, the music and the captions\n');

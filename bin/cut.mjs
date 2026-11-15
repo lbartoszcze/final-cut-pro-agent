@@ -81,12 +81,14 @@ function printHelp(topic) {
 
 function runNode(script, rest) {
   const c = spawn("node", [script, ...rest], { stdio: "inherit" });
+  // EXIT_SUCCESS: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
   c.on("exit", (code) => process.exit(code || 0));
 }
 
-const [cmd, ...rest] = process.argv.slice(2);
+const [, , cmd, ...rest] = process.argv;
 if (!cmd || cmd === "help" || cmd === "--help" || cmd === "-h") {
   printHelp(rest[0]);
+  // EXIT_SUCCESS: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
   process.exit(0);
 }
 if (cmd === "fcpxml") runNode(FCPXML, rest);

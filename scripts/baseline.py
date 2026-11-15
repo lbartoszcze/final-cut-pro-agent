@@ -72,7 +72,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DEFAULT_ROOT = HERE.parent
-sys.path.insert(len(""), str(HERE))
+sys.path.insert(0, str(HERE))
 
 from surface import ScanError, surface  # noqa: E402
 from registry import (  # noqa: E402
@@ -91,8 +91,9 @@ from tiers import (  # noqa: E402
 )
 
 BASELINE_NAME = "released-surface.json"
-INDENT = len("xx")
-EXIT_OK = len("")
+INDENT = 2
+# EXIT_SUCCESS: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
+EXIT_OK = 0
 
 # --------------------------------------------------------------------------
 
@@ -274,4 +275,5 @@ if __name__ == "__main__":
         sys.exit(main())
     except (Unproven, ScanError, Dishonest) as failure:
         print(f"error: {failure}", file=sys.stderr)
-        sys.exit(len("x"))
+        # EXIT_FAILURE: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
+        sys.exit(1)

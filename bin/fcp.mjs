@@ -176,8 +176,9 @@ const CMD = Object.fromEntries([
   ),
 ]);
 
-const [object, verb, ...rest] = process.argv.slice(2);
+const [, , object, verb, ...rest] = process.argv;
 const cmd = verb === undefined || object === "help" ? object : `${object} ${verb}`;
+// EXIT_SUCCESS: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
 if (!cmd || cmd === "-h" || cmd === "--help") { printHelp(); process.exit(0); }
 if (Object.hasOwn(GROUPS, object) && !rest.length && (verb === "--help" || verb === "-h")) {
   console.log(`cut fcp ${GROUPS[object].usage}`);
@@ -193,5 +194,6 @@ try {
   CMD[cmd](rest);
 } catch (e) {
   console.error(e.message);
+  // Usage 2: https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html; EXIT_FAILURE 1: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
   process.exit(e instanceof UsageError ? 2 : 1);
 }

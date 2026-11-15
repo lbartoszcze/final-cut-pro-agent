@@ -80,7 +80,7 @@ _TOKENS = re.compile(
     re.VERBOSE | re.DOTALL,
 )
 
-_QUOTES = ("dq", "sq", "tpl")
+_QUOTES = {"dq": '"', "sq": "'", "tpl": "`"}
 
 
 def _blank(chunk: str) -> str:
@@ -109,14 +109,14 @@ def scan_js(text: str, origin: str) -> tuple[str, list[tuple[int, str]]]:
     """Return (masked_code, [(start_offset, literal_value), ...])."""
     pieces: list[str] = []
     literals: list[tuple[int, str]] = []
-    cursor = text.index("") if text else len("")
+    cursor = 0
 
     for match in _TOKENS.finditer(text):
         kind = match.lastgroup
         pieces.append(text[cursor:match.start()])
         body = match.group()
         if kind in _QUOTES:
-            quote = body[:len("`")]
+            quote = _QUOTES[kind]
             inner = body[len(quote):-len(quote)]
             if kind == "tpl" and _has_unclosed_substitution(inner):
                 raise ScanError(
@@ -136,8 +136,8 @@ def scan_js(text: str, origin: str) -> tuple[str, list[tuple[int, str]]]:
         raise ScanError(f"{origin}: masking changed the file length; offsets would be wrong")
     if masked.count("{") != masked.count("}"):
         raise ScanError(f"{origin}: unbalanced braces after scan; refusing to report a surface")
-    for quote in ('"', "'", "`"):
-        if masked.count(quote) % len("xx"):
+    for quote in _QUOTES.values():
+        if masked.count(quote) % 2:
             raise ScanError(f"{origin}: odd number of {quote} delimiters after scan; lexer lost sync")
     return masked, literals
 
@@ -155,7 +155,7 @@ def balanced_span(masked: str, search_from: int, origin: str) -> tuple[int, int]
         elif ch == "}":
             stack.pop()
             if not stack:
-                return start, start + offset + len("}")
+                return start, start + offset + 1
     raise ScanError(f"{origin}: unbalanced brace opened at offset {start}")
 
 
@@ -171,17 +171,15 @@ def _locate(masked: str, needle: str, origin: str) -> int:
 
 # --------------------------------------------------------------------------
 
-_CMD = re.compile(r"^\s*cut ([a-z][a-z0-9-]*)\b")
-_FCP_SUB = re.compile(r"^\s*cut fcp ([a-z][a-z0-9-]*)\b")
-_FLAG = re.compile(r"^\s*(--[a-z][a-z0-9-]*)")
+_CMD = re.compile(r"^\s*cut (?P<name>[a-z][a-z\d-]*)\b")
+_FCP_SUB = re.compile(r"^\s*cut fcp (?P<name>[a-z][a-z\d-]*)\b")
+_FLAG = re.compile(r"^\s*(?P<name>--[a-z][a-z\d-]*)")
 
 _REQUIRED_KINDS = ("cmd:", "flag:", "fcp:", "bin:")
 
-# This workspace admits no bare numeric literals, so the small numbers this
-# module needs are spelled as word forms.
-FIRST_GROUP = len("x")
-INDENT = len("xx")
-EXIT_OK = len("")
+INDENT = 2
+# EXIT_SUCCESS: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
+EXIT_OK = 0
 
 
 def surface(root: Path, tolerant: bool = False) -> list[str]:
@@ -223,16 +221,16 @@ def surface(root: Path, tolerant: bool = False) -> list[str]:
             if topic_start <= start < topic_end:
                 found = _FCP_SUB.match(value)
                 if found:
-                    names.add(f"fcp:{found.group(FIRST_GROUP)}")
+                    names.add(f"fcp:{found.group('name')}")
                     continue
                 found = _FLAG.match(value)
                 if found:
-                    names.add(f"flag:{found.group(FIRST_GROUP)}")
+                    names.add(f"flag:{found.group('name')}")
                     continue
             if help_start <= start < help_end:
                 found = _CMD.match(value)
                 if found:
-                    names.add(f"cmd:{found.group(FIRST_GROUP)}")
+                    names.add(f"cmd:{found.group('name')}")
     except ScanError:
         if not tolerant:
             raise

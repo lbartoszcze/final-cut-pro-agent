@@ -23,7 +23,8 @@ const ROOT = join(HERE, "..");
 
 function parseArgs(argv) {
   let sup = {};
-  for (const a of argv) { const m = a.match(/^--([^=]+)=(.+)$/); if (m) sup[m[1]] = m[2]; }
+  for (const a of argv) { const m = a.match(/^--(?<key>[^=]+)=(?<value>.+)$/); if (m) sup[m.groups.key] = m.groups.value; }
+  // EXIT_SUCCESS: https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html
   if (argv.includes("--list-styles")) { for (const s of listStylePacks()) console.log(`${s.name.padEnd(22)} ${s.description}`); process.exit(0); }
   if (sup.style && !["montage", "linear"].includes(sup.style)) { sup = mergeStylePack(sup.style, sup); delete sup.style; }
   const p = sup.platform ? resolvePlatform(sup.platform) : null;
@@ -32,7 +33,8 @@ function parseArgs(argv) {
   return out;
 }
 
-const args = parseArgs(process.argv.slice(2));
+const [, , ...cliArgs] = process.argv;
+const args = parseArgs(cliArgs);
 let downbeatOffsetSec = 0;
 if (args.music) {
   // --music=<path> overrides --bpm with auto-detected tempo + downbeat phase.
@@ -75,8 +77,8 @@ if (args.template) {
   templateData = parseTemplate(resolve(args.template));
   let maxId = 1;
   for (const e of templateData.effects) {
-    const m = e.id.match(/^r(\d+)$/);
-    if (m) maxId = Math.max(maxId, parseInt(m[1]));
+    const m = e.id.match(/^r(?<n>\d+)$/);
+    if (m) maxId = Math.max(maxId, parseInt(m.groups.n));
   }
   assetIdBase = maxId + 1;
   effectsXml = templateData.effects.map((e) => "    " + e.raw).join("\n");
@@ -137,7 +139,7 @@ let prevShot = null;
 const autoChapters = args["auto-chapters"] !== "0";
 function chapterMarkerFor(label, startFrames) {
   if (!autoChapters) return "";
-  return marker({ startSec: startFrames / FPS, value: label.charAt(0).toUpperCase() + label.slice(1), kind: "chapter-marker", rateNum: RATE_NUM, rateDen: RATE_DEN });
+  return marker({ startSec: startFrames / FPS, value: label.replace(/^./, (c) => c.toUpperCase()), kind: "chapter-marker", rateNum: RATE_NUM, rateDen: RATE_DEN });
 }
 
 // --- Template mode: borrow cadence from a reference fcpxml ----------------
