@@ -137,6 +137,13 @@ code, 0) and `usageExit` (the documented usage-error code, 2). The checkout
 must be clean. Invocation arguments, output, exit status, signal and source
 revision are retained in `target/real-tests/fcp/<run-id>/commands.json`.
 
+`node --test tests/ax/walk.test.mjs` reads the AppleScript the accessibility
+helpers send, as `elementWalk` builds it, without sending it: a walk with a
+refusal stops at the first match and errors with the refusal when none
+matched, one without returns what it collected, a topmost walk reads window 1
+only, and text a caller names is escaped so it cannot end the AppleScript
+string. It needs neither macOS nor Final Cut Pro.
+
 ## What the authored FCPXML carries
 
 - `<library><event><project><sequence><spine>` wrapping the full edit
