@@ -137,6 +137,17 @@ code, 0) and `usageExit` (the documented usage-error code, 2). The checkout
 must be clean. Invocation arguments, output, exit status, signal and source
 revision are retained in `target/real-tests/fcp/<run-id>/commands.json`.
 
+`node --test tests/ax/walk.test.mjs` reads the AppleScript the accessibility
+helpers send, as `elementWalk` builds it, without sending it: a walk with a
+refusal stops at the first match and errors with the refusal when none
+matched, one without returns what it collected, a topmost walk reads window 1
+only, and text a caller names is escaped so it cannot end the AppleScript
+string. It needs neither macOS nor Final Cut Pro.
+
+`node --test tests/cli/make-cut.test.mjs` runs `bin/make-cut.mjs` with
+`--bpm=0x78` and with `--bars=0x8`: read in base 10 they are 0, so each is
+refused naming the flag and the value, and no project is written.
+
 ## What the authored FCPXML carries
 
 - `<library><event><project><sequence><spine>` wrapping the full edit

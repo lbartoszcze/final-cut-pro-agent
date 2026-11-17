@@ -45,8 +45,8 @@ if (args.music) {
   downbeatOffsetSec = t.downbeatOffsetSec;
   console.log(`[music] detected ${t.bpm.toFixed(2)} BPM → snapped to ${args.bpm}, downbeat @ ${downbeatOffsetSec.toFixed(3)}s`);
 }
-const bpm = parseInt(args.bpm);
-const bars = parseInt(args.bars);
+const bpm = parseInt(args.bpm, 10);
+const bars = parseInt(args.bars, 10);
 if (!Number.isFinite(bpm) || bpm < 30) throw new Error(`bad --bpm: ${args.bpm}`);
 if (!Number.isFinite(bars) || bars < 1) throw new Error(`bad --bars: ${args.bars}`);
 reseed((bpm * 1000 + bars) >>> 0);
@@ -78,7 +78,7 @@ if (args.template) {
   let maxId = 1;
   for (const e of templateData.effects) {
     const m = e.id.match(/^r(?<n>\d+)$/);
-    if (m) maxId = Math.max(maxId, parseInt(m.groups.n));
+    if (m) maxId = Math.max(maxId, parseInt(m.groups.n, 10));
   }
   assetIdBase = maxId + 1;
   effectsXml = templateData.effects.map((e) => "    " + e.raw).join("\n");
